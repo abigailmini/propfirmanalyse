@@ -1,0 +1,29 @@
+{
+  "reset_fee": "10% discount on retry (same size/settings), within 7 days of failing",
+  "retry_discount_pct": 10,
+  "refund_policy": null,
+  "fee_refundable": null,
+  "time_limit": null,
+  "has_time_limit": null,
+  "activation_fee": null,
+  "payout_methods": [
+    "Rise (cash or crypto)",
+    "WorkMarket",
+    "Aeropay (bank)"
+  ],
+  "min_payout": "$100 (taken from your share, e.g. $125 gross at 80%); E8 Pro min 1%",
+  "kyc_before_payout": true,
+  "scaling_plan": null,
+  "ea_bots": true,
+  "copy_trading": null,
+  "hedging": null,
+  "max_risk_per_trade": "may not risk the entire daily drawdown on one trade (all-or-nothing banned)",
+  "inactivity_rule": null,
+  "notes": "Retry discount appears in dashboard under closed accounts, valid 7 days after failure. No direct crypto payouts from E8 — all go via partners (Rise/WorkMarket, Aeropay); partner KYC/onboarding required. E8 One payouts on demand; E8 Pro/Zero pay daily. Any EA (incl. third-party) allowed, but the same strategy run by multiple users can lead to termination. Hedging across accounts (even your own) banned; single-account hedging not addressed. Breaking prohibited-practice rules ends the account with the fee refunded. Refund-policy article (8811411) timed out in the browser, so general refund terms, time limit, copy trading and inactivity are null.",
+  "sources": [
+    "https://help.e8markets.com/en/articles/11640147-account-reset",
+    "https://help.e8markets.com/en/articles/15272556-everything-about-payouts-when-how-how-fast",
+    "https://help.e8markets.com/en/articles/6929927-trading-policies-and-prohibited-trading-strategies"
+  ],
+  "checked": "2026-10-26"
+}

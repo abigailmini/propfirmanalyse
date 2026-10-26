@@ -1,0 +1,26 @@
+{
+  "reset_fee": "no paid reset stated; 'retry options' offered (price not shown); X Mode re-entry = buy new account at original fee",
+  "retry_discount_pct": null,
+  "refund_policy": "refund only within 48h of purchase if challenge not started; no fee refund with payout stated",
+  "fee_refundable": false,
+  "time_limit": "unlimited",
+  "has_time_limit": false,
+  "activation_fee": null,
+  "payout_methods": [
+    "USDT"
+  ],
+  "min_payout": "$100 (after split)",
+  "kyc_before_payout": null,
+  "scaling_plan": null,
+  "ea_bots": "restricted",
+  "copy_trading": false,
+  "hedging": true,
+  "max_risk_per_trade": "Y/Z: open positions max 40% of total notional exposure; X Mode: net exposure max 2x account size",
+  "inactivity_rule": "X Mode fails after 20 consecutive days without a trade; Y/Z may fail after 30 days inactive (48h to trade after notice)",
+  "notes": "Evaluations have no fixed deadline. KYC exists (up to 7 business days) but FAQ doesn't say it gates the first payout. Bots/automated systems banned unless explicitly permitted; API trading and copy trading between accounts banned. Long+short on same pair nets to zero for X Mode exposure limit. Split rises 70->90% via career tiers (no capital scaling stated). Y Mode funded: max 5% of balance per payout, 14-day cooldown. Payout timing: 48h (FAQ) vs 7 business days (terms).",
+  "sources": [
+    "https://www.fundedxyz.com/faq",
+    "https://www.fundedxyz.com/terms"
+  ],
+  "checked": "2026-10-26"
+}

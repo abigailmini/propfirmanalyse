@@ -1,0 +1,32 @@
+{
+  "reset_fee": "no reset; 'Retry' button opens a new purchase of the same product with an automatic (unstated) discount",
+  "retry_discount_pct": null,
+  "refund_policy": null,
+  "fee_refundable": null,
+  "time_limit": "unlimited on all products except IF1 (24 hours)",
+  "has_time_limit": false,
+  "activation_fee": null,
+  "payout_methods": [
+    "Rise (bank transfer / crypto)",
+    "Direct crypto"
+  ],
+  "min_payout": null,
+  "kyc_before_payout": true,
+  "scaling_plan": "Instant Funding accounts double in size per scale-up to $1.28M; challenge/micro products scale up to +100% of starting balance",
+  "ea_bots": "restricted",
+  "copy_trading": true,
+  "hedging": true,
+  "max_risk_per_trade": "losing/risking more than 50% of the starting daily drawdown in one trade idea = hard breach",
+  "inactivity_rule": "Account closed if no trade within 60 days of purchase or of the last trade",
+  "notes": "One-time fees, no monthly charges. KYC via SumSub: on passing a challenge (before funded account) or at first payout on Instant accounts. Copy trading allowed only from accounts you own (including your own accounts at other firms/brokers). Hedging within one account allowed; cross-account/group hedging banned. Public third-party EAs restricted; martingale/grid/HFT rules apply. On-demand payouts on most simulated funded products; One-Phase Lite min withdrawal 1.5% of starting balance. Refund policy is in a PDF linked from the trading rules page that I could not parse — left null.",
+  "sources": [
+    "https://instantfunding.com/trading-rules/",
+    "https://instantfunding.com/help/can-i-reset-my-account/",
+    "https://instantfunding.com/help/am-i-able-to-take-hedging-positions/",
+    "https://instantfunding.com/help/is-copy-trading-allowed/",
+    "https://instantfunding.com/help/identity-checks-kyc/",
+    "https://instantfunding.com/help/payouts/",
+    "https://instantfunding.com/help/do-we-have-any-monthly-fees/"
+  ],
+  "checked": "2026-10-26"
+}

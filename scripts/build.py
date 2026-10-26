@@ -207,7 +207,7 @@ def page(path, title, desc, body, jsonld=None, og_type="website", extra_head="")
     canon = ABS + path
     ld = "".join('<script type="application/ld+json">' + json.dumps(j, ensure_ascii=False) + "</script>" for j in (jsonld or []))
     navh = "".join(f'<a href="{url(h)}"{" aria-current=page" if path.startswith(h) else ""}>{e(T[k])}</a>' for h, k in NAV)
-    footnav = "".join(f'<li><a href="{url(h)}">{e(T[k])}</a></li>' for h, k in NAV) + f'<li><a href="{url("/updates/")}">Verification log</a></li>'
+    footnav = "".join(f'<li><a href="{url(h)}">{e(T[k])}</a></li>' for h, k in NAV) + "".join(f'<li><a href="{url(h)}">{e(t)}</a></li>' for h, t in globals().get("FOOT_EXTRA", [("/updates/", "Verification log")]))
     doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{canon}">
 <meta property="og:type" content="{og_type}"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}">
@@ -377,10 +377,10 @@ def pair_link(a, b):
             f'<i aria-hidden="true">vs</i><span class="sr"> versus </span><span>{e(BY[b]["name"])}</span></a></li>')
 
 # ---------------- pages ----------------
-ASSET_V = "2"
+ASSET_V = "3"
 def write_assets():
     os.makedirs(os.path.join(OUT, "assets", "fonts"), exist_ok=True)
-    for n in ("site.css", "site.js", "favicon.svg", "og.png"):
+    for n in ("site.css", "site.js", "tools.js", "quiz.js", "favicon.svg", "og.png"):
         src = os.path.join(ROOT, "src", n)
         if os.path.exists(src): shutil.copy(src, os.path.join(OUT, "assets", n))
     fdir = os.path.join(ROOT, "src", "fonts")
@@ -388,7 +388,8 @@ def write_assets():
         for n in os.listdir(fdir):
             if n.endswith(".woff2"): shutil.copy(os.path.join(fdir, n), os.path.join(OUT, "assets", "fonts", n))
     os.makedirs(os.path.join(OUT, "data"), exist_ok=True)
-    pub = [{k: v for k, v in f.items() if not k.startswith("_")} | {"pa_score": f["_score"], "pa_components": f["_comp"], "data_completeness_pct": f["_complete"]} for f in FIRMS]
+    pub = [{k: v for k, v in f.items() if not k.startswith("_")} | {"pa_score": f["_score"], "pa_components": f["_comp"], "data_completeness_pct": f["_complete"],
+            "pa_rank": f["_rank"], "pa_fee_from": f["_fee"], "pa_split_max": f["_split"], "pa_payout_bucket": f["_bucket"], "pa_max_size": max(f["_sizes"]) if f["_sizes"] else None} for f in FIRMS]
     json.dump({"generated": TODAY, "firms": pub}, open(os.path.join(OUT, "data", "firms.json"), "w"), indent=1, ensure_ascii=False)
 
 def home():
@@ -676,13 +677,17 @@ def seo_files():
     open(os.path.join(OUT, ".nojekyll"), "w").write("")
     if SITE_URL.startswith("https://") and "github.io" not in SITE_URL and not BASE: open(os.path.join(OUT, "CNAME"), "w").write(SITE_URL.split("://", 1)[1] + "\n")
 
+for _m in ("more_core.py", "more_pages_a.py", "more_pages_b.py", "more_guides.py"):
+    _p = os.path.join(ROOT, "scripts", _m); exec(compile(open(_p).read(), _p, "exec"))
+
 if __name__ == "__main__":
     PAIRS[:] = [(a, b) for a, b in PAIRS if a in BY and b in BY]
+    CHANGES = changelog()
     if os.path.exists(OUT): shutil.rmtree(OUT)
     os.makedirs(OUT)
     write_assets(); home(); firms_index()
     for f in FIRMS: firm_page(f)
     compare_index()
     for a, b in PAIRS: compare_page(a, b)
-    discounts(); best_pages(); methodology(); about(); updates(); not_found(); seo_files()
+    offers(); best_pages(); methodology(); about(); updates(); crypto_hub(); news(); tools(); quiz(); guides(); glossary(); site_faq(); not_found(); seo_files()
     print(f"built {len(PAGES)} pages -> {OUT}")

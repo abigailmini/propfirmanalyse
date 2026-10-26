@@ -1,0 +1,29 @@
+{
+  "crypto_pairs": null,
+  "crypto_pairs_examples": [
+    "BTC",
+    "ETH"
+  ],
+  "crypto_leverage": "Crypto program: BTC/ETH 1:5, other crypto 1:2; standard programs: crypto 1:2",
+  "crypto_venue": null,
+  "instrument_type": null,
+  "weekend_crypto": true,
+  "payout_methods": [
+    "direct crypto transfer",
+    "Rise bank transfer"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": null,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": null,
+  "banned_strategies": [],
+  "bots_allowed": null,
+  "copy_trading": null,
+  "crypto_fees": null,
+  "notes": "FX-first firm that also runs a Crypto program (and points crypto traders to partner firm 'IF Crypto'). On the Crypto program, news trading and weekend holding are allowed in both challenge phases and funded. Standard programs don't allow weekend holding without an add-on. Payouts by direct crypto transfer or Rise bank transfer, from $25, processed within 48 business hours. The help center (help.instantfunding.com) didn't load, so bots, copy trading, banned strategies and KYC are unverified (null). Instrument type not stated.",
+  "sources": [
+    "https://instantfunding.com/",
+    "https://instantfunding.com/faq/"
+  ],
+  "checked": "2026-10-26"
+}

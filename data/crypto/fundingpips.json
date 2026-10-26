@@ -1,0 +1,49 @@
+{
+  "crypto_pairs": 2,
+  "crypto_pairs_examples": [
+    "BTCUSD",
+    "ETHUSD"
+  ],
+  "crypto_leverage": "1:2 standard accounts; 1:1 swap-free/swing accounts",
+  "crypto_venue": "MT5, cTrader or Match-Trader (simulated)",
+  "instrument_type": "CFD",
+  "weekend_crypto": true,
+  "payout_methods": [
+    "card (Visa/Mastercard)",
+    "crypto (USDT/USDC ERC20)",
+    "Rise",
+    "bank transfer"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": true,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": "Crypto capped at 1 lot per click/trade (20-lot cap for other instruments).",
+  "banned_strategies": [
+    "gap trading",
+    "high-frequency trading",
+    "server spamming",
+    "latency arbitrage",
+    "toxic trading flow",
+    "hedging",
+    "long-short / reverse arbitrage",
+    "tick scalping",
+    "server execution exploits",
+    "opposite account trading",
+    "churning and burning",
+    "copy trading between different users",
+    "third-party EAs except as trade/risk manager"
+  ],
+  "bots_allowed": "restricted",
+  "copy_trading": false,
+  "crypto_fees": "0.04% of notional (lot size × price × 0.04%); crypto pays swap even on swap-free add-on",
+  "notes": "FX-first CFD firm with only 2 crypto symbols (BTCUSD, ETHUSD) at 1:2 leverage. Weekend holding is allowed in evaluations, on Master accounts only with the Swing add-on, and banned on FundingPips Zero. KYC is part of Master account onboarding, before any reward. Crypto rewards in USDT/USDC on ERC20 (min 1% of account size). The main site is behind a Vercel checkpoint, so data comes from the Zendesk help center.",
+  "sources": [
+    "https://help.fundingpips.com/hc/en-us/articles/34501809112081-2-Step-Standard",
+    "https://help.fundingpips.com/hc/en-us/articles/34502027344017-2-Step-Pro-Model",
+    "https://help.fundingpips.com/hc/en-us/articles/34501697434385-1-Step-Flex",
+    "https://help.fundingpips.com/hc/en-us/articles/34502157694865-FundingPips-Zero",
+    "https://help.fundingpips.com/hc/en-us/articles/34504564970385-Reward-Methods",
+    "https://help.fundingpips.com/hc/en-us/articles/34505029138449-Trading-Conduct-and-Security-Standards"
+  ],
+  "checked": "2026-10-26"
+}

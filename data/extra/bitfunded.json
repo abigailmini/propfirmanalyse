@@ -1,0 +1,25 @@
+{
+  "reset_fee": "no reset; buy new challenge after breach",
+  "retry_discount_pct": null,
+  "refund_policy": "2-Step: entry fee refunded with 3rd payout (no violations); 1-Step, Express and Instant: not refunded",
+  "fee_refundable": true,
+  "time_limit": "unlimited",
+  "has_time_limit": false,
+  "activation_fee": null,
+  "payout_methods": [
+    "USDT"
+  ],
+  "min_payout": null,
+  "kyc_before_payout": null,
+  "scaling_plan": null,
+  "ea_bots": false,
+  "copy_trading": false,
+  "hedging": false,
+  "max_risk_per_trade": "combined margin concentration max 65% (55% Instant); leverage 1x-5x",
+  "inactivity_rule": "none",
+  "notes": "No time limits, no min trading days, no inactivity rule (accounts don't expire). Fee refund only on 2-Step and is lost if the account is disqualified. Before each payout: min 2 closed trades (3 on Instant), each open 10+ min. Max holding 10/7/5 days (major crypto/minor crypto/TradFi). Payout day self-set 2-60 days; processed within 24h on working days to a crypto wallet (USDT). Fee payment by USDT (ERC-20/BEP-20/TRC-20) or card. KYC not mentioned in FAQ.",
+  "sources": [
+    "https://www.bitfunded.com/frequently-asked-questions/"
+  ],
+  "checked": "2026-10-26"
+}

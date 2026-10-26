@@ -1,0 +1,45 @@
+{
+  "crypto_pairs": 4,
+  "crypto_pairs_examples": [
+    "BTCUSD",
+    "ETHUSD",
+    "BTCEUR",
+    "ETHBTC"
+  ],
+  "crypto_leverage": null,
+  "crypto_venue": "Match-Trader or MetaTrader 5 (Maven simulated server)",
+  "instrument_type": "CFD",
+  "weekend_crypto": true,
+  "payout_methods": [
+    "USDT (BSC)",
+    "USDC (ERC-20)",
+    "Rise Pay",
+    "bank transfer (Nigeria/Kenya/Ghana only)"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": true,
+  "min_trade_duration": "at least 50% of trades must be held ≥60 seconds",
+  "max_position_or_risk_rule": "Instant/Instant Mini: floating loss may not reach more than 1% of current balance. Withdrawal cap $10,000 per two payouts / rolling 30 days on Standard and Instant accounts.",
+  "banned_strategies": [
+    "HFT",
+    "toxic order flow",
+    "long/short and reverse arbitrage",
+    "tick scalping",
+    "server execution exploitation",
+    "copying another person's trades",
+    "grid / gap trading",
+    "reverse hedging",
+    "account mirroring",
+    "EAs or scripts",
+    "EA-based copy trading"
+  ],
+  "bots_allowed": false,
+  "copy_trading": true,
+  "crypto_fees": null,
+  "notes": "FX-first CFD firm with only 4 crypto symbols (BTCUSD, ETHUSD, BTCEUR, ETHBTC). The leverage FAQ lists no crypto ratio. Weekend trading and holding are allowed. Copy trading is allowed only between your own accounts, done manually (no copier EA). KYC is triggered by the first payout request and must be passed before payment. Crypto payouts in USDT-BSC or USDC-ERC20.",
+  "sources": [
+    "https://maventrading.com/faqs",
+    "https://maventrading.com/pricing"
+  ],
+  "checked": "2026-10-26"
+}

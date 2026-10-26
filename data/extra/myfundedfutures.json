@@ -1,0 +1,37 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": "full refund only if no trades placed and requested within 14 days of purchase; breached accounts and crypto purchases not refunded",
+  "fee_refundable": false,
+  "time_limit": null,
+  "has_time_limit": null,
+  "activation_fee": 0,
+  "payout_methods": [
+    "Rise"
+  ],
+  "min_payout": "$500 (Rapid 50K after buffer); $250 Builder 25K / $500 Builder 50K",
+  "kyc_before_payout": true,
+  "scaling_plan": "Sim-funded accounts have a contract scaling plan (start with fewer contracts, unlock more with profit)",
+  "ea_bots": "restricted",
+  "copy_trading": true,
+  "hedging": false,
+  "max_risk_per_trade": null,
+  "inactivity_rule": "Evaluations bought on/after 2026-08-25 (one-time payment model) must trade at least every 7 days; notify support for longer breaks",
+  "notes": "Since 25 Aug 2026 new evaluations are one-time payments (no monthly rebill); legacy subscribers keep monthly billing. $0 activation fee on all plans. Reset price not found in help centre. Automated strategies allowed if not exploiting sim fills; HFT banned. Hedging of any kind (incl. mini vs micro of same underlying) prohibited. Copy trading allowed across all account types. KYC/AML mandatory before payouts. Payouts referenced via Rise (1099 article).",
+  "sources": [
+    "https://help.myfundedfutures.com/en/articles/11542523-refund-cancellation-policy-transparent-and-trader-first",
+    "https://help.myfundedfutures.com/en/articles/12398151-does-myfundedfutures-charge-activation-fees",
+    "https://help.myfundedfutures.com/en/articles/13134709-rapid-plan-50k-a-comprehensive-look",
+    "https://help.myfundedfutures.com/en/articles/13745661-payout-policy-overview-best-and-fastest-prop-firm-payouts",
+    "https://help.myfundedfutures.com/en/articles/9717961-kyc-aml-policies",
+    "https://help.myfundedfutures.com/en/articles/16596524-inactivity-rule-one-time-payment-model",
+    "https://help.myfundedfutures.com/en/articles/16596406-understanding-the-difference-between-account-resets-and-renewals",
+    "https://help.myfundedfutures.com/en/articles/8444599-fair-play-and-prohibited-trading-practices",
+    "https://help.myfundedfutures.com/en/articles/10771500-copy-trading-at-myfundedfutures",
+    "https://help.myfundedfutures.com/en/articles/10244682-cross-instrument-policy",
+    "https://help.myfundedfutures.com/en/articles/13337287-your-1099-tax-documents"
+  ],
+  "checked": "2026-10-26",
+  "reset_fee_usd": null,
+  "monthly_fee": false
+}

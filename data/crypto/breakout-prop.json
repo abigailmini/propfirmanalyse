@@ -1,0 +1,53 @@
+{
+  "crypto_pairs": 68,
+  "crypto_pairs_examples": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "XRP",
+    "DOGE",
+    "HYPE"
+  ],
+  "crypto_leverage": "auto-set per symbol: BTC 10x; ETH/SOL/XRP and other majors 5x; mid-caps 3x; small caps 2x",
+  "crypto_venue": "Breakout Terminal or DXtrade; simulated, priced from third-party brokers, market makers and exchanges (operated by Payward Oceanic Ltd / Breakout Trading Group)",
+  "instrument_type": null,
+  "weekend_crypto": true,
+  "payout_methods": [
+    "USDC (ERC-20)"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": true,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": "Max position size set per instrument on breakoutprop.com/symbols; leverage auto-applied per symbol.",
+  "banned_strategies": [
+    "exploiting pricing/latency errors",
+    "trading on non-public info / front-running",
+    "off-the-shelf or third-party strategies",
+    "switching strategy between evaluation and funded",
+    "arbitraging demo account vs other accounts",
+    "trades likely to be auto-deleveraged or with outsized unrealized P&L swings",
+    "copying third-party trade ideas/signals",
+    "cross-account or cross-trader hedging",
+    "copy trading across users",
+    "sharing account access / multiple accounts from same household/device/IP"
+  ],
+  "bots_allowed": null,
+  "copy_trading": false,
+  "crypto_fees": "0.04% per buy or sell order; 0.033% daily swap per open position held at 00:00 UTC",
+  "notes": "Crypto-first firm (Kraken-linked Payward entity). Leverage table lists 68 crypto symbols plus a few non-crypto (XYZ100, S&P500, crude, silver). Hedging inside one account is allowed (Hedge Mode on by default). KYC via SumSub is mandatory before funded access and payouts. Payouts only in USDC on ERC-20, $50 minimum. Help center doesn't say whether bots/API trading are allowed or whether instruments are perps.",
+  "sources": [
+    "https://intercom.help/breakoutprop/en/articles/11644138-what-is-the-available-leverage",
+    "https://intercom.help/breakoutprop/en/articles/11647201-what-trading-practices-are-prohibited-in-my-funded-account",
+    "https://intercom.help/breakoutprop/en/articles/11644090-what-trading-practices-are-prohibited-during-the-breakout-evaluation",
+    "https://intercom.help/breakoutprop/en/articles/11647207-what-are-the-position-size-limits",
+    "https://intercom.help/breakoutprop/en/articles/11647220-what-are-the-rules-for-hedging-and-copy-trading",
+    "https://intercom.help/breakoutprop/en/articles/11647229-what-payout-methods-are-available",
+    "https://intercom.help/breakoutprop/en/articles/11647237-what-are-the-kyc-requirements-for-funded-accounts",
+    "https://intercom.help/breakoutprop/en/articles/11647195-what-are-the-trading-fees-and-commissions-in-a-funded-account",
+    "https://intercom.help/breakoutprop/en/articles/11647205-can-i-hold-positions-over-the-weekend-in-my-funded-account",
+    "https://intercom.help/breakoutprop/en/articles/11647273-what-trading-platforms-does-payward-oceanic-ltd-pol-support",
+    "https://intercom.help/breakoutprop/en/articles/11647277-who-provides-liquidity-for-payward-oceanic-ltd-pol-s-trading-environment",
+    "https://intercom.help/breakoutprop/en/articles/11647230-what-is-the-minimum-payout-amount"
+  ],
+  "checked": "2026-10-26"
+}

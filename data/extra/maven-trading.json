@@ -1,0 +1,27 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": "challenge fee refunded after 3rd reward from the simulated funded account",
+  "fee_refundable": true,
+  "time_limit": "no time limit stated for Standard 1/2-step; 180 days total on 2-Step OMO; 24h on Instant Mini",
+  "has_time_limit": null,
+  "activation_fee": null,
+  "payout_methods": [
+    "Bank transfer",
+    "Crypto (USDT-BSC, USDC-ERC20)",
+    "Rise Pay"
+  ],
+  "min_payout": "$20 profit (Standard 1/2-step funded)",
+  "kyc_before_payout": true,
+  "scaling_plan": null,
+  "ea_bots": false,
+  "copy_trading": true,
+  "hedging": false,
+  "max_risk_per_trade": null,
+  "inactivity_rule": "at least one trade every 30 days",
+  "notes": "Refund covers 1/2/3-step, OMO, BNPL and Instant programs, paid separately from rewards. KYC (Veriff) done before funded account is issued. EAs and automated trading banned on all platforms; copy trading only between your own accounts and not via EA. Hedging accounts and reverse/group hedging prohibited. Excessive scalping (>50% of trades held <60s) banned; all-in trading banned. Payout methods vary by country. Reset/retry pricing, scaling plan and per-trade risk cap not found on FAQ.",
+  "sources": [
+    "https://maventrading.com/faqs"
+  ],
+  "checked": "2026-10-26"
+}

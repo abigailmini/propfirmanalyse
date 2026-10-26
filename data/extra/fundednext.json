@@ -1,0 +1,33 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": null,
+  "fee_refundable": null,
+  "time_limit": null,
+  "has_time_limit": null,
+  "activation_fee": null,
+  "payout_methods": [
+    "USDT (ERC20/TRC20)",
+    "USDC (ERC20)",
+    "Confirmo",
+    "RiseWorks",
+    "bank transfer",
+    "card"
+  ],
+  "min_payout": null,
+  "kyc_before_payout": true,
+  "scaling_plan": "Scale-Up plan to up to $4M simulated capital; criteria changed for Stellar challenges bought/reset after 12 Jan 2026",
+  "ea_bots": null,
+  "copy_trading": false,
+  "hedging": null,
+  "max_risk_per_trade": null,
+  "inactivity_rule": null,
+  "notes": "copy_trading=false for funded accounts / between traders; own Challenge accounts may copy each other (combined max $300K, one master). KYC + agreement signing required after passing the challenge (~48h), before funded account/payouts.  Payout requested from dashboard with email OTP after trading cycle. Reset/refund/time-limit pages not captured in this pass.",
+  "sources": [
+    "https://help.fundednext.com/en/articles/8019659-does-fundednext-offer-a-scale-up-plan",
+    "https://help.fundednext.com/en/articles/8019805-what-is-the-copy-trading-rule-at-fundednext",
+    "https://help.fundednext.com/en/articles/8020084-how-can-i-withdraw-my-profits",
+    "https://help.fundednext.com/en/articles/8020293-how-can-i-complete-the-kyc-verification-process"
+  ],
+  "checked": "2026-10-26"
+}

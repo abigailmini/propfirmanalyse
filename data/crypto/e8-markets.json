@@ -1,0 +1,25 @@
+{
+  "crypto_pairs": null,
+  "crypto_pairs_examples": [],
+  "crypto_leverage": null,
+  "crypto_venue": null,
+  "instrument_type": null,
+  "weekend_crypto": null,
+  "payout_methods": [],
+  "crypto_payout": null,
+  "kyc_before_payout": null,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": null,
+  "banned_strategies": [],
+  "bots_allowed": null,
+  "copy_trading": null,
+  "crypto_fees": null,
+  "notes": "BLOCKED: e8markets.com and help.e8markets.com sit behind a Cloudflare human check that blocked curl, headless Chrome and web_fetch (403) on 2026-10-26, so nothing could be verified and every field is null. Retry with an interactive browser session.",
+  "sources": [
+    "https://e8markets.com/",
+    "https://help.e8markets.com/en/articles/5514982-how-much-leverage-do-you-offer",
+    "https://help.e8markets.com/en/articles/15272556-everything-about-payouts-when-how-how-fast",
+    "https://help.e8markets.com/en/articles/5514966-can-i-hold-positions-overnight-and-trade-over-the-weekend"
+  ],
+  "checked": "2026-10-26"
+}

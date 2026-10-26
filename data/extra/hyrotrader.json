@@ -1,0 +1,34 @@
+{
+  "reset_fee": "no reset; buy new challenge (no repeat-attempt discount)",
+  "retry_discount_pct": 0,
+  "refund_policy": "One-Step/Two-Step deposit returned with first payout; Zero-Step fee not refunded once activated",
+  "fee_refundable": true,
+  "time_limit": "unlimited",
+  "has_time_limit": false,
+  "activation_fee": null,
+  "payout_methods": [
+    "USDT",
+    "USDC"
+  ],
+  "min_payout": null,
+  "kyc_before_payout": null,
+  "scaling_plan": "split 80% -> up to 90% at firm's discretion (One/Two-Step); no capital scaling stated",
+  "ea_bots": true,
+  "copy_trading": false,
+  "hedging": true,
+  "max_risk_per_trade": "funded: total margin max 25% of initial balance; open notional max 2x initial balance; low-cap alts max 5%",
+  "inactivity_rule": "account fails if no trade for 30 days (timer resets on trade, payout or reactivation)",
+  "notes": "Own bots/automated strategies allowed; third-party bots, signal services, copy trading and mirroring are not. Hedging allowed inside one account, banned across accounts. Zero-Step fee non-refundable (only before activation). Payouts within 24h, no withdrawal fees, positions must be closed first; first payout possible once funded account is in profit. Exposure caps apply to funded accounts only. 'Minimum evaluation period: Unlimited' on homepage.",
+  "sources": [
+    "https://www.hyrotrader.com/faq/hyrotrader-account/can-i-use-trading-bots-or-signal-bots-during-the-challenge-or-on-a-funded-account/",
+    "https://www.hyrotrader.com/faq/hyrotrader-account/is-the-refundable-challenge-deposit-returned-together-with-my-first-payout/",
+    "https://www.hyrotrader.com/faq/rules/do-you-have-an-inactivity-rule/",
+    "https://www.hyrotrader.com/faq/rules/what-are-the-risk-management-conditions-at-hyrotrader/",
+    "https://www.hyrotrader.com/faq/rules/if-i-break-the-rules-do-i-get-another-chance/",
+    "https://www.hyrotrader.com/faq/rules/are-there-any-other-rules-for-a-funded-account/",
+    "https://www.hyrotrader.com/faq/hyrotrader-account/how-can-i-withdraw-my-profits/",
+    "https://www.hyrotrader.com/faq/hyrotrader-account/how-much-is-the-profit-split/",
+    "https://www.hyrotrader.com/"
+  ],
+  "checked": "2026-10-26"
+}

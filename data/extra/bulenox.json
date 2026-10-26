@@ -1,0 +1,30 @@
+{
+  "reset_fee": "$78 per reset on a Qualification account (same account, balance restored)",
+  "retry_discount_pct": null,
+  "refund_policy": "not refunded once the service has been used",
+  "fee_refundable": false,
+  "time_limit": "no minimum or maximum trading days; Qualification access ends with its (non-recurring) subscription cycle",
+  "has_time_limit": null,
+  "activation_fee": null,
+  "payout_methods": [
+    "ACH",
+    "Wire transfer",
+    "PayPal"
+  ],
+  "min_payout": null,
+  "kyc_before_payout": null,
+  "scaling_plan": "Option 2 (EOD): contract size scales with cash on hand; Option 1: full size from day one",
+  "ea_bots": "restricted",
+  "copy_trading": true,
+  "hedging": null,
+  "max_risk_per_trade": null,
+  "inactivity_rule": null,
+  "notes": "Reset price stated as a flat $78 (no per-size breakdown on FAQ). Master account has a one-time activation fee that varies by size (amount not on FAQ); Momentum Master activates free. Qualification has no recurring charge. Bots/algos/copiers allowed if user-built for personal use; commercial/shared tools banned; third-party Rithmic API adds $100/mo. Payouts daily on Fast Track/Momentum, Wednesdays on regular Master; 90/10 split. Max 5 funded-type accounts. All positions closed by 3:59pm CT. FAQ answers read from the site's own CMS feed behind bulenox.com/faq.",
+  "sources": [
+    "https://bulenox.com/faq",
+    "https://bulenox.com/cms/items/faq_items"
+  ],
+  "checked": "2026-10-26",
+  "reset_fee_usd": 78,
+  "monthly_fee": false
+}

@@ -1,0 +1,40 @@
+{
+  "crypto_pairs": 4,
+  "crypto_pairs_examples": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT",
+    "XRPUSDT"
+  ],
+  "crypto_leverage": "X Mode up to 100x; Y/Z Mode 1x-5x (user-selectable)",
+  "crypto_venue": null,
+  "instrument_type": "perpetuals",
+  "weekend_crypto": true,
+  "payout_methods": [
+    "USDT (BEP20)"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": true,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": "X Mode: net open exposure ≤2x account size (same-pair long/short offsets; different pairs add up). Y/Z Mode: open position size ≤40% of total leveraged notional; Y/Z evaluations also cap profit at 3% per trade and 3%/day.",
+  "banned_strategies": [
+    "copy trading between accounts",
+    "API trading",
+    "VPN/location masking",
+    "EAs/bots unless explicitly permitted",
+    "manipulative/abusive trading",
+    "exploiting pricing errors",
+    "coordinating trades across multiple accounts"
+  ],
+  "bots_allowed": false,
+  "copy_trading": false,
+  "crypto_fees": null,
+  "notes": "Crypto-only simulated firm. X Mode (instant) trades BTC/ETH/SOL/XRP USDT pairs with limit-order-only entries; Y/Z Mode trade BTC and ETH perpetuals only, so pair count is 4 at most. Payouts in USDT on BEP20 within ~48h after identity/sanctions/fraud review; $100 minimum. Weekend and overnight holding allowed. Execution venue/exchange not disclosed; trading fees not published.",
+  "sources": [
+    "https://www.fundedxyz.com/",
+    "https://www.fundedxyz.com/faq",
+    "https://www.fundedxyz.com/terms",
+    "https://www.fundedxyz.com/payouts"
+  ],
+  "checked": "2026-10-26"
+}

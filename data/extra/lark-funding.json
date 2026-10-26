@@ -1,0 +1,35 @@
+{
+  "reset_fee": "surrender (if within risk limits) for a 75% discount code to restart at Phase 1; 1-Step Max includes up to 3 free restarts",
+  "retry_discount_pct": 75,
+  "refund_policy": "not refunded",
+  "fee_refundable": false,
+  "time_limit": "unlimited",
+  "has_time_limit": false,
+  "activation_fee": null,
+  "payout_methods": [
+    "Riseworks"
+  ],
+  "min_payout": "$100 ($50 on $1,000 Instant)",
+  "kyc_before_payout": true,
+  "scaling_plan": null,
+  "ea_bots": null,
+  "copy_trading": true,
+  "hedging": true,
+  "max_risk_per_trade": "1.5% recommended guideline; hard 1% per-trade loss limit on 1-Step Max",
+  "inactivity_rule": "Account breached after 30 days without a trade; reinstatement on request, not guaranteed",
+  "notes": "Help centre says challenge fee is not refundable (firms.json notes an Oct 2026 promo refunding the fee with first payout — promo only). Surrender button gives 75% off a restart if drawdown use ≤70% and no single trade lost >1%; 1-Step Max/Career surrender gives a 100% code (up to 3 times). Flat $40 Riseworks processing fee per payout. KYC done after passing the evaluation, before Master account. Hedging inside one account allowed; group/cross-account hedging banned. Copy trading only between accounts you own; evals must be passed individually (one copied eval). Per-trade/daily gain limit $10K. EA policy for normal accounts not found (EAs banned only in monthly competition).",
+  "sources": [
+    "https://helpdesk.larkfunding.com/en/articles/7174156-is-the-challenge-fee-refundable",
+    "https://helpdesk.larkfunding.com/en/articles/8272408-surrender-account-feature",
+    "https://helpdesk.larkfunding.com/en/articles/17319722-1-step-max-evaluation-details",
+    "https://helpdesk.larkfunding.com/en/articles/8164361-the-lark-simulated-funded-reset",
+    "https://helpdesk.larkfunding.com/en/articles/8117403-how-do-payouts-work",
+    "https://helpdesk.larkfunding.com/en/articles/13714987-withdrawal-rules-1-000-instant-account",
+    "https://helpdesk.larkfunding.com/en/articles/11750010-how-long-does-the-evaluation-process-take",
+    "https://helpdesk.larkfunding.com/en/articles/7173658-how-quickly-will-i-receive-my-master-account",
+    "https://helpdesk.larkfunding.com/en/articles/8243502-prohibited-trading-strategies",
+    "https://helpdesk.larkfunding.com/en/articles/13941115-can-i-copy-trades-from-my-other-prop-firm-accounts",
+    "https://helpdesk.larkfunding.com/en/articles/7174035-is-there-a-breach-for-inactivity"
+  ],
+  "checked": "2026-10-26"
+}

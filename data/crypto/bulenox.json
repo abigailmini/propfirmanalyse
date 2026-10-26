@@ -1,0 +1,32 @@
+{
+  "crypto_pairs": 2,
+  "crypto_pairs_examples": [
+    "MBT (CME Micro Bitcoin futures)",
+    "Micro Ether futures"
+  ],
+  "crypto_leverage": null,
+  "crypto_venue": "CME Group futures data via Rithmic (simulated)",
+  "instrument_type": null,
+  "weekend_crypto": false,
+  "payout_methods": [
+    "ACH",
+    "wire transfer",
+    "PayPal"
+  ],
+  "crypto_payout": false,
+  "kyc_before_payout": null,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": "Contract limits per account size; all positions must be closed by 3:59pm CT each trading day.",
+  "banned_strategies": [
+    "commercial, shared, rented or publicly distributed automation tools"
+  ],
+  "bots_allowed": "restricted",
+  "copy_trading": true,
+  "crypto_fees": null,
+  "notes": "Futures-only firm (CME/CBOT/NYMEX/COMEX). Crypto exposure is limited to CME Micro Bitcoin and Micro Ether futures, which aren't perps, spot or CFDs, so instrument_type is null. Positions must be flat by 3:59pm CT daily, so no weekend or overnight crypto holding. Bots, algos and trade copiers are allowed if they're your own (third-party Rithmic API connection costs $100/month). No crypto payouts: ACH, wire or PayPal only.",
+  "sources": [
+    "https://bulenox.com/faq",
+    "https://bulenox.com/"
+  ],
+  "checked": "2026-10-26"
+}

@@ -1,0 +1,56 @@
+[
+ {
+  "date": "2026-10-26",
+  "slug": "bitfunded",
+  "firm": "Bitfunded",
+  "field": "Listing",
+  "old": null,
+  "new": "Added to PropAnalyse",
+  "kind": "Listing"
+ },
+ {
+  "date": "2026-10-26",
+  "slug": "ftmo",
+  "firm": "FTMO",
+  "field": "First payout (days)",
+  "old": null,
+  "new": "14",
+  "kind": "Payouts"
+ },
+ {
+  "date": "2026-10-26",
+  "slug": "ftmo",
+  "firm": "FTMO",
+  "field": "Payout frequency",
+  "old": null,
+  "new": "Reward claim from day 14 after first trade (14-day cycle); approval 1-2 business days, paid 1-2 business days after invoice",
+  "kind": "Payouts"
+ },
+ {
+  "date": "2026-10-26",
+  "slug": "the5ers",
+  "firm": "The5ers",
+  "field": "First payout (days)",
+  "old": null,
+  "new": "14",
+  "kind": "Payouts"
+ },
+ {
+  "date": "2026-10-26",
+  "slug": "the5ers",
+  "firm": "The5ers",
+  "field": "Payout frequency",
+  "old": null,
+  "new": "bi-weekly: first payout 14 days after funding, then every 2 weeks ($150 min profit, High Stakes); cycle resets on each scale-up",
+  "kind": "Payouts"
+ },
+ {
+  "date": "2026-10-26",
+  "slug": "bitfunded",
+  "firm": "Bitfunded",
+  "field": "Payout frequency",
+  "old": "up to 2 per 30 days per account, on a self-set Profit Sharing Day (2 to 60 days); monthly after 10 payouts; Instant Funding monthly; processed within 24h on working days in USDT",
+  "new": "bi-weekly at most (up to 2 per 30 days per account) on a self-set Profit Sharing Day, 2 to 60 days; monthly after 10 payouts; Instant Funding monthly; processed within 24h on working days in USDT",
+  "kind": "Payouts"
+ }
+]

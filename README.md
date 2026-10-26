@@ -7,6 +7,9 @@ Static, data-first prop firm comparison site. Every page is generated from `data
 python3 scripts/merge.py      # data/raw/<slug>.json -> data/firms.json (canonical crypto-first order)
 python3 scripts/build.py      # data/firms.json -> site/
 ```
+Page modules: `scripts/more_core.py` (overlays, changelog, reviews), `more_pages_a.py` (offers, crypto, news), `more_pages_b.py` (tools, quiz, glossary, FAQ, methodology, SEO), `more_guides.py`. Overlays: `data/extra/<slug>.json` (resets, refunds, time limits) and `data/crypto/<slug>.json` (crypto rules).
+Rule-change log: every local build diffs firms vs `data/snapshot.json` and appends to `data/changelog.json`. **Always build locally after a data change and commit both files**; CI only renders them.
+
 Env: `BASE_PATH` (default empty; site is served from the domain root) and `SITE_URL` (default `https://propanalyse.com`).
 Pushing to `main` runs `.github/workflows/pages.yml`, which builds and deploys to GitHub Pages at https://propanalyse.com (custom domain set in Pages settings; build also writes `site/CNAME`).
 

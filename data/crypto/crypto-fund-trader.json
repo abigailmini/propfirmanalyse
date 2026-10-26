@@ -1,0 +1,43 @@
+{
+  "crypto_pairs": 550,
+  "crypto_pairs_examples": [
+    "BTCUSDT",
+    "ETHUSDT"
+  ],
+  "crypto_leverage": "Bybit accounts up to 1:100 (per Bybit instrument limits); Advanced accounts (Match-Trader/MT5) crypto 1:100; Student accounts crypto 1:5",
+  "crypto_venue": "Bybit (trader's own Bybit account/sub-account via API) or Match-Trader / MetaTrader 5 (RLCRATES data feed)",
+  "instrument_type": "perpetuals",
+  "weekend_crypto": true,
+  "payout_methods": [
+    "bank transfer (EUR/USD)",
+    "USDT (ERC20)",
+    "USDT (TRC20)",
+    "BTC",
+    "ETH"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": true,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": "No fixed max lot size; position limited by margin and leverage. Opposite positions on the same asset may not stay open together for 60s or longer (reverse trading rule). Reset eligibility requires every final-stage trade to have a stop loss and risk ≤2% of account.",
+  "banned_strategies": [
+    "high-frequency trading",
+    "tick scalping",
+    "latency arbitrage / arbitrage",
+    "hedging across accounts",
+    "reverse trading (opposite positions ≥60s)",
+    "gambling / all-in trading",
+    "spot trading on Bybit sub-account",
+    "modifying or disconnecting the Bybit API",
+    "copy trading between different traders"
+  ],
+  "bots_allowed": "restricted",
+  "copy_trading": false,
+  "crypto_fees": "Bybit: Bybit's native maker/taker fees, no CFT markup, plus Bybit funding rates. Match-Trader/MT5: crypto 0.0325% per side; swaps apply overnight.",
+  "notes": "Hybrid crypto-first firm: Bybit route trades 550+ USDT crypto futures pairs on your own Bybit account (USDC pairs don't count; spot banned); Match-Trader/MT5 route offers ~556 crypto CFDs plus FX/indices. EAs allowed except HFT, tick-scalping and arbitrage types. Copy trading only between your own Break accounts during evaluation; banned in final stage. KYC must be approved before any reward is processed.",
+  "sources": [
+    "https://cryptofundtrader.com/faq/",
+    "https://cryptofundtrader.com/bybit/",
+    "https://cryptofundtrader.com/terms-and-conditions/"
+  ],
+  "checked": "2026-10-26"
+}

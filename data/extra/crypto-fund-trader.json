@@ -1,0 +1,29 @@
+{
+  "reset_fee": "Final Stage only (1/2-Phase), if all trades had SL and none risked >2%: reset account $180-$3,620 (2-Phase) / $198-$3,980 (1-Phase), within 30 days",
+  "retry_discount_pct": null,
+  "refund_policy": null,
+  "fee_refundable": null,
+  "time_limit": "unlimited",
+  "has_time_limit": false,
+  "activation_fee": null,
+  "payout_methods": [
+    "bank transfer (EUR/USD)",
+    "USDT (ERC20)",
+    "USDT (TRC20)",
+    "BTC",
+    "ETH"
+  ],
+  "min_payout": null,
+  "kyc_before_payout": true,
+  "scaling_plan": "Instant: account doubles at each 10% profit (Withdraw & Upgrade), up to $1,280,000; final-stage allocation cap $300K",
+  "ea_bots": "restricted",
+  "copy_trading": false,
+  "hedging": null,
+  "max_risk_per_trade": "no hard cap stated; 2% per trade + stop loss required to qualify for reset / 50% reward on a breached final-stage account",
+  "inactivity_rule": null,
+  "notes": "No evaluation time limit or min trading days. Final stage: payout after 15 traded days or every 30 calendar days. Prohibited: HFT, tick scalping, arbitrage EAs, news-scalping EAs, reverse trading across accounts, 'abusive hedging', gambling/all-in trading. Copy trading banned on final stage (Break allows own-account copying in evaluation only). KYC (ID + proof of address + contract) must be approved before any payout. Breached final stage with profit may still get up to 50% reward if SL/2% conditions met. Fee refund policy not stated in FAQ.",
+  "sources": [
+    "https://cryptofundtrader.com/faq/"
+  ],
+  "checked": "2026-10-26"
+}

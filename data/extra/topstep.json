@@ -1,0 +1,39 @@
+{
+  "reset_fee": "$49 per reset (50K Standard path); $95 (50K No Activation Fee path); each monthly rebill also adds 1 free reset credit",
+  "retry_discount_pct": null,
+  "refund_policy": "not refunded (combine fees, resets, activation fees non-refundable); new customers can get up to 1 monthly payment back within first 14 days if not passed",
+  "fee_refundable": false,
+  "time_limit": null,
+  "has_time_limit": null,
+  "activation_fee": 149,
+  "payout_methods": [
+    "Prop-to-brokerage (US)",
+    "Aeropay (US)",
+    "Wise (China, Canada, UK)",
+    "ACH (US, $30 fee)",
+    "Wire/SWIFT ($30 fee)"
+  ],
+  "min_payout": null,
+  "kyc_before_payout": true,
+  "scaling_plan": "XFA has a scaling plan (contract limits grow with balance)",
+  "ea_bots": "restricted",
+  "copy_trading": true,
+  "hedging": false,
+  "max_risk_per_trade": null,
+  "inactivity_rule": null,
+  "notes": "Combine is a monthly subscription (50K $49/mo Standard, $95/mo No Activation Fee path); reset price equals the monthly price and pushes rebill date 30 days. $149 one-time XFA activation on Standard path, $0 on No-Activation path. Identity verification required after first purchase. Automated strategies allowed in sim with conditions (no support), not on Live Funded. Cross-account hedging prohibited. Copy trading supported in TopstepX. XFA payout cap 50% of balance up to $5K-$6K per request.",
+  "sources": [
+    "https://help.topstep.com/en/articles/14289835-topstep-pricing-and-payment-questions",
+    "https://help.topstep.com/en/articles/8284128-what-is-a-reset",
+    "https://help.topstep.com/en/articles/8284117-topstep-refund-policies",
+    "https://help.topstep.com/en/articles/8284233-topstep-payout-policy",
+    "https://help.topstep.com/en/articles/8284215-express-funded-account-parameters",
+    "https://help.topstep.com/en/articles/12578731-how-identity-verification-works",
+    "https://help.topstep.com/en/?q=automated",
+    "https://help.topstep.com/en/articles/13747047-understanding-hedging",
+    "https://help.topstep.com/en/articles/14434175-topstepx"
+  ],
+  "checked": "2026-10-26",
+  "reset_fee_usd": 49,
+  "monthly_fee": true
+}

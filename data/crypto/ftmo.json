@@ -1,0 +1,42 @@
+{
+  "crypto_pairs": null,
+  "crypto_pairs_examples": [],
+  "crypto_leverage": null,
+  "crypto_venue": "FTMO-provided platforms (simulated CFD accounts)",
+  "instrument_type": "CFD",
+  "weekend_crypto": true,
+  "payout_methods": [
+    "bank wire",
+    "Visa Direct / Mastercard Send (up to $20,000)",
+    "Skrill (up to $3,000)",
+    "cryptocurrencies"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": true,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": "No fixed crypto position cap published; forbidden practices cover overleveraging, overexposure, one-sided bets and position sizes far larger than your usual trades.",
+  "banned_strategies": [
+    "exploiting price errors / delayed or external feeds",
+    "opposite positions across accounts or with other traders",
+    "ultra-high-speed / AI / mass data-entry tools giving unfair advantage",
+    "gap trading around major news or ≤2h before long market closures",
+    "EAs causing >2,000 server requests per day",
+    "overleveraging, overexposure, one-sided bets, account rolling",
+    "hedging or splitting trades to get around the Best Day / Consistency rule",
+    "third-party trading on your account"
+  ],
+  "bots_allowed": "restricted",
+  "copy_trading": null,
+  "crypto_fees": null,
+  "notes": "Forex-first CFD firm; crypto CFDs are on the symbols list and weekend crypto trading is allowed when the market is open. Holding through market breaks over 2h is barred on Standard funded/Instant accounts but allowed on Swing accounts and during Challenge/Verification. EAs/algos allowed within the forbidden-practice limits. KYC (FTMO Identity) is done after passing, or at the first reward on Instant accounts. Crypto withdrawals have a $50 minimum. The crypto leverage and symbol table loads by JavaScript and couldn't be read, so those fields are null.",
+  "sources": [
+    "https://ftmo.com/en/faq/how-do-i-withdraw-my-profits/",
+    "https://ftmo.com/en/faq/can-i-trade-on-the-weekend/",
+    "https://ftmo.com/en/faq/can-i-hold-positions-overnight-or-over-the-weekend/",
+    "https://ftmo.com/en/forbidden-trading-practices/",
+    "https://ftmo.com/en/faq/what-is-ftmo-identity-and-when-do-i-complete-it/",
+    "https://ftmo.com/en/faq/which-instruments-can-i-trade/",
+    "https://ftmo.com/en/symbols/"
+  ],
+  "checked": "2026-10-26"
+}

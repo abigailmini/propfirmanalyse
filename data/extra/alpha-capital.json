@@ -1,0 +1,23 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": null,
+  "fee_refundable": null,
+  "time_limit": null,
+  "has_time_limit": null,
+  "activation_fee": null,
+  "payout_methods": [],
+  "min_payout": null,
+  "kyc_before_payout": null,
+  "scaling_plan": null,
+  "ea_bots": null,
+  "copy_trading": null,
+  "hedging": null,
+  "max_risk_per_trade": null,
+  "inactivity_rule": null,
+  "notes": "Not captured in this pass (homepage had no rule details); needs help-centre/product pages.",
+  "sources": [
+    "https://alphacapitalgroup.uk/"
+  ],
+  "checked": "2026-10-26"
+}

@@ -1,0 +1,41 @@
+{
+  "crypto_pairs": null,
+  "crypto_pairs_examples": [],
+  "crypto_leverage": "2:1 on 3-Step Evaluation (other programs not stated per asset)",
+  "crypto_venue": "DXTrade, cTrader or Match-Trader (simulated CFD feed from third-party liquidity providers)",
+  "instrument_type": "CFD",
+  "weekend_crypto": false,
+  "payout_methods": [
+    "Riseworks"
+  ],
+  "crypto_payout": null,
+  "kyc_before_payout": true,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": "No lot-size cap; recommended max crypto margin use 75% and ≤1.5% risk per trade idea; $10,000 daily/per-trade gain limit; 1-Step MAX: no trade setup may lose >1% of initial balance. Margin call 110%, stop-out 100%.",
+  "banned_strategies": [
+    "all-or-nothing / gambling-style trading",
+    "HFT EAs",
+    "arbitrage EAs",
+    "hedging across accounts",
+    "copying trades into multiple evaluation accounts"
+  ],
+  "bots_allowed": "restricted",
+  "copy_trading": true,
+  "crypto_fees": "Crypto CFDs commission-free (3-Step details); swaps may apply overnight unless swap-free",
+  "notes": "FX-first CFD firm; crypto is offered as CFDs only. Weekend holding requires the paid 'Hold Over The Weekend' add-on (+10% of fee); without it all trades are closed at 3:45pm EST Friday. With the add-on, crypto trades on weekends apart from short maintenance breaks. Copying from your own external accounts is allowed into one evaluation, or across multiple accounts once funded. Payouts via Riseworks, $100 min, $40 flat fee; site doesn't say if crypto withdrawal is offered. KYC is done after passing, before the funded account.",
+  "sources": [
+    "https://helpdesk.larkfunding.com/en/articles/11738989-what-trading-platform-does-lark-funding-offer",
+    "https://helpdesk.larkfunding.com/en/articles/13644432-what-is-hold-over-the-weekend-add-on-and-how-does-it-work",
+    "https://helpdesk.larkfunding.com/en/articles/13941115-can-i-copy-trades-from-my-other-prop-firm-accounts",
+    "https://helpdesk.larkfunding.com/en/articles/15157354-is-there-any-lot-size-restriction",
+    "https://helpdesk.larkfunding.com/en/articles/7174115-can-i-use-an-expert-advisor",
+    "https://helpdesk.larkfunding.com/en/articles/8243502-prohibited-trading-strategies",
+    "https://helpdesk.larkfunding.com/en/articles/7174260-margin-rules",
+    "https://helpdesk.larkfunding.com/en/articles/8117403-how-do-payouts-work",
+    "https://helpdesk.larkfunding.com/en/articles/8486644-is-hedging-allowed",
+    "https://helpdesk.larkfunding.com/en/articles/8251071-3-step-evaluation-details",
+    "https://helpdesk.larkfunding.com/en/articles/17319722-1-step-max-evaluation-details",
+    "https://larkfunding.com/"
+  ],
+  "checked": "2026-10-26"
+}

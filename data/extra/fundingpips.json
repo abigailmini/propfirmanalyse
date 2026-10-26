@@ -1,0 +1,23 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": "site legal text: program fees non-refundable once paid (except where law requires)",
+  "fee_refundable": false,
+  "time_limit": null,
+  "has_time_limit": null,
+  "activation_fee": null,
+  "payout_methods": [],
+  "min_payout": null,
+  "kyc_before_payout": null,
+  "scaling_plan": null,
+  "ea_bots": null,
+  "copy_trading": null,
+  "hedging": null,
+  "max_risk_per_trade": null,
+  "inactivity_rule": null,
+  "notes": "Only the help-centre home/legal footer was read in this pass; check whether any program refunds the fee with a payout (firms.json has nothing on this). Other fields not captured.",
+  "sources": [
+    "https://help.fundingpips.com/en/"
+  ],
+  "checked": "2026-10-26"
+}

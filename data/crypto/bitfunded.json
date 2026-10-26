@@ -1,0 +1,35 @@
+{
+  "crypto_pairs": 100,
+  "crypto_pairs_examples": [],
+  "crypto_leverage": "1x to 5x",
+  "crypto_venue": "Bitfunded's own in-house platform on live market data from partner exchanges (exchanges not named)",
+  "instrument_type": null,
+  "weekend_crypto": true,
+  "payout_methods": [
+    "USDT (ERC-20)",
+    "USDT (BEP-20)",
+    "USDT (TRC-20)"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": false,
+  "min_trade_duration": "each qualifying trade (min 2 per payout period, 3 on Instant Funding) must be open ≥10 minutes",
+  "max_position_or_risk_rule": "Margin concentration ≤65% combined exposure (55% on Instant Funding); max 5 open positions (FAQ; terms say 10); max holding time 10 days major crypto / 7 days minor crypto / 5 days TradFi; Instant Funding: no single pair ≥60% of net profit.",
+  "banned_strategies": [
+    "hedging (opposite positions same asset)",
+    "coordinated trading across accounts",
+    "bots / EAs / scripts / API automation",
+    "copy or mirrored trading between accounts",
+    "multiple user profiles",
+    "all-in / gambling trades"
+  ],
+  "bots_allowed": false,
+  "copy_trading": false,
+  "crypto_fees": "0.04% of position size to open and 0.04% to close",
+  "notes": "Crypto-native firm with its own platform: 100+ crypto pairs plus ~20 TradFi pairs, 1-5x leverage, runs 24/7. KYC is only required once cumulative profit reaches $10,000 (terms), so it is not needed before the first payouts. Payouts in USDT on ERC-20/BEP-20/TRC-20, reviewed within 24h on working days. The FAQ says the user guide's rules win if the two differ.",
+  "sources": [
+    "https://www.bitfunded.com/frequently-asked-questions/",
+    "https://www.bitfunded.com/",
+    "https://www.bitfunded.com/terms-of-use/"
+  ],
+  "checked": "2026-10-26"
+}

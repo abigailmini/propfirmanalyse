@@ -1,0 +1,28 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": "2-Step: fee refunded with first Reward withdrawal (same payment method); 1-Step and Instant: not refunded",
+  "fee_refundable": true,
+  "time_limit": "unlimited",
+  "has_time_limit": false,
+  "activation_fee": null,
+  "payout_methods": [],
+  "min_payout": null,
+  "kyc_before_payout": true,
+  "scaling_plan": "+25% balance every 4 months if criteria met, up to $2M; not for Instant",
+  "ea_bots": null,
+  "copy_trading": null,
+  "hedging": null,
+  "max_risk_per_trade": null,
+  "inactivity_rule": null,
+  "notes": "One-time fee, no recurring charges. No max time limit on 1-Step or 2-Step. FTMO Identity (KYC/KYB) unlocks after passing the evaluation; Instant Account does it at first Reward request. First Reward claim from day 14 after first trade; all positions must be closed. Instant: max loss doesn't reset after withdrawal. Payout methods, EA/copy/hedging rules not captured (FAQ articles not fetched).",
+  "sources": [
+    "https://ftmo.com/en/faq/is-the-entry-fee-refunded/",
+    "https://ftmo.com/en/faq/what-fees-do-you-charge-and-are-they-recurrent/",
+    "https://ftmo.com/en/faq/how-do-i-withdraw-my-profits/",
+    "https://ftmo.com/en/faq/what-is-ftmo-identity-and-when-do-i-complete-it/",
+    "https://ftmo.com/en/faq/how-long-does-it-take-to-become-an-ftmo-trader/",
+    "https://ftmo.com/en/scaling-plan/"
+  ],
+  "checked": "2026-10-26"
+}

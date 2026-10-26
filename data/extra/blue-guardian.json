@@ -1,0 +1,30 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": "evaluation fee refunded after 4th payout (accounts bought from 21 Jan 2026; not Instant Starter)",
+  "fee_refundable": true,
+  "time_limit": null,
+  "has_time_limit": null,
+  "activation_fee": null,
+  "payout_methods": [
+    "Crypto",
+    "Rise Works (bank)"
+  ],
+  "min_payout": "$100 via crypto; $500 via Rise",
+  "kyc_before_payout": true,
+  "scaling_plan": "12% profit in 3 months → +30% of initial balance; up to $4M total",
+  "ea_bots": "restricted",
+  "copy_trading": true,
+  "hedging": true,
+  "max_risk_per_trade": null,
+  "inactivity_rule": "at least one trade every 30 days, counted from account creation",
+  "notes": "Refund lost if account hard-breaches before 4th payout. 3% processing fee on all payouts; crypto payouts only under $5K, Rise uncapped. KYC only before first payout request on funded/instant accounts. Max $400K active funded allocation. Own-strategy EAs allowed; copy trading only between own accounts. Hedging allowed within an account, banned across accounts. Margin use >80% treated as gambling. 2-minute minimum hold (tick-scalping rule). 1 Step Standard requires 3 trading days of ≥0.5% profit to pass (firms.json min_trading_days is null).",
+  "sources": [
+    "https://help.blueguardian.com/en/articles/15618204-general-information-rules",
+    "https://help.blueguardian.com/en/articles/9660857-how-do-payouts-work",
+    "https://help.blueguardian.com/en/articles/14062186-1-step-standard-rules",
+    "https://help.blueguardian.com/en/articles/9661512-prohibited-trading-practices-account-policies",
+    "https://help.blueguardian.com/en/articles/14061939-instant-starter"
+  ],
+  "checked": "2026-10-26"
+}

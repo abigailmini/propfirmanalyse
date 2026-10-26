@@ -1,0 +1,31 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": "evaluation fees not refunded",
+  "fee_refundable": false,
+  "time_limit": "unlimited",
+  "has_time_limit": false,
+  "activation_fee": null,
+  "payout_methods": [
+    "USDC (ERC-20)"
+  ],
+  "min_payout": "$50 (after split)",
+  "kyc_before_payout": true,
+  "scaling_plan": null,
+  "ea_bots": null,
+  "copy_trading": false,
+  "hedging": true,
+  "max_risk_per_trade": "per-instrument max position size (see breakoutprop.com/symbols)",
+  "inactivity_rule": null,
+  "notes": "No min or max time to pass. Hedging allowed within one account (Hedge Mode on by default); cross-account and cross-trader hedging and copying between users banned (termination + profit forfeiture). KYC via SumSub required before funded access/payouts. USDC on ERC-20 is the only payout method.",
+  "sources": [
+    "https://intercom.help/breakoutprop/en/articles/11643842-how-much-time-do-i-have-to-pass-the-breakout-evaluation",
+    "https://intercom.help/breakoutprop/en/articles/11644116-does-breakout-offer-refunds",
+    "https://intercom.help/breakoutprop/en/articles/11647220-what-are-the-rules-for-hedging-and-copy-trading",
+    "https://intercom.help/breakoutprop/en/articles/11647207-what-are-the-position-size-limits",
+    "https://intercom.help/breakoutprop/en/articles/11647229-what-payout-methods-are-available",
+    "https://intercom.help/breakoutprop/en/articles/11647230-what-is-the-minimum-payout-amount",
+    "https://intercom.help/breakoutprop/en/articles/11647237-what-are-the-kyc-requirements-for-funded-accounts"
+  ],
+  "checked": "2026-10-26"
+}

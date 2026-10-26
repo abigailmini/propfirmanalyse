@@ -1,0 +1,40 @@
+{
+  "crypto_pairs": null,
+  "crypto_pairs_examples": [],
+  "crypto_leverage": "1:2 (evaluation and funded)",
+  "crypto_venue": "MT5, Match-Trader or TradeLocker (GFT simulated accounts)",
+  "instrument_type": "CFD",
+  "weekend_crypto": true,
+  "payout_methods": [
+    "crypto",
+    "Skrill",
+    "bank transfer",
+    "Rise"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": true,
+  "min_trade_duration": "profit from funded-account trades held under 60s (accounts bought from 6 Oct 2026; 120s before) is not counted",
+  "max_position_or_risk_rule": "Using more than 80% of available margin on one trade idea counts as banned gambling. Trades opened/closed within 5 min of high-impact news are capped at 1% profit of initial balance.",
+  "banned_strategies": [
+    "hedging (including inside one account)",
+    "all-or-nothing trades using >80% margin",
+    "third-party EAs",
+    "HFT systems",
+    "gold arbitrage EAs",
+    "third-party trade copiers",
+    "weekend gap trading (profits removed on funded)",
+    "VPN/VPS/proxies (from 6 Oct 2026)"
+  ],
+  "bots_allowed": "restricted",
+  "copy_trading": true,
+  "crypto_fees": "$0 commission on crypto (MT5/Match-Trader/TradeLocker)",
+  "notes": "FX-first CFD firm; crypto leverage only 1:2. Only EAs you built yourself are allowed, and GFT may ask for the source code. Copying is allowed only between your own GFT accounts using the paid GOAT Trade Copier. Weekend holding allowed but Friday-to-Monday gap trades lose their funded profits. KYC (Veriff or Rise) happens at the first payout request. Crypto symbol count isn't listed on the help pages.",
+  "sources": [
+    "https://help.goatfundedtrader.com/platforms.html",
+    "https://help.goatfundedtrader.com/1-step.html",
+    "https://help.goatfundedtrader.com/trading-rules.html",
+    "https://help.goatfundedtrader.com/rewards.html",
+    "https://goatfundedtrader.com/"
+  ],
+  "checked": "2026-10-26"
+}

@@ -1,0 +1,27 @@
+{
+  "crypto_pairs": null,
+  "crypto_pairs_examples": [],
+  "crypto_leverage": null,
+  "crypto_venue": "MT5 (Hedge) — simulated",
+  "instrument_type": null,
+  "weekend_crypto": true,
+  "payout_methods": [],
+  "crypto_payout": null,
+  "kyc_before_payout": null,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": null,
+  "banned_strategies": [
+    "bracket strategies around news (Hyper Growth)",
+    "opening/closing trades within 2 minutes of high-impact news (High Stakes funded)"
+  ],
+  "bots_allowed": null,
+  "copy_trading": null,
+  "crypto_fees": null,
+  "notes": "FX-first firm; crypto is listed as an available asset on High Stakes, Hyper Growth and Bootcamp (MT5 Hedge). Overnight and weekend holding is allowed on all three (indices carry high weekend swap). Program pages give general leverage (1:100 High Stakes, 1:30 Hyper Growth/Bootcamp) but no crypto-specific figure. FAQ and help centre (LiveChat KB) didn't render, so payouts, KYC, bots and copy-trading are unverified.",
+  "sources": [
+    "https://the5ers.com/high-stakes/",
+    "https://the5ers.com/hyper-growth/",
+    "https://the5ers.com/bootcamp/"
+  ],
+  "checked": "2026-10-26"
+}

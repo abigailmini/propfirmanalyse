@@ -1,0 +1,33 @@
+{
+  "reset_fee": "Phase 1 reset = original price minus 7%; later phases cost more (2-Step phase 2 +65%, funded +125% 1-Step / +200% 2-Step); must buy within 14 days of breach",
+  "retry_discount_pct": 7,
+  "refund_policy": "fee refunded with the 4th payout on that account",
+  "fee_refundable": true,
+  "time_limit": null,
+  "has_time_limit": null,
+  "activation_fee": null,
+  "payout_methods": [
+    "Rise",
+    "Crypto",
+    "Skrill",
+    "Bank transfer (select African countries only)"
+  ],
+  "min_payout": "$100",
+  "kyc_before_payout": true,
+  "scaling_plan": "Level-based: after 2 months funded + 4 payouts, +15% capital, 90% split, +1% daily DD; higher levels up to 92% split",
+  "ea_bots": "restricted",
+  "copy_trading": true,
+  "hedging": false,
+  "max_risk_per_trade": "none by default; firm may cap at 1% of initial balance per trade idea for risky behaviour",
+  "inactivity_rule": "Breached after 30 consecutive days without a trade (eval and funded); fee not refunded",
+  "notes": "Refund also applies to instant and Pay Later accounts; no refund if prohibited practices found. Resets only for purchases from 15 Jun 2026; not for funded accounts that already paid out or for prize accounts. KYC + trader agreement on first payout request. Per-payout caps: Rise unlimited, bank $10K, crypto $3K. Only self-built EAs allowed (no third-party, HFT, VPS-dependent or copier EAs). Copying only via the in-house GOAT Trade Copier between own GFT accounts (from 12 Oct 2026). Hedging banned incl. within one account. Time limit not stated on the help pages read.",
+  "sources": [
+    "https://help.goatfundedtrader.com/grow.html",
+    "https://help.goatfundedtrader.com/payments.html",
+    "https://help.goatfundedtrader.com/rewards.html",
+    "https://help.goatfundedtrader.com/trading-rules.html",
+    "https://help.goatfundedtrader.com/1-step.html",
+    "https://help.goatfundedtrader.com/2-step-goat.html"
+  ],
+  "checked": "2026-10-26"
+}
