@@ -31,3 +31,27 @@ Dials: DESIGN_VARIANCE 4 (data needs alignment; asymmetry only in page furniture
 - **Score:** number + a trackless 10-tick bar (ticks filled to the score, fractional last tick). Scannable as length, readable as a number, no traffic-light colour.
 - **Missing data:** one treatment everywhere: a short CSS hairline with visually hidden "Not published" text, and a legend under each table.
 - **Motion (Emil):** row hover tint (120ms ease, hover-capable pointers only), press scale 0.97 on chips/buttons (160ms ease-out), score ticks fill once on load (30ms stagger, 420ms cubic-bezier(0.23,1,0.32,1)). Movement removed under `prefers-reduced-motion`.
+
+## Pre-flight results (live, 2026-10-26)
+
+| Check | Result |
+|---|---|
+| No default blue/purple gradients, no glows | Pass: zero gradients except the CSS tick pattern; one accent (lime) used only as marking |
+| No 3-column feature cards / card grids | Pass: compare pairs, shortlists, discounts are ruled lists; no card boxes anywhere |
+| No emoji / unicode-as-icon | Pass: Phosphor icons inlined (menu, close, search, sliders, copy, external, arrow, star); "☰" removed |
+| Em/en dashes visible | Pass: 0 across all 52 generated pages (source-note dashes normalised at render) |
+| Eyebrows | Pass: none above headings (table column labels and footer group labels only) |
+| 4/8px rhythm | Pass: spacing tokens 4/8/12/16/20/24/32/40/48/64/96 (12/20 = 4px steps) |
+| Contrast AA | Pass: body 16.4:1, secondary 9.5:1, muted 5.75:1 (5.2:1 on hover tint), ink on lime 13.8:1, input borders 3.6:1; dark mode muted 6.7:1 |
+| Focus states | Pass: 2px ink (light) / lime (dark) focus ring on every control, chips show ring on the visual span |
+| Layout shift | Pass: Lighthouse CLS 0 on home, /firms/, profile, compare |
+| Tabular numbers | Pass: tabular-nums on body; Geist Mono for stacked figures (fees, sizes, ranks, scores, ratings, codes, ladders) |
+| One accent | Pass: lime only (logomark top bar, active nav/filter, copied state, stronger compare value, selection) |
+| Shape lock | Pass: radius 0 everywhere |
+| prefers-reduced-motion | Pass: tick fill animation removed, press scales disabled |
+| Hover gated to fine pointers | Pass: `@media (hover:hover)` on all hover effects |
+| Mobile 390px | Pass: no horizontal overflow on any page; table collapses to a ranked list |
+| Dark mode | Pass: full token swap via prefers-color-scheme, checked on home, profile, compare |
+
+Lighthouse mobile (local Lighthouse 12 against the live Pages URL; PageSpeed API daily quota was exhausted):
+home 98 / 100 / 100 / 100, /firms/ 100 / 100 / 100 / 100, /firms/ftmo/ 100 / 100 / 100 / 100, compare 100 / 100 / 100 / 100 (perf / a11y / best practices / SEO). LCP 1.4 to 1.8 s, TBT 0 ms.
