@@ -5,7 +5,7 @@ a{color:var(--am2);text-decoration:none}a:hover{text-decoration:underline}h1,h2,
 .skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:var(--am);color:#000;padding:6px;z-index:9}
 .top{position:sticky;top:0;z-index:20;background:rgba(11,20,38,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;gap:16px;height:58px}.brand{display:flex;align-items:center;gap:8px;color:var(--tx);font-weight:600;font-size:1.05rem}.brand b{color:var(--am)}
-.logo{display:inline-grid;place-items:center;min-width:34px;padding:0 5px;height:30px;white-space:nowrap;letter-spacing:-.02em;border-radius:8px;background:linear-gradient(135deg,var(--am),#e07b00);color:#0b1426;font-size:.7rem;font-weight:800}.logo b{color:#fff}
+.logo{display:inline-flex;align-items:center;justify-content:center;min-width:34px;padding:0 5px;height:30px;white-space:nowrap;letter-spacing:-.02em;border-radius:8px;background:linear-gradient(135deg,var(--am),#e07b00);color:#0b1426;font-size:.7rem;font-weight:800}.logo b{color:#fff}
 .nav{display:none;margin-left:auto;gap:4px}.nav a{color:var(--tx);padding:6px 10px;border-radius:8px}.nav a[aria-current],.nav a:hover{background:var(--card);text-decoration:none}
 .menu{margin-left:auto;background:none;border:1px solid var(--line);color:var(--tx);border-radius:8px;padding:4px 10px;font-size:1.1rem}
 body.nav-open .nav{display:flex;flex-direction:column;position:absolute;top:58px;left:0;right:0;background:var(--bg2);padding:10px 16px;border-bottom:1px solid var(--line)}
