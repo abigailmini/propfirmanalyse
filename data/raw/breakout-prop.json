@@ -1,0 +1,191 @@
+{
+  "name": "Breakout Prop",
+  "slug": "breakout-prop",
+  "site": "https://www.breakoutprop.com",
+  "category": "crypto",
+  "assets": [
+    "crypto",
+    "indices",
+    "commodities"
+  ],
+  "challenge_types": [
+    "1-step"
+  ],
+  "account_sizes": [
+    5000,
+    10000,
+    25000,
+    50000,
+    100000,
+    200000
+  ],
+  "programs": [
+    {
+      "name": "1-Step Classic",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 45
+        },
+        {
+          "size": 10000,
+          "fee": 85
+        },
+        {
+          "size": 25000,
+          "fee": 215
+        },
+        {
+          "size": 50000,
+          "fee": 400
+        },
+        {
+          "size": 100000,
+          "fee": 800
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static",
+      "profit_split": "80% (90% add-on)",
+      "min_trading_days": 0
+    },
+    {
+      "name": "1-Step Pro",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 33
+        },
+        {
+          "size": 10000,
+          "fee": 65
+        },
+        {
+          "size": 25000,
+          "fee": 150
+        },
+        {
+          "size": 50000,
+          "fee": 280
+        },
+        {
+          "size": 100000,
+          "fee": 545
+        },
+        {
+          "size": 200000,
+          "fee": 1090
+        }
+      ],
+      "profit_target": "12%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "5%",
+      "drawdown_type": "static",
+      "profit_split": "80% (90% add-on)",
+      "min_trading_days": 0
+    },
+    {
+      "name": "1-Step Turbo",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 20
+        },
+        {
+          "size": 10000,
+          "fee": 40
+        },
+        {
+          "size": 25000,
+          "fee": 95
+        },
+        {
+          "size": 50000,
+          "fee": 180
+        },
+        {
+          "size": 100000,
+          "fee": 330
+        },
+        {
+          "size": 200000,
+          "fee": 660
+        }
+      ],
+      "profit_target": "9%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "3%",
+      "drawdown_type": "static",
+      "profit_split": "80% (90% add-on)",
+      "min_trading_days": 0
+    }
+  ],
+  "fee_from": 20,
+  "profit_split": "up to 90%",
+  "profit_split_scale": "80% standard; 90% via paid upgrade at checkout (~+20% fee)",
+  "max_daily_loss": "3%",
+  "max_drawdown": "3%-6% by plan",
+  "drawdown_type": "static",
+  "profit_target": "9%-12% by plan",
+  "leverage": "up to 10x (BTC, XYZ100, S&P500); 2x-5x other assets",
+  "platforms": [
+    "Breakout Terminal (web, iOS, Android)"
+  ],
+  "payout_frequency": "on-demand 24/7",
+  "first_payout_days": 0,
+  "min_trading_days": 0,
+  "consistency_rule": "none",
+  "news_trading": true,
+  "weekend_holding": true,
+  "countries_restricted": [
+    "Afghanistan",
+    "Belarus",
+    "Myanmar",
+    "Cambodia",
+    "Central African Republic",
+    "Cuba",
+    "Democratic Republic of the Congo",
+    "Ethiopia",
+    "Eritrea",
+    "Haiti",
+    "Iran",
+    "Iraq",
+    "Lebanon",
+    "Libya",
+    "Nicaragua",
+    "North Korea",
+    "Russia",
+    "Somalia",
+    "South Sudan",
+    "Sudan",
+    "Syria",
+    "Venezuela",
+    "Zimbabwe",
+    "Crimea, Donetsk and Luhansk regions of Ukraine"
+  ],
+  "founded": null,
+  "hq": null,
+  "discount_code": null,
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 4.7,
+    "count": 1231
+  },
+  "last_verified": "2026-10-26",
+  "source_urls": [
+    "https://www.breakoutprop.com/",
+    "https://www.breakoutprop.com/pricing/",
+    "https://intercom.help/breakoutprop/en/collections/13572047-breakout-evaluation",
+    "https://intercom.help/breakoutprop/en/articles/11644118-which-countries-are-ineligible-for-breakout-services",
+    "https://intercom.help/breakoutprop/en/articles/11643732-what-types-of-breakout-evaluations-can-i-purchase",
+    "https://intercom.help/breakoutprop/en/articles/11644138-what-is-the-available-leverage",
+    "https://intercom.help/breakoutprop/en/articles/11643973-is-payward-oceanic-ltd-pol-the-same-company-as-breakout-trading-group",
+    "https://www.trustpilot.com/review/breakoutprop.com"
+  ],
+  "notes": "Fees per size read from pricing page size tabs (80/20 base price). 90/10 upgrade prices: Classic 54/102/258/480/960, Pro 39.60/78/180/336/654/1308, Turbo 24/48/114/216/396/792. Classic not available at $200K. Payouts in USDC (ERC-20), $50 minimum after split; first payout possible same day as funded. Evaluations run by Breakout Trading Group, LLC; funded accounts via separate agreement with Payward Oceanic Ltd (Kraken group, per site nav/disclosures). HQ = Trustpilot contact country only; founded year not found. Help centre also lists Spark Evaluation (not on pricing page, not captured). $200K max total funded capital across accounts. HQ left null: only source was Trustpilot contact country, not the firm's site (operator: Breakout Trading Group LLC)."
+}

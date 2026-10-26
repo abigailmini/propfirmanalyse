@@ -3,6 +3,1436 @@
   "order_note": "Crypto-first listing order; ranking on site is by PFA Score (same rules for every firm).",
   "firms": [
     {
+      "name": "FundedXYZ",
+      "slug": "fundedxyz",
+      "site": "https://www.fundedxyz.com",
+      "category": "crypto",
+      "assets": [
+        "crypto"
+      ],
+      "challenge_types": [
+        "instant",
+        "1-step"
+      ],
+      "account_sizes": [
+        2000,
+        2500,
+        5000,
+        10000,
+        25000,
+        50000,
+        100000,
+        200000
+      ],
+      "programs": [
+        {
+          "name": "X Mode (Instant)",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 2500,
+              "fee": 180
+            },
+            {
+              "size": 5000,
+              "fee": 350
+            },
+            {
+              "size": 10000,
+              "fee": 600
+            },
+            {
+              "size": 25000,
+              "fee": 1500
+            }
+          ],
+          "profit_target": "none",
+          "max_daily_loss": "none",
+          "max_drawdown": "4.5%",
+          "drawdown_type": "static (equity-based); floor locks at starting balance once equity reaches +5%",
+          "profit_split": "70% rising to 90% (career tiers)",
+          "min_trading_days": 0
+        },
+        {
+          "name": "Y Mode Standard",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 2000,
+              "fee": 30
+            },
+            {
+              "size": 10000,
+              "fee": 150
+            },
+            {
+              "size": 25000,
+              "fee": 350
+            },
+            {
+              "size": 50000,
+              "fee": 750
+            },
+            {
+              "size": 100000,
+              "fee": 1500
+            }
+          ],
+          "profit_target": "7%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "6%",
+          "drawdown_type": null,
+          "profit_split": "70-90%",
+          "min_trading_days": 0
+        },
+        {
+          "name": "Y Mode Hard",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 10000,
+              "fee": 150
+            },
+            {
+              "size": 25000,
+              "fee": 300
+            },
+            {
+              "size": 50000,
+              "fee": 550
+            },
+            {
+              "size": 100000,
+              "fee": 1000
+            },
+            {
+              "size": 200000,
+              "fee": 1800
+            }
+          ],
+          "profit_target": "12%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "5%",
+          "drawdown_type": null,
+          "profit_split": "70-90%",
+          "min_trading_days": 0
+        },
+        {
+          "name": "Z Mode Standard (fixed reward)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 2000,
+              "fee": 40
+            },
+            {
+              "size": 5000,
+              "fee": 80
+            },
+            {
+              "size": 25000,
+              "fee": 380
+            },
+            {
+              "size": 50000,
+              "fee": 680
+            },
+            {
+              "size": 100000,
+              "fee": 1200
+            }
+          ],
+          "profit_target": "15%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "9%",
+          "drawdown_type": null,
+          "profit_split": "n/a - fixed USDT reward on pass ($120-$3,600), no funded account",
+          "min_trading_days": 0
+        },
+        {
+          "name": "Z Mode Hard (fixed reward)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 2000,
+              "fee": 20
+            },
+            {
+              "size": 5000,
+              "fee": 40
+            },
+            {
+              "size": 25000,
+              "fee": 190
+            },
+            {
+              "size": 50000,
+              "fee": 340
+            },
+            {
+              "size": 100000,
+              "fee": 600
+            }
+          ],
+          "profit_target": "13%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "4.5%",
+          "drawdown_type": "static (from initial capital)",
+          "profit_split": "n/a - fixed USDT reward on pass ($80-$2,800), no funded account",
+          "min_trading_days": 0
+        }
+      ],
+      "fee_from": 20,
+      "profit_split": "up to 90%",
+      "profit_split_scale": "70% Junior -> 80% Pro (5 payouts + $5K cumulative) -> 85% Elite (8 + $10K) -> 90% Aura (12 + $20K)",
+      "max_daily_loss": "5%",
+      "max_drawdown": "6%",
+      "drawdown_type": null,
+      "profit_target": "7%",
+      "leverage": "up to 1:100 (X Mode); up to 1:5 (Y/Z Mode)",
+      "platforms": [
+        "FundedXyz proprietary web platform"
+      ],
+      "payout_frequency": "X Mode: on demand, no cap, no cooling-off ($100 min); Y Mode funded: 14-day cooling-off, max 5% of balance per payout",
+      "first_payout_days": 1,
+      "min_trading_days": 0,
+      "consistency_rule": "Y/Z evaluation only: max 3% profit per single trade and 3% daily profit cap (resets 00:00 UTC+8); none on X Mode",
+      "news_trading": null,
+      "weekend_holding": true,
+      "countries_restricted": null,
+      "founded": null,
+      "hq": null,
+      "discount_code": {
+        "code": "FIRST",
+        "value": "10% off first purchase"
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.5,
+        "count": 14
+      },
+      "last_verified": "2026-10-26",
+      "source_urls": [
+        "https://www.fundedxyz.com/",
+        "https://www.fundedxyz.com/pricing",
+        "https://www.fundedxyz.com/faq",
+        "https://www.fundedxyz.com/about",
+        "https://www.fundedxyz.com/terms",
+        "https://www.trustpilot.com/review/fundedxyz.com"
+      ],
+      "notes": "Headline rules = Y Mode Standard (flagged POPULAR). X Mode fees are list prices; site shows 10% off with FIRST code. X Mode: limit-order entries only, 2x net position limit, auto-fails after 20 days inactivity. Y/Z: 40% position-size limit. Assets: X Mode BTC/ETH/SOL/XRP USDT pairs; Y/Z BTC/ETH perps. Y Mode drawdown type not stated. Founded year, HQ and restricted countries not stated on own site (Trustpilot company profile lists Singapore). Site wording is inconsistent: homepage/pricing say simulated virtual balances, but FAQ text says live funded accounts with real capital. Homepage widget shows Trustpilot 4.4/30, but Trustpilot page showed 4.5/14 on 2026-10-26. News trading policy not found. Refunds only within 48h of purchase if challenge not started. VPN, API trading and copy trading prohibited."
+    },
+    {
+      "name": "HyroTrader",
+      "slug": "hyrotrader",
+      "site": "https://www.hyrotrader.com",
+      "category": "crypto",
+      "assets": [
+        "crypto"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step"
+      ],
+      "account_sizes": [
+        5000,
+        10000,
+        25000,
+        50000,
+        100000,
+        200000
+      ],
+      "programs": [
+        {
+          "name": "Zero-Step",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 89
+            },
+            {
+              "size": 10000,
+              "fee": 169
+            },
+            {
+              "size": 25000,
+              "fee": 379
+            },
+            {
+              "size": 50000,
+              "fee": 629
+            },
+            {
+              "size": 100000,
+              "fee": 949
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "5%",
+          "drawdown_type": "static daily",
+          "profit_split": "80%",
+          "min_trading_days": 1
+        },
+        {
+          "name": "One-Step",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 69
+            },
+            {
+              "size": 10000,
+              "fee": 129
+            },
+            {
+              "size": 25000,
+              "fee": 299
+            },
+            {
+              "size": 50000,
+              "fee": 499
+            },
+            {
+              "size": 100000,
+              "fee": 749
+            },
+            {
+              "size": 200000,
+              "fee": 1299
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "4%",
+          "max_drawdown": "6%",
+          "drawdown_type": "static daily",
+          "profit_split": "80%, up to 90%",
+          "min_trading_days": 5
+        },
+        {
+          "name": "Two-Step",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 59
+            },
+            {
+              "size": 10000,
+              "fee": 119
+            },
+            {
+              "size": 25000,
+              "fee": 249
+            },
+            {
+              "size": 50000,
+              "fee": 379
+            },
+            {
+              "size": 100000,
+              "fee": 579
+            },
+            {
+              "size": 200000,
+              "fee": 969
+            }
+          ],
+          "profit_target": "10% / 5%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "10%",
+          "drawdown_type": "static daily",
+          "profit_split": "80%, up to 90%",
+          "min_trading_days": 5
+        }
+      ],
+      "fee_from": 59,
+      "profit_split": "up to 90%",
+      "profit_split_scale": "80% start; up to 90% on One-Step/Two-Step at firm's discretion (not automatic); Zero-Step fixed 80%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static (daily)",
+      "profit_target": "10%",
+      "leverage": "user-selected; Bybit mostly 50x-100x, Hyro 100x+, BloFin up to 150x (BTC/ETH)",
+      "platforms": [
+        "Bybit (demo)",
+        "BloFin (demo)",
+        "Hyro",
+        "Tealstreet",
+        "Tiger.com"
+      ],
+      "payout_frequency": "on demand once $100+ profit after split; processed within 24h in USDT/USDC; per-payout cap by account size (e.g. $1,000 on 25K)",
+      "first_payout_days": null,
+      "min_trading_days": 5,
+      "consistency_rule": "Evaluation only: One/Two-Step no single day >40% of profit target; Zero-Step no single trade >50% of target; none on funded accounts",
+      "news_trading": true,
+      "weekend_holding": true,
+      "countries_restricted": null,
+      "founded": 2023,
+      "hq": "Ras Al Khaimah, UAE (operator HYRO TECHNOLOGIES FZ-LLC); operates mainly from Dubai with office in Prague",
+      "discount_code": null,
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4,
+        "count": 228
+      },
+      "last_verified": "2026-10-26",
+      "source_urls": [
+        "https://www.hyrotrader.com/",
+        "https://www.hyrotrader.com/faq/",
+        "https://www.hyrotrader.com/about-us/",
+        "https://www.hyrotrader.com/terms-and-conditions/",
+        "https://www.hyrotrader.com/faq/rules/what-are-the-risk-management-conditions-at-hyrotrader/",
+        "https://www.hyrotrader.com/faq/rules/what-is-the-difference-between-standard-trailing-and-swing-fixed-daily-drawdown/",
+        "https://www.hyrotrader.com/faq/rules/how-is-the-5-daily-drawdown-calculated/",
+        "https://www.hyrotrader.com/faq/rules/are-there-any-other-rules-for-a-funded-account/",
+        "https://www.hyrotrader.com/faq/rules/do-i-have-to-close-my-positions-overnight/",
+        "https://www.hyrotrader.com/faq/trading-restrictions/is-news-trading-allowed/",
+        "https://www.hyrotrader.com/faq/hyrotrader-account/how-much-is-the-profit-split/",
+        "https://www.hyrotrader.com/faq/hyrotrader-account/how-can-i-withdraw-my-profits/",
+        "https://www.hyrotrader.com/faq/platform/what-leverage-can-i-use/",
+        "https://www.hyrotrader.com/faq/platform/is-trading-allowed-for-individuals-from-restricted-countries/",
+        "https://www.hyrotrader.com/faq/platform/which-countries-are-allowed-to-join-hyrotrader-can-i-join-from-the-usuk/",
+        "https://www.trustpilot.com/review/hyrotrader.com"
+      ],
+      "notes": "Headline rules = One-Step (flagged Most Popular). Zero-Step is a 1-day single-phase evaluation; its fee is non-refundable. One/Two-Step fees are refundable deposits returned with the first payout. Two-Step requires 5 + 5 days. Daily drawdown is static from start-of-day equity (00:00 UTC); max-loss calculation method (static vs trailing) not confirmed. Funded accounts: 25% max margin exposure and 2x notional cap. News trading allowed, but a strategy based only on news is not. Low-cap altcoin exposure capped at 5% of initial balance. Restricted-country list sits in the T&C and could not be extracted (US/UK are allowed). Simulated/demo accounts at all stages. Homepage widget shows 4.7/210 reviews, but Trustpilot page showed 4.0/228 on 2026-10-26. No public discount code seen. Founded 2023 (team began building in 2022)."
+    },
+    {
+      "name": "Breakout Prop",
+      "slug": "breakout-prop",
+      "site": "https://www.breakoutprop.com",
+      "category": "crypto",
+      "assets": [
+        "crypto",
+        "indices",
+        "commodities"
+      ],
+      "challenge_types": [
+        "1-step"
+      ],
+      "account_sizes": [
+        5000,
+        10000,
+        25000,
+        50000,
+        100000,
+        200000
+      ],
+      "programs": [
+        {
+          "name": "1-Step Classic",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 45
+            },
+            {
+              "size": 10000,
+              "fee": 85
+            },
+            {
+              "size": 25000,
+              "fee": 215
+            },
+            {
+              "size": 50000,
+              "fee": 400
+            },
+            {
+              "size": 100000,
+              "fee": 800
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "6%",
+          "drawdown_type": "static",
+          "profit_split": "80% (90% add-on)",
+          "min_trading_days": 0
+        },
+        {
+          "name": "1-Step Pro",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 33
+            },
+            {
+              "size": 10000,
+              "fee": 65
+            },
+            {
+              "size": 25000,
+              "fee": 150
+            },
+            {
+              "size": 50000,
+              "fee": 280
+            },
+            {
+              "size": 100000,
+              "fee": 545
+            },
+            {
+              "size": 200000,
+              "fee": 1090
+            }
+          ],
+          "profit_target": "12%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "5%",
+          "drawdown_type": "static",
+          "profit_split": "80% (90% add-on)",
+          "min_trading_days": 0
+        },
+        {
+          "name": "1-Step Turbo",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 20
+            },
+            {
+              "size": 10000,
+              "fee": 40
+            },
+            {
+              "size": 25000,
+              "fee": 95
+            },
+            {
+              "size": 50000,
+              "fee": 180
+            },
+            {
+              "size": 100000,
+              "fee": 330
+            },
+            {
+              "size": 200000,
+              "fee": 660
+            }
+          ],
+          "profit_target": "9%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "3%",
+          "drawdown_type": "static",
+          "profit_split": "80% (90% add-on)",
+          "min_trading_days": 0
+        }
+      ],
+      "fee_from": 20,
+      "profit_split": "up to 90%",
+      "profit_split_scale": "80% standard; 90% via paid upgrade at checkout (~+20% fee)",
+      "max_daily_loss": "3%",
+      "max_drawdown": "3%-6% by plan",
+      "drawdown_type": "static",
+      "profit_target": "9%-12% by plan",
+      "leverage": "up to 10x (BTC, XYZ100, S&P500); 2x-5x other assets",
+      "platforms": [
+        "Breakout Terminal (web, iOS, Android)"
+      ],
+      "payout_frequency": "on-demand 24/7",
+      "first_payout_days": 0,
+      "min_trading_days": 0,
+      "consistency_rule": "none",
+      "news_trading": true,
+      "weekend_holding": true,
+      "countries_restricted": [
+        "Afghanistan",
+        "Belarus",
+        "Myanmar",
+        "Cambodia",
+        "Central African Republic",
+        "Cuba",
+        "Democratic Republic of the Congo",
+        "Ethiopia",
+        "Eritrea",
+        "Haiti",
+        "Iran",
+        "Iraq",
+        "Lebanon",
+        "Libya",
+        "Nicaragua",
+        "North Korea",
+        "Russia",
+        "Somalia",
+        "South Sudan",
+        "Sudan",
+        "Syria",
+        "Venezuela",
+        "Zimbabwe",
+        "Crimea, Donetsk and Luhansk regions of Ukraine"
+      ],
+      "founded": null,
+      "hq": null,
+      "discount_code": null,
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.7,
+        "count": 1231
+      },
+      "last_verified": "2026-10-26",
+      "source_urls": [
+        "https://www.breakoutprop.com/",
+        "https://www.breakoutprop.com/pricing/",
+        "https://intercom.help/breakoutprop/en/collections/13572047-breakout-evaluation",
+        "https://intercom.help/breakoutprop/en/articles/11644118-which-countries-are-ineligible-for-breakout-services",
+        "https://intercom.help/breakoutprop/en/articles/11643732-what-types-of-breakout-evaluations-can-i-purchase",
+        "https://intercom.help/breakoutprop/en/articles/11644138-what-is-the-available-leverage",
+        "https://intercom.help/breakoutprop/en/articles/11643973-is-payward-oceanic-ltd-pol-the-same-company-as-breakout-trading-group",
+        "https://www.trustpilot.com/review/breakoutprop.com"
+      ],
+      "notes": "Fees per size read from pricing page size tabs (80/20 base price). 90/10 upgrade prices: Classic 54/102/258/480/960, Pro 39.60/78/180/336/654/1308, Turbo 24/48/114/216/396/792. Classic not available at $200K. Payouts in USDC (ERC-20), $50 minimum after split; first payout possible same day as funded. Evaluations run by Breakout Trading Group, LLC; funded accounts via separate agreement with Payward Oceanic Ltd (Kraken group, per site nav/disclosures). HQ = Trustpilot contact country only; founded year not found. Help centre also lists Spark Evaluation (not on pricing page, not captured). $200K max total funded capital across accounts. HQ left null: only source was Trustpilot contact country, not the firm's site (operator: Breakout Trading Group LLC)."
+    },
+    {
+      "name": "Crypto Fund Trader",
+      "slug": "crypto-fund-trader",
+      "site": "https://cryptofundtrader.com",
+      "category": "multi",
+      "assets": [
+        "crypto",
+        "forex",
+        "indices",
+        "commodities",
+        "stocks"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step",
+        "instant"
+      ],
+      "account_sizes": [
+        2500,
+        5000,
+        10000,
+        25000,
+        50000,
+        100000,
+        200000
+      ],
+      "programs": [
+        {
+          "name": "Instant",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 2500,
+              "fee": 125
+            },
+            {
+              "size": 5000,
+              "fee": 240
+            },
+            {
+              "size": 10000,
+              "fee": 475
+            }
+          ],
+          "profit_target": "10% per scale-up level",
+          "max_daily_loss": "4%",
+          "max_drawdown": "6%",
+          "drawdown_type": null,
+          "profit_split": "50% scaling to 90%",
+          "min_trading_days": 0
+        },
+        {
+          "name": "1 Phase",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 40
+            },
+            {
+              "size": 10000,
+              "fee": 80
+            },
+            {
+              "size": 25000,
+              "fee": 219
+            },
+            {
+              "size": 50000,
+              "fee": 369
+            },
+            {
+              "size": 100000,
+              "fee": 619
+            },
+            {
+              "size": 200000,
+              "fee": 1199
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "4%",
+          "max_drawdown": "6%",
+          "drawdown_type": "trailing",
+          "profit_split": "80%",
+          "min_trading_days": 0
+        },
+        {
+          "name": "2 Phases",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 58
+            },
+            {
+              "size": 10000,
+              "fee": 110
+            },
+            {
+              "size": 25000,
+              "fee": 240
+            },
+            {
+              "size": 50000,
+              "fee": 389
+            },
+            {
+              "size": 100000,
+              "fee": 660
+            },
+            {
+              "size": 200000,
+              "fee": 1250
+            }
+          ],
+          "profit_target": "8% / 5%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "10%",
+          "drawdown_type": null,
+          "profit_split": "80%",
+          "min_trading_days": 0
+        }
+      ],
+      "fee_from": 40,
+      "profit_split": "up to 90%",
+      "profit_split_scale": "80% on 1/2-phase final stage; Instant starts 50% and steps 60/70/80/90% as account doubles",
+      "max_daily_loss": "4%-5% by plan",
+      "max_drawdown": "6%-10% by plan",
+      "drawdown_type": "trailing (1 Phase); overall loss limit (2 Phases/Instant, type not stated)",
+      "profit_target": "8%-10% phase 1 by plan",
+      "leverage": "up to 1:100",
+      "platforms": [
+        "Match-Trader",
+        "MT5",
+        "Bybit"
+      ],
+      "payout_frequency": "after 15 trading days or every 30 calendar days; every 7 traded days with Weekly Payouts add-on; Instant on each 10% profit (withdraw & upgrade)",
+      "first_payout_days": null,
+      "min_trading_days": 0,
+      "consistency_rule": "none on standard plans; 40% best day on Break final stage",
+      "news_trading": true,
+      "weekend_holding": true,
+      "countries_restricted": [
+        "United States (MT5 only)"
+      ],
+      "founded": null,
+      "hq": "Zug, Switzerland",
+      "discount_code": null,
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": null,
+        "count": 1110
+      },
+      "last_verified": "2026-10-26",
+      "source_urls": [
+        "https://cryptofundtrader.com/",
+        "https://cryptofundtrader.com/faq/",
+        "https://www.trustpilot.com/review/cryptofundtrader.com"
+      ],
+      "notes": "Fees read from homepage program/size selector (one-time fee). Instant scales up to $1,280,000 by doubling at each 10% target. Operator SWISS RLCRATES AG (Bahnhofstrasse 21, Zug); MT5 via RLCRATES S.L.; offices also Pamplona and Dubai. FAQ: no country restrictions on Match-Trader/Bybit, MT5 unavailable to US residents. Max $300K final-stage allocation (excl. Instant/Ascend/Break). Other programs (Ascend - news restricted 2 min either side; Break - activation fee, 40% consistency, 3-4% trailing) not captured. Payout processing avg ~8h, up to 48 business hours. Homepage has a mini-game to reveal a discount code; no code shown publicly. Trustpilot shows rating unavailable (guidelines breach), 1,110 reviews. Founded year not found."
+    },
+    {
+      "name": "FundedNext",
+      "slug": "fundednext",
+      "site": "https://fundednext.com",
+      "category": "multi",
+      "assets": [
+        "forex",
+        "futures"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step",
+        "instant"
+      ],
+      "account_sizes": [
+        2000,
+        5000,
+        6000,
+        10000,
+        15000,
+        20000,
+        25000,
+        50000,
+        100000,
+        200000
+      ],
+      "programs": [
+        {
+          "name": "Stellar 2-Step",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 6000,
+              "fee": 59.99
+            },
+            {
+              "size": 15000,
+              "fee": 119.99
+            },
+            {
+              "size": 25000,
+              "fee": 199.99
+            },
+            {
+              "size": 50000,
+              "fee": 299.99
+            },
+            {
+              "size": 100000,
+              "fee": 549.99
+            },
+            {
+              "size": 200000,
+              "fee": 1099.99
+            }
+          ],
+          "profit_target": "8% / 5%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "10%",
+          "drawdown_type": "static",
+          "profit_split": "80%",
+          "min_trading_days": 5
+        },
+        {
+          "name": "Stellar 1-Step",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 6000,
+              "fee": 65.99
+            },
+            {
+              "size": 15000,
+              "fee": 129.99
+            },
+            {
+              "size": 25000,
+              "fee": 219.99
+            },
+            {
+              "size": 50000,
+              "fee": 329.99
+            },
+            {
+              "size": 100000,
+              "fee": 569.99
+            },
+            {
+              "size": 200000,
+              "fee": 1099.99
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "6%",
+          "drawdown_type": "static",
+          "profit_split": "up to 95%",
+          "min_trading_days": 2
+        },
+        {
+          "name": "Stellar Instant",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 2000,
+              "fee": 59.99
+            },
+            {
+              "size": 5000,
+              "fee": 149.99
+            },
+            {
+              "size": 10000,
+              "fee": 299.99
+            },
+            {
+              "size": 20000,
+              "fee": 599.99
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": "none",
+          "max_drawdown": "6%",
+          "drawdown_type": "trailing",
+          "profit_split": "up to 80%",
+          "min_trading_days": null
+        }
+      ],
+      "fee_from": 59.99,
+      "profit_split": "up to 95%",
+      "profit_split_scale": null,
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_target": "8% / 5%",
+      "leverage": null,
+      "platforms": [
+        "MT4",
+        "MT5",
+        "cTrader",
+        "Match-Trader",
+        "NinjaTrader",
+        "Tradovate",
+        "TradingView"
+      ],
+      "payout_frequency": "14 days (2-Step); 5 days (1-Step); on-demand/bi-weekly (Instant)",
+      "first_payout_days": 21,
+      "min_trading_days": 5,
+      "consistency_rule": null,
+      "news_trading": true,
+      "weekend_holding": null,
+      "countries_restricted": [
+        "North Korea",
+        "Myanmar",
+        "Belarus",
+        "Iran",
+        "Russia",
+        "Vietnam",
+        "FATF high-risk / EU-UN sanctioned"
+      ],
+      "founded": 2022,
+      "hq": "Ajman, UAE",
+      "discount_code": null,
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.5,
+        "count": 82278
+      },
+      "last_verified": "2026-10-26",
+      "source_urls": [
+        "https://fundednext.com/",
+        "https://fundednext.com/cfds",
+        "https://fundednext.com/trading-platforms",
+        "https://fundednext.com/company",
+        "https://help.fundednext.com/en/",
+        "https://www.trustpilot.com/review/fundednext.com"
+      ],
+      "notes": "CFD Stellar prices via browser; Stellar Lite & FNL:002 programs and Futures not captured. Leverage, weekend rule not found. first_payout_days=21 for 2-Step (1-Step: 5 business days). News trading profit capped at 40% on funded. hq = registered entity GrowthNext F.Z.E. Trustpilot via browser."
+    },
+    {
+      "name": "FTMO",
+      "slug": "ftmo",
+      "site": "https://ftmo.com",
+      "category": "multi",
+      "assets": [
+        "forex",
+        "indices",
+        "commodities",
+        "crypto",
+        "futures"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step",
+        "instant"
+      ],
+      "account_sizes": [
+        5000,
+        10000,
+        25000,
+        50000,
+        100000,
+        200000
+      ],
+      "fee_currency": "EUR",
+      "programs": [
+        {
+          "name": "FTMO Challenge 2-Step",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 10000,
+              "fee": 89
+            },
+            {
+              "size": 25000,
+              "fee": 250
+            },
+            {
+              "size": 50000,
+              "fee": 345
+            },
+            {
+              "size": 100000,
+              "fee": 540
+            },
+            {
+              "size": 200000,
+              "fee": 1080
+            }
+          ],
+          "profit_target": "10% / 5%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "10%",
+          "drawdown_type": "static",
+          "profit_split": "up to 90%",
+          "min_trading_days": 4
+        },
+        {
+          "name": "FTMO Challenge 1-Step",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 10000,
+              "fee": 79
+            },
+            {
+              "size": 25000,
+              "fee": 199
+            },
+            {
+              "size": 50000,
+              "fee": 319
+            },
+            {
+              "size": 100000,
+              "fee": 499
+            },
+            {
+              "size": 200000,
+              "fee": 999
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "10%",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "90%",
+          "min_trading_days": null
+        },
+        {
+          "name": "FTMO Instant Account",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 169
+            },
+            {
+              "size": 10000,
+              "fee": 339
+            },
+            {
+              "size": 25000,
+              "fee": 749
+            },
+            {
+              "size": 50000,
+              "fee": 1499
+            },
+            {
+              "size": 100000,
+              "fee": 2999
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": "3%",
+          "max_drawdown": "10%",
+          "drawdown_type": "trailing (intraday, balance-based)",
+          "profit_split": "90%",
+          "min_trading_days": null
+        }
+      ],
+      "fee_from": 79,
+      "profit_split": "up to 90%",
+      "profit_split_scale": null,
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_target": "10% / 5%",
+      "leverage": "up to 1:100",
+      "platforms": [
+        "MT4",
+        "MT5",
+        "TradingView",
+        "cTrader"
+      ],
+      "payout_frequency": null,
+      "first_payout_days": null,
+      "min_trading_days": 4,
+      "consistency_rule": "1-Step: best day ≤50% of profit; Instant: ≤30%",
+      "news_trading": "restricted",
+      "weekend_holding": "restricted",
+      "countries_restricted": null,
+      "founded": 2015,
+      "hq": "Czech Republic",
+      "discount_code": null,
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.8,
+        "count": 55121
+      },
+      "last_verified": "2026-10-26",
+      "source_urls": [
+        "https://ftmo.com/en/",
+        "https://ftmo.com/en/#pricing",
+        "https://ftmo.com/en/trading-objectives/",
+        "https://ftmo.com/en/faq/",
+        "https://www.trustpilot.com/review/ftmo.com",
+        "https://ftmo.com/en/symbols/"
+      ],
+      "notes": "Fees are EUR (USD toggle not applied in browser). $100K showed two prices: 2-Step €439/€540, 1-Step €399/€499 (higher recorded; lower may be promo). News/weekend restrictions apply only to Standard funded accounts (Swing type unrestricted; evaluation unrestricted). CFD asset classes not verified (only Futures product seen). Payout frequency not found. hq inferred from CZ legal entity FTMO s.r.o. Assets: Forex/Crypto/Indices/Commodities(Metals) category filters confirmed on ftmo.com/en/symbols (2026-10-26); stocks not confirmed. Fees in EUR."
+    },
+    {
+      "name": "The5ers",
+      "slug": "the5ers",
+      "site": "https://the5ers.com",
+      "category": "multi",
+      "assets": [
+        "forex",
+        "commodities",
+        "indices",
+        "crypto",
+        "stocks",
+        "futures"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step",
+        "3-step"
+      ],
+      "account_sizes": [
+        2500,
+        5000,
+        10000,
+        20000,
+        25000,
+        50000,
+        100000,
+        250000
+      ],
+      "programs": [
+        {
+          "name": "High Stakes",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 2500,
+              "fee": 19
+            },
+            {
+              "size": 5000,
+              "fee": 35
+            },
+            {
+              "size": 10000,
+              "fee": 69
+            },
+            {
+              "size": 25000,
+              "fee": 176
+            },
+            {
+              "size": 50000,
+              "fee": 249
+            },
+            {
+              "size": 100000,
+              "fee": 405
+            }
+          ],
+          "profit_target": "10% / 5%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "10%",
+          "drawdown_type": null,
+          "profit_split": "80%-100%",
+          "min_trading_days": 3
+        },
+        {
+          "name": "Hyper Growth",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 52
+            },
+            {
+              "size": 10000,
+              "fee": 98
+            },
+            {
+              "size": 20000,
+              "fee": 189
+            },
+            {
+              "size": 50000,
+              "fee": 329
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "6%",
+          "drawdown_type": null,
+          "profit_split": "up to 100%",
+          "min_trading_days": 3
+        },
+        {
+          "name": "Bootcamp",
+          "type": "3-step",
+          "sizes_fees": [
+            {
+              "size": 20000,
+              "fee": 22
+            }
+          ],
+          "profit_target": "6% / 6% / 6%",
+          "max_daily_loss": null,
+          "max_drawdown": "5%",
+          "drawdown_type": null,
+          "profit_split": "up to 100%",
+          "min_trading_days": null
+        }
+      ],
+      "fee_from": 19,
+      "profit_split": "up to 100%",
+      "profit_split_scale": "High Stakes: 80% → 85% at $175K → 90% at $250K → 100% at $350K+",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": null,
+      "profit_target": "10% / 5%",
+      "leverage": "1:100 (High Stakes); 1:30 (Hyper Growth, Bootcamp)",
+      "platforms": [
+        "MT5"
+      ],
+      "payout_frequency": null,
+      "first_payout_days": null,
+      "min_trading_days": 3,
+      "consistency_rule": null,
+      "news_trading": "restricted",
+      "weekend_holding": true,
+      "countries_restricted": [
+        "Afghanistan",
+        "Belarus",
+        "Burundi",
+        "Central African Republic",
+        "Cuba",
+        "Congo Republic",
+        "Crimea",
+        "Democratic Republic of Congo",
+        "Eritrea",
+        "Guinea",
+        "Guinea-Bissau",
+        "Iraq",
+        "Iran",
+        "Israel",
+        "Laos",
+        "Lebanon",
+        "Liberia",
+        "Libya",
+        "Myanmar",
+        "North Korea",
+        "Palestinian Territory",
+        "Papua New Guinea",
+        "Russia",
+        "South Sudan",
+        "Sudan",
+        "Somalia",
+        "Syria",
+        "Vanuatu",
+        "Venezuela",
+        "Yemen"
+      ],
+      "founded": null,
+      "hq": null,
+      "discount_code": null,
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.7,
+        "count": 40518
+      },
+      "last_verified": "2026-10-26",
+      "source_urls": [
+        "https://the5ers.com/",
+        "https://the5ers.com/high-stakes/",
+        "https://the5ers.com/hyper-growth/",
+        "https://the5ers.com/bootcamp/",
+        "https://www.trustpilot.com/review/the5ers.com"
+      ],
+      "notes": "min_trading_days = min profitable days (≥0.5%). Bootcamp: $22 entry + $50 at funding; 3-step for $100K/$250K fees not captured; Pro stage 3% daily pause/4% max loss. Homepage also lists a separate '1 Step' ($249, 10%/3%/6%, 75% share, 1:100). Banner promo '$100K for $149' (no code). HS news: no trades 2 min around high-impact news. Site says '10 years active' (founded not stated). Futures program not captured. Drawdown type not stated."
+    },
+    {
+      "name": "FundingPips",
+      "slug": "fundingpips",
+      "site": "https://fundingpips.com",
+      "category": "forex-cfd",
+      "assets": [
+        "forex",
+        "commodities",
+        "indices",
+        "crypto"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step",
+        "instant"
+      ],
+      "account_sizes": [
+        5000,
+        10000,
+        25000,
+        50000,
+        100000
+      ],
+      "programs": [
+        {
+          "name": "2 Step Standard",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 39
+            },
+            {
+              "size": 10000,
+              "fee": 72
+            },
+            {
+              "size": 25000,
+              "fee": 195
+            },
+            {
+              "size": 50000,
+              "fee": 349
+            },
+            {
+              "size": 100000,
+              "fee": 652
+            }
+          ],
+          "profit_target": "8% / 5%",
+          "max_daily_loss": "5% (3% option)",
+          "max_drawdown": "10%",
+          "drawdown_type": "static",
+          "profit_split": "80% bi-weekly; 100% on-demand",
+          "min_trading_days": 3
+        },
+        {
+          "name": "1 Step Flex",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 74
+            },
+            {
+              "size": 10000,
+              "fee": 111
+            },
+            {
+              "size": 25000,
+              "fee": 255
+            },
+            {
+              "size": 50000,
+              "fee": 353
+            },
+            {
+              "size": 100000,
+              "fee": 666
+            }
+          ],
+          "profit_target": "12%",
+          "max_daily_loss": "3% (2% option)",
+          "max_drawdown": "12%",
+          "drawdown_type": "static",
+          "profit_split": "80% bi-weekly; 100% on-demand",
+          "min_trading_days": 0
+        },
+        {
+          "name": "Zero",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 60
+            },
+            {
+              "size": 10000,
+              "fee": 88
+            },
+            {
+              "size": 25000,
+              "fee": 188
+            },
+            {
+              "size": 50000,
+              "fee": 244
+            },
+            {
+              "size": 100000,
+              "fee": 444
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": "3%",
+          "max_drawdown": "5%",
+          "drawdown_type": "trailing",
+          "profit_split": "95% bi-weekly",
+          "min_trading_days": 7
+        }
+      ],
+      "fee_from": 29,
+      "profit_split": "up to 100%",
+      "profit_split_scale": "Bi-weekly 80% (95% add-on), On-demand 100%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_target": "8% / 5%",
+      "leverage": "up to 1:100 (FX, evaluation)",
+      "platforms": [],
+      "payout_frequency": "weekly / bi-weekly / on-demand",
+      "first_payout_days": null,
+      "min_trading_days": 3,
+      "consistency_rule": "On-demand rewards: 35%",
+      "news_trading": "restricted",
+      "weekend_holding": "restricted",
+      "countries_restricted": [
+        "Vietnam",
+        "UAE",
+        "FATF / EU-UN sanctioned"
+      ],
+      "founded": null,
+      "hq": "Dubai, UAE",
+      "discount_code": {
+        "code": "FP",
+        "value": "20% off (new customers)"
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.5,
+        "count": 70946
+      },
+      "last_verified": "2026-10-26",
+      "source_urls": [
+        "https://fundingpips.com/",
+        "https://fundingpips.com/trading-objectives",
+        "https://www.trustpilot.com/review/fundingpips.com"
+      ],
+      "notes": "Also 2 Step Pro ($29-$466; 6%/6%, 3% DLL, 6% max, weekly 80%) and 2 Step Flex ($35-$555; 10%/8%, 4%, 12%). fee_from $29 = 2 Step Pro $5K. News/weekend allowed in evaluation, restricted on Master (weekend needs Swing add-on). Platforms not confirmed. Site fetches rate-limited (429); data via browser. Legal entity in Comoros; hq = Dubai office address."
+    },
+    {
       "name": "Alpha Capital",
       "slug": "alpha-capital",
       "site": "https://alphacapitalgroup.uk",
@@ -1060,6 +2490,652 @@
       "notes": "Fees scraped from homepage plan cards (browser). 1-Step Max: 1% per-symbol loss limit (soft breach), 3 free restarts. Instant first payout on demand, then monthly; leverage 30:1 on 1-Step/Max, 50:1 Instant/3-Step. Weekend holding via add-on. October promo (fee refund with first payout, ends Oct 31) has no code. Operator Lark Dashboards Inc.; HQ/founded/restricted countries not found. Trustpilot lists contact country Canada."
     },
     {
+      "name": "Apex Trader Funding",
+      "slug": "apex-trader-funding",
+      "site": "https://apextraderfunding.com",
+      "category": "futures",
+      "assets": [
+        "futures",
+        "indices",
+        "commodities"
+      ],
+      "challenge_types": [
+        "1-step"
+      ],
+      "account_sizes": [
+        25000,
+        50000,
+        100000,
+        150000
+      ],
+      "programs": [
+        {
+          "name": "Intraday Trail Evaluation (Standard)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 167
+            },
+            {
+              "size": 50000,
+              "fee": 249
+            },
+            {
+              "size": 100000,
+              "fee": 790
+            },
+            {
+              "size": 150000,
+              "fee": 1190
+            }
+          ],
+          "profit_target": "6% ($1.5K/$3K/$6K/$9K)",
+          "max_daily_loss": null,
+          "max_drawdown": "$1K/$2K/$3K/$4K",
+          "drawdown_type": "intraday trailing",
+          "profit_split": "100%",
+          "min_trading_days": 0
+        },
+        {
+          "name": "EOD Trail Evaluation (Standard)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 490
+            },
+            {
+              "size": 50000,
+              "fee": 590
+            },
+            {
+              "size": 100000,
+              "fee": 1190
+            },
+            {
+              "size": 150000,
+              "fee": 2190
+            }
+          ],
+          "profit_target": "6% ($1.5K/$3K/$6K/$9K)",
+          "max_daily_loss": "$500/$1K/$1.5K/$2K",
+          "max_drawdown": "$1K/$2K/$3K/$4K",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "100%",
+          "min_trading_days": 0
+        }
+      ],
+      "fee_from": 167,
+      "profit_split": "100%",
+      "profit_split_scale": null,
+      "max_daily_loss": "none (Intraday); $500-$2K (EOD)",
+      "max_drawdown": "$1,000-$4,000",
+      "drawdown_type": "intraday trailing or EOD trailing",
+      "profit_target": "6%",
+      "leverage": null,
+      "platforms": [
+        "Rithmic",
+        "Tradovate",
+        "NinjaTrader",
+        "WealthCharts"
+      ],
+      "payout_frequency": "every 5 qualifying trading days (up to weekly)",
+      "first_payout_days": 5,
+      "min_trading_days": 0,
+      "consistency_rule": "50% (PA payouts); none in eval",
+      "news_trading": null,
+      "weekend_holding": null,
+      "countries_restricted": [
+        "Afghanistan",
+        "Algeria",
+        "Azerbaijan",
+        "Bahrain",
+        "Bangladesh",
+        "Belarus",
+        "Benin",
+        "Brunei",
+        "Burkina Faso",
+        "Burundi",
+        "Cameroon",
+        "Central African Republic",
+        "Chad",
+        "China",
+        "Congo",
+        "Cote D'Ivoire",
+        "Cuba",
+        "Cyprus",
+        "Egypt",
+        "Eritrea",
+        "Gabon",
+        "Grenada",
+        "Guinea",
+        "Guinea-Bissau",
+        "Haiti",
+        "Iran",
+        "Iraq",
+        "Jersey",
+        "Jordan",
+        "Kazakhstan",
+        "Kenya",
+        "Kuwait",
+        "Latvia",
+        "Lebanon",
+        "Lesotho",
+        "Liberia",
+        "Libya",
+        "Madagascar",
+        "Maldives",
+        "Mauritania",
+        "Mauritius",
+        "Mongolia",
+        "Morocco",
+        "Mozambique",
+        "Myanmar",
+        "Namibia",
+        "Nepal",
+        "New Caledonia",
+        "Nicaragua",
+        "Niger",
+        "Nigeria",
+        "North Korea",
+        "Occupied Palestinian Territory",
+        "Oman",
+        "Pakistan",
+        "Papua New Guinea",
+        "Qatar",
+        "Republic of Moldova",
+        "Republic of the Congo",
+        "Reunion",
+        "Russia",
+        "Rwanda",
+        "Saint Pierre and Miquelon",
+        "Saudi Arabia",
+        "Senegal",
+        "Serbia",
+        "Somalia",
+        "South Africa",
+        "South Sudan",
+        "Sri Lanka",
+        "Sudan",
+        "Syria",
+        "Tanzania",
+        "Togo",
+        "Trinidad and Tobago",
+        "Tunisia",
+        "Turkey",
+        "Uganda",
+        "Ukraine",
+        "Uzbekistan",
+        "Vanuatu",
+        "Venezuela",
+        "Vietnam",
+        "Western Sahara",
+        "Yemen",
+        "Zambia",
+        "Zimbabwe"
+      ],
+      "founded": null,
+      "hq": "Austin, TX (mailing address)",
+      "discount_code": {
+        "code": "SAVENOW",
+        "value": "90% off all evals (time-limited banner)"
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.2,
+        "count": 21430
+      },
+      "last_verified": "2026-10-26",
+      "source_urls": [
+        "https://apextraderfunding.com/",
+        "https://apextraderfunding.com/help-center/additional-helpful-items/new-products/",
+        "https://apextraderfunding.com/hc-category/eod-trailing-drawdown-accounts/",
+        "https://apextraderfunding.com/hc-category/intraday-trailing-drawdown-accounts/",
+        "https://apextraderfunding.com/help-center/eod-trailing-drawdown-accounts/eod-evaluations/",
+        "https://apextraderfunding.com/help-center/evaluation-accounts-ea/intraday-trailing-drawdown-evaluations/",
+        "https://apextraderfunding.com/help-center/eod-trailing-drawdown-accounts/eod-payouts/",
+        "https://apextraderfunding.com/help-center/getting-started/restricted-countries/",
+        "https://apextraderfunding.com/about/",
+        "https://www.trustpilot.com/review/apextraderfunding.com"
+      ],
+      "notes": "Site 403s web_fetch; read via browser. Fees = Standard path list prices before coupon (read by clicking the JS size selector; 100K intraday $790 looks out of line, so recheck). Standard path has an activation fee (amount not found). No-activation-fee path also exists (e.g. 25K intraday $690). No minimum days to pass (can pass in 1 day). Profit split = '100% requested rewards, no split in Sim Funded'. Max 6 payouts per PA, $500 min payout. Platform list is inferred from partner/help links. Legacy accounts also sold for a limited time; not captured."
+    },
+    {
+      "name": "Topstep",
+      "slug": "topstep",
+      "site": "https://www.topstep.com",
+      "category": "futures",
+      "assets": [
+        "futures"
+      ],
+      "challenge_types": [
+        "1-step"
+      ],
+      "account_sizes": [
+        50000,
+        100000,
+        150000
+      ],
+      "programs": [
+        {
+          "name": "Trading Combine (Standard Path)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 50000,
+              "fee": 49
+            },
+            {
+              "size": 100000,
+              "fee": 99
+            },
+            {
+              "size": 150000,
+              "fee": 199
+            }
+          ],
+          "profit_target": "6% ($3K/$6K/$9K)",
+          "max_daily_loss": "optional",
+          "max_drawdown": "$2K/$3K/$4.5K",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "90%",
+          "min_trading_days": 2
+        },
+        {
+          "name": "Trading Combine (No Activation Fee Path)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 50000,
+              "fee": 95
+            },
+            {
+              "size": 100000,
+              "fee": 149
+            },
+            {
+              "size": 150000,
+              "fee": 229
+            }
+          ],
+          "profit_target": "6% ($3K/$6K/$9K)",
+          "max_daily_loss": "optional",
+          "max_drawdown": "$2K/$3K/$4.5K",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "90%",
+          "min_trading_days": 2
+        }
+      ],
+      "fee_from": 49,
+      "profit_split": "90%",
+      "profit_split_scale": null,
+      "max_daily_loss": "optional (automatic in Live Funded)",
+      "max_drawdown": "$2,000-$4,500",
+      "drawdown_type": "EOD trailing (locks at starting balance)",
+      "profit_target": "6%",
+      "leverage": null,
+      "platforms": [
+        "TopstepX"
+      ],
+      "payout_frequency": "after 5 winning days $150+ (Standard) or 3 days w/ 40% consistency (Consistency path)",
+      "first_payout_days": 3,
+      "min_trading_days": 2,
+      "consistency_rule": "55% best-day rule in Combine; 40% on XFA Consistency path",
+      "news_trading": null,
+      "weekend_holding": null,
+      "countries_restricted": null,
+      "founded": 2012,
+      "hq": "Chicago, IL",
+      "discount_code": null,
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 3.7,
+        "count": 14989
+      },
+      "last_verified": "2026-10-26",
+      "source_urls": [
+        "https://www.topstep.com/",
+        "https://www.topstep.com/topstep-prop",
+        "https://www.topstep.com/about-us",
+        "https://help.topstep.com/en/",
+        "https://help.topstep.com/en/articles/8284197-trading-combine-parameters",
+        "https://help.topstep.com/en/articles/8284215-express-funded-account-parameters",
+        "https://help.topstep.com/en/articles/8284233-topstep-payout-policy",
+        "https://help.topstep.com/en/articles/8284208-consistency-at-topstep",
+        "https://help.topstep.com/en/articles/8284099-topstep-program-overview",
+        "https://help.topstep.com/en/articles/10490293-daily-loss-limit-in-the-trading-combine-and-express-funded-account",
+        "https://help.topstep.com/en/articles/8284204-what-is-the-maximum-loss-limit",
+        "https://help.topstep.com/en/articles/14289835-topstep-pricing-and-payment-questions",
+        "https://www.trustpilot.com/review/topstep.com"
+      ],
+      "notes": "Fees are MONTHLY subscriptions. Standard path adds a $149 XFA activation fee; No Activation Fee path has none. Min days 2 = 'can pass in as few as 2 days' under the consistency rule. XFA payout cap is 50% of balance, up to $2K-$6K per request. The new dashboard pays 100% of the first $10K for traders who joined before 2026-01-12. Founded: Patak Trading Partners 2010, Topstep Trader launched 2012. HQ inferred from 'Chicago West Loop office'. News/weekend rules and restricted countries not found."
+    },
+    {
+      "name": "MyFundedFutures",
+      "slug": "myfundedfutures",
+      "site": "https://myfundedfutures.com",
+      "category": "futures",
+      "assets": [
+        "futures"
+      ],
+      "challenge_types": [
+        "1-step"
+      ],
+      "account_sizes": [
+        25000,
+        50000,
+        100000,
+        150000
+      ],
+      "programs": [
+        {
+          "name": "Rapid",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 50000,
+              "fee": 125
+            }
+          ],
+          "profit_target": "6% ($1.5K/$3K/$9K for 25K/50K/150K)",
+          "max_daily_loss": "none",
+          "max_drawdown": "$1K/$2K/$4.5K (25K/50K/150K)",
+          "drawdown_type": "intraday trailing (funded; locks after buffer)",
+          "profit_split": "90%",
+          "min_trading_days": 2
+        },
+        {
+          "name": "Pro",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 50000,
+              "fee": 159
+            }
+          ],
+          "profit_target": "6% ($3K/$6K/$9K)",
+          "max_daily_loss": "none",
+          "max_drawdown": "$2K/$3K/$4.5K",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "80%",
+          "min_trading_days": 2
+        },
+        {
+          "name": "Builder",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 50000,
+              "fee": 92
+            }
+          ],
+          "profit_target": "$3,000 (50K)",
+          "max_daily_loss": "$1K soft pause",
+          "max_drawdown": "1.5k or 2k (50K)",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "80%",
+          "min_trading_days": 1
+        }
+      ],
+      "fee_from": 92,
+      "profit_split": "up to 90%",
+      "profit_split_scale": null,
+      "max_daily_loss": "none (most plans)",
+      "max_drawdown": "$1,000-$4,500",
+      "drawdown_type": "EOD trailing or intraday trailing",
+      "profit_target": "6%",
+      "leverage": null,
+      "platforms": [],
+      "payout_frequency": "daily (Rapid); every 48h (Builder); bi-weekly (Pro)",
+      "first_payout_days": null,
+      "min_trading_days": 2,
+      "consistency_rule": "50% in evaluation; none when funded (Rapid/Pro)",
+      "news_trading": "restricted",
+      "weekend_holding": null,
+      "countries_restricted": [
+        "Afghanistan",
+        "Albania",
+        "Algeria",
+        "Angola",
+        "Bahamas",
+        "Barbados",
+        "Belarus",
+        "Bosnia & Herzegovina",
+        "Botswana",
+        "Bulgaria",
+        "Burkina Faso",
+        "Burma (Myanmar)",
+        "Burundi",
+        "Cambodia",
+        "Cameroon",
+        "Central African Republic",
+        "China",
+        "Congo",
+        "Côte D'Ivoire",
+        "Crimea",
+        "Croatia",
+        "Cuba",
+        "Democratic Republic of Congo",
+        "Ecuador",
+        "Ethiopia",
+        "France (Corsica & non-mainland islands)",
+        "Ghana",
+        "Gibraltar",
+        "Guyana",
+        "Haiti",
+        "Hong Kong",
+        "Iceland",
+        "Indonesia",
+        "Iran",
+        "Iraq",
+        "Jamaica",
+        "Jordan",
+        "Kazakhstan",
+        "Kenya",
+        "Kosovo",
+        "Kyrgyzstan",
+        "Laos",
+        "Lebanon",
+        "Liberia",
+        "Libya",
+        "Macedonia",
+        "Malaysia",
+        "Mali",
+        "Malta",
+        "Mauritius",
+        "Mongolia",
+        "Montenegro",
+        "Morocco",
+        "Mozambique",
+        "Namibia",
+        "Nauru",
+        "Nicaragua",
+        "Nigeria",
+        "North Korea",
+        "Pakistan",
+        "Panama",
+        "Papua New Guinea",
+        "Philippines",
+        "Qatar",
+        "Romania",
+        "Russia",
+        "Rwanda",
+        "Senegal",
+        "Serbia",
+        "Slovenia",
+        "Somalia",
+        "South Africa",
+        "South Sudan",
+        "Sri Lanka",
+        "Sudan",
+        "Syria",
+        "Taiwan",
+        "Tanzania",
+        "Trinidad and Tobago",
+        "Tunisia",
+        "Turkey",
+        "Turkmenistan",
+        "Uganda",
+        "Ukraine",
+        "United Arab Emirates",
+        "Uzbekistan",
+        "Venezuela",
+        "Vietnam",
+        "Yemen",
+        "Zimbabwe"
+      ],
+      "founded": null,
+      "hq": null,
+      "discount_code": {
+        "code": "CLUB",
+        "value": "auto-applied in site 'Start Now' links; e.g. 50K Rapid $209 -> $125"
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.9,
+        "count": 22577
+      },
+      "last_verified": "2026-10-26",
+      "source_urls": [
+        "https://myfundedfutures.com/",
+        "https://myfundedfutures.com/plans/rapid",
+        "https://myfundedfutures.com/plans/pro",
+        "https://myfundedfutures.com/plans/builder",
+        "https://help.myfundedfutures.com/en/",
+        "https://help.myfundedfutures.com/en/collections/17350372-rapid-plans",
+        "https://help.myfundedfutures.com/en/articles/14116402-rapid-plan-25k-a-comprehensive-look",
+        "https://help.myfundedfutures.com/en/articles/13134709-rapid-plan-50k-a-comprehensive-look",
+        "https://help.myfundedfutures.com/en/articles/13286582-rapid-plan-150k-a-comprehensive-look",
+        "https://help.myfundedfutures.com/en/articles/17573707-comprehensive-look-into-redesigned-pro-plan",
+        "https://help.myfundedfutures.com/en/articles/8229993-restricted-countries-policy",
+        "https://help.myfundedfutures.com/en/articles/8230009-news-trading-policy",
+        "https://www.trustpilot.com/review/myfundedfutures.com"
+      ],
+      "notes": "Fees are promotional one-time prices for 50K only (list prices: Builder $153, Rapid $209, Pro $265, Rapid EOD $135/$225); other sizes not captured. No activation fees. Rapid eval table labels MLL 'EOD' while funded stage is intraday trailing. Pro funded stage: T1 news not allowed, payouts after 14 days plus buffer, max $100K payout. Rapid EOD and Studio plans exist but were not captured. Platform list not found (help collection empty via fetch)."
+    },
+    {
+      "name": "Bulenox",
+      "slug": "bulenox",
+      "site": "https://bulenox.com",
+      "category": "futures",
+      "assets": [
+        "futures",
+        "indices",
+        "commodities",
+        "forex",
+        "crypto"
+      ],
+      "challenge_types": [
+        "1-step"
+      ],
+      "account_sizes": [
+        25000,
+        50000,
+        100000,
+        150000
+      ],
+      "programs": [
+        {
+          "name": "Qualification - Trailing Drawdown",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 145
+            },
+            {
+              "size": 50000,
+              "fee": 175
+            },
+            {
+              "size": 100000,
+              "fee": 215
+            },
+            {
+              "size": 150000,
+              "fee": 325
+            }
+          ],
+          "profit_target": "6% ($1.5K/$3K/$6K/$9K)",
+          "max_daily_loss": "none",
+          "max_drawdown": "$1.5K/$2.5K/$3K/$4.5K",
+          "drawdown_type": "intraday trailing",
+          "profit_split": "up to 90%",
+          "min_trading_days": 0
+        },
+        {
+          "name": "Qualification - EOD Drawdown",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 145
+            },
+            {
+              "size": 50000,
+              "fee": 175
+            },
+            {
+              "size": 100000,
+              "fee": 215
+            },
+            {
+              "size": 150000,
+              "fee": 325
+            }
+          ],
+          "profit_target": "6% ($1.5K/$3K/$6K/$9K)",
+          "max_daily_loss": "$500/$1.1K/$2.2K/$3.3K",
+          "max_drawdown": "$1.5K/$2.5K/$3K/$4.5K",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "up to 90%",
+          "min_trading_days": 0
+        }
+      ],
+      "fee_from": 145,
+      "profit_split": "up to 90%",
+      "profit_split_scale": null,
+      "max_daily_loss": "none (Trailing) / $500-$3,300 (EOD)",
+      "max_drawdown": "$1,500-$4,500",
+      "drawdown_type": "intraday trailing or EOD trailing",
+      "profit_target": "6%",
+      "leverage": null,
+      "platforms": [
+        "R | Trader Pro",
+        "NinjaTrader",
+        "Rithmic (20+ platforms)"
+      ],
+      "payout_frequency": "daily (Fast Track & Momentum)",
+      "first_payout_days": null,
+      "min_trading_days": 0,
+      "consistency_rule": null,
+      "news_trading": true,
+      "weekend_holding": null,
+      "countries_restricted": null,
+      "founded": null,
+      "hq": "Wilmington, DE",
+      "discount_code": {
+        "code": "BULENOX",
+        "value": "always-on coupon (amount not stated)"
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.7,
+        "count": 1826
+      },
+      "last_verified": "2026-10-26",
+      "source_urls": [
+        "https://bulenox.com/",
+        "https://bulenox.com/faq",
+        "https://bulenox.com/accounts-pricing?risk=trailing",
+        "https://bulenox.com/accounts-pricing?risk=eod",
+        "https://bulenox.com/member/signup",
+        "https://www.trustpilot.com/review/bulenox.com"
+      ],
+      "notes": "Fees are one-time Qualification prices (30-day access). Fast Track and Momentum account types exist but were not captured. No minimum trading days to pass. Assets: 41 CME-group futures including FX, metals, energies, and Micro BTC/ETH. Rithmic professional data costs $116/mo. HQ is the registered address. Restricted countries and founding year not found."
+    },
+    {
       "name": "Instant Funding",
       "slug": "instant-funding",
       "site": "https://instantfunding.com",
@@ -1228,43 +3304,6 @@
         "https://www.trustpilot.com/review/instantfunding.com"
       ],
       "notes": "Prices scraped from homepage configurator (browser). Homepage lists rule blocks for several hidden variants (IF1 24h, 1-phase 10%/3%/8% and 7%/4%/7%, 2-phase 8%/5%) that couldn't be mapped to One-Phase PRO / IF Micro PRO reliably, so those rules are null. Leverage temporarily 1:5 on metals/oil/indices funded. Operator: IF Pro Ltd; HQ, founded, restricted countries not found. Detail pages timed out. Trustpilot: rating unavailable (guidelines-breach warning) -> null."
-    },
-    {
-      "name": "Nova Funding",
-      "slug": "nova-funding",
-      "site": "https://novafunding.com",
-      "category": null,
-      "assets": [],
-      "challenge_types": [],
-      "account_sizes": [],
-      "programs": [],
-      "fee_from": null,
-      "profit_split": null,
-      "profit_split_scale": null,
-      "max_daily_loss": null,
-      "max_drawdown": null,
-      "drawdown_type": null,
-      "profit_target": null,
-      "leverage": null,
-      "platforms": [],
-      "payout_frequency": null,
-      "first_payout_days": null,
-      "min_trading_days": null,
-      "consistency_rule": null,
-      "news_trading": null,
-      "weekend_holding": null,
-      "countries_restricted": null,
-      "founded": null,
-      "hq": null,
-      "discount_code": null,
-      "affiliate_url": "#",
-      "trustpilot": null,
-      "last_verified": "2026-10-26",
-      "source_urls": [
-        "https://novafunding.com",
-        "https://www.trustpilot.com/review/novafunding.com"
-      ],
-      "notes": "BLOCKER: novafunding.com redirects to fundmylawsuitnow.com (Nova Legal Funding, lawsuit loans), not a prop firm. Trustpilot page for novafunding.com (1.3, 79 reviews, 'Financial Consultant', US) not confirmed to be the prop firm, so left null. Need correct prop-firm domain."
     }
   ]
 }

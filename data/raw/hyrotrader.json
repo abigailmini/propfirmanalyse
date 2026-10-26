@@ -1,0 +1,177 @@
+{
+  "name": "HyroTrader",
+  "slug": "hyrotrader",
+  "site": "https://www.hyrotrader.com",
+  "category": "crypto",
+  "assets": [
+    "crypto"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step"
+  ],
+  "account_sizes": [
+    5000,
+    10000,
+    25000,
+    50000,
+    100000,
+    200000
+  ],
+  "programs": [
+    {
+      "name": "Zero-Step",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 89
+        },
+        {
+          "size": 10000,
+          "fee": 169
+        },
+        {
+          "size": 25000,
+          "fee": 379
+        },
+        {
+          "size": 50000,
+          "fee": 629
+        },
+        {
+          "size": 100000,
+          "fee": 949
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "5%",
+      "drawdown_type": "static daily",
+      "profit_split": "80%",
+      "min_trading_days": 1
+    },
+    {
+      "name": "One-Step",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 69
+        },
+        {
+          "size": 10000,
+          "fee": 129
+        },
+        {
+          "size": 25000,
+          "fee": 299
+        },
+        {
+          "size": 50000,
+          "fee": 499
+        },
+        {
+          "size": 100000,
+          "fee": 749
+        },
+        {
+          "size": 200000,
+          "fee": 1299
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static daily",
+      "profit_split": "80%, up to 90%",
+      "min_trading_days": 5
+    },
+    {
+      "name": "Two-Step",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 59
+        },
+        {
+          "size": 10000,
+          "fee": 119
+        },
+        {
+          "size": 25000,
+          "fee": 249
+        },
+        {
+          "size": 50000,
+          "fee": 379
+        },
+        {
+          "size": 100000,
+          "fee": 579
+        },
+        {
+          "size": 200000,
+          "fee": 969
+        }
+      ],
+      "profit_target": "10% / 5%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static daily",
+      "profit_split": "80%, up to 90%",
+      "min_trading_days": 5
+    }
+  ],
+  "fee_from": 59,
+  "profit_split": "up to 90%",
+  "profit_split_scale": "80% start; up to 90% on One-Step/Two-Step at firm's discretion (not automatic); Zero-Step fixed 80%",
+  "max_daily_loss": "4%",
+  "max_drawdown": "6%",
+  "drawdown_type": "static (daily)",
+  "profit_target": "10%",
+  "leverage": "user-selected; Bybit mostly 50x-100x, Hyro 100x+, BloFin up to 150x (BTC/ETH)",
+  "platforms": [
+    "Bybit (demo)",
+    "BloFin (demo)",
+    "Hyro",
+    "Tealstreet",
+    "Tiger.com"
+  ],
+  "payout_frequency": "on demand once $100+ profit after split; processed within 24h in USDT/USDC; per-payout cap by account size (e.g. $1,000 on 25K)",
+  "first_payout_days": null,
+  "min_trading_days": 5,
+  "consistency_rule": "Evaluation only: One/Two-Step no single day >40% of profit target; Zero-Step no single trade >50% of target; none on funded accounts",
+  "news_trading": true,
+  "weekend_holding": true,
+  "countries_restricted": null,
+  "founded": 2023,
+  "hq": "Ras Al Khaimah, UAE (operator HYRO TECHNOLOGIES FZ-LLC); operates mainly from Dubai with office in Prague",
+  "discount_code": null,
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 4,
+    "count": 228
+  },
+  "last_verified": "2026-10-26",
+  "source_urls": [
+    "https://www.hyrotrader.com/",
+    "https://www.hyrotrader.com/faq/",
+    "https://www.hyrotrader.com/about-us/",
+    "https://www.hyrotrader.com/terms-and-conditions/",
+    "https://www.hyrotrader.com/faq/rules/what-are-the-risk-management-conditions-at-hyrotrader/",
+    "https://www.hyrotrader.com/faq/rules/what-is-the-difference-between-standard-trailing-and-swing-fixed-daily-drawdown/",
+    "https://www.hyrotrader.com/faq/rules/how-is-the-5-daily-drawdown-calculated/",
+    "https://www.hyrotrader.com/faq/rules/are-there-any-other-rules-for-a-funded-account/",
+    "https://www.hyrotrader.com/faq/rules/do-i-have-to-close-my-positions-overnight/",
+    "https://www.hyrotrader.com/faq/trading-restrictions/is-news-trading-allowed/",
+    "https://www.hyrotrader.com/faq/hyrotrader-account/how-much-is-the-profit-split/",
+    "https://www.hyrotrader.com/faq/hyrotrader-account/how-can-i-withdraw-my-profits/",
+    "https://www.hyrotrader.com/faq/platform/what-leverage-can-i-use/",
+    "https://www.hyrotrader.com/faq/platform/is-trading-allowed-for-individuals-from-restricted-countries/",
+    "https://www.hyrotrader.com/faq/platform/which-countries-are-allowed-to-join-hyrotrader-can-i-join-from-the-usuk/",
+    "https://www.trustpilot.com/review/hyrotrader.com"
+  ],
+  "notes": "Headline rules = One-Step (flagged Most Popular). Zero-Step is a 1-day single-phase evaluation; its fee is non-refundable. One/Two-Step fees are refundable deposits returned with the first payout. Two-Step requires 5 + 5 days. Daily drawdown is static from start-of-day equity (00:00 UTC); max-loss calculation method (static vs trailing) not confirmed. Funded accounts: 25% max margin exposure and 2x notional cap. News trading allowed, but a strategy based only on news is not. Low-cap altcoin exposure capped at 5% of initial balance. Restricted-country list sits in the T&C and could not be extracted (US/UK are allowed). Simulated/demo accounts at all stages. Homepage widget shows 4.7/210 reviews, but Trustpilot page showed 4.0/228 on 2026-10-26. No public discount code seen. Founded 2023 (team began building in 2022)."
+}

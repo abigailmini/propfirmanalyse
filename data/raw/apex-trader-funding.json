@@ -1,0 +1,212 @@
+{
+  "name": "Apex Trader Funding",
+  "slug": "apex-trader-funding",
+  "site": "https://apextraderfunding.com",
+  "category": "futures",
+  "assets": [
+    "futures",
+    "indices",
+    "commodities"
+  ],
+  "challenge_types": [
+    "1-step"
+  ],
+  "account_sizes": [
+    25000,
+    50000,
+    100000,
+    150000
+  ],
+  "programs": [
+    {
+      "name": "Intraday Trail Evaluation (Standard)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 167
+        },
+        {
+          "size": 50000,
+          "fee": 249
+        },
+        {
+          "size": 100000,
+          "fee": 790
+        },
+        {
+          "size": 150000,
+          "fee": 1190
+        }
+      ],
+      "profit_target": "6% ($1.5K/$3K/$6K/$9K)",
+      "max_daily_loss": null,
+      "max_drawdown": "$1K/$2K/$3K/$4K",
+      "drawdown_type": "intraday trailing",
+      "profit_split": "100%",
+      "min_trading_days": 0
+    },
+    {
+      "name": "EOD Trail Evaluation (Standard)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 490
+        },
+        {
+          "size": 50000,
+          "fee": 590
+        },
+        {
+          "size": 100000,
+          "fee": 1190
+        },
+        {
+          "size": 150000,
+          "fee": 2190
+        }
+      ],
+      "profit_target": "6% ($1.5K/$3K/$6K/$9K)",
+      "max_daily_loss": "$500/$1K/$1.5K/$2K",
+      "max_drawdown": "$1K/$2K/$3K/$4K",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "100%",
+      "min_trading_days": 0
+    }
+  ],
+  "fee_from": 167,
+  "profit_split": "100%",
+  "profit_split_scale": null,
+  "max_daily_loss": "none (Intraday); $500-$2K (EOD)",
+  "max_drawdown": "$1,000-$4,000",
+  "drawdown_type": "intraday trailing or EOD trailing",
+  "profit_target": "6%",
+  "leverage": null,
+  "platforms": [
+    "Rithmic",
+    "Tradovate",
+    "NinjaTrader",
+    "WealthCharts"
+  ],
+  "payout_frequency": "every 5 qualifying trading days (up to weekly)",
+  "first_payout_days": 5,
+  "min_trading_days": 0,
+  "consistency_rule": "50% (PA payouts); none in eval",
+  "news_trading": null,
+  "weekend_holding": null,
+  "countries_restricted": [
+    "Afghanistan",
+    "Algeria",
+    "Azerbaijan",
+    "Bahrain",
+    "Bangladesh",
+    "Belarus",
+    "Benin",
+    "Brunei",
+    "Burkina Faso",
+    "Burundi",
+    "Cameroon",
+    "Central African Republic",
+    "Chad",
+    "China",
+    "Congo",
+    "Cote D'Ivoire",
+    "Cuba",
+    "Cyprus",
+    "Egypt",
+    "Eritrea",
+    "Gabon",
+    "Grenada",
+    "Guinea",
+    "Guinea-Bissau",
+    "Haiti",
+    "Iran",
+    "Iraq",
+    "Jersey",
+    "Jordan",
+    "Kazakhstan",
+    "Kenya",
+    "Kuwait",
+    "Latvia",
+    "Lebanon",
+    "Lesotho",
+    "Liberia",
+    "Libya",
+    "Madagascar",
+    "Maldives",
+    "Mauritania",
+    "Mauritius",
+    "Mongolia",
+    "Morocco",
+    "Mozambique",
+    "Myanmar",
+    "Namibia",
+    "Nepal",
+    "New Caledonia",
+    "Nicaragua",
+    "Niger",
+    "Nigeria",
+    "North Korea",
+    "Occupied Palestinian Territory",
+    "Oman",
+    "Pakistan",
+    "Papua New Guinea",
+    "Qatar",
+    "Republic of Moldova",
+    "Republic of the Congo",
+    "Reunion",
+    "Russia",
+    "Rwanda",
+    "Saint Pierre and Miquelon",
+    "Saudi Arabia",
+    "Senegal",
+    "Serbia",
+    "Somalia",
+    "South Africa",
+    "South Sudan",
+    "Sri Lanka",
+    "Sudan",
+    "Syria",
+    "Tanzania",
+    "Togo",
+    "Trinidad and Tobago",
+    "Tunisia",
+    "Turkey",
+    "Uganda",
+    "Ukraine",
+    "Uzbekistan",
+    "Vanuatu",
+    "Venezuela",
+    "Vietnam",
+    "Western Sahara",
+    "Yemen",
+    "Zambia",
+    "Zimbabwe"
+  ],
+  "founded": null,
+  "hq": "Austin, TX (mailing address)",
+  "discount_code": {
+    "code": "SAVENOW",
+    "value": "90% off all evals (time-limited banner)"
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 4.2,
+    "count": 21430
+  },
+  "last_verified": "2026-10-26",
+  "source_urls": [
+    "https://apextraderfunding.com/",
+    "https://apextraderfunding.com/help-center/additional-helpful-items/new-products/",
+    "https://apextraderfunding.com/hc-category/eod-trailing-drawdown-accounts/",
+    "https://apextraderfunding.com/hc-category/intraday-trailing-drawdown-accounts/",
+    "https://apextraderfunding.com/help-center/eod-trailing-drawdown-accounts/eod-evaluations/",
+    "https://apextraderfunding.com/help-center/evaluation-accounts-ea/intraday-trailing-drawdown-evaluations/",
+    "https://apextraderfunding.com/help-center/eod-trailing-drawdown-accounts/eod-payouts/",
+    "https://apextraderfunding.com/help-center/getting-started/restricted-countries/",
+    "https://apextraderfunding.com/about/",
+    "https://www.trustpilot.com/review/apextraderfunding.com"
+  ],
+  "notes": "Site 403s web_fetch; read via browser. Fees = Standard path list prices before coupon (read by clicking the JS size selector; 100K intraday $790 looks out of line, so recheck). Standard path has an activation fee (amount not found). No-activation-fee path also exists (e.g. 25K intraday $690). No minimum days to pass (can pass in 1 day). Profit split = '100% requested rewards, no split in Sim Funded'. Max 6 payouts per PA, $500 min payout. Platform list is inferred from partner/help links. Legacy accounts also sold for a limited time; not captured."
+}

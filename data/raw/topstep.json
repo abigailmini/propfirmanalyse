@@ -1,0 +1,110 @@
+{
+  "name": "Topstep",
+  "slug": "topstep",
+  "site": "https://www.topstep.com",
+  "category": "futures",
+  "assets": [
+    "futures"
+  ],
+  "challenge_types": [
+    "1-step"
+  ],
+  "account_sizes": [
+    50000,
+    100000,
+    150000
+  ],
+  "programs": [
+    {
+      "name": "Trading Combine (Standard Path)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 50000,
+          "fee": 49
+        },
+        {
+          "size": 100000,
+          "fee": 99
+        },
+        {
+          "size": 150000,
+          "fee": 199
+        }
+      ],
+      "profit_target": "6% ($3K/$6K/$9K)",
+      "max_daily_loss": "optional",
+      "max_drawdown": "$2K/$3K/$4.5K",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "90%",
+      "min_trading_days": 2
+    },
+    {
+      "name": "Trading Combine (No Activation Fee Path)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 50000,
+          "fee": 95
+        },
+        {
+          "size": 100000,
+          "fee": 149
+        },
+        {
+          "size": 150000,
+          "fee": 229
+        }
+      ],
+      "profit_target": "6% ($3K/$6K/$9K)",
+      "max_daily_loss": "optional",
+      "max_drawdown": "$2K/$3K/$4.5K",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "90%",
+      "min_trading_days": 2
+    }
+  ],
+  "fee_from": 49,
+  "profit_split": "90%",
+  "profit_split_scale": null,
+  "max_daily_loss": "optional (automatic in Live Funded)",
+  "max_drawdown": "$2,000-$4,500",
+  "drawdown_type": "EOD trailing (locks at starting balance)",
+  "profit_target": "6%",
+  "leverage": null,
+  "platforms": [
+    "TopstepX"
+  ],
+  "payout_frequency": "after 5 winning days $150+ (Standard) or 3 days w/ 40% consistency (Consistency path)",
+  "first_payout_days": 3,
+  "min_trading_days": 2,
+  "consistency_rule": "55% best-day rule in Combine; 40% on XFA Consistency path",
+  "news_trading": null,
+  "weekend_holding": null,
+  "countries_restricted": null,
+  "founded": 2012,
+  "hq": "Chicago, IL",
+  "discount_code": null,
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 3.7,
+    "count": 14989
+  },
+  "last_verified": "2026-10-26",
+  "source_urls": [
+    "https://www.topstep.com/",
+    "https://www.topstep.com/topstep-prop",
+    "https://www.topstep.com/about-us",
+    "https://help.topstep.com/en/",
+    "https://help.topstep.com/en/articles/8284197-trading-combine-parameters",
+    "https://help.topstep.com/en/articles/8284215-express-funded-account-parameters",
+    "https://help.topstep.com/en/articles/8284233-topstep-payout-policy",
+    "https://help.topstep.com/en/articles/8284208-consistency-at-topstep",
+    "https://help.topstep.com/en/articles/8284099-topstep-program-overview",
+    "https://help.topstep.com/en/articles/10490293-daily-loss-limit-in-the-trading-combine-and-express-funded-account",
+    "https://help.topstep.com/en/articles/8284204-what-is-the-maximum-loss-limit",
+    "https://help.topstep.com/en/articles/14289835-topstep-pricing-and-payment-questions",
+    "https://www.trustpilot.com/review/topstep.com"
+  ],
+  "notes": "Fees are MONTHLY subscriptions. Standard path adds a $149 XFA activation fee; No Activation Fee path has none. Min days 2 = 'can pass in as few as 2 days' under the consistency rule. XFA payout cap is 50% of balance, up to $2K-$6K per request. The new dashboard pays 100% of the first $10K for traders who joined before 2026-01-12. Founded: Patak Trading Partners 2010, Topstep Trader launched 2012. HQ inferred from 'Chicago West Loop office'. News/weekend rules and restricted countries not found."
+}

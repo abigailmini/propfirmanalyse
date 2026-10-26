@@ -1,0 +1,177 @@
+{
+ "name": "The5ers",
+ "slug": "the5ers",
+ "site": "https://the5ers.com",
+ "category": "multi",
+ "assets": [
+  "forex",
+  "commodities",
+  "indices",
+  "crypto",
+  "stocks",
+  "futures"
+ ],
+ "challenge_types": [
+  "1-step",
+  "2-step",
+  "3-step"
+ ],
+ "account_sizes": [
+  2500,
+  5000,
+  10000,
+  20000,
+  25000,
+  50000,
+  100000,
+  250000
+ ],
+ "programs": [
+  {
+   "name": "High Stakes",
+   "type": "2-step",
+   "sizes_fees": [
+    {
+     "size": 2500,
+     "fee": 19
+    },
+    {
+     "size": 5000,
+     "fee": 35
+    },
+    {
+     "size": 10000,
+     "fee": 69
+    },
+    {
+     "size": 25000,
+     "fee": 176
+    },
+    {
+     "size": 50000,
+     "fee": 249
+    },
+    {
+     "size": 100000,
+     "fee": 405
+    }
+   ],
+   "profit_target": "10% / 5%",
+   "max_daily_loss": "5%",
+   "max_drawdown": "10%",
+   "drawdown_type": null,
+   "profit_split": "80%-100%",
+   "min_trading_days": 3
+  },
+  {
+   "name": "Hyper Growth",
+   "type": "1-step",
+   "sizes_fees": [
+    {
+     "size": 5000,
+     "fee": 52
+    },
+    {
+     "size": 10000,
+     "fee": 98
+    },
+    {
+     "size": 20000,
+     "fee": 189
+    },
+    {
+     "size": 50000,
+     "fee": 329
+    }
+   ],
+   "profit_target": "10%",
+   "max_daily_loss": "3%",
+   "max_drawdown": "6%",
+   "drawdown_type": null,
+   "profit_split": "up to 100%",
+   "min_trading_days": 3
+  },
+  {
+   "name": "Bootcamp",
+   "type": "3-step",
+   "sizes_fees": [
+    {
+     "size": 20000,
+     "fee": 22
+    }
+   ],
+   "profit_target": "6% / 6% / 6%",
+   "max_daily_loss": null,
+   "max_drawdown": "5%",
+   "drawdown_type": null,
+   "profit_split": "up to 100%",
+   "min_trading_days": null
+  }
+ ],
+ "fee_from": 19,
+ "profit_split": "up to 100%",
+ "profit_split_scale": "High Stakes: 80% → 85% at $175K → 90% at $250K → 100% at $350K+",
+ "max_daily_loss": "5%",
+ "max_drawdown": "10%",
+ "drawdown_type": null,
+ "profit_target": "10% / 5%",
+ "leverage": "1:100 (High Stakes); 1:30 (Hyper Growth, Bootcamp)",
+ "platforms": [
+  "MT5"
+ ],
+ "payout_frequency": null,
+ "first_payout_days": null,
+ "min_trading_days": 3,
+ "consistency_rule": null,
+ "news_trading": "restricted",
+ "weekend_holding": true,
+ "countries_restricted": [
+  "Afghanistan",
+  "Belarus",
+  "Burundi",
+  "Central African Republic",
+  "Cuba",
+  "Congo Republic",
+  "Crimea",
+  "Democratic Republic of Congo",
+  "Eritrea",
+  "Guinea",
+  "Guinea-Bissau",
+  "Iraq",
+  "Iran",
+  "Israel",
+  "Laos",
+  "Lebanon",
+  "Liberia",
+  "Libya",
+  "Myanmar",
+  "North Korea",
+  "Palestinian Territory",
+  "Papua New Guinea",
+  "Russia",
+  "South Sudan",
+  "Sudan",
+  "Somalia",
+  "Syria",
+  "Vanuatu",
+  "Venezuela",
+  "Yemen"
+ ],
+ "founded": null,
+ "hq": null,
+ "discount_code": null,
+ "affiliate_url": "#",
+ "trustpilot": {
+  "score": 4.7,
+  "count": 40518
+ },
+ "last_verified": "2026-10-26",
+ "source_urls": [
+  "https://the5ers.com/",
+  "https://the5ers.com/high-stakes/",
+  "https://the5ers.com/hyper-growth/",
+  "https://the5ers.com/bootcamp/",
+  "https://www.trustpilot.com/review/the5ers.com"
+ ],
+ "notes": "min_trading_days = min profitable days (≥0.5%). Bootcamp: $22 entry + $50 at funding; 3-step for $100K/$250K fees not captured; Pro stage 3% daily pause/4% max loss. Homepage also lists a separate '1 Step' ($249, 10%/3%/6%, 75% share, 1:100). Banner promo '$100K for $149' (no code). HS news: no trades 2 min around high-impact news. Site says '10 years active' (founded not stated). Futures program not captured. Drawdown type not stated."
+}

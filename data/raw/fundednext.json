@@ -1,0 +1,179 @@
+{
+ "name": "FundedNext",
+ "slug": "fundednext",
+ "site": "https://fundednext.com",
+ "category": "multi",
+ "assets": [
+  "forex",
+  "futures"
+ ],
+ "challenge_types": [
+  "1-step",
+  "2-step",
+  "instant"
+ ],
+ "account_sizes": [
+  2000,
+  5000,
+  6000,
+  10000,
+  15000,
+  20000,
+  25000,
+  50000,
+  100000,
+  200000
+ ],
+ "programs": [
+  {
+   "name": "Stellar 2-Step",
+   "type": "2-step",
+   "sizes_fees": [
+    {
+     "size": 6000,
+     "fee": 59.99
+    },
+    {
+     "size": 15000,
+     "fee": 119.99
+    },
+    {
+     "size": 25000,
+     "fee": 199.99
+    },
+    {
+     "size": 50000,
+     "fee": 299.99
+    },
+    {
+     "size": 100000,
+     "fee": 549.99
+    },
+    {
+     "size": 200000,
+     "fee": 1099.99
+    }
+   ],
+   "profit_target": "8% / 5%",
+   "max_daily_loss": "5%",
+   "max_drawdown": "10%",
+   "drawdown_type": "static",
+   "profit_split": "80%",
+   "min_trading_days": 5
+  },
+  {
+   "name": "Stellar 1-Step",
+   "type": "1-step",
+   "sizes_fees": [
+    {
+     "size": 6000,
+     "fee": 65.99
+    },
+    {
+     "size": 15000,
+     "fee": 129.99
+    },
+    {
+     "size": 25000,
+     "fee": 219.99
+    },
+    {
+     "size": 50000,
+     "fee": 329.99
+    },
+    {
+     "size": 100000,
+     "fee": 569.99
+    },
+    {
+     "size": 200000,
+     "fee": 1099.99
+    }
+   ],
+   "profit_target": "10%",
+   "max_daily_loss": "3%",
+   "max_drawdown": "6%",
+   "drawdown_type": "static",
+   "profit_split": "up to 95%",
+   "min_trading_days": 2
+  },
+  {
+   "name": "Stellar Instant",
+   "type": "instant",
+   "sizes_fees": [
+    {
+     "size": 2000,
+     "fee": 59.99
+    },
+    {
+     "size": 5000,
+     "fee": 149.99
+    },
+    {
+     "size": 10000,
+     "fee": 299.99
+    },
+    {
+     "size": 20000,
+     "fee": 599.99
+    }
+   ],
+   "profit_target": null,
+   "max_daily_loss": "none",
+   "max_drawdown": "6%",
+   "drawdown_type": "trailing",
+   "profit_split": "up to 80%",
+   "min_trading_days": null
+  }
+ ],
+ "fee_from": 59.99,
+ "profit_split": "up to 95%",
+ "profit_split_scale": null,
+ "max_daily_loss": "5%",
+ "max_drawdown": "10%",
+ "drawdown_type": "static",
+ "profit_target": "8% / 5%",
+ "leverage": null,
+ "platforms": [
+  "MT4",
+  "MT5",
+  "cTrader",
+  "Match-Trader",
+  "NinjaTrader",
+  "Tradovate",
+  "TradingView"
+ ],
+ "payout_frequency": "14 days (2-Step); 5 days (1-Step); on-demand/bi-weekly (Instant)",
+ "first_payout_days": 21,
+ "min_trading_days": 5,
+ "consistency_rule": null,
+ "news_trading": true,
+ "weekend_holding": null,
+ "countries_restricted": [
+  "North Korea",
+  "Myanmar",
+  "Belarus",
+  "Iran",
+  "Russia",
+  "Vietnam",
+  "FATF high-risk / EU-UN sanctioned"
+ ],
+ "founded": 2022,
+ "hq": "Ajman, UAE",
+ "discount_code": null,
+ "affiliate_url": "#",
+ "trustpilot": {
+  "score": 4.5,
+  "count": 82278
+ },
+ "last_verified": "2026-10-26",
+ "source_urls": [
+  "https://fundednext.com/",
+  "https://fundednext.com/cfds",
+  "https://fundednext.com/trading-platforms",
+  "https://fundednext.com/company",
+  "https://help.fundednext.com/en/",
+  "https://www.trustpilot.com/review/fundednext.com"
+ ],
+ "notes": "CFD Stellar prices via browser; Stellar Lite & FNL:002 programs and Futures not captured. Leverage, weekend rule not found. first_payout_days=21 for 2-Step (1-Step: 5 business days). News trading profit capped at 40% on funded. hq = registered entity GrowthNext F.Z.E. Trustpilot via browser."
+}

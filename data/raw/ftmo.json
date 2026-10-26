@@ -1,0 +1,164 @@
+{
+  "name": "FTMO",
+  "slug": "ftmo",
+  "site": "https://ftmo.com",
+  "category": "multi",
+  "assets": [
+    "forex",
+    "indices",
+    "commodities",
+    "crypto",
+    "futures"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step",
+    "instant"
+  ],
+  "account_sizes": [
+    5000,
+    10000,
+    25000,
+    50000,
+    100000,
+    200000
+  ],
+  "fee_currency": "EUR",
+  "programs": [
+    {
+      "name": "FTMO Challenge 2-Step",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 10000,
+          "fee": 89
+        },
+        {
+          "size": 25000,
+          "fee": 250
+        },
+        {
+          "size": 50000,
+          "fee": 345
+        },
+        {
+          "size": 100000,
+          "fee": 540
+        },
+        {
+          "size": 200000,
+          "fee": 1080
+        }
+      ],
+      "profit_target": "10% / 5%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_split": "up to 90%",
+      "min_trading_days": 4
+    },
+    {
+      "name": "FTMO Challenge 1-Step",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 10000,
+          "fee": 79
+        },
+        {
+          "size": 25000,
+          "fee": 199
+        },
+        {
+          "size": 50000,
+          "fee": 319
+        },
+        {
+          "size": 100000,
+          "fee": 499
+        },
+        {
+          "size": 200000,
+          "fee": 999
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "10%",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "90%",
+      "min_trading_days": null
+    },
+    {
+      "name": "FTMO Instant Account",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 169
+        },
+        {
+          "size": 10000,
+          "fee": 339
+        },
+        {
+          "size": 25000,
+          "fee": 749
+        },
+        {
+          "size": 50000,
+          "fee": 1499
+        },
+        {
+          "size": 100000,
+          "fee": 2999
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": "3%",
+      "max_drawdown": "10%",
+      "drawdown_type": "trailing (intraday, balance-based)",
+      "profit_split": "90%",
+      "min_trading_days": null
+    }
+  ],
+  "fee_from": 79,
+  "profit_split": "up to 90%",
+  "profit_split_scale": null,
+  "max_daily_loss": "5%",
+  "max_drawdown": "10%",
+  "drawdown_type": "static",
+  "profit_target": "10% / 5%",
+  "leverage": "up to 1:100",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "TradingView",
+    "cTrader"
+  ],
+  "payout_frequency": null,
+  "first_payout_days": null,
+  "min_trading_days": 4,
+  "consistency_rule": "1-Step: best day ≤50% of profit; Instant: ≤30%",
+  "news_trading": "restricted",
+  "weekend_holding": "restricted",
+  "countries_restricted": null,
+  "founded": 2015,
+  "hq": "Czech Republic",
+  "discount_code": null,
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 4.8,
+    "count": 55121
+  },
+  "last_verified": "2026-10-26",
+  "source_urls": [
+    "https://ftmo.com/en/",
+    "https://ftmo.com/en/#pricing",
+    "https://ftmo.com/en/trading-objectives/",
+    "https://ftmo.com/en/faq/",
+    "https://www.trustpilot.com/review/ftmo.com",
+    "https://ftmo.com/en/symbols/"
+  ],
+  "notes": "Fees are EUR (USD toggle not applied in browser). $100K showed two prices: 2-Step €439/€540, 1-Step €399/€499 (higher recorded; lower may be promo). News/weekend restrictions apply only to Standard funded accounts (Swing type unrestricted; evaluation unrestricted). CFD asset classes not verified (only Futures product seen). Payout frequency not found. hq inferred from CZ legal entity FTMO s.r.o. Assets: Forex/Crypto/Indices/Commodities(Metals) category filters confirmed on ftmo.com/en/symbols (2026-10-26); stocks not confirmed. Fees in EUR."
+}

@@ -1,0 +1,121 @@
+{
+  "name": "Bulenox",
+  "slug": "bulenox",
+  "site": "https://bulenox.com",
+  "category": "futures",
+  "assets": [
+    "futures",
+    "indices",
+    "commodities",
+    "forex",
+    "crypto"
+  ],
+  "challenge_types": [
+    "1-step"
+  ],
+  "account_sizes": [
+    25000,
+    50000,
+    100000,
+    150000
+  ],
+  "programs": [
+    {
+      "name": "Qualification - Trailing Drawdown",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 145
+        },
+        {
+          "size": 50000,
+          "fee": 175
+        },
+        {
+          "size": 100000,
+          "fee": 215
+        },
+        {
+          "size": 150000,
+          "fee": 325
+        }
+      ],
+      "profit_target": "6% ($1.5K/$3K/$6K/$9K)",
+      "max_daily_loss": "none",
+      "max_drawdown": "$1.5K/$2.5K/$3K/$4.5K",
+      "drawdown_type": "intraday trailing",
+      "profit_split": "up to 90%",
+      "min_trading_days": 0
+    },
+    {
+      "name": "Qualification - EOD Drawdown",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 145
+        },
+        {
+          "size": 50000,
+          "fee": 175
+        },
+        {
+          "size": 100000,
+          "fee": 215
+        },
+        {
+          "size": 150000,
+          "fee": 325
+        }
+      ],
+      "profit_target": "6% ($1.5K/$3K/$6K/$9K)",
+      "max_daily_loss": "$500/$1.1K/$2.2K/$3.3K",
+      "max_drawdown": "$1.5K/$2.5K/$3K/$4.5K",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "up to 90%",
+      "min_trading_days": 0
+    }
+  ],
+  "fee_from": 145,
+  "profit_split": "up to 90%",
+  "profit_split_scale": null,
+  "max_daily_loss": "none (Trailing) / $500-$3,300 (EOD)",
+  "max_drawdown": "$1,500-$4,500",
+  "drawdown_type": "intraday trailing or EOD trailing",
+  "profit_target": "6%",
+  "leverage": null,
+  "platforms": [
+    "R | Trader Pro",
+    "NinjaTrader",
+    "Rithmic (20+ platforms)"
+  ],
+  "payout_frequency": "daily (Fast Track & Momentum)",
+  "first_payout_days": null,
+  "min_trading_days": 0,
+  "consistency_rule": null,
+  "news_trading": true,
+  "weekend_holding": null,
+  "countries_restricted": null,
+  "founded": null,
+  "hq": "Wilmington, DE",
+  "discount_code": {
+    "code": "BULENOX",
+    "value": "always-on coupon (amount not stated)"
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 4.7,
+    "count": 1826
+  },
+  "last_verified": "2026-10-26",
+  "source_urls": [
+    "https://bulenox.com/",
+    "https://bulenox.com/faq",
+    "https://bulenox.com/accounts-pricing?risk=trailing",
+    "https://bulenox.com/accounts-pricing?risk=eod",
+    "https://bulenox.com/member/signup",
+    "https://www.trustpilot.com/review/bulenox.com"
+  ],
+  "notes": "Fees are one-time Qualification prices (30-day access). Fast Track and Momentum account types exist but were not captured. No minimum trading days to pass. Assets: 41 CME-group futures including FX, metals, energies, and Micro BTC/ETH. Rithmic professional data costs $116/mo. HQ is the registered address. Restricted countries and founding year not found."
+}

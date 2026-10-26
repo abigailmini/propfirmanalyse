@@ -1,0 +1,162 @@
+{
+  "name": "Crypto Fund Trader",
+  "slug": "crypto-fund-trader",
+  "site": "https://cryptofundtrader.com",
+  "category": "multi",
+  "assets": [
+    "crypto",
+    "forex",
+    "indices",
+    "commodities",
+    "stocks"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step",
+    "instant"
+  ],
+  "account_sizes": [
+    2500,
+    5000,
+    10000,
+    25000,
+    50000,
+    100000,
+    200000
+  ],
+  "programs": [
+    {
+      "name": "Instant",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 2500,
+          "fee": 125
+        },
+        {
+          "size": 5000,
+          "fee": 240
+        },
+        {
+          "size": 10000,
+          "fee": 475
+        }
+      ],
+      "profit_target": "10% per scale-up level",
+      "max_daily_loss": "4%",
+      "max_drawdown": "6%",
+      "drawdown_type": null,
+      "profit_split": "50% scaling to 90%",
+      "min_trading_days": 0
+    },
+    {
+      "name": "1 Phase",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 40
+        },
+        {
+          "size": 10000,
+          "fee": 80
+        },
+        {
+          "size": 25000,
+          "fee": 219
+        },
+        {
+          "size": 50000,
+          "fee": 369
+        },
+        {
+          "size": 100000,
+          "fee": 619
+        },
+        {
+          "size": 200000,
+          "fee": 1199
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "6%",
+      "drawdown_type": "trailing",
+      "profit_split": "80%",
+      "min_trading_days": 0
+    },
+    {
+      "name": "2 Phases",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 58
+        },
+        {
+          "size": 10000,
+          "fee": 110
+        },
+        {
+          "size": 25000,
+          "fee": 240
+        },
+        {
+          "size": 50000,
+          "fee": 389
+        },
+        {
+          "size": 100000,
+          "fee": 660
+        },
+        {
+          "size": 200000,
+          "fee": 1250
+        }
+      ],
+      "profit_target": "8% / 5%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": null,
+      "profit_split": "80%",
+      "min_trading_days": 0
+    }
+  ],
+  "fee_from": 40,
+  "profit_split": "up to 90%",
+  "profit_split_scale": "80% on 1/2-phase final stage; Instant starts 50% and steps 60/70/80/90% as account doubles",
+  "max_daily_loss": "4%-5% by plan",
+  "max_drawdown": "6%-10% by plan",
+  "drawdown_type": "trailing (1 Phase); overall loss limit (2 Phases/Instant, type not stated)",
+  "profit_target": "8%-10% phase 1 by plan",
+  "leverage": "up to 1:100",
+  "platforms": [
+    "Match-Trader",
+    "MT5",
+    "Bybit"
+  ],
+  "payout_frequency": "after 15 trading days or every 30 calendar days; every 7 traded days with Weekly Payouts add-on; Instant on each 10% profit (withdraw & upgrade)",
+  "first_payout_days": null,
+  "min_trading_days": 0,
+  "consistency_rule": "none on standard plans; 40% best day on Break final stage",
+  "news_trading": true,
+  "weekend_holding": true,
+  "countries_restricted": [
+    "United States (MT5 only)"
+  ],
+  "founded": null,
+  "hq": "Zug, Switzerland",
+  "discount_code": null,
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": null,
+    "count": 1110
+  },
+  "last_verified": "2026-10-26",
+  "source_urls": [
+    "https://cryptofundtrader.com/",
+    "https://cryptofundtrader.com/faq/",
+    "https://www.trustpilot.com/review/cryptofundtrader.com"
+  ],
+  "notes": "Fees read from homepage program/size selector (one-time fee). Instant scales up to $1,280,000 by doubling at each 10% target. Operator SWISS RLCRATES AG (Bahnhofstrasse 21, Zug); MT5 via RLCRATES S.L.; offices also Pamplona and Dubai. FAQ: no country restrictions on Match-Trader/Bybit, MT5 unavailable to US residents. Max $300K final-stage allocation (excl. Instant/Ascend/Break). Other programs (Ascend - news restricted 2 min either side; Break - activation fee, 40% consistency, 3-4% trailing) not captured. Payout processing avg ~8h, up to 48 business hours. Homepage has a mini-game to reveal a discount code; no code shown publicly. Trustpilot shows rating unavailable (guidelines breach), 1,110 reviews. Founded year not found."
+}

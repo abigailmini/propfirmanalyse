@@ -1,0 +1,220 @@
+{
+  "name": "FundedXYZ",
+  "slug": "fundedxyz",
+  "site": "https://www.fundedxyz.com",
+  "category": "crypto",
+  "assets": [
+    "crypto"
+  ],
+  "challenge_types": [
+    "instant",
+    "1-step"
+  ],
+  "account_sizes": [
+    2000,
+    2500,
+    5000,
+    10000,
+    25000,
+    50000,
+    100000,
+    200000
+  ],
+  "programs": [
+    {
+      "name": "X Mode (Instant)",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 2500,
+          "fee": 180
+        },
+        {
+          "size": 5000,
+          "fee": 350
+        },
+        {
+          "size": 10000,
+          "fee": 600
+        },
+        {
+          "size": 25000,
+          "fee": 1500
+        }
+      ],
+      "profit_target": "none",
+      "max_daily_loss": "none",
+      "max_drawdown": "4.5%",
+      "drawdown_type": "static (equity-based); floor locks at starting balance once equity reaches +5%",
+      "profit_split": "70% rising to 90% (career tiers)",
+      "min_trading_days": 0
+    },
+    {
+      "name": "Y Mode Standard",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 2000,
+          "fee": 30
+        },
+        {
+          "size": 10000,
+          "fee": 150
+        },
+        {
+          "size": 25000,
+          "fee": 350
+        },
+        {
+          "size": 50000,
+          "fee": 750
+        },
+        {
+          "size": 100000,
+          "fee": 1500
+        }
+      ],
+      "profit_target": "7%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "6%",
+      "drawdown_type": null,
+      "profit_split": "70-90%",
+      "min_trading_days": 0
+    },
+    {
+      "name": "Y Mode Hard",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 10000,
+          "fee": 150
+        },
+        {
+          "size": 25000,
+          "fee": 300
+        },
+        {
+          "size": 50000,
+          "fee": 550
+        },
+        {
+          "size": 100000,
+          "fee": 1000
+        },
+        {
+          "size": 200000,
+          "fee": 1800
+        }
+      ],
+      "profit_target": "12%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "5%",
+      "drawdown_type": null,
+      "profit_split": "70-90%",
+      "min_trading_days": 0
+    },
+    {
+      "name": "Z Mode Standard (fixed reward)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 2000,
+          "fee": 40
+        },
+        {
+          "size": 5000,
+          "fee": 80
+        },
+        {
+          "size": 25000,
+          "fee": 380
+        },
+        {
+          "size": 50000,
+          "fee": 680
+        },
+        {
+          "size": 100000,
+          "fee": 1200
+        }
+      ],
+      "profit_target": "15%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "9%",
+      "drawdown_type": null,
+      "profit_split": "n/a - fixed USDT reward on pass ($120-$3,600), no funded account",
+      "min_trading_days": 0
+    },
+    {
+      "name": "Z Mode Hard (fixed reward)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 2000,
+          "fee": 20
+        },
+        {
+          "size": 5000,
+          "fee": 40
+        },
+        {
+          "size": 25000,
+          "fee": 190
+        },
+        {
+          "size": 50000,
+          "fee": 340
+        },
+        {
+          "size": 100000,
+          "fee": 600
+        }
+      ],
+      "profit_target": "13%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "4.5%",
+      "drawdown_type": "static (from initial capital)",
+      "profit_split": "n/a - fixed USDT reward on pass ($80-$2,800), no funded account",
+      "min_trading_days": 0
+    }
+  ],
+  "fee_from": 20,
+  "profit_split": "up to 90%",
+  "profit_split_scale": "70% Junior -> 80% Pro (5 payouts + $5K cumulative) -> 85% Elite (8 + $10K) -> 90% Aura (12 + $20K)",
+  "max_daily_loss": "5%",
+  "max_drawdown": "6%",
+  "drawdown_type": null,
+  "profit_target": "7%",
+  "leverage": "up to 1:100 (X Mode); up to 1:5 (Y/Z Mode)",
+  "platforms": [
+    "FundedXyz proprietary web platform"
+  ],
+  "payout_frequency": "X Mode: on demand, no cap, no cooling-off ($100 min); Y Mode funded: 14-day cooling-off, max 5% of balance per payout",
+  "first_payout_days": 1,
+  "min_trading_days": 0,
+  "consistency_rule": "Y/Z evaluation only: max 3% profit per single trade and 3% daily profit cap (resets 00:00 UTC+8); none on X Mode",
+  "news_trading": null,
+  "weekend_holding": true,
+  "countries_restricted": null,
+  "founded": null,
+  "hq": null,
+  "discount_code": {
+    "code": "FIRST",
+    "value": "10% off first purchase"
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 4.5,
+    "count": 14
+  },
+  "last_verified": "2026-10-26",
+  "source_urls": [
+    "https://www.fundedxyz.com/",
+    "https://www.fundedxyz.com/pricing",
+    "https://www.fundedxyz.com/faq",
+    "https://www.fundedxyz.com/about",
+    "https://www.fundedxyz.com/terms",
+    "https://www.trustpilot.com/review/fundedxyz.com"
+  ],
+  "notes": "Headline rules = Y Mode Standard (flagged POPULAR). X Mode fees are list prices; site shows 10% off with FIRST code. X Mode: limit-order entries only, 2x net position limit, auto-fails after 20 days inactivity. Y/Z: 40% position-size limit. Assets: X Mode BTC/ETH/SOL/XRP USDT pairs; Y/Z BTC/ETH perps. Y Mode drawdown type not stated. Founded year, HQ and restricted countries not stated on own site (Trustpilot company profile lists Singapore). Site wording is inconsistent: homepage/pricing say simulated virtual balances, but FAQ text says live funded accounts with real capital. Homepage widget shows Trustpilot 4.4/30, but Trustpilot page showed 4.5/14 on 2026-10-26. News trading policy not found. Refunds only within 48h of purchase if challenge not started. VPN, API trading and copy trading prohibited."
+}

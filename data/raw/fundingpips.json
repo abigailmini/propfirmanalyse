@@ -1,0 +1,160 @@
+{
+ "name": "FundingPips",
+ "slug": "fundingpips",
+ "site": "https://fundingpips.com",
+ "category": "forex-cfd",
+ "assets": [
+  "forex",
+  "commodities",
+  "indices",
+  "crypto"
+ ],
+ "challenge_types": [
+  "1-step",
+  "2-step",
+  "instant"
+ ],
+ "account_sizes": [
+  5000,
+  10000,
+  25000,
+  50000,
+  100000
+ ],
+ "programs": [
+  {
+   "name": "2 Step Standard",
+   "type": "2-step",
+   "sizes_fees": [
+    {
+     "size": 5000,
+     "fee": 39
+    },
+    {
+     "size": 10000,
+     "fee": 72
+    },
+    {
+     "size": 25000,
+     "fee": 195
+    },
+    {
+     "size": 50000,
+     "fee": 349
+    },
+    {
+     "size": 100000,
+     "fee": 652
+    }
+   ],
+   "profit_target": "8% / 5%",
+   "max_daily_loss": "5% (3% option)",
+   "max_drawdown": "10%",
+   "drawdown_type": "static",
+   "profit_split": "80% bi-weekly; 100% on-demand",
+   "min_trading_days": 3
+  },
+  {
+   "name": "1 Step Flex",
+   "type": "1-step",
+   "sizes_fees": [
+    {
+     "size": 5000,
+     "fee": 74
+    },
+    {
+     "size": 10000,
+     "fee": 111
+    },
+    {
+     "size": 25000,
+     "fee": 255
+    },
+    {
+     "size": 50000,
+     "fee": 353
+    },
+    {
+     "size": 100000,
+     "fee": 666
+    }
+   ],
+   "profit_target": "12%",
+   "max_daily_loss": "3% (2% option)",
+   "max_drawdown": "12%",
+   "drawdown_type": "static",
+   "profit_split": "80% bi-weekly; 100% on-demand",
+   "min_trading_days": 0
+  },
+  {
+   "name": "Zero",
+   "type": "instant",
+   "sizes_fees": [
+    {
+     "size": 5000,
+     "fee": 60
+    },
+    {
+     "size": 10000,
+     "fee": 88
+    },
+    {
+     "size": 25000,
+     "fee": 188
+    },
+    {
+     "size": 50000,
+     "fee": 244
+    },
+    {
+     "size": 100000,
+     "fee": 444
+    }
+   ],
+   "profit_target": null,
+   "max_daily_loss": "3%",
+   "max_drawdown": "5%",
+   "drawdown_type": "trailing",
+   "profit_split": "95% bi-weekly",
+   "min_trading_days": 7
+  }
+ ],
+ "fee_from": 29,
+ "profit_split": "up to 100%",
+ "profit_split_scale": "Bi-weekly 80% (95% add-on), On-demand 100%",
+ "max_daily_loss": "5%",
+ "max_drawdown": "10%",
+ "drawdown_type": "static",
+ "profit_target": "8% / 5%",
+ "leverage": "up to 1:100 (FX, evaluation)",
+ "platforms": [],
+ "payout_frequency": "weekly / bi-weekly / on-demand",
+ "first_payout_days": null,
+ "min_trading_days": 3,
+ "consistency_rule": "On-demand rewards: 35%",
+ "news_trading": "restricted",
+ "weekend_holding": "restricted",
+ "countries_restricted": [
+  "Vietnam",
+  "UAE",
+  "FATF / EU-UN sanctioned"
+ ],
+ "founded": null,
+ "hq": "Dubai, UAE",
+ "discount_code": {
+  "code": "FP",
+  "value": "20% off (new customers)"
+ },
+ "affiliate_url": "#",
+ "trustpilot": {
+  "score": 4.5,
+  "count": 70946
+ },
+ "last_verified": "2026-10-26",
+ "source_urls": [
+  "https://fundingpips.com/",
+  "https://fundingpips.com/trading-objectives",
+  "https://www.trustpilot.com/review/fundingpips.com"
+ ],
+ "notes": "Also 2 Step Pro ($29-$466; 6%/6%, 3% DLL, 6% max, weekly 80%) and 2 Step Flex ($35-$555; 10%/8%, 4%, 12%). fee_from $29 = 2 Step Pro $5K. News/weekend allowed in evaluation, restricted on Master (weekend needs Swing add-on). Platforms not confirmed. Site fetches rate-limited (429); data via browser. Legal entity in Comoros; hq = Dubai office address."
+}
