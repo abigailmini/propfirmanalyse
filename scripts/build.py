@@ -77,7 +77,7 @@ def cost_per_k(f):
 
 CUR = {"EUR": "€", "USD": "$", "GBP": "£"}
 def money(v, cur="USD"):
-    if v is None: return "—"
+    if v is None: return "not published"
     sym = CUR.get(cur or "USD", "$")
     return money_usd(v).replace("$", sym, 1)
 def money_usd(v):
@@ -152,8 +152,43 @@ BY = {f["slug"]: f for f in FIRMS}
 RANKED = sorted(FIRMS, key=lambda f: -f["_score"])
 for i, f in enumerate(RANKED): f["_rank"] = i + 1
 
+# ---------------- presentation helpers ----------------
+ICONS = {
+    "menu": '<path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/>',
+    "x": '<path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/>',
+    "ext": '<path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/>',
+    "copy": '<path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"/>',
+    "search": '<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"/>',
+    "sliders": '<path d="M40,88H73a32,32,0,0,0,62,0h81a8,8,0,0,0,0-16H135a32,32,0,0,0-62,0H40a8,8,0,0,0,0,16Zm64-24A16,16,0,1,1,88,80,16,16,0,0,1,104,64ZM216,168H199a32,32,0,0,0-62,0H40a8,8,0,0,0,0,16h97a32,32,0,0,0,62,0h17a8,8,0,0,0,0-16Zm-48,24a16,16,0,1,1,16-16A16,16,0,0,1,168,192Z"/>',
+    "arrow": '<path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/>',
+    "star": '<path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/>',
+}
+def ic(n, cls=""):
+    """Phosphor Icons (regular/fill, MIT) paths, inlined."""
+    return f'<svg class="i{(" " + cls) if cls else ""}" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false">{ICONS[n]}</svg>'
+
+# Logomark: a three-line ranked list inside a square. Top line is the one accent colour.
+MARK = ('<svg class="mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="24" height="24" class="mk-bg"/>'
+        '<rect x="5" y="5.5" width="14" height="3" class="mk-top"/><rect x="5" y="10.5" width="10" height="3" class="mk-bar"/><rect x="5" y="15.5" width="6" height="3" class="mk-bar"/></svg>')
+def brand():
+    return f'<a class="brand" href="{url("/")}" aria-label="PropFirmAnalyse home">{MARK}<span>PropFirm<b>Analyse</b></span></a>'
+
+NA = '<span class="na" title="Not published by the firm"><span class="sr">Not published</span></span>'
+NIL = '<span class="nil">' + T["unknown"] + '</span>'
+def mh(v, cur="USD"):
+    return NA if v is None else f'<span class="n">{money(v, cur)}</span>'
+
+def nice_date(d):
+    try: return datetime.date.fromisoformat(str(d)).strftime("%-d %b %Y")
+    except Exception: return str(d)
+
+def short_hq(hq):
+    if not hq: return ""
+    s = re.split(r"[(;]", hq)[0].strip().rstrip(",")
+    return s
+
 def show(v, suffix=""):
-    if v in (None, "", [], {}): return '<span class="na">' + T["unknown"] + "</span>"
+    if v in (None, "", [], {}): return NIL
     if v is True: return "Allowed"
     if v is False: return "Not allowed"
     if isinstance(v, list): return e(", ".join(str(x) for x in v))
@@ -161,31 +196,33 @@ def show(v, suffix=""):
 
 def tri_label(v):
     v = tri(v)
-    return {True: "Allowed", False: "Not allowed", "restricted": "Restricted", None: '<span class="na">' + T["unknown"] + "</span>"}[v]
+    return {True: "Allowed", False: "Not allowed", "restricted": "Restricted", None: NIL}[v]
 
 # ---------------- page shell ----------------
 def url(p): return BASE + p
+NAV = [("/firms/", "nav_firms"), ("/compare/", "nav_compare"), ("/discounts/", "nav_discounts"), ("/best/", "nav_best"), ("/methodology/", "nav_method"), ("/about/", "nav_about")]
 def page(path, title, desc, body, jsonld=None, og_type="website", extra_head=""):
     canon = ABS + path
     ld = "".join('<script type="application/ld+json">' + json.dumps(j, ensure_ascii=False) + "</script>" for j in (jsonld or []))
-    nav = [("/firms/", T["nav_firms"]), ("/compare/", T["nav_compare"]), ("/discounts/", T["nav_discounts"]), ("/best/", T["nav_best"]), ("/methodology/", T["nav_method"]), ("/about/", T["nav_about"])]
-    navh = "".join(f'<a href="{url(h)}"{" aria-current=page" if path.startswith(h) else ""}>{e(t)}</a>' for h, t in nav)
+    navh = "".join(f'<a href="{url(h)}"{" aria-current=page" if path.startswith(h) else ""}>{e(T[k])}</a>' for h, k in NAV)
+    footnav = "".join(f'<li><a href="{url(h)}">{e(T[k])}</a></li>' for h, k in NAV) + f'<li><a href="{url("/updates/")}">Verification log</a></li>'
     doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{canon}">
 <meta property="og:type" content="{og_type}"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{canon}"><meta property="og:image" content="{ABS}/assets/og.png"><meta property="og:site_name" content="PropFirmAnalyse">
-<meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0b1426">
-<link rel="icon" href="{url('/assets/favicon.svg')}" type="image/svg+xml"><link rel="stylesheet" href="{url('/assets/site.css')}">
+<meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#f3f4f0" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0f1011" media="(prefers-color-scheme: dark)"><meta name="color-scheme" content="light dark">
+<link rel="preload" href="{url('/assets/fonts/geist.woff2')}" as="font" type="font/woff2" crossorigin><link rel="preload" href="{url('/assets/fonts/bricolage.woff2')}" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="{url('/assets/favicon.svg')}" type="image/svg+xml"><link rel="stylesheet" href="{url('/assets/site.css')}?v={ASSET_V}">
 <link rel="alternate" hreflang="en" href="{canon}"><link rel="alternate" hreflang="x-default" href="{canon}">{extra_head}{ld}</head>
 <body><a class="skip" href="#main">Skip to content</a>
-<header class="top"><div class="wrap bar"><a class="brand" href="{url('/')}"><span class="logo">PF<b>A</b></span><span>PropFirm<b>Analyse</b></span></a>
-<button class="menu" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')">☰</button><nav class="nav">{navh}</nav></div></header>
+<header class="top"><div class="wrap bar">{brand()}
+<button class="menu" id="menu" type="button" aria-expanded="false" aria-controls="nav"><span class="sr">Menu</span>{ic("menu", "i-open")}{ic("x", "i-close")}</button><nav class="nav" id="nav" aria-label="Main">{navh}</nav></div></header>
 <main id="main">{body}</main>
-<footer class="foot"><div class="wrap"><div class="fgrid"><div><a class="brand" href="{url('/')}"><span class="logo">PF<b>A</b></span><span>PropFirm<b>Analyse</b></span></a>
-<p class="muted small">{e(T['tagline'])}</p></div><div><h4>Explore</h4>{navh}<a href="{url('/updates/')}">Verification log</a></div>
-<div><h4>Disclosure</h4><p class="small">{e(T['ownership'])}</p></div></div>
-<p class="small muted disc">{e(T['disclaimer'])}</p><p class="small muted">© {YEAR_NOW} PropFirmAnalyse · Data last verified {e(TODAY)} · <a href="{url('/llms.txt')}">llms.txt</a> · <a href="{url('/data/firms.json')}">Open data (JSON)</a></p></div></footer>
-<script src="{url('/assets/site.js')}" defer></script></body></html>"""
+<footer class="foot"><div class="wrap fgrid"><div class="fbrand">{brand()}<p>{e(T['tagline'])}</p></div>
+<nav aria-label="Footer"><h2>Explore</h2><ul>{footnav}</ul></nav>
+<div><h2>Disclosure</h2><p>{e(T['ownership'])}</p></div></div>
+<div class="wrap fine"><p>{e(T['disclaimer'])}</p><p class="fmeta"><span>&copy; {YEAR_NOW} PropFirmAnalyse</span><span>Data verified <time datetime="{e(TODAY)}">{nice_date(TODAY)}</time></span><a href="{url('/llms.txt')}">llms.txt</a><a href="{url('/data/firms.json')}">Open data (JSON)</a></p></div></footer>
+<script src="{url('/assets/site.js')}?v={ASSET_V}" defer></script></body></html>"""
     dest = os.path.join(OUT, path.lstrip("/"), "index.html") if path.endswith("/") else os.path.join(OUT, path.lstrip("/"))
     os.makedirs(os.path.dirname(dest), exist_ok=True)
     open(dest, "w").write(doc)
@@ -194,29 +231,51 @@ PAGES = []
 
 def crumbs(items):
     lis = [{"@type": "ListItem", "position": i + 1, "name": n, "item": ABS + p} for i, (n, p) in enumerate(items)]
-    html_ = '<nav class="crumbs">' + " / ".join(f'<a href="{url(p)}">{e(n)}</a>' for n, p in items) + "</nav>"
+    parts = [f'<a href="{url(p)}">{e(n)}</a>' for n, p in items[:-1]] + [f'<span aria-current="page">{e(items[-1][0])}</span>']
+    html_ = '<nav class="crumbs" aria-label="Breadcrumb">' + '<span class="sep" aria-hidden="true">/</span>'.join(parts) + "</nav>"
     return html_, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": lis}
 
 # ---------------- components ----------------
 ASSET_LABEL = {"crypto": "Crypto", "forex": "Forex", "indices": "Indices", "commodities": "Commodities", "stocks": "Stocks", "futures": "Futures", "metals": "Metals", "energies": "Energies"}
-def badge_score(f):
-    s = f["_score"]; cls = "hi" if s >= 7 else ("mid" if s >= 5.5 else "lo")
-    return f'<span class="score {cls}" title="PFA Score – data completeness {f["_complete"]}%">{s:.1f}</span>'
+COMP_LABEL = {"trust": ("Trust", 30), "cost": ("Cost", 20), "rules": ("Rules", 20), "payout": ("Payout", 20), "history": ("Track record", 10)}
 
-def code_html(f):
+def ticks(v, d=0, cls=""):
+    """Trackless 10-tick bar: ticks are drawn only up to the value (0-10)."""
+    return f'<i class="ticks{(" " + cls) if cls else ""}" style="--s:{max(0, min(10, v)) / 10:.3f};--d:{d}" aria-hidden="true"></i>'
+
+def score_html(f, d=None):
+    s = f["_score"]
+    return (f'<span class="sc" title="PFA Score {s:.1f} of 10. Data completeness {f["_complete"]}%.">'
+            f'<b class="n">{s:.1f}</b><span class="sr"> out of 10</span>{ticks(s, f["_rank"] if d is None else d)}</span>')
+badge_score = score_html
+
+def code_html(f, value=True):
     dc = f.get("discount_code")
-    if not dc or not dc.get("code"): return '<span class="na">—</span>'
-    return f'<button class="code" data-copy="{e(dc["code"])}" title="{e(dc.get("value") or "")}">{e(dc["code"])}<small>{e(dc.get("value") or "")}</small></button>'
+    if not dc or not dc.get("code"): return NA
+    v = dc.get("value") or ""
+    btn = (f'<button type="button" class="code" data-copy="{e(dc["code"])}" aria-label="Copy code {e(dc["code"])}"{(" title=" + chr(34) + e(v) + chr(34)) if v else ""}>'
+           f'<span>{e(dc["code"])}</span>{ic("copy")}</button>')
+    return btn + (f'<small class="cv">{e(v)}</small>' if value and v else "")
 
 def tp_html(f):
     tp = f.get("trustpilot") or {}
     if not tp.get("score"):
-        return '<span class="na" title="Trustpilot shows no rating (e.g. suspended for a guideline breach)">n/a</span>' if tp.get("count") else '<span class="na">—</span>'
-    return f'<span class="tp">★ {num(tp["score"]):.1f}<small>{int(num(tp.get("count") or 0)):,}</small></span>'
+        if tp.get("count"):
+            return (f'<span class="tp off" title="Trustpilot shows no rating on this profile (for example, suspended for a guideline breach).">'
+                    f'No rating<small class="n">{int(num(tp["count"])):,}</small></span>')
+        return NA
+    return (f'<span class="tp">{ic("star")}<b class="n">{num(tp["score"]):.1f}</b>'
+            f'<small class="n" title="Trustpilot reviews">{int(num(tp.get("count") or 0)):,}</small></span>')
 
 def dd_html(f):
     a = f.get("max_daily_loss"); b = f.get("max_drawdown")
-    return f'{e(a) if a else "—"} / {e(b) if b else "—"}' + (f'<small>{e(f["drawdown_type"])}</small>' if f.get("drawdown_type") else "")
+    if not a and not b: return NA
+    t = f.get("drawdown_type")
+    return (f'<span class="n">{e(a) if a else NA} / {e(b) if b else NA}</span>' + (f'<small title="{e(t)}">{e(t)}</small>' if t else ""))
+
+def visit(f, label=None, cls="visit"):
+    return (f'<a class="{cls}" href="{e(f.get("affiliate_url") or "#")}" rel="sponsored nofollow noopener" target="_blank" data-firm="{e(f["slug"])}">'
+            f'{e(label or T["visit"])}{ic("ext")}<span class="sr"> (opens {e(f["name"])} in a new tab)</span></a>')
 
 def row(f):
     attrs = {
@@ -228,14 +287,21 @@ def row(f):
         "tp": num((f.get("trustpilot") or {}).get("score")) or "", "founded": num(f.get("founded")) or "",
     }
     da = " ".join(f'data-{k}="{e(v)}"' for k, v in attrs.items())
-    assets = "".join(f'<span class="chip">{e(ASSET_LABEL.get(a, a.title()))}</span>' for a in f["_assets"]) or '<span class="na">—</span>'
-    types = e(", ".join(as_list(f.get("challenge_types")))) or "—"
-    plats = e(", ".join(f["_platforms"][:3])) + (f' <small>+{len(f["_platforms"]) - 3}</small>' if len(f["_platforms"]) > 3 else "") if f["_platforms"] else "—"
-    return f"""<tr {da}><td class="firm"><a href="{url('/firms/' + f['slug'] + '/')}"><span class="av">{e(f['name'][:2])}</span><span><b>{e(f['name'])}</b><small>{e(f.get('hq') or '')}{' · est. ' + str(int(num(f['founded']))) if num(f.get('founded')) else ''}</small></span></a></td>
-<td data-label="{T['col_score']}">{badge_score(f)}</td><td data-label="{T['col_rating']}">{tp_html(f)}</td><td data-label="{T['col_markets']}">{assets}</td><td data-label="{T['col_types']}">{types}</td>
-<td data-label="{T['col_fee']}">{money(f['_fee'], f.get('fee_currency'))}</td><td data-label="{T['col_maxsize']}">{money(max(f['_sizes'])) if f['_sizes'] else '—'}</td><td data-label="{T['col_split']}">{e(f.get('profit_split') or '—')}</td>
-<td data-label="{T['col_dd']}">{dd_html(f)}</td><td data-label="{T['col_payout']}">{e(BUCKET_LABEL.get(f['_bucket'], '—')) if f['_bucket'] else '—'}</td><td data-label="{T['col_platforms']}">{plats}</td>
-<td data-label="{T['col_code']}">{code_html(f)}</td><td class="act"><a class="btn sm ghost" href="{url('/firms/' + f['slug'] + '/')}">{T['view']}</a><a class="btn sm" href="{e(f.get('affiliate_url') or '#')}" rel="sponsored nofollow noopener" target="_blank" data-firm="{e(f['slug'])}">{T['visit']}</a></td></tr>"""
+    mk = [ASSET_LABEL.get(a, a.title()) for a in f["_assets"]]
+    mkts = e(", ".join(mk)) if mk else NA
+    types = e(", ".join(as_list(f.get("challenge_types")))) or NA
+    pl = f["_platforms"]
+    plats = (e(", ".join(pl[:3])) + (f' <span class="plus n">+{len(pl) - 3}</span>' if len(pl) > 3 else "")) if pl else NA
+    hq = f.get("hq") or ""
+    est = f"est. {int(num(f['founded']))}" if num(f.get("founded")) else ""
+    sub = ", ".join(x for x in (short_hq(hq), est) if x)
+    split = f'<span class="n">{e(f["profit_split"])}</span>' if f.get("profit_split") else NA
+    return f"""<tr {da}><td class="c-rk n">{f['_rank']:02d}</td><td class="c-firm"><a href="{url('/firms/' + f['slug'] + '/')}"><b>{e(f['name'])}</b>{('<small title="' + e(hq) + '">' + e(sub) + '</small>') if sub else ''}</a></td>
+<td class="c-sc" data-label="{T['col_score']}">{score_html(f)}</td><td class="c-tp" data-label="{T['col_rating']}">{tp_html(f)}</td>
+<td class="c-fee num" data-label="{T['col_fee']}" data-m="{T['col_fee']}">{mh(f['_fee'], f.get('fee_currency'))}</td><td class="c-max num" data-label="{T['col_maxsize']}">{mh(max(f['_sizes'])) if f['_sizes'] else NA}</td>
+<td class="c-split" data-label="{T['col_split']}" data-m="{T['col_split']}">{split}</td><td class="c-dd" data-label="{T['col_dd']}" data-m="Daily/Max">{dd_html(f)}</td>
+<td class="c-pay" data-label="{T['col_payout']}" data-m="{T['col_payout']}">{e(BUCKET_LABEL[f['_bucket']]) if f['_bucket'] else NA}</td><td class="c-mkt" data-label="{T['col_markets']}">{mkts}<small class="c-types">{types}</small></td><td class="c-plat" data-label="{T['col_platforms']}">{plats}</td>
+<td class="c-code" data-label="{T['col_code']}">{code_html(f)}</td><td class="c-act">{visit(f)}</td></tr>"""
 
 def all_platforms():
     s = {}
@@ -250,25 +316,38 @@ def all_countries():
 
 def filters_html():
     o = lambda v, t: f'<option value="{e(v)}">{e(t)}</option>'
+    sel = lambda i, lab, opts: f'<label class="fl"><span>{e(lab)}</span><select id="{i}">{opts}</select></label>'
     plats = "".join(o(k, v) for k, v in all_platforms())
     ctry = "".join(o(c.lower(), c) for c in all_countries())
-    return f"""<form class="filters" id="filters" onsubmit="return false">
-<div class="frow"><input type="search" id="q" placeholder="Search firm…" aria-label="Search firm">
-<label>{T['filter_market']}<select id="f-asset"><option value="">All</option>{o('crypto','Crypto')}{o('forex','Forex')}{o('futures','Futures')}{o('indices','Indices')}{o('commodities','Commodities')}{o('stocks','Stocks')}</select></label>
-<label>{T['filter_type']}<select id="f-type"><option value="">Any</option>{o('1-step','1-step')}{o('2-step','2-step')}{o('3-step','3-step')}{o('instant','Instant funding')}</select></label>
-<label>{T['filter_size']}<select id="f-size"><option value="">Any</option>{o('10000','$10K+')}{o('50000','$50K+')}{o('100000','$100K+')}{o('200000','$200K+')}{o('300000','$300K+')}</select></label>
-<label>{T['filter_platform']}<select id="f-plat"><option value="">Any</option>{plats}</select></label>
-<label>{T['filter_fee']}<select id="f-fee"><option value="">Any</option>{o('50','≤ $50')}{o('100','≤ $100')}{o('200','≤ $200')}</select></label>
-<label>{T['filter_split']}<select id="f-split"><option value="">Any</option>{o('80','80%+')}{o('90','90%+')}{o('100','100%')}</select></label>
-<label>{T['filter_payout']}<select id="f-payout"><option value="">Any</option>{o('daily','Daily / on demand')}{o('weekly','Weekly or faster')}{o('biweekly','Bi-weekly or faster')}</select></label>
-<label>{T['filter_country']}<select id="f-country"><option value="">Any country</option>{ctry}</select></label>
-<label class="tog"><input type="checkbox" id="f-news"> {T['filter_news']}</label><label class="tog"><input type="checkbox" id="f-weekend"> {T['filter_weekend']}</label>
-<label>{T['sort']}<select id="f-sort">{o('score','PFA Score')}{o('fee','Lowest entry fee')}{o('split','Highest split')}{o('tp','Trustpilot')}{o('founded','Longest running')}{o('name','A–Z')}</select></label>
-<button type="button" class="btn ghost sm" id="f-reset">{T['filter_reset']}</button></div><p class="count" id="count" aria-live="polite"></p></form>"""
+    return f"""<form class="filters" id="filters" onsubmit="return false" role="search" aria-label="Filter firms">
+<div class="frow"><label class="q"><span class="sr">Search firm</span>{ic('search')}<input type="search" id="q" placeholder="Search firms" autocomplete="off" spellcheck="false"></label>
+<div class="fprim">{sel('f-asset', T['filter_market'], '<option value="">All</option>' + o('crypto','Crypto') + o('forex','Forex') + o('futures','Futures') + o('indices','Indices') + o('commodities','Commodities') + o('stocks','Stocks'))}
+{sel('f-type', T['filter_type'], '<option value="">Any</option>' + o('1-step','1-step') + o('2-step','2-step') + o('3-step','3-step') + o('instant','Instant funding'))}
+{sel('f-fee', T['filter_fee'], '<option value="">Any</option>' + o('50','$50 or less') + o('100','$100 or less') + o('200','$200 or less'))}
+{sel('f-split', T['filter_split'], '<option value="">Any</option>' + o('80','80%+') + o('90','90%+') + o('100','100%'))}
+{sel('f-sort', T['sort'], o('score','PFA Score') + o('fee','Lowest entry fee') + o('split','Highest split') + o('tp','Trustpilot') + o('founded','Longest running') + o('name','A to Z'))}</div>
+<button type="button" class="fbtn" id="f-more" aria-expanded="false" aria-controls="fmore">{ic('sliders')}<span>Filters</span><b class="n" id="f-active" hidden></b></button>
+<p class="count" id="count" aria-live="polite"></p></div>
+<div class="fmore" id="fmore">{sel('f-size', T['filter_size'], '<option value="">Any</option>' + o('10000','$10K+') + o('50000','$50K+') + o('100000','$100K+') + o('200000','$200K+') + o('300000','$300K+'))}
+{sel('f-plat', T['filter_platform'], '<option value="">Any</option>' + plats)}
+{sel('f-payout', T['filter_payout'], '<option value="">Any</option>' + o('daily','Daily / on demand') + o('weekly','Weekly or faster') + o('biweekly','Bi-weekly or faster'))}
+{sel('f-country', T['filter_country'], '<option value="">Any country</option>' + ctry)}
+<label class="tog"><input type="checkbox" id="f-news"><span>{T['filter_news']}</span></label><label class="tog"><input type="checkbox" id="f-weekend"><span>{T['filter_weekend']}</span></label>
+<button type="button" class="linkbtn" id="f-reset">{T['filter_reset']}</button></div></form>"""
 
-def table(firms):
-    head = "".join(f"<th>{T[k]}</th>" for k in ["col_firm", "col_score", "col_rating", "col_markets", "col_types", "col_fee", "col_maxsize", "col_split", "col_dd", "col_payout", "col_platforms", "col_code"]) + "<th></th>"
-    return f'<div class="tablewrap"><table class="firms" id="firms"><thead><tr>{head}</tr></thead><tbody>{"".join(row(f) for f in firms)}</tbody></table></div>'
+TABLE_COLS = [("c-rk", '<abbr title="Rank by PFA Score">#</abbr>'), ("c-firm", T["col_firm"]), ("c-sc", T["col_score"]), ("c-tp", T["col_rating"]),
+              ("c-fee num", T["col_fee"]), ("c-max num", T["col_maxsize"]), ("c-split", T["col_split"]), ("c-dd", T["col_dd"]), ("c-pay", T["col_payout"]),
+              ("c-mkt", T["col_markets"] + " / " + T["col_types"]), ("c-plat", T["col_platforms"]), ("c-code", T["col_code"]), ("c-act", '<span class="sr">Link</span>')]
+def table(firms, empty=False):
+    head = "".join(f'<th class="{c}" scope="col">{t}</th>' for c, t in TABLE_COLS)
+    emp = (f'<div class="empty" id="empty" hidden><p><b>No firm matches every filter.</b> Loosen one, or start again.</p>'
+           f'<button type="button" class="btn line sm" data-reset>{T["filter_reset"]} filters</button></div>') if empty else ""
+    return (f'<div class="tablewrap"><table class="firms" id="firms"><caption class="sr">Prop firms ranked by PFA Score</caption>'
+            f'<thead><tr>{head}</tr></thead><tbody>{"".join(row(f) for f in firms)}</tbody></table></div>{emp}')
+
+def legend():
+    return (f'<p class="legend"><span>{NA} the firm does not publish this figure.</span>'
+            f'<span>One formula scores every firm: <a href="{url("/methodology/")}">methodology</a>.</span></p>')
 
 # ---------------- best-for lists ----------------
 BEST = [
@@ -277,42 +356,54 @@ BEST = [
  ("futures", "Futures prop firms", "Firms funding CME-style futures accounts.", lambda f: "futures" in f["_assets"]),
  ("one-step", "1-step challenges", "Single-phase evaluations: one target, then funded.", lambda f: "1-step" in f["_types"]),
  ("instant-funding", "Instant funding", "Accounts funded without an evaluation phase.", lambda f: "instant" in f["_types"]),
- ("cheap-challenges", "Low-cost entry (≤ $100)", "Cheapest published entry fee at or under $100.", lambda f: f["_fee"] is not None and f["_fee"] <= 100),
+ ("cheap-challenges", "Low-cost entry ($100 or less)", "Cheapest published entry fee at or under $100.", lambda f: f["_fee"] is not None and f["_fee"] <= 100),
  ("high-profit-split", "90%+ profit split", "Headline split of 90% or more (often after scaling).", lambda f: (f["_split"] or 0) >= 90),
  ("news-trading", "News trading allowed", "Firms whose rules allow trading through high-impact news.", lambda f: tri(f.get("news_trading")) is True),
  ("fast-payouts", "Fast payouts", "Daily, on-demand or weekly payout cycles.", lambda f: f["_bucket"] in ("daily", "weekly")),
  ("mt5", "MT5 prop firms", "Firms offering MetaTrader 5.", lambda f: any("mt5" in p.lower() or "metatrader 5" in p.lower() for p in f["_platforms"])),
 ]
 
+def pair_link(a, b):
+    return (f'<li><a href="{url("/compare/" + a + "-vs-" + b + "/")}"><span>{e(BY[a]["name"])}</span>'
+            f'<i aria-hidden="true">vs</i><span class="sr"> versus </span><span>{e(BY[b]["name"])}</span></a></li>')
+
 # ---------------- pages ----------------
+ASSET_V = "2"
 def write_assets():
-    os.makedirs(os.path.join(OUT, "assets"), exist_ok=True)
+    os.makedirs(os.path.join(OUT, "assets", "fonts"), exist_ok=True)
     for n in ("site.css", "site.js", "favicon.svg", "og.png"):
         src = os.path.join(ROOT, "src", n)
         if os.path.exists(src): shutil.copy(src, os.path.join(OUT, "assets", n))
+    fdir = os.path.join(ROOT, "src", "fonts")
+    if os.path.isdir(fdir):
+        for n in os.listdir(fdir):
+            if n.endswith(".woff2"): shutil.copy(os.path.join(fdir, n), os.path.join(OUT, "assets", "fonts", n))
     os.makedirs(os.path.join(OUT, "data"), exist_ok=True)
     pub = [{k: v for k, v in f.items() if not k.startswith("_")} | {"pfa_score": f["_score"], "pfa_components": f["_comp"], "data_completeness_pct": f["_complete"]} for f in FIRMS]
     json.dump({"generated": TODAY, "firms": pub}, open(os.path.join(OUT, "data", "firms.json"), "w"), indent=1, ensure_ascii=False)
 
 def home():
-    chips = "".join(f'<a class="chip big" href="{url("/best/" + s + "/")}">{e(t)}</a>' for s, t, _, _ in BEST)
-    top3 = RANKED[:3]
-    stats = f'<div class="stats"><div><b>{len(FIRMS)}</b><span>firms tracked</span></div><div><b>{sum(len(as_list(f.get("programs"))) for f in FIRMS)}</b><span>programs</span></div><div><b>{sum(1 for f in FIRMS if f.get("discount_code"))}</b><span>public codes</span></div><div><b>{e(TODAY)}</b><span>last verified</span></div></div>'
-    body = f"""<section class="hero"><div class="wrap"><h1>{e(T['hero_title'])}</h1><p class="lead">{e(T['hero_sub'].format(n=len(FIRMS)))}</p>{stats}
-<div class="chips" aria-label="{T['best_for']}"><span class="muted small">{T['best_for']}:</span>{chips}</div></div></section>
-<section class="wrap">{filters_html()}{table(RANKED)}<p class="small muted">Scores use one published formula for every firm — <a href="{url('/methodology/')}">see methodology</a>. “—” means the firm does not publish that figure.</p></section>
-<section class="wrap grid3">{''.join(f'<a class="card" href="{url("/compare/" + a + "-vs-" + b + "/")}"><small>Compare</small><b>{e(BY[a]["name"])} vs {e(BY[b]["name"])}</b></a>' for a, b in PAIRS[:6])}</section>"""
+    n_prog = sum(len(as_list(f.get("programs"))) for f in FIRMS)
+    n_codes = sum(1 for f in FIRMS if (f.get("discount_code") or {}).get("code"))
+    lists = "".join(f'<li><a href="{url("/best/" + s + "/")}"><span>{e(t)}</span><b class="n">{sum(1 for f in FIRMS if fn(f))}</b></a></li>' for s, t, _, fn in BEST)
+    pairs = "".join(pair_link(a, b) for a, b in PAIRS[:8])
+    body = f"""<section class="mast wrap"><h1>{e(T['hero_title'])}</h1><p class="lede">{e(T['hero_sub'].format(n=len(FIRMS)))}</p>
+<p class="facts"><span><b class="n">{len(FIRMS)}</b> firms</span><span><b class="n">{n_prog}</b> programs</span><span><b class="n">{n_codes}</b> public codes</span><span>Verified <b class="n"><time datetime="{e(TODAY)}">{nice_date(TODAY)}</time></b></span></p></section>
+<section class="wrap" aria-label="Firm table">{filters_html()}{table(RANKED, empty=True)}{legend()}</section>
+<section class="wrap lower"><div><h2>{e(T['best_for'])}</h2><ul class="lists">{lists}</ul></div>
+<div><h2>Head to head</h2><ul class="pairs">{pairs}</ul><p><a class="more" href="{url('/compare/')}">Pick any two firms{ic('arrow')}</a></p></div></section>"""
     ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": "PropFirmAnalyse", "url": ABS + "/"},
           {"@context": "https://schema.org", "@type": "ItemList", "name": "Prop firms ranked by PFA Score", "itemListElement": [{"@type": "ListItem", "position": f["_rank"], "url": ABS + "/firms/" + f["slug"] + "/", "name": f["name"]} for f in RANKED]}]
-    page("/", "Compare Prop Firms 2026 — Fees, Rules & Payouts | PropFirmAnalyse", f"Side-by-side data on {len(FIRMS)} crypto, forex and futures prop firms: challenge fees, drawdown, profit split, payout speed and discount codes.", body, ld)
+    page("/", "Compare Prop Firms 2026: Fees, Rules & Payouts | PropFirmAnalyse", f"Side-by-side data on {len(FIRMS)} crypto, forex and futures prop firms: challenge fees, drawdown, profit split, payout speed and discount codes.", body, ld)
 
 def firms_index():
     c, ld = crumbs([("Home", "/"), ("All firms", "/firms/")])
-    body = f'<section class="wrap">{c}<h1>All prop firms</h1><p class="lead">Filter by market, challenge type, account size, platform and your country. Click a firm for full rules and sources.</p>{filters_html()}{table(RANKED)}</section>'
+    body = (f'<section class="wrap">{c}<header class="ph"><h1>All prop firms</h1><p class="lede">Filter by market, challenge type, account size, platform and your country. '
+            f'Open a firm for its full rule sheet and sources.</p></header>{filters_html()}{table(RANKED, empty=True)}{legend()}</section>')
     page("/firms/", f"All {len(FIRMS)} Prop Firms Compared (2026) | PropFirmAnalyse", "Filterable table of prop trading firms with fees, drawdown limits, profit split, platforms and payout frequency.", body, [ld])
 
-def kv(rows):
-    return '<dl class="kv">' + "".join(f"<div><dt>{e(k)}</dt><dd>{v}</dd></div>" for k, v in rows) + "</dl>"
+def spec(title, rows):
+    return (f'<section class="spec"><h2>{e(title)}</h2><dl>' + "".join(f'<div><dt>{e(k)}</dt><dd>{v}</dd></div>' for k, v in rows) + "</dl></section>")
 
 def firm_summary(f):
     bits = [f"{f['name']} is a prop firm"]
@@ -333,47 +424,68 @@ def faq(f):
     if f.get("payout_frequency"): qa.append((f"How often does {f['name']} pay out?", f"Payout cycle: {f['payout_frequency']}." + (f" First payout eligible after {int(num(f['first_payout_days']))} days." if num(f.get('first_payout_days')) else "")))
     if f["_platforms"]: qa.append((f"Which platforms does {f['name']} support?", ", ".join(f["_platforms"]) + "."))
     nt = tri(f.get("news_trading"))
-    if nt is not None: qa.append((f"Can you trade the news with {f['name']}?", {True: "Yes, news trading is allowed per the firm's rules.", False: "No, the firm restricts trading around news events.", "restricted": "Partly — news trading is restricted on some programs or windows. Check the firm's rules page."}[nt]))
+    if nt is not None: qa.append((f"Can you trade the news with {f['name']}?", {True: "Yes, news trading is allowed per the firm's rules.", False: "No, the firm restricts trading around news events.", "restricted": "Partly. News trading is restricted on some programs or windows; check the firm's rules page."}[nt]))
     return qa
+
+def program_html(p, f):
+    sf = [x for x in as_list(p.get("sizes_fees")) if num(x.get("size"))]
+    cur = f.get("fee_currency")
+    ladder = ""
+    if sf:
+        rows = "".join(f'<tr><td class="num n">{money(num(x.get("size")))}</td><td class="num n">{mh(num(x.get("fee")), cur)}</td>'
+                       f'<td class="num n">{mh(num(x.get("fee")) / num(x.get("size")) * 1000, cur) if num(x.get("fee")) else NA}</td></tr>' for x in sf)
+        ladder = f'<table class="ladder"><thead><tr><th class="num" scope="col">Account</th><th class="num" scope="col">Fee</th><th class="num" scope="col">Per $1K</th></tr></thead><tbody>{rows}</tbody></table>'
+    strip = "".join(f'<div><dt>{k}</dt><dd class="n">{show(v)}</dd></div>' for k, v in [
+        ("Profit target", p.get("profit_target")), ("Daily loss", p.get("max_daily_loss")), ("Max drawdown", p.get("max_drawdown")),
+        ("Profit split", p.get("profit_split")), ("Min days", p.get("min_trading_days"))])
+    ddt = f'<p class="ddt"><span>Drawdown</span> {e(p["drawdown_type"])}</p>' if p.get("drawdown_type") else ""
+    return (f'<article class="prog"><h3>{e(p.get("name") or p.get("type") or "Program")}{(" <span class=" + chr(34) + "tag" + chr(34) + ">" + e(p.get("type")) + "</span>") if p.get("type") else ""}</h3>'
+            f'<div class="pbody"><dl class="strip">{strip}</dl>{ddt}{ladder}</div></article>')
 
 def firm_page(f):
     c, bl = crumbs([("Home", "/"), ("All firms", "/firms/"), (f["name"], f"/firms/{f['slug']}/")])
-    progs = ""
-    for p in as_list(f.get("programs")):
-        sf = as_list(p.get("sizes_fees"))
-        fees = "".join(f"<tr><td>{money(num(x.get('size')))}</td><td>{money(num(x.get('fee')), f.get('fee_currency'))}</td></tr>" for x in sf if num(x.get("size")))
-        progs += f"""<div class="prog"><h3>{e(p.get('name') or p.get('type') or 'Program')} <span class="chip">{e(p.get('type') or '')}</span></h3>
-{kv([('Profit target', show(p.get('profit_target'))), ('Daily loss', show(p.get('max_daily_loss'))), ('Max drawdown', show(p.get('max_drawdown'))), ('Drawdown type', show(p.get('drawdown_type'))), ('Profit split', show(p.get('profit_split'))), ('Min trading days', show(p.get('min_trading_days')))])}
-{('<table class="mini"><thead><tr><th>Account</th><th>Fee</th></tr></thead><tbody>' + fees + '</tbody></table>') if fees else ''}</div>"""
-    comps = "".join(f'<div class="bar"><span>{k.title()}</span><i style="--w:{v * 10}%"></i><b>{v:.1f}</b></div>' for k, v in f["_comp"].items())
+    progs = "".join(program_html(p, f) for p in as_list(f.get("programs")))
+    comps = "".join(f'<div><dt>{COMP_LABEL[k][0]} <span class="n">{COMP_LABEL[k][1]}%</span></dt><dd>{ticks(v, i + 3, "sm")}<b class="n">{v:.1f}</b></dd></div>' for i, (k, v) in enumerate(f["_comp"].items()))
     dc = f.get("discount_code")
-    dch = f'<div class="deal"><span>Public code on {e(f["name"])}\'s site</span>{code_html(f)}</div>' if dc and dc.get("code") else '<p class="muted small">No public discount code found on the firm\'s site at last check.</p>'
+    dch = (f'<div class="deal"><span>Public code</span>{code_html(f)}</div>' if dc and dc.get("code")
+           else '<p class="deal none">No public discount code on the firm\'s site at last check.</p>')
     srcs = "".join(f'<li><a href="{e(s)}" rel="nofollow noopener" target="_blank">{e(s)}</a></li>' for s in as_list(f.get("source_urls")))
     pairs = [(a, b) for a, b in PAIRS if f["slug"] in (a, b)]
-    others = "".join(f'<a class="chip" href="{url("/compare/" + a + "-vs-" + b + "/")}">vs {e(BY[b if a == f["slug"] else a]["name"])}</a>' for a, b in pairs)
+    others = "".join(f'<li><a href="{url("/compare/" + a + "-vs-" + b + "/")}"><i>vs</i> {e(BY[b if a == f["slug"] else a]["name"])}</a></li>' for a, b in pairs)
     qa = faq(f)
     faqh = "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q, a in qa)
     restricted = as_list(f.get("countries_restricted"))
-    body = f"""<section class="wrap">{c}<div class="phead"><span class="av lg">{e(f['name'][:2])}</span><div><h1>{e(f['name'])}</h1>
-<p class="muted">{e(f.get('hq') or '')}{' · founded ' + str(int(num(f['founded']))) if num(f.get('founded')) else ''} · {T['last_verified']} {e(f.get('last_verified') or TODAY)}</p></div>
-<div class="pscore">{badge_score(f)}<small>PFA Score · #{f['_rank']} of {len(FIRMS)}</small></div></div>
-<p class="lead">{e(firm_summary(f))}</p>
-<div class="ctas"><a class="btn" href="{e(f.get('affiliate_url') or '#')}" rel="sponsored nofollow noopener" target="_blank" data-firm="{e(f['slug'])}">{T['visit']} →</a>{dch}</div>
-<div class="cols"><div><h2>Key rules</h2>{kv([
- ('Markets', show([ASSET_LABEL.get(a, a) for a in f['_assets']])), ('Challenge types', show(f.get('challenge_types'))),
- ('Account sizes', show([money(s) for s in f['_sizes']])), ('Fees from', money(f['_fee'], f.get('fee_currency'))), ('Profit target', show(f.get('profit_target'))),
- ('Daily loss limit', show(f.get('max_daily_loss'))), ('Max drawdown', show(f.get('max_drawdown'))), ('Drawdown type', show(f.get('drawdown_type'))),
- ('Profit split', show(f.get('profit_split'))), ('Split scaling', show(f.get('profit_split_scale'))), ('Leverage', show(f.get('leverage'))),
- ('Platforms', show(f['_platforms'])), ('Payout frequency', show(f.get('payout_frequency'))), ('First payout (days)', show(f.get('first_payout_days'))),
- ('Min trading days', show(f.get('min_trading_days'))), ('Consistency rule', show(f.get('consistency_rule'))), ('News trading', tri_label(f.get('news_trading'))),
- ('Weekend holding', tri_label(f.get('weekend_holding'))), ('Restricted countries', show(restricted) if restricted else ('<span class="na">Not listed</span>')),
- ('Trustpilot', (f"{num(f['trustpilot']['score']):.1f} / 5 from {int(num(f['trustpilot'].get('count') or 0)):,} reviews") if (f.get('trustpilot') or {}).get('score') else (f"<span class=na>No rating shown ({int(num(f['trustpilot']['count'])):,} reviews)</span>" if (f.get('trustpilot') or {}).get('count') else '<span class="na">Not available</span>'))])}</div>
-<aside><h2>Score breakdown</h2><div class="bars">{comps}</div><p class="small muted">Data completeness: {f['_complete']}%. Missing inputs score 4/10 by rule. <a href="{url('/methodology/')}">How scoring works</a>.</p>
-{('<h3>Compare</h3><div class="chips">' + others + '</div>') if others else ''}</aside></div>
-{('<h2>Programs</h2><div class="progs">' + progs + '</div>') if progs else ''}
-{('<h2>FAQ</h2><div class="faq">' + faqh + '</div>') if faqh else ''}
-<h2>{T['sources']}</h2><p class="small muted">Every figure above was read from these pages on {e(f.get('last_verified') or TODAY)}. Firms change rules often — confirm before you buy.</p><ul class="src">{srcs}</ul>
-{('<p class="small muted">Data notes: ' + e(f['notes']) + '</p>') if f.get('notes') else ''}</section>"""
+    tp = f.get("trustpilot") or {}
+    tps = ((f'<span class="n">{num(tp["score"]):.1f}</span> / 5 from <span class="n">{int(num(tp.get("count") or 0)):,}</span> reviews') if tp.get("score")
+           else (f'<span class="nil">No rating shown ({int(num(tp["count"])):,} reviews)</span>' if tp.get("count") else '<span class="nil">Not available</span>'))
+    cpk = cost_per_k(f)
+    meta = [x for x in (e(f.get("hq") or ""), f'Founded <span class="n">{int(num(f["founded"]))}</span>' if num(f.get("founded")) else "",
+                        f'{T["last_verified"]} <time class="n" datetime="{e(f.get("last_verified") or TODAY)}">{nice_date(f.get("last_verified") or TODAY)}</time>') if x]
+    sheet = "".join([
+        spec("Cost", [("Fees from", mh(f["_fee"], f.get("fee_currency")).replace(NA, NIL)), ("Cheapest per $1K of account", mh(cpk, f.get("fee_currency")).replace(NA, NIL)),
+                      ("Account sizes", ('<span class="n">' + e(", ".join(money(s) for s in f["_sizes"])) + "</span>") if f["_sizes"] else NIL)]),
+        spec("Evaluation rules", [("Challenge types", show(f.get("challenge_types"))), ("Profit target", show(f.get("profit_target"))),
+                                  ("Daily loss limit", show(f.get("max_daily_loss"))), ("Max drawdown", show(f.get("max_drawdown"))), ("Drawdown type", show(f.get("drawdown_type"))),
+                                  ("Min trading days", show(f.get("min_trading_days"))), ("Consistency rule", show(f.get("consistency_rule")))]),
+        spec("Payouts", [("Profit split", show(f.get("profit_split"))), ("Split scaling", show(f.get("profit_split_scale"))),
+                         ("Payout frequency", show(f.get("payout_frequency"))), ("First payout (days)", show(f.get("first_payout_days")))]),
+        spec("Trading conditions", [("Markets", show([ASSET_LABEL.get(a, a) for a in f["_assets"]])), ("Platforms", show(f["_platforms"])), ("Leverage", show(f.get("leverage"))),
+                                    ("News trading", tri_label(f.get("news_trading"))), ("Weekend holding", tri_label(f.get("weekend_holding"))),
+                                    ("Restricted countries", show(restricted) if restricted else '<span class="nil">Not listed</span>')]),
+        spec("Reputation", [("Trustpilot", tps)]),
+    ])
+    s = f["_score"]
+    body = f"""<div class="wrap">{c}<header class="phead"><h1>{e(f['name'])}</h1><p class="meta">{''.join('<span>' + m + '</span>' for m in meta)}</p>
+<p class="lede">{e(firm_summary(f))}</p><div class="ctas">{visit(f, cls="btn")}{dch}</div></header>
+<div class="pgrid"><aside class="side" aria-label="PFA Score"><div class="scorebox"><p class="big n">{s:.1f}<small>/10</small></p>{ticks(s, 0, "lg")}
+<p class="rk">PFA Score, ranked <b class="n">#{f['_rank']}</b> of <span class="n">{len(FIRMS)}</span></p><dl class="comp">{comps}</dl>
+<p class="small">Data completeness <b class="n">{f['_complete']}%</b>. Missing inputs score 4/10 by rule. <a href="{url('/methodology/')}">How scoring works</a></p></div>
+{('<div class="cmpl"><h2>Compare</h2><ul>' + others + '</ul></div>') if others else ''}</aside>
+<div class="pmain">{sheet}
+{('<section class="block"><h2>Programs</h2>' + progs + '</section>') if progs else ''}
+{('<section class="block faq"><h2>FAQ</h2>' + faqh + '</section>') if faqh else ''}
+<section class="block"><h2>{T['sources']}</h2><p class="small">Every figure above was read from these pages on <time datetime="{e(f.get('last_verified') or TODAY)}">{nice_date(f.get('last_verified') or TODAY)}</time>. Firms change rules often, so confirm before you buy.</p><ol class="src">{srcs}</ol>
+{('<p class="small notes"><b>Data notes.</b> ' + e(f['notes']) + '</p>') if f.get('notes') else ''}</section></div></div></div>"""
     org = {"@context": "https://schema.org", "@type": ["FinancialService", "Organization"], "name": f["name"], "url": f.get("site"),
            "foundingDate": str(int(num(f["founded"]))) if num(f.get("founded")) else None, "address": f.get("hq")}
     if (f.get("trustpilot") or {}).get("score"):
@@ -381,7 +493,7 @@ def firm_page(f):
     org = {k: v for k, v in org.items() if v is not None}
     lds = [org, bl]
     if qa: lds.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa]})
-    desc = f"{f['name']} prop firm rules, fees" + (f" from {money(f['_fee'], f.get('fee_currency'))}" if f['_fee'] is not None else "") + (f", {f['profit_split']} split" if f.get('profit_split') else "") + ", drawdown, payouts and discount code — verified " + str(f.get('last_verified') or TODAY) + "."
+    desc = f"{f['name']} prop firm rules, fees" + (f" from {money(f['_fee'], f.get('fee_currency'))}" if f['_fee'] is not None else "") + (f", {f['profit_split']} split" if f.get('profit_split') else "") + ", drawdown, payouts and discount code. Verified " + str(f.get('last_verified') or TODAY) + "."
     page(f"/firms/{f['slug']}/", f"{f['name']} Review 2026: Rules, Fees & Payouts | PropFirmAnalyse", desc, body, lds, "article")
 
 PAIRS = [("fundedxyz", "hyrotrader"), ("fundedxyz", "breakout-prop"), ("fundedxyz", "crypto-fund-trader"), ("hyrotrader", "breakout-prop"),
@@ -389,12 +501,13 @@ PAIRS = [("fundedxyz", "hyrotrader"), ("fundedxyz", "breakout-prop"), ("fundedxy
  ("ftmo", "fundingpips"), ("the5ers", "fundingpips"), ("e8-markets", "ftmo"), ("apex-trader-funding", "topstep"), ("topstep", "myfundedfutures"), ("apex-trader-funding", "myfundedfutures")]
 
 def compare_rows(a, b):
-    R = [("PFA Score", lambda f: badge_score(f), lambda f: f["_score"], 1), ("Trustpilot", tp_html, lambda f: num((f.get("trustpilot") or {}).get("score")), 1),
-         ("Founded", lambda f: show(int(num(f["founded"])) if num(f.get("founded")) else None), lambda f: -(num(f.get("founded")) or 9999), 1),
+    sc = lambda f: f'<b class="n">{f["_score"]:.1f}</b> {ticks(f["_score"], 0, "sm")}'
+    R = [("PFA Score", sc, lambda f: f["_score"], 1), ("Trustpilot", tp_html, lambda f: num((f.get("trustpilot") or {}).get("score")), 1),
+         ("Founded", lambda f: show(int(num(f["founded"]))) if num(f.get("founded")) else NIL, lambda f: -(num(f.get("founded")) or 9999), 1),
          ("HQ", lambda f: show(f.get("hq")), None, 0), ("Markets", lambda f: show([ASSET_LABEL.get(x, x) for x in f["_assets"]]), lambda f: len(f["_assets"]), 1),
-         ("Challenge types", lambda f: show(f.get("challenge_types")), None, 0), ("Entry fee from", lambda f: money(f["_fee"], f.get("fee_currency")), lambda f: -f["_fee"] if f["_fee"] is not None else None, 1),
-         ("Cost per $1K allocation", lambda f: money(cost_per_k(f), f.get("fee_currency")), lambda f: -cost_per_k(f) if cost_per_k(f) is not None else None, 1),
-         ("Largest account", lambda f: money(max(f["_sizes"])) if f["_sizes"] else "—", lambda f: max(f["_sizes"]) if f["_sizes"] else None, 1),
+         ("Challenge types", lambda f: show(f.get("challenge_types")), None, 0), ("Entry fee from", lambda f: mh(f["_fee"], f.get("fee_currency")).replace(NA, NIL), lambda f: -f["_fee"] if f["_fee"] is not None else None, 1),
+         ("Cost per $1K allocation", lambda f: mh(cost_per_k(f), f.get("fee_currency")).replace(NA, NIL), lambda f: -cost_per_k(f) if cost_per_k(f) is not None else None, 1),
+         ("Largest account", lambda f: mh(max(f["_sizes"])) if f["_sizes"] else NIL, lambda f: max(f["_sizes"]) if f["_sizes"] else None, 1),
          ("Profit target", lambda f: show(f.get("profit_target")), None, 0), ("Daily loss limit", lambda f: show(f.get("max_daily_loss")), lambda f: first_pct(f.get("max_daily_loss")), 1),
          ("Max drawdown", lambda f: show(f.get("max_drawdown")), lambda f: first_pct(f.get("max_drawdown")), 1), ("Drawdown type", lambda f: show(f.get("drawdown_type")), None, 0),
          ("Profit split", lambda f: show(f.get("profit_split")), lambda f: f["_split"], 1), ("Leverage", lambda f: show(f.get("leverage")), None, 0),
@@ -402,26 +515,29 @@ def compare_rows(a, b):
          ("First payout (days)", lambda f: show(f.get("first_payout_days")), lambda f: -num(f.get("first_payout_days")) if num(f.get("first_payout_days")) is not None else None, 1),
          ("Min trading days", lambda f: show(f.get("min_trading_days")), None, 0), ("Consistency rule", lambda f: show(f.get("consistency_rule")), None, 0),
          ("News trading", lambda f: tri_label(f.get("news_trading")), None, 0), ("Weekend holding", lambda f: tri_label(f.get("weekend_holding")), None, 0),
-         ("Discount code", code_html, None, 0)]
-    out, wins = "", {a["slug"]: 0, b["slug"]: 0}
+         ("Discount code", lambda f: code_html(f).replace(NA, NIL), None, 0)]
+    out, wins, compared = "", {a["slug"]: 0, b["slug"]: 0}, 0
+    WIN = '<span class="sr"> (stronger figure)</span>'
     for label, fmt, key, cmp in R:
         ca = cb = ""
         if cmp and key:
             try:
                 va, vb = key(a), key(b)
-                if va is not None and vb is not None and va != vb:
-                    if va > vb: ca = ' class="win"'; wins[a["slug"]] += 1
-                    else: cb = ' class="win"'; wins[b["slug"]] += 1
+                if va is not None and vb is not None:
+                    compared += 1
+                    if va > vb: ca = "win"; wins[a["slug"]] += 1
+                    elif vb > va: cb = "win"; wins[b["slug"]] += 1
             except Exception: pass
-        out += f"<tr><th>{e(label)}</th><td{ca}>{fmt(a)}</td><td{cb}>{fmt(b)}</td></tr>"
-    return out, wins
+        cell = lambda f, w: f'<td{(" class=" + chr(34) + w + chr(34)) if w else ""}><span class="v">{fmt(f)}</span>{WIN if w else ""}</td>'
+        out += f'<tr><th scope="row">{e(label)}</th>{cell(a, ca)}{cell(b, cb)}</tr>'
+    return out, wins, compared
 
 def compare_page(sa, sb):
     a, b = BY.get(sa), BY.get(sb)
     if not a or not b: return
     path = f"/compare/{sa}-vs-{sb}/"
     c, bl = crumbs([("Home", "/"), ("Compare", "/compare/"), (f"{a['name']} vs {b['name']}", path)])
-    rows, wins = compare_rows(a, b)
+    rows, wins, compared = compare_rows(a, b)
     def verdict():
         lines = []
         if a["_fee"] is not None and b["_fee"] is not None and a["_fee"] != b["_fee"]:
@@ -437,25 +553,38 @@ def compare_page(sa, sb):
         lines.append(f"Overall PFA Score: {a['name']} {a['_score']:.1f} vs {b['name']} {b['_score']:.1f}.")
         return "".join(f"<li>{e(x)}</li>" for x in lines)
     disc = ""
-    if "fundedxyz" in (sa, sb): disc = f'<p class="note">Disclosure: PropFirmAnalyse is run by the team behind FundedXYZ. This comparison uses the same data fields and scoring formula as every other page.</p>'
-    body = f"""<section class="wrap">{c}<h1>{e(a['name'])} vs {e(b['name'])}</h1><p class="lead">Rule-by-rule comparison from each firm's own website, last verified {e(TODAY)}. Highlighted cells are the stronger figure on that line.</p>{disc}
-<div class="vs"><a href="{url('/firms/' + sa + '/')}" class="vsf"><span class="av lg">{e(a['name'][:2])}</span><b>{e(a['name'])}</b>{badge_score(a)}</a><span class="vsx">vs</span><a href="{url('/firms/' + sb + '/')}" class="vsf"><span class="av lg">{e(b['name'][:2])}</span><b>{e(b['name'])}</b>{badge_score(b)}</a></div>
-<h2>Quick take</h2><ul class="verdict">{verdict()}</ul>
-<div class="tablewrap"><table class="cmp"><thead><tr><th></th><th>{e(a['name'])}</th><th>{e(b['name'])}</th></tr></thead><tbody>{rows}</tbody></table></div>
-<div class="ctas two"><a class="btn" href="{e(a.get('affiliate_url') or '#')}" rel="sponsored nofollow noopener" target="_blank">{T['visit']}: {e(a['name'])}</a><a class="btn" href="{e(b.get('affiliate_url') or '#')}" rel="sponsored nofollow noopener" target="_blank">{T['visit']}: {e(b['name'])}</a></div>
-<p class="small muted">“Not published” means we could not find the figure on the firm's own site. Sources are listed on each firm page.</p></section>"""
+    if "fundedxyz" in (sa, sb): disc = '<p class="note"><b>Disclosure.</b> PropFirmAnalyse is run by the team behind FundedXYZ. This comparison uses the same data fields and scoring formula as every other page.</p>'
+    wa, wb = wins[sa], wins[sb]
+    tally = (f'<p class="tally"><span><b>{e(a["name"])}</b> stronger on <b class="n">{wa}</b></span><span><b>{e(b["name"])}</b> stronger on <b class="n">{wb}</b></span>'
+             f'<span class="muted">of <span class="n">{compared}</span> lines where both publish a comparable figure</span></p>')
+    headcell = lambda f, slug: (f'<th scope="col"><a class="fn" href="{url("/firms/" + slug + "/")}">{e(f["name"])}</a>'
+                                f'<span class="hs"><b class="n">{f["_score"]:.1f}</b>{ticks(f["_score"], 1, "sm")}<span class="sr"> PFA Score</span></span></th>')
+    body = f"""<div class="wrap">{c}<header class="ph"><h1>{e(a['name'])} <i class="vs">vs</i> {e(b['name'])}</h1>
+<p class="lede">Rule-by-rule comparison from each firm's own website, last verified <time datetime="{e(TODAY)}">{nice_date(TODAY)}</time>. The marked figure is the stronger one on that line.</p>{disc}</header>
+<div class="cgrid"><section class="take"><h2>Quick take</h2><ul class="verdict">{verdict()}</ul>{tally}</section>
+<div class="cmpwrap"><table class="cmp"><caption class="sr">{e(a['name'])} compared with {e(b['name'])}</caption><thead><tr><td></td>{headcell(a, sa)}{headcell(b, sb)}</tr></thead><tbody>{rows}</tbody>
+<tfoot><tr><td></td><td>{visit(a, T['visit'], 'btn')}</td><td>{visit(b, T['visit'], 'btn')}</td></tr></tfoot></table>
+<p class="legend"><span>{NIL} means we could not find the figure on the firm's own site. Sources are listed on each firm page.</span></p></div></div></div>"""
     qa = [(f"Which is cheaper, {a['name']} or {b['name']}?", f"Lowest published entry fee: {a['name']} {money(a['_fee'], a.get('fee_currency'))}, {b['name']} {money(b['_fee'], b.get('fee_currency'))}."),
           (f"Which has the higher profit split, {a['name']} or {b['name']}?", f"{a['name']}: {a.get('profit_split') or 'not published'}; {b['name']}: {b.get('profit_split') or 'not published'}.")]
     ld = [bl, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": t}} for q, t in qa]}]
-    page(path, f"{a['name']} vs {b['name']} (2026): Fees, Rules, Payouts Compared", f"{a['name']} vs {b['name']}: entry fees, drawdown, profit split, payout speed and platforms side by side — verified {TODAY}.", body, ld, "article")
+    page(path, f"{a['name']} vs {b['name']} (2026): Fees, Rules, Payouts Compared", f"{a['name']} vs {b['name']}: entry fees, drawdown, profit split, payout speed and platforms side by side. Verified {TODAY}.", body, ld, "article")
+
+def pair_group(a):
+    if a in ("fundedxyz", "hyrotrader", "breakout-prop", "crypto-fund-trader"): return "Crypto"
+    return "Futures" if "futures" in BY[a]["_assets"] and "forex" not in BY[a]["_assets"] else "Forex / multi-asset"
 
 def compare_index():
     c, bl = crumbs([("Home", "/"), ("Compare", "/compare/")])
     opts = "".join(f'<option value="{f["slug"]}">{e(f["name"])}</option>' for f in sorted(FIRMS, key=lambda x: x["name"].lower()))
-    cards = "".join(f'<a class="card" href="{url("/compare/" + a + "-vs-" + b + "/")}"><small>{"Crypto" if a in ("fundedxyz","hyrotrader","breakout-prop","crypto-fund-trader") else ("Futures" if "futures" in BY[a]["_assets"] and "forex" not in BY[a]["_assets"] else "Forex / multi")}</small><b>{e(BY[a]["name"])} vs {e(BY[b]["name"])}</b></a>' for a, b in PAIRS if a in BY and b in BY)
-    body = f"""<section class="wrap">{c}<h1>Compare prop firms</h1><p class="lead">Pick any two firms for a live side-by-side, or open one of the popular match-ups.</p>
-<form class="picker" id="picker" onsubmit="return false"><select id="pa">{opts}</select><span>vs</span><select id="pb">{opts}</select><button class="btn" id="pgo">{T['compare_cta']}</button></form>
-<div id="live" class="tablewrap"></div><h2>Popular comparisons</h2><div class="grid3">{cards}</div></section>
+    groups = {}
+    for a, b in PAIRS:
+        if a in BY and b in BY: groups.setdefault(pair_group(a), []).append((a, b))
+    gh = "".join(f'<div><h3>{e(g)}</h3><ul class="pairs">{"".join(pair_link(a, b) for a, b in ps)}</ul></div>' for g, ps in groups.items())
+    body = f"""<div class="wrap">{c}<header class="ph"><h1>Compare prop firms</h1><p class="lede">Pick any two firms for a side-by-side, or open one of the common match-ups below.</p></header>
+<form class="picker" id="picker" onsubmit="return false"><label class="fl"><span>First firm</span><select id="pa">{opts}</select></label><i class="vs" aria-hidden="true">vs</i>
+<label class="fl"><span>Second firm</span><select id="pb">{opts}</select></label><button class="btn" id="pgo" type="submit">{T['compare_cta']}</button></form>
+<div id="live" class="cmpwrap" aria-live="polite"></div><section class="block"><h2>Popular comparisons</h2><div class="pgroups">{gh}</div></section></div>
 <script>window.PFA_FIRMS_URL="{url('/data/firms.json')}";window.PFA_PAIRS={json.dumps([a + '-vs-' + b for a, b in PAIRS])};window.PFA_BASE="{BASE}";</script>"""
     page("/compare/", "Compare Prop Firms Side by Side | PropFirmAnalyse", "Compare any two prop firms on fees, drawdown, profit split, payouts and platforms.", body, [bl])
 
@@ -463,61 +592,67 @@ def discounts():
     c, bl = crumbs([("Home", "/"), ("Discounts", "/discounts/")])
     withc = [f for f in RANKED if (f.get("discount_code") or {}).get("code")]
     without = [f for f in RANKED if not (f.get("discount_code") or {}).get("code")]
-    cards = "".join(f"""<div class="dcard"><div class="dh"><span class="av">{e(f['name'][:2])}</span><div><b><a href="{url('/firms/' + f['slug'] + '/')}">{e(f['name'])}</a></b><small>From {money(f['_fee'], f.get('fee_currency'))} · {e(f.get('profit_split') or '')}</small></div>{badge_score(f)}</div>
-<p class="dv">{e(f['discount_code'].get('value') or 'Discount')}</p>{code_html(f)}<a class="btn sm" href="{e(f.get('affiliate_url') or '#')}" rel="sponsored nofollow noopener" target="_blank">{T['visit']}</a><small class="muted">Seen on firm's site {e(f.get('last_verified') or TODAY)}</small></div>""" for f in withc)
-    body = f"""<section class="wrap">{c}<h1>Prop firm discount codes</h1><p class="lead">Only codes published on each firm's own website are listed. Codes expire — the firm's checkout is the final word.</p>
-<div class="dgrid">{cards or '<p>No public codes found at last check.</p>'}</div>
-<h2>No public code right now</h2><p class="chips">{''.join(f'<a class="chip" href="{url("/firms/" + f["slug"] + "/")}">{e(f["name"])}</a>' for f in without)}</p></section>"""
+    rows = "".join(f"""<li class="dl"><a class="dn" href="{url('/firms/' + f['slug'] + '/')}"><b>{e(f['name'])}</b><small>From {money(f['_fee'], f.get('fee_currency')) if f['_fee'] is not None else 'n/a'}{(', ' + e(f.get('profit_split'))) if f.get('profit_split') else ''}</small></a>
+<p class="dv">{e(f['discount_code'].get('value') or 'Discount')}</p><div class="dc">{code_html(f, False)}<small>Seen <time datetime="{e(f.get('last_verified') or TODAY)}">{nice_date(f.get('last_verified') or TODAY)}</time></small></div>{score_html(f)}{visit(f)}</li>""" for f in withc)
+    body = f"""<div class="wrap">{c}<header class="ph"><h1>Prop firm discount codes</h1><p class="lede">Only codes published on each firm's own website. Codes expire; the firm's checkout is the final word.</p></header>
+{('<ul class="deals">' + rows + '</ul>') if rows else '<p class="empty">No public codes found at last check.</p>'}
+<section class="block"><h2>No public code right now</h2><p class="inline-list">{''.join(f'<a href="{url("/firms/" + f["slug"] + "/")}">{e(f["name"])}</a>' for f in without)}</p></section></div>"""
     page("/discounts/", f"Prop Firm Discount Codes ({datetime.date.fromisoformat(TODAY).strftime('%B %Y')}) | PropFirmAnalyse", "Current public discount codes for prop firm challenges, checked against each firm's website.", body, [bl])
 
 def best_pages():
     c, bl = crumbs([("Home", "/"), ("Best for", "/best/")])
-    cards = "".join(f'<a class="card" href="{url("/best/" + s + "/")}"><b>{e(t)}</b><small>{e(d)}</small><small>{sum(1 for f in FIRMS if fn(f))} firms</small></a>' for s, t, d, fn in BEST)
-    page("/best/", "Best Prop Firms by Category | PropFirmAnalyse", "Prop firms grouped by market, challenge type, cost, split and payout speed — ranked by PFA Score.", f'<section class="wrap">{c}<h1>Best prop firms for…</h1><p class="lead">Each list is a data filter over our firm table, ranked by the same PFA Score.</p><div class="grid3">{cards}</div></section>', [bl])
+    items = "".join(f'<li><a href="{url("/best/" + s + "/")}"><b>{e(t)}</b><span>{e(d)}</span><span class="cnt"><b class="n">{sum(1 for f in FIRMS if fn(f))}</b> firms</span>{ic("arrow")}</a></li>' for s, t, d, fn in BEST)
+    page("/best/", "Best Prop Firms by Category | PropFirmAnalyse", "Prop firms grouped by market, challenge type, cost, split and payout speed, ranked by PFA Score.",
+         f'<div class="wrap">{c}<header class="ph"><h1>Best prop firms for…</h1><p class="lede">Each list is a filter over the same firm table, ranked by the same PFA Score.</p></header><ul class="shortlists">{items}</ul></div>', [bl])
     for s, t, d, fn in BEST:
         fl = [f for f in RANKED if fn(f)]
         c2, bl2 = crumbs([("Home", "/"), ("Best for", "/best/"), (t, f"/best/{s}/")])
-        ol = "".join(f'<li><a href="{url("/firms/" + f["slug"] + "/")}"><b>{e(f["name"])}</b></a> {badge_score(f)} <span class="muted small">from {money(f["_fee"], f.get("fee_currency"))} · {e(f.get("profit_split") or "split n/a")} · {e(BUCKET_LABEL.get(f["_bucket"], "payout n/a")) if f["_bucket"] else "payout n/a"}</span></li>' for f in fl)
-        body = f'<section class="wrap">{c2}<h1>Best {e(t.lower())} ({YEAR_NOW})</h1><p class="lead">{e(d)} {len(fl)} firms match; ranked by PFA Score.</p><ol class="rank">{ol}</ol>{table(fl)}</section>'
+        body = f'<div class="wrap">{c2}<header class="ph"><h1>Best {e(t.lower())} ({YEAR_NOW})</h1><p class="lede">{e(d)} <span class="n">{len(fl)}</span> firms match, ranked by PFA Score.</p></header>{table(fl)}{legend()}</div>'
         ld = {"@context": "https://schema.org", "@type": "ItemList", "name": t, "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": ABS + "/firms/" + f["slug"] + "/", "name": f["name"]} for i, f in enumerate(fl)]}
-        page(f"/best/{s}/", f"Best {t} {YEAR_NOW} — Ranked | PropFirmAnalyse", f"{len(fl)} {t.lower()} ranked by PFA Score with fees, split and payout data.", body, [bl2, ld])
+        page(f"/best/{s}/", f"Best {t} {YEAR_NOW}, Ranked | PropFirmAnalyse", f"{len(fl)} {t.lower()} ranked by PFA Score with fees, split and payout data.", body, [bl2, ld])
 
 def methodology():
     c, bl = crumbs([("Home", "/"), ("Methodology", "/methodology/")])
-    body = f"""<section class="wrap prose">{c}<h1>How we collect data and score firms</h1>
-<div class="note"><b>Ownership disclosure.</b> PropFirmAnalyse is operated by the team behind FundedXYZ; FundedXYZ is scored by the same rules as every other firm. It gets no manual adjustment, no default sort position, and its data is collected with the same checklist.</div>
-<h2>Where the numbers come from</h2><p>Every figure is read from the prop firm's own website (pricing, rules, FAQ or help-centre pages) and the date is recorded per firm. Ratings come from the firm's public Trustpilot page. If a firm does not publish a number, we show “Not published” — we never estimate.</p>
-<h2>The PFA Score (0–10)</h2><p>One formula, applied mechanically by our build script:</p>
-<table class="mini"><thead><tr><th>Component</th><th>Weight</th><th>Inputs</th></tr></thead><tbody>
-<tr><td>Trust</td><td>30%</td><td>Trustpilot score (3.0→0, 5.0→full), scaled by review volume (log₁₀ of count)</td></tr>
-<tr><td>Cost</td><td>20%</td><td>Cheapest fee per $1,000 of account size across published programs</td></tr>
-<tr><td>Rules</td><td>20%</td><td>Daily loss limit, max drawdown, static vs trailing drawdown, news trading, weekend holding, consistency rule</td></tr>
-<tr><td>Payout</td><td>20%</td><td>Headline profit split, days to first payout, payout cycle</td></tr>
-<tr><td>Track record</td><td>10%</td><td>Years in operation (8+ years = full marks)</td></tr></tbody></table>
+    body = f"""<div class="wrap">{c}<article class="prose"><h1>How we collect data and score firms</h1>
+<p class="note"><b>Ownership disclosure.</b> PropFirmAnalyse is operated by the team behind FundedXYZ; FundedXYZ is scored by the same rules as every other firm. It gets no manual adjustment, no default sort position, and its data is collected with the same checklist.</p>
+<h2>Where the numbers come from</h2><p>Every figure is read from the prop firm's own website (pricing, rules, FAQ or help-centre pages) and the date is recorded per firm. Ratings come from the firm's public Trustpilot page. If a firm does not publish a number, we show "Not published". We never estimate.</p>
+<h2>The PFA Score (0 to 10)</h2><p>One formula, applied mechanically by our build script:</p>
+<table class="mini"><thead><tr><th scope="col">Component</th><th scope="col" class="num">Weight</th><th scope="col">Inputs</th></tr></thead><tbody>
+<tr><td>Trust</td><td class="num n">30%</td><td>Trustpilot score (3.0 scores 0, 5.0 full marks), scaled by review volume (log₁₀ of count)</td></tr>
+<tr><td>Cost</td><td class="num n">20%</td><td>Cheapest fee per $1,000 of account size across published programs</td></tr>
+<tr><td>Rules</td><td class="num n">20%</td><td>Daily loss limit, max drawdown, static vs trailing drawdown, news trading, weekend holding, consistency rule</td></tr>
+<tr><td>Payout</td><td class="num n">20%</td><td>Headline profit split, days to first payout, payout cycle</td></tr>
+<tr><td>Track record</td><td class="num n">10%</td><td>Years in operation (8+ years = full marks)</td></tr></tbody></table>
 <p>Payout cycle uses the firm's headline (first-listed) plan. Fees are compared in the currency the firm prices in (FTMO lists EUR); no FX conversion is applied. Trustpilot profiles that show no rating (e.g. suspended for a guideline breach) count as missing.</p><p>Missing inputs score 4/10 for that component, so withholding information never helps a firm. Each firm page shows its component breakdown and a data-completeness percentage.</p>
 <h2>What the score is not</h2><p>It is not a prediction of whether you will pass or get paid, and it is not financial advice. Affiliate relationships do not affect scores or ordering.</p>
 <h2>Corrections</h2><p>Firms change rules frequently. If you spot an outdated figure, tell us with a link to the firm's page and we will re-verify. See the <a href="{url('/updates/')}">verification log</a>.</p>
-<p class="small muted">The full formula lives in <code>scripts/build.py</code>; the dataset is published at <a href="{url('/data/firms.json')}">/data/firms.json</a>.</p></section>"""
+<p class="small">The full formula lives in <code>scripts/build.py</code>; the dataset is published at <a href="{url('/data/firms.json')}">/data/firms.json</a>.</p></article></div>"""
     page("/methodology/", "Methodology & Scoring | PropFirmAnalyse", "How PropFirmAnalyse collects prop firm data and calculates the PFA Score. Ownership disclosure included.", body, [bl])
 
 def about():
     c, bl = crumbs([("Home", "/"), ("About", "/about/")])
-    body = f"""<section class="wrap prose">{c}<h1>About PropFirmAnalyse</h1>
+    body = f"""<div class="wrap">{c}<article class="prose"><h1>About PropFirmAnalyse</h1>
 <p>PropFirmAnalyse is a data-first comparison of prop trading firms across crypto, forex and futures. We track the rules that decide whether a trader can realistically pass and get paid: fees, drawdown type, profit split, payout cycle and restrictions.</p>
-<div class="note"><b>Who runs this site.</b> PropFirmAnalyse is operated by the team behind <a href="{url('/firms/fundedxyz/')}">FundedXYZ</a>, a crypto prop firm. FundedXYZ is listed and scored by exactly the same rules as every other firm — see <a href="{url('/methodology/')}">methodology</a>.</div>
-<h2>How we make money</h2><p>Some “Visit site” links may become affiliate links. A firm cannot pay to change its data, score or ranking.</p>
-<h2>Contact</h2><p>Corrections and firm data updates: please include a link to the firm's own page that shows the change.</p></section>"""
+<p class="note"><b>Who runs this site.</b> PropFirmAnalyse is operated by the team behind <a href="{url('/firms/fundedxyz/')}">FundedXYZ</a>, a crypto prop firm. FundedXYZ is listed and scored by exactly the same rules as every other firm; see <a href="{url('/methodology/')}">methodology</a>.</p>
+<h2>How we make money</h2><p>Some "Visit site" links may become affiliate links. A firm cannot pay to change its data, score or ranking.</p>
+<h2>Contact</h2><p>Corrections and firm data updates: please include a link to the firm's own page that shows the change.</p></article></div>"""
     ld = {"@context": "https://schema.org", "@type": "Organization", "name": "PropFirmAnalyse", "url": ABS + "/"}
-    page("/about/", "About PropFirmAnalyse — Who We Are & Disclosure", "Who runs PropFirmAnalyse, how the site is funded, and our ownership disclosure.", body, [bl, ld])
+    page("/about/", "About PropFirmAnalyse: Who We Are & Disclosure", "Who runs PropFirmAnalyse, how the site is funded, and our ownership disclosure.", body, [bl, ld])
 
 def updates():
     c, bl = crumbs([("Home", "/"), ("Verification log", "/updates/")])
-    rows = "".join(f'<tr><td><a href="{url("/firms/" + f["slug"] + "/")}">{e(f["name"])}</a></td><td>{e(f.get("last_verified") or TODAY)}</td><td>{f["_complete"]}%</td><td>{len(as_list(f.get("source_urls")))}</td></tr>' for f in sorted(FIRMS, key=lambda x: x["name"].lower()))
-    body = f'<section class="wrap">{c}<h1>Verification log & rule changes</h1><p class="lead">When each firm was last checked, and how complete its public data is. Rule changes will be logged here as they are detected.</p><div class="tablewrap"><table class="mini"><thead><tr><th>Firm</th><th>Last verified</th><th>Data completeness</th><th>Source pages</th></tr></thead><tbody>{rows}</tbody></table></div></section>'
+    rows = "".join(f'<tr><td><a href="{url("/firms/" + f["slug"] + "/")}">{e(f["name"])}</a></td><td class="n"><time datetime="{e(f.get("last_verified") or TODAY)}">{nice_date(f.get("last_verified") or TODAY)}</time></td>'
+                   f'<td class="num"><span class="cmpl-v">{ticks(f["_complete"] / 10, 0, "sm")}<b class="n">{f["_complete"]}%</b></span></td><td class="num n">{len(as_list(f.get("source_urls")))}</td></tr>' for f in sorted(FIRMS, key=lambda x: x["name"].lower()))
+    body = (f'<div class="wrap">{c}<header class="ph"><h1>Verification log &amp; rule changes</h1><p class="lede">When each firm was last checked, and how complete its public data is. Rule changes will be logged here as they are detected.</p></header>'
+            f'<div class="tablewrap"><table class="mini log"><thead><tr><th scope="col">Firm</th><th scope="col">Last verified</th><th scope="col" class="num">Data completeness</th><th scope="col" class="num">Source pages</th></tr></thead><tbody>{rows}</tbody></table></div></div>')
     page("/updates/", "Prop Firm Rule Changes & Verification Log | PropFirmAnalyse", "When each prop firm's rules were last verified and logged rule changes.", body, [bl])
 
 def not_found():
-    open(os.path.join(OUT, "404.html"), "w").write(f'<!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Not found</title><link rel=stylesheet href="{url("/assets/site.css")}"><main class="wrap" style="padding:4rem 1rem"><h1>Page not found</h1><p><a class="btn" href="{url("/")}">Back to the comparison</a></p></main>')
+    open(os.path.join(OUT, "404.html"), "w").write(
+        f'<!doctype html><html lang="en"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Not found | PropFirmAnalyse</title>'
+        f'<link rel=icon href="{url("/assets/favicon.svg")}" type="image/svg+xml"><link rel=stylesheet href="{url("/assets/site.css")}?v={ASSET_V}">'
+        f'<body><header class="top"><div class="wrap bar">{brand()}</div></header><main class="wrap nf"><p class="big n">404</p><h1>That page is not on the sheet.</h1>'
+        f'<p class="lede">The firm or comparison may have moved. Every firm is still in the main table.</p><p><a class="btn" href="{url("/")}">Back to the table</a></p></main></body></html>')
 
 def seo_files():
     sm = "".join(f"<url><loc>{ABS}{p}</loc><lastmod>{TODAY}</lastmod></url>" for p in PAGES)
