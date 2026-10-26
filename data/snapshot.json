@@ -914,7 +914,9 @@
    "EOD Trail Evaluation (Standard): $100K fee": "1190",
    "EOD Trail Evaluation (Standard): $150K fee": "2190",
    "Discount code": "SAVENOW (90% off all evals (time-limited banner))",
-   "Trustpilot score": "4.2"
+   "Trustpilot score": "4.2",
+   "x:Time limit": "30 days (EOD evaluation access period)",
+   "x:Minimum payout": "$500 per request (any account size)"
   },
   "topstep": {
    "Challenge types": "1-step",

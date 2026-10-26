@@ -377,7 +377,7 @@ def pair_link(a, b):
             f'<i aria-hidden="true">vs</i><span class="sr"> versus </span><span>{e(BY[b]["name"])}</span></a></li>')
 
 # ---------------- pages ----------------
-ASSET_V = "3"
+ASSET_V = "4"
 def write_assets():
     os.makedirs(os.path.join(OUT, "assets", "fonts"), exist_ok=True)
     for n in ("site.css", "site.js", "tools.js", "quiz.js", "favicon.svg", "og.png"):

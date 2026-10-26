@@ -1,0 +1,26 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": null,
+  "fee_refundable": null,
+  "time_limit": "30 days (EOD evaluation access period)",
+  "has_time_limit": true,
+  "activation_fee": null,
+  "payout_methods": [],
+  "min_payout": "$500 per request (any account size)",
+  "kyc_before_payout": null,
+  "scaling_plan": null,
+  "ea_bots": null,
+  "copy_trading": null,
+  "hedging": false,
+  "max_risk_per_trade": null,
+  "inactivity_rule": null,
+  "notes": "EOD evaluation is a 30-day assessment with no minimum trading days; after passing you have 7 days to activate the Performance Account (activation fee amount not shown on the pages read). PA payouts: 5 qualifying days at a minimum daily profit (e.g. $250 on 50K), 50% consistency, safety net = drawdown + $100, max 6 payouts per PA, 100% split. Hedging evaluations against each other is banned. Site blocks plain fetch/headless Chrome (Cloudflare); only two help pages loaded via the real browser, so reset price, refund, payout methods, bots/copy rules are null.",
+  "sources": [
+    "https://apextraderfunding.com/help-center/eod-trailing-drawdown-accounts/eod-evaluations/",
+    "https://apextraderfunding.com/help-center/eod-trailing-drawdown-accounts/eod-payouts/"
+  ],
+  "checked": "2026-10-26",
+  "reset_fee_usd": null,
+  "monthly_fee": null
+}
