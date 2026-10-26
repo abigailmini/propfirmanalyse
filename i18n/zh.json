@@ -1,7 +1,7 @@
 {
   "lang": "zh",
   "_status": "STUB — keys mirror en.json; translate before enabling /zh/ build",
-  "site_name": "PropFirmAnalyse",
+  "site_name": "PropAnalyse",
   "tagline": "自营交易公司规则、费用与出金——一目了然。",
   "nav_firms": "全部公司",
   "nav_compare": "对比",

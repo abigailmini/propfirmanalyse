@@ -1,6 +1,6 @@
 # Recon: propfirmmatch.com (2026-10-26)
 
-Method: their site blocks plain HTTP fetches (Cloudflare 403), so pages were opened in a real browser and inspected for **structure only** (headings, table columns, filter controls, link map, JSON-LD types). No PFM prose, logos, images or CSS were copied into PropFirmAnalyse. The raw structural dumps are in `docs/recon/*.json` for reference only and are **not** shipped with the site.
+Method: their site blocks plain HTTP fetches (Cloudflare 403), so pages were opened in a real browser and inspected for **structure only** (headings, table columns, filter controls, link map, JSON-LD types). No PFM prose, logos, images or CSS were copied into PropAnalyse. The raw structural dumps are in `docs/recon/*.json` for reference only and are **not** shipped with the site.
 
 ## Global layout
 - Top strip: live-stream promo + giveaway banner.
@@ -53,9 +53,9 @@ Homepage FAQPage JSON-LD ("best prop firm / best futures / best crypto / instant
 ## Footer
 Large mega-footer link groups: Find & Compare · Reviews & Rankings · Payouts · Offers · News & Insights · Tools & Resources · Programs & Rewards · About. Newsletter subscribe, cookie preferences.
 
-## What PropFirmAnalyse does differently (deliberate)
+## What PropAnalyse does differently (deliberate)
 - Navy/amber palette, our own logo/monogram avatars (no firm logos yet), filters as a sticky top bar (not side panel), table-first home.
-- Transparent, published scoring formula (PFA Score) instead of opaque popularity rank; data-completeness % per firm; source URLs on every profile.
+- Transparent, published scoring formula (PA Score) instead of opaque popularity rank; data-completeness % per firm; source URLs on every profile.
 - Crypto-first ordering of the dataset; compare pages generated for crypto pairs first.
 - Ownership disclosure (FundedXYZ) on About, Methodology and any compare page involving FundedXYZ.
 - Codes shown are only those publicly published on each firm's own site (until David's own affiliate codes exist).

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""PropFirmAnalyse static site generator. Regenerates every page from data/firms.json.
-Usage: python3 scripts/build.py  [env BASE_PATH=/propfirmanalyse SITE_URL=https://abigailmini.github.io]
+"""PropAnalyse static site generator. Regenerates every page from data/firms.json.
+Usage: python3 scripts/build.py  [env BASE_PATH= SITE_URL=https://propanalyse.com]
 """
 import json, os, re, math, html, shutil, datetime
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "site")
-BASE = os.environ.get("BASE_PATH", "/propfirmanalyse").rstrip("/")
-SITE_URL = os.environ.get("SITE_URL", "https://abigailmini.github.io").rstrip("/")
+BASE = os.environ.get("BASE_PATH", "").rstrip("/")
+SITE_URL = os.environ.get("SITE_URL", "https://propanalyse.com").rstrip("/")
 ABS = SITE_URL + BASE
 T = json.load(open(os.path.join(ROOT, "i18n", "en.json")))
 DATA = json.load(open(os.path.join(ROOT, "data", "firms.json")))
@@ -173,7 +173,7 @@ def ic(n, cls=""):
 MARK = ('<svg class="mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="24" height="24" class="mk-bg"/>'
         '<rect x="5" y="5.5" width="14" height="3" class="mk-top"/><rect x="5" y="10.5" width="10" height="3" class="mk-bar"/><rect x="5" y="15.5" width="6" height="3" class="mk-bar"/></svg>')
 def brand():
-    return f'<a class="brand" href="{url("/")}" aria-label="PropFirmAnalyse home">{MARK}<span>PropFirm<b>Analyse</b></span></a>'
+    return f'<a class="brand" href="{url("/")}" aria-label="PropAnalyse home">{MARK}<span>Prop<b>Analyse</b></span></a>'
 
 NA = '<span class="na" title="Not published by the firm"><span class="sr">Not published</span></span>'
 NIL = '<span class="nil">' + T["unknown"] + '</span>'
@@ -211,7 +211,7 @@ def page(path, title, desc, body, jsonld=None, og_type="website", extra_head="")
     doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{canon}">
 <meta property="og:type" content="{og_type}"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}">
-<meta property="og:url" content="{canon}"><meta property="og:image" content="{ABS}/assets/og.png"><meta property="og:site_name" content="PropFirmAnalyse">
+<meta property="og:url" content="{canon}"><meta property="og:image" content="{ABS}/assets/og.png"><meta property="og:site_name" content="PropAnalyse">
 <meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#f3f4f0" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0f1011" media="(prefers-color-scheme: dark)"><meta name="color-scheme" content="light dark">
 <link rel="preload" href="{url('/assets/fonts/geist.woff2')}" as="font" type="font/woff2" crossorigin><link rel="preload" href="{url('/assets/fonts/bricolage.woff2')}" as="font" type="font/woff2" crossorigin>
 <link rel="icon" href="{url('/assets/favicon.svg')}" type="image/svg+xml"><link rel="stylesheet" href="{url('/assets/site.css')}?v={ASSET_V}">
@@ -223,7 +223,7 @@ def page(path, title, desc, body, jsonld=None, og_type="website", extra_head="")
 <footer class="foot"><div class="wrap fgrid"><div class="fbrand">{brand()}<p>{e(T['tagline'])}</p></div>
 <nav aria-label="Footer"><h2>Explore</h2><ul>{footnav}</ul></nav>
 <div><h2>Disclosure</h2><p>{e(T['ownership'])}</p></div></div>
-<div class="wrap fine"><p>{e(T['disclaimer'])}</p><p class="fmeta"><span>&copy; {YEAR_NOW} PropFirmAnalyse</span><span>Data verified <time datetime="{e(TODAY)}">{nice_date(TODAY)}</time></span><a href="{url('/llms.txt')}">llms.txt</a><a href="{url('/data/firms.json')}">Open data (JSON)</a></p></div></footer>
+<div class="wrap fine"><p>{e(T['disclaimer'])}</p><p class="fmeta"><span>&copy; {YEAR_NOW} PropAnalyse</span><span>Data verified <time datetime="{e(TODAY)}">{nice_date(TODAY)}</time></span><a href="{url('/llms.txt')}">llms.txt</a><a href="{url('/data/firms.json')}">Open data (JSON)</a></p></div></footer>
 <script src="{url('/assets/site.js')}?v={ASSET_V}" defer></script></body></html>"""
     dest = os.path.join(OUT, path.lstrip("/"), "index.html") if path.endswith("/") else os.path.join(OUT, path.lstrip("/"))
     os.makedirs(os.path.dirname(dest), exist_ok=True)
@@ -247,7 +247,7 @@ def ticks(v, d=0, cls=""):
 
 def score_html(f, d=None):
     s = f["_score"]
-    return (f'<span class="sc" title="PFA Score {s:.1f} of 10. Data completeness {f["_complete"]}%.">'
+    return (f'<span class="sc" title="PA Score {s:.1f} of 10. Data completeness {f["_complete"]}%.">'
             f'<b class="n">{s:.1f}</b><span class="sr"> out of 10</span>{ticks(s, f["_rank"] if d is None else d)}</span>')
 badge_score = score_html
 
@@ -327,7 +327,7 @@ def filters_html():
 {sel('f-type', T['filter_type'], '<option value="">Any</option>' + o('1-step','1-step') + o('2-step','2-step') + o('3-step','3-step') + o('instant','Instant funding'))}
 {sel('f-fee', T['filter_fee'], '<option value="">Any</option>' + o('50','$50 or less') + o('100','$100 or less') + o('200','$200 or less'))}
 {sel('f-split', T['filter_split'], '<option value="">Any</option>' + o('80','80%+') + o('90','90%+') + o('100','100%'))}
-{sel('f-sort', T['sort'], o('score','PFA Score') + o('fee','Lowest entry fee') + o('split','Highest split') + o('maxsize','Largest account') + o('payout','Fastest payouts') + o('tp','Trustpilot') + o('founded','Longest running') + o('name','A to Z'))}</div>
+{sel('f-sort', T['sort'], o('score','PA Score') + o('fee','Lowest entry fee') + o('split','Highest split') + o('maxsize','Largest account') + o('payout','Fastest payouts') + o('tp','Trustpilot') + o('founded','Longest running') + o('name','A to Z'))}</div>
 <button type="button" class="fbtn" id="f-more" aria-expanded="false" aria-controls="fmore">{ic('sliders')}<span>Filters</span><b class="n" id="f-active" hidden></b></button>
 <p class="count" id="count" aria-live="polite"></p></div>
 <div class="fmore" id="fmore">{sel('f-size', T['filter_size'], '<option value="">Any</option>' + o('10000','$10K+') + o('50000','$50K+') + o('100000','$100K+') + o('200000','$200K+') + o('300000','$300K+'))}
@@ -337,7 +337,7 @@ def filters_html():
 <label class="tog"><input type="checkbox" id="f-news"><span>{T['filter_news']}</span></label><label class="tog"><input type="checkbox" id="f-weekend"><span>{T['filter_weekend']}</span></label>
 <button type="button" class="linkbtn" id="f-reset">{T['filter_reset']}</button></div></form>"""
 
-TABLE_COLS = [("c-rk", '<abbr title="Rank by PFA Score">#</abbr>'), ("c-firm", T["col_firm"]), ("c-sc", T["col_score"]), ("c-tp", T["col_rating"]),
+TABLE_COLS = [("c-rk", '<abbr title="Rank by PA Score">#</abbr>'), ("c-firm", T["col_firm"]), ("c-sc", T["col_score"]), ("c-tp", T["col_rating"]),
               ("c-fee num", T["col_fee"]), ("c-max num", T["col_maxsize"]), ("c-split", T["col_split"]), ("c-dd", T["col_dd"]), ("c-pay", T["col_payout"]),
               ("c-mkt", T["col_markets"] + " / " + T["col_types"]), ("c-plat", T["col_platforms"]), ("c-code", T["col_code"]), ("c-act", '<span class="sr">Link</span>')]
 SORT_KEYS = {"c-firm": "name", "c-sc": "score", "c-tp": "tp", "c-fee num": "fee", "c-max num": "maxsize", "c-split": "split", "c-pay": "payout"}
@@ -351,7 +351,7 @@ def table(firms, empty=False):
     head = "".join(th_html(c, t) for c, t in TABLE_COLS)
     emp = (f'<div class="empty" id="empty" hidden><p><b>No firm matches every filter.</b> Loosen one, or start again.</p>'
            f'<button type="button" class="btn line sm" data-reset>{T["filter_reset"]} filters</button></div>') if empty else ""
-    return (f'<div class="tablewrap"><table class="firms" id="firms"><caption class="sr">Prop firms ranked by PFA Score</caption>'
+    return (f'<div class="tablewrap"><table class="firms" id="firms"><caption class="sr">Prop firms ranked by PA Score</caption>'
             f'<thead><tr>{head}</tr></thead><tbody>{"".join(row(f) for f in firms)}</tbody></table></div>{emp}')
 
 def legend():
@@ -388,7 +388,7 @@ def write_assets():
         for n in os.listdir(fdir):
             if n.endswith(".woff2"): shutil.copy(os.path.join(fdir, n), os.path.join(OUT, "assets", "fonts", n))
     os.makedirs(os.path.join(OUT, "data"), exist_ok=True)
-    pub = [{k: v for k, v in f.items() if not k.startswith("_")} | {"pfa_score": f["_score"], "pfa_components": f["_comp"], "data_completeness_pct": f["_complete"]} for f in FIRMS]
+    pub = [{k: v for k, v in f.items() if not k.startswith("_")} | {"pa_score": f["_score"], "pa_components": f["_comp"], "data_completeness_pct": f["_complete"]} for f in FIRMS]
     json.dump({"generated": TODAY, "firms": pub}, open(os.path.join(OUT, "data", "firms.json"), "w"), indent=1, ensure_ascii=False)
 
 def home():
@@ -401,15 +401,15 @@ def home():
 <section class="wrap" aria-label="Firm table">{filters_html()}{table(RANKED, empty=True)}{legend()}</section>
 <section class="wrap lower"><div><h2>{e(T['best_for'])}</h2><ul class="lists">{lists}</ul></div>
 <div><h2>Head to head</h2><ul class="pairs">{pairs}</ul><p><a class="more" href="{url('/compare/')}">Pick any two firms{ic('arrow')}</a></p></div></section>"""
-    ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": "PropFirmAnalyse", "url": ABS + "/"},
-          {"@context": "https://schema.org", "@type": "ItemList", "name": "Prop firms ranked by PFA Score", "itemListElement": [{"@type": "ListItem", "position": f["_rank"], "url": ABS + "/firms/" + f["slug"] + "/", "name": f["name"]} for f in RANKED]}]
-    page("/", "Compare Prop Firms 2026: Fees, Rules & Payouts | PropFirmAnalyse", f"Side-by-side data on {len(FIRMS)} crypto, forex and futures prop firms: challenge fees, drawdown, profit split, payout speed and discount codes.", body, ld)
+    ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": "PropAnalyse", "url": ABS + "/"},
+          {"@context": "https://schema.org", "@type": "ItemList", "name": "Prop firms ranked by PA Score", "itemListElement": [{"@type": "ListItem", "position": f["_rank"], "url": ABS + "/firms/" + f["slug"] + "/", "name": f["name"]} for f in RANKED]}]
+    page("/", "Compare Prop Firms 2026: Fees, Rules & Payouts | PropAnalyse", f"Side-by-side data on {len(FIRMS)} crypto, forex and futures prop firms: challenge fees, drawdown, profit split, payout speed and discount codes.", body, ld)
 
 def firms_index():
     c, ld = crumbs([("Home", "/"), ("All firms", "/firms/")])
     body = (f'<section class="wrap">{c}<header class="ph"><h1>All prop firms</h1><p class="lede">Filter by market, challenge type, account size, platform and your country. '
             f'Open a firm for its full rule sheet and sources.</p></header>{filters_html()}{table(RANKED, empty=True)}{legend()}</section>')
-    page("/firms/", f"All {len(FIRMS)} Prop Firms Compared (2026) | PropFirmAnalyse", "Filterable table of prop trading firms with fees, drawdown limits, profit split, platforms and payout frequency.", body, [ld])
+    page("/firms/", f"All {len(FIRMS)} Prop Firms Compared (2026) | PropAnalyse", "Filterable table of prop trading firms with fees, drawdown limits, profit split, platforms and payout frequency.", body, [ld])
 
 def spec(title, rows):
     return (f'<section class="spec"><h2>{e(title)}</h2><dl>' + "".join(f'<div><dt>{e(k)}</dt><dd>{v}</dd></div>' for k, v in rows) + "</dl></section>")
@@ -486,8 +486,8 @@ def firm_page(f):
     s = f["_score"]
     body = f"""<div class="wrap">{c}<header class="phead"><h1>{e(f['name'])}</h1><p class="meta">{''.join('<span>' + m + '</span>' for m in meta)}</p>
 <p class="lede">{e(firm_summary(f))}</p><div class="ctas">{visit(f, cls="btn")}{dch}</div></header>
-<div class="pgrid"><aside class="side" aria-label="PFA Score"><div class="scorebox"><p class="big n">{s:.1f}<small>/10</small></p>{ticks(s, 0, "lg")}
-<p class="rk">PFA Score, ranked <b class="n">#{f['_rank']}</b> of <span class="n">{len(FIRMS)}</span></p><dl class="comp">{comps}</dl>
+<div class="pgrid"><aside class="side" aria-label="PA Score"><div class="scorebox"><p class="big n">{s:.1f}<small>/10</small></p>{ticks(s, 0, "lg")}
+<p class="rk">PA Score, ranked <b class="n">#{f['_rank']}</b> of <span class="n">{len(FIRMS)}</span></p><dl class="comp">{comps}</dl>
 <p class="small">Data completeness <b class="n">{f['_complete']}%</b>. Missing inputs score 4/10 by rule. <a href="{url('/methodology/')}">How scoring works</a></p></div>
 {('<div class="cmpl"><h2>Compare</h2><ul>' + others + '</ul></div>') if others else ''}</aside>
 <div class="pmain">{sheet}
@@ -503,7 +503,7 @@ def firm_page(f):
     lds = [org, bl]
     if qa: lds.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa]})
     desc = f"{f['name']} prop firm rules, fees" + (f" from {money(f['_fee'], f.get('fee_currency'))}" if f['_fee'] is not None else "") + (f", {f['profit_split']} split" if f.get('profit_split') else "") + ", drawdown, payouts and discount code. Verified " + str(f.get('last_verified') or TODAY) + "."
-    page(f"/firms/{f['slug']}/", f"{f['name']} Review 2026: Rules, Fees & Payouts | PropFirmAnalyse", desc, body, lds, "article")
+    page(f"/firms/{f['slug']}/", f"{f['name']} Review 2026: Rules, Fees & Payouts | PropAnalyse", desc, body, lds, "article")
 
 PAIRS = [("fundedxyz", "hyrotrader"), ("fundedxyz", "breakout-prop"), ("fundedxyz", "crypto-fund-trader"), ("hyrotrader", "breakout-prop"),
  ("hyrotrader", "crypto-fund-trader"), ("breakout-prop", "crypto-fund-trader"), ("ftmo", "fundednext"), ("ftmo", "the5ers"), ("fundednext", "fundingpips"),
@@ -511,7 +511,7 @@ PAIRS = [("fundedxyz", "hyrotrader"), ("fundedxyz", "breakout-prop"), ("fundedxy
 
 def compare_rows(a, b):
     sc = lambda f: f'<b class="n">{f["_score"]:.1f}</b> {ticks(f["_score"], 0, "sm")}'
-    R = [("PFA Score", sc, lambda f: f["_score"], 1), ("Trustpilot", tp_html, lambda f: num((f.get("trustpilot") or {}).get("score")), 1),
+    R = [("PA Score", sc, lambda f: f["_score"], 1), ("Trustpilot", tp_html, lambda f: num((f.get("trustpilot") or {}).get("score")), 1),
          ("Founded", lambda f: show(int(num(f["founded"]))) if num(f.get("founded")) else NIL, lambda f: -(num(f.get("founded")) or 9999), 1),
          ("HQ", lambda f: show(f.get("hq")), None, 0), ("Markets", lambda f: show([ASSET_LABEL.get(x, x) for x in f["_assets"]]), lambda f: len(f["_assets"]), 1),
          ("Challenge types", lambda f: show(f.get("challenge_types")), None, 0), ("Entry fee from", lambda f: mh(f["_fee"], f.get("fee_currency")).replace(NA, NIL), lambda f: -f["_fee"] if f["_fee"] is not None else None, 1),
@@ -559,15 +559,15 @@ def compare_page(sa, sb):
         ta, tb = num((a.get("trustpilot") or {}).get("score")), num((b.get("trustpilot") or {}).get("score"))
         if ta and tb and ta != tb:
             t = a if ta > tb else b; lines.append(f"Higher Trustpilot rating: {t['name']} ({max(ta, tb):.1f}).")
-        lines.append(f"Overall PFA Score: {a['name']} {a['_score']:.1f} vs {b['name']} {b['_score']:.1f}.")
+        lines.append(f"Overall PA Score: {a['name']} {a['_score']:.1f} vs {b['name']} {b['_score']:.1f}.")
         return "".join(f"<li>{e(x)}</li>" for x in lines)
     disc = ""
-    if "fundedxyz" in (sa, sb): disc = '<p class="note"><b>Disclosure.</b> PropFirmAnalyse is run by the team behind FundedXYZ. This comparison uses the same data fields and scoring formula as every other page.</p>'
+    if "fundedxyz" in (sa, sb): disc = '<p class="note"><b>Disclosure.</b> PropAnalyse is run by the team behind FundedXYZ. This comparison uses the same data fields and scoring formula as every other page.</p>'
     wa, wb = wins[sa], wins[sb]
     tally = (f'<p class="tally"><span><b>{e(a["name"])}</b> stronger on <b class="n">{wa}</b></span><span><b>{e(b["name"])}</b> stronger on <b class="n">{wb}</b></span>'
              f'<span class="muted">of <span class="n">{compared}</span> lines where both publish a comparable figure</span></p>')
     headcell = lambda f, slug: (f'<th scope="col"><a class="fn" href="{url("/firms/" + slug + "/")}">{e(f["name"])}</a>'
-                                f'<span class="hs"><b class="n">{f["_score"]:.1f}</b>{ticks(f["_score"], 1, "sm")}<span class="sr"> PFA Score</span></span></th>')
+                                f'<span class="hs"><b class="n">{f["_score"]:.1f}</b>{ticks(f["_score"], 1, "sm")}<span class="sr"> PA Score</span></span></th>')
     body = f"""<div class="wrap">{c}<header class="ph"><h1>{e(a['name'])} <i class="vs">vs</i> {e(b['name'])}</h1>
 <p class="lede">Rule-by-rule comparison from each firm's own website, last verified <time datetime="{e(TODAY)}">{nice_date(TODAY)}</time>. The marked figure is the stronger one on that line.</p>{disc}</header>
 <div class="cgrid"><section class="take"><h2>Quick take</h2><ul class="verdict">{verdict()}</ul>{tally}</section>
@@ -595,7 +595,7 @@ def compare_index():
 <label class="fl"><span>Second firm</span><select id="pb">{opts}</select></label><button class="btn" id="pgo" type="submit">{T['compare_cta']}</button></form>
 <div id="live" class="cmpwrap" aria-live="polite"></div><section class="block"><h2>Popular comparisons</h2><div class="pgroups">{gh}</div></section></div>
 <script>window.PFA_FIRMS_URL="{url('/data/firms.json')}";window.PFA_PAIRS={json.dumps([a + '-vs-' + b for a, b in PAIRS])};window.PFA_BASE="{BASE}";</script>"""
-    page("/compare/", "Compare Prop Firms Side by Side | PropFirmAnalyse", "Compare any two prop firms on fees, drawdown, profit split, payouts and platforms.", body, [bl])
+    page("/compare/", "Compare Prop Firms Side by Side | PropAnalyse", "Compare any two prop firms on fees, drawdown, profit split, payouts and platforms.", body, [bl])
 
 def discounts():
     c, bl = crumbs([("Home", "/"), ("Discounts", "/discounts/")])
@@ -606,26 +606,26 @@ def discounts():
     body = f"""<div class="wrap">{c}<header class="ph"><h1>Prop firm discount codes</h1><p class="lede">Only codes published on each firm's own website. Codes expire; the firm's checkout is the final word.</p></header>
 {('<ul class="deals">' + rows + '</ul>') if rows else '<p class="empty">No public codes found at last check.</p>'}
 <section class="block"><h2>No public code right now</h2><p class="inline-list">{''.join(f'<a href="{url("/firms/" + f["slug"] + "/")}">{e(f["name"])}</a>' for f in without)}</p></section></div>"""
-    page("/discounts/", f"Prop Firm Discount Codes ({datetime.date.fromisoformat(TODAY).strftime('%B %Y')}) | PropFirmAnalyse", "Current public discount codes for prop firm challenges, checked against each firm's website.", body, [bl])
+    page("/discounts/", f"Prop Firm Discount Codes ({datetime.date.fromisoformat(TODAY).strftime('%B %Y')}) | PropAnalyse", "Current public discount codes for prop firm challenges, checked against each firm's website.", body, [bl])
 
 def best_pages():
     c, bl = crumbs([("Home", "/"), ("Best for", "/best/")])
     items = "".join(f'<li><a href="{url("/best/" + s + "/")}"><b>{e(t)}</b><span>{e(d)}</span><span class="cnt"><b class="n">{sum(1 for f in FIRMS if fn(f))}</b> firms</span>{ic("arrow")}</a></li>' for s, t, d, fn in BEST)
-    page("/best/", "Best Prop Firms by Category | PropFirmAnalyse", "Prop firms grouped by market, challenge type, cost, split and payout speed, ranked by PFA Score.",
-         f'<div class="wrap">{c}<header class="ph"><h1>Best prop firms for…</h1><p class="lede">Each list is a filter over the same firm table, ranked by the same PFA Score.</p></header><ul class="shortlists">{items}</ul></div>', [bl])
+    page("/best/", "Best Prop Firms by Category | PropAnalyse", "Prop firms grouped by market, challenge type, cost, split and payout speed, ranked by PA Score.",
+         f'<div class="wrap">{c}<header class="ph"><h1>Best prop firms for…</h1><p class="lede">Each list is a filter over the same firm table, ranked by the same PA Score.</p></header><ul class="shortlists">{items}</ul></div>', [bl])
     for s, t, d, fn in BEST:
         fl = [f for f in RANKED if fn(f)]
         c2, bl2 = crumbs([("Home", "/"), ("Best for", "/best/"), (t, f"/best/{s}/")])
-        body = f'<div class="wrap">{c2}<header class="ph"><h1>Best {e(t.lower())} ({YEAR_NOW})</h1><p class="lede">{e(d)} <span class="n">{len(fl)}</span> firms match, ranked by PFA Score.</p></header>{table(fl)}{legend()}</div>'
+        body = f'<div class="wrap">{c2}<header class="ph"><h1>Best {e(t.lower())} ({YEAR_NOW})</h1><p class="lede">{e(d)} <span class="n">{len(fl)}</span> firms match, ranked by PA Score.</p></header>{table(fl)}{legend()}</div>'
         ld = {"@context": "https://schema.org", "@type": "ItemList", "name": t, "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": ABS + "/firms/" + f["slug"] + "/", "name": f["name"]} for i, f in enumerate(fl)]}
-        page(f"/best/{s}/", f"Best {t} {YEAR_NOW}, Ranked | PropFirmAnalyse", f"{len(fl)} {t.lower()} ranked by PFA Score with fees, split and payout data.", body, [bl2, ld])
+        page(f"/best/{s}/", f"Best {t} {YEAR_NOW}, Ranked | PropAnalyse", f"{len(fl)} {t.lower()} ranked by PA Score with fees, split and payout data.", body, [bl2, ld])
 
 def methodology():
     c, bl = crumbs([("Home", "/"), ("Methodology", "/methodology/")])
     body = f"""<div class="wrap">{c}<article class="prose"><h1>How we collect data and score firms</h1>
-<p class="note"><b>Ownership disclosure.</b> PropFirmAnalyse is operated by the team behind FundedXYZ; FundedXYZ is scored by the same rules as every other firm. It gets no manual adjustment, no default sort position, and its data is collected with the same checklist.</p>
+<p class="note"><b>Ownership disclosure.</b> PropAnalyse is operated by the team behind FundedXYZ; FundedXYZ is scored by the same rules as every other firm. It gets no manual adjustment, no default sort position, and its data is collected with the same checklist.</p>
 <h2>Where the numbers come from</h2><p>Every figure is read from the prop firm's own website (pricing, rules, FAQ or help-centre pages) and the date is recorded per firm. Ratings come from the firm's public Trustpilot page. If a firm does not publish a number, we show "Not published". We never estimate.</p>
-<h2>The PFA Score (0 to 10)</h2><p>One formula, applied mechanically by our build script:</p>
+<h2>The PA Score (0 to 10)</h2><p>One formula, applied mechanically by our build script:</p>
 <table class="mini"><thead><tr><th scope="col">Component</th><th scope="col" class="num">Weight</th><th scope="col">Inputs</th></tr></thead><tbody>
 <tr><td>Trust</td><td class="num n">30%</td><td>Trustpilot score (3.0 scores 0, 5.0 full marks), scaled by review volume (log₁₀ of count)</td></tr>
 <tr><td>Cost</td><td class="num n">20%</td><td>Cheapest fee per $1,000 of account size across published programs</td></tr>
@@ -636,17 +636,17 @@ def methodology():
 <h2>What the score is not</h2><p>It is not a prediction of whether you will pass or get paid, and it is not financial advice. Affiliate relationships do not affect scores or ordering.</p>
 <h2>Corrections</h2><p>Firms change rules frequently. If you spot an outdated figure, tell us with a link to the firm's page and we will re-verify. See the <a href="{url('/updates/')}">verification log</a>.</p>
 <p class="small">The full formula lives in <code>scripts/build.py</code>; the dataset is published at <a href="{url('/data/firms.json')}">/data/firms.json</a>.</p></article></div>"""
-    page("/methodology/", "Methodology & Scoring | PropFirmAnalyse", "How PropFirmAnalyse collects prop firm data and calculates the PFA Score. Ownership disclosure included.", body, [bl])
+    page("/methodology/", "Methodology & Scoring | PropAnalyse", "How PropAnalyse collects prop firm data and calculates the PA Score. Ownership disclosure included.", body, [bl])
 
 def about():
     c, bl = crumbs([("Home", "/"), ("About", "/about/")])
-    body = f"""<div class="wrap">{c}<article class="prose"><h1>About PropFirmAnalyse</h1>
-<p>PropFirmAnalyse is a data-first comparison of prop trading firms across crypto, forex and futures. We track the rules that decide whether a trader can realistically pass and get paid: fees, drawdown type, profit split, payout cycle and restrictions.</p>
-<p class="note"><b>Who runs this site.</b> PropFirmAnalyse is operated by the team behind <a href="{url('/firms/fundedxyz/')}">FundedXYZ</a>, a crypto prop firm. FundedXYZ is listed and scored by exactly the same rules as every other firm; see <a href="{url('/methodology/')}">methodology</a>.</p>
+    body = f"""<div class="wrap">{c}<article class="prose"><h1>About PropAnalyse</h1>
+<p>PropAnalyse is a data-first comparison of prop trading firms across crypto, forex and futures. We track the rules that decide whether a trader can realistically pass and get paid: fees, drawdown type, profit split, payout cycle and restrictions.</p>
+<p class="note"><b>Who runs this site.</b> PropAnalyse is operated by the team behind <a href="{url('/firms/fundedxyz/')}">FundedXYZ</a>, a crypto prop firm. FundedXYZ is listed and scored by exactly the same rules as every other firm; see <a href="{url('/methodology/')}">methodology</a>.</p>
 <h2>How we make money</h2><p>Some "Visit site" links may become affiliate links. A firm cannot pay to change its data, score or ranking.</p>
 <h2>Contact</h2><p>Corrections and firm data updates: please include a link to the firm's own page that shows the change.</p></article></div>"""
-    ld = {"@context": "https://schema.org", "@type": "Organization", "name": "PropFirmAnalyse", "url": ABS + "/"}
-    page("/about/", "About PropFirmAnalyse: Who We Are & Disclosure", "Who runs PropFirmAnalyse, how the site is funded, and our ownership disclosure.", body, [bl, ld])
+    ld = {"@context": "https://schema.org", "@type": "Organization", "name": "PropAnalyse", "url": ABS + "/"}
+    page("/about/", "About PropAnalyse: Who We Are & Disclosure", "Who runs PropAnalyse, how the site is funded, and our ownership disclosure.", body, [bl, ld])
 
 def updates():
     c, bl = crumbs([("Home", "/"), ("Verification log", "/updates/")])
@@ -654,11 +654,11 @@ def updates():
                    f'<td class="num"><span class="cmpl-v">{ticks(f["_complete"] / 10, 0, "sm")}<b class="n">{f["_complete"]}%</b></span></td><td class="num n">{len(as_list(f.get("source_urls")))}</td></tr>' for f in sorted(FIRMS, key=lambda x: x["name"].lower()))
     body = (f'<div class="wrap">{c}<header class="ph"><h1>Verification log &amp; rule changes</h1><p class="lede">When each firm was last checked, and how complete its public data is. Rule changes will be logged here as they are detected.</p></header>'
             f'<div class="tablewrap"><table class="mini log"><thead><tr><th scope="col">Firm</th><th scope="col">Last verified</th><th scope="col" class="num">Data completeness</th><th scope="col" class="num">Source pages</th></tr></thead><tbody>{rows}</tbody></table></div></div>')
-    page("/updates/", "Prop Firm Rule Changes & Verification Log | PropFirmAnalyse", "When each prop firm's rules were last verified and logged rule changes.", body, [bl])
+    page("/updates/", "Prop Firm Rule Changes & Verification Log | PropAnalyse", "When each prop firm's rules were last verified and logged rule changes.", body, [bl])
 
 def not_found():
     open(os.path.join(OUT, "404.html"), "w").write(
-        f'<!doctype html><html lang="en"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Not found | PropFirmAnalyse</title>'
+        f'<!doctype html><html lang="en"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Not found | PropAnalyse</title>'
         f'<link rel=icon href="{url("/assets/favicon.svg")}" type="image/svg+xml"><link rel=stylesheet href="{url("/assets/site.css")}?v={ASSET_V}">'
         f'<body><header class="top"><div class="wrap bar">{brand()}</div></header><main class="wrap nf"><p class="big n">404</p><h1>That page is not on the sheet.</h1>'
         f'<p class="lede">The firm or comparison may have moved. Every firm is still in the main table.</p><p><a class="btn" href="{url("/")}">Back to the table</a></p></main></body></html>')
@@ -667,13 +667,14 @@ def seo_files():
     sm = "".join(f"<url><loc>{ABS}{p}</loc><lastmod>{TODAY}</lastmod></url>" for p in PAGES)
     open(os.path.join(OUT, "sitemap.xml"), "w").write(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{sm}</urlset>')
     open(os.path.join(OUT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\n\nSitemap: {ABS}/sitemap.xml\n")
-    lines = [f"# PropFirmAnalyse", "", "> Data-first comparison of prop trading firms (crypto, forex, futures). Every figure is taken from the firm's own website; unknown values are left blank rather than estimated.",
+    lines = [f"# PropAnalyse", "", "> Data-first comparison of prop trading firms (crypto, forex, futures). Every figure is taken from the firm's own website; unknown values are left blank rather than estimated.",
              "", f"Operated by the team behind FundedXYZ; FundedXYZ is scored with the same formula as every other firm.", "", "## Key pages",
-             f"- [All firms]({ABS}/firms/): filterable table", f"- [Methodology]({ABS}/methodology/): PFA Score formula", f"- [Discount codes]({ABS}/discounts/)", f"- [Open dataset (JSON)]({ABS}/data/firms.json)", "", "## Firms"]
-    lines += [f"- [{f['name']}]({ABS}/firms/{f['slug']}/): PFA Score {f['_score']}, fee from {money(f['_fee'], f.get('fee_currency'))}, split {f.get('profit_split') or 'n/a'}, verified {f.get('last_verified') or TODAY}" for f in RANKED]
+             f"- [All firms]({ABS}/firms/): filterable table", f"- [Methodology]({ABS}/methodology/): PA Score formula", f"- [Discount codes]({ABS}/discounts/)", f"- [Open dataset (JSON)]({ABS}/data/firms.json)", "", "## Firms"]
+    lines += [f"- [{f['name']}]({ABS}/firms/{f['slug']}/): PA Score {f['_score']}, fee from {money(f['_fee'], f.get('fee_currency'))}, split {f.get('profit_split') or 'n/a'}, verified {f.get('last_verified') or TODAY}" for f in RANKED]
     lines += ["", "## Comparisons"] + [f"- [{BY[a]['name']} vs {BY[b]['name']}]({ABS}/compare/{a}-vs-{b}/)" for a, b in PAIRS if a in BY and b in BY]
     open(os.path.join(OUT, "llms.txt"), "w").write("\n".join(lines) + "\n")
     open(os.path.join(OUT, ".nojekyll"), "w").write("")
+    if SITE_URL.startswith("https://") and "github.io" not in SITE_URL and not BASE: open(os.path.join(OUT, "CNAME"), "w").write(SITE_URL.split("://", 1)[1] + "\n")
 
 if __name__ == "__main__":
     PAIRS[:] = [(a, b) for a, b in PAIRS if a in BY and b in BY]

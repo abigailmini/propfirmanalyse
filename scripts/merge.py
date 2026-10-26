@@ -17,6 +17,6 @@ for slug in ORDER:
     d["slug"] = slug
     d.setdefault("affiliate_url", "#")
     firms.append(d)
-out = {"generated": "2026-10-26", "order_note": "Crypto-first listing order; ranking on site is by PFA Score (same rules for every firm).", "firms": firms}
+out = {"generated": "2026-10-26", "order_note": "Crypto-first listing order; ranking on site is by PA Score (same rules for every firm).", "firms": firms}
 with open(os.path.join(ROOT, "data", "firms.json"), "w") as f: json.dump(out, f, indent=2, ensure_ascii=False)
 print(f"merged {len(firms)} firms; missing: {missing}")

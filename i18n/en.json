@@ -1,6 +1,6 @@
 {
   "lang": "en",
-  "site_name": "PropFirmAnalyse",
+  "site_name": "PropAnalyse",
   "tagline": "Prop firm rules, fees and payouts, side by side.",
   "nav_firms": "All firms",
   "nav_compare": "Compare",
@@ -24,7 +24,7 @@
   "filter_reset": "Reset",
   "sort": "Sort",
   "col_firm": "Firm",
-  "col_score": "PFA Score",
+  "col_score": "PA Score",
   "col_markets": "Markets",
   "col_types": "Challenges",
   "col_fee": "From",
@@ -41,7 +41,7 @@
   "copied": "Copied",
   "compare_cta": "Compare",
   "disclaimer": "Not financial advice. Prop-firm evaluations are paid products; most traders do not pass. Figures were taken from each firm's own website on the date shown and can change without notice, so confirm on the firm's site before buying. Some links may be affiliate links; this never changes a firm's score.",
-  "ownership": "PropFirmAnalyse is operated by the team behind FundedXYZ. FundedXYZ is listed and scored by exactly the same rules as every other firm.",
+  "ownership": "PropAnalyse is operated by the team behind FundedXYZ. FundedXYZ is listed and scored by exactly the same rules as every other firm.",
   "last_verified": "Last verified",
   "sources": "Sources",
   "unknown": "Not published"

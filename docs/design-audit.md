@@ -1,4 +1,4 @@
-# PropFirmAnalyse design audit (2026-10-26)
+# PropAnalyse design audit (2026-10-26)
 
 ## Honest critique of the current build (mobile screenshot, 390px)
 
