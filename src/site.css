@@ -146,6 +146,20 @@ select{-webkit-appearance:none;appearance:none;padding-right:30px;cursor:pointer
 table{border-collapse:collapse;width:100%}
 .firms{font-size:13.5px}
 .firms th{font:500 11px/1.25 var(--f-ui);text-transform:uppercase;letter-spacing:.06em;color:var(--mute);text-align:left;padding:16px 8px 8px;border-bottom:1px solid var(--ink);white-space:nowrap;vertical-align:bottom}
+.firms th[data-sort]{padding:0}
+.firms .sort{all:unset;box-sizing:border-box;display:inline-flex;align-items:flex-end;gap:5px;padding:16px 8px 8px;cursor:pointer;color:inherit;font:inherit;letter-spacing:inherit;text-transform:inherit;white-space:nowrap}
+.firms th.num .sort{flex-direction:row-reverse}
+.firms .sort:focus-visible{outline:2px solid var(--focus);outline-offset:-2px}
+.firms .si{width:7px;height:10px;flex:none;margin-bottom:1px}
+.firms .si path{fill:var(--rule-2);transition:fill 120ms ease}
+.firms th[aria-sort] .sort{color:var(--ink)}
+.firms th[aria-sort=ascending] .su,.firms th[aria-sort=descending] .sd{fill:var(--ink)}
+.firms th[aria-sort=ascending] .sd,.firms th[aria-sort=descending] .su{fill:transparent}
+@media (hover:hover){.firms .sort:hover{color:var(--ink)}.firms .sort:hover .si path{fill:var(--ink-2)}}
+@media (min-width:1280px){
+  .tablewrap{overflow:visible}
+  .firms thead th{position:sticky;top:calc(var(--hdr) + var(--fh,0px));z-index:5;background:var(--paper)}
+}
 .firms td{padding:12px 8px;border-bottom:1px solid var(--rule);vertical-align:top}
 .firms th:first-child,.firms td:first-child{padding-left:0}
 .firms th:last-child,.firms td:last-child{padding-right:0}

@@ -119,8 +119,8 @@
  "platforms": [
   "MT5"
  ],
- "payout_frequency": null,
- "first_payout_days": null,
+ "payout_frequency": "bi-weekly: first payout 14 days after funding, then every 2 weeks ($150 min profit, High Stakes); cycle resets on each scale-up",
+ "first_payout_days": 14,
  "min_trading_days": 3,
  "consistency_rule": null,
  "news_trading": "restricted",

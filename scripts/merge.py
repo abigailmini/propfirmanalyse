@@ -2,7 +2,7 @@
 """Merge data/raw/<slug>.json files into data/firms.json in canonical (crypto-first) order."""
 import json, os, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ORDER = ["fundedxyz","hyrotrader","breakout-prop","crypto-fund-trader","fundednext","ftmo","the5ers",
+ORDER = ["fundedxyz","hyrotrader","breakout-prop","crypto-fund-trader","bitfunded","fundednext","ftmo","the5ers",
  "fundingpips","alpha-capital","e8-markets","maven-trading","goat-funded-trader","blue-guardian",
  "lark-funding","apex-trader-funding","topstep","myfundedfutures","bulenox","instant-funding","nova-funding"]
 raw = os.path.join(ROOT, "data", "raw")

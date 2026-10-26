@@ -1,5 +1,24 @@
 (function(){
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const PORDER={daily:1,weekly:2,biweekly:3,monthly:4,other:5};
+/* sort keys: [value fn (null = unpublished, always last), default direction] */
+const SK={score:[d=>+d.score,-1],name:[d=>d.name,1],tp:[d=>d.tp===''?null:+d.tp,-1],fee:[d=>d.fee===''?null:+d.fee,1],maxsize:[d=>d.maxsize===''?null:+d.maxsize,-1],
+  split:[d=>d.split===''?null:+d.split,-1],payout:[d=>PORDER[d.payout]||null,1],founded:[d=>d.founded===''?null:+d.founded,1]};
+function sortTable(t,k,dir){
+  const tb=$('tbody',t),s=SK[k]||SK.score;dir=dir||s[1];
+  [...tb.rows].sort((a,b)=>{const x=s[0](a.dataset),y=s[0](b.dataset);if(x===y)return (+b.dataset.score)-(+a.dataset.score);if(x==null)return 1;if(y==null)return -1;return (x<y?-1:1)*dir}).forEach(r=>tb.appendChild(r));
+  $$('th[data-sort]',t).forEach(th=>{th.dataset.sort===k?th.setAttribute('aria-sort',dir>0?'ascending':'descending'):th.removeAttribute('aria-sort')});
+  t.dataset.k=k;t.dataset.dir=dir;
+}
+/* sticky table head sits under the sticky filter bar */
+const fb=$('#filters');
+if(fb&&'ResizeObserver' in window){new ResizeObserver(()=>document.documentElement.style.setProperty('--fh',fb.offsetHeight+'px')).observe(fb)}
+/* header clicks: same key toggles direction */
+$$('table.firms').forEach(t=>t.addEventListener('click',e=>{
+  const th=e.target.closest('th[data-sort]');if(!th)return;
+  const k=th.dataset.sort,dir=t.dataset.k===k?-(+t.dataset.dir):SK[k][1];
+  sortTable(t,k,dir);t.dispatchEvent(new CustomEvent('pfa:sort',{detail:{k,dir}}));
+}));
 
 /* menu */
 const mb=$('#menu');
@@ -26,7 +45,9 @@ if(tb&&form){
   const more=$('#f-more'),act=$('#f-active'),empty=$('#empty');
   const P=new URLSearchParams(location.search);
   ids.forEach(i=>{const el=$('#'+i),v=P.get(i.replace('f-',''));if(el&&v!=null){el.type==='checkbox'?el.checked=v==='1':el.value=v}});
-  const order={daily:1,weekly:2,biweekly:3,monthly:4,other:5};
+  const order=PORDER,tbl=$('#firms');let dir=P.get('dir')==='asc'?1:P.get('dir')==='desc'?-1:null;
+  tbl.addEventListener('pfa:sort',e=>{$('#f-sort').value=e.detail.k;dir=e.detail.dir;run()});
+  $('#f-sort').addEventListener('change',()=>{dir=null});
   const v=i=>{const el=$('#'+i);return el.type==='checkbox'?el.checked:el.value.trim().toLowerCase()};
   const setOpen=o=>{form.classList.toggle('open',o);more.setAttribute('aria-expanded',o?'true':'false')};
   function run(){
@@ -44,16 +65,16 @@ if(tb&&form){
       if(v('f-news')&&d.news!=='true')ok=false;
       if(v('f-weekend')&&d.weekend!=='true')ok=false;
       r.hidden=!ok;if(ok)n++});
-    const s=v('f-sort'),key={score:r=>-r.dataset.score,fee:r=>r.dataset.fee===''?1e9:+r.dataset.fee,split:r=>-(+r.dataset.split||0),tp:r=>-(+r.dataset.tp||0),founded:r=>+r.dataset.founded||9999,name:r=>r.dataset.name}[s]||(r=>-r.dataset.score);
-    rows.slice().sort((a,b)=>{const x=key(a),y=key(b);return x<y?-1:x>y?1:0}).forEach(r=>tb.appendChild(r));
+    const s=v('f-sort')||'score';sortTable(tbl,s,dir);
     $('#count').textContent=n+' of '+rows.length+' firms'+(v('f-country')?', excluding firms that restrict your country':'');
     if(empty)empty.hidden=n!==0;
     const active=ids.filter(i=>i!=='q'&&i!=='f-sort'&&v(i)).length;
     act.hidden=!active;act.textContent=active;
     const q=new URLSearchParams();ids.forEach(i=>{const x=v(i);if(x&&x!==false&&!(i==='f-sort'&&x==='score'))q.set(i.replace('f-',''),x===true?'1':x)});
+    if(dir&&dir!==SK[s][1])q.set('dir',dir>0?'asc':'desc');
     history.replaceState(null,'',q.toString()?'?'+q:location.pathname);
   }
-  const reset=()=>{ids.forEach(i=>{const el=$('#'+i);el.type==='checkbox'?el.checked=false:el.value=i==='f-sort'?'score':''});run()};
+  const reset=()=>{ids.forEach(i=>{const el=$('#'+i);el.type==='checkbox'?el.checked=false:el.value=i==='f-sort'?'score':''});dir=null;run()};
   ids.forEach(i=>{const el=$('#'+i);el&&el.addEventListener(i==='q'?'input':'change',run)});
   more.addEventListener('click',()=>setOpen(more.getAttribute('aria-expanded')!=='true'));
   $('#f-reset').addEventListener('click',reset);

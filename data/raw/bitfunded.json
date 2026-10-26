@@ -1,0 +1,167 @@
+{
+  "name": "Bitfunded",
+  "slug": "bitfunded",
+  "site": "https://www.bitfunded.com",
+  "category": "crypto",
+  "assets": [
+    "crypto"
+  ],
+  "challenge_types": [
+    "2-step",
+    "1-step",
+    "instant"
+  ],
+  "account_sizes": [
+    2500,
+    5000,
+    10000,
+    15000,
+    25000,
+    50000,
+    100000,
+    150000
+  ],
+  "programs": [
+    {
+      "name": "2-Step Challenge",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 79
+        },
+        {
+          "size": 10000,
+          "fee": 99
+        },
+        {
+          "size": 15000,
+          "fee": 149
+        },
+        {
+          "size": 25000,
+          "fee": 249
+        },
+        {
+          "size": 50000,
+          "fee": 399
+        },
+        {
+          "size": 100000,
+          "fee": 799
+        }
+      ],
+      "profit_target": "8% / 5%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10% / 8%",
+      "drawdown_type": "static (fixed % of starting balance)",
+      "profit_split": "80%",
+      "min_trading_days": 0
+    },
+    {
+      "name": "1-Step Challenge",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 99
+        },
+        {
+          "size": 10000,
+          "fee": 149
+        },
+        {
+          "size": 15000,
+          "fee": 199
+        },
+        {
+          "size": 25000,
+          "fee": 299
+        },
+        {
+          "size": 50000,
+          "fee": 499
+        },
+        {
+          "size": 100000,
+          "fee": 999
+        },
+        {
+          "size": 150000,
+          "fee": 1399
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static (fixed % of starting balance)",
+      "profit_split": "80%",
+      "min_trading_days": 0
+    },
+    {
+      "name": "1-Step Express",
+      "type": "1-step",
+      "sizes_fees": [],
+      "profit_target": "9%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "3%",
+      "drawdown_type": "static (fixed % of starting balance)",
+      "profit_split": "80%",
+      "min_trading_days": 0
+    },
+    {
+      "name": "Instant Funding",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 2500,
+          "fee": 129
+        },
+        {
+          "size": 5000,
+          "fee": 249
+        },
+        {
+          "size": 10000,
+          "fee": 449
+        }
+      ],
+      "profit_target": "none",
+      "max_daily_loss": "4%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static (fixed % of starting balance)",
+      "profit_split": "60%",
+      "min_trading_days": 0
+    }
+  ],
+  "fee_from": 79,
+  "profit_split": "80% (60% on Instant Funding)",
+  "profit_split_scale": null,
+  "max_daily_loss": "5%",
+  "max_drawdown": "10%",
+  "drawdown_type": "static (fixed % of starting balance)",
+  "profit_target": "8%",
+  "leverage": "1x to 5x",
+  "platforms": [
+    "Bitfunded proprietary web + mobile platform"
+  ],
+  "payout_frequency": "up to 2 per 30 days per account, on a self-set Profit Sharing Day (2 to 60 days); monthly after 10 payouts; Instant Funding monthly; processed within 24h on working days in USDT",
+  "first_payout_days": 2,
+  "min_trading_days": 0,
+  "consistency_rule": "Instant Funding only: no single pair may be 60%+ of net profit in a period; min 2 closed trades (3 on Instant) per payout period",
+  "news_trading": true,
+  "weekend_holding": true,
+  "countries_restricted": null,
+  "founded": 2023,
+  "hq": "United Arab Emirates",
+  "discount_code": null,
+  "affiliate_url": "#",
+  "trustpilot": null,
+  "last_verified": "2026-10-26",
+  "source_urls": [
+    "https://www.bitfunded.com/",
+    "https://www.bitfunded.com/frequently-asked-questions/",
+    "https://www.bitfunded.com/about-us/"
+  ],
+  "notes": "Crypto-native prop firm (100+ crypto pairs, ~20 TradFi pairs), in-house platform, USDT payouts. Replaces Nova Funding (offline). 2-Step fee refunded with 3rd payout. No hedging, no bots/EAs/API, max 5 open positions, holding limits 10/7/5 days (major crypto/minor crypto/TradFi), margin concentration cap 65% (55% Instant). Daily loss counts floating P&L; day resets 00:00 UTC+8. 1-Step Express fees not shown on homepage. Trustpilot page blocked to our fetcher; not recorded."
+}

@@ -136,8 +136,8 @@
     "TradingView",
     "cTrader"
   ],
-  "payout_frequency": null,
-  "first_payout_days": null,
+  "payout_frequency": "Reward claim from day 14 after first trade (14-day cycle); approval 1-2 business days, paid 1-2 business days after invoice",
+  "first_payout_days": 14,
   "min_trading_days": 4,
   "consistency_rule": "1-Step: best day ≤50% of profit; Instant: ≤30%",
   "news_trading": "restricted",
@@ -158,7 +158,8 @@
     "https://ftmo.com/en/trading-objectives/",
     "https://ftmo.com/en/faq/",
     "https://www.trustpilot.com/review/ftmo.com",
-    "https://ftmo.com/en/symbols/"
+    "https://ftmo.com/en/symbols/",
+    "https://ftmo.com/en/faq/how-do-i-withdraw-my-profits/"
   ],
   "notes": "Fees are EUR (USD toggle not applied in browser). $100K showed two prices: 2-Step €439/€540, 1-Step €399/€499 (higher recorded; lower may be promo). News/weekend restrictions apply only to Standard funded accounts (Swing type unrestricted; evaluation unrestricted). CFD asset classes not verified (only Futures product seen). Payout frequency not found. hq inferred from CZ legal entity FTMO s.r.o. Assets: Forex/Crypto/Indices/Commodities(Metals) category filters confirmed on ftmo.com/en/symbols (2026-10-26); stocks not confirmed. Fees in EUR."
 }

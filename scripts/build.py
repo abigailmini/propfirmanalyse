@@ -327,7 +327,7 @@ def filters_html():
 {sel('f-type', T['filter_type'], '<option value="">Any</option>' + o('1-step','1-step') + o('2-step','2-step') + o('3-step','3-step') + o('instant','Instant funding'))}
 {sel('f-fee', T['filter_fee'], '<option value="">Any</option>' + o('50','$50 or less') + o('100','$100 or less') + o('200','$200 or less'))}
 {sel('f-split', T['filter_split'], '<option value="">Any</option>' + o('80','80%+') + o('90','90%+') + o('100','100%'))}
-{sel('f-sort', T['sort'], o('score','PFA Score') + o('fee','Lowest entry fee') + o('split','Highest split') + o('tp','Trustpilot') + o('founded','Longest running') + o('name','A to Z'))}</div>
+{sel('f-sort', T['sort'], o('score','PFA Score') + o('fee','Lowest entry fee') + o('split','Highest split') + o('maxsize','Largest account') + o('payout','Fastest payouts') + o('tp','Trustpilot') + o('founded','Longest running') + o('name','A to Z'))}</div>
 <button type="button" class="fbtn" id="f-more" aria-expanded="false" aria-controls="fmore">{ic('sliders')}<span>Filters</span><b class="n" id="f-active" hidden></b></button>
 <p class="count" id="count" aria-live="polite"></p></div>
 <div class="fmore" id="fmore">{sel('f-size', T['filter_size'], '<option value="">Any</option>' + o('10000','$10K+') + o('50000','$50K+') + o('100000','$100K+') + o('200000','$200K+') + o('300000','$300K+'))}
@@ -340,8 +340,15 @@ def filters_html():
 TABLE_COLS = [("c-rk", '<abbr title="Rank by PFA Score">#</abbr>'), ("c-firm", T["col_firm"]), ("c-sc", T["col_score"]), ("c-tp", T["col_rating"]),
               ("c-fee num", T["col_fee"]), ("c-max num", T["col_maxsize"]), ("c-split", T["col_split"]), ("c-dd", T["col_dd"]), ("c-pay", T["col_payout"]),
               ("c-mkt", T["col_markets"] + " / " + T["col_types"]), ("c-plat", T["col_platforms"]), ("c-code", T["col_code"]), ("c-act", '<span class="sr">Link</span>')]
+SORT_KEYS = {"c-firm": "name", "c-sc": "score", "c-tp": "tp", "c-fee num": "fee", "c-max num": "maxsize", "c-split": "split", "c-pay": "payout"}
+def th_html(c, t):
+    k = SORT_KEYS.get(c)
+    if not k: return f'<th class="{c}" scope="col">{t}</th>'
+    aria = ' aria-sort="descending"' if k == "score" else ""
+    return (f'<th class="{c}" scope="col" data-sort="{k}"{aria}><button type="button" class="sort">{t}'
+            f'<svg class="si" viewBox="0 0 8 12" aria-hidden="true"><path class="su" d="M4 0 8 5H0z"/><path class="sd" d="M4 12 0 7h8z"/></svg></button></th>')
 def table(firms, empty=False):
-    head = "".join(f'<th class="{c}" scope="col">{t}</th>' for c, t in TABLE_COLS)
+    head = "".join(th_html(c, t) for c, t in TABLE_COLS)
     emp = (f'<div class="empty" id="empty" hidden><p><b>No firm matches every filter.</b> Loosen one, or start again.</p>'
            f'<button type="button" class="btn line sm" data-reset>{T["filter_reset"]} filters</button></div>') if empty else ""
     return (f'<div class="tablewrap"><table class="firms" id="firms"><caption class="sr">Prop firms ranked by PFA Score</caption>'
