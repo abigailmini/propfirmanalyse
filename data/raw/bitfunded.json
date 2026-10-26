@@ -145,7 +145,7 @@
   "platforms": [
     "Bitfunded proprietary web + mobile platform"
   ],
-  "payout_frequency": "up to 2 per 30 days per account, on a self-set Profit Sharing Day (2 to 60 days); monthly after 10 payouts; Instant Funding monthly; processed within 24h on working days in USDT",
+  "payout_frequency": "bi-weekly at most (up to 2 per 30 days per account) on a self-set Profit Sharing Day, 2 to 60 days; monthly after 10 payouts; Instant Funding monthly; processed within 24h on working days in USDT",
   "first_payout_days": 2,
   "min_trading_days": 0,
   "consistency_rule": "Instant Funding only: no single pair may be 60%+ of net profit in a period; min 2 closed trades (3 on Instant) per payout period",
