@@ -13,7 +13,9 @@ DATA = json.load(open(os.path.join(ROOT, "data", "firms.json")))
 FIRMS = DATA["firms"]
 TODAY = DATA.get("generated", datetime.date.today().isoformat())
 YEAR_NOW = 2026
-e = lambda s: html.escape(str(s), quote=True)
+def e(s):
+    # escape for HTML; source notes sometimes carry em/en dashes, shown as plain punctuation
+    return html.escape(str(s), quote=True).replace(" \u2014 ", ", ").replace("\u2014", "-").replace(" \u2013 ", " - ").replace("\u2013", "-")
 
 # ---------------- normalisation helpers ----------------
 def num(x):
