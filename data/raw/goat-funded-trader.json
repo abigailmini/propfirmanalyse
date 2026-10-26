@@ -1,0 +1,162 @@
+{
+  "name": "Goat Funded Trader",
+  "slug": "goat-funded-trader",
+  "site": "https://www.goatfundedtrader.com",
+  "category": "forex-cfd",
+  "assets": [
+    "forex",
+    "indices",
+    "stocks",
+    "crypto"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step",
+    "3-step",
+    "instant"
+  ],
+  "account_sizes": [
+    2500,
+    5000,
+    8000,
+    10000,
+    15000,
+    25000,
+    50000,
+    100000,
+    150000,
+    200000,
+    250000,
+    300000,
+    400000
+  ],
+  "programs": [
+    {
+      "name": "1 Step",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 74
+        },
+        {
+          "size": 10000,
+          "fee": 114
+        },
+        {
+          "size": 25000,
+          "fee": 214
+        },
+        {
+          "size": 50000,
+          "fee": 314
+        },
+        {
+          "size": 100000,
+          "fee": 530
+        },
+        {
+          "size": 200000,
+          "fee": 914
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static",
+      "profit_split": "80% (up to 100% add-on)",
+      "min_trading_days": 3
+    },
+    {
+      "name": "2 Step GOAT",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 36
+        },
+        {
+          "size": 10000,
+          "fee": 65
+        },
+        {
+          "size": 25000,
+          "fee": 158
+        },
+        {
+          "size": 50000,
+          "fee": 308
+        },
+        {
+          "size": 100000,
+          "fee": 478
+        }
+      ],
+      "profit_target": "8% / 6%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_split": "80% (up to 100% add-on)",
+      "min_trading_days": 3
+    },
+    {
+      "name": "2 Step Standard",
+      "type": "2-step",
+      "sizes_fees": [],
+      "profit_target": "10% / 5%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_split": null,
+      "min_trading_days": 3
+    }
+  ],
+  "fee_from": 36,
+  "profit_split": "up to 100%",
+  "profit_split_scale": "80% base; up to 100% with add-on",
+  "max_daily_loss": "4%",
+  "max_drawdown": "10%",
+  "drawdown_type": "static",
+  "profit_target": "8% / 6%",
+  "leverage": "up to 1:100",
+  "platforms": [
+    "MT5",
+    "cTrader",
+    "TradeLocker",
+    "Match-Trader",
+    "Volumetrica"
+  ],
+  "payout_frequency": "bi-weekly (on-demand available)",
+  "first_payout_days": null,
+  "min_trading_days": 3,
+  "consistency_rule": "none on 1-step/2-step evaluations",
+  "news_trading": true,
+  "weekend_holding": true,
+  "countries_restricted": null,
+  "founded": 2022,
+  "hq": null,
+  "discount_code": {
+    "code": "FIRSTGFT",
+    "value": "50% off first account"
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": null,
+    "count": 4332
+  },
+  "last_verified": "2026-10-26",
+  "source_urls": [
+    "https://goatfundedtrader.com/",
+    "https://www.goatfundedtrader.com/about",
+    "https://www.goatfundedtrader.com/model",
+    "https://help.goatfundedtrader.com/",
+    "https://help.goatfundedtrader.com/compare-models.html",
+    "https://help.goatfundedtrader.com/1-step.html",
+    "https://help.goatfundedtrader.com/2-step-standard.html",
+    "https://help.goatfundedtrader.com/2-step-goat.html",
+    "https://help.goatfundedtrader.com/trading-rules.html",
+    "https://help.goatfundedtrader.com/platforms.html",
+    "https://www.trustpilot.com/review/goatfundedtrader.com"
+  ],
+  "notes": "Fees = list (non-promo) prices from homepage pricing widget; 2 Step Standard fees and 150K/other sizes not captured. 1-Step daily loss 3% for accounts bought from 1 Aug 2026 (4% before). Min days = profitable days (0.5%+); funded payout needs 3-4 profitable days; funded daily profit cap $3,000 + Goat Guard. Also 2 Step PRO (8%/4%, 8% static), 3 Step (6%x3, 8% static), several instant models. MT5/cTrader unavailable to US. Trustpilot profile (listed as 'Wishes Tower') shows rating unavailable (guidelines breach notice), 4,332 reviews. Homepage widget also shows Goat Blitz promo (100K for $99). Restricted countries not found."
+}

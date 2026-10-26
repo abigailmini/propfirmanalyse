@@ -1,0 +1,1270 @@
+{
+  "generated": "2026-10-26",
+  "order_note": "Crypto-first listing order; ranking on site is by PFA Score (same rules for every firm).",
+  "firms": [
+    {
+      "name": "Alpha Capital",
+      "slug": "alpha-capital",
+      "site": "https://alphacapitalgroup.uk",
+      "category": "forex-cfd",
+      "assets": [
+        "forex",
+        "indices",
+        "commodities"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step",
+        "instant"
+      ],
+      "account_sizes": [
+        2500,
+        5000,
+        10000,
+        25000,
+        50000,
+        100000,
+        200000
+      ],
+      "programs": [
+        {
+          "name": "Alpha One (10%)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 47
+            },
+            {
+              "size": 10000,
+              "fee": 87
+            },
+            {
+              "size": 25000,
+              "fee": 187
+            },
+            {
+              "size": 50000,
+              "fee": 277
+            },
+            {
+              "size": 100000,
+              "fee": 477
+            },
+            {
+              "size": 200000,
+              "fee": 947
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "4%",
+          "max_drawdown": "6%",
+          "drawdown_type": "trailing (locks at initial balance)",
+          "profit_split": "80% (90% add-on)",
+          "min_trading_days": 1
+        },
+        {
+          "name": "Alpha Pro 6%",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 27
+            },
+            {
+              "size": 10000,
+              "fee": 47
+            },
+            {
+              "size": 25000,
+              "fee": 117
+            },
+            {
+              "size": 50000,
+              "fee": 217
+            },
+            {
+              "size": 100000,
+              "fee": 397
+            },
+            {
+              "size": 200000,
+              "fee": 797
+            }
+          ],
+          "profit_target": "6% / 6%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "6%",
+          "drawdown_type": "static",
+          "profit_split": "80% (90% add-on)",
+          "min_trading_days": 3
+        },
+        {
+          "name": "Alpha Direct",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 2500,
+              "fee": 30
+            },
+            {
+              "size": 5000,
+              "fee": 67
+            },
+            {
+              "size": 10000,
+              "fee": 97
+            },
+            {
+              "size": 25000,
+              "fee": 197
+            },
+            {
+              "size": 50000,
+              "fee": 257
+            },
+            {
+              "size": 100000,
+              "fee": 457
+            },
+            {
+              "size": 200000,
+              "fee": 897
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": "3%",
+          "max_drawdown": "5%",
+          "drawdown_type": "trailing (locks at initial balance)",
+          "profit_split": "90%",
+          "min_trading_days": null
+        }
+      ],
+      "fee_from": 27,
+      "profit_split": "up to 90%",
+      "profit_split_scale": "80% standard; 90% via add-on or Alpha Direct",
+      "max_daily_loss": "3%-5% by plan",
+      "max_drawdown": "5%-10% by plan",
+      "drawdown_type": "static (Pro/Swing); trailing (One/Direct)",
+      "profit_target": "6%-10% phase 1 by plan",
+      "leverage": "up to 1:100 (FX, Alpha Pro)",
+      "platforms": [
+        "MT5",
+        "cTrader",
+        "DXtrade",
+        "TradeLocker"
+      ],
+      "payout_frequency": "bi-weekly or on-demand (by plan)",
+      "first_payout_days": null,
+      "min_trading_days": 1,
+      "consistency_rule": "40% best day (on-demand); 15% best day (Direct)",
+      "news_trading": "restricted",
+      "weekend_holding": "restricted",
+      "countries_restricted": null,
+      "founded": null,
+      "hq": "Harpenden, England, UK",
+      "discount_code": {
+        "code": "ALPHA20",
+        "value": "20% off all accounts (to 31 Oct 2026)"
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": null,
+        "count": 22010
+      },
+      "last_verified": "2026-10-26",
+      "source_urls": [
+        "https://alphacapitalgroup.uk/",
+        "https://alphacapitalgroup.uk/product",
+        "https://alphacapitalgroup.uk/product/alpha-one",
+        "https://alphacapitalgroup.uk/product/alpha-pro",
+        "https://alphacapitalgroup.uk/product/alpha-direct",
+        "https://alphacapitalgroup.uk/alpha-capital-discount-codes",
+        "https://alphacapitalgroup.uk/10kfor40",
+        "https://alphacapitalgroup.uk/posts/alpha-capital-rules-explained-drawdown-profit-targets-daily-loss-and-evaluation-rules-2026",
+        "https://alphacapitalgroup.uk/posts/how-much-does-a-prop-firm-evaluation-cost-2026",
+        "https://alphacapitalgroup.uk/resources/alpha-capital-country-availability-2026",
+        "https://www.trustpilot.com/review/alphacapitalgroup.uk"
+      ],
+      "notes": "Alpha One/Pro fees from firm's own pricing post (checkout as of 21 Sep 2026); Alpha Direct fees from live product page. Product page lists Alpha One 6/10/12% variants but rules guide says only 10% sold; Alpha Pro also 8%/10% variants and Alpha Swing (2-step, 10%/5%, 10% static) exist, fees not captured. Trustpilot shows rating unavailable (guidelines breach notice), 22,010 reviews. Other active codes: MYALPHA 30% (ends 26 Oct), FUNDED40 40% Direct, 10KFOR40. US: no MT5/new cTrader. Founded year not found."
+    },
+    {
+      "name": "E8 Markets",
+      "slug": "e8-markets",
+      "site": "https://e8markets.com",
+      "category": "multi",
+      "assets": [
+        "forex",
+        "indices",
+        "commodities",
+        "crypto",
+        "stocks",
+        "futures"
+      ],
+      "challenge_types": [
+        "1-step"
+      ],
+      "account_sizes": [
+        5000,
+        10000,
+        25000,
+        50000,
+        100000,
+        200000,
+        400000,
+        500000
+      ],
+      "programs": [
+        {
+          "name": "E8 One",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 48
+            },
+            {
+              "size": 10000,
+              "fee": 88
+            },
+            {
+              "size": 25000,
+              "fee": 188
+            },
+            {
+              "size": 50000,
+              "fee": 288
+            },
+            {
+              "size": 100000,
+              "fee": 488
+            },
+            {
+              "size": 200000,
+              "fee": 798
+            },
+            {
+              "size": 400000,
+              "fee": 1598
+            },
+            {
+              "size": 500000,
+              "fee": 1998
+            }
+          ],
+          "profit_target": "9%",
+          "max_daily_loss": "4%",
+          "max_drawdown": "6%",
+          "drawdown_type": "dynamic (closed-balance trailing, locks at initial)",
+          "profit_split": "80% (up to 100% option)",
+          "min_trading_days": 1
+        },
+        {
+          "name": "E8 Pro",
+          "type": "1-step",
+          "sizes_fees": [],
+          "profit_target": "8%",
+          "max_daily_loss": "2.5%",
+          "max_drawdown": "8%",
+          "drawdown_type": "static",
+          "profit_split": "80% (up to 100% option)",
+          "min_trading_days": null
+        }
+      ],
+      "fee_from": 48,
+      "profit_split": "up to 100%",
+      "profit_split_scale": "80% default; 90%/100% options by product",
+      "max_daily_loss": "4%",
+      "max_drawdown": "6%",
+      "drawdown_type": "dynamic (trailing on closed balance)",
+      "profit_target": "9%",
+      "leverage": "up to 1:30 (FX, classic markets)",
+      "platforms": [
+        "MT5",
+        "TradeLocker",
+        "cTrader",
+        "MatchTrader",
+        "E8 Terminal"
+      ],
+      "payout_frequency": "on-demand (E8 One); daily (E8 Pro)",
+      "first_payout_days": 3,
+      "min_trading_days": 1,
+      "consistency_rule": "40% best day (E8 One performance stage)",
+      "news_trading": "restricted",
+      "weekend_holding": true,
+      "countries_restricted": [
+        "Afghanistan",
+        "Albania",
+        "Algeria",
+        "Belarus",
+        "Burma (Myanmar)",
+        "Burundi",
+        "Central African Republic",
+        "Congo",
+        "Cuba",
+        "DR Congo",
+        "Ethiopia",
+        "Iran",
+        "Iraq",
+        "Kosovo",
+        "Lebanon",
+        "Libya",
+        "Mali",
+        "Nicaragua",
+        "North Korea",
+        "Pakistan",
+        "Russia",
+        "Samoa",
+        "Somalia",
+        "South Sudan",
+        "Sudan",
+        "Syria",
+        "Ukraine",
+        "United Arab Emirates",
+        "Vatican City",
+        "Venezuela",
+        "West Bank",
+        "Western Sahara",
+        "Yemen",
+        "Zambia",
+        "Midway Islands"
+      ],
+      "founded": 2021,
+      "hq": "Dallas, TX, USA",
+      "discount_code": {
+        "code": "E8",
+        "value": "30% off first order"
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": null,
+        "count": 3303
+      },
+      "last_verified": "2026-10-26",
+      "source_urls": [
+        "https://e8markets.com/",
+        "https://help.e8markets.com/en/",
+        "https://help.e8markets.com/en/articles/13106558-all-product-overviews-e8-one-vs-e8-zero-vs-e8-pro-vs-e8-signature",
+        "https://help.e8markets.com/en/articles/11775980-e8-one",
+        "https://help.e8markets.com/en/articles/15274219-e8-pro",
+        "https://help.e8markets.com/en/articles/15272556-everything-about-payouts-when-how-how-fast",
+        "https://help.e8markets.com/en/articles/5514278-accepted-countries",
+        "https://help.e8markets.com/en/articles/14124293-about-e8-markets",
+        "https://help.e8markets.com/en/articles/5514982-how-much-leverage-do-you-offer",
+        "https://help.e8markets.com/en/articles/9185497-can-i-trade-news",
+        "https://help.e8markets.com/en/articles/5514966-can-i-hold-positions-overnight-and-trade-over-the-weekend",
+        "https://www.trustpilot.com/review/e8markets.com"
+      ],
+      "notes": "Site is JS/403 to plain fetch; read via browser. E8 One fees/rules = homepage configurator default ($100K: 9% target, 6% dynamic DD, 4% daily); help article lists preset 6%/4% dynamic/3% daily — product is customizable at checkout. E8 Pro fees not captured (has 2% daily profit cap, 1% min payout, daily payouts). Also E8 Signature and E8 Zero (futures). Min days: 'pass in 1 day'. Restricted list = Classic/Perps; Futures list longer. Trustpilot shows rating unavailable (guidelines breach notice), 3,303 reviews."
+    },
+    {
+      "name": "Maven Trading",
+      "slug": "maven-trading",
+      "site": "https://maventrading.com",
+      "category": "forex-cfd",
+      "assets": [
+        "forex",
+        "indices",
+        "commodities",
+        "crypto"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step",
+        "3-step",
+        "instant"
+      ],
+      "account_sizes": [
+        2000,
+        5000,
+        10000,
+        20000,
+        50000,
+        100000
+      ],
+      "programs": [
+        {
+          "name": "Standard 1-Step",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 2000,
+              "fee": 15
+            },
+            {
+              "size": 5000,
+              "fee": 19
+            },
+            {
+              "size": 10000,
+              "fee": 37
+            },
+            {
+              "size": 20000,
+              "fee": 68
+            },
+            {
+              "size": 50000,
+              "fee": 170
+            },
+            {
+              "size": 100000,
+              "fee": 380
+            }
+          ],
+          "profit_target": "8%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "5%",
+          "drawdown_type": "trailing (equity)",
+          "profit_split": "80% (90% add-on)",
+          "min_trading_days": null
+        },
+        {
+          "name": "Standard 2-Step",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 2000,
+              "fee": 19
+            },
+            {
+              "size": 5000,
+              "fee": 22
+            },
+            {
+              "size": 10000,
+              "fee": 44
+            },
+            {
+              "size": 20000,
+              "fee": 88
+            },
+            {
+              "size": 50000,
+              "fee": 220
+            },
+            {
+              "size": 100000,
+              "fee": 440
+            }
+          ],
+          "profit_target": "8% / 5%",
+          "max_daily_loss": "4%",
+          "max_drawdown": "8%",
+          "drawdown_type": "static",
+          "profit_split": "80% (90% add-on)",
+          "min_trading_days": 3
+        },
+        {
+          "name": "Standard 3-Step",
+          "type": "3-step",
+          "sizes_fees": [
+            {
+              "size": 2000,
+              "fee": 13
+            },
+            {
+              "size": 5000,
+              "fee": 17
+            },
+            {
+              "size": 10000,
+              "fee": 38
+            },
+            {
+              "size": 20000,
+              "fee": 76
+            },
+            {
+              "size": 50000,
+              "fee": 190
+            }
+          ],
+          "profit_target": "3% / 3% / 3%",
+          "max_daily_loss": "2%",
+          "max_drawdown": "3%",
+          "drawdown_type": "static",
+          "profit_split": "80% (90% add-on)",
+          "min_trading_days": null
+        }
+      ],
+      "fee_from": 13,
+      "profit_split": "up to 90%",
+      "profit_split_scale": "80% standard; 90% with add-on",
+      "max_daily_loss": "4%",
+      "max_drawdown": "8%",
+      "drawdown_type": "static (2-step/3-step); trailing (1-step/instant)",
+      "profit_target": "8% / 5%",
+      "leverage": "up to 1:75 (FX)",
+      "platforms": [
+        "MT5",
+        "Match Trader"
+      ],
+      "payout_frequency": "every 10 business days (standard); on-demand (instant)",
+      "first_payout_days": 10,
+      "min_trading_days": null,
+      "consistency_rule": "none on standard plans; 20% on Instant/BNPL funded",
+      "news_trading": "restricted",
+      "weekend_holding": true,
+      "countries_restricted": null,
+      "founded": 2022,
+      "hq": null,
+      "discount_code": {
+        "code": "ROCKET",
+        "value": "10% off"
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": null,
+        "count": 5217
+      },
+      "last_verified": "2026-10-26",
+      "source_urls": [
+        "https://maventrading.com/",
+        "https://maventrading.com/pricing",
+        "https://maventrading.com/faqs",
+        "https://www.trustpilot.com/review/maventrading.com"
+      ],
+      "notes": "Fees are list prices from live pricing page (coupon prices also shown). 3-step 100K list price not captured. Also offers Omo 2-Step (6%/8%, 4%/8% static; $19-$472 list, code OMO 40% off), Instant, Instant Mini, Buy Now Pay Later ($5 start). 2-step min = 3 profitable days per phase (0.5% each). 1-step/3-step: no min days. Payout = 10 business days after first funded trade. Withdrawal cap $10K per rolling 30 days on standard. Trustpilot shows rating unavailable (guidelines breach notice), 5,217 reviews. HQ and restricted countries not found."
+    },
+    {
+      "name": "Goat Funded Trader",
+      "slug": "goat-funded-trader",
+      "site": "https://www.goatfundedtrader.com",
+      "category": "forex-cfd",
+      "assets": [
+        "forex",
+        "indices",
+        "stocks",
+        "crypto"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step",
+        "3-step",
+        "instant"
+      ],
+      "account_sizes": [
+        2500,
+        5000,
+        8000,
+        10000,
+        15000,
+        25000,
+        50000,
+        100000,
+        150000,
+        200000,
+        250000,
+        300000,
+        400000
+      ],
+      "programs": [
+        {
+          "name": "1 Step",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 74
+            },
+            {
+              "size": 10000,
+              "fee": 114
+            },
+            {
+              "size": 25000,
+              "fee": 214
+            },
+            {
+              "size": 50000,
+              "fee": 314
+            },
+            {
+              "size": 100000,
+              "fee": 530
+            },
+            {
+              "size": 200000,
+              "fee": 914
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "6%",
+          "drawdown_type": "static",
+          "profit_split": "80% (up to 100% add-on)",
+          "min_trading_days": 3
+        },
+        {
+          "name": "2 Step GOAT",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 36
+            },
+            {
+              "size": 10000,
+              "fee": 65
+            },
+            {
+              "size": 25000,
+              "fee": 158
+            },
+            {
+              "size": 50000,
+              "fee": 308
+            },
+            {
+              "size": 100000,
+              "fee": 478
+            }
+          ],
+          "profit_target": "8% / 6%",
+          "max_daily_loss": "4%",
+          "max_drawdown": "10%",
+          "drawdown_type": "static",
+          "profit_split": "80% (up to 100% add-on)",
+          "min_trading_days": 3
+        },
+        {
+          "name": "2 Step Standard",
+          "type": "2-step",
+          "sizes_fees": [],
+          "profit_target": "10% / 5%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "10%",
+          "drawdown_type": "static",
+          "profit_split": null,
+          "min_trading_days": 3
+        }
+      ],
+      "fee_from": 36,
+      "profit_split": "up to 100%",
+      "profit_split_scale": "80% base; up to 100% with add-on",
+      "max_daily_loss": "4%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_target": "8% / 6%",
+      "leverage": "up to 1:100",
+      "platforms": [
+        "MT5",
+        "cTrader",
+        "TradeLocker",
+        "Match-Trader",
+        "Volumetrica"
+      ],
+      "payout_frequency": "bi-weekly (on-demand available)",
+      "first_payout_days": null,
+      "min_trading_days": 3,
+      "consistency_rule": "none on 1-step/2-step evaluations",
+      "news_trading": true,
+      "weekend_holding": true,
+      "countries_restricted": null,
+      "founded": 2022,
+      "hq": null,
+      "discount_code": {
+        "code": "FIRSTGFT",
+        "value": "50% off first account"
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": null,
+        "count": 4332
+      },
+      "last_verified": "2026-10-26",
+      "source_urls": [
+        "https://goatfundedtrader.com/",
+        "https://www.goatfundedtrader.com/about",
+        "https://www.goatfundedtrader.com/model",
+        "https://help.goatfundedtrader.com/",
+        "https://help.goatfundedtrader.com/compare-models.html",
+        "https://help.goatfundedtrader.com/1-step.html",
+        "https://help.goatfundedtrader.com/2-step-standard.html",
+        "https://help.goatfundedtrader.com/2-step-goat.html",
+        "https://help.goatfundedtrader.com/trading-rules.html",
+        "https://help.goatfundedtrader.com/platforms.html",
+        "https://www.trustpilot.com/review/goatfundedtrader.com"
+      ],
+      "notes": "Fees = list (non-promo) prices from homepage pricing widget; 2 Step Standard fees and 150K/other sizes not captured. 1-Step daily loss 3% for accounts bought from 1 Aug 2026 (4% before). Min days = profitable days (0.5%+); funded payout needs 3-4 profitable days; funded daily profit cap $3,000 + Goat Guard. Also 2 Step PRO (8%/4%, 8% static), 3 Step (6%x3, 8% static), several instant models. MT5/cTrader unavailable to US. Trustpilot profile (listed as 'Wishes Tower') shows rating unavailable (guidelines breach notice), 4,332 reviews. Homepage widget also shows Goat Blitz promo (100K for $99). Restricted countries not found."
+    },
+    {
+      "name": "Blue Guardian",
+      "slug": "blue-guardian",
+      "site": "https://blueguardian.com",
+      "category": "multi",
+      "assets": [
+        "forex",
+        "commodities",
+        "indices",
+        "futures"
+      ],
+      "challenge_types": [
+        "instant",
+        "1-step",
+        "2-step"
+      ],
+      "account_sizes": [
+        5000,
+        10000,
+        25000,
+        50000,
+        100000,
+        150000,
+        200000,
+        400000
+      ],
+      "programs": [
+        {
+          "name": "Instant (CFD)",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 72
+            },
+            {
+              "size": 10000,
+              "fee": 100
+            },
+            {
+              "size": 25000,
+              "fee": 208
+            },
+            {
+              "size": 50000,
+              "fee": 324
+            },
+            {
+              "size": 100000,
+              "fee": 623
+            },
+            {
+              "size": 200000,
+              "fee": 954
+            },
+            {
+              "size": 400000,
+              "fee": 2200
+            }
+          ],
+          "profit_target": "none",
+          "max_daily_loss": "3%",
+          "max_drawdown": "6%",
+          "drawdown_type": "trailing",
+          "profit_split": "up to 90%",
+          "min_trading_days": null
+        },
+        {
+          "name": "1 Step Standard (CFD)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 40
+            },
+            {
+              "size": 10000,
+              "fee": 66
+            },
+            {
+              "size": 25000,
+              "fee": 134
+            },
+            {
+              "size": 50000,
+              "fee": 200
+            },
+            {
+              "size": 100000,
+              "fee": 398
+            },
+            {
+              "size": 200000,
+              "fee": 736
+            }
+          ],
+          "profit_target": "9%",
+          "max_daily_loss": "4%",
+          "max_drawdown": "6%",
+          "drawdown_type": "trailing",
+          "profit_split": "up to 90%",
+          "min_trading_days": null
+        },
+        {
+          "name": "2 Step Standard (CFD)",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 32
+            },
+            {
+              "size": 10000,
+              "fee": 75
+            },
+            {
+              "size": 25000,
+              "fee": 154
+            },
+            {
+              "size": 50000,
+              "fee": 232
+            },
+            {
+              "size": 100000,
+              "fee": 463
+            },
+            {
+              "size": 200000,
+              "fee": 930
+            }
+          ],
+          "profit_target": "8% / 4%",
+          "max_daily_loss": "4%",
+          "max_drawdown": "8%",
+          "drawdown_type": "static",
+          "profit_split": "up to 90%",
+          "min_trading_days": null
+        }
+      ],
+      "fee_from": 32,
+      "profit_split": "up to 90%",
+      "profit_split_scale": null,
+      "max_daily_loss": "4%",
+      "max_drawdown": "8%",
+      "drawdown_type": "static",
+      "profit_target": "8% / 4%",
+      "leverage": "up to 1:100 (challenge), 1:50 funded",
+      "platforms": [
+        "MT5",
+        "Match-Trader",
+        "TradeLocker",
+        "NinjaTrader",
+        "TradingView",
+        "Tradovate",
+        "DeepCharts"
+      ],
+      "payout_frequency": "up to weekly (instant on Instant)",
+      "first_payout_days": 7,
+      "min_trading_days": null,
+      "consistency_rule": "none on CFD Standard plans",
+      "news_trading": "restricted",
+      "weekend_holding": true,
+      "countries_restricted": null,
+      "founded": null,
+      "hq": "Saint Lucia (registered)",
+      "discount_code": {
+        "code": "SPOOKY",
+        "value": "25% off"
+      },
+      "affiliate_url": "#",
+      "trustpilot": null,
+      "last_verified": "2026-10-26",
+      "source_urls": [
+        "https://blueguardian.com/",
+        "https://www.trustpilot.com/review/blueguardian.com"
+      ],
+      "notes": "Fees = list price before SPOOKY (site shows ~25% lower with code). Rule % derived from $ values at 100K. News trading allowed in challenge, not on funded. Futures: Standard/Reserve/Express/Direct (e.g. Standard 25K-150K $154-$424 list, EOD trailing, 90/10, 40% funded consistency). Nano 1/2-step plans not captured. Min trading days not shown. Trustpilot: rating unavailable (guidelines-breach warning) -> null."
+    },
+    {
+      "name": "Lark Funding",
+      "slug": "lark-funding",
+      "site": "https://larkfunding.com",
+      "category": "multi",
+      "assets": [
+        "crypto",
+        "forex",
+        "indices",
+        "commodities",
+        "stocks"
+      ],
+      "challenge_types": [
+        "1-step",
+        "3-step",
+        "instant"
+      ],
+      "account_sizes": [
+        5000,
+        10000,
+        25000,
+        50000,
+        100000,
+        200000
+      ],
+      "programs": [
+        {
+          "name": "1-Step",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 10000,
+              "fee": 200
+            },
+            {
+              "size": 25000,
+              "fee": 300
+            },
+            {
+              "size": 50000,
+              "fee": 500
+            },
+            {
+              "size": 100000,
+              "fee": 800
+            },
+            {
+              "size": 200000,
+              "fee": 1500
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "7%",
+          "drawdown_type": "static",
+          "profit_split": "80%",
+          "min_trading_days": 0
+        },
+        {
+          "name": "1-Step Max",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 10000,
+              "fee": 99
+            },
+            {
+              "size": 25000,
+              "fee": 249
+            },
+            {
+              "size": 50000,
+              "fee": 389
+            },
+            {
+              "size": 100000,
+              "fee": 599
+            }
+          ],
+          "profit_target": "12%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "12%",
+          "drawdown_type": "static",
+          "profit_split": null,
+          "min_trading_days": null
+        },
+        {
+          "name": "3-Step",
+          "type": "3-step",
+          "sizes_fees": [
+            {
+              "size": 10000,
+              "fee": 105
+            },
+            {
+              "size": 25000,
+              "fee": 175
+            },
+            {
+              "size": 50000,
+              "fee": 280
+            },
+            {
+              "size": 100000,
+              "fee": 370
+            },
+            {
+              "size": 200000,
+              "fee": 750
+            }
+          ],
+          "profit_target": "5% / 4% / 3%",
+          "max_daily_loss": "none",
+          "max_drawdown": "5%",
+          "drawdown_type": "static",
+          "profit_split": null,
+          "min_trading_days": 0
+        },
+        {
+          "name": "Instant",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 200
+            },
+            {
+              "size": 10000,
+              "fee": 400
+            },
+            {
+              "size": 25000,
+              "fee": 1125
+            },
+            {
+              "size": 50000,
+              "fee": 2750
+            },
+            {
+              "size": 100000,
+              "fee": 4500
+            }
+          ],
+          "profit_target": "none",
+          "max_daily_loss": "5%",
+          "max_drawdown": "8%",
+          "drawdown_type": "trailing",
+          "profit_split": "90%",
+          "min_trading_days": 0
+        }
+      ],
+      "fee_from": 99,
+      "profit_split": "80% (90% on Instant)",
+      "profit_split_scale": null,
+      "max_daily_loss": "5%",
+      "max_drawdown": "7%",
+      "drawdown_type": "static",
+      "profit_target": "10%",
+      "leverage": "up to 50:1",
+      "platforms": [
+        "DXTrade",
+        "cTrader",
+        "Match-Trader"
+      ],
+      "payout_frequency": "bi-weekly",
+      "first_payout_days": null,
+      "min_trading_days": 0,
+      "consistency_rule": "none",
+      "news_trading": true,
+      "weekend_holding": "restricted",
+      "countries_restricted": null,
+      "founded": null,
+      "hq": null,
+      "discount_code": null,
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.3,
+        "count": 517
+      },
+      "last_verified": "2026-10-26",
+      "source_urls": [
+        "https://larkfunding.com/",
+        "https://helpdesk.larkfunding.com/en/",
+        "https://helpdesk.larkfunding.com/en/collections/3916920-trading-rules-guidelines",
+        "https://helpdesk.larkfunding.com/en/articles/11738989-what-trading-platform-does-lark-funding-offer",
+        "https://helpdesk.larkfunding.com/en/articles/15157346-can-i-hold-trades-overnight",
+        "https://helpdesk.larkfunding.com/en/articles/8377870-what-are-the-rules-for-the-simulated-funded-account",
+        "https://www.trustpilot.com/review/larkfunding.com"
+      ],
+      "notes": "Fees scraped from homepage plan cards (browser). 1-Step Max: 1% per-symbol loss limit (soft breach), 3 free restarts. Instant first payout on demand, then monthly; leverage 30:1 on 1-Step/Max, 50:1 Instant/3-Step. Weekend holding via add-on. October promo (fee refund with first payout, ends Oct 31) has no code. Operator Lark Dashboards Inc.; HQ/founded/restricted countries not found. Trustpilot lists contact country Canada."
+    },
+    {
+      "name": "Instant Funding",
+      "slug": "instant-funding",
+      "site": "https://instantfunding.com",
+      "category": "forex-cfd",
+      "assets": [
+        "forex",
+        "commodities",
+        "indices",
+        "crypto"
+      ],
+      "challenge_types": [
+        "instant",
+        "1-step"
+      ],
+      "account_sizes": [
+        625,
+        1250,
+        2500,
+        5000,
+        10000,
+        20000,
+        25000,
+        40000,
+        50000,
+        80000,
+        100000,
+        120000
+      ],
+      "programs": [
+        {
+          "name": "Instant Funding PRO",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 625,
+              "fee": 44
+            },
+            {
+              "size": 1250,
+              "fee": 84
+            },
+            {
+              "size": 2500,
+              "fee": 129
+            },
+            {
+              "size": 5000,
+              "fee": 239
+            },
+            {
+              "size": 10000,
+              "fee": 459
+            },
+            {
+              "size": 20000,
+              "fee": 899
+            },
+            {
+              "size": 40000,
+              "fee": 1849
+            },
+            {
+              "size": 80000,
+              "fee": 3699
+            },
+            {
+              "size": 120000,
+              "fee": 5499
+            }
+          ],
+          "profit_target": "none (5% to unlock payouts)",
+          "max_daily_loss": "none",
+          "max_drawdown": "10% (5% once 5% profit reached)",
+          "drawdown_type": "static",
+          "profit_split": "80% (90% with add-on)",
+          "min_trading_days": null
+        },
+        {
+          "name": "IF Micro PRO",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 10000,
+              "fee": 109
+            },
+            {
+              "size": 25000,
+              "fee": 234
+            },
+            {
+              "size": 50000,
+              "fee": 439
+            },
+            {
+              "size": 100000,
+              "fee": 813
+            }
+          ],
+          "profit_target": "none",
+          "max_daily_loss": null,
+          "max_drawdown": null,
+          "drawdown_type": "static",
+          "profit_split": "80%",
+          "min_trading_days": null
+        },
+        {
+          "name": "One-Phase PRO",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 10000,
+              "fee": 127
+            },
+            {
+              "size": 25000,
+              "fee": 205
+            },
+            {
+              "size": 50000,
+              "fee": 424
+            },
+            {
+              "size": 100000,
+              "fee": 746
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": null,
+          "max_drawdown": null,
+          "drawdown_type": "static",
+          "profit_split": "80%",
+          "min_trading_days": null
+        }
+      ],
+      "fee_from": 44,
+      "profit_split": "80% (up to 90% with add-on)",
+      "profit_split_scale": "some plans 80% -> 90% after 10% profit in 3 months",
+      "max_daily_loss": "none (IF PRO)",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_target": "none (IF PRO)",
+      "leverage": "up to 1:100 (FX)",
+      "platforms": [
+        "MT5",
+        "cTrader",
+        "Match-Trader"
+      ],
+      "payout_frequency": "weekly after first (IF PRO); on-demand on some plans",
+      "first_payout_days": 14,
+      "min_trading_days": null,
+      "consistency_rule": "none on IF PRO",
+      "news_trading": null,
+      "weekend_holding": "restricted",
+      "countries_restricted": null,
+      "founded": null,
+      "hq": null,
+      "discount_code": {
+        "code": "LITE40",
+        "value": "40% off IF Micro Lite accounts up to $25K"
+      },
+      "affiliate_url": "#",
+      "trustpilot": null,
+      "last_verified": "2026-10-26",
+      "source_urls": [
+        "https://instantfunding.com/",
+        "https://www.trustpilot.com/review/instantfunding.com"
+      ],
+      "notes": "Prices scraped from homepage configurator (browser). Homepage lists rule blocks for several hidden variants (IF1 24h, 1-phase 10%/3%/8% and 7%/4%/7%, 2-phase 8%/5%) that couldn't be mapped to One-Phase PRO / IF Micro PRO reliably, so those rules are null. Leverage temporarily 1:5 on metals/oil/indices funded. Operator: IF Pro Ltd; HQ, founded, restricted countries not found. Detail pages timed out. Trustpilot: rating unavailable (guidelines-breach warning) -> null."
+    },
+    {
+      "name": "Nova Funding",
+      "slug": "nova-funding",
+      "site": "https://novafunding.com",
+      "category": null,
+      "assets": [],
+      "challenge_types": [],
+      "account_sizes": [],
+      "programs": [],
+      "fee_from": null,
+      "profit_split": null,
+      "profit_split_scale": null,
+      "max_daily_loss": null,
+      "max_drawdown": null,
+      "drawdown_type": null,
+      "profit_target": null,
+      "leverage": null,
+      "platforms": [],
+      "payout_frequency": null,
+      "first_payout_days": null,
+      "min_trading_days": null,
+      "consistency_rule": null,
+      "news_trading": null,
+      "weekend_holding": null,
+      "countries_restricted": null,
+      "founded": null,
+      "hq": null,
+      "discount_code": null,
+      "affiliate_url": "#",
+      "trustpilot": null,
+      "last_verified": "2026-10-26",
+      "source_urls": [
+        "https://novafunding.com",
+        "https://www.trustpilot.com/review/novafunding.com"
+      ],
+      "notes": "BLOCKER: novafunding.com redirects to fundmylawsuitnow.com (Nova Legal Funding, lawsuit loans), not a prop firm. Trustpilot page for novafunding.com (1.3, 79 reviews, 'Financial Consultant', US) not confirmed to be the prop firm, so left null. Need correct prop-firm domain."
+    }
+  ]
+}

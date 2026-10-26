@@ -1,0 +1,186 @@
+{
+  "name": "Alpha Capital",
+  "slug": "alpha-capital",
+  "site": "https://alphacapitalgroup.uk",
+  "category": "forex-cfd",
+  "assets": [
+    "forex",
+    "indices",
+    "commodities"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step",
+    "instant"
+  ],
+  "account_sizes": [
+    2500,
+    5000,
+    10000,
+    25000,
+    50000,
+    100000,
+    200000
+  ],
+  "programs": [
+    {
+      "name": "Alpha One (10%)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 47
+        },
+        {
+          "size": 10000,
+          "fee": 87
+        },
+        {
+          "size": 25000,
+          "fee": 187
+        },
+        {
+          "size": 50000,
+          "fee": 277
+        },
+        {
+          "size": 100000,
+          "fee": 477
+        },
+        {
+          "size": 200000,
+          "fee": 947
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "6%",
+      "drawdown_type": "trailing (locks at initial balance)",
+      "profit_split": "80% (90% add-on)",
+      "min_trading_days": 1
+    },
+    {
+      "name": "Alpha Pro 6%",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 27
+        },
+        {
+          "size": 10000,
+          "fee": 47
+        },
+        {
+          "size": 25000,
+          "fee": 117
+        },
+        {
+          "size": 50000,
+          "fee": 217
+        },
+        {
+          "size": 100000,
+          "fee": 397
+        },
+        {
+          "size": 200000,
+          "fee": 797
+        }
+      ],
+      "profit_target": "6% / 6%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static",
+      "profit_split": "80% (90% add-on)",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Alpha Direct",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 2500,
+          "fee": 30
+        },
+        {
+          "size": 5000,
+          "fee": 67
+        },
+        {
+          "size": 10000,
+          "fee": 97
+        },
+        {
+          "size": 25000,
+          "fee": 197
+        },
+        {
+          "size": 50000,
+          "fee": 257
+        },
+        {
+          "size": 100000,
+          "fee": 457
+        },
+        {
+          "size": 200000,
+          "fee": 897
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": "3%",
+      "max_drawdown": "5%",
+      "drawdown_type": "trailing (locks at initial balance)",
+      "profit_split": "90%",
+      "min_trading_days": null
+    }
+  ],
+  "fee_from": 27,
+  "profit_split": "up to 90%",
+  "profit_split_scale": "80% standard; 90% via add-on or Alpha Direct",
+  "max_daily_loss": "3%-5% by plan",
+  "max_drawdown": "5%-10% by plan",
+  "drawdown_type": "static (Pro/Swing); trailing (One/Direct)",
+  "profit_target": "6%-10% phase 1 by plan",
+  "leverage": "up to 1:100 (FX, Alpha Pro)",
+  "platforms": [
+    "MT5",
+    "cTrader",
+    "DXtrade",
+    "TradeLocker"
+  ],
+  "payout_frequency": "bi-weekly or on-demand (by plan)",
+  "first_payout_days": null,
+  "min_trading_days": 1,
+  "consistency_rule": "40% best day (on-demand); 15% best day (Direct)",
+  "news_trading": "restricted",
+  "weekend_holding": "restricted",
+  "countries_restricted": null,
+  "founded": null,
+  "hq": "Harpenden, England, UK",
+  "discount_code": {
+    "code": "ALPHA20",
+    "value": "20% off all accounts (to 31 Oct 2026)"
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": null,
+    "count": 22010
+  },
+  "last_verified": "2026-10-26",
+  "source_urls": [
+    "https://alphacapitalgroup.uk/",
+    "https://alphacapitalgroup.uk/product",
+    "https://alphacapitalgroup.uk/product/alpha-one",
+    "https://alphacapitalgroup.uk/product/alpha-pro",
+    "https://alphacapitalgroup.uk/product/alpha-direct",
+    "https://alphacapitalgroup.uk/alpha-capital-discount-codes",
+    "https://alphacapitalgroup.uk/10kfor40",
+    "https://alphacapitalgroup.uk/posts/alpha-capital-rules-explained-drawdown-profit-targets-daily-loss-and-evaluation-rules-2026",
+    "https://alphacapitalgroup.uk/posts/how-much-does-a-prop-firm-evaluation-cost-2026",
+    "https://alphacapitalgroup.uk/resources/alpha-capital-country-availability-2026",
+    "https://www.trustpilot.com/review/alphacapitalgroup.uk"
+  ],
+  "notes": "Alpha One/Pro fees from firm's own pricing post (checkout as of 21 Sep 2026); Alpha Direct fees from live product page. Product page lists Alpha One 6/10/12% variants but rules guide says only 10% sold; Alpha Pro also 8%/10% variants and Alpha Swing (2-step, 10%/5%, 10% static) exist, fees not captured. Trustpilot shows rating unavailable (guidelines breach notice), 22,010 reviews. Other active codes: MYALPHA 30% (ends 26 Oct), FUNDED40 40% Direct, 10KFOR40. US: no MT5/new cTrader. Founded year not found."
+}

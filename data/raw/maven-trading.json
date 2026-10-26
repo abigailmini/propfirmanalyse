@@ -1,0 +1,170 @@
+{
+  "name": "Maven Trading",
+  "slug": "maven-trading",
+  "site": "https://maventrading.com",
+  "category": "forex-cfd",
+  "assets": [
+    "forex",
+    "indices",
+    "commodities",
+    "crypto"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step",
+    "3-step",
+    "instant"
+  ],
+  "account_sizes": [
+    2000,
+    5000,
+    10000,
+    20000,
+    50000,
+    100000
+  ],
+  "programs": [
+    {
+      "name": "Standard 1-Step",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 2000,
+          "fee": 15
+        },
+        {
+          "size": 5000,
+          "fee": 19
+        },
+        {
+          "size": 10000,
+          "fee": 37
+        },
+        {
+          "size": 20000,
+          "fee": 68
+        },
+        {
+          "size": 50000,
+          "fee": 170
+        },
+        {
+          "size": 100000,
+          "fee": 380
+        }
+      ],
+      "profit_target": "8%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "5%",
+      "drawdown_type": "trailing (equity)",
+      "profit_split": "80% (90% add-on)",
+      "min_trading_days": null
+    },
+    {
+      "name": "Standard 2-Step",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 2000,
+          "fee": 19
+        },
+        {
+          "size": 5000,
+          "fee": 22
+        },
+        {
+          "size": 10000,
+          "fee": 44
+        },
+        {
+          "size": 20000,
+          "fee": 88
+        },
+        {
+          "size": 50000,
+          "fee": 220
+        },
+        {
+          "size": 100000,
+          "fee": 440
+        }
+      ],
+      "profit_target": "8% / 5%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "8%",
+      "drawdown_type": "static",
+      "profit_split": "80% (90% add-on)",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Standard 3-Step",
+      "type": "3-step",
+      "sizes_fees": [
+        {
+          "size": 2000,
+          "fee": 13
+        },
+        {
+          "size": 5000,
+          "fee": 17
+        },
+        {
+          "size": 10000,
+          "fee": 38
+        },
+        {
+          "size": 20000,
+          "fee": 76
+        },
+        {
+          "size": 50000,
+          "fee": 190
+        }
+      ],
+      "profit_target": "3% / 3% / 3%",
+      "max_daily_loss": "2%",
+      "max_drawdown": "3%",
+      "drawdown_type": "static",
+      "profit_split": "80% (90% add-on)",
+      "min_trading_days": null
+    }
+  ],
+  "fee_from": 13,
+  "profit_split": "up to 90%",
+  "profit_split_scale": "80% standard; 90% with add-on",
+  "max_daily_loss": "4%",
+  "max_drawdown": "8%",
+  "drawdown_type": "static (2-step/3-step); trailing (1-step/instant)",
+  "profit_target": "8% / 5%",
+  "leverage": "up to 1:75 (FX)",
+  "platforms": [
+    "MT5",
+    "Match Trader"
+  ],
+  "payout_frequency": "every 10 business days (standard); on-demand (instant)",
+  "first_payout_days": 10,
+  "min_trading_days": null,
+  "consistency_rule": "none on standard plans; 20% on Instant/BNPL funded",
+  "news_trading": "restricted",
+  "weekend_holding": true,
+  "countries_restricted": null,
+  "founded": 2022,
+  "hq": null,
+  "discount_code": {
+    "code": "ROCKET",
+    "value": "10% off"
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": null,
+    "count": 5217
+  },
+  "last_verified": "2026-10-26",
+  "source_urls": [
+    "https://maventrading.com/",
+    "https://maventrading.com/pricing",
+    "https://maventrading.com/faqs",
+    "https://www.trustpilot.com/review/maventrading.com"
+  ],
+  "notes": "Fees are list prices from live pricing page (coupon prices also shown). 3-step 100K list price not captured. Also offers Omo 2-Step (6%/8%, 4%/8% static; $19-$472 list, code OMO 40% off), Instant, Instant Mini, Buy Now Pay Later ($5 start). 2-step min = 3 profitable days per phase (0.5% each). 1-step/3-step: no min days. Payout = 10 business days after first funded trade. Withdrawal cap $10K per rolling 30 days on standard. Trustpilot shows rating unavailable (guidelines breach notice), 5,217 reviews. HQ and restricted countries not found."
+}

@@ -1,0 +1,191 @@
+{
+ "name": "Lark Funding",
+ "slug": "lark-funding",
+ "site": "https://larkfunding.com",
+ "category": "multi",
+ "assets": [
+  "crypto",
+  "forex",
+  "indices",
+  "commodities",
+  "stocks"
+ ],
+ "challenge_types": [
+  "1-step",
+  "3-step",
+  "instant"
+ ],
+ "account_sizes": [
+  5000,
+  10000,
+  25000,
+  50000,
+  100000,
+  200000
+ ],
+ "programs": [
+  {
+   "name": "1-Step",
+   "type": "1-step",
+   "sizes_fees": [
+    {
+     "size": 10000,
+     "fee": 200
+    },
+    {
+     "size": 25000,
+     "fee": 300
+    },
+    {
+     "size": 50000,
+     "fee": 500
+    },
+    {
+     "size": 100000,
+     "fee": 800
+    },
+    {
+     "size": 200000,
+     "fee": 1500
+    }
+   ],
+   "profit_target": "10%",
+   "max_daily_loss": "5%",
+   "max_drawdown": "7%",
+   "drawdown_type": "static",
+   "profit_split": "80%",
+   "min_trading_days": 0
+  },
+  {
+   "name": "1-Step Max",
+   "type": "1-step",
+   "sizes_fees": [
+    {
+     "size": 10000,
+     "fee": 99
+    },
+    {
+     "size": 25000,
+     "fee": 249
+    },
+    {
+     "size": 50000,
+     "fee": 389
+    },
+    {
+     "size": 100000,
+     "fee": 599
+    }
+   ],
+   "profit_target": "12%",
+   "max_daily_loss": "5%",
+   "max_drawdown": "12%",
+   "drawdown_type": "static",
+   "profit_split": null,
+   "min_trading_days": null
+  },
+  {
+   "name": "3-Step",
+   "type": "3-step",
+   "sizes_fees": [
+    {
+     "size": 10000,
+     "fee": 105
+    },
+    {
+     "size": 25000,
+     "fee": 175
+    },
+    {
+     "size": 50000,
+     "fee": 280
+    },
+    {
+     "size": 100000,
+     "fee": 370
+    },
+    {
+     "size": 200000,
+     "fee": 750
+    }
+   ],
+   "profit_target": "5% / 4% / 3%",
+   "max_daily_loss": "none",
+   "max_drawdown": "5%",
+   "drawdown_type": "static",
+   "profit_split": null,
+   "min_trading_days": 0
+  },
+  {
+   "name": "Instant",
+   "type": "instant",
+   "sizes_fees": [
+    {
+     "size": 5000,
+     "fee": 200
+    },
+    {
+     "size": 10000,
+     "fee": 400
+    },
+    {
+     "size": 25000,
+     "fee": 1125
+    },
+    {
+     "size": 50000,
+     "fee": 2750
+    },
+    {
+     "size": 100000,
+     "fee": 4500
+    }
+   ],
+   "profit_target": "none",
+   "max_daily_loss": "5%",
+   "max_drawdown": "8%",
+   "drawdown_type": "trailing",
+   "profit_split": "90%",
+   "min_trading_days": 0
+  }
+ ],
+ "fee_from": 99,
+ "profit_split": "80% (90% on Instant)",
+ "profit_split_scale": null,
+ "max_daily_loss": "5%",
+ "max_drawdown": "7%",
+ "drawdown_type": "static",
+ "profit_target": "10%",
+ "leverage": "up to 50:1",
+ "platforms": [
+  "DXTrade",
+  "cTrader",
+  "Match-Trader"
+ ],
+ "payout_frequency": "bi-weekly",
+ "first_payout_days": null,
+ "min_trading_days": 0,
+ "consistency_rule": "none",
+ "news_trading": true,
+ "weekend_holding": "restricted",
+ "countries_restricted": null,
+ "founded": null,
+ "hq": null,
+ "discount_code": null,
+ "affiliate_url": "#",
+ "trustpilot": {
+  "score": 4.3,
+  "count": 517
+ },
+ "last_verified": "2026-10-26",
+ "source_urls": [
+  "https://larkfunding.com/",
+  "https://helpdesk.larkfunding.com/en/",
+  "https://helpdesk.larkfunding.com/en/collections/3916920-trading-rules-guidelines",
+  "https://helpdesk.larkfunding.com/en/articles/11738989-what-trading-platform-does-lark-funding-offer",
+  "https://helpdesk.larkfunding.com/en/articles/15157346-can-i-hold-trades-overnight",
+  "https://helpdesk.larkfunding.com/en/articles/8377870-what-are-the-rules-for-the-simulated-funded-account",
+  "https://www.trustpilot.com/review/larkfunding.com"
+ ],
+ "notes": "Fees scraped from homepage plan cards (browser). 1-Step Max: 1% per-symbol loss limit (soft breach), 3 free restarts. Instant first payout on demand, then monthly; leverage 30:1 on 1-Step/Max, 50:1 Instant/3-Step. Weekend holding via add-on. October promo (fee refund with first payout, ends Oct 31) has no code. Operator Lark Dashboards Inc.; HQ/founded/restricted countries not found. Trustpilot lists contact country Canada."
+}

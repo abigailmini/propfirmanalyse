@@ -1,0 +1,170 @@
+{
+ "name": "Instant Funding",
+ "slug": "instant-funding",
+ "site": "https://instantfunding.com",
+ "category": "forex-cfd",
+ "assets": [
+  "forex",
+  "commodities",
+  "indices",
+  "crypto"
+ ],
+ "challenge_types": [
+  "instant",
+  "1-step"
+ ],
+ "account_sizes": [
+  625,
+  1250,
+  2500,
+  5000,
+  10000,
+  20000,
+  25000,
+  40000,
+  50000,
+  80000,
+  100000,
+  120000
+ ],
+ "programs": [
+  {
+   "name": "Instant Funding PRO",
+   "type": "instant",
+   "sizes_fees": [
+    {
+     "size": 625,
+     "fee": 44
+    },
+    {
+     "size": 1250,
+     "fee": 84
+    },
+    {
+     "size": 2500,
+     "fee": 129
+    },
+    {
+     "size": 5000,
+     "fee": 239
+    },
+    {
+     "size": 10000,
+     "fee": 459
+    },
+    {
+     "size": 20000,
+     "fee": 899
+    },
+    {
+     "size": 40000,
+     "fee": 1849
+    },
+    {
+     "size": 80000,
+     "fee": 3699
+    },
+    {
+     "size": 120000,
+     "fee": 5499
+    }
+   ],
+   "profit_target": "none (5% to unlock payouts)",
+   "max_daily_loss": "none",
+   "max_drawdown": "10% (5% once 5% profit reached)",
+   "drawdown_type": "static",
+   "profit_split": "80% (90% with add-on)",
+   "min_trading_days": null
+  },
+  {
+   "name": "IF Micro PRO",
+   "type": "instant",
+   "sizes_fees": [
+    {
+     "size": 10000,
+     "fee": 109
+    },
+    {
+     "size": 25000,
+     "fee": 234
+    },
+    {
+     "size": 50000,
+     "fee": 439
+    },
+    {
+     "size": 100000,
+     "fee": 813
+    }
+   ],
+   "profit_target": "none",
+   "max_daily_loss": null,
+   "max_drawdown": null,
+   "drawdown_type": "static",
+   "profit_split": "80%",
+   "min_trading_days": null
+  },
+  {
+   "name": "One-Phase PRO",
+   "type": "1-step",
+   "sizes_fees": [
+    {
+     "size": 10000,
+     "fee": 127
+    },
+    {
+     "size": 25000,
+     "fee": 205
+    },
+    {
+     "size": 50000,
+     "fee": 424
+    },
+    {
+     "size": 100000,
+     "fee": 746
+    }
+   ],
+   "profit_target": null,
+   "max_daily_loss": null,
+   "max_drawdown": null,
+   "drawdown_type": "static",
+   "profit_split": "80%",
+   "min_trading_days": null
+  }
+ ],
+ "fee_from": 44,
+ "profit_split": "80% (up to 90% with add-on)",
+ "profit_split_scale": "some plans 80% -> 90% after 10% profit in 3 months",
+ "max_daily_loss": "none (IF PRO)",
+ "max_drawdown": "10%",
+ "drawdown_type": "static",
+ "profit_target": "none (IF PRO)",
+ "leverage": "up to 1:100 (FX)",
+ "platforms": [
+  "MT5",
+  "cTrader",
+  "Match-Trader"
+ ],
+ "payout_frequency": "weekly after first (IF PRO); on-demand on some plans",
+ "first_payout_days": 14,
+ "min_trading_days": null,
+ "consistency_rule": "none on IF PRO",
+ "news_trading": null,
+ "weekend_holding": "restricted",
+ "countries_restricted": null,
+ "founded": null,
+ "hq": null,
+ "discount_code": {
+  "code": "LITE40",
+  "value": "40% off IF Micro Lite accounts up to $25K"
+ },
+ "affiliate_url": "#",
+ "trustpilot": null,
+ "last_verified": "2026-10-26",
+ "source_urls": [
+  "https://instantfunding.com/",
+  "https://www.trustpilot.com/review/instantfunding.com"
+ ],
+ "notes": "Prices scraped from homepage configurator (browser). Homepage lists rule blocks for several hidden variants (IF1 24h, 1-phase 10%/3%/8% and 7%/4%/7%, 2-phase 8%/5%) that couldn't be mapped to One-Phase PRO / IF Micro PRO reliably, so those rules are null. Leverage temporarily 1:5 on metals/oil/indices funded. Operator: IF Pro Ltd; HQ, founded, restricted countries not found. Detail pages timed out. Trustpilot: rating unavailable (guidelines-breach warning) -> null."
+}

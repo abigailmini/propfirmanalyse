@@ -1,0 +1,169 @@
+{
+  "name": "E8 Markets",
+  "slug": "e8-markets",
+  "site": "https://e8markets.com",
+  "category": "multi",
+  "assets": [
+    "forex",
+    "indices",
+    "commodities",
+    "crypto",
+    "stocks",
+    "futures"
+  ],
+  "challenge_types": [
+    "1-step"
+  ],
+  "account_sizes": [
+    5000,
+    10000,
+    25000,
+    50000,
+    100000,
+    200000,
+    400000,
+    500000
+  ],
+  "programs": [
+    {
+      "name": "E8 One",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 48
+        },
+        {
+          "size": 10000,
+          "fee": 88
+        },
+        {
+          "size": 25000,
+          "fee": 188
+        },
+        {
+          "size": 50000,
+          "fee": 288
+        },
+        {
+          "size": 100000,
+          "fee": 488
+        },
+        {
+          "size": 200000,
+          "fee": 798
+        },
+        {
+          "size": 400000,
+          "fee": 1598
+        },
+        {
+          "size": 500000,
+          "fee": 1998
+        }
+      ],
+      "profit_target": "9%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "6%",
+      "drawdown_type": "dynamic (closed-balance trailing, locks at initial)",
+      "profit_split": "80% (up to 100% option)",
+      "min_trading_days": 1
+    },
+    {
+      "name": "E8 Pro",
+      "type": "1-step",
+      "sizes_fees": [],
+      "profit_target": "8%",
+      "max_daily_loss": "2.5%",
+      "max_drawdown": "8%",
+      "drawdown_type": "static",
+      "profit_split": "80% (up to 100% option)",
+      "min_trading_days": null
+    }
+  ],
+  "fee_from": 48,
+  "profit_split": "up to 100%",
+  "profit_split_scale": "80% default; 90%/100% options by product",
+  "max_daily_loss": "4%",
+  "max_drawdown": "6%",
+  "drawdown_type": "dynamic (trailing on closed balance)",
+  "profit_target": "9%",
+  "leverage": "up to 1:30 (FX, classic markets)",
+  "platforms": [
+    "MT5",
+    "TradeLocker",
+    "cTrader",
+    "MatchTrader",
+    "E8 Terminal"
+  ],
+  "payout_frequency": "on-demand (E8 One); daily (E8 Pro)",
+  "first_payout_days": 3,
+  "min_trading_days": 1,
+  "consistency_rule": "40% best day (E8 One performance stage)",
+  "news_trading": "restricted",
+  "weekend_holding": true,
+  "countries_restricted": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Belarus",
+    "Burma (Myanmar)",
+    "Burundi",
+    "Central African Republic",
+    "Congo",
+    "Cuba",
+    "DR Congo",
+    "Ethiopia",
+    "Iran",
+    "Iraq",
+    "Kosovo",
+    "Lebanon",
+    "Libya",
+    "Mali",
+    "Nicaragua",
+    "North Korea",
+    "Pakistan",
+    "Russia",
+    "Samoa",
+    "Somalia",
+    "South Sudan",
+    "Sudan",
+    "Syria",
+    "Ukraine",
+    "United Arab Emirates",
+    "Vatican City",
+    "Venezuela",
+    "West Bank",
+    "Western Sahara",
+    "Yemen",
+    "Zambia",
+    "Midway Islands"
+  ],
+  "founded": 2021,
+  "hq": "Dallas, TX, USA",
+  "discount_code": {
+    "code": "E8",
+    "value": "30% off first order"
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": null,
+    "count": 3303
+  },
+  "last_verified": "2026-10-26",
+  "source_urls": [
+    "https://e8markets.com/",
+    "https://help.e8markets.com/en/",
+    "https://help.e8markets.com/en/articles/13106558-all-product-overviews-e8-one-vs-e8-zero-vs-e8-pro-vs-e8-signature",
+    "https://help.e8markets.com/en/articles/11775980-e8-one",
+    "https://help.e8markets.com/en/articles/15274219-e8-pro",
+    "https://help.e8markets.com/en/articles/15272556-everything-about-payouts-when-how-how-fast",
+    "https://help.e8markets.com/en/articles/5514278-accepted-countries",
+    "https://help.e8markets.com/en/articles/14124293-about-e8-markets",
+    "https://help.e8markets.com/en/articles/5514982-how-much-leverage-do-you-offer",
+    "https://help.e8markets.com/en/articles/9185497-can-i-trade-news",
+    "https://help.e8markets.com/en/articles/5514966-can-i-hold-positions-overnight-and-trade-over-the-weekend",
+    "https://www.trustpilot.com/review/e8markets.com"
+  ],
+  "notes": "Site is JS/403 to plain fetch; read via browser. E8 One fees/rules = homepage configurator default ($100K: 9% target, 6% dynamic DD, 4% daily); help article lists preset 6%/4% dynamic/3% daily — product is customizable at checkout. E8 Pro fees not captured (has 2% daily profit cap, 1% min payout, daily payouts). Also E8 Signature and E8 Zero (futures). Min days: 'pass in 1 day'. Restricted list = Classic/Perps; Futures list longer. Trustpilot shows rating unavailable (guidelines breach notice), 3,303 reviews."
+}

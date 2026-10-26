@@ -1,0 +1,179 @@
+{
+ "name": "Blue Guardian",
+ "slug": "blue-guardian",
+ "site": "https://blueguardian.com",
+ "category": "multi",
+ "assets": [
+  "forex",
+  "commodities",
+  "indices",
+  "futures"
+ ],
+ "challenge_types": [
+  "instant",
+  "1-step",
+  "2-step"
+ ],
+ "account_sizes": [
+  5000,
+  10000,
+  25000,
+  50000,
+  100000,
+  150000,
+  200000,
+  400000
+ ],
+ "programs": [
+  {
+   "name": "Instant (CFD)",
+   "type": "instant",
+   "sizes_fees": [
+    {
+     "size": 5000,
+     "fee": 72
+    },
+    {
+     "size": 10000,
+     "fee": 100
+    },
+    {
+     "size": 25000,
+     "fee": 208
+    },
+    {
+     "size": 50000,
+     "fee": 324
+    },
+    {
+     "size": 100000,
+     "fee": 623
+    },
+    {
+     "size": 200000,
+     "fee": 954
+    },
+    {
+     "size": 400000,
+     "fee": 2200
+    }
+   ],
+   "profit_target": "none",
+   "max_daily_loss": "3%",
+   "max_drawdown": "6%",
+   "drawdown_type": "trailing",
+   "profit_split": "up to 90%",
+   "min_trading_days": null
+  },
+  {
+   "name": "1 Step Standard (CFD)",
+   "type": "1-step",
+   "sizes_fees": [
+    {
+     "size": 5000,
+     "fee": 40
+    },
+    {
+     "size": 10000,
+     "fee": 66
+    },
+    {
+     "size": 25000,
+     "fee": 134
+    },
+    {
+     "size": 50000,
+     "fee": 200
+    },
+    {
+     "size": 100000,
+     "fee": 398
+    },
+    {
+     "size": 200000,
+     "fee": 736
+    }
+   ],
+   "profit_target": "9%",
+   "max_daily_loss": "4%",
+   "max_drawdown": "6%",
+   "drawdown_type": "trailing",
+   "profit_split": "up to 90%",
+   "min_trading_days": null
+  },
+  {
+   "name": "2 Step Standard (CFD)",
+   "type": "2-step",
+   "sizes_fees": [
+    {
+     "size": 5000,
+     "fee": 32
+    },
+    {
+     "size": 10000,
+     "fee": 75
+    },
+    {
+     "size": 25000,
+     "fee": 154
+    },
+    {
+     "size": 50000,
+     "fee": 232
+    },
+    {
+     "size": 100000,
+     "fee": 463
+    },
+    {
+     "size": 200000,
+     "fee": 930
+    }
+   ],
+   "profit_target": "8% / 4%",
+   "max_daily_loss": "4%",
+   "max_drawdown": "8%",
+   "drawdown_type": "static",
+   "profit_split": "up to 90%",
+   "min_trading_days": null
+  }
+ ],
+ "fee_from": 32,
+ "profit_split": "up to 90%",
+ "profit_split_scale": null,
+ "max_daily_loss": "4%",
+ "max_drawdown": "8%",
+ "drawdown_type": "static",
+ "profit_target": "8% / 4%",
+ "leverage": "up to 1:100 (challenge), 1:50 funded",
+ "platforms": [
+  "MT5",
+  "Match-Trader",
+  "TradeLocker",
+  "NinjaTrader",
+  "TradingView",
+  "Tradovate",
+  "DeepCharts"
+ ],
+ "payout_frequency": "up to weekly (instant on Instant)",
+ "first_payout_days": 7,
+ "min_trading_days": null,
+ "consistency_rule": "none on CFD Standard plans",
+ "news_trading": "restricted",
+ "weekend_holding": true,
+ "countries_restricted": null,
+ "founded": null,
+ "hq": "Saint Lucia (registered)",
+ "discount_code": {
+  "code": "SPOOKY",
+  "value": "25% off"
+ },
+ "affiliate_url": "#",
+ "trustpilot": null,
+ "last_verified": "2026-10-26",
+ "source_urls": [
+  "https://blueguardian.com/",
+  "https://www.trustpilot.com/review/blueguardian.com"
+ ],
+ "notes": "Fees = list price before SPOOKY (site shows ~25% lower with code). Rule % derived from $ values at 100K. News trading allowed in challenge, not on funded. Futures: Standard/Reserve/Express/Direct (e.g. Standard 25K-150K $154-$424 list, EOD trailing, 90/10, 40% funded consistency). Nano 1/2-step plans not captured. Min trading days not shown. Trustpilot: rating unavailable (guidelines-breach warning) -> null."
+}
