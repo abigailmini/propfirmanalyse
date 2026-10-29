@@ -513,3 +513,7 @@ input[type=number]::-webkit-inner-spin-button{opacity:.4}
 /* below-the-fold sections skip layout until scrolled near */
 .pmain>.block,.pmain>.spec~.spec,.gsec~.gsec,.gbody>.faq,.cday~.cday,.calc~.block{content-visibility:auto;contain-intrinsic-size:auto 640px}
 .foot nav li a{display:inline-flex;align-items:center;min-height:28px}
+/* zh-Hans: CJK fallbacks after the Latin faces, looser line-height for Han text */
+:lang(zh-Hans){--f-ui:"Geist","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",ui-sans-serif,system-ui,sans-serif;--f-disp:"Bricolage","Geist","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif}
+:lang(zh-Hans) .answer,:lang(zh-Hans) .gsec p,:lang(zh-Hans) .prose p{line-height:1.8}
+:lang(zh-Hans) h1,:lang(zh-Hans) h2{letter-spacing:0}

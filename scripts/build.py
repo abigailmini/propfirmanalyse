@@ -203,27 +203,41 @@ def tri_label(v):
 # ---------------- page shell ----------------
 def url(p): return BASE + p
 NAV = [("/firms/", "nav_firms"), ("/compare/", "nav_compare"), ("/discounts/", "nav_discounts"), ("/best/", "nav_best"), ("/methodology/", "nav_method"), ("/about/", "nav_about")]
-def page(path, title, desc, body, jsonld=None, og_type="website", extra_head=""):
+def page(path, title, desc, body, jsonld=None, og_type="website", extra_head="", lang="en"):
     canon = ABS + path
     ld = "".join('<script type="application/ld+json">' + json.dumps(j, ensure_ascii=False) + "</script>" for j in (jsonld or []))
-    navh = "".join(f'<a href="{url(h)}"{" aria-current=page" if path.startswith(h) else ""}>{e(T[k])}</a>' for h, k in NAV)
-    footnav = "".join(f'<li><a href="{url(h)}">{e(T[k])}</a></li>' for h, k in NAV) + "".join(f'<li><a href="{url(h)}">{e(t)}</a></li>' for h, t in globals().get("FOOT_EXTRA", [("/updates/", "Verification log")]))
-    doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+    zh = lang == "zh"; ZA = globals().get("ZH_ALT", {})
+    UI = globals().get("ZH_UI") if zh else {"skip": "Skip to content", "menu": "Menu", "explore": "Explore", "disc": "Disclosure", "verified": "Data verified", "open": "Open data (JSON)"}
+    TT = globals().get("T_ZH", T) if zh else T
+    hl, loc, langlink = ("zh-Hans", "zh_CN", "") if zh else ("en", "en_US", "")
+    if zh:
+        en_p = next((k for k, v in ZA.items() if v == path), "/")
+        alts = f'<link rel="alternate" hreflang="en" href="{ABS + en_p}"><link rel="alternate" hreflang="zh-Hans" href="{canon}"><link rel="alternate" hreflang="x-default" href="{ABS + en_p}">'
+        navh = "".join(f'<a href="{url(h)}"{" aria-current=page" if path == h or (h != "/zh/" and path.startswith(h)) else ""}>{e(t)}</a>' for h, t in ZH_NAV) + f'<a href="{url(en_p)}" lang="en" hreflang="en">English</a>'
+        footnav = "".join(f'<li><a href="{url(h)}">{e(t)}</a></li>' for h, t in ZH_NAV + ZH_FOOT) + f'<li><a href="{url(en_p)}" lang="en">English version</a></li>'
+    else:
+        zp = ZA.get(path)
+        alts = f'<link rel="alternate" hreflang="en" href="{canon}">' + (f'<link rel="alternate" hreflang="zh-Hans" href="{ABS + zp}">' if zp else "") + f'<link rel="alternate" hreflang="x-default" href="{canon}">'
+        navh = "".join(f'<a href="{url(h)}"{" aria-current=page" if path.startswith(h) else ""}>{e(T[k])}</a>' for h, k in NAV)
+        footnav = "".join(f'<li><a href="{url(h)}">{e(T[k])}</a></li>' for h, k in NAV) + "".join(f'<li><a href="{url(h)}">{e(t)}</a></li>' for h, t in globals().get("FOOT_EXTRA", [("/updates/", "Verification log")]))
+        if zp: langlink = f'<a href="{url(zp)}" lang="zh-Hans" hreflang="zh-Hans">中文版</a>'
+    vdate = zdate(TODAY) if zh else nice_date(TODAY)
+    doc = f"""<!doctype html><html lang="{hl}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{canon}">
 <meta property="og:type" content="{og_type}"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}">
-<meta property="og:url" content="{canon}"><meta property="og:image" content="{ABS}/assets/og.png"><meta property="og:site_name" content="PropAnalyse">
+<meta property="og:url" content="{canon}"><meta property="og:image" content="{ABS}/assets/og.png"><meta property="og:site_name" content="PropAnalyse"><meta property="og:locale" content="{loc}">
 <meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#f3f4f0" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0f1011" media="(prefers-color-scheme: dark)"><meta name="color-scheme" content="light dark">
 <link rel="preload" href="{url('/assets/fonts/geist.woff2')}" as="font" type="font/woff2" crossorigin><link rel="preload" href="{url('/assets/fonts/bricolage.woff2')}" as="font" type="font/woff2" crossorigin>
 <link rel="icon" href="{url('/assets/favicon.svg')}" type="image/svg+xml"><link rel="stylesheet" href="{url('/assets/site.css')}?v={ASSET_V}">
-<link rel="alternate" hreflang="en" href="{canon}"><link rel="alternate" hreflang="x-default" href="{canon}">{extra_head}{ld}</head>
-<body><a class="skip" href="#main">Skip to content</a>
+{alts}{extra_head}{ld}</head>
+<body><a class="skip" href="#main">{e(UI["skip"])}</a>
 <header class="top"><div class="wrap bar">{brand()}
-<button class="menu" id="menu" type="button" aria-expanded="false" aria-controls="nav"><span class="sr">Menu</span>{ic("menu", "i-open")}{ic("x", "i-close")}</button><nav class="nav" id="nav" aria-label="Main">{navh}</nav></div></header>
+<button class="menu" id="menu" type="button" aria-expanded="false" aria-controls="nav"><span class="sr">{e(UI["menu"])}</span>{ic("menu", "i-open")}{ic("x", "i-close")}</button><nav class="nav" id="nav" aria-label="Main">{navh}</nav></div></header>
 <main id="main">{body}</main>
-<footer class="foot"><div class="wrap fgrid"><div class="fbrand">{brand()}<p>{e(T['tagline'])}</p></div>
-<nav aria-label="Footer"><h2>Explore</h2><ul>{footnav}</ul></nav>
-<div><h2>Disclosure</h2><p>{e(T['ownership'])}</p></div></div>
-<div class="wrap fine"><p>{e(T['disclaimer'])}</p><p class="fmeta"><span>&copy; {YEAR_NOW} PropAnalyse</span><span>Data verified <time datetime="{e(TODAY)}">{nice_date(TODAY)}</time></span><a href="{url('/llms.txt')}">llms.txt</a><a href="{url('/data/firms.json')}">Open data (JSON)</a></p></div></footer>
+<footer class="foot"><div class="wrap fgrid"><div class="fbrand">{brand()}<p>{e(TT['tagline'])}</p></div>
+<nav aria-label="Footer"><h2>{e(UI["explore"])}</h2><ul>{footnav}</ul></nav>
+<div><h2>{e(UI["disc"])}</h2><p>{e(TT['ownership'])}</p></div></div>
+<div class="wrap fine"><p>{e(TT['disclaimer'])}</p><p class="fmeta"><span>&copy; {YEAR_NOW} PropAnalyse</span><span>{e(UI["verified"])} <time datetime="{e(TODAY)}">{vdate}</time></span><a href="{url('/llms.txt')}">llms.txt</a><a href="{url('/data/firms.json')}">{e(UI["open"])}</a>{langlink}</p></div></footer>
 <script src="{url('/assets/site.js')}?v={ASSET_V}" defer></script></body></html>"""
     dest = os.path.join(OUT, path.lstrip("/"), "index.html") if path.endswith("/") else os.path.join(OUT, path.lstrip("/"))
     os.makedirs(os.path.dirname(dest), exist_ok=True)
@@ -377,7 +391,7 @@ def pair_link(a, b):
             f'<i aria-hidden="true">vs</i><span class="sr"> versus </span><span>{e(BY[b]["name"])}</span></a></li>')
 
 # ---------------- pages ----------------
-ASSET_V = "4"
+ASSET_V = "5"
 def write_assets():
     os.makedirs(os.path.join(OUT, "assets", "fonts"), exist_ok=True)
     for n in ("site.css", "site.js", "tools.js", "quiz.js", "favicon.svg", "og.png"):
@@ -677,7 +691,7 @@ def seo_files():
     open(os.path.join(OUT, ".nojekyll"), "w").write("")
     if SITE_URL.startswith("https://") and "github.io" not in SITE_URL and not BASE: open(os.path.join(OUT, "CNAME"), "w").write(SITE_URL.split("://", 1)[1] + "\n")
 
-for _m in ("more_core.py", "more_pages_a.py", "more_pages_b.py", "more_guides.py", "more_programmatic.py"):
+for _m in ("more_core.py", "more_pages_a.py", "more_pages_b.py", "more_guides.py", "more_programmatic.py", "more_zh.py"):
     _p = os.path.join(ROOT, "scripts", _m); exec(compile(open(_p).read(), _p, "exec"))
 
 if __name__ == "__main__":
