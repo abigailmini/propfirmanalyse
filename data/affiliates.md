@@ -44,8 +44,8 @@ Affiliate page column = where to apply. If it says *email*, there is no public p
 
 ## Pitch (for David's emails, ≤90 words)
 
-> Subject: PropFirmAnalyse × <Firm>: affiliate partnership
+> Subject: PropAnalyse × <Firm>: affiliate partnership
 >
-> Hi <Firm> team, I run PropFirmAnalyse (abigailmini.github.io/propfirmanalyse, moving to propfirmanalyse.com), a data-first comparison site that lists <Firm> with every rule sourced from your own pages and dated. We're adding affiliate links to the "Visit" buttons and a code column in our table. Could you set us up as an affiliate (link + a trader discount code if you offer one)? Happy to share traffic numbers monthly. Our ranking is formula-based and isn't for sale; links don't change scores.
+> Hi <Firm> team, I run PropAnalyse (propanalyse.com), a data-first comparison site that lists <Firm> with every rule sourced from your own pages and dated. We're adding affiliate links to the "Visit" buttons and a code column in our table. Could you set us up as an affiliate (link + a trader discount code if you offer one)? Happy to share traffic numbers monthly. Our ranking is formula-based and isn't for sale; links don't change scores.
 >
 > David Yang

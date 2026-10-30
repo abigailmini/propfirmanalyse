@@ -45,11 +45,11 @@ abbr{text-decoration:none}
 /* ---------- header ---------- */
 .top{position:sticky;top:0;z-index:40;background:var(--paper);border-bottom:1px solid var(--ink)}
 .bar{display:flex;align-items:center;gap:24px;height:var(--hdr)}
-.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--f-disp);font-size:19px;font-weight:700;letter-spacing:-.03em;color:var(--ink);white-space:nowrap}
-.brand b{font-weight:500}
-.mark{width:22px;height:22px;flex:none}
-.mk-bg{fill:var(--ink)}.mk-top{fill:var(--lime)}.mk-bar{fill:var(--paper)}
-@media (prefers-color-scheme:dark){.mk-bg{fill:var(--lime)}.mk-top,.mk-bar{fill:#141619}.mk-bar{opacity:.55}}
+.brand{display:inline-flex;align-items:center;text-decoration:none;flex:none;line-height:0}
+.brand picture{display:block}
+.logo{display:block;height:32px;width:auto}
+@media (max-width:639px){.logo{height:28px}}
+.fbrand .logo{height:30px}
 .nav{display:none;margin-left:auto}
 .nav a{position:relative;display:block;padding:8px 10px;text-decoration:none;font-size:14px;color:var(--ink-2)}
 @media (hover:hover){.nav a:hover{color:var(--ink)}}

@@ -169,11 +169,17 @@ def ic(n, cls=""):
     """Phosphor Icons (regular/fill, MIT) paths, inlined."""
     return f'<svg class="i{(" " + cls) if cls else ""}" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false">{ICONS[n]}</svg>'
 
-# Logomark: a three-line ranked list inside a square. Top line is the one accent colour.
-MARK = ('<svg class="mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="24" height="24" class="mk-bg"/>'
-        '<rect x="5" y="5.5" width="14" height="3" class="mk-top"/><rect x="5" y="10.5" width="10" height="3" class="mk-bar"/><rect x="5" y="15.5" width="6" height="3" class="mk-bar"/></svg>')
+# Logo: brand/propanalyse-logo-source.png -> src/logo*.{png,webp} via scripts/logo.py. White-wordmark variant on dark scheme.
 def brand():
-    return f'<a class="brand" href="{url("/")}" aria-label="PropAnalyse home">{MARK}<span>Prop<b>Analyse</b></span></a>'
+    a = lambda n: url("/assets/" + n)
+    return (f'<a class="brand" href="{url("/")}" aria-label="PropAnalyse home"><picture>'
+            f'<source media="(prefers-color-scheme:dark)" type="image/webp" srcset="{a("logo-white.webp")}?v={ASSET_V} 2x, {a("logo-white@3x.webp")}?v={ASSET_V} 3x">'
+            f'<source media="(prefers-color-scheme:dark)" srcset="{a("logo-white.png")}?v={ASSET_V}">'
+            f'<source type="image/webp" srcset="{a("logo.webp")}?v={ASSET_V} 2x, {a("logo@3x.webp")}?v={ASSET_V} 3x">'
+            f'<img class="logo" src="{a("logo.png")}?v={ASSET_V}" width="192" height="32" alt="PropAnalyse" decoding="async"></picture></a>')
+def icons():
+    return (f'<link rel="icon" href="{url("/favicon.ico")}" sizes="48x48"><link rel="icon" href="{url("/assets/favicon-32.png")}?v={ASSET_V}" type="image/png" sizes="32x32">'
+            f'<link rel="apple-touch-icon" href="{url("/assets/apple-touch-icon.png")}?v={ASSET_V}">')
 
 NA = '<span class="na" title="Not published by the firm"><span class="sr">Not published</span></span>'
 NIL = '<span class="nil">' + T["unknown"] + '</span>'
@@ -228,7 +234,7 @@ def page(path, title, desc, body, jsonld=None, og_type="website", extra_head="",
 <meta property="og:url" content="{canon}"><meta property="og:image" content="{ABS}/assets/og.png"><meta property="og:site_name" content="PropAnalyse"><meta property="og:locale" content="{loc}">
 <meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#f3f4f0" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0f1011" media="(prefers-color-scheme: dark)"><meta name="color-scheme" content="light dark">
 <link rel="preload" href="{url('/assets/fonts/geist.woff2')}" as="font" type="font/woff2" crossorigin><link rel="preload" href="{url('/assets/fonts/bricolage.woff2')}" as="font" type="font/woff2" crossorigin>
-<link rel="icon" href="{url('/assets/favicon.svg')}" type="image/svg+xml"><link rel="stylesheet" href="{url('/assets/site.css')}?v={ASSET_V}">
+{icons()}<link rel="stylesheet" href="{url('/assets/site.css')}?v={ASSET_V}">
 {alts}{extra_head}{ld}</head>
 <body><a class="skip" href="#main">{e(UI["skip"])}</a>
 <header class="top"><div class="wrap bar">{brand()}
@@ -391,12 +397,17 @@ def pair_link(a, b):
             f'<i aria-hidden="true">vs</i><span class="sr"> versus </span><span>{e(BY[b]["name"])}</span></a></li>')
 
 # ---------------- pages ----------------
-ASSET_V = "5"
+ASSET_V = "6"
 def write_assets():
     os.makedirs(os.path.join(OUT, "assets", "fonts"), exist_ok=True)
-    for n in ("site.css", "site.js", "tools.js", "quiz.js", "favicon.svg", "og.png"):
+    for n in ("site.css", "site.js", "tools.js", "quiz.js", "og.png", "logo.png", "logo.webp", "logo@3x.webp", "logo-white.png", "logo-white.webp",
+              "logo-white@3x.webp", "favicon-32.png", "favicon.ico", "apple-touch-icon.png"):
         src = os.path.join(ROOT, "src", n)
         if os.path.exists(src): shutil.copy(src, os.path.join(OUT, "assets", n))
+    for n in ("favicon.ico", "apple-touch-icon.png"):   # root copies for crawlers/iOS that ignore <link>
+        shutil.copy(os.path.join(ROOT, "src", n), os.path.join(OUT, n))
+    stale = os.path.join(OUT, "assets", "favicon.svg")
+    if os.path.exists(stale): os.remove(stale)
     fdir = os.path.join(ROOT, "src", "fonts")
     if os.path.isdir(fdir):
         for n in os.listdir(fdir):
@@ -674,7 +685,7 @@ def updates():
 def not_found():
     open(os.path.join(OUT, "404.html"), "w").write(
         f'<!doctype html><html lang="en"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Not found | PropAnalyse</title>'
-        f'<link rel=icon href="{url("/assets/favicon.svg")}" type="image/svg+xml"><link rel=stylesheet href="{url("/assets/site.css")}?v={ASSET_V}">'
+        f'{icons()}<link rel=stylesheet href="{url("/assets/site.css")}?v={ASSET_V}">'
         f'<body><header class="top"><div class="wrap bar">{brand()}</div></header><main class="wrap nf"><p class="big n">404</p><h1>That page is not on the sheet.</h1>'
         f'<p class="lede">The firm or comparison may have moved. Every firm is still in the main table.</p><p><a class="btn" href="{url("/")}">Back to the table</a></p></main></body></html>')
 
