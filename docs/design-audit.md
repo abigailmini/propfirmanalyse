@@ -76,3 +76,9 @@ Direction: serious data product (Stripe docs / Linear / Bloomberg). Tokens in sr
 - Motion (vanilla, reduced-motion aware): 150ms colour transitions, 160ms press scale, FLIP row reorder on sort/filter
   (240ms transform), one-time count-up on home dataset figures, one-time reveal on home lower blocks, FAQ open fade.
 Lighthouse (local): home 99/100/100/100, firm/compare/zh 100 perf + a11y + SEO. Page weight home 245 KB -> 176 KB.
+
+### 2026-10-30 21:30 dark mode + /zh/ mobile (David: "why one black colour so hard to see")
+- Dark scheme moved from near-black (#070d1b) to layered slate-navy: bg #121b2e < elevated header/filter/sticky heads #18233a < panels #1b2740 < raised #243150, with soft shadows on panels.
+- Text contrast (dark): ink 11-15:1, secondary 8-11:1, muted 5.7-7.6:1, accent 4.9-6.6:1 across all surfaces. Form-control borders use --ctl (>=3:1, both schemes).
+- Dark logo: white wordmark + mark lifted to #8f88ff (scripts/logo.py DARK_MARK), 4.4-5.8:1 vs ~2:1 before.
+- gtable() ranking tables (/zh/ + EN guides/programmatic) stack into labelled cards under 640px, same pattern as the main firm table.

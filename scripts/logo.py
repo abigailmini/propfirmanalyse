@@ -15,12 +15,14 @@ art = im.crop(bb)
 MARK_W = 604 - bb[0]           # first empty column run after the "pa" mark (source px)
 art.save(os.path.join(ROOT, "brand", "logo-crop.png"), optimize=True)
 
+DARK_MARK = (143, 136, 255)   # #8f88ff: brand blue lifted for dark surfaces (>6:1 on #121b2e)
 def white_wordmark(img):
+    """Dark-scheme logo: white wordmark + lighter blue mark (the #3424f8 mark is ~2:1 on navy)."""
     img = img.copy(); px = img.load()
     for y in range(img.height):
-        for x in range(MARK_W, img.width):
+        for x in range(img.width):
             r, g, b, al = px[x, y]
-            if al: px[x, y] = (255, 255, 255, al)
+            if al: px[x, y] = ((255, 255, 255) if x >= MARK_W else DARK_MARK) + (al,)
     return img
 art_w = white_wordmark(art)
 

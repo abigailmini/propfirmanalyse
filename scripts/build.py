@@ -232,7 +232,7 @@ def page(path, title, desc, body, jsonld=None, og_type="website", extra_head="",
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{canon}">
 <meta property="og:type" content="{og_type}"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{canon}"><meta property="og:image" content="{ABS}/assets/og.png"><meta property="og:site_name" content="PropAnalyse"><meta property="og:locale" content="{loc}">
-<meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#070d1b" media="(prefers-color-scheme: dark)"><meta name="color-scheme" content="light dark">
+<meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#18233a" media="(prefers-color-scheme: dark)"><meta name="color-scheme" content="light dark">
 <link rel="preload" href="{url('/assets/fonts/instrument-sans.woff2')}" as="font" type="font/woff2" crossorigin>
 {icons()}<link rel="stylesheet" href="{url('/assets/site.css')}?v={ASSET_V}">
 {alts}{extra_head}{ld}</head>
@@ -397,7 +397,7 @@ def pair_link(a, b):
             f'<i aria-hidden="true">vs</i><span class="sr"> versus </span><span>{e(BY[b]["name"])}</span></a></li>')
 
 # ---------------- pages ----------------
-ASSET_V = "7"
+ASSET_V = "8"
 WEB_FONTS = ("instrument-sans.woff2",)   # bricolage/geist stay in src/fonts for scripts/og.html only
 def write_assets():
     os.makedirs(os.path.join(OUT, "assets", "fonts"), exist_ok=True)
