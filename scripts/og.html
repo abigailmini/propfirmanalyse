@@ -1,27 +1,25 @@
 <!doctype html><html><head><meta charset="utf-8"><style>
-/* og.png source: render at 1200x630 (scripts/og.sh). Paper/ink + one lime marker, same tokens as site.css */
-@font-face{font-family:B;src:url(../src/fonts/bricolage.woff2) format("woff2");font-weight:500 800}
-@font-face{font-family:G;src:url(../src/fonts/geist.woff2) format("woff2");font-weight:400 700}
-@font-face{font-family:M;src:url(../src/fonts/geist-mono.woff2) format("woff2");font-weight:400 600}
+/* og.png source: render at 1200x630 (scripts/og.sh). White + navy ink + brand blue, same tokens as site.css */
+@font-face{font-family:I;src:url(../src/fonts/instrument-sans.woff2) format("woff2");font-weight:400 700}
 *{box-sizing:border-box;margin:0}
 html,body{width:1200px;height:630px;overflow:hidden}
-body{background:#f3f4f0;color:#141619;font-family:G,sans-serif;padding:52px 64px 0;display:flex;flex-direction:column}
-.mast{display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid #141619;padding-bottom:14px}
-.logo{display:flex;align-items:center}.logo img{height:52px;width:auto;display:block}
-.meta{font:500 15px/1 M;letter-spacing:.06em;text-transform:uppercase;color:#5a6068}
-h1{font:800 92px/1 B;letter-spacing:-.03em;margin-top:48px}
-h1 u{text-decoration:none;background:linear-gradient(transparent 60%,#c6f03a 60% 90%,transparent 90%);padding:0 4px;margin:0 -4px}
-.row{margin-top:auto;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #141619}
-.row div{padding:20px 0 40px;border-right:1px solid #d3d5ce;padding-left:20px}
+body{background:#ffffff;color:#0b1730;font-family:I,sans-serif;padding:52px 64px 0;display:flex;flex-direction:column;font-variant-numeric:tabular-nums}
+.mast{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #cfd4de;padding-bottom:18px}
+.logo{display:flex;align-items:center}.logo img{height:48px;width:auto;display:block}
+.meta{font:500 18px/1 I;color:#5a6680}
+h1{font:600 88px/1.02 I;letter-spacing:-.035em;margin-top:52px}
+h1 u{text-decoration:none;color:#3424f8}
+.row{margin-top:auto;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #cfd4de;background:#f5f6f8;margin-left:-64px;margin-right:-64px;padding:0 64px}
+.row div{padding:24px 0 40px;border-right:1px solid #e3e6ec;padding-left:22px}
 .row div:first-child{padding-left:0}.row div:last-child{border-right:0}
-.row b{display:block;font:600 40px/1 M;letter-spacing:-.03em}
-.row span{display:block;margin-top:10px;font:500 14px/1.2 M;letter-spacing:.06em;text-transform:uppercase;color:#5a6068}
+.row b{display:block;font:600 34px/1 I;letter-spacing:-.02em}
+.row span{display:block;margin-top:10px;font:500 17px/1.2 I;color:#5a6680}
 </style></head><body>
-<div class="mast"><div class="logo"><img src="../brand/logo-crop.png" alt="PropAnalyse"></div><div class="meta">Independent · Sourced · Dated</div></div>
+<div class="mast"><div class="logo"><img src="../brand/logo-crop.png" alt="PropAnalyse"></div><div class="meta">Sourced from each firm's own site, dated</div></div>
 <h1>Prop firms, compared<br><u>on the numbers.</u></h1>
 <div class="row">
 <div><b>Fees</b><span>Entry cost per $1K</span></div>
 <div><b>Rules</b><span>Drawdown, daily loss</span></div>
-<div><b>Payouts</b><span>Split &amp; cycle</span></div>
+<div><b>Payouts</b><span>Split and cycle</span></div>
 <div><b>Changes</b><span>Every rule edit, dated</span></div>
 </div></body></html>

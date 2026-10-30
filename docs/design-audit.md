@@ -55,3 +55,24 @@ Dials: DESIGN_VARIANCE 4 (data needs alignment; asymmetry only in page furniture
 
 Lighthouse mobile (local Lighthouse 12 against the live Pages URL; PageSpeed API daily quota was exhausted):
 home 98 / 100 / 100 / 100, /firms/ 100 / 100 / 100 / 100, /firms/ftmo/ 100 / 100 / 100 / 100, compare 100 / 100 / 100 / 100 (perf / a11y / best practices / SEO). LCP 1.4 to 1.8 s, TBT 0 ms.
+
+## 2026-10-30 redesign: "don't look AI"
+
+Audit of the paper/ink/lime look (before shots: ~/.openclaw/workspace-rex/shots/redesign-2026-10-30/before/):
+- Sage "paper" background + neon lime highlighter + Bricolage display face: the current LLM-editorial default.
+- Geist Mono on every number: monospace as a costume, not data.
+- 10-tick "|||||" score bars and dashed coupon boxes read as decoration.
+- Uppercase tracked labels on every table head and footer heading (eyebrow rhythm).
+- Heavy 1px ink rules everywhere; no surface hierarchy, so firm page and compare page felt like one long sheet.
+- Logo (blue mark + navy) clashed with lime; site had no brand colour of its own.
+
+Direction: serious data product (Stripe docs / Linear / Bloomberg). Tokens in src/site.css:
+- White + navy ink (#0b1730) + one accent, the logo blue #3424f8 (7.6:1 on white). Dark scheme kept.
+- Instrument Sans (one family, self-hosted 30 KB) with tabular figures; mono only for coupon codes.
+- Hairline rules, sentence-case table heads, numerics right-aligned, sticky heads, row hover, accent sort arrows.
+- Radius rule: controls 6px, panels 10px (dataset panel, score box, quick take, calculators), tables square.
+- Trust cues: home dataset panel (firms, programs, source pages cited, avg completeness, verified date, open data);
+  firm pages show source-page count + methodology link next to "Last verified".
+- Motion (vanilla, reduced-motion aware): 150ms colour transitions, 160ms press scale, FLIP row reorder on sort/filter
+  (240ms transform), one-time count-up on home dataset figures, one-time reveal on home lower blocks, FAQ open fade.
+Lighthouse (local): home 99/100/100/100, firm/compare/zh 100 perf + a11y + SEO. Page weight home 245 KB -> 176 KB.

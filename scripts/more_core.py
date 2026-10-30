@@ -283,7 +283,9 @@ def firm_page(f):
     cpk = cost_per_k(f)
     lv = f.get("last_verified") or TODAY
     meta = [x for x in (e(short_hq(f.get("hq") or "")), f'Founded <span class="n">{int(num(f["founded"]))}</span>' if num(f.get("founded")) else "",
-                        f'{T["last_verified"]} <time class="n" datetime="{e(lv)}">{nice_date(lv)}</time>') if x]
+                        f'{T["last_verified"]} <time class="n" datetime="{e(lv)}">{nice_date(lv)}</time>',
+                        f'<a href="#sources"><span class="n">{len(as_list(f.get("source_urls")) + as_list(f["_x"].get("sources")) + as_list(f["_c"].get("sources")))}</span> source pages</a>',
+                        f'<a href="{url("/methodology/")}">Methodology</a>') if x]
     sheet = "".join([
         spec("Rules at a glance", [("Challenge types", show(f.get("challenge_types"))), ("Fees from", mh(f["_fee"], f.get("fee_currency")).replace(NA, NIL)),
              ("Cheapest per $1K", mh(cpk, f.get("fee_currency")).replace(NA, NIL)), ("Account sizes", ('<span class="n">' + e(", ".join(money(s) for s in f["_sizes"])) + "</span>") if f["_sizes"] else NIL),
@@ -306,7 +308,7 @@ def firm_page(f):
 {('<section class="block"><h2>Programs</h2>' + progs + '</section>') if progs else ''}
 {history_block(f, CL)}
 {('<section class="block faq"><h2>FAQ</h2>' + faqh + '</section>') if faqh else ''}
-<section class="block"><h2>{T['sources']}</h2><p class="small">Every figure above was read from these pages on <time datetime="{e(lv)}">{nice_date(lv)}</time>. Firms change rules often, so confirm before you buy.</p><ol class="src">{srcs}</ol>
+<section class="block" id="sources"><h2>{T['sources']}</h2><p class="small">Every figure above was read from these pages on <time datetime="{e(lv)}">{nice_date(lv)}</time>. Firms change rules often, so confirm before you buy.</p><ol class="src">{srcs}</ol>
 {('<p class="small notes"><b>Data notes.</b> ' + e(f['notes']) + '</p>') if f.get('notes') else ''}</section></div></div></div>"""
     org = {"@type": ["FinancialService", "Organization"], "name": f["name"], "url": f.get("site")}
     if num(f.get("founded")): org["foundingDate"] = str(int(num(f["founded"])))

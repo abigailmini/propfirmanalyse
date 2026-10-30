@@ -232,8 +232,8 @@ def page(path, title, desc, body, jsonld=None, og_type="website", extra_head="",
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{canon}">
 <meta property="og:type" content="{og_type}"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{canon}"><meta property="og:image" content="{ABS}/assets/og.png"><meta property="og:site_name" content="PropAnalyse"><meta property="og:locale" content="{loc}">
-<meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#f3f4f0" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0f1011" media="(prefers-color-scheme: dark)"><meta name="color-scheme" content="light dark">
-<link rel="preload" href="{url('/assets/fonts/geist.woff2')}" as="font" type="font/woff2" crossorigin><link rel="preload" href="{url('/assets/fonts/bricolage.woff2')}" as="font" type="font/woff2" crossorigin>
+<meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#070d1b" media="(prefers-color-scheme: dark)"><meta name="color-scheme" content="light dark">
+<link rel="preload" href="{url('/assets/fonts/instrument-sans.woff2')}" as="font" type="font/woff2" crossorigin>
 {icons()}<link rel="stylesheet" href="{url('/assets/site.css')}?v={ASSET_V}">
 {alts}{extra_head}{ld}</head>
 <body><a class="skip" href="#main">{e(UI["skip"])}</a>
@@ -397,7 +397,8 @@ def pair_link(a, b):
             f'<i aria-hidden="true">vs</i><span class="sr"> versus </span><span>{e(BY[b]["name"])}</span></a></li>')
 
 # ---------------- pages ----------------
-ASSET_V = "6"
+ASSET_V = "7"
+WEB_FONTS = ("instrument-sans.woff2",)   # bricolage/geist stay in src/fonts for scripts/og.html only
 def write_assets():
     os.makedirs(os.path.join(OUT, "assets", "fonts"), exist_ok=True)
     for n in ("site.css", "site.js", "tools.js", "quiz.js", "og.png", "logo.png", "logo.webp", "logo@3x.webp", "logo-white.png", "logo-white.webp",
@@ -411,7 +412,7 @@ def write_assets():
     fdir = os.path.join(ROOT, "src", "fonts")
     if os.path.isdir(fdir):
         for n in os.listdir(fdir):
-            if n.endswith(".woff2"): shutil.copy(os.path.join(fdir, n), os.path.join(OUT, "assets", "fonts", n))
+            if n in WEB_FONTS: shutil.copy(os.path.join(fdir, n), os.path.join(OUT, "assets", "fonts", n))
     os.makedirs(os.path.join(OUT, "data"), exist_ok=True)
     pub = [{k: v for k, v in f.items() if not k.startswith("_")} | {"pa_score": f["_score"], "pa_components": f["_comp"], "data_completeness_pct": f["_complete"],
             "pa_rank": f["_rank"], "pa_fee_from": f["_fee"], "pa_split_max": f["_split"], "pa_payout_bucket": f["_bucket"], "pa_max_size": max(f["_sizes"]) if f["_sizes"] else None} for f in FIRMS]
@@ -422,11 +423,16 @@ def home():
     n_codes = sum(1 for f in FIRMS if (f.get("discount_code") or {}).get("code"))
     lists = "".join(f'<li><a href="{url("/best/" + s + "/")}"><span>{e(t)}</span><b class="n">{sum(1 for f in FIRMS if fn(f))}</b></a></li>' for s, t, _, fn in BEST)
     pairs = "".join(pair_link(a, b) for a, b in PAIRS[:8])
-    body = f"""<section class="mast wrap"><h1>{e(T['hero_title'])}</h1><p class="lede">{e(T['hero_sub'].format(n=len(FIRMS)))}</p>
-<p class="facts"><span><b class="n">{len(FIRMS)}</b> firms</span><span><b class="n">{n_prog}</b> programs</span><span><b class="n">{n_codes}</b> public codes</span><span>Verified <b class="n"><time datetime="{e(TODAY)}">{nice_date(TODAY)}</time></b></span></p></section>
-<section class="wrap" aria-label="Firm table">{filters_html()}{table(RANKED, empty=True)}{legend()}</section>
-<section class="wrap lower"><div><h2>{e(T['best_for'])}</h2><ul class="lists">{lists}</ul></div>
-<div><h2>Head to head</h2><ul class="pairs">{pairs}</ul><p><a class="more" href="{url('/compare/')}">Pick any two firms{ic('arrow')}</a></p></div></section>"""
+    n_src = sum(len(as_list(f.get("source_urls"))) for f in FIRMS)
+    avg_c = round(sum(f["_complete"] for f in FIRMS) / len(FIRMS))
+    stat = lambda v, lab, suf="": f'<div><dt>{lab}</dt><dd><span class="n" data-count="{v}">{v}</span>{("<small>" + suf + "</small>") if suf else ""}</dd></div>'
+    body = f"""<section class="mast wrap"><div><h1>{e(T['hero_title'])}</h1><p class="lede">{e(T['hero_sub'].format(n=len(FIRMS)))}</p>
+<p class="hcta"><a class="btn" href="#table">Compare all {len(FIRMS)} firms</a><a class="btn line" href="{url('/methodology/')}">How we score</a></p></div>
+<aside class="dset" aria-label="About this dataset"><dl>{stat(len(FIRMS), "Firms tracked")}{stat(n_prog, "Programs")}{stat(n_src, "Source pages cited")}{stat(avg_c, "Avg. data completeness", "%")}</dl>
+<p class="src-line"><span>From each firm's own site. Verified <time datetime="{e(TODAY)}">{nice_date(TODAY)}</time></span><a href="{url('/data/firms.json')}">Open data (JSON)</a></p></aside></section>
+<section class="wrap" id="table" aria-label="Firm table">{filters_html()}{table(RANKED, empty=True)}{legend()}</section>
+<section class="wrap lower"><div class="rv"><h2>{e(T['best_for'])}</h2><ul class="lists">{lists}</ul></div>
+<div class="rv"><h2>Head to head</h2><ul class="pairs">{pairs}</ul><p><a class="more" href="{url('/compare/')}">Pick any two firms{ic('arrow')}</a></p></div></section>"""
     ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": "PropAnalyse", "url": ABS + "/"},
           {"@context": "https://schema.org", "@type": "ItemList", "name": "Prop firms ranked by PA Score", "itemListElement": [{"@type": "ListItem", "position": f["_rank"], "url": ABS + "/firms/" + f["slug"] + "/", "name": f["name"]} for f in RANKED]}]
     page("/", "Compare Prop Firms 2026: Fees, Rules & Payouts | PropAnalyse", f"Side-by-side data on {len(FIRMS)} crypto, forex and futures prop firms: challenge fees, drawdown, profit split, payout speed and discount codes.", body, ld)

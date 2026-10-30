@@ -4,9 +4,26 @@ const PORDER={daily:1,weekly:2,biweekly:3,monthly:4,other:5};
 /* sort keys: [value fn (null = unpublished, always last), default direction] */
 const SK={score:[d=>+d.score,-1],name:[d=>d.name,1],tp:[d=>d.tp===''?null:+d.tp,-1],fee:[d=>d.fee===''?null:+d.fee,1],maxsize:[d=>d.maxsize===''?null:+d.maxsize,-1],
   split:[d=>d.split===''?null:+d.split,-1],payout:[d=>PORDER[d.payout]||null,1],founded:[d=>d.founded===''?null:+d.founded,1]};
+const RM=matchMedia('(prefers-reduced-motion: reduce)');
+/* FLIP: rows glide to their new position after a sort or filter (transform only, 240ms) */
+function flip(tb,mutate){
+  const rows=[...tb.rows];
+  if(RM.matches||rows.length>80||!('animate' in Element.prototype)){mutate();return}
+  const before=new Map();rows.forEach(r=>{if(!r.hidden)before.set(r,r.getBoundingClientRect().top)});
+  mutate();
+  const vh=innerHeight;
+  rows.forEach(r=>{
+    if(r.hidden)return;const top=r.getBoundingClientRect().top;
+    if(!before.has(r)){if(top<vh&&top>-60)r.animate([{opacity:0},{opacity:1}],{duration:180,easing:'ease-out'});return}
+    const d=before.get(r)-top;if(!d||Math.abs(d)>vh*1.5||top>vh||top<-200)return;
+    r.animate([{transform:'translateY('+d+'px)'},{transform:'none'}],{duration:240,easing:'cubic-bezier(.77,0,.175,1)'});
+  });
+}
+let animSort=false;
 function sortTable(t,k,dir){
   const tb=$('tbody',t),s=SK[k]||SK.score;dir=dir||s[1];
-  [...tb.rows].sort((a,b)=>{const x=s[0](a.dataset),y=s[0](b.dataset);if(x===y)return (+b.dataset.score)-(+a.dataset.score);if(x==null)return 1;if(y==null)return -1;return (x<y?-1:1)*dir}).forEach(r=>tb.appendChild(r));
+  const doSort=()=>[...tb.rows].sort((a,b)=>{const x=s[0](a.dataset),y=s[0](b.dataset);if(x===y)return (+b.dataset.score)-(+a.dataset.score);if(x==null)return 1;if(y==null)return -1;return (x<y?-1:1)*dir}).forEach(r=>tb.appendChild(r));
+  animSort?flip(tb,doSort):doSort();
   $$('th[data-sort]',t).forEach(th=>{th.dataset.sort===k?th.setAttribute('aria-sort',dir>0?'ascending':'descending'):th.removeAttribute('aria-sort')});
   t.dataset.k=k;t.dataset.dir=dir;
 }
@@ -17,7 +34,8 @@ if(fb&&'ResizeObserver' in window){new ResizeObserver(()=>document.documentEleme
 $$('table.firms').forEach(t=>t.addEventListener('click',e=>{
   const th=e.target.closest('th[data-sort]');if(!th)return;
   const k=th.dataset.sort,dir=t.dataset.k===k?-(+t.dataset.dir):SK[k][1];
-  sortTable(t,k,dir);t.dispatchEvent(new CustomEvent('pfa:sort',{detail:{k,dir}}));
+  if(t.id==='firms'&&$('#filters')){t.dispatchEvent(new CustomEvent('pfa:sort',{detail:{k,dir}}));return}
+  animSort=true;sortTable(t,k,dir);
 }));
 
 /* menu */
@@ -64,8 +82,10 @@ if(tb&&form){
       if(v('f-country')&&d.restricted.split('|').includes(v('f-country')))ok=false;
       if(v('f-news')&&d.news!=='true')ok=false;
       if(v('f-weekend')&&d.weekend!=='true')ok=false;
-      r.hidden=!ok;if(ok)n++});
-    const s=v('f-sort')||'score';sortTable(tbl,s,dir);
+      r.dataset.ok=ok?'1':'';if(ok)n++});
+    const s=v('f-sort')||'score';
+    const apply=()=>{rows.forEach(r=>{r.hidden=!r.dataset.ok});const a=animSort;animSort=false;sortTable(tbl,s,dir);animSort=a};
+    animSort?flip(tb,apply):apply();animSort=true;
     $('#count').textContent=n+' of '+rows.length+' firms'+(v('f-country')?', excluding firms that restrict your country':'');
     if(empty)empty.hidden=n!==0;
     const active=ids.filter(i=>i!=='q'&&i!=='f-sort'&&v(i)).length;
@@ -81,6 +101,23 @@ if(tb&&form){
   $$('[data-reset]').forEach(b=>b.addEventListener('click',()=>{reset();$('#q').focus()}));
   if(['size','plat','payout','country','news','weekend'].some(k=>P.has(k)))setOpen(true);
   run();
+}
+
+/* hero figures count up once on first view (text is final in the HTML; this only animates it) */
+const cnt=$$('[data-count]');
+if(cnt.length&&!RM.matches&&'IntersectionObserver' in window){
+  const run1=el=>{const to=+el.dataset.count;if(!(to>1))return;el.style.display='inline-block';el.style.minWidth=el.offsetWidth+'px';
+    const t0=performance.now(),D=900,ease=p=>1-Math.pow(2,-10*p);
+    const step=t=>{const p=Math.min(1,(t-t0)/D);el.textContent=Math.round(to*ease(p));if(p<1)requestAnimationFrame(step);else el.textContent=to};
+    el.textContent='0';requestAnimationFrame(step)};
+  const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){io.unobserve(x.target);run1(x.target)}}),{threshold:.6});
+  cnt.forEach(el=>io.observe(el));
+}
+/* one-time reveal for blocks that start below the fold */
+const rv=$$('.rv');
+if(rv.length&&'IntersectionObserver' in window){
+  const io2=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.remove('pre');io2.unobserve(x.target)}}),{rootMargin:'0px 0px -8% 0px'});
+  rv.forEach(el=>{if(el.getBoundingClientRect().top>innerHeight){el.classList.add('pre');io2.observe(el)}});
 }
 
 /* compare picker */
