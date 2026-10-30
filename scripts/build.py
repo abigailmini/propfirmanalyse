@@ -397,7 +397,7 @@ def pair_link(a, b):
             f'<i aria-hidden="true">vs</i><span class="sr"> versus </span><span>{e(BY[b]["name"])}</span></a></li>')
 
 # ---------------- pages ----------------
-ASSET_V = "8"
+ASSET_V = "9"
 WEB_FONTS = ("instrument-sans.woff2",)   # bricolage/geist stay in src/fonts for scripts/og.html only
 def write_assets():
     os.makedirs(os.path.join(OUT, "assets", "fonts"), exist_ok=True)

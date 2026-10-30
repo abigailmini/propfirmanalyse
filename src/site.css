@@ -463,8 +463,14 @@ input[type=search]:focus-visible,select:focus-visible,input[type=number]:focus-v
   table.gt td::before{content:attr(data-label);display:block;font:500 11.5px/1.3 var(--f-ui);color:var(--mute);margin-bottom:2px}
   table.gt .gt-rk{grid-column:1;grid-row:1 / span 12;color:var(--mute);font-size:13px;padding-top:2px}
   table.gt .gt-rk::before,table.gt .gt-firm::before{content:none}
-  table.gt .gt-firm{grid-column:1/-1;font-size:17px;font-weight:600;padding-bottom:6px}
+  table.gt .gt-firm{grid-column:1/-1;grid-row:1;font-size:17px;font-weight:600;padding-bottom:6px}
   table.gt tr:has(> .gt-rk) .gt-firm{grid-column:2/-1}
+  /* PA score shares the top line with the firm name, right-aligned */
+  table.gt tr:has(> .gt-sc) .gt-firm{grid-column:1}
+  table.gt tr:has(> .gt-rk):has(> .gt-sc) .gt-firm{grid-column:2}
+  table.gt td.gt-sc{grid-column:-2;grid-row:1;justify-self:end;text-align:right;font-size:18px;padding-bottom:6px}
+  table.gt .gt-sc::before{content:none}
+  table.gt .gt-sc b{font-weight:600}
   table.gt .gt-firm a{color:var(--ink);font-weight:600;text-decoration:none}
 }
 .cmpl-v{display:inline-flex;align-items:center;gap:10px}

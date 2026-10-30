@@ -14,7 +14,8 @@ def gtable(rows, cols, cap):
     th = "".join(f'<th scope="col"{" class=num" if "num" in c else ""}>{e(l)}</th>' for l, _, c in cols)
     # mobile card hooks: rank column ("#") and the first other column (the firm) get roles; every cell carries its label
     rk = next((i for i, (l, _, _) in enumerate(cols) if l == "#"), None); fi = next(i for i in range(len(cols)) if i != rk)
-    role = lambda i: " gt-rk" if i == rk else (" gt-firm" if i == fi else "")
+    sc = next((i for i, (l, _, _) in enumerate(cols) if l in ("PA Score", "PA 评分")), None)
+    role = lambda i: " gt-rk" if i == rk else (" gt-firm" if i == fi else (" gt-sc" if i == sc else ""))
     tb = "".join("<tr>" + "".join(f'<td class="{c}{role(i)}" data-label="{e(l)}">{fn(r)}</td>' for i, (l, fn, c) in enumerate(cols)) + "</tr>" for r in rows)
     return f'<div class="tablewrap"><table class="mini gt"><caption class="sr">{e(cap)}</caption><thead><tr>{th}</tr></thead><tbody>{tb}</tbody></table></div>'
 def nlist(names): return ", ".join(names[:-1]) + (" and " if len(names) > 1 else "") + names[-1] if names else "none"
