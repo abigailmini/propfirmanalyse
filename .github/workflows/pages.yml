@@ -22,6 +22,8 @@ jobs:
         env:
           BASE_PATH: ${{ vars.BASE_PATH || '' }}
           SITE_URL: ${{ vars.SITE_URL || 'https://propanalyse.com' }}
+          TRACK: ${{ vars.TRACK || '' }}
+          GO_URL: ${{ vars.GO_URL || 'https://go.propanalyse.com' }}
         run: python3 scripts/build.py
       - uses: actions/upload-pages-artifact@v3
         with:

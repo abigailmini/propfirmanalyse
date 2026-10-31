@@ -1,0 +1,29 @@
+# PropAnalyse analytics + click tracker (Cloudflare Worker + D1). See backend/README.md.
+name = "propanalyse-go"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+workers_dev = true          # also reachable at https://propanalyse-go.<your-subdomain>.workers.dev
+
+# go.propanalyse.com as a Worker Custom Domain. Needs the propanalyse.com zone on this
+# Cloudflare account (nameservers moved to Cloudflare, see README "DNS"). Cloudflare creates
+# the DNS record + certificate itself on deploy.
+routes = [
+  { pattern = "go.propanalyse.com", custom_domain = true }
+]
+
+[vars]
+SITE_HOME = "https://propanalyse.com/"
+SITE_ORIGINS = "https://propanalyse.com,https://www.propanalyse.com"
+TZ_OFFSET_MIN = "480"       # dashboard days are Malaysia time (UTC+8)
+RETENTION_DAYS = "400"
+# Secrets (never in this file):  wrangler secret put ADMIN_TOKEN
+# Optional e-mail on new submissions (Resend): RESEND_API_KEY, NOTIFY_TO, NOTIFY_FROM
+
+[[d1_databases]]
+binding = "DB"
+database_name = "propanalyse"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"   # printed by: wrangler d1 create propanalyse
+migrations_dir = "migrations"
+
+[triggers]
+crons = ["17 19 * * *"]     # 03:17 MYT: purge old rows + expired salts

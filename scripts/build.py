@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """PropAnalyse static site generator. Regenerates every page from data/firms.json.
-Usage: python3 scripts/build.py  [env BASE_PATH= SITE_URL=https://propanalyse.com]
+Usage: python3 scripts/build.py  [env BASE_PATH= SITE_URL=https://propanalyse.com TRACK=1 GO_URL=https://go.propanalyse.com]
 """
 import json, os, re, math, html, shutil, datetime
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, "site")
+OUT = os.environ.get("OUT_DIR") or os.path.join(ROOT, "site")
 BASE = os.environ.get("BASE_PATH", "").rstrip("/")
 SITE_URL = os.environ.get("SITE_URL", "https://propanalyse.com").rstrip("/")
 ABS = SITE_URL + BASE
@@ -698,7 +698,7 @@ def seo_files():
     open(os.path.join(OUT, ".nojekyll"), "w").write("")
     if SITE_URL.startswith("https://") and "github.io" not in SITE_URL and not BASE: open(os.path.join(OUT, "CNAME"), "w").write(SITE_URL.split("://", 1)[1] + "\n")
 
-for _m in ("more_core.py", "more_pages_a.py", "more_pages_b.py", "more_guides.py", "more_programmatic.py", "more_zh.py", "more_categories.py", "more_seo.py", "more_badge.py", "more_home.py", "more_complaints.py", "more_status.py"):
+for _m in ("more_core.py", "more_pages_a.py", "more_pages_b.py", "more_guides.py", "more_programmatic.py", "more_zh.py", "more_categories.py", "more_seo.py", "more_badge.py", "more_home.py", "more_complaints.py", "more_status.py", "more_track.py"):
     _p = os.path.join(ROOT, "scripts", _m); exec(compile(open(_p).read(), _p, "exec"))
 
 if __name__ == "__main__":
@@ -710,5 +710,6 @@ if __name__ == "__main__":
     for f in FIRMS: firm_page(f)
     compare_index()
     for a, b in PAIRS: compare_page(a, b)
-    offers(); best_pages(); methodology(); about(); updates(); crypto_hub(); news(); tools(); quiz(); guides(); glossary(); site_faq(); programmatic(); not_found(); seo_files()
+    offers(); best_pages(); methodology(); about(); updates(); crypto_hub(); news(); tools(); quiz(); guides(); glossary(); site_faq(); programmatic(); not_found(); privacy(); seo_files()
+    track_finalize()
     print(f"built {len(PAGES)} pages -> {OUT}")

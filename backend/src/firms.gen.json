@@ -1,0 +1,265 @@
+{
+ "firms": {
+  "alpha-capital": {
+   "aff": null,
+   "name": "Alpha Capital",
+   "site": "https://alphacapitalgroup.uk"
+  },
+  "alpha-futures": {
+   "aff": null,
+   "name": "Alpha Futures",
+   "site": "https://alpha-futures.com"
+  },
+  "apex-trader-funding": {
+   "aff": null,
+   "name": "Apex Trader Funding",
+   "site": "https://apextraderfunding.com"
+  },
+  "aquafunded": {
+   "aff": null,
+   "name": "AquaFunded",
+   "site": "https://www.aquafunded.com"
+  },
+  "atlas-funded": {
+   "aff": null,
+   "name": "Atlas Funded",
+   "site": "https://www.atlasfunded.com"
+  },
+  "audacity-capital": {
+   "aff": null,
+   "name": "Audacity Capital",
+   "site": "https://audacity.capital"
+  },
+  "bitfunded": {
+   "aff": null,
+   "name": "Bitfunded",
+   "site": "https://www.bitfunded.com"
+  },
+  "blue-guardian": {
+   "aff": null,
+   "name": "Blue Guardian",
+   "site": "https://blueguardian.com"
+  },
+  "breakout-prop": {
+   "aff": null,
+   "name": "Breakout Prop",
+   "site": "https://www.breakoutprop.com"
+  },
+  "brightfunded": {
+   "aff": null,
+   "name": "BrightFunded",
+   "site": "https://brightfunded.com"
+  },
+  "bulenox": {
+   "aff": null,
+   "name": "Bulenox",
+   "site": "https://bulenox.com"
+  },
+  "city-traders-imperium": {
+   "aff": null,
+   "name": "City Traders Imperium",
+   "site": "https://citytradersimperium.com"
+  },
+  "crypto-fund-trader": {
+   "aff": null,
+   "name": "Crypto Fund Trader",
+   "site": "https://cryptofundtrader.com"
+  },
+  "daytraders": {
+   "aff": null,
+   "name": "DayTraders.com",
+   "site": "https://daytraders.com"
+  },
+  "e8-markets": {
+   "aff": null,
+   "name": "E8 Markets",
+   "site": "https://e8markets.com"
+  },
+  "earn2trade": {
+   "aff": null,
+   "name": "Earn2Trade",
+   "site": "https://www.earn2trade.com"
+  },
+  "elite-trader-funding": {
+   "aff": null,
+   "name": "Elite Trader Funding",
+   "site": "https://elitetraderfunding.app"
+  },
+  "finotive-funding": {
+   "aff": null,
+   "name": "Finotive Funding",
+   "site": "https://finotivefunding.com"
+  },
+  "fintokei": {
+   "aff": null,
+   "name": "Fintokei",
+   "site": "https://www.fintokei.com"
+  },
+  "fondeo": {
+   "aff": null,
+   "name": "Fondeo",
+   "site": "https://fondeo.xyz"
+  },
+  "for-traders": {
+   "aff": null,
+   "name": "For Traders",
+   "site": "https://fortraders.com"
+  },
+  "ftmo": {
+   "aff": null,
+   "name": "FTMO",
+   "site": "https://ftmo.com"
+  },
+  "ftuk": {
+   "aff": null,
+   "name": "FTUK",
+   "site": "https://ftuk.com"
+  },
+  "funded-trading-plus": {
+   "aff": null,
+   "name": "Funded Trading Plus",
+   "site": "https://www.fundedtradingplus.com"
+  },
+  "fundednext": {
+   "aff": null,
+   "name": "FundedNext",
+   "site": "https://fundednext.com"
+  },
+  "fundedxyz": {
+   "aff": null,
+   "name": "FundedXyz",
+   "site": "https://www.fundedxyz.com"
+  },
+  "funderpro": {
+   "aff": null,
+   "name": "FunderPro",
+   "site": "https://funderpro.com"
+  },
+  "funding-traders": {
+   "aff": null,
+   "name": "Funding Traders",
+   "site": "https://fundingtraders.com"
+  },
+  "fundingpips": {
+   "aff": null,
+   "name": "FundingPips",
+   "site": "https://fundingpips.com"
+  },
+  "fxify": {
+   "aff": null,
+   "name": "FXIFY",
+   "site": "https://fxify.com"
+  },
+  "goat-funded-trader": {
+   "aff": null,
+   "name": "Goat Funded Trader",
+   "site": "https://www.goatfundedtrader.com"
+  },
+  "hola-prime": {
+   "aff": null,
+   "name": "Hola Prime",
+   "site": "https://holaprime.com"
+  },
+  "hyrotrader": {
+   "aff": null,
+   "name": "HyroTrader",
+   "site": "https://www.hyrotrader.com"
+  },
+  "instant-funding": {
+   "aff": null,
+   "name": "Instant Funding",
+   "site": "https://instantfunding.com"
+  },
+  "lark-funding": {
+   "aff": null,
+   "name": "Lark Funding",
+   "site": "https://larkfunding.com"
+  },
+  "lucid-trading": {
+   "aff": null,
+   "name": "Lucid Trading",
+   "site": "https://lucidtrading.com"
+  },
+  "maven-trading": {
+   "aff": null,
+   "name": "Maven Trading",
+   "site": "https://maventrading.com"
+  },
+  "ment-funding": {
+   "aff": null,
+   "name": "Ment Funding",
+   "site": "https://mentfunding.com"
+  },
+  "mubite": {
+   "aff": null,
+   "name": "Mubite",
+   "site": "https://mubite.com"
+  },
+  "myfundedfutures": {
+   "aff": null,
+   "name": "MyFundedFutures",
+   "site": "https://myfundedfutures.com"
+  },
+  "phidias-propfirm": {
+   "aff": null,
+   "name": "Phidias Propfirm",
+   "site": "https://phidiaspropfirm.com"
+  },
+  "propr": {
+   "aff": null,
+   "name": "Propr",
+   "site": "https://www.propr.xyz"
+  },
+  "propw": {
+   "aff": null,
+   "name": "PropW",
+   "site": "https://www.propw.com/"
+  },
+  "qt-funded": {
+   "aff": null,
+   "name": "QT Funded",
+   "site": "https://qtfunded.quanttekel.com"
+  },
+  "take-profit-trader": {
+   "aff": null,
+   "name": "Take Profit Trader",
+   "site": "https://takeprofittrader.com"
+  },
+  "the-trading-pit": {
+   "aff": null,
+   "name": "The Trading Pit",
+   "site": "https://www.thetradingpit.com"
+  },
+  "the5ers": {
+   "aff": null,
+   "name": "The5ers",
+   "site": "https://the5ers.com"
+  },
+  "thinkcapital": {
+   "aff": null,
+   "name": "ThinkCapital",
+   "site": "https://www.thinkcapital.com"
+  },
+  "topone-futures": {
+   "aff": null,
+   "name": "Top One Futures",
+   "site": "https://www.toponefutures.com"
+  },
+  "topstep": {
+   "aff": null,
+   "name": "Topstep",
+   "site": "https://www.topstep.com"
+  },
+  "tradeday": {
+   "aff": null,
+   "name": "TradeDay",
+   "site": "https://www.tradeday.com"
+  },
+  "tradeify": {
+   "aff": null,
+   "name": "Tradeify",
+   "site": "https://tradeify.co"
+  }
+ },
+ "generated": "2026-10-31"
+}
