@@ -2,7 +2,7 @@
  "name": "Blue Guardian",
  "slug": "blue-guardian",
  "site": "https://blueguardian.com",
- "category": "multi",
+ "category": "cfd",
  "assets": [
   "forex",
   "commodities",
@@ -175,5 +175,11 @@
   "https://blueguardian.com/",
   "https://www.trustpilot.com/review/blueguardian.com"
  ],
- "notes": "Fees = list price before SPOOKY (site shows ~25% lower with code). Rule % derived from $ values at 100K. News trading allowed in challenge, not on funded. Futures: Standard/Reserve/Express/Direct (e.g. Standard 25K-150K $154-$424 list, EOD trailing, 90/10, 40% funded consistency). Nano 1/2-step plans not captured. Min trading days not shown. Trustpilot: rating unavailable (guidelines-breach warning) -> null."
+ "notes": "Fees = list price before SPOOKY (site shows ~25% lower with code). Rule % derived from $ values at 100K. News trading allowed in challenge, not on funded. Futures: Standard/Reserve/Express/Direct (e.g. Standard 25K-150K $154-$424 list, EOD trailing, 90/10, 40% funded consistency). Nano 1/2-step plans not captured. Min trading days not shown. Trustpilot: rating unavailable (guidelines-breach warning) -> null.",
+ "segment": "multi",
+ "also_offers": [
+  "futures"
+ ],
+ "category_basis": "CFD challenges on MT5, Match-Trader and TradeLocker; separate futures plans on NinjaTrader, Tradovate and TradingView.",
+ "category_source": "https://blueguardian.com/"
 }

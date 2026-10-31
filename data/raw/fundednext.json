@@ -2,7 +2,7 @@
  "name": "FundedNext",
  "slug": "fundednext",
  "site": "https://fundednext.com",
- "category": "multi",
+ "category": "cfd",
  "assets": [
   "forex",
   "futures"
@@ -175,5 +175,11 @@
   "https://help.fundednext.com/en/",
   "https://www.trustpilot.com/review/fundednext.com"
  ],
- "notes": "CFD Stellar prices via browser; Stellar Lite & FNL:002 programs and Futures not captured. Leverage, weekend rule not found. first_payout_days=21 for 2-Step (1-Step: 5 business days). News trading profit capped at 40% on funded. hq = registered entity GrowthNext F.Z.E. Trustpilot via browser."
+ "notes": "CFD Stellar prices via browser; Stellar Lite & FNL:002 programs and Futures not captured. Leverage, weekend rule not found. first_payout_days=21 for 2-Step (1-Step: 5 business days). News trading profit capped at 40% on funded. hq = registered entity GrowthNext F.Z.E. Trustpilot via browser.",
+ "segment": "multi",
+ "also_offers": [
+  "futures"
+ ],
+ "category_basis": "CFD challenges on MT4, MT5, cTrader and Match-Trader; a separate futures program runs on NinjaTrader and Tradovate.",
+ "category_source": "https://fundednext.com/trading-platforms"
 }

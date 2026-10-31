@@ -2,7 +2,7 @@
  "name": "The5ers",
  "slug": "the5ers",
  "site": "https://the5ers.com",
- "category": "multi",
+ "category": "cfd",
  "assets": [
   "forex",
   "commodities",
@@ -173,5 +173,11 @@
   "https://the5ers.com/bootcamp/",
   "https://www.trustpilot.com/review/the5ers.com"
  ],
- "notes": "min_trading_days = min profitable days (≥0.5%). Bootcamp: $22 entry + $50 at funding; 3-step for $100K/$250K fees not captured; Pro stage 3% daily pause/4% max loss. Homepage also lists a separate '1 Step' ($249, 10%/3%/6%, 75% share, 1:100). Banner promo '$100K for $149' (no code). HS news: no trades 2 min around high-impact news. Site says '10 years active' (founded not stated). Futures program not captured. Drawdown type not stated."
+ "notes": "min_trading_days = min profitable days (≥0.5%). Bootcamp: $22 entry + $50 at funding; 3-step for $100K/$250K fees not captured; Pro stage 3% daily pause/4% max loss. Homepage also lists a separate '1 Step' ($249, 10%/3%/6%, 75% share, 1:100). Banner promo '$100K for $149' (no code). HS news: no trades 2 min around high-impact news. Site says '10 years active' (founded not stated). Futures program not captured. Drawdown type not stated.",
+ "segment": "multi",
+ "also_offers": [
+  "futures"
+ ],
+ "category_basis": "CFD programs (High Stakes, Hyper Growth, Bootcamp) on MT5; a futures program is listed separately.",
+ "category_source": "https://the5ers.com/"
 }

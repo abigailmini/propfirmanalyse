@@ -2,7 +2,7 @@
  "name": "Lark Funding",
  "slug": "lark-funding",
  "site": "https://larkfunding.com",
- "category": "multi",
+ "category": "cfd",
  "assets": [
   "crypto",
   "forex",
@@ -187,5 +187,9 @@
   "https://helpdesk.larkfunding.com/en/articles/8377870-what-are-the-rules-for-the-simulated-funded-account",
   "https://www.trustpilot.com/review/larkfunding.com"
  ],
- "notes": "Fees scraped from homepage plan cards (browser). 1-Step Max: 1% per-symbol loss limit (soft breach), 3 free restarts. Instant first payout on demand, then monthly; leverage 30:1 on 1-Step/Max, 50:1 Instant/3-Step. Weekend holding via add-on. October promo (fee refund with first payout, ends Oct 31) has no code. Operator Lark Dashboards Inc.; HQ/founded/restricted countries not found. Trustpilot lists contact country Canada."
+ "notes": "Fees scraped from homepage plan cards (browser). 1-Step Max: 1% per-symbol loss limit (soft breach), 3 free restarts. Instant first payout on demand, then monthly; leverage 30:1 on 1-Step/Max, 50:1 Instant/3-Step. Weekend holding via add-on. October promo (fee refund with first payout, ends Oct 31) has no code. Operator Lark Dashboards Inc.; HQ/founded/restricted countries not found. Trustpilot lists contact country Canada.",
+ "segment": "multi",
+ "also_offers": [],
+ "category_basis": "CFD challenges on DXtrade, cTrader and Match-Trader.",
+ "category_source": "https://helpdesk.larkfunding.com/en/articles/11738989-what-trading-platform-does-lark-funding-offer"
 }

@@ -208,5 +208,9 @@
     "https://apextraderfunding.com/about/",
     "https://www.trustpilot.com/review/apextraderfunding.com"
   ],
-  "notes": "Site 403s web_fetch; read via browser. Fees = Standard path list prices before coupon (read by clicking the JS size selector; 100K intraday $790 looks out of line, so recheck). Standard path has an activation fee (amount not found). No-activation-fee path also exists (e.g. 25K intraday $690). No minimum days to pass (can pass in 1 day). Profit split = '100% requested rewards, no split in Sim Funded'. Max 6 payouts per PA, $500 min payout. Platform list is inferred from partner/help links. Legacy accounts also sold for a limited time; not captured."
+  "notes": "Site 403s web_fetch; read via browser. Fees = Standard path list prices before coupon (read by clicking the JS size selector; 100K intraday $790 looks out of line, so recheck). Standard path has an activation fee (amount not found). No-activation-fee path also exists (e.g. 25K intraday $690). No minimum days to pass (can pass in 1 day). Profit split = '100% requested rewards, no split in Sim Funded'. Max 6 payouts per PA, $500 min payout. Platform list is inferred from partner/help links. Legacy accounts also sold for a limited time; not captured.",
+  "segment": "futures",
+  "also_offers": [],
+  "category_basis": "CME futures evaluations on Rithmic, Tradovate and NinjaTrader.",
+  "category_source": "https://apextraderfunding.com/"
 }

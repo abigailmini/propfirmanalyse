@@ -2,7 +2,7 @@
  "name": "Instant Funding",
  "slug": "instant-funding",
  "site": "https://instantfunding.com",
- "category": "forex-cfd",
+ "category": "cfd",
  "assets": [
   "forex",
   "commodities",
@@ -166,5 +166,9 @@
   "https://instantfunding.com/",
   "https://www.trustpilot.com/review/instantfunding.com"
  ],
- "notes": "Prices scraped from homepage configurator (browser). Homepage lists rule blocks for several hidden variants (IF1 24h, 1-phase 10%/3%/8% and 7%/4%/7%, 2-phase 8%/5%) that couldn't be mapped to One-Phase PRO / IF Micro PRO reliably, so those rules are null. Leverage temporarily 1:5 on metals/oil/indices funded. Operator: IF Pro Ltd; HQ, founded, restricted countries not found. Detail pages timed out. Trustpilot: rating unavailable (guidelines-breach warning) -> null."
+ "notes": "Prices scraped from homepage configurator (browser). Homepage lists rule blocks for several hidden variants (IF1 24h, 1-phase 10%/3%/8% and 7%/4%/7%, 2-phase 8%/5%) that couldn't be mapped to One-Phase PRO / IF Micro PRO reliably, so those rules are null. Leverage temporarily 1:5 on metals/oil/indices funded. Operator: IF Pro Ltd; HQ, founded, restricted countries not found. Detail pages timed out. Trustpilot: rating unavailable (guidelines-breach warning) -> null.",
+ "segment": "forex-cfd",
+ "also_offers": [],
+ "category_basis": "CFD accounts on MT5, cTrader and Match-Trader.",
+ "category_source": "https://instantfunding.com/"
 }

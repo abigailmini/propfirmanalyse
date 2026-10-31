@@ -2,7 +2,7 @@
   "name": "FundedXYZ",
   "slug": "fundedxyz",
   "site": "https://www.fundedxyz.com",
-  "category": "crypto",
+  "category": "crypto-exchange",
   "assets": [
     "crypto"
   ],
@@ -216,5 +216,9 @@
     "https://www.fundedxyz.com/terms",
     "https://www.trustpilot.com/review/fundedxyz.com"
   ],
-  "notes": "Headline rules = Y Mode Standard (flagged POPULAR). X Mode fees are list prices; site shows 10% off with FIRST code. X Mode: limit-order entries only, 2x net position limit, auto-fails after 20 days inactivity. Y/Z: 40% position-size limit. Assets: X Mode BTC/ETH/SOL/XRP USDT pairs; Y/Z BTC/ETH perps. Y Mode drawdown type not stated. Founded year, HQ and restricted countries not stated on own site (Trustpilot company profile lists Singapore). Site wording is inconsistent: homepage/pricing say simulated virtual balances, but FAQ text says live funded accounts with real capital. Homepage widget shows Trustpilot 4.4/30, but Trustpilot page showed 4.5/14 on 2026-10-26. News trading policy not found. Refunds only within 48h of purchase if challenge not started. VPN, API trading and copy trading prohibited."
+  "notes": "Headline rules = Y Mode Standard (flagged POPULAR). X Mode fees are list prices; site shows 10% off with FIRST code. X Mode: limit-order entries only, 2x net position limit, auto-fails after 20 days inactivity. Y/Z: 40% position-size limit. Assets: X Mode BTC/ETH/SOL/XRP USDT pairs; Y/Z BTC/ETH perps. Y Mode drawdown type not stated. Founded year, HQ and restricted countries not stated on own site (Trustpilot company profile lists Singapore). Site wording is inconsistent: homepage/pricing say simulated virtual balances, but FAQ text says live funded accounts with real capital. Homepage widget shows Trustpilot 4.4/30, but Trustpilot page showed 4.5/14 on 2026-10-26. News trading policy not found. Refunds only within 48h of purchase if challenge not started. VPN, API trading and copy trading prohibited.",
+  "segment": "crypto",
+  "also_offers": [],
+  "category_basis": "Crypto-only firm on its own crypto trading platform; perpetual pairs, USDT payouts.",
+  "category_source": "https://www.fundedxyz.com/faq"
 }

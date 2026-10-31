@@ -2,7 +2,7 @@
 # Every number is computed from data/firms.json at build time. A page with too little real data is noindexed.
 import statistics
 
-CAT_LABEL = {"crypto": "crypto-native", "multi": "multi-asset", "forex-cfd": "forex/CFD", "futures": "futures"}
+CAT_LABEL = {"futures": "Futures", "cfd": "CFD", "crypto-exchange": "Crypto exchange"}   # account type (data: category)
 
 def prog_shell(path, items, h1, title, desc, ans, facts, secs, qa, noindex=False, rel=None):
     c, bl = crumbs(items)

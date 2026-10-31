@@ -23,3 +23,6 @@ PA Score (0–10) = Trust 30% + Cost 20% + Rules 20% + Payout 20% + Track record
 
 ## i18n
 `i18n/en.json` is live; `i18n/zh.json` is a key-mirrored stub for a future /zh/ build.
+
+## Account types (2026-10-31)
+Primary taxonomy is the account type, one per firm: `category` = `futures` | `cfd` | `crypto-exchange`, plus `also_offers`, `category_basis` and `category_source` (the firm page it was read from). Set by `scripts/categorize.py` (idempotent, patches data/raw and data/firms.json); the old asset-mix label lives on as `segment`. Hub pages /futures/, /cfd/, /crypto-exchange/ and /zh/ equivalents are built by `scripts/more_categories.py`, which also owns the ranking filter bar (account-type tabs + multi-select facets: plat, mkt, type, pay, split, pm, country; comma-separated URL params; old single-select links still resolve).

@@ -2,7 +2,7 @@
   "name": "Bitfunded",
   "slug": "bitfunded",
   "site": "https://www.bitfunded.com",
-  "category": "crypto",
+  "category": "crypto-exchange",
   "assets": [
     "crypto"
   ],
@@ -163,5 +163,9 @@
     "https://www.bitfunded.com/frequently-asked-questions/",
     "https://www.bitfunded.com/about-us/"
   ],
-  "notes": "Crypto-native prop firm (100+ crypto pairs, ~20 TradFi pairs), in-house platform, USDT payouts. Replaces Nova Funding (offline). 2-Step fee refunded with 3rd payout. No hedging, no bots/EAs/API, max 5 open positions, holding limits 10/7/5 days (major crypto/minor crypto/TradFi), margin concentration cap 65% (55% Instant). Daily loss counts floating P&L; day resets 00:00 UTC+8. 1-Step Express fees not shown on homepage. Trustpilot page blocked to our fetcher; not recorded."
+  "notes": "Crypto-native prop firm (100+ crypto pairs, ~20 TradFi pairs), in-house platform, USDT payouts. Replaces Nova Funding (offline). 2-Step fee refunded with 3rd payout. No hedging, no bots/EAs/API, max 5 open positions, holding limits 10/7/5 days (major crypto/minor crypto/TradFi), margin concentration cap 65% (55% Instant). Daily loss counts floating P&L; day resets 00:00 UTC+8. 1-Step Express fees not shown on homepage. Trustpilot page blocked to our fetcher; not recorded.",
+  "segment": "crypto",
+  "also_offers": [],
+  "category_basis": "Crypto-first firm on its own platform, fed by live data from partner exchanges; 100+ crypto pairs plus a few TradFi pairs.",
+  "category_source": "https://www.bitfunded.com/frequently-asked-questions/"
 }

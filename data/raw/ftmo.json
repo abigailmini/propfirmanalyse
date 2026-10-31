@@ -2,7 +2,7 @@
   "name": "FTMO",
   "slug": "ftmo",
   "site": "https://ftmo.com",
-  "category": "multi",
+  "category": "cfd",
   "assets": [
     "forex",
     "indices",
@@ -161,5 +161,11 @@
     "https://ftmo.com/en/symbols/",
     "https://ftmo.com/en/faq/how-do-i-withdraw-my-profits/"
   ],
-  "notes": "Fees are EUR (USD toggle not applied in browser). $100K showed two prices: 2-Step €439/€540, 1-Step €399/€499 (higher recorded; lower may be promo). News/weekend restrictions apply only to Standard funded accounts (Swing type unrestricted; evaluation unrestricted). CFD asset classes not verified (only Futures product seen). Payout frequency not found. hq inferred from CZ legal entity FTMO s.r.o. Assets: Forex/Crypto/Indices/Commodities(Metals) category filters confirmed on ftmo.com/en/symbols (2026-10-26); stocks not confirmed. Fees in EUR."
+  "notes": "Fees are EUR (USD toggle not applied in browser). $100K showed two prices: 2-Step €439/€540, 1-Step €399/€499 (higher recorded; lower may be promo). News/weekend restrictions apply only to Standard funded accounts (Swing type unrestricted; evaluation unrestricted). CFD asset classes not verified (only Futures product seen). Payout frequency not found. hq inferred from CZ legal entity FTMO s.r.o. Assets: Forex/Crypto/Indices/Commodities(Metals) category filters confirmed on ftmo.com/en/symbols (2026-10-26); stocks not confirmed. Fees in EUR.",
+  "segment": "multi",
+  "also_offers": [
+    "futures"
+  ],
+  "category_basis": "Simulated CFD accounts on MT4, MT5, cTrader and TradingView; FTMO also lists a futures product.",
+  "category_source": "https://ftmo.com/en/"
 }

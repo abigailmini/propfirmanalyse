@@ -2,7 +2,7 @@
   "name": "HyroTrader",
   "slug": "hyrotrader",
   "site": "https://www.hyrotrader.com",
-  "category": "crypto",
+  "category": "crypto-exchange",
   "assets": [
     "crypto"
   ],
@@ -173,5 +173,9 @@
     "https://www.hyrotrader.com/faq/platform/which-countries-are-allowed-to-join-hyrotrader-can-i-join-from-the-usuk/",
     "https://www.trustpilot.com/review/hyrotrader.com"
   ],
-  "notes": "Headline rules = One-Step (flagged Most Popular). Zero-Step is a 1-day single-phase evaluation; its fee is non-refundable. One/Two-Step fees are refundable deposits returned with the first payout. Two-Step requires 5 + 5 days. Daily drawdown is static from start-of-day equity (00:00 UTC); max-loss calculation method (static vs trailing) not confirmed. Funded accounts: 25% max margin exposure and 2x notional cap. News trading allowed, but a strategy based only on news is not. Low-cap altcoin exposure capped at 5% of initial balance. Restricted-country list sits in the T&C and could not be extracted (US/UK are allowed). Simulated/demo accounts at all stages. Homepage widget shows 4.7/210 reviews, but Trustpilot page showed 4.0/228 on 2026-10-26. No public discount code seen. Founded 2023 (team began building in 2022)."
+  "notes": "Headline rules = One-Step (flagged Most Popular). Zero-Step is a 1-day single-phase evaluation; its fee is non-refundable. One/Two-Step fees are refundable deposits returned with the first payout. Two-Step requires 5 + 5 days. Daily drawdown is static from start-of-day equity (00:00 UTC); max-loss calculation method (static vs trailing) not confirmed. Funded accounts: 25% max margin exposure and 2x notional cap. News trading allowed, but a strategy based only on news is not. Low-cap altcoin exposure capped at 5% of initial balance. Restricted-country list sits in the T&C and could not be extracted (US/UK are allowed). Simulated/demo accounts at all stages. Homepage widget shows 4.7/210 reviews, but Trustpilot page showed 4.0/228 on 2026-10-26. No public discount code seen. Founded 2023 (team began building in 2022).",
+  "segment": "crypto",
+  "also_offers": [],
+  "category_basis": "Trades run on Bybit or BloFin demo accounts connected by API, or on Hyro's terminal priced from live Bybit data.",
+  "category_source": "https://www.hyrotrader.com/faq/"
 }

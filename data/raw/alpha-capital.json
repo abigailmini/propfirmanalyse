@@ -2,7 +2,7 @@
   "name": "Alpha Capital",
   "slug": "alpha-capital",
   "site": "https://alphacapitalgroup.uk",
-  "category": "forex-cfd",
+  "category": "cfd",
   "assets": [
     "forex",
     "indices",
@@ -182,5 +182,9 @@
     "https://alphacapitalgroup.uk/resources/alpha-capital-country-availability-2026",
     "https://www.trustpilot.com/review/alphacapitalgroup.uk"
   ],
-  "notes": "Alpha One/Pro fees from firm's own pricing post (checkout as of 21 Sep 2026); Alpha Direct fees from live product page. Product page lists Alpha One 6/10/12% variants but rules guide says only 10% sold; Alpha Pro also 8%/10% variants and Alpha Swing (2-step, 10%/5%, 10% static) exist, fees not captured. Trustpilot shows rating unavailable (guidelines breach notice), 22,010 reviews. Other active codes: MYALPHA 30% (ends 26 Oct), FUNDED40 40% Direct, 10KFOR40. US: no MT5/new cTrader. Founded year not found."
+  "notes": "Alpha One/Pro fees from firm's own pricing post (checkout as of 21 Sep 2026); Alpha Direct fees from live product page. Product page lists Alpha One 6/10/12% variants but rules guide says only 10% sold; Alpha Pro also 8%/10% variants and Alpha Swing (2-step, 10%/5%, 10% static) exist, fees not captured. Trustpilot shows rating unavailable (guidelines breach notice), 22,010 reviews. Other active codes: MYALPHA 30% (ends 26 Oct), FUNDED40 40% Direct, 10KFOR40. US: no MT5/new cTrader. Founded year not found.",
+  "segment": "forex-cfd",
+  "also_offers": [],
+  "category_basis": "CFD challenges on MT5, cTrader, DXtrade and TradeLocker.",
+  "category_source": "https://alphacapitalgroup.uk/product"
 }

@@ -73,7 +73,13 @@
   "drawdown_type": "EOD trailing or intraday trailing",
   "profit_target": "6%",
   "leverage": null,
-  "platforms": [],
+  "platforms": [
+    "Tradovate",
+    "NinjaTrader",
+    "TradingView",
+    "Quantower",
+    "Volumetrica"
+  ],
   "payout_frequency": "daily (Rapid); every 48h (Builder); bi-weekly (Pro)",
   "first_payout_days": null,
   "min_trading_days": 2,
@@ -197,7 +203,12 @@
     "https://help.myfundedfutures.com/en/articles/17573707-comprehensive-look-into-redesigned-pro-plan",
     "https://help.myfundedfutures.com/en/articles/8229993-restricted-countries-policy",
     "https://help.myfundedfutures.com/en/articles/8230009-news-trading-policy",
-    "https://www.trustpilot.com/review/myfundedfutures.com"
+    "https://www.trustpilot.com/review/myfundedfutures.com",
+    "https://help.myfundedfutures.com/en/collections/5786939-trading-platforms"
   ],
-  "notes": "Fees are promotional one-time prices for 50K only (list prices: Builder $153, Rapid $209, Pro $265, Rapid EOD $135/$225); other sizes not captured. No activation fees. Rapid eval table labels MLL 'EOD' while funded stage is intraday trailing. Pro funded stage: T1 news not allowed, payouts after 14 days plus buffer, max $100K payout. Rapid EOD and Studio plans exist but were not captured. Platform list not found (help collection empty via fetch)."
+  "notes": "Fees are promotional one-time prices for 50K only (list prices: Builder $153, Rapid $209, Pro $265, Rapid EOD $135/$225); other sizes not captured. No activation fees. Rapid eval table labels MLL 'EOD' while funded stage is intraday trailing. Pro funded stage: T1 news not allowed, payouts after 14 days plus buffer, max $100K payout. Rapid EOD and Studio plans exist but were not captured. Platform list not found (help collection empty via fetch).",
+  "segment": "futures",
+  "also_offers": [],
+  "category_basis": "Simulated CME Group futures (CME, CBOT, NYMEX, COMEX) on Tradovate, NinjaTrader, TradingView, Quantower and Volumetrica.",
+  "category_source": "https://myfundedfutures.com/"
 }

@@ -2,7 +2,7 @@
   "name": "Maven Trading",
   "slug": "maven-trading",
   "site": "https://maventrading.com",
-  "category": "forex-cfd",
+  "category": "cfd",
   "assets": [
     "forex",
     "indices",
@@ -166,5 +166,9 @@
     "https://maventrading.com/faqs",
     "https://www.trustpilot.com/review/maventrading.com"
   ],
-  "notes": "Fees are list prices from live pricing page (coupon prices also shown). 3-step 100K list price not captured. Also offers Omo 2-Step (6%/8%, 4%/8% static; $19-$472 list, code OMO 40% off), Instant, Instant Mini, Buy Now Pay Later ($5 start). 2-step min = 3 profitable days per phase (0.5% each). 1-step/3-step: no min days. Payout = 10 business days after first funded trade. Withdrawal cap $10K per rolling 30 days on standard. Trustpilot shows rating unavailable (guidelines breach notice), 5,217 reviews. HQ and restricted countries not found."
+  "notes": "Fees are list prices from live pricing page (coupon prices also shown). 3-step 100K list price not captured. Also offers Omo 2-Step (6%/8%, 4%/8% static; $19-$472 list, code OMO 40% off), Instant, Instant Mini, Buy Now Pay Later ($5 start). 2-step min = 3 profitable days per phase (0.5% each). 1-step/3-step: no min days. Payout = 10 business days after first funded trade. Withdrawal cap $10K per rolling 30 days on standard. Trustpilot shows rating unavailable (guidelines breach notice), 5,217 reviews. HQ and restricted countries not found.",
+  "segment": "forex-cfd",
+  "also_offers": [],
+  "category_basis": "CFD challenges on MT5 and Match-Trader (Maven simulated server).",
+  "category_source": "https://maventrading.com/faqs"
 }

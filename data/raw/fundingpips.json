@@ -2,7 +2,7 @@
  "name": "FundingPips",
  "slug": "fundingpips",
  "site": "https://fundingpips.com",
- "category": "forex-cfd",
+ "category": "cfd",
  "assets": [
   "forex",
   "commodities",
@@ -127,7 +127,11 @@
  "drawdown_type": "static",
  "profit_target": "8% / 5%",
  "leverage": "up to 1:100 (FX, evaluation)",
- "platforms": [],
+ "platforms": [
+  "MT5",
+  "cTrader",
+  "Match-Trader"
+ ],
  "payout_frequency": "weekly / bi-weekly / on-demand",
  "first_payout_days": null,
  "min_trading_days": 3,
@@ -156,5 +160,9 @@
   "https://fundingpips.com/trading-objectives",
   "https://www.trustpilot.com/review/fundingpips.com"
  ],
- "notes": "Also 2 Step Pro ($29-$466; 6%/6%, 3% DLL, 6% max, weekly 80%) and 2 Step Flex ($35-$555; 10%/8%, 4%, 12%). fee_from $29 = 2 Step Pro $5K. News/weekend allowed in evaluation, restricted on Master (weekend needs Swing add-on). Platforms not confirmed. Site fetches rate-limited (429); data via browser. Legal entity in Comoros; hq = Dubai office address."
+ "notes": "Also 2 Step Pro ($29-$466; 6%/6%, 3% DLL, 6% max, weekly 80%) and 2 Step Flex ($35-$555; 10%/8%, 4%, 12%). fee_from $29 = 2 Step Pro $5K. News/weekend allowed in evaluation, restricted on Master (weekend needs Swing add-on). Platforms not confirmed. Site fetches rate-limited (429); data via browser. Legal entity in Comoros; hq = Dubai office address.",
+ "segment": "forex-cfd",
+ "also_offers": [],
+ "category_basis": "CFD challenges on MT5, cTrader and Match-Trader.",
+ "category_source": "https://fundingpips.com/"
 }

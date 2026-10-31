@@ -117,5 +117,9 @@
     "https://bulenox.com/member/signup",
     "https://www.trustpilot.com/review/bulenox.com"
   ],
-  "notes": "Fees are one-time Qualification prices (30-day access). Fast Track and Momentum account types exist but were not captured. No minimum trading days to pass. Assets: 41 CME-group futures including FX, metals, energies, and Micro BTC/ETH. Rithmic professional data costs $116/mo. HQ is the registered address. Restricted countries and founding year not found."
+  "notes": "Fees are one-time Qualification prices (30-day access). Fast Track and Momentum account types exist but were not captured. No minimum trading days to pass. Assets: 41 CME-group futures including FX, metals, energies, and Micro BTC/ETH. Rithmic professional data costs $116/mo. HQ is the registered address. Restricted countries and founding year not found.",
+  "segment": "futures",
+  "also_offers": [],
+  "category_basis": "CME Group futures data via Rithmic; R | Trader Pro, NinjaTrader and other Rithmic platforms.",
+  "category_source": "https://bulenox.com/faq"
 }

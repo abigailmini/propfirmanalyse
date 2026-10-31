@@ -224,7 +224,8 @@ def page(path, title, desc, body, jsonld=None, og_type="website", extra_head="",
     else:
         zp = ZA.get(path)
         alts = f'<link rel="alternate" hreflang="en" href="{canon}">' + (f'<link rel="alternate" hreflang="zh-Hans" href="{ABS + zp}">' if zp else "") + f'<link rel="alternate" hreflang="x-default" href="{canon}">'
-        navh = "".join(f'<a href="{url(h)}"{" aria-current=page" if path.startswith(h) else ""}>{e(T[k])}</a>' for h, k in NAV)
+        navh = "".join((f'<a href="{url(ZA.get(path, "/zh/"))}" lang="zh-Hans" hreflang="zh-Hans">{e(T[k])}</a>' if h == "/zh/" else
+                        f'<a href="{url(h)}"{" aria-current=page" if path.startswith(h) else ""}>{e(T[k])}</a>') for h, k in NAV)
         footnav = "".join(f'<li><a href="{url(h)}">{e(T[k])}</a></li>' for h, k in NAV) + "".join(f'<li><a href="{url(h)}">{e(t)}</a></li>' for h, t in globals().get("FOOT_EXTRA", [("/updates/", "Verification log")]))
         if zp: langlink = f'<a href="{url(zp)}" lang="zh-Hans" hreflang="zh-Hans">中文版</a>'
     vdate = zdate(TODAY) if zh else nice_date(TODAY)
@@ -299,8 +300,11 @@ def visit(f, label=None, cls="visit"):
     return (f'<a class="{cls}" href="{e(f.get("affiliate_url") or "#")}" rel="sponsored nofollow noopener" target="_blank" data-firm="{e(f["slug"])}">'
             f'{e(label or T["visit"])}{ic("ext")}<span class="sr"> (opens {e(f["name"])} in a new tab)</span></a>')
 
-def row(f):
+def row(f, rk=None):
+    G = globals()
     attrs = {
+        "cat": f.get("category") or "", "also": " ".join(as_list(f.get("also_offers"))), "pk": " ".join(f.get("_pk", [])),
+        "mk": " ".join(f.get("_mk", [])), "pm": " ".join(f.get("_pm", [])),
         "assets": " ".join(f["_assets"]), "types": " ".join(f["_types"]), "platforms": "|".join(p.lower() for p in f["_platforms"]),
         "fee": f["_fee"] if f["_fee"] is not None else "", "maxsize": max(f["_sizes"]) if f["_sizes"] else "",
         "split": f["_split"] if f["_split"] is not None else "", "score": f["_score"], "name": f["name"].lower(),
@@ -316,9 +320,9 @@ def row(f):
     plats = (e(", ".join(pl[:3])) + (f' <span class="plus n">+{len(pl) - 3}</span>' if len(pl) > 3 else "")) if pl else NA
     hq = f.get("hq") or ""
     est = f"est. {int(num(f['founded']))}" if num(f.get("founded")) else ""
-    sub = ", ".join(x for x in (short_hq(hq), est) if x)
+    sub = ", ".join(x for x in (G.get("CAT_NAME", {}).get(f.get("category"), ""), short_hq(hq), est) if x)
     split = f'<span class="n">{e(f["profit_split"])}</span>' if f.get("profit_split") else NA
-    return f"""<tr {da}><td class="c-rk n">{f['_rank']:02d}</td><td class="c-firm"><a href="{url('/firms/' + f['slug'] + '/')}"><b>{e(f['name'])}</b>{('<small title="' + e(hq) + '">' + e(sub) + '</small>') if sub else ''}</a></td>
+    return f"""<tr {da}><td class="c-rk n">{(rk or f['_rank']):02d}</td><td class="c-firm"><a href="{url('/firms/' + f['slug'] + '/')}"><b>{e(f['name'])}</b>{('<small title="' + e(hq) + '">' + e(sub) + '</small>') if sub else ''}</a></td>
 <td class="c-sc" data-label="{T['col_score']}">{score_html(f)}</td><td class="c-tp" data-label="{T['col_rating']}">{tp_html(f)}</td>
 <td class="c-fee num" data-label="{T['col_fee']}" data-m="{T['col_fee']}">{mh(f['_fee'], f.get('fee_currency'))}</td><td class="c-max num" data-label="{T['col_maxsize']}">{mh(max(f['_sizes'])) if f['_sizes'] else NA}</td>
 <td class="c-split" data-label="{T['col_split']}" data-m="{T['col_split']}">{split}</td><td class="c-dd" data-label="{T['col_dd']}" data-m="Daily/Max">{dd_html(f)}</td>
@@ -336,26 +340,7 @@ def all_countries():
         for c in as_list(f.get("countries_restricted")): s.add(c)
     return sorted(s)
 
-def filters_html():
-    o = lambda v, t: f'<option value="{e(v)}">{e(t)}</option>'
-    sel = lambda i, lab, opts: f'<label class="fl"><span>{e(lab)}</span><select id="{i}">{opts}</select></label>'
-    plats = "".join(o(k, v) for k, v in all_platforms())
-    ctry = "".join(o(c.lower(), c) for c in all_countries())
-    return f"""<form class="filters" id="filters" onsubmit="return false" role="search" aria-label="Filter firms">
-<div class="frow"><label class="q"><span class="sr">Search firm</span>{ic('search')}<input type="search" id="q" placeholder="Search firms" autocomplete="off" spellcheck="false"></label>
-<div class="fprim">{sel('f-asset', T['filter_market'], '<option value="">All</option>' + o('crypto','Crypto') + o('forex','Forex') + o('futures','Futures') + o('indices','Indices') + o('commodities','Commodities') + o('stocks','Stocks'))}
-{sel('f-type', T['filter_type'], '<option value="">Any</option>' + o('1-step','1-step') + o('2-step','2-step') + o('3-step','3-step') + o('instant','Instant funding'))}
-{sel('f-fee', T['filter_fee'], '<option value="">Any</option>' + o('50','$50 or less') + o('100','$100 or less') + o('200','$200 or less'))}
-{sel('f-split', T['filter_split'], '<option value="">Any</option>' + o('80','80%+') + o('90','90%+') + o('100','100%'))}
-{sel('f-sort', T['sort'], o('score','PA Score') + o('fee','Lowest entry fee') + o('split','Highest split') + o('maxsize','Largest account') + o('payout','Fastest payouts') + o('tp','Trustpilot') + o('founded','Longest running') + o('name','A to Z'))}</div>
-<button type="button" class="fbtn" id="f-more" aria-expanded="false" aria-controls="fmore">{ic('sliders')}<span>Filters</span><b class="n" id="f-active" hidden></b></button>
-<p class="count" id="count" aria-live="polite"></p></div>
-<div class="fmore" id="fmore">{sel('f-size', T['filter_size'], '<option value="">Any</option>' + o('10000','$10K+') + o('50000','$50K+') + o('100000','$100K+') + o('200000','$200K+') + o('300000','$300K+'))}
-{sel('f-plat', T['filter_platform'], '<option value="">Any</option>' + plats)}
-{sel('f-payout', T['filter_payout'], '<option value="">Any</option>' + o('daily','Daily / on demand') + o('weekly','Weekly or faster') + o('biweekly','Bi-weekly or faster'))}
-{sel('f-country', T['filter_country'], '<option value="">Any country</option>' + ctry)}
-<label class="tog"><input type="checkbox" id="f-news"><span>{T['filter_news']}</span></label><label class="tog"><input type="checkbox" id="f-weekend"><span>{T['filter_weekend']}</span></label>
-<button type="button" class="linkbtn" id="f-reset">{T['filter_reset']}</button></div></form>"""
+# filters_html(firms=None, cats=True): account-type tabs + multi-select facets, defined in scripts/more_categories.py
 
 TABLE_COLS = [("c-rk", '<abbr title="Rank by PA Score">#</abbr>'), ("c-firm", T["col_firm"]), ("c-sc", T["col_score"]), ("c-tp", T["col_rating"]),
               ("c-fee num", T["col_fee"]), ("c-max num", T["col_maxsize"]), ("c-split", T["col_split"]), ("c-dd", T["col_dd"]), ("c-pay", T["col_payout"]),
@@ -367,12 +352,12 @@ def th_html(c, t):
     aria = ' aria-sort="descending"' if k == "score" else ""
     return (f'<th class="{c}" scope="col" data-sort="{k}"{aria}><button type="button" class="sort">{t}'
             f'<svg class="si" viewBox="0 0 8 12" aria-hidden="true"><path class="su" d="M4 0 8 5H0z"/><path class="sd" d="M4 12 0 7h8z"/></svg></button></th>')
-def table(firms, empty=False):
+def table(firms, empty=False, local=False):
     head = "".join(th_html(c, t) for c, t in TABLE_COLS)
     emp = (f'<div class="empty" id="empty" hidden><p><b>No firm matches every filter.</b> Loosen one, or start again.</p>'
            f'<button type="button" class="btn line sm" data-reset>{T["filter_reset"]} filters</button></div>') if empty else ""
     return (f'<div class="tablewrap"><table class="firms" id="firms"><caption class="sr">Prop firms ranked by PA Score</caption>'
-            f'<thead><tr>{head}</tr></thead><tbody>{"".join(row(f) for f in firms)}</tbody></table></div>{emp}')
+            f'<thead><tr>{head}</tr></thead><tbody>{"".join(row(f, i + 1 if local else None) for i, f in enumerate(firms))}</tbody></table></div>{emp}')
 
 def legend():
     return (f'<p class="legend"><span>{NA} the firm does not publish this figure.</span>'
@@ -397,7 +382,7 @@ def pair_link(a, b):
             f'<i aria-hidden="true">vs</i><span class="sr"> versus </span><span>{e(BY[b]["name"])}</span></a></li>')
 
 # ---------------- pages ----------------
-ASSET_V = "9"
+ASSET_V = "10"
 WEB_FONTS = ("instrument-sans.woff2",)   # bricolage/geist stay in src/fonts for scripts/og.html only
 def write_assets():
     os.makedirs(os.path.join(OUT, "assets", "fonts"), exist_ok=True)
@@ -421,7 +406,8 @@ def write_assets():
 def home():
     n_prog = sum(len(as_list(f.get("programs"))) for f in FIRMS)
     n_codes = sum(1 for f in FIRMS if (f.get("discount_code") or {}).get("code"))
-    lists = "".join(f'<li><a href="{url("/best/" + s + "/")}"><span>{e(t)}</span><b class="n">{sum(1 for f in FIRMS if fn(f))}</b></a></li>' for s, t, _, fn in BEST)
+    lists = "".join(f'<li><a href="{url(p)}"><span>{e(n)} prop firms</span><b class="n">{sum(1 for f in FIRMS if f.get("category") == k)}</b></a></li>' for k, n, p in globals().get("CATS", []))
+    lists += "".join(f'<li><a href="{url("/best/" + s + "/")}"><span>{e(t)}</span><b class="n">{sum(1 for f in FIRMS if fn(f))}</b></a></li>' for s, t, _, fn in BEST)
     pairs = "".join(pair_link(a, b) for a, b in PAIRS[:8])
     n_src = sum(len(as_list(f.get("source_urls"))) for f in FIRMS)
     avg_c = round(sum(f["_complete"] for f in FIRMS) / len(FIRMS))
@@ -708,7 +694,7 @@ def seo_files():
     open(os.path.join(OUT, ".nojekyll"), "w").write("")
     if SITE_URL.startswith("https://") and "github.io" not in SITE_URL and not BASE: open(os.path.join(OUT, "CNAME"), "w").write(SITE_URL.split("://", 1)[1] + "\n")
 
-for _m in ("more_core.py", "more_pages_a.py", "more_pages_b.py", "more_guides.py", "more_programmatic.py", "more_zh.py"):
+for _m in ("more_core.py", "more_pages_a.py", "more_pages_b.py", "more_guides.py", "more_programmatic.py", "more_zh.py", "more_categories.py"):
     _p = os.path.join(ROOT, "scripts", _m); exec(compile(open(_p).read(), _p, "exec"))
 
 if __name__ == "__main__":

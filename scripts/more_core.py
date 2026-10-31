@@ -29,7 +29,7 @@ for f in FIRMS:
     if f["slug"] in CRYPTO: f["crypto"] = CRYPTO[f["slug"]]
     f["_x"] = f.get("extra") or {}; f["_c"] = f.get("crypto") or {}
 CRYPTO_FIRMS = [f for f in RANKED if "crypto" in f["_assets"]]
-def is_native(f): return f.get("category") == "crypto" or f["_assets"] == ["crypto"]
+def is_native(f): return f.get("segment", f.get("category")) in ("crypto", "crypto-exchange") or f["_assets"] == ["crypto"]   # segment = pre-2026-10-31 asset-mix label
 
 def pct_off(dc):
     m = re.search(r"(\d+(?:\.\d+)?)\s*%\s*off", str((dc or {}).get("value") or ""), re.I)
@@ -282,7 +282,7 @@ def firm_page(f):
            else (f'<span class="nil">No rating shown ({int(num(tp["count"])):,} reviews)</span>' if tp.get("count") else '<span class="nil">Not available</span>'))
     cpk = cost_per_k(f)
     lv = f.get("last_verified") or TODAY
-    meta = [x for x in (e(short_hq(f.get("hq") or "")), f'Founded <span class="n">{int(num(f["founded"]))}</span>' if num(f.get("founded")) else "",
+    meta = [x for x in (cat_badge(f), e(short_hq(f.get("hq") or "")), f'Founded <span class="n">{int(num(f["founded"]))}</span>' if num(f.get("founded")) else "",
                         f'{T["last_verified"]} <time class="n" datetime="{e(lv)}">{nice_date(lv)}</time>',
                         f'<a href="#sources"><span class="n">{len(as_list(f.get("source_urls")) + as_list(f["_x"].get("sources")) + as_list(f["_c"].get("sources")))}</span> source pages</a>',
                         f'<a href="{url("/methodology/")}">Methodology</a>') if x]
@@ -291,7 +291,7 @@ def firm_page(f):
              ("Cheapest per $1K", mh(cpk, f.get("fee_currency")).replace(NA, NIL)), ("Account sizes", ('<span class="n">' + e(", ".join(money(s) for s in f["_sizes"])) + "</span>") if f["_sizes"] else NIL),
              ("Profit target", show(f.get("profit_target"))), ("Daily loss limit", show(f.get("max_daily_loss"))), ("Max drawdown", show(f.get("max_drawdown"))),
              ("Drawdown type", show(f.get("drawdown_type"))), ("Min trading days", show(f.get("min_trading_days"))), ("Consistency rule", show(f.get("consistency_rule"))),
-             ("Markets", show([ASSET_LABEL.get(a, a) for a in f["_assets"]])), ("Platforms", show(f["_platforms"])), ("Leverage", show(f.get("leverage"))),
+             ("Account type", acct_type_html(f)), ("Markets", show([ASSET_LABEL.get(a, a) for a in f["_assets"]])), ("Platforms", plat_chips(f)), ("Leverage", show(f.get("leverage"))),
              ("Restricted countries", show(restricted) if restricted else '<span class="nil">Not listed</span>'), ("Trustpilot", tps)]),
     ])
     crypto_link = (f'<p class="clink"><a class="more" href="{url("/crypto/" + f["slug"] + "/")}">Crypto rules for {e(f["name"])}{ic("arrow")}</a></p>') if "crypto" in f["_assets"] else ""

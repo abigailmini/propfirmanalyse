@@ -2,7 +2,7 @@
   "name": "Nova Funding",
   "slug": "nova-funding",
   "site": null,
-  "category": null,
+  "category": "cfd",
   "assets": [],
   "challenge_types": [],
   "account_sizes": [],
@@ -35,5 +35,8 @@
     "https://propfirm201.com/firms/nova-funding"
   ],
   "notes": "EXCLUDED: novafunding.com redirects to a lawsuit-loan site (Nova Legal Funding), not a prop firm. A forex prop firm called Nova Funding did exist (launched Mar 2024 per third-party review sites), but vettedpropfirms.com reports its official website has gone offline and the firm appears to have shut down amid non-payment/scam allegations. No live official domain could be confirmed (novafunding.io/.co do not resolve), so no data could be collected from the firm's own site. web_search was unavailable; identification via DuckDuckGo + third-party pages only.",
-  "excluded": true
+  "excluded": true,
+  "segment": null,
+  "also_offers": [],
+  "category_basis": "Listed as a forex/CFD firm before it went offline (excluded from the site)."
 }

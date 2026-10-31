@@ -2,7 +2,7 @@
   "name": "Crypto Fund Trader",
   "slug": "crypto-fund-trader",
   "site": "https://cryptofundtrader.com",
-  "category": "multi",
+  "category": "crypto-exchange",
   "assets": [
     "crypto",
     "forex",
@@ -158,5 +158,11 @@
     "https://cryptofundtrader.com/faq/",
     "https://www.trustpilot.com/review/cryptofundtrader.com"
   ],
-  "notes": "Fees read from homepage program/size selector (one-time fee). Instant scales up to $1,280,000 by doubling at each 10% target. Operator SWISS RLCRATES AG (Bahnhofstrasse 21, Zug); MT5 via RLCRATES S.L.; offices also Pamplona and Dubai. FAQ: no country restrictions on Match-Trader/Bybit, MT5 unavailable to US residents. Max $300K final-stage allocation (excl. Instant/Ascend/Break). Other programs (Ascend - news restricted 2 min either side; Break - activation fee, 40% consistency, 3-4% trailing) not captured. Payout processing avg ~8h, up to 48 business hours. Homepage has a mini-game to reveal a discount code; no code shown publicly. Trustpilot shows rating unavailable (guidelines breach), 1,110 reviews. Founded year not found."
+  "notes": "Fees read from homepage program/size selector (one-time fee). Instant scales up to $1,280,000 by doubling at each 10% target. Operator SWISS RLCRATES AG (Bahnhofstrasse 21, Zug); MT5 via RLCRATES S.L.; offices also Pamplona and Dubai. FAQ: no country restrictions on Match-Trader/Bybit, MT5 unavailable to US residents. Max $300K final-stage allocation (excl. Instant/Ascend/Break). Other programs (Ascend - news restricted 2 min either side; Break - activation fee, 40% consistency, 3-4% trailing) not captured. Payout processing avg ~8h, up to 48 business hours. Homepage has a mini-game to reveal a discount code; no code shown publicly. Trustpilot shows rating unavailable (guidelines breach), 1,110 reviews. Founded year not found.",
+  "segment": "multi",
+  "also_offers": [
+    "cfd"
+  ],
+  "category_basis": "Crypto-first firm and Bybit partner: trade from your own Bybit account via API; MT5 and Match-Trader CFD accounts are also sold.",
+  "category_source": "https://cryptofundtrader.com/faq/"
 }

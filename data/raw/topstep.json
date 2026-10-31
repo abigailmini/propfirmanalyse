@@ -106,5 +106,9 @@
     "https://help.topstep.com/en/articles/14289835-topstep-pricing-and-payment-questions",
     "https://www.trustpilot.com/review/topstep.com"
   ],
-  "notes": "Fees are MONTHLY subscriptions. Standard path adds a $149 XFA activation fee; No Activation Fee path has none. Min days 2 = 'can pass in as few as 2 days' under the consistency rule. XFA payout cap is 50% of balance, up to $2K-$6K per request. The new dashboard pays 100% of the first $10K for traders who joined before 2026-01-12. Founded: Patak Trading Partners 2010, Topstep Trader launched 2012. HQ inferred from 'Chicago West Loop office'. News/weekend rules and restricted countries not found."
+  "notes": "Fees are MONTHLY subscriptions. Standard path adds a $149 XFA activation fee; No Activation Fee path has none. Min days 2 = 'can pass in as few as 2 days' under the consistency rule. XFA payout cap is 50% of balance, up to $2K-$6K per request. The new dashboard pays 100% of the first $10K for traders who joined before 2026-01-12. Founded: Patak Trading Partners 2010, Topstep Trader launched 2012. HQ inferred from 'Chicago West Loop office'. News/weekend rules and restricted countries not found.",
+  "segment": "futures",
+  "also_offers": [],
+  "category_basis": "CME futures accounts on TopstepX.",
+  "category_source": "https://www.topstep.com/"
 }

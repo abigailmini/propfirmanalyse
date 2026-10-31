@@ -13,7 +13,7 @@ ZH_FOOT = [("/zh/sizes/10k/", "10K 挑战"), ("/zh/sizes/50k/", "50K 挑战"), (
 ZH_UI = {"skip": "跳到正文", "menu": "菜单", "explore": "浏览", "disc": "利益披露", "verified": "数据核实于", "open": "开放数据 (JSON)"}
 NIL_ZH = '<span class="nil">未公布</span>'
 BUCKET_ZH = {"daily": "每日 / 随时", "weekly": "每周", "biweekly": "每两周", "monthly": "每月", "other": "不固定"}
-CAT_ZH = {"crypto": "加密原生", "multi": "多资产", "forex-cfd": "外汇 / CFD", "futures": "期货"}
+CAT_ZH = {"futures": "期货", "cfd": "差价合约", "crypto-exchange": "加密交易所"}   # account type (data: category)
 TYPE_ZH = {"1-step": "一阶段", "2-step": "两阶段", "3-step": "三阶段", "instant": "直接资金", "express": "快速", "lightning": "闪电"}
 
 def zdate(d):
@@ -98,7 +98,7 @@ def zh_crypto():
     t = gtable(fl, [zrank(fl), ZFIRM, ZSCORE, ("类型", lambda f: "加密原生" if is_native(f) else "多资产", ""), ZFEE, ZSPLIT, ZPAY,
                     ("周末持仓", lambda f: ztri(f.get("weekend_holding")), ""), ("新闻交易", lambda f: ztri(f.get("news_trading")), ""),
                     ("规则表", lambda f: f'<a href="{url("/crypto/" + f["slug"] + "/")}" lang="en">查看</a>', "")], "加密货币自营交易公司排名")
-    secs = [("排名", t + '<p class="small">“规则表”链接到英文的加密货币专项规则：交易场所、合约类型、交易对数量、杠杆、机器人与跟单规则。</p>'),
+    secs = [("排名", t + f'<p class="note">只想看在交易所账户或交易所行情终端上交易永续合约的公司？见<a href="{url("/zh/crypto-exchange/")}">加密交易所类自营交易公司</a>；期货与 CFD 公司见<a href="{url("/zh/futures/")}">期货</a>和<a href="{url("/zh/cfd/")}">差价合约</a>分类。</p>' + '<p class="small">“规则表”链接到英文的加密货币专项规则：交易场所、合约类型、交易对数量、杠杆、机器人与跟单规则。</p>'),
             ("加密原生还是多资产？", f"<p>加密原生公司（{e(zlist([f['name'] for f in nat]))}）通常提供永续合约、交易所式订单簿、较高杠杆，并用稳定币出金。多资产公司把加密货币作为 CFD 放在外汇旁边，适合把加密只当作众多品种之一的交易者，但加密杠杆通常更低、点差更宽。</p>"),
             ("买加密挑战前要看什么", "<p><b>订单去哪里成交。</b>交易所式公司会接入 Bybit、BloFin 的模拟账户或自有终端，订单簿和资金费率更接近真实市场；CFD 公司自行报价，点差更宽，有时会因维护暂停加密品种。</p>"
              "<p><b>实际能用的杠杆。</b>加密原生公司常给 50 到 100 倍；多资产公司即使外汇给到 1:100，加密往往只有 1:1 到 1:5。仓位应按回撤限制来定，而不是按杠杆。</p>"
@@ -201,6 +201,11 @@ def zh_method():
     body = f"""<div class="wrap">{c}<article class="prose"><h1>我们如何收集数据、如何评分</h1>
 <p class="note"><b>利益披露。</b>PropAnalyse 由 FundedXYZ 背后的团队运营。FundedXYZ 与其他所有公司使用同一套评分规则：没有人工调整，不默认置顶，数据也按同一份清单收集。</p>
 <h2>数字从哪里来</h2><p>每个数字都读自该公司自己的网站（价格页、规则页、FAQ 或帮助中心），并按公司记录核实日期。评分来自该公司公开的 Trustpilot 页面。公司没有公布的数字，我们显示“未公布”，从不估算。</p>
+<h2 id="account-types">账户类型</h2><p>每家公司只归入一个账户类型，依据是该公司官网列出的交易平台和产品。如果一家公司销售两类账户，按主推产品归类，另一类记为“也提供”。账户类型不影响 PA 评分。</p>
+<table class="mini"><thead><tr><th scope="col">类型</th><th scope="col">交易什么、在哪里交易</th></tr></thead><tbody>
+<tr><td><a href="{url('/zh/futures/')}"><b>期货</b></a></td><td>交易所上市期货，主要是 CME 集团合约，通过 Rithmic、Tradovate、NinjaTrader 或公司自有期货平台交易；风控多为美元回撤。</td></tr>
+<tr><td><a href="{url('/zh/cfd/')}"><b>差价合约 (CFD)</b></a></td><td>在 MT5、MT4、cTrader、DXtrade 或 Match-Trader 上交易外汇、黄金、指数，常含加密货币 CFD；风控多为百分比。</td></tr>
+<tr><td><a href="{url('/zh/crypto-exchange/')}"><b>加密交易所</b></a></td><td>在通过 API 连接的交易所账户（Bybit、BloFin）或加密原生公司按交易所行情报价的自有终端上交易永续合约，通常以稳定币出金。</td></tr></tbody></table>
 <h2>PA 评分（0 到 10 分）</h2><p>一个公式，由构建脚本机械地计算：</p>
 <table class="mini"><thead><tr><th scope="col">组成</th><th scope="col" class="num">权重</th><th scope="col">输入</th></tr></thead><tbody>
 <tr><td>信任</td><td class="num n">30%</td><td>Trustpilot 分数（3.0 记 0 分，5.0 记满分），按评价数量（log₁₀）加权</td></tr>

@@ -2,7 +2,7 @@
   "name": "E8 Markets",
   "slug": "e8-markets",
   "site": "https://e8markets.com",
-  "category": "multi",
+  "category": "cfd",
   "assets": [
     "forex",
     "indices",
@@ -165,5 +165,11 @@
     "https://help.e8markets.com/en/articles/5514966-can-i-hold-positions-overnight-and-trade-over-the-weekend",
     "https://www.trustpilot.com/review/e8markets.com"
   ],
-  "notes": "Site is JS/403 to plain fetch; read via browser. E8 One fees/rules = homepage configurator default ($100K: 9% target, 6% dynamic DD, 4% daily); help article lists preset 6%/4% dynamic/3% daily — product is customizable at checkout. E8 Pro fees not captured (has 2% daily profit cap, 1% min payout, daily payouts). Also E8 Signature and E8 Zero (futures). Min days: 'pass in 1 day'. Restricted list = Classic/Perps; Futures list longer. Trustpilot shows rating unavailable (guidelines breach notice), 3,303 reviews."
+  "notes": "Site is JS/403 to plain fetch; read via browser. E8 One fees/rules = homepage configurator default ($100K: 9% target, 6% dynamic DD, 4% daily); help article lists preset 6%/4% dynamic/3% daily — product is customizable at checkout. E8 Pro fees not captured (has 2% daily profit cap, 1% min payout, daily payouts). Also E8 Signature and E8 Zero (futures). Min days: 'pass in 1 day'. Restricted list = Classic/Perps; Futures list longer. Trustpilot shows rating unavailable (guidelines breach notice), 3,303 reviews.",
+  "segment": "multi",
+  "also_offers": [
+    "futures"
+  ],
+  "category_basis": "Main products (E8 One, E8 Pro, E8 Signature) are CFD accounts on MT5, cTrader, Match-Trader and TradeLocker; E8 Zero is a futures product.",
+  "category_source": "https://help.e8markets.com/en/articles/13106558-all-product-overviews-e8-one-vs-e8-zero-vs-e8-pro-vs-e8-signature"
 }

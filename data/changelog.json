@@ -52,5 +52,23 @@
   "old": "up to 2 per 30 days per account, on a self-set Profit Sharing Day (2 to 60 days); monthly after 10 payouts; Instant Funding monthly; processed within 24h on working days in USDT",
   "new": "bi-weekly at most (up to 2 per 30 days per account) on a self-set Profit Sharing Day, 2 to 60 days; monthly after 10 payouts; Instant Funding monthly; processed within 24h on working days in USDT",
   "kind": "Payouts"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "fundingpips",
+  "firm": "FundingPips",
+  "field": "Platforms",
+  "old": null,
+  "new": "MT5, cTrader, Match-Trader",
+  "kind": "Rules"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "myfundedfutures",
+  "firm": "MyFundedFutures",
+  "field": "Platforms",
+  "old": null,
+  "new": "Tradovate, NinjaTrader, TradingView, Quantower, Volumetrica",
+  "kind": "Rules"
  }
 ]
