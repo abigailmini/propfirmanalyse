@@ -1,0 +1,38 @@
+{
+  "crypto_pairs": null,
+  "crypto_pairs_examples": [
+    "BTC",
+    "ETH"
+  ],
+  "crypto_leverage": "up to 1:100",
+  "crypto_venue": "Bybit demo account connected via API, or Fondeo Terminal (in-house, TradingView charts, live exchange data); Cleo coming soon",
+  "instrument_type": "perpetuals",
+  "weekend_crypto": true,
+  "payout_methods": [
+    "USDT",
+    "USDC"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": true,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": "Max 3% risk per trade; stop-loss within 5 min via TP/SL; total open risk ≤25% and total notional ≤2x initial balance; min order size 5% of initial balance; low-cap alts capped at 5% of initial balance",
+  "banned_strategies": [
+    "martingale",
+    "cross-account hedging",
+    "bots/automated trading",
+    "trading high-impact news",
+    "low-cap altcoins above 5% of balance"
+  ],
+  "bots_allowed": "banned",
+  "copy_trading": null,
+  "crypto_fees": null,
+  "notes": "USDT perpetual pairs (FAQ: BTC, ETH and popular altcoins via Bybit integration). Pair count not published. Scalping and overnight/weekend holding allowed. Payout max 5% of initial balance per cycle.",
+  "sources": [
+    "https://fondeo.xyz/en",
+    "https://fondeo.xyz/en/docs/trading-rules",
+    "https://fondeo.xyz/en/docs/funded-accounts",
+    "https://fondeo.xyz/en/faq",
+    "https://fondeo.xyz/en/blog/fondeo-terminal-trade-directly-no-external-platforms"
+  ],
+  "checked": "2026-10-31"
+}

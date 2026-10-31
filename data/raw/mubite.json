@@ -1,0 +1,341 @@
+{
+  "name": "Mubite",
+  "slug": "mubite",
+  "site": "https://mubite.com",
+  "category": "crypto-exchange",
+  "assets": [
+    "crypto",
+    "commodities",
+    "stocks"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step",
+    "instant"
+  ],
+  "account_sizes": [
+    5000,
+    10000,
+    25000,
+    50000,
+    100000,
+    200000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "One-Step Pro",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 89
+        },
+        {
+          "size": 10000,
+          "fee": 129
+        },
+        {
+          "size": 25000,
+          "fee": 289
+        },
+        {
+          "size": 50000,
+          "fee": 519
+        },
+        {
+          "size": 100000,
+          "fee": 819
+        },
+        {
+          "size": 200000,
+          "fee": 1199
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "3% (equity-based, resets 00:00 UTC)",
+      "max_drawdown": "6%",
+      "drawdown_type": "static",
+      "profit_split": "80% (90% with paid add-on)",
+      "min_trading_days": 0,
+      "notes": "Funded payout needs 3 profitable days (>=0.5% each) per cycle and Funded Score <30%. Fee not refundable."
+    },
+    {
+      "name": "One-Step Lite",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 49
+        },
+        {
+          "size": 10000,
+          "fee": 79
+        },
+        {
+          "size": 25000,
+          "fee": 159
+        },
+        {
+          "size": 50000,
+          "fee": 289
+        },
+        {
+          "size": 100000,
+          "fee": 459
+        },
+        {
+          "size": 200000,
+          "fee": 669
+        }
+      ],
+      "profit_target": "8%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "4%",
+      "drawdown_type": "static",
+      "profit_split": "80% (90% with paid add-on)",
+      "min_trading_days": 0,
+      "notes": "Funded payout needs 5 profitable days per cycle and Funded Score <20%. Fee not refundable."
+    },
+    {
+      "name": "Two-Step Pro",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 65
+        },
+        {
+          "size": 10000,
+          "fee": 110
+        },
+        {
+          "size": 25000,
+          "fee": 249
+        },
+        {
+          "size": 50000,
+          "fee": 419
+        },
+        {
+          "size": 100000,
+          "fee": 729
+        },
+        {
+          "size": 200000,
+          "fee": 1099
+        }
+      ],
+      "profit_target": "10% then 5%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "8% (10% with paid add-on)",
+      "drawdown_type": "static",
+      "profit_split": "80% (90% with paid add-on)",
+      "min_trading_days": 0,
+      "notes": "Evaluation needs 3 profitable days in phase 1 and 2 in phase 2. Funded Score <40%. Entry fee refunded with first payout (not on BOGO purchases)."
+    },
+    {
+      "name": "Nitro (Pay After You Pass)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 10000,
+          "fee": null,
+          "entry_fee": 19.9
+        },
+        {
+          "size": 25000,
+          "fee": null,
+          "entry_fee": 19.9
+        },
+        {
+          "size": 50000,
+          "fee": null,
+          "entry_fee": 19.9
+        },
+        {
+          "size": 100000,
+          "fee": null,
+          "entry_fee": 19.9
+        }
+      ],
+      "activation_fees": [
+        {
+          "size": 10000,
+          "fee": 81
+        },
+        {
+          "size": 25000,
+          "fee": 211
+        },
+        {
+          "size": 50000,
+          "fee": 390
+        },
+        {
+          "size": 100000,
+          "fee": 641
+        }
+      ],
+      "profit_target": "5%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "5%",
+      "drawdown_type": "static",
+      "profit_split": "80%",
+      "min_trading_days": 0,
+      "notes": "$19.90 entry fee, then a one-time activation fee (10K $81, 25K $211, 50K $390, 100K $641) payable within 5 days of passing. Total list cost 10K $100.90, 25K $230.90, 50K $409.90, 100K $660.90. First payout 14 days after first trade; 5 profitable days per cycle; Funded Score <20%. Discount codes not allowed.",
+      "deferred_fee": true,
+      "fee_note": "Entry fee only: an activation / funded-account fee is charged after you pass"
+    },
+    {
+      "name": "Instant Pro",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 225
+        },
+        {
+          "size": 10000,
+          "fee": 440
+        },
+        {
+          "size": 25000,
+          "fee": 1099
+        },
+        {
+          "size": 50000,
+          "fee": 2199
+        },
+        {
+          "size": 100000,
+          "fee": 4399
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": null,
+      "max_drawdown": "10% Smart Drawdown (locks at 5% below equity once +5% reached)",
+      "drawdown_type": "smart (static until locked)",
+      "profit_split": "70% (80% with paid add-on)",
+      "min_trading_days": 0,
+      "notes": "No daily drawdown. First payout after 14 days from first trade and +5% profit. Funded Score <25%. Max single position 1x and total exposure 2x initial balance."
+    },
+    {
+      "name": "Instant Lite",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 149
+        },
+        {
+          "size": 10000,
+          "fee": 259
+        },
+        {
+          "size": 25000,
+          "fee": 799
+        },
+        {
+          "size": 50000,
+          "fee": 1299
+        },
+        {
+          "size": 100000,
+          "fee": 2999
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": "3%",
+      "max_drawdown": "8%",
+      "drawdown_type": "static (per pricing data; FAQ Smart Drawdown text covers Instant Funding generally)",
+      "profit_split": "70% (80% with paid add-on)",
+      "min_trading_days": 0,
+      "notes": "7 profitable days per payout cycle; Funded Score <15%. First payout after 14 days from first trade and +5% profit."
+    }
+  ],
+  "fee_from": 49,
+  "profit_split": "80% up to 90%",
+  "profit_split_scale": "80% standard on One-Step/Two-Step/Nitro, 90% with paid Increased Profit Split add-on; Instant Funding 70%, 80% with add-on",
+  "max_daily_loss": "3%",
+  "max_drawdown": "6%",
+  "drawdown_type": "static",
+  "profit_target": "10%",
+  "leverage": "Up to 1:100",
+  "platforms": [
+    "Bybit",
+    "Cleo"
+  ],
+  "payout_frequency": "First payout on demand once funded (One-Step/Two-Step), then every 14 days; Instant Funding and Nitro first payout 14 days after first trade. Per-payout caps 2.5% → 5% of starting balance for payouts 1–6, uncapped from payout 7.",
+  "first_payout_days": 0,
+  "payout_speed": "typically within 24 to 48 hours",
+  "min_trading_days": 0,
+  "consistency_rule": "Funded stage only: Funded Score (best day / total profit from profitable days in cycle) must be below 30% One-Step Pro, 20% One-Step Lite/Nitro, 40% Two-Step Pro, 25% Instant Pro, 15% Instant Lite before each payout; plus required profitable days (>=0.5% of start balance) per payout cycle. Never breaches the account.",
+  "news_trading": "allowed",
+  "weekend_holding": "allowed",
+  "countries_restricted": null,
+  "founded": null,
+  "hq": "Prague, Czech Republic",
+  "discount_code": null,
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": null,
+    "count": 59,
+    "note": "Rating unavailable: Trustpilot says it removed fake reviews for this company (breach of its guidelines)",
+    "checked": "2026-10-31",
+    "source": "https://www.trustpilot.com/review/mubite.com"
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://mubite.com/en",
+    "https://mubite.com/en/challenge-prices",
+    "https://mubite.com/en/challengeRules",
+    "https://mubite.com/en/frequently-asked-questions",
+    "https://mubite.com/en/crypto-challenge-scaling",
+    "https://mubite.com/en/terms-and-conditions",
+    "https://mubite.com/en/crypto-prop-firm-affiliate-program",
+    "https://mubite.com/en/our-team",
+    "https://mubite.com/en/trading-platforms",
+    "https://www.trustpilot.com/review/mubite.com"
+  ],
+  "notes": "List prices taken from the structured program data on /challenge-prices (rendered price before discount). Halloween promo on 2026-10-31: 15% off regular products and up to 50% off the two new products (One-Step Lite, Instant Lite); e.g. $100K One-Step Pro $819 → $697. fee_from = $49 (One-Step Lite $5K); Nitro starts at $19.90 but needs an activation fee after passing (total from $100.90). Prices shown here differ from the price ranges in the FAQ text ('$45–$1,199', 'from $79', 'Instant $112.50–$4,999'), which look out of date. Same goes for min trading days: Rules page and pricing data say no minimum, but older FAQ answers say 10/3 days. Daily drawdown for One-Step is 3% on the rules page (one FAQ says 4%). Assets: USDT perpetuals only, including tokenized gold (XAUT) and tokenized stocks/commodities on Cleo; no forex. Free 7-day $100K trial available. Risk rules: 3% max realized loss per trade, funded position limits 2x single / 3x cumulative (Instant 1x/2x). Founded year is not on its own site. Legal entity Mubite s.r.o. (ICO 23221551). Trustpilot: the page shows 'rating unavailable due to a breach of our guidelines' and 'We've removed a number of fake reviews' (59 reviews, 73% 5-star, 21% 1-star). It also has one detailed public dispute over a $9,000 payout denial and account closure (company replied), so trustpilot is left null. Flag for review.",
+  "segment": "crypto",
+  "also_offers": [],
+  "category_basis": "Crypto-only prop firm: simulated USDT perpetual futures accounts on Bybit (own Bybit account connected via API) or the Cleo terminal using Binance market data.",
+  "category_source": "https://mubite.com/en",
+  "hq_country": {
+    "code": "CZ",
+    "source": "https://mubite.com/en",
+    "quote": "Prague, Czech Republic"
+  },
+  "max_allocation_usd": 400000,
+  "max_allocation_text": "FAQ 'What is the maximum allocation?' says $400,000 across funded accounts (another FAQ answer says $300,000); Instant Funding scaling up to $1,000,000",
+  "max_allocation_source": "https://mubite.com/en/frequently-asked-questions",
+  "field_sources": {
+    "category": "https://mubite.com/en",
+    "assets": "https://mubite.com/en/frequently-asked-questions",
+    "challenge_types": "https://mubite.com/en/challenge-prices",
+    "account_sizes": "https://mubite.com/en/challenge-prices",
+    "programs": "https://mubite.com/en/challenge-prices",
+    "fee_from": "https://mubite.com/en/challenge-prices",
+    "profit_split": "https://mubite.com/en/frequently-asked-questions",
+    "profit_split_scale": "https://mubite.com/en/frequently-asked-questions",
+    "max_daily_loss": "https://mubite.com/en/challengeRules",
+    "max_drawdown": "https://mubite.com/en/challengeRules",
+    "drawdown_type": "https://mubite.com/en/frequently-asked-questions",
+    "profit_target": "https://mubite.com/en/challengeRules",
+    "leverage": "https://mubite.com/en/challengeRules",
+    "platforms": "https://mubite.com/en",
+    "payout_frequency": "https://mubite.com/en/challengeRules",
+    "first_payout_days": "https://mubite.com/en/frequently-asked-questions",
+    "payout_speed": "https://mubite.com/en/frequently-asked-questions",
+    "max_allocation": "https://mubite.com/en/frequently-asked-questions",
+    "max_allocation_text": "https://mubite.com/en/crypto-challenge-scaling",
+    "min_trading_days": "https://mubite.com/en/challengeRules",
+    "consistency_rule": "https://mubite.com/en/frequently-asked-questions",
+    "news_trading": "https://mubite.com/en/challengeRules",
+    "weekend_holding": "https://mubite.com/en/challengeRules",
+    "hq": "https://mubite.com/en",
+    "hq_country": "https://mubite.com/en"
+  }
+}

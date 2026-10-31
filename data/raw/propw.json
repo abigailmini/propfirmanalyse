@@ -1,0 +1,217 @@
+{
+  "name": "PropW",
+  "slug": "propw",
+  "site": "https://www.propw.com/",
+  "category": "crypto-exchange",
+  "assets": [
+    "crypto",
+    "stocks",
+    "commodities"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step"
+  ],
+  "account_sizes": [
+    1000,
+    5000,
+    10000,
+    15000,
+    25000,
+    50000,
+    100000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "Two-Step Challenge",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 1000,
+          "fee": 15
+        },
+        {
+          "size": 5000,
+          "fee": 69
+        },
+        {
+          "size": 10000,
+          "fee": 99
+        },
+        {
+          "size": 50000,
+          "fee": 399
+        },
+        {
+          "size": 100000,
+          "fee": 799
+        }
+      ],
+      "profit_target": "Phase 1 5%, Phase 2 10%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10% (1K/5K/10K); 8% (50K/100K)",
+      "drawdown_type": "static",
+      "profit_split": "80% (up to 90% via Elite Trader Development Program)",
+      "min_trading_days": 3
+    },
+    {
+      "name": "One-Step Challenge",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 10000,
+          "fee": 149
+        },
+        {
+          "size": 15000,
+          "fee": 199
+        },
+        {
+          "size": 25000,
+          "fee": 299
+        },
+        {
+          "size": 50000,
+          "fee": 499
+        },
+        {
+          "size": 100000,
+          "fee": 999
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static",
+      "profit_split": "80% (up to 90% via Elite Trader Development Program)",
+      "min_trading_days": 3
+    }
+  ],
+  "fee_from": 15,
+  "profit_split": "80% up to 90%",
+  "profit_split_scale": "80% default; 90% for traders selected into the Elite Trader Development Program (discretionary review, e.g. 20%+ net profit 3 consecutive months)",
+  "max_daily_loss": "5% (2-step) / 4% (1-step)",
+  "max_drawdown": "10% (8% on 50K/100K) 2-step / 6% 1-step",
+  "drawdown_type": "static",
+  "profit_target": "5% + 10% (2-step) / 10% (1-step)",
+  "leverage": "Up to 5x on all assets",
+  "platforms": [
+    "PropW web terminal",
+    "PropW mobile app (iOS/Android)",
+    "TradingView charts"
+  ],
+  "payout_frequency": "Every 14 calendar days; first withdrawal 14 days after the funded/training account is activated",
+  "first_payout_days": 14,
+  "payout_speed": "Manual review within 1–2 business days (help centre); proof page states 24h processing",
+  "min_trading_days": 3,
+  "consistency_rule": "Best day ≤45% (2-step) / ≤40% (1-step) of cumulative net profit, checked at each withdrawal request",
+  "news_trading": "allowed",
+  "weekend_holding": "allowed",
+  "countries_restricted": [
+    "Mainland China",
+    "Hong Kong SAR",
+    "Iran",
+    "Iraq",
+    "Syria",
+    "Yemen",
+    "North Korea",
+    "Pakistan",
+    "Afghanistan",
+    "Myanmar",
+    "Cambodia",
+    "United States",
+    "Canada",
+    "Venezuela",
+    "Cuba",
+    "Nicaragua",
+    "Bolivia",
+    "Egypt",
+    "Libya",
+    "Tunisia",
+    "Algeria",
+    "Sudan",
+    "Ethiopia",
+    "Somalia",
+    "Mali",
+    "Zimbabwe",
+    "Ukraine (incl. Crimea, Donetsk, Luhansk)",
+    "Netherlands"
+  ],
+  "founded": 2024,
+  "hq": "Dubai, United Arab Emirates",
+  "discount_code": null,
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": null,
+    "count": 65,
+    "note": "Rating unavailable: Trustpilot says it removed fake reviews for this company (breach of its guidelines)",
+    "checked": "2026-10-31",
+    "source": "https://www.trustpilot.com/review/propw.com"
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://www.propw.com/en_US",
+    "https://docs.propw.com/getting-started/propw-evaluation-packages-and-core-trading-rules",
+    "https://docs.propw.com/propw-trading-rules/propw-evaluation-program-and-training-account-rules",
+    "https://docs.propw.com/propw-trading-rules/withdrawal-rules-for-proprietary-fund-profits",
+    "https://docs.propw.com/propw-trading-rules/propw-training-account-equity-and-scholarship-policy",
+    "https://docs.propw.com/getting-started/propw-platform-eligibility-requirements-and-regional-restrictions",
+    "https://docs.propw.com/propw-trading-rules/can-i-trade-news",
+    "https://docs.propw.com/bills-and-payments/what-payment-methods-does-propw-support",
+    "https://docs.propw.com/propw-trading-rules/propws-kyc-verification-rules",
+    "https://docs.propw.com/propw-trading-rules/propw-abnormal-trading-supervision-standards-and-handling-measures",
+    "https://docs.propw.com/propw-trading-rules/which-assets-can-be-traded-on-the-platform",
+    "https://docs.propw.com/getting-started/propw-faq",
+    "https://docs.propw.com/propw-trading-rules/notice-on-the-trading-mechanisms-of-the-propw-evaluation-program",
+    "https://docs.propw.com/propw-trading-rules/propw-consistency-rule-explanation-why-do-we-have-the-consistency-rule",
+    "https://www.propw.com/about-us",
+    "https://www.propw.com/proof",
+    "https://www.propw.com/affiliate-program",
+    "https://docs.propw.com/announcement/propw-highlights/publish-your-docs",
+    "https://www.trustpilot.com/review/propw.com"
+  ],
+  "notes": "2-step prices verified on the live homepage package selector (1K list 15 USDT, currently promo 9 USDT / 40% OFF; 5K 69; 10K 99; 50K 399; 100K 799). 1-step prices from the help-centre package table (could not switch to the 1-step tab in headless browser). The 1K 2-step has a 15-day trading period per phase and a 500 USDT lifetime reward cap (account closes after). HourTrader is a separate hour-long game-style product (audition fee 5–500 USDT, 1–8h, 10,000 USDT sim balance, reward = fee × 2/5/10x multiplier) — not a funded account, so excluded from fee_from. Evaluation fee is refunded in full on the first successful profit withdrawal. Prices quoted in USDT/$ interchangeably. All accounts are simulated (help centre: orders not sent to any external exchange), although the proof page claims execution on CoinW live markets. Homepage FAQ still says withdrawals every 7 days; current withdrawal rules say 14 days. Max position holding 10 days; trades closed <60s banned. Trustpilot left null: Trustpilot shows 'rating unavailable due to a breach of our guidelines — company displaying Trustpilot content in a misleading way' (65 reviews, 63% 5-star / 26% 1-star, only 2 in last 12 months). Recent promos: Halloween 100K Two-Step Express package $958 (Oct 27–28 2026).",
+  "segment": "crypto",
+  "also_offers": [],
+  "category_basis": "PropW (backed by CoinW Group) sells 1-step/2-step evaluations traded on its own CoinW-built crypto perpetual-style terminal (USDT pairs, up to 5x, funding rates), not MT/futures platforms.",
+  "category_source": "https://www.propw.com/en_US",
+  "founded_source": "https://www.propw.com/about-us",
+  "hq_country": {
+    "code": "AE",
+    "source": "https://www.propw.com/proof",
+    "quote": "Dubai, United Arab Emirates"
+  },
+  "max_allocation_usd": 200000,
+  "max_allocation_text": "Up to 200,000 USDT simulated training funds (largest listed package is 100,000 USDT)",
+  "max_allocation_source": "https://www.propw.com/en_US",
+  "field_sources": {
+    "category": "https://www.propw.com/en_US",
+    "assets": "https://docs.propw.com/propw-trading-rules/which-assets-can-be-traded-on-the-platform",
+    "challenge_types": "https://docs.propw.com/getting-started/propw-evaluation-packages-and-core-trading-rules",
+    "account_sizes": "https://docs.propw.com/getting-started/propw-evaluation-packages-and-core-trading-rules",
+    "programs": "https://docs.propw.com/getting-started/propw-evaluation-packages-and-core-trading-rules",
+    "fee_from": "https://www.propw.com/en_US",
+    "profit_split": "https://docs.propw.com/propw-trading-rules/propw-training-account-equity-and-scholarship-policy",
+    "profit_split_scale": "https://docs.propw.com/propw-trading-rules/propw-training-account-equity-and-scholarship-policy",
+    "max_daily_loss": "https://docs.propw.com/propw-trading-rules/propw-evaluation-program-and-training-account-rules",
+    "max_drawdown": "https://docs.propw.com/propw-trading-rules/propw-evaluation-program-and-training-account-rules",
+    "drawdown_type": "https://docs.propw.com/propw-trading-rules/propw-evaluation-program-and-training-account-rules",
+    "profit_target": "https://docs.propw.com/getting-started/propw-evaluation-packages-and-core-trading-rules",
+    "leverage": "https://www.propw.com/en_US",
+    "platforms": "https://www.propw.com/en_US",
+    "payout_frequency": "https://docs.propw.com/propw-trading-rules/withdrawal-rules-for-proprietary-fund-profits",
+    "first_payout_days": "https://docs.propw.com/propw-trading-rules/withdrawal-rules-for-proprietary-fund-profits",
+    "payout_speed": "https://docs.propw.com/propw-trading-rules/withdrawal-rules-for-proprietary-fund-profits",
+    "max_allocation": "https://www.propw.com/en_US",
+    "max_allocation_text": "https://www.propw.com/en_US",
+    "min_trading_days": "https://docs.propw.com/getting-started/propw-evaluation-packages-and-core-trading-rules",
+    "consistency_rule": "https://docs.propw.com/propw-trading-rules/withdrawal-rules-for-proprietary-fund-profits",
+    "news_trading": "https://docs.propw.com/propw-trading-rules/can-i-trade-news",
+    "weekend_holding": "https://www.propw.com/en_US",
+    "countries_restricted": "https://docs.propw.com/getting-started/propw-platform-eligibility-requirements-and-regional-restrictions",
+    "founded": "https://www.propw.com/about-us",
+    "hq": "https://www.propw.com/proof",
+    "hq_country": "https://www.propw.com/proof"
+  }
+}

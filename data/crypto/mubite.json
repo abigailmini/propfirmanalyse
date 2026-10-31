@@ -1,0 +1,43 @@
+{
+  "crypto_pairs": 600,
+  "crypto_pairs_examples": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT",
+    "XAUTUSDT"
+  ],
+  "crypto_leverage": "Up to 1:100 on Bybit and Cleo (Cleo default 10x)",
+  "crypto_venue": "Bybit (trader's own Bybit account/demo connected via API, 600+ USDT futures) or Cleo simulated terminal on Binance market data (360+ USDT futures)",
+  "instrument_type": "perpetuals",
+  "weekend_crypto": true,
+  "payout_methods": [
+    "USDC (ERC-20)",
+    "Bank transfer",
+    "Mubite Points"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": true,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": "3% max realized loss per trade (of equity at open). Funded One-Step/Two-Step/Nitro: single position ≤2x and total exposure ≤3x initial balance; Instant Funding: 1x single / 2x total. One 5-minute soft-breach grace per challenge.",
+  "banned_strategies": [
+    "latency arbitrage / HFT exploitation",
+    "cross-account hedging",
+    "group trading / account mirroring",
+    "copy trading",
+    "third-party or public bots",
+    "tick scalping with manipulative intent",
+    "over-leveraging beyond position limits",
+    "spot, options, USDC pairs, USD/EUR pairs on Bybit challenges",
+    "changing/deleting Bybit API key or modifying demo balance"
+  ],
+  "bots_allowed": "restricted",
+  "copy_trading": false,
+  "crypto_fees": "Cleo mirrors Binance fees: maker 0.02%, taker 0.05%; Bybit fees apply on Bybit. No payout fees.",
+  "notes": "Crypto-only firm. USDT-margined perpetuals only (no inverse, dated futures, USDC or spot). Tokenized gold (XAUT) on Bybit; tokenized stocks and commodities on Cleo. Bybit is not available in some jurisdictions (US, UK, Canada, etc.), so traders there are pointed to Cleo. Trading is not allowed while a payout is under review.",
+  "sources": [
+    "https://mubite.com/en",
+    "https://mubite.com/en/challengeRules",
+    "https://mubite.com/en/frequently-asked-questions"
+  ],
+  "checked": "2026-10-31"
+}

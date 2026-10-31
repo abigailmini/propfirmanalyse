@@ -1,0 +1,35 @@
+{
+  "crypto_pairs": 4,
+  "crypto_pairs_examples": [
+    "BTC (CME Bitcoin futures)",
+    "ETH (CME Ether futures)",
+    "MBT (CME Micro Bitcoin)",
+    "MET (CME Micro Ether)"
+  ],
+  "crypto_leverage": null,
+  "crypto_venue": "CME Group futures (simulated, Rithmic/Tradovate data)",
+  "instrument_type": null,
+  "weekend_crypto": false,
+  "payout_methods": [
+    "Rise: bank",
+    "Rise: crypto wallet (USDC/USDT)",
+    "Rise: exchange"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": true,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": "Contract caps per plan/size (e.g. 50K 1 Step 8 minis / 80 micros); positions must be flat 1 minute before close except on Diamond Hands/DTF",
+  "banned_strategies": [
+    "hedging the same or correlated instruments across accounts"
+  ],
+  "bots_allowed": "restricted",
+  "copy_trading": true,
+  "crypto_fees": "Per side: BTC $6.76, ETH $5.76, MBT $2.76, MET $0.46",
+  "notes": "Futures-only firm. Crypto exposure is limited to CME Bitcoin/Ether futures and their micros. These aren't perps or spot, so instrument_type is null. CME crypto futures don't trade on weekends. Payouts via Rise can be withdrawn to a crypto wallet.",
+  "sources": [
+    "https://elitetraderfunding.app/help/what-instruments-can-i-trade",
+    "https://elitetraderfunding.app/help/payout-withdrawal-options",
+    "https://elitetraderfunding.app/evaluations?category=1"
+  ],
+  "checked": "2026-10-31"
+}

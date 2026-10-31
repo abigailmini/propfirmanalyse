@@ -1,0 +1,214 @@
+{
+  "name": "Earn2Trade",
+  "slug": "earn2trade",
+  "site": "https://www.earn2trade.com",
+  "category": "futures",
+  "assets": [
+    "futures"
+  ],
+  "challenge_types": [
+    "1-step"
+  ],
+  "account_sizes": [
+    25000,
+    50000,
+    100000,
+    150000,
+    200000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "Trader Career Path (TCP)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 150
+        },
+        {
+          "size": 50000,
+          "fee": 190
+        },
+        {
+          "size": 100000,
+          "fee": 350
+        }
+      ],
+      "profit_target": "$1,750/$3,000/$6,000",
+      "max_daily_loss": "$550/$1,100/$2,200",
+      "max_drawdown": "$1,500/$2,000/$3,500",
+      "drawdown_type": "EOD trailing (eval & LiveSim); trailing on Live; fixed on $200K/$400K",
+      "profit_split": "50% below / 80% at or above withdrawal threshold ($1,500/$2,250/$3,000)",
+      "min_trading_days": null
+    },
+    {
+      "name": "Gauntlet Mini (GM)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 50000,
+          "fee": 170
+        },
+        {
+          "size": 100000,
+          "fee": 315
+        },
+        {
+          "size": 150000,
+          "fee": 375
+        },
+        {
+          "size": 200000,
+          "fee": 550
+        }
+      ],
+      "profit_target": "$3,000/$6,000/$9,000/$11,000",
+      "max_daily_loss": "$1,100/$2,200/$3,300/$4,400",
+      "max_drawdown": "$2,000/$3,500/$4,500/$6,000",
+      "drawdown_type": "EOD trailing (eval & LiveSim); trailing on Live",
+      "profit_split": "50% below / 80% at or above withdrawal threshold ($2,250/$3,000/$4,000/$5,000)",
+      "min_trading_days": null
+    }
+  ],
+  "fee_from": 150,
+  "profit_split": "50% up to 80%",
+  "profit_split_scale": "Split depends on single withdrawal size: 50% under threshold, 80% at/above it; TCP400 fixed 60/40",
+  "max_daily_loss": "$550-$4,400",
+  "max_drawdown": "$1,500-$6,000",
+  "drawdown_type": "EOD trailing",
+  "profit_target": "6-7% ($1,750 on 25K, $3,000 on 50K)",
+  "leverage": null,
+  "platforms": [
+    "Rithmic",
+    "NinjaTrader",
+    "Tradovate",
+    "TradingView",
+    "BlackArrow",
+    "DeepCharts",
+    "R|Trader",
+    "Sierra Chart",
+    "Quantower",
+    "Bookmap",
+    "ATAS",
+    "MotiveWave",
+    "MultiCharts",
+    "Finamark",
+    "Jigsaw"
+  ],
+  "payout_frequency": "Weekly (processed Wednesdays; request by 2 PM CT preceding Friday); no minimum days or consistency once funded",
+  "first_payout_days": null,
+  "payout_speed": "Weekly batch every Wednesday",
+  "min_trading_days": null,
+  "consistency_rule": "Eval: no single day ≥30% of total PnL (needs ≥4 profitable days in practice); none on LiveSim/Live",
+  "news_trading": "allowed",
+  "weekend_holding": "banned",
+  "countries_restricted": [
+    "Afghanistan",
+    "Albania",
+    "Azerbaijan",
+    "Burma (Myanmar)",
+    "Central African Republic",
+    "Cuba",
+    "Gibraltar",
+    "Iran",
+    "Iraq",
+    "Kenya",
+    "Libya",
+    "Mali",
+    "Nauru",
+    "Nigeria",
+    "North Korea",
+    "Pakistan",
+    "Russia",
+    "Somalia",
+    "South Sudan",
+    "Sudan",
+    "Syria",
+    "Turkmenistan",
+    "Ukraine",
+    "Venezuela",
+    "Yemen"
+  ],
+  "founded": 2016,
+  "hq": "Sheridan, WY, United States",
+  "discount_code": {
+    "code": "60PLUS50",
+    "value": "60% off evaluations + 50% off resets (Halloween flash sale)",
+    "percent": 60,
+    "source": "https://www.earn2trade.com/",
+    "verified": "2026-10-31",
+    "expires": null
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 4.5,
+    "count": 5059
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://www.earn2trade.com/",
+    "https://www.earn2trade.com/purchase",
+    "https://www.earn2trade.com/trader-career-path",
+    "https://www.earn2trade.com/gauntlet-mini",
+    "https://www.earn2trade.com/affiliates",
+    "https://www.trustpilot.com/review/earn2trade.com",
+    "https://help.earn2trade.com/en/articles/5452472-what-is-the-withdrawal-policy",
+    "https://help.earn2trade.com/en/articles/12036369-how-do-i-request-a-withdrawal",
+    "https://help.earn2trade.com/en/articles/2280137-what-is-the-fee-structure-on-the-live-or-livesim-accounts",
+    "https://help.earn2trade.com/en/articles/6803441-what-is-your-refund-policy",
+    "https://help.earn2trade.com/en/articles/11183609-reset-pricing-for-earn2trade-accounts",
+    "https://help.earn2trade.com/en/articles/1518606-where-are-you-based",
+    "https://help.earn2trade.com/en/articles/16295637-what-is-earn2trade",
+    "https://help.earn2trade.com/en/articles/16295753-earn2trade-eligibility-requirements",
+    "https://help.earn2trade.com/en/articles/2547638-i-m-not-an-american-us-citizen-can-i-still-get-funded",
+    "https://help.earn2trade.com/en/articles/2090496-can-i-hold-positions-overnight-on-the-trader-career-path-gauntlet-mini",
+    "https://help.earn2trade.com/en/articles/3224526-are-there-any-restrictions-on-when-i-can-trade-in-my-evaluation-account",
+    "https://help.earn2trade.com/en/articles/12034590-am-i-allowed-to-copy-trades-across-multiple-accounts",
+    "https://help.earn2trade.com/en/articles/3849975-what-is-the-maintain-consistency-rule",
+    "https://help.earn2trade.com/en/articles/5941958-what-are-the-evaluation-rules",
+    "https://help.earn2trade.com/en/articles/6877364-what-happens-when-i-complete-my-evaluation",
+    "https://help.earn2trade.com/en/articles/8255249-what-are-the-payment-methods",
+    "https://help.earn2trade.com/en/articles/6863807-what-is-the-difference-between-the-tcp25-tcp50-and-tcp100",
+    "https://help.earn2trade.com/en/articles/2090521-what-platforms-can-i-use-for-the-gauntlet-mini-trader-career-path"
+  ],
+  "notes": "Fees are MONTHLY subscriptions (list: TCP25 $150, TCP50 $190, TCP100 $350; GAU50 $170, GAU100 $315, GAU150 $375, GAU200 $550); free reset on each rebill. Halloween flash sale on site: 60% off evaluations + 50% off resets with code 60PLUS50 (homepage 'From $60'). Funded accounts (LiveSim/Live) are run by partner prop firms (e.g. Helios Trading Partners, Appius Trading Limited). LiveSim one-time $139 data/activation fee deducted from first withdrawal only. LiveSim max total withdrawal before auto-move to Live: TCP $1,750/$3,000/$6,000; GM $5,000. TCP growth plan: 25K→50K→100K→200K(→400K). Positions must be closed by 3:50 PM CT; no overnight. Founded inferred from homepage '10 YEARS In the Business' (as of 2026). HQ = registered office Earn2Trade LLC, 30 N Gould St, Sheridan WY; MENA site operated by franchise partner Bahia Education Services LLC, Dubai. Self-describes as an educational company, not regulated. 2025 pass rate 8.89% (site disclaimer).",
+  "segment": "futures",
+  "also_offers": [],
+  "category_basis": "Sells monthly-subscription futures evaluations (CME, COMEX, NYMEX, CBOT only) on Rithmic/NinjaTrader/Tradovate/BlackArrow feeds; stocks, forex, crypto and CFDs not available.",
+  "category_source": "https://www.earn2trade.com/",
+  "founded_source": "https://www.earn2trade.com/",
+  "hq_country": {
+    "code": "US",
+    "source": "https://help.earn2trade.com/en/articles/1518606-where-are-you-based",
+    "quote": "Sheridan, WY, United States"
+  },
+  "max_allocation_usd": 400000,
+  "max_allocation_text": "Trader Career Path growth plan scales up to $400K (TCP50/TCP100 only; TCP25 max $200K)",
+  "max_allocation_source": "https://www.earn2trade.com/",
+  "field_sources": {
+    "programs": "https://www.earn2trade.com/purchase",
+    "account_sizes": "https://www.earn2trade.com/purchase",
+    "fee_from": "https://www.earn2trade.com/purchase",
+    "profit_target": "https://www.earn2trade.com/trader-career-path",
+    "max_drawdown": "https://www.earn2trade.com/trader-career-path",
+    "max_daily_loss": "https://www.earn2trade.com/trader-career-path",
+    "drawdown_type": "https://help.earn2trade.com/en/articles/6877364-what-happens-when-i-complete-my-evaluation",
+    "profit_split": "https://help.earn2trade.com/en/articles/5452472-what-is-the-withdrawal-policy",
+    "profit_split_scale": "https://help.earn2trade.com/en/articles/5452472-what-is-the-withdrawal-policy",
+    "payout_frequency": "https://help.earn2trade.com/en/articles/12036369-how-do-i-request-a-withdrawal",
+    "payout_speed": "https://help.earn2trade.com/en/articles/12036369-how-do-i-request-a-withdrawal",
+    "max_allocation": "https://www.earn2trade.com/",
+    "max_allocation_text": "https://help.earn2trade.com/en/articles/6863807-what-is-the-difference-between-the-tcp25-tcp50-and-tcp100",
+    "consistency_rule": "https://help.earn2trade.com/en/articles/3849975-what-is-the-maintain-consistency-rule",
+    "news_trading": "https://help.earn2trade.com/en/articles/3224526-are-there-any-restrictions-on-when-i-can-trade-in-my-evaluation-account",
+    "weekend_holding": "https://help.earn2trade.com/en/articles/2090496-can-i-hold-positions-overnight-on-the-trader-career-path-gauntlet-mini",
+    "countries_restricted": "https://help.earn2trade.com/en/articles/2547638-i-m-not-an-american-us-citizen-can-i-still-get-funded",
+    "founded": "https://www.earn2trade.com/",
+    "hq": "https://help.earn2trade.com/en/articles/1518606-where-are-you-based",
+    "discount_code": "https://www.earn2trade.com/",
+    "trustpilot": "https://www.trustpilot.com/review/earn2trade.com",
+    "platforms": "https://www.earn2trade.com/",
+    "category": "https://www.earn2trade.com/"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "reset_fee": "Shown $100 for TCP25/50/100 and GAU50/100; GAU150 $130; GAU200 $155 (25K-50K reset prices are dynamic, always below a new subscription); free reset on every monthly rebill",
+  "retry_discount_pct": null,
+  "refund_policy": "No refunds, including automatic subscription renewals",
+  "fee_refundable": false,
+  "time_limit": "none - monthly subscription until passed or cancelled",
+  "has_time_limit": false,
+  "activation_fee": 139,
+  "payout_methods": [
+    "Rise ($50 non-US / 1.5% US)",
+    "Deel ($50)",
+    "Bayzat ($5-$40)",
+    "Direct crypto (select cases, 0.735%)"
+  ],
+  "min_payout": "$100",
+  "kyc_before_payout": true,
+  "scaling_plan": "Trader Career Path growth plan: withdraw profit target at each step to unlock 50K→100K→200K→400K accounts; progression ladder limits contracts by balance",
+  "ea_bots": null,
+  "copy_trading": false,
+  "hedging": null,
+  "max_risk_per_trade": null,
+  "inactivity_rule": null,
+  "notes": "Monthly subscription billed every 30 days. $139 LiveSim activation deducted from first profitable withdrawal (non-pro CME status); Live accounts pay CME data $140-$156/month per exchange. Trade copiers prohibited on all programs. Non-US traders submit W-8BEN before funding. Rise payouts unavailable in Iowa, Minnesota, South Carolina, Guam, Puerto Rico, USVI and Haiti. Max 3 funded accounts (only 1 Live). Purchase payments: cards, Apple/Google Pay, PayPal, crypto (BTC, ETH, XRP, USDC, USDT).",
+  "sources": [
+    "https://www.earn2trade.com/purchase",
+    "https://help.earn2trade.com/en/articles/11183609-reset-pricing-for-earn2trade-accounts",
+    "https://help.earn2trade.com/en/articles/6803441-what-is-your-refund-policy",
+    "https://help.earn2trade.com/en/articles/2280137-what-is-the-fee-structure-on-the-live-or-livesim-accounts",
+    "https://help.earn2trade.com/en/articles/5452472-what-is-the-withdrawal-policy",
+    "https://help.earn2trade.com/en/articles/12034590-am-i-allowed-to-copy-trades-across-multiple-accounts",
+    "https://help.earn2trade.com/en/articles/6877364-what-happens-when-i-complete-my-evaluation",
+    "https://help.earn2trade.com/en/articles/2547638-i-m-not-an-american-us-citizen-can-i-still-get-funded",
+    "https://help.earn2trade.com/en/articles/8255249-what-are-the-payment-methods",
+    "https://www.earn2trade.com/trader-career-path"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": 100,
+  "monthly_fee": true
+}

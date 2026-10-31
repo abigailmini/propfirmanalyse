@@ -1,0 +1,33 @@
+{
+  "reset_fee": "Reset option may be offered at Provider's discretion for a fee (T&C 18.9); amount not published",
+  "retry_discount_pct": null,
+  "refund_policy": "Refund only if requested within 7 days of registration with no trading activity; Two-Step Pro entry fee refunded with first payout (not for BOGO purchases)",
+  "fee_refundable": true,
+  "time_limit": "Unlimited",
+  "has_time_limit": false,
+  "activation_fee": null,
+  "payout_methods": [
+    "USDC (ERC-20)",
+    "Bank transfer",
+    "Mubite Points"
+  ],
+  "min_payout": 50,
+  "kyc_before_payout": true,
+  "scaling_plan": "Instant Funding: reach 10% profit within 120 days and the account doubles (5% paid out, 5% goes to scaling), up to $1,000,000",
+  "ea_bots": "restricted",
+  "copy_trading": false,
+  "hedging": false,
+  "max_risk_per_trade": "3% of equity at trade open (realized loss, per partial close and cumulative)",
+  "inactivity_rule": "Account deactivated after 30 days without trading; warning email at 14 days",
+  "notes": "fee_refundable true only for Two-Step Pro (refund with first payout); One-Step, Nitro and Instant fees are not refundable. Nitro has a one-time activation fee after passing (10K $81, 25K $211, 50K $390, 100K $641; pay within 5 days). Bots: only self-built bots allowed on Bybit; third-party/public bots banned; Cleo does not support external bots. Cross-account hedging banned. No payout fees. Promotional/free/BOGO bonus accounts capped at 5% lifetime payout.",
+  "sources": [
+    "https://mubite.com/en/challengeRules",
+    "https://mubite.com/en/frequently-asked-questions",
+    "https://mubite.com/en/terms-and-conditions",
+    "https://mubite.com/en/challenge-prices",
+    "https://mubite.com/en/crypto-challenge-scaling"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": null,
+  "monthly_fee": false
+}

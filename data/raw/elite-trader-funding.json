@@ -1,0 +1,283 @@
+{
+  "name": "Elite Trader Funding",
+  "slug": "elite-trader-funding",
+  "site": "https://elitetraderfunding.app",
+  "category": "futures",
+  "assets": [
+    "futures",
+    "indices",
+    "commodities",
+    "crypto"
+  ],
+  "challenge_types": [
+    "1-step",
+    "instant"
+  ],
+  "account_sizes": [
+    10000,
+    25000,
+    50000,
+    100000,
+    150000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "1 Step (Live Trailing)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 50000,
+          "fee": 207
+        },
+        {
+          "size": 100000,
+          "fee": 257
+        },
+        {
+          "size": 150000,
+          "fee": 347
+        }
+      ],
+      "profit_target": "$3,000 / $6,000 / $9,000",
+      "max_daily_loss": "none",
+      "max_drawdown": "$2,000 / $3,000 / $5,000",
+      "drawdown_type": "intraday trailing (open + realized profit)",
+      "profit_split": "up to 100% (sim, capped at $25K lifetime) / 80% LIVE ELITE",
+      "min_trading_days": 5
+    },
+    {
+      "name": "Static Drawdown",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 10000,
+          "fee": 147
+        },
+        {
+          "size": 25000,
+          "fee": 277
+        },
+        {
+          "size": 50000,
+          "fee": 497
+        }
+      ],
+      "profit_target": "$1,000 / $2,000 / $4,000",
+      "max_daily_loss": "none",
+      "max_drawdown": "$500 / $1,000 / $2,000",
+      "drawdown_type": "static",
+      "profit_split": "up to 100% (sim) / 80% LIVE ELITE",
+      "min_trading_days": 5
+    },
+    {
+      "name": "End of Day",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 50000,
+          "fee": 347
+        },
+        {
+          "size": 100000,
+          "fee": 487
+        }
+      ],
+      "profit_target": "$3,000 / $6,000",
+      "max_daily_loss": "$1,100 / $2,200 (hard breach)",
+      "max_drawdown": "$2,000 / $3,500",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "up to 100% (sim) / 80% LIVE ELITE",
+      "min_trading_days": 5
+    },
+    {
+      "name": "Diamond Hands (overnight + weekend holds)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 100000,
+          "fee": 397
+        }
+      ],
+      "profit_target": "$5,000",
+      "max_daily_loss": "$1,500 (hard breach)",
+      "max_drawdown": "$3,500",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "up to 100% (sim) / 80% LIVE ELITE",
+      "min_trading_days": 5
+    },
+    {
+      "name": "Fast Track (one-time)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 10000,
+          "fee": 57
+        },
+        {
+          "size": 10000,
+          "fee": 77
+        }
+      ],
+      "profit_target": "$2,000",
+      "max_daily_loss": "none",
+      "max_drawdown": "$500",
+      "drawdown_type": "EOD trailing ($57 variant) or static ($77 variant)",
+      "profit_split": "up to 100% (sim) / 80% LIVE ELITE",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Direct to Funded (one-time, no evaluation)",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 10000,
+          "fee": 357
+        },
+        {
+          "size": 50000,
+          "fee": 747
+        },
+        {
+          "size": 100000,
+          "fee": 997
+        }
+      ],
+      "profit_target": "safety net $1,600 / $5,100 / $5,100 before first payout",
+      "max_daily_loss": "none",
+      "max_drawdown": "$1,500 / $5,000 / $5,000",
+      "drawdown_type": "EOD trailing (10K, 50K); static (100K)",
+      "profit_split": "up to 100% (sim) / 80% LIVE ELITE",
+      "min_trading_days": 0
+    }
+  ],
+  "fee_from": 57,
+  "profit_split": "up to 100% (sim-funded) / 80% on LIVE ELITE",
+  "profit_split_scale": "Sim-funded: keep up to 100% until $25,000 total sim payouts per trader, then move to LIVE ELITE (real capital) at 80/20, uncapped",
+  "max_daily_loss": "none on 1 Step/Static/Fast Track/DTF; $1,100-$2,200 hard breach on EOD, $1,500 on Diamond Hands",
+  "max_drawdown": "$500-$5,000 depending on plan and size",
+  "drawdown_type": "varies by plan: intraday trailing (1 Step), static (Static), EOD trailing (EOD, Diamond Hands)",
+  "profit_target": "$1,000-$9,000 (about 6-10% of balance)",
+  "leverage": null,
+  "platforms": [
+    "Tradovate",
+    "NinjaTrader",
+    "TradingView",
+    "Rithmic",
+    "R Trader",
+    "ATAS",
+    "Bookmap",
+    "EdgeProX",
+    "eSignal",
+    "Finamark",
+    "Investor/RT",
+    "MotiveWave",
+    "Quantower",
+    "Sierra Chart",
+    "Tickblaze"
+  ],
+  "payout_frequency": "per payout cycle: first cycle after 8 Active Trade Days, then every 10 ATDs (DTF: 5/10/15/20 ATDs by size); LIVE ELITE: daily on business days",
+  "first_payout_days": 8,
+  "payout_speed": "same-day reward approval; 48-business-hour approval guarantee (else +$1,000)",
+  "min_trading_days": 5,
+  "consistency_rule": "Only Fast Track has a best-day cap: 40% to qualify, 30% at reward. Other plans have no consistency cap, but an Active Trade Day only counts if it hits a minimum $ profit and a % of your best day",
+  "news_trading": null,
+  "weekend_holding": "restricted",
+  "countries_restricted": [
+    "Afghanistan",
+    "Central African Republic",
+    "Congo (Brazzaville)",
+    "Cuba",
+    "Democratic Republic of the Congo",
+    "Guinea",
+    "Haiti",
+    "Iran",
+    "Iraq",
+    "Libya",
+    "Mali",
+    "Myanmar (Burma)",
+    "North Korea",
+    "Russian Federation",
+    "Somalia",
+    "South Sudan",
+    "Sudan",
+    "Syria",
+    "Ukraine",
+    "Venezuela",
+    "Yemen"
+  ],
+  "founded": 2022,
+  "hq": null,
+  "discount_code": null,
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 3.8,
+    "count": 1166
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://elitetraderfunding.app/",
+    "https://elitetraderfunding.app/evaluations?category=1",
+    "https://elitetraderfunding.app/evaluations?category=16",
+    "https://elitetraderfunding.app/evaluations?category=9",
+    "https://elitetraderfunding.app/evaluations?category=12",
+    "https://elitetraderfunding.app/evaluations?category=11",
+    "https://elitetraderfunding.app/evaluations?category=3",
+    "https://elitetraderfunding.app/1-step-evaluation",
+    "https://elitetraderfunding.app/payouts",
+    "https://elitetraderfunding.app/about",
+    "https://elitetraderfunding.app/elite",
+    "https://elitetraderfunding.app/affiliates",
+    "https://elitetraderfunding.app/help/supported-platforms-and-data-feed",
+    "https://elitetraderfunding.app/help/what-instruments-can-i-trade",
+    "https://elitetraderfunding.app/help/countries-restricted-and-supported",
+    "https://elitetraderfunding.app/help/consistency-rule-and-active-trade-days-atd-explained",
+    "https://elitetraderfunding.app/help/48-hour-payout-guarantee",
+    "https://elitetraderfunding.app/help/payout-withdrawal-options",
+    "https://elitetraderfunding.app/help/refund-policy",
+    "https://elitetraderfunding.app/help/kyc-policy-and-registering-as-a-business",
+    "https://elitetraderfunding.app/diamond-hands-evaluation",
+    "https://www.trustpilot.com/review/elitetraderfunding.com",
+    "https://elitetraderfunding.app/help/trade-copier-disclaimer",
+    "https://elitetraderfunding.app/help/policy-hedging-against-yourself-using-the-same-or-correlated-instrument-on-one-or-multiple-accounts"
+  ],
+  "notes": "All fees are list prices. Every evaluation except Fast Track and DTF is a MONTHLY subscription (auto-renews every 30 days). The site was running '90% off, grab 20 evals' at check time (e.g. 50K 1 Step $207 -> $20.70), but no code is shown publicly. Funded activation is $87/month or a one-time $177-$307 (DTF has none; Fast Track is monthly only). Note: the 1 Step landing page lists 50K/100K/250K, but the live evaluations page sells 50K/100K/150K (150K: $5,000 trailing DD); we used the evaluations page. Fast Track is two 10K variants ($57 EOD, $77 static) and both are listed as size 10000. Sim payouts are capped at $25,000 per trader; ETF may move traders to LIVE ELITE (real capital, 80/20) 'before, during, or after a payout request', and sim accounts close on conversion. Recent Trustpilot reviews (Oct 2026) complain that this live transition replaced pending sim payouts and that live accounts took a month+ to set up. ETF replies it's disclosed in its Terms. Trustpilot is 3.8 with 24% 1-star. Flagged as a risk but not excluded, since payouts are still being made (homepage Oct 2026 payout feed). The domain elitetraderfunding.com redirects to elitetraderfunding.app. Entity: Elite Trader Funding, LLC; founded 2022-02-14 by Kanwal Singh. No HQ address published. News-trading policy wasn't found on the pages checked. Overnight/weekend holding is only allowed on Diamond Hands and DTF; other plans must flatten one minute before close.",
+  "segment": "futures",
+  "also_offers": [],
+  "category_basis": "Sells simulated CME futures evaluations and sim-funded accounts on Tradovate, Rithmic, NinjaTrader and other futures platforms. U.S. futures only, with no forex, CFDs or equities.",
+  "category_source": "https://elitetraderfunding.app/help/what-instruments-can-i-trade",
+  "founded_source": "https://elitetraderfunding.app/about",
+  "max_allocation_text": "Up to 20 active Elite Sim-Funded accounts at once, with sizes up to $150K. Sim payouts are capped at $25,000 lifetime per trader before LIVE ELITE.",
+  "max_allocation_source": "https://elitetraderfunding.app/elite",
+  "field_sources": {
+    "category": "https://elitetraderfunding.app/help/what-instruments-can-i-trade",
+    "assets": "https://elitetraderfunding.app/help/what-instruments-can-i-trade",
+    "challenge_types": "https://elitetraderfunding.app/",
+    "account_sizes": "https://elitetraderfunding.app/evaluations?category=9",
+    "programs": "https://elitetraderfunding.app/evaluations?category=1",
+    "programs[1 Step]": "https://elitetraderfunding.app/evaluations?category=1",
+    "programs[Static]": "https://elitetraderfunding.app/evaluations?category=9",
+    "programs[End of Day]": "https://elitetraderfunding.app/evaluations?category=11",
+    "programs[Diamond Hands]": "https://elitetraderfunding.app/evaluations?category=12",
+    "programs[Fast Track]": "https://elitetraderfunding.app/evaluations?category=3",
+    "programs[Direct to Funded]": "https://elitetraderfunding.app/evaluations?category=16",
+    "fee_from": "https://elitetraderfunding.app/evaluations?category=3",
+    "profit_split": "https://elitetraderfunding.app/payouts",
+    "profit_split_scale": "https://elitetraderfunding.app/elite",
+    "max_daily_loss": "https://elitetraderfunding.app/",
+    "max_drawdown": "https://elitetraderfunding.app/evaluations?category=1",
+    "drawdown_type": "https://elitetraderfunding.app/",
+    "profit_target": "https://elitetraderfunding.app/evaluations?category=1",
+    "platforms": "https://elitetraderfunding.app/help/supported-platforms-and-data-feed",
+    "payout_frequency": "https://elitetraderfunding.app/payouts",
+    "first_payout_days": "https://elitetraderfunding.app/",
+    "payout_speed": "https://elitetraderfunding.app/help/48-hour-payout-guarantee",
+    "max_allocation_text": "https://elitetraderfunding.app/elite",
+    "min_trading_days": "https://elitetraderfunding.app/",
+    "consistency_rule": "https://elitetraderfunding.app/help/consistency-rule-and-active-trade-days-atd-explained",
+    "weekend_holding": "https://elitetraderfunding.app/diamond-hands-evaluation",
+    "countries_restricted": "https://elitetraderfunding.app/help/countries-restricted-and-supported",
+    "founded": "https://elitetraderfunding.app/about",
+    "trustpilot": "https://www.trustpilot.com/review/elitetraderfunding.com"
+  }
+}

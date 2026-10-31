@@ -272,6 +272,30 @@
    "value_usd": 19500000,
    "source": "https://www.fundedtradingplus.com/",
    "proof": "Homepage performance section 'TOTAL TRADER REWARDS $19.5M+ 2021 – 2026'; also highest single reward $189,083, 60K+ active traders"
+  },
+  "elite-trader-funding": {
+   "text": "$13M+ Paid Out",
+   "value_usd": 13000000,
+   "source": "https://elitetraderfunding.app/",
+   "proof": "Homepage stats: '$13M+ Paid Out', '13,000+ Funded Traders'. Payouts page: 'paid out over $13 million to more than 13,000 funded traders since 2022'"
+  },
+  "topone-futures": {
+   "text": "Paid out to traders $31,053,814",
+   "value_usd": 31053814,
+   "source": "https://www.toponefutures.com/",
+   "proof": "Homepage live counter 'Paid out to traders $31,053,814' (also '$30M+ Payouts to date', '28,000+ Total customers', '228,000+ Total accounts')"
+  },
+  "fondeo": {
+   "text": "$1M+ Total Rewarded",
+   "value_usd": 1000000,
+   "source": "https://fondeo.xyz/en",
+   "proof": "Homepage stats block: 12K+ Fondeo Accounts, 1K+ Rewarded Traders, $1M+ Total Rewarded; also on /en/about"
+  },
+  "propw": {
+   "text": "Total Rewards $1.66M+",
+   "value_usd": 1660000,
+   "source": "https://www.propw.com/en_US",
+   "proof": "Homepage counter 'Total Rewards $1.66M+' alongside 27K+ participants and $88M+ provided funds"
   }
  }
 }

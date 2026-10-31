@@ -1,0 +1,34 @@
+{
+  "crypto_pairs": 1,
+  "crypto_pairs_examples": [
+    "MBT (CME Micro Bitcoin futures)"
+  ],
+  "crypto_leverage": null,
+  "crypto_venue": "CME Group futures (simulated, Tradovate/NinjaTrader or BlackArrow)",
+  "instrument_type": null,
+  "weekend_crypto": false,
+  "payout_methods": [
+    "Rise: bank",
+    "Rise: crypto"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": true,
+  "min_trade_duration": "10 seconds (firm-wide minimum trade time rule)",
+  "max_position_or_risk_rule": "MBT has its own lower max contract limits; all positions closed by 4:10 PM EST daily",
+  "banned_strategies": [
+    "EAs/bots",
+    "copy trading across mismatched account types/sizes",
+    "correlated-asset mirroring"
+  ],
+  "bots_allowed": "banned",
+  "copy_trading": true,
+  "crypto_fees": null,
+  "notes": "Futures firm. The only crypto instrument listed is CME Micro Bitcoin (/MBT), which isn't a perp or spot product, so instrument_type is null. No weekend holding. Its CFD sister brand Top One Trader is a separate firm and isn't covered here.",
+  "sources": [
+    "https://help.toponefutures.com/en/articles/11021492-trading-instruments-available-at-top-one-futures",
+    "https://help.toponefutures.com/en/articles/11024317-what-are-the-payout-platforms",
+    "https://help.toponefutures.com/en/articles/10907901-can-i-hold-trades-overnight",
+    "https://help.toponefutures.com/en/articles/10907920-can-i-use-ea-s-bots"
+  ],
+  "checked": "2026-10-31"
+}

@@ -1,0 +1,31 @@
+{
+  "reset_fee": "Subscription: account resets on failure while subscribed (no separate reset fee published); no reset price published for One-/Two-Step",
+  "retry_discount_pct": null,
+  "refund_policy": "Challenge fee refunded with first profit split (One-Step/Two-Step only, not Subscription); terms otherwise say all payments are final and non-refundable once trading started",
+  "fee_refundable": true,
+  "time_limit": "Unlimited",
+  "has_time_limit": false,
+  "activation_fee": 0,
+  "payout_methods": [
+    "USDT",
+    "USDC"
+  ],
+  "min_payout": 100,
+  "kyc_before_payout": true,
+  "scaling_plan": "Every 4 months if profitable: +25% account size; max account $1,000,000 USDT, total capital across active accounts max $200,000; split +5% per 4 months to 90%",
+  "ea_bots": "banned",
+  "copy_trading": null,
+  "hedging": "cross-account hedging banned",
+  "max_risk_per_trade": "3% of initial balance (stop-loss mandatory within 5 minutes)",
+  "inactivity_rule": "Account may be closed after 90 consecutive days with no trading",
+  "notes": "Activation fee: none mentioned; homepage subscription card says '$0 Funding Fee'. KYC not needed for challenges; required before trading the funded account. Max 5% profit per payout cycle (excess forfeited); no withdrawal fees. Max exposure 25% risk and 2x notional of initial balance. Low-cap altcoins (<$100M cap or <$5M 24h volume) limited to 5% of initial balance. Martingale banned.",
+  "sources": [
+    "https://fondeo.xyz/en",
+    "https://fondeo.xyz/en/docs/trading-rules",
+    "https://fondeo.xyz/en/docs/funded-accounts",
+    "https://fondeo.xyz/en/terms-and-conditions"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": null,
+  "monthly_fee": false
+}

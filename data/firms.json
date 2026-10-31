@@ -4154,6 +4154,765 @@
       }
     },
     {
+      "name": "Fondeo",
+      "slug": "fondeo",
+      "site": "https://fondeo.xyz",
+      "category": "crypto-exchange",
+      "assets": [
+        "crypto"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step"
+      ],
+      "account_sizes": [
+        5000,
+        10000,
+        25000,
+        50000,
+        100000,
+        200000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "One-Step",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 119
+            },
+            {
+              "size": 10000,
+              "fee": 219
+            },
+            {
+              "size": 25000,
+              "fee": 399
+            },
+            {
+              "size": 50000,
+              "fee": 539
+            },
+            {
+              "size": 100000,
+              "fee": 799
+            },
+            {
+              "size": 200000,
+              "fee": 1399
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "4%",
+          "max_drawdown": "6%",
+          "drawdown_type": "static (max loss from initial balance); daily loss trailing from day's equity high",
+          "profit_split": "70% up to 90%",
+          "min_trading_days": 10
+        },
+        {
+          "name": "Two-Step",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 89
+            },
+            {
+              "size": 10000,
+              "fee": 159
+            },
+            {
+              "size": 25000,
+              "fee": 299
+            },
+            {
+              "size": 50000,
+              "fee": 399
+            },
+            {
+              "size": 100000,
+              "fee": 599
+            },
+            {
+              "size": 200000,
+              "fee": 999
+            }
+          ],
+          "profit_target": "10% / 5%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "10% (Phase 2: 5%; funded: 10%)",
+          "drawdown_type": "static (max loss from initial balance); daily loss trailing from day's equity high",
+          "profit_split": "70% up to 90%",
+          "min_trading_days": 10
+        },
+        {
+          "name": "Subscription",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 49
+            },
+            {
+              "size": 50000,
+              "fee": 150
+            },
+            {
+              "size": 100000,
+              "fee": 300
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "4%",
+          "max_drawdown": "5%",
+          "drawdown_type": "static (max loss from initial balance); daily loss trailing from day's equity high",
+          "profit_split": "50% up to 70%",
+          "min_trading_days": 10
+        }
+      ],
+      "fee_from": 49,
+      "profit_split": "70% up to 90%",
+      "profit_split_scale": "+5% every 4 months funded: 70% (0-4m), 75%, 80%, 85%, 90% from month 16; Subscription accounts 50% rising to 70%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static max loss; daily loss trailing from intraday equity high",
+      "profit_target": "10%",
+      "leverage": "up to 1:100",
+      "platforms": [
+        "Bybit",
+        "Fondeo Terminal",
+        "TradingView"
+      ],
+      "payout_frequency": "On demand (daily possible); first payout 1 calendar day after first funded trade; must withdraw once profit hits 5% cap",
+      "first_payout_days": 1,
+      "payout_speed": "12-48 hours",
+      "min_trading_days": 10,
+      "consistency_rule": "Evaluation only: no single day >40% of total profit; also min 50% win rate in evaluation. Not applied on funded accounts.",
+      "news_trading": "restricted",
+      "weekend_holding": "allowed",
+      "countries_restricted": null,
+      "founded": null,
+      "hq": "Sheridan, Wyoming, USA",
+      "discount_code": null,
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.3,
+        "count": 7
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://fondeo.xyz/en",
+        "https://fondeo.xyz/en/docs/trading-rules",
+        "https://fondeo.xyz/en/docs/funded-accounts",
+        "https://fondeo.xyz/en/terms-and-conditions",
+        "https://fondeo.xyz/en/about",
+        "https://fondeo.xyz/en/affiliates",
+        "https://fondeo.xyz/en/faq",
+        "https://fondeo.xyz/en/blog/fondeo-terminal-trade-directly-no-external-platforms",
+        "https://www.trustpilot.com/review/fondeo.xyz"
+      ],
+      "notes": "Operator: Red G Tech LLC (Wyoming reg. 35-2900121), registered-agent address 30 N Gould St, Sheridan WY. Prices are the list prices embedded in the homepage challenge data (USD; account capital in USDT); subscription is per month. No promo/discount code seen. One-Step and Subscription rules taken from docs (One-Step 4% daily/6% max; Subscription 4%/5%); the raw homepage challenge config still shows older values (10% daily/max for one-step, 6% max for subscription), so docs used. Two-Step: P1 10% target/10 days, P2 5% target/5 days/5% max loss; funded 5% daily/10% max. Extra eval rules: stop-loss mandatory within 5 min, max 3% risk per trade, min order size 5% of balance, min 3 trades per counted day, day P&L must be outside ±1%, 50% min win rate. Payout cap: max 5% of initial balance per payout, excess above 5% forfeited; balance resets after withdrawal. Challenge fee refunded with first split (not for Subscription). Founded year not stated (Trustpilot profile claimed May 2025; terms dated June 2025). Red flags: homepage claims '5.0 from 200+ reviews' and shows testimonial/payout cards with repeated names, but Trustpilot shows 4.3 from only 7 reviews, all May 2025, 0 in last 12 months. Homepage claims $1M+ total rewarded (unverified). Cleo platform 'coming soon'. Bybit is the exchange; Terminal uses live exchange data.",
+      "segment": "crypto",
+      "also_offers": [],
+      "category_basis": "Sells crypto perpetual (USDT pairs) evaluations traded on Bybit demo via API or on Fondeo's own Terminal with live exchange data; MT4/MT5 not supported.",
+      "category_source": "https://fondeo.xyz/en/docs/trading-rules",
+      "hq_country": {
+        "code": "US",
+        "source": "https://fondeo.xyz/en/terms-and-conditions",
+        "quote": "Sheridan, Wyoming, USA"
+      },
+      "max_allocation_usd": 200000,
+      "max_allocation_text": "Total capital across all active accounts cannot exceed $200,000 (scaling +25% every 4 months; individual account cap stated as $1,000,000 USDT)",
+      "max_allocation_source": "https://fondeo.xyz/en/docs/funded-accounts",
+      "field_sources": {
+        "category": "https://fondeo.xyz/en/docs/trading-rules",
+        "assets": "https://fondeo.xyz/en/faq",
+        "challenge_types": "https://fondeo.xyz/en",
+        "account_sizes": "https://fondeo.xyz/en",
+        "programs": "https://fondeo.xyz/en",
+        "fee_from": "https://fondeo.xyz/en",
+        "profit_split": "https://fondeo.xyz/en/docs/funded-accounts",
+        "profit_split_scale": "https://fondeo.xyz/en/docs/funded-accounts",
+        "max_daily_loss": "https://fondeo.xyz/en/docs/trading-rules",
+        "max_drawdown": "https://fondeo.xyz/en/docs/trading-rules",
+        "drawdown_type": "https://fondeo.xyz/en/docs/trading-rules",
+        "profit_target": "https://fondeo.xyz/en/docs/trading-rules",
+        "leverage": "https://fondeo.xyz/en",
+        "platforms": "https://fondeo.xyz/en/blog/fondeo-terminal-trade-directly-no-external-platforms",
+        "payout_frequency": "https://fondeo.xyz/en/docs/funded-accounts",
+        "first_payout_days": "https://fondeo.xyz/en/docs/funded-accounts",
+        "payout_speed": "https://fondeo.xyz/en/docs/funded-accounts",
+        "max_allocation": "https://fondeo.xyz/en/docs/funded-accounts",
+        "min_trading_days": "https://fondeo.xyz/en/docs/trading-rules",
+        "consistency_rule": "https://fondeo.xyz/en/docs/trading-rules",
+        "news_trading": "https://fondeo.xyz/en/docs/trading-rules",
+        "weekend_holding": "https://fondeo.xyz/en/docs/trading-rules",
+        "hq": "https://fondeo.xyz/en/terms-and-conditions",
+        "hq_country": "https://fondeo.xyz/en/terms-and-conditions",
+        "trustpilot": "https://www.trustpilot.com/review/fondeo.xyz"
+      }
+    },
+    {
+      "name": "Mubite",
+      "slug": "mubite",
+      "site": "https://mubite.com",
+      "category": "crypto-exchange",
+      "assets": [
+        "crypto",
+        "commodities",
+        "stocks"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step",
+        "instant"
+      ],
+      "account_sizes": [
+        5000,
+        10000,
+        25000,
+        50000,
+        100000,
+        200000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "One-Step Pro",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 89
+            },
+            {
+              "size": 10000,
+              "fee": 129
+            },
+            {
+              "size": 25000,
+              "fee": 289
+            },
+            {
+              "size": 50000,
+              "fee": 519
+            },
+            {
+              "size": 100000,
+              "fee": 819
+            },
+            {
+              "size": 200000,
+              "fee": 1199
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "3% (equity-based, resets 00:00 UTC)",
+          "max_drawdown": "6%",
+          "drawdown_type": "static",
+          "profit_split": "80% (90% with paid add-on)",
+          "min_trading_days": 0,
+          "notes": "Funded payout needs 3 profitable days (>=0.5% each) per cycle and Funded Score <30%. Fee not refundable."
+        },
+        {
+          "name": "One-Step Lite",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 49
+            },
+            {
+              "size": 10000,
+              "fee": 79
+            },
+            {
+              "size": 25000,
+              "fee": 159
+            },
+            {
+              "size": 50000,
+              "fee": 289
+            },
+            {
+              "size": 100000,
+              "fee": 459
+            },
+            {
+              "size": 200000,
+              "fee": 669
+            }
+          ],
+          "profit_target": "8%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "4%",
+          "drawdown_type": "static",
+          "profit_split": "80% (90% with paid add-on)",
+          "min_trading_days": 0,
+          "notes": "Funded payout needs 5 profitable days per cycle and Funded Score <20%. Fee not refundable."
+        },
+        {
+          "name": "Two-Step Pro",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 65
+            },
+            {
+              "size": 10000,
+              "fee": 110
+            },
+            {
+              "size": 25000,
+              "fee": 249
+            },
+            {
+              "size": 50000,
+              "fee": 419
+            },
+            {
+              "size": 100000,
+              "fee": 729
+            },
+            {
+              "size": 200000,
+              "fee": 1099
+            }
+          ],
+          "profit_target": "10% then 5%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "8% (10% with paid add-on)",
+          "drawdown_type": "static",
+          "profit_split": "80% (90% with paid add-on)",
+          "min_trading_days": 0,
+          "notes": "Evaluation needs 3 profitable days in phase 1 and 2 in phase 2. Funded Score <40%. Entry fee refunded with first payout (not on BOGO purchases)."
+        },
+        {
+          "name": "Nitro (Pay After You Pass)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 10000,
+              "fee": null,
+              "entry_fee": 19.9
+            },
+            {
+              "size": 25000,
+              "fee": null,
+              "entry_fee": 19.9
+            },
+            {
+              "size": 50000,
+              "fee": null,
+              "entry_fee": 19.9
+            },
+            {
+              "size": 100000,
+              "fee": null,
+              "entry_fee": 19.9
+            }
+          ],
+          "activation_fees": [
+            {
+              "size": 10000,
+              "fee": 81
+            },
+            {
+              "size": 25000,
+              "fee": 211
+            },
+            {
+              "size": 50000,
+              "fee": 390
+            },
+            {
+              "size": 100000,
+              "fee": 641
+            }
+          ],
+          "profit_target": "5%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "5%",
+          "drawdown_type": "static",
+          "profit_split": "80%",
+          "min_trading_days": 0,
+          "notes": "$19.90 entry fee, then a one-time activation fee (10K $81, 25K $211, 50K $390, 100K $641) payable within 5 days of passing. Total list cost 10K $100.90, 25K $230.90, 50K $409.90, 100K $660.90. First payout 14 days after first trade; 5 profitable days per cycle; Funded Score <20%. Discount codes not allowed.",
+          "deferred_fee": true,
+          "fee_note": "Entry fee only: an activation / funded-account fee is charged after you pass"
+        },
+        {
+          "name": "Instant Pro",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 225
+            },
+            {
+              "size": 10000,
+              "fee": 440
+            },
+            {
+              "size": 25000,
+              "fee": 1099
+            },
+            {
+              "size": 50000,
+              "fee": 2199
+            },
+            {
+              "size": 100000,
+              "fee": 4399
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": null,
+          "max_drawdown": "10% Smart Drawdown (locks at 5% below equity once +5% reached)",
+          "drawdown_type": "smart (static until locked)",
+          "profit_split": "70% (80% with paid add-on)",
+          "min_trading_days": 0,
+          "notes": "No daily drawdown. First payout after 14 days from first trade and +5% profit. Funded Score <25%. Max single position 1x and total exposure 2x initial balance."
+        },
+        {
+          "name": "Instant Lite",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 149
+            },
+            {
+              "size": 10000,
+              "fee": 259
+            },
+            {
+              "size": 25000,
+              "fee": 799
+            },
+            {
+              "size": 50000,
+              "fee": 1299
+            },
+            {
+              "size": 100000,
+              "fee": 2999
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": "3%",
+          "max_drawdown": "8%",
+          "drawdown_type": "static (per pricing data; FAQ Smart Drawdown text covers Instant Funding generally)",
+          "profit_split": "70% (80% with paid add-on)",
+          "min_trading_days": 0,
+          "notes": "7 profitable days per payout cycle; Funded Score <15%. First payout after 14 days from first trade and +5% profit."
+        }
+      ],
+      "fee_from": 49,
+      "profit_split": "80% up to 90%",
+      "profit_split_scale": "80% standard on One-Step/Two-Step/Nitro, 90% with paid Increased Profit Split add-on; Instant Funding 70%, 80% with add-on",
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static",
+      "profit_target": "10%",
+      "leverage": "Up to 1:100",
+      "platforms": [
+        "Bybit",
+        "Cleo"
+      ],
+      "payout_frequency": "First payout on demand once funded (One-Step/Two-Step), then every 14 days; Instant Funding and Nitro first payout 14 days after first trade. Per-payout caps 2.5% → 5% of starting balance for payouts 1–6, uncapped from payout 7.",
+      "first_payout_days": 0,
+      "payout_speed": "typically within 24 to 48 hours",
+      "min_trading_days": 0,
+      "consistency_rule": "Funded stage only: Funded Score (best day / total profit from profitable days in cycle) must be below 30% One-Step Pro, 20% One-Step Lite/Nitro, 40% Two-Step Pro, 25% Instant Pro, 15% Instant Lite before each payout; plus required profitable days (>=0.5% of start balance) per payout cycle. Never breaches the account.",
+      "news_trading": "allowed",
+      "weekend_holding": "allowed",
+      "countries_restricted": null,
+      "founded": null,
+      "hq": "Prague, Czech Republic",
+      "discount_code": null,
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": null,
+        "count": 59,
+        "note": "Rating unavailable: Trustpilot says it removed fake reviews for this company (breach of its guidelines)",
+        "checked": "2026-10-31",
+        "source": "https://www.trustpilot.com/review/mubite.com"
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://mubite.com/en",
+        "https://mubite.com/en/challenge-prices",
+        "https://mubite.com/en/challengeRules",
+        "https://mubite.com/en/frequently-asked-questions",
+        "https://mubite.com/en/crypto-challenge-scaling",
+        "https://mubite.com/en/terms-and-conditions",
+        "https://mubite.com/en/crypto-prop-firm-affiliate-program",
+        "https://mubite.com/en/our-team",
+        "https://mubite.com/en/trading-platforms",
+        "https://www.trustpilot.com/review/mubite.com"
+      ],
+      "notes": "List prices taken from the structured program data on /challenge-prices (rendered price before discount). Halloween promo on 2026-10-31: 15% off regular products and up to 50% off the two new products (One-Step Lite, Instant Lite); e.g. $100K One-Step Pro $819 → $697. fee_from = $49 (One-Step Lite $5K); Nitro starts at $19.90 but needs an activation fee after passing (total from $100.90). Prices shown here differ from the price ranges in the FAQ text ('$45–$1,199', 'from $79', 'Instant $112.50–$4,999'), which look out of date. Same goes for min trading days: Rules page and pricing data say no minimum, but older FAQ answers say 10/3 days. Daily drawdown for One-Step is 3% on the rules page (one FAQ says 4%). Assets: USDT perpetuals only, including tokenized gold (XAUT) and tokenized stocks/commodities on Cleo; no forex. Free 7-day $100K trial available. Risk rules: 3% max realized loss per trade, funded position limits 2x single / 3x cumulative (Instant 1x/2x). Founded year is not on its own site. Legal entity Mubite s.r.o. (ICO 23221551). Trustpilot: the page shows 'rating unavailable due to a breach of our guidelines' and 'We've removed a number of fake reviews' (59 reviews, 73% 5-star, 21% 1-star). It also has one detailed public dispute over a $9,000 payout denial and account closure (company replied), so trustpilot is left null. Flag for review.",
+      "segment": "crypto",
+      "also_offers": [],
+      "category_basis": "Crypto-only prop firm: simulated USDT perpetual futures accounts on Bybit (own Bybit account connected via API) or the Cleo terminal using Binance market data.",
+      "category_source": "https://mubite.com/en",
+      "hq_country": {
+        "code": "CZ",
+        "source": "https://mubite.com/en",
+        "quote": "Prague, Czech Republic"
+      },
+      "max_allocation_usd": 400000,
+      "max_allocation_text": "FAQ 'What is the maximum allocation?' says $400,000 across funded accounts (another FAQ answer says $300,000); Instant Funding scaling up to $1,000,000",
+      "max_allocation_source": "https://mubite.com/en/frequently-asked-questions",
+      "field_sources": {
+        "category": "https://mubite.com/en",
+        "assets": "https://mubite.com/en/frequently-asked-questions",
+        "challenge_types": "https://mubite.com/en/challenge-prices",
+        "account_sizes": "https://mubite.com/en/challenge-prices",
+        "programs": "https://mubite.com/en/challenge-prices",
+        "fee_from": "https://mubite.com/en/challenge-prices",
+        "profit_split": "https://mubite.com/en/frequently-asked-questions",
+        "profit_split_scale": "https://mubite.com/en/frequently-asked-questions",
+        "max_daily_loss": "https://mubite.com/en/challengeRules",
+        "max_drawdown": "https://mubite.com/en/challengeRules",
+        "drawdown_type": "https://mubite.com/en/frequently-asked-questions",
+        "profit_target": "https://mubite.com/en/challengeRules",
+        "leverage": "https://mubite.com/en/challengeRules",
+        "platforms": "https://mubite.com/en",
+        "payout_frequency": "https://mubite.com/en/challengeRules",
+        "first_payout_days": "https://mubite.com/en/frequently-asked-questions",
+        "payout_speed": "https://mubite.com/en/frequently-asked-questions",
+        "max_allocation": "https://mubite.com/en/frequently-asked-questions",
+        "max_allocation_text": "https://mubite.com/en/crypto-challenge-scaling",
+        "min_trading_days": "https://mubite.com/en/challengeRules",
+        "consistency_rule": "https://mubite.com/en/frequently-asked-questions",
+        "news_trading": "https://mubite.com/en/challengeRules",
+        "weekend_holding": "https://mubite.com/en/challengeRules",
+        "hq": "https://mubite.com/en",
+        "hq_country": "https://mubite.com/en"
+      }
+    },
+    {
+      "name": "PropW",
+      "slug": "propw",
+      "site": "https://www.propw.com/",
+      "category": "crypto-exchange",
+      "assets": [
+        "crypto",
+        "stocks",
+        "commodities"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step"
+      ],
+      "account_sizes": [
+        1000,
+        5000,
+        10000,
+        15000,
+        25000,
+        50000,
+        100000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "Two-Step Challenge",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 1000,
+              "fee": 15
+            },
+            {
+              "size": 5000,
+              "fee": 69
+            },
+            {
+              "size": 10000,
+              "fee": 99
+            },
+            {
+              "size": 50000,
+              "fee": 399
+            },
+            {
+              "size": 100000,
+              "fee": 799
+            }
+          ],
+          "profit_target": "Phase 1 5%, Phase 2 10%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "10% (1K/5K/10K); 8% (50K/100K)",
+          "drawdown_type": "static",
+          "profit_split": "80% (up to 90% via Elite Trader Development Program)",
+          "min_trading_days": 3
+        },
+        {
+          "name": "One-Step Challenge",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 10000,
+              "fee": 149
+            },
+            {
+              "size": 15000,
+              "fee": 199
+            },
+            {
+              "size": 25000,
+              "fee": 299
+            },
+            {
+              "size": 50000,
+              "fee": 499
+            },
+            {
+              "size": 100000,
+              "fee": 999
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "4%",
+          "max_drawdown": "6%",
+          "drawdown_type": "static",
+          "profit_split": "80% (up to 90% via Elite Trader Development Program)",
+          "min_trading_days": 3
+        }
+      ],
+      "fee_from": 15,
+      "profit_split": "80% up to 90%",
+      "profit_split_scale": "80% default; 90% for traders selected into the Elite Trader Development Program (discretionary review, e.g. 20%+ net profit 3 consecutive months)",
+      "max_daily_loss": "5% (2-step) / 4% (1-step)",
+      "max_drawdown": "10% (8% on 50K/100K) 2-step / 6% 1-step",
+      "drawdown_type": "static",
+      "profit_target": "5% + 10% (2-step) / 10% (1-step)",
+      "leverage": "Up to 5x on all assets",
+      "platforms": [
+        "PropW web terminal",
+        "PropW mobile app (iOS/Android)",
+        "TradingView charts"
+      ],
+      "payout_frequency": "Every 14 calendar days; first withdrawal 14 days after the funded/training account is activated",
+      "first_payout_days": 14,
+      "payout_speed": "Manual review within 1–2 business days (help centre); proof page states 24h processing",
+      "min_trading_days": 3,
+      "consistency_rule": "Best day ≤45% (2-step) / ≤40% (1-step) of cumulative net profit, checked at each withdrawal request",
+      "news_trading": "allowed",
+      "weekend_holding": "allowed",
+      "countries_restricted": [
+        "Mainland China",
+        "Hong Kong SAR",
+        "Iran",
+        "Iraq",
+        "Syria",
+        "Yemen",
+        "North Korea",
+        "Pakistan",
+        "Afghanistan",
+        "Myanmar",
+        "Cambodia",
+        "United States",
+        "Canada",
+        "Venezuela",
+        "Cuba",
+        "Nicaragua",
+        "Bolivia",
+        "Egypt",
+        "Libya",
+        "Tunisia",
+        "Algeria",
+        "Sudan",
+        "Ethiopia",
+        "Somalia",
+        "Mali",
+        "Zimbabwe",
+        "Ukraine (incl. Crimea, Donetsk, Luhansk)",
+        "Netherlands"
+      ],
+      "founded": 2024,
+      "hq": "Dubai, United Arab Emirates",
+      "discount_code": null,
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": null,
+        "count": 65,
+        "note": "Rating unavailable: Trustpilot says it removed fake reviews for this company (breach of its guidelines)",
+        "checked": "2026-10-31",
+        "source": "https://www.trustpilot.com/review/propw.com"
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://www.propw.com/en_US",
+        "https://docs.propw.com/getting-started/propw-evaluation-packages-and-core-trading-rules",
+        "https://docs.propw.com/propw-trading-rules/propw-evaluation-program-and-training-account-rules",
+        "https://docs.propw.com/propw-trading-rules/withdrawal-rules-for-proprietary-fund-profits",
+        "https://docs.propw.com/propw-trading-rules/propw-training-account-equity-and-scholarship-policy",
+        "https://docs.propw.com/getting-started/propw-platform-eligibility-requirements-and-regional-restrictions",
+        "https://docs.propw.com/propw-trading-rules/can-i-trade-news",
+        "https://docs.propw.com/bills-and-payments/what-payment-methods-does-propw-support",
+        "https://docs.propw.com/propw-trading-rules/propws-kyc-verification-rules",
+        "https://docs.propw.com/propw-trading-rules/propw-abnormal-trading-supervision-standards-and-handling-measures",
+        "https://docs.propw.com/propw-trading-rules/which-assets-can-be-traded-on-the-platform",
+        "https://docs.propw.com/getting-started/propw-faq",
+        "https://docs.propw.com/propw-trading-rules/notice-on-the-trading-mechanisms-of-the-propw-evaluation-program",
+        "https://docs.propw.com/propw-trading-rules/propw-consistency-rule-explanation-why-do-we-have-the-consistency-rule",
+        "https://www.propw.com/about-us",
+        "https://www.propw.com/proof",
+        "https://www.propw.com/affiliate-program",
+        "https://docs.propw.com/announcement/propw-highlights/publish-your-docs",
+        "https://www.trustpilot.com/review/propw.com"
+      ],
+      "notes": "2-step prices verified on the live homepage package selector (1K list 15 USDT, currently promo 9 USDT / 40% OFF; 5K 69; 10K 99; 50K 399; 100K 799). 1-step prices from the help-centre package table (could not switch to the 1-step tab in headless browser). The 1K 2-step has a 15-day trading period per phase and a 500 USDT lifetime reward cap (account closes after). HourTrader is a separate hour-long game-style product (audition fee 5–500 USDT, 1–8h, 10,000 USDT sim balance, reward = fee × 2/5/10x multiplier) — not a funded account, so excluded from fee_from. Evaluation fee is refunded in full on the first successful profit withdrawal. Prices quoted in USDT/$ interchangeably. All accounts are simulated (help centre: orders not sent to any external exchange), although the proof page claims execution on CoinW live markets. Homepage FAQ still says withdrawals every 7 days; current withdrawal rules say 14 days. Max position holding 10 days; trades closed <60s banned. Trustpilot left null: Trustpilot shows 'rating unavailable due to a breach of our guidelines — company displaying Trustpilot content in a misleading way' (65 reviews, 63% 5-star / 26% 1-star, only 2 in last 12 months). Recent promos: Halloween 100K Two-Step Express package $958 (Oct 27–28 2026).",
+      "segment": "crypto",
+      "also_offers": [],
+      "category_basis": "PropW (backed by CoinW Group) sells 1-step/2-step evaluations traded on its own CoinW-built crypto perpetual-style terminal (USDT pairs, up to 5x, funding rates), not MT/futures platforms.",
+      "category_source": "https://www.propw.com/en_US",
+      "founded_source": "https://www.propw.com/about-us",
+      "hq_country": {
+        "code": "AE",
+        "source": "https://www.propw.com/proof",
+        "quote": "Dubai, United Arab Emirates"
+      },
+      "max_allocation_usd": 200000,
+      "max_allocation_text": "Up to 200,000 USDT simulated training funds (largest listed package is 100,000 USDT)",
+      "max_allocation_source": "https://www.propw.com/en_US",
+      "field_sources": {
+        "category": "https://www.propw.com/en_US",
+        "assets": "https://docs.propw.com/propw-trading-rules/which-assets-can-be-traded-on-the-platform",
+        "challenge_types": "https://docs.propw.com/getting-started/propw-evaluation-packages-and-core-trading-rules",
+        "account_sizes": "https://docs.propw.com/getting-started/propw-evaluation-packages-and-core-trading-rules",
+        "programs": "https://docs.propw.com/getting-started/propw-evaluation-packages-and-core-trading-rules",
+        "fee_from": "https://www.propw.com/en_US",
+        "profit_split": "https://docs.propw.com/propw-trading-rules/propw-training-account-equity-and-scholarship-policy",
+        "profit_split_scale": "https://docs.propw.com/propw-trading-rules/propw-training-account-equity-and-scholarship-policy",
+        "max_daily_loss": "https://docs.propw.com/propw-trading-rules/propw-evaluation-program-and-training-account-rules",
+        "max_drawdown": "https://docs.propw.com/propw-trading-rules/propw-evaluation-program-and-training-account-rules",
+        "drawdown_type": "https://docs.propw.com/propw-trading-rules/propw-evaluation-program-and-training-account-rules",
+        "profit_target": "https://docs.propw.com/getting-started/propw-evaluation-packages-and-core-trading-rules",
+        "leverage": "https://www.propw.com/en_US",
+        "platforms": "https://www.propw.com/en_US",
+        "payout_frequency": "https://docs.propw.com/propw-trading-rules/withdrawal-rules-for-proprietary-fund-profits",
+        "first_payout_days": "https://docs.propw.com/propw-trading-rules/withdrawal-rules-for-proprietary-fund-profits",
+        "payout_speed": "https://docs.propw.com/propw-trading-rules/withdrawal-rules-for-proprietary-fund-profits",
+        "max_allocation": "https://www.propw.com/en_US",
+        "max_allocation_text": "https://www.propw.com/en_US",
+        "min_trading_days": "https://docs.propw.com/getting-started/propw-evaluation-packages-and-core-trading-rules",
+        "consistency_rule": "https://docs.propw.com/propw-trading-rules/withdrawal-rules-for-proprietary-fund-profits",
+        "news_trading": "https://docs.propw.com/propw-trading-rules/can-i-trade-news",
+        "weekend_holding": "https://www.propw.com/en_US",
+        "countries_restricted": "https://docs.propw.com/getting-started/propw-platform-eligibility-requirements-and-regional-restrictions",
+        "founded": "https://www.propw.com/about-us",
+        "hq": "https://www.propw.com/proof",
+        "hq_country": "https://www.propw.com/proof"
+      }
+    },
+    {
       "name": "Lucid Trading",
       "slug": "lucid-trading",
       "site": "https://lucidtrading.com",
@@ -4974,6 +5733,859 @@
         "trustpilot": "https://www.trustpilot.com/review/takeprofittrader.com",
         "max_allocation_text": "https://takeprofittrader.com/",
         "category": "https://takeprofittrader.com/"
+      }
+    },
+    {
+      "name": "Earn2Trade",
+      "slug": "earn2trade",
+      "site": "https://www.earn2trade.com",
+      "category": "futures",
+      "assets": [
+        "futures"
+      ],
+      "challenge_types": [
+        "1-step"
+      ],
+      "account_sizes": [
+        25000,
+        50000,
+        100000,
+        150000,
+        200000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "Trader Career Path (TCP)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 150
+            },
+            {
+              "size": 50000,
+              "fee": 190
+            },
+            {
+              "size": 100000,
+              "fee": 350
+            }
+          ],
+          "profit_target": "$1,750/$3,000/$6,000",
+          "max_daily_loss": "$550/$1,100/$2,200",
+          "max_drawdown": "$1,500/$2,000/$3,500",
+          "drawdown_type": "EOD trailing (eval & LiveSim); trailing on Live; fixed on $200K/$400K",
+          "profit_split": "50% below / 80% at or above withdrawal threshold ($1,500/$2,250/$3,000)",
+          "min_trading_days": null
+        },
+        {
+          "name": "Gauntlet Mini (GM)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 50000,
+              "fee": 170
+            },
+            {
+              "size": 100000,
+              "fee": 315
+            },
+            {
+              "size": 150000,
+              "fee": 375
+            },
+            {
+              "size": 200000,
+              "fee": 550
+            }
+          ],
+          "profit_target": "$3,000/$6,000/$9,000/$11,000",
+          "max_daily_loss": "$1,100/$2,200/$3,300/$4,400",
+          "max_drawdown": "$2,000/$3,500/$4,500/$6,000",
+          "drawdown_type": "EOD trailing (eval & LiveSim); trailing on Live",
+          "profit_split": "50% below / 80% at or above withdrawal threshold ($2,250/$3,000/$4,000/$5,000)",
+          "min_trading_days": null
+        }
+      ],
+      "fee_from": 150,
+      "profit_split": "50% up to 80%",
+      "profit_split_scale": "Split depends on single withdrawal size: 50% under threshold, 80% at/above it; TCP400 fixed 60/40",
+      "max_daily_loss": "$550-$4,400",
+      "max_drawdown": "$1,500-$6,000",
+      "drawdown_type": "EOD trailing",
+      "profit_target": "6-7% ($1,750 on 25K, $3,000 on 50K)",
+      "leverage": null,
+      "platforms": [
+        "Rithmic",
+        "NinjaTrader",
+        "Tradovate",
+        "TradingView",
+        "BlackArrow",
+        "DeepCharts",
+        "R|Trader",
+        "Sierra Chart",
+        "Quantower",
+        "Bookmap",
+        "ATAS",
+        "MotiveWave",
+        "MultiCharts",
+        "Finamark",
+        "Jigsaw"
+      ],
+      "payout_frequency": "Weekly (processed Wednesdays; request by 2 PM CT preceding Friday); no minimum days or consistency once funded",
+      "first_payout_days": null,
+      "payout_speed": "Weekly batch every Wednesday",
+      "min_trading_days": null,
+      "consistency_rule": "Eval: no single day ≥30% of total PnL (needs ≥4 profitable days in practice); none on LiveSim/Live",
+      "news_trading": "allowed",
+      "weekend_holding": "banned",
+      "countries_restricted": [
+        "Afghanistan",
+        "Albania",
+        "Azerbaijan",
+        "Burma (Myanmar)",
+        "Central African Republic",
+        "Cuba",
+        "Gibraltar",
+        "Iran",
+        "Iraq",
+        "Kenya",
+        "Libya",
+        "Mali",
+        "Nauru",
+        "Nigeria",
+        "North Korea",
+        "Pakistan",
+        "Russia",
+        "Somalia",
+        "South Sudan",
+        "Sudan",
+        "Syria",
+        "Turkmenistan",
+        "Ukraine",
+        "Venezuela",
+        "Yemen"
+      ],
+      "founded": 2016,
+      "hq": "Sheridan, WY, United States",
+      "discount_code": {
+        "code": "60PLUS50",
+        "value": "60% off evaluations + 50% off resets (Halloween flash sale)",
+        "percent": 60,
+        "source": "https://www.earn2trade.com/",
+        "verified": "2026-10-31",
+        "expires": null
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.5,
+        "count": 5059
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://www.earn2trade.com/",
+        "https://www.earn2trade.com/purchase",
+        "https://www.earn2trade.com/trader-career-path",
+        "https://www.earn2trade.com/gauntlet-mini",
+        "https://www.earn2trade.com/affiliates",
+        "https://www.trustpilot.com/review/earn2trade.com",
+        "https://help.earn2trade.com/en/articles/5452472-what-is-the-withdrawal-policy",
+        "https://help.earn2trade.com/en/articles/12036369-how-do-i-request-a-withdrawal",
+        "https://help.earn2trade.com/en/articles/2280137-what-is-the-fee-structure-on-the-live-or-livesim-accounts",
+        "https://help.earn2trade.com/en/articles/6803441-what-is-your-refund-policy",
+        "https://help.earn2trade.com/en/articles/11183609-reset-pricing-for-earn2trade-accounts",
+        "https://help.earn2trade.com/en/articles/1518606-where-are-you-based",
+        "https://help.earn2trade.com/en/articles/16295637-what-is-earn2trade",
+        "https://help.earn2trade.com/en/articles/16295753-earn2trade-eligibility-requirements",
+        "https://help.earn2trade.com/en/articles/2547638-i-m-not-an-american-us-citizen-can-i-still-get-funded",
+        "https://help.earn2trade.com/en/articles/2090496-can-i-hold-positions-overnight-on-the-trader-career-path-gauntlet-mini",
+        "https://help.earn2trade.com/en/articles/3224526-are-there-any-restrictions-on-when-i-can-trade-in-my-evaluation-account",
+        "https://help.earn2trade.com/en/articles/12034590-am-i-allowed-to-copy-trades-across-multiple-accounts",
+        "https://help.earn2trade.com/en/articles/3849975-what-is-the-maintain-consistency-rule",
+        "https://help.earn2trade.com/en/articles/5941958-what-are-the-evaluation-rules",
+        "https://help.earn2trade.com/en/articles/6877364-what-happens-when-i-complete-my-evaluation",
+        "https://help.earn2trade.com/en/articles/8255249-what-are-the-payment-methods",
+        "https://help.earn2trade.com/en/articles/6863807-what-is-the-difference-between-the-tcp25-tcp50-and-tcp100",
+        "https://help.earn2trade.com/en/articles/2090521-what-platforms-can-i-use-for-the-gauntlet-mini-trader-career-path"
+      ],
+      "notes": "Fees are MONTHLY subscriptions (list: TCP25 $150, TCP50 $190, TCP100 $350; GAU50 $170, GAU100 $315, GAU150 $375, GAU200 $550); free reset on each rebill. Halloween flash sale on site: 60% off evaluations + 50% off resets with code 60PLUS50 (homepage 'From $60'). Funded accounts (LiveSim/Live) are run by partner prop firms (e.g. Helios Trading Partners, Appius Trading Limited). LiveSim one-time $139 data/activation fee deducted from first withdrawal only. LiveSim max total withdrawal before auto-move to Live: TCP $1,750/$3,000/$6,000; GM $5,000. TCP growth plan: 25K→50K→100K→200K(→400K). Positions must be closed by 3:50 PM CT; no overnight. Founded inferred from homepage '10 YEARS In the Business' (as of 2026). HQ = registered office Earn2Trade LLC, 30 N Gould St, Sheridan WY; MENA site operated by franchise partner Bahia Education Services LLC, Dubai. Self-describes as an educational company, not regulated. 2025 pass rate 8.89% (site disclaimer).",
+      "segment": "futures",
+      "also_offers": [],
+      "category_basis": "Sells monthly-subscription futures evaluations (CME, COMEX, NYMEX, CBOT only) on Rithmic/NinjaTrader/Tradovate/BlackArrow feeds; stocks, forex, crypto and CFDs not available.",
+      "category_source": "https://www.earn2trade.com/",
+      "founded_source": "https://www.earn2trade.com/",
+      "hq_country": {
+        "code": "US",
+        "source": "https://help.earn2trade.com/en/articles/1518606-where-are-you-based",
+        "quote": "Sheridan, WY, United States"
+      },
+      "max_allocation_usd": 400000,
+      "max_allocation_text": "Trader Career Path growth plan scales up to $400K (TCP50/TCP100 only; TCP25 max $200K)",
+      "max_allocation_source": "https://www.earn2trade.com/",
+      "field_sources": {
+        "programs": "https://www.earn2trade.com/purchase",
+        "account_sizes": "https://www.earn2trade.com/purchase",
+        "fee_from": "https://www.earn2trade.com/purchase",
+        "profit_target": "https://www.earn2trade.com/trader-career-path",
+        "max_drawdown": "https://www.earn2trade.com/trader-career-path",
+        "max_daily_loss": "https://www.earn2trade.com/trader-career-path",
+        "drawdown_type": "https://help.earn2trade.com/en/articles/6877364-what-happens-when-i-complete-my-evaluation",
+        "profit_split": "https://help.earn2trade.com/en/articles/5452472-what-is-the-withdrawal-policy",
+        "profit_split_scale": "https://help.earn2trade.com/en/articles/5452472-what-is-the-withdrawal-policy",
+        "payout_frequency": "https://help.earn2trade.com/en/articles/12036369-how-do-i-request-a-withdrawal",
+        "payout_speed": "https://help.earn2trade.com/en/articles/12036369-how-do-i-request-a-withdrawal",
+        "max_allocation": "https://www.earn2trade.com/",
+        "max_allocation_text": "https://help.earn2trade.com/en/articles/6863807-what-is-the-difference-between-the-tcp25-tcp50-and-tcp100",
+        "consistency_rule": "https://help.earn2trade.com/en/articles/3849975-what-is-the-maintain-consistency-rule",
+        "news_trading": "https://help.earn2trade.com/en/articles/3224526-are-there-any-restrictions-on-when-i-can-trade-in-my-evaluation-account",
+        "weekend_holding": "https://help.earn2trade.com/en/articles/2090496-can-i-hold-positions-overnight-on-the-trader-career-path-gauntlet-mini",
+        "countries_restricted": "https://help.earn2trade.com/en/articles/2547638-i-m-not-an-american-us-citizen-can-i-still-get-funded",
+        "founded": "https://www.earn2trade.com/",
+        "hq": "https://help.earn2trade.com/en/articles/1518606-where-are-you-based",
+        "discount_code": "https://www.earn2trade.com/",
+        "trustpilot": "https://www.trustpilot.com/review/earn2trade.com",
+        "platforms": "https://www.earn2trade.com/",
+        "category": "https://www.earn2trade.com/"
+      }
+    },
+    {
+      "name": "Elite Trader Funding",
+      "slug": "elite-trader-funding",
+      "site": "https://elitetraderfunding.app",
+      "category": "futures",
+      "assets": [
+        "futures",
+        "indices",
+        "commodities",
+        "crypto"
+      ],
+      "challenge_types": [
+        "1-step",
+        "instant"
+      ],
+      "account_sizes": [
+        10000,
+        25000,
+        50000,
+        100000,
+        150000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "1 Step (Live Trailing)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 50000,
+              "fee": 207
+            },
+            {
+              "size": 100000,
+              "fee": 257
+            },
+            {
+              "size": 150000,
+              "fee": 347
+            }
+          ],
+          "profit_target": "$3,000 / $6,000 / $9,000",
+          "max_daily_loss": "none",
+          "max_drawdown": "$2,000 / $3,000 / $5,000",
+          "drawdown_type": "intraday trailing (open + realized profit)",
+          "profit_split": "up to 100% (sim, capped at $25K lifetime) / 80% LIVE ELITE",
+          "min_trading_days": 5
+        },
+        {
+          "name": "Static Drawdown",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 10000,
+              "fee": 147
+            },
+            {
+              "size": 25000,
+              "fee": 277
+            },
+            {
+              "size": 50000,
+              "fee": 497
+            }
+          ],
+          "profit_target": "$1,000 / $2,000 / $4,000",
+          "max_daily_loss": "none",
+          "max_drawdown": "$500 / $1,000 / $2,000",
+          "drawdown_type": "static",
+          "profit_split": "up to 100% (sim) / 80% LIVE ELITE",
+          "min_trading_days": 5
+        },
+        {
+          "name": "End of Day",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 50000,
+              "fee": 347
+            },
+            {
+              "size": 100000,
+              "fee": 487
+            }
+          ],
+          "profit_target": "$3,000 / $6,000",
+          "max_daily_loss": "$1,100 / $2,200 (hard breach)",
+          "max_drawdown": "$2,000 / $3,500",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "up to 100% (sim) / 80% LIVE ELITE",
+          "min_trading_days": 5
+        },
+        {
+          "name": "Diamond Hands (overnight + weekend holds)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 100000,
+              "fee": 397
+            }
+          ],
+          "profit_target": "$5,000",
+          "max_daily_loss": "$1,500 (hard breach)",
+          "max_drawdown": "$3,500",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "up to 100% (sim) / 80% LIVE ELITE",
+          "min_trading_days": 5
+        },
+        {
+          "name": "Fast Track (one-time)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 10000,
+              "fee": 57
+            },
+            {
+              "size": 10000,
+              "fee": 77
+            }
+          ],
+          "profit_target": "$2,000",
+          "max_daily_loss": "none",
+          "max_drawdown": "$500",
+          "drawdown_type": "EOD trailing ($57 variant) or static ($77 variant)",
+          "profit_split": "up to 100% (sim) / 80% LIVE ELITE",
+          "min_trading_days": 3
+        },
+        {
+          "name": "Direct to Funded (one-time, no evaluation)",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 10000,
+              "fee": 357
+            },
+            {
+              "size": 50000,
+              "fee": 747
+            },
+            {
+              "size": 100000,
+              "fee": 997
+            }
+          ],
+          "profit_target": "safety net $1,600 / $5,100 / $5,100 before first payout",
+          "max_daily_loss": "none",
+          "max_drawdown": "$1,500 / $5,000 / $5,000",
+          "drawdown_type": "EOD trailing (10K, 50K); static (100K)",
+          "profit_split": "up to 100% (sim) / 80% LIVE ELITE",
+          "min_trading_days": 0
+        }
+      ],
+      "fee_from": 57,
+      "profit_split": "up to 100% (sim-funded) / 80% on LIVE ELITE",
+      "profit_split_scale": "Sim-funded: keep up to 100% until $25,000 total sim payouts per trader, then move to LIVE ELITE (real capital) at 80/20, uncapped",
+      "max_daily_loss": "none on 1 Step/Static/Fast Track/DTF; $1,100-$2,200 hard breach on EOD, $1,500 on Diamond Hands",
+      "max_drawdown": "$500-$5,000 depending on plan and size",
+      "drawdown_type": "varies by plan: intraday trailing (1 Step), static (Static), EOD trailing (EOD, Diamond Hands)",
+      "profit_target": "$1,000-$9,000 (about 6-10% of balance)",
+      "leverage": null,
+      "platforms": [
+        "Tradovate",
+        "NinjaTrader",
+        "TradingView",
+        "Rithmic",
+        "R Trader",
+        "ATAS",
+        "Bookmap",
+        "EdgeProX",
+        "eSignal",
+        "Finamark",
+        "Investor/RT",
+        "MotiveWave",
+        "Quantower",
+        "Sierra Chart",
+        "Tickblaze"
+      ],
+      "payout_frequency": "per payout cycle: first cycle after 8 Active Trade Days, then every 10 ATDs (DTF: 5/10/15/20 ATDs by size); LIVE ELITE: daily on business days",
+      "first_payout_days": 8,
+      "payout_speed": "same-day reward approval; 48-business-hour approval guarantee (else +$1,000)",
+      "min_trading_days": 5,
+      "consistency_rule": "Only Fast Track has a best-day cap: 40% to qualify, 30% at reward. Other plans have no consistency cap, but an Active Trade Day only counts if it hits a minimum $ profit and a % of your best day",
+      "news_trading": null,
+      "weekend_holding": "restricted",
+      "countries_restricted": [
+        "Afghanistan",
+        "Central African Republic",
+        "Congo (Brazzaville)",
+        "Cuba",
+        "Democratic Republic of the Congo",
+        "Guinea",
+        "Haiti",
+        "Iran",
+        "Iraq",
+        "Libya",
+        "Mali",
+        "Myanmar (Burma)",
+        "North Korea",
+        "Russian Federation",
+        "Somalia",
+        "South Sudan",
+        "Sudan",
+        "Syria",
+        "Ukraine",
+        "Venezuela",
+        "Yemen"
+      ],
+      "founded": 2022,
+      "hq": null,
+      "discount_code": null,
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 3.8,
+        "count": 1166
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://elitetraderfunding.app/",
+        "https://elitetraderfunding.app/evaluations?category=1",
+        "https://elitetraderfunding.app/evaluations?category=16",
+        "https://elitetraderfunding.app/evaluations?category=9",
+        "https://elitetraderfunding.app/evaluations?category=12",
+        "https://elitetraderfunding.app/evaluations?category=11",
+        "https://elitetraderfunding.app/evaluations?category=3",
+        "https://elitetraderfunding.app/1-step-evaluation",
+        "https://elitetraderfunding.app/payouts",
+        "https://elitetraderfunding.app/about",
+        "https://elitetraderfunding.app/elite",
+        "https://elitetraderfunding.app/affiliates",
+        "https://elitetraderfunding.app/help/supported-platforms-and-data-feed",
+        "https://elitetraderfunding.app/help/what-instruments-can-i-trade",
+        "https://elitetraderfunding.app/help/countries-restricted-and-supported",
+        "https://elitetraderfunding.app/help/consistency-rule-and-active-trade-days-atd-explained",
+        "https://elitetraderfunding.app/help/48-hour-payout-guarantee",
+        "https://elitetraderfunding.app/help/payout-withdrawal-options",
+        "https://elitetraderfunding.app/help/refund-policy",
+        "https://elitetraderfunding.app/help/kyc-policy-and-registering-as-a-business",
+        "https://elitetraderfunding.app/diamond-hands-evaluation",
+        "https://www.trustpilot.com/review/elitetraderfunding.com",
+        "https://elitetraderfunding.app/help/trade-copier-disclaimer",
+        "https://elitetraderfunding.app/help/policy-hedging-against-yourself-using-the-same-or-correlated-instrument-on-one-or-multiple-accounts"
+      ],
+      "notes": "All fees are list prices. Every evaluation except Fast Track and DTF is a MONTHLY subscription (auto-renews every 30 days). The site was running '90% off, grab 20 evals' at check time (e.g. 50K 1 Step $207 -> $20.70), but no code is shown publicly. Funded activation is $87/month or a one-time $177-$307 (DTF has none; Fast Track is monthly only). Note: the 1 Step landing page lists 50K/100K/250K, but the live evaluations page sells 50K/100K/150K (150K: $5,000 trailing DD); we used the evaluations page. Fast Track is two 10K variants ($57 EOD, $77 static) and both are listed as size 10000. Sim payouts are capped at $25,000 per trader; ETF may move traders to LIVE ELITE (real capital, 80/20) 'before, during, or after a payout request', and sim accounts close on conversion. Recent Trustpilot reviews (Oct 2026) complain that this live transition replaced pending sim payouts and that live accounts took a month+ to set up. ETF replies it's disclosed in its Terms. Trustpilot is 3.8 with 24% 1-star. Flagged as a risk but not excluded, since payouts are still being made (homepage Oct 2026 payout feed). The domain elitetraderfunding.com redirects to elitetraderfunding.app. Entity: Elite Trader Funding, LLC; founded 2022-02-14 by Kanwal Singh. No HQ address published. News-trading policy wasn't found on the pages checked. Overnight/weekend holding is only allowed on Diamond Hands and DTF; other plans must flatten one minute before close.",
+      "segment": "futures",
+      "also_offers": [],
+      "category_basis": "Sells simulated CME futures evaluations and sim-funded accounts on Tradovate, Rithmic, NinjaTrader and other futures platforms. U.S. futures only, with no forex, CFDs or equities.",
+      "category_source": "https://elitetraderfunding.app/help/what-instruments-can-i-trade",
+      "founded_source": "https://elitetraderfunding.app/about",
+      "max_allocation_text": "Up to 20 active Elite Sim-Funded accounts at once, with sizes up to $150K. Sim payouts are capped at $25,000 lifetime per trader before LIVE ELITE.",
+      "max_allocation_source": "https://elitetraderfunding.app/elite",
+      "field_sources": {
+        "category": "https://elitetraderfunding.app/help/what-instruments-can-i-trade",
+        "assets": "https://elitetraderfunding.app/help/what-instruments-can-i-trade",
+        "challenge_types": "https://elitetraderfunding.app/",
+        "account_sizes": "https://elitetraderfunding.app/evaluations?category=9",
+        "programs": "https://elitetraderfunding.app/evaluations?category=1",
+        "programs[1 Step]": "https://elitetraderfunding.app/evaluations?category=1",
+        "programs[Static]": "https://elitetraderfunding.app/evaluations?category=9",
+        "programs[End of Day]": "https://elitetraderfunding.app/evaluations?category=11",
+        "programs[Diamond Hands]": "https://elitetraderfunding.app/evaluations?category=12",
+        "programs[Fast Track]": "https://elitetraderfunding.app/evaluations?category=3",
+        "programs[Direct to Funded]": "https://elitetraderfunding.app/evaluations?category=16",
+        "fee_from": "https://elitetraderfunding.app/evaluations?category=3",
+        "profit_split": "https://elitetraderfunding.app/payouts",
+        "profit_split_scale": "https://elitetraderfunding.app/elite",
+        "max_daily_loss": "https://elitetraderfunding.app/",
+        "max_drawdown": "https://elitetraderfunding.app/evaluations?category=1",
+        "drawdown_type": "https://elitetraderfunding.app/",
+        "profit_target": "https://elitetraderfunding.app/evaluations?category=1",
+        "platforms": "https://elitetraderfunding.app/help/supported-platforms-and-data-feed",
+        "payout_frequency": "https://elitetraderfunding.app/payouts",
+        "first_payout_days": "https://elitetraderfunding.app/",
+        "payout_speed": "https://elitetraderfunding.app/help/48-hour-payout-guarantee",
+        "max_allocation_text": "https://elitetraderfunding.app/elite",
+        "min_trading_days": "https://elitetraderfunding.app/",
+        "consistency_rule": "https://elitetraderfunding.app/help/consistency-rule-and-active-trade-days-atd-explained",
+        "weekend_holding": "https://elitetraderfunding.app/diamond-hands-evaluation",
+        "countries_restricted": "https://elitetraderfunding.app/help/countries-restricted-and-supported",
+        "founded": "https://elitetraderfunding.app/about",
+        "trustpilot": "https://www.trustpilot.com/review/elitetraderfunding.com"
+      }
+    },
+    {
+      "name": "Top One Futures",
+      "slug": "topone-futures",
+      "site": "https://www.toponefutures.com",
+      "category": "futures",
+      "assets": [
+        "futures",
+        "indices",
+        "commodities",
+        "forex",
+        "crypto"
+      ],
+      "challenge_types": [
+        "1-step",
+        "instant"
+      ],
+      "account_sizes": [
+        25000,
+        50000,
+        100000,
+        150000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "Elite Daily (V2), monthly subscription",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 178
+            },
+            {
+              "size": 50000,
+              "fee": 218
+            },
+            {
+              "size": 100000,
+              "fee": 398
+            },
+            {
+              "size": 150000,
+              "fee": 549
+            }
+          ],
+          "profit_target": "6% ($1,500 / $3,000 / $6,000 / $9,000)",
+          "max_daily_loss": "$500 / $1,000 / $1,250 / $1,850",
+          "max_drawdown": "$1,000 / $2,000 / $3,000 / $4,500 (funded: $1,000 / $2,000 / $2,500 / $3,500)",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "90%",
+          "min_trading_days": null
+        },
+        {
+          "name": "Elite Access, one-time fee + activation on pass",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": null,
+              "entry_fee": 39
+            },
+            {
+              "size": 50000,
+              "fee": null,
+              "entry_fee": 39
+            },
+            {
+              "size": 100000,
+              "fee": null,
+              "entry_fee": 39
+            },
+            {
+              "size": 150000,
+              "fee": null,
+              "entry_fee": 39
+            }
+          ],
+          "profit_target": "6% ($1,500 / $3,000 / $6,000 / $9,000) within 30 days",
+          "max_daily_loss": "none on eval; funded soft DLL $500 / $1,000 / $1,250 / $1,750",
+          "max_drawdown": "$1,000 / $2,000 / $3,000 / $4,000",
+          "drawdown_type": "EOD trailing (funded: EOD, or intraday on the Elite Access Intraday option)",
+          "profit_split": "90%",
+          "min_trading_days": 1,
+          "deferred_fee": true,
+          "fee_note": "Entry fee only: an activation / funded-account fee is charged after you pass"
+        },
+        {
+          "name": "Instant Sim Funded 2.0 (no evaluation)",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 419
+            },
+            {
+              "size": 50000,
+              "fee": 679
+            },
+            {
+              "size": 100000,
+              "fee": 821
+            },
+            {
+              "size": 150000,
+              "fee": 939
+            }
+          ],
+          "profit_target": "payout targets 6% / 5% / 4% of balance (1st / 2nd / 3rd+)",
+          "max_daily_loss": "$625 / $1,250 / $2,500 / $3,000 (soft)",
+          "max_drawdown": "$1,000 / $2,000 / $4,000 / $5,250",
+          "drawdown_type": "EOD trailing, locks at start + $100",
+          "profit_split": "90%",
+          "min_trading_days": null
+        },
+        {
+          "name": "Ignite Instant Funding (no evaluation)",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 218
+            },
+            {
+              "size": 50000,
+              "fee": 398
+            },
+            {
+              "size": 100000,
+              "fee": 563
+            },
+            {
+              "size": 150000,
+              "fee": 799
+            }
+          ],
+          "profit_target": "5% per payout cycle",
+          "max_daily_loss": "$500 / $1,000 / $2,000 / $3,000 (soft)",
+          "max_drawdown": "$1,000 / $2,000 / $4,000 / $6,000",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "90%",
+          "min_trading_days": null
+        },
+        {
+          "name": "Launchpad LP-03 X-Daily Spark (limited 1,500 accounts)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 50000,
+              "fee": 39
+            }
+          ],
+          "profit_target": "$3,000 within 30 days",
+          "max_daily_loss": "none",
+          "max_drawdown": "$2,000",
+          "drawdown_type": "EOD trailing (static +$15 add-on)",
+          "profit_split": "80%",
+          "min_trading_days": null
+        }
+      ],
+      "fee_from": 39,
+      "profit_split": "90%",
+      "profit_split_scale": "90/10 on every sim-funded account; 80/20 once moved to Pre-Live/Live (after about 3 payouts, risk-manager review)",
+      "max_daily_loss": "$500-$1,850 depending on size (none on Elite Access evaluation)",
+      "max_drawdown": "$1,000 / $2,000 / $3,000 / $4,500 (Elite Daily)",
+      "drawdown_type": "EOD trailing",
+      "profit_target": "6%",
+      "leverage": null,
+      "platforms": [
+        "Tradovate",
+        "NinjaTrader",
+        "TradingView",
+        "BlackArrow",
+        "WealthCharts"
+      ],
+      "payout_frequency": "Elite Daily: daily from funded Day 1; Elite Access: every 5 profitable days; Instant/Ignite: each time the payout profit target is hit with consistency met",
+      "first_payout_days": 1,
+      "payout_speed": "under 12 hours on average (homepage claim)",
+      "min_trading_days": null,
+      "consistency_rule": "Elite Daily: 40% on the evaluation only. Elite Access: none on the evaluation, 40% funded. Instant Sim Funded: 20%. Ignite: 15%",
+      "news_trading": "restricted",
+      "weekend_holding": "banned",
+      "countries_restricted": [
+        "Afghanistan",
+        "Albania",
+        "Algeria",
+        "Angola",
+        "Antarctica",
+        "Armenia",
+        "Azerbaijan",
+        "Bahamas",
+        "Barbados",
+        "Belarus",
+        "Bosnia & Herzegovina",
+        "Botswana",
+        "Burkina Faso",
+        "Burma (Myanmar)",
+        "Burundi",
+        "Cambodia",
+        "Central African Republic",
+        "Chad",
+        "Côte d'Ivoire",
+        "Crimea",
+        "Cuba",
+        "Democratic Republic of Congo",
+        "Djibouti",
+        "East Timor",
+        "Ecuador",
+        "Ethiopia",
+        "Ghana",
+        "Guinea-Bissau",
+        "Iceland",
+        "Indonesia",
+        "Iran",
+        "Iraq",
+        "Jamaica",
+        "Jordan",
+        "Kazakhstan",
+        "Kosovo",
+        "Kuwait",
+        "Laos",
+        "Lebanon",
+        "Lesotho",
+        "Liberia",
+        "Libya",
+        "Macedonia",
+        "Malawi",
+        "Mauritius",
+        "Mongolia",
+        "Montenegro",
+        "Morocco",
+        "Nicaragua",
+        "North Korea",
+        "Pakistan",
+        "Palestine",
+        "Panama",
+        "Papua New Guinea",
+        "Philippines",
+        "Russia",
+        "Rwanda",
+        "Sierra Leone",
+        "Somalia",
+        "South Sudan",
+        "Sri Lanka",
+        "Sudan",
+        "Syria",
+        "Tajikistan",
+        "Trinidad and Tobago",
+        "Tunisia",
+        "Turkey",
+        "Uganda",
+        "Ukraine",
+        "Venezuela",
+        "Vietnam",
+        "Yemen",
+        "Zimbabwe"
+      ],
+      "founded": null,
+      "hq": "Cheyenne, WY, United States",
+      "discount_code": {
+        "code": "BOO",
+        "value": "50% off Elite Daily and Ignite, 45% off Instant (Halloween)",
+        "percent": 50,
+        "source": "https://www.toponefutures.com/",
+        "verified": "2026-10-31",
+        "expires": null,
+        "also": [
+          {
+            "code": "BOGO",
+            "value": "Buy one get one on Elite Access",
+            "percent": null
+          }
+        ]
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.8,
+        "count": 5282
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://www.toponefutures.com/",
+        "https://www.toponefutures.com/elite-access",
+        "https://www.toponefutures.com/launchpad",
+        "https://www.toponefutures.com/coupon-code-pricing",
+        "https://www.toponefutures.com/affiliate",
+        "https://www.toponefutures.com/terms-and-conditions",
+        "https://help.toponefutures.com/en/articles/10907430-understanding-the-profit-split-on-sim-funded-accounts",
+        "https://help.toponefutures.com/en/articles/10907367-maximum-payout-until-live-explained",
+        "https://help.toponefutures.com/en/articles/11003130-path-to-trading-live",
+        "https://help.toponefutures.com/en/articles/10907901-can-i-hold-trades-overnight",
+        "https://help.toponefutures.com/en/articles/10907920-can-i-use-ea-s-bots",
+        "https://help.toponefutures.com/en/articles/10907951-can-i-trade-news",
+        "https://help.toponefutures.com/en/articles/10907989-inactivity-rule-explained",
+        "https://help.toponefutures.com/en/articles/11021644-countries-with-limitations-and-restrictions",
+        "https://help.toponefutures.com/en/articles/11024317-what-are-the-payout-platforms",
+        "https://help.toponefutures.com/en/articles/11403918-refund-policy",
+        "https://help.toponefutures.com/en/articles/11680891-copy-trading-policy",
+        "https://help.toponefutures.com/en/articles/13449146-top-one-futures-account-comparison-elite-vs-instant-vs-ignite-accounts",
+        "https://help.toponefutures.com/en/articles/15056075-elite-daily-v2-overview",
+        "https://help.toponefutures.com/en/articles/15056446-elite-daily-v2-daily-payout-rules",
+        "https://help.toponefutures.com/en/articles/14595016-elite-access-accounts-overview",
+        "https://help.toponefutures.com/en/articles/14595161-elite-access-payout-requirements",
+        "https://help.toponefutures.com/en/articles/12671168-ignite-accounts-overview",
+        "https://help.toponefutures.com/en/articles/11020805-overview-of-the-instant-sim-funded-program",
+        "https://help.toponefutures.com/en/articles/11021492-trading-instruments-available-at-top-one-futures",
+        "https://help.toponefutures.com/en/articles/11028418-how-to-complete-your-kyc-verification",
+        "https://help.toponefutures.com/en/articles/17149341-can-i-switch-my-trading-platform-tradovate-ninjatrader-or-blackarrow",
+        "https://help.toponefutures.com/en/articles/11021027-how-do-subscriptions-work-on-top-one-futures",
+        "https://help.toponefutures.com/en/articles/17320795-getting-started-your-first-wealthcharts-account-with-top-one-futures",
+        "https://www.trustpilot.com/review/toponefutures.com"
+      ],
+      "notes": "List prices are the struck-through homepage prices. On 2026-10-31 the homepage was running HALLOWEEN codes: BOO (50% off Elite Daily and Ignite, 45% off Instant), BOGO (buy-1-get-1 on Elite Access), MYSTERY (/coupon-code-pricing) and LAUNCHPAD. Elite Daily is a monthly subscription with no activation fee. Elite Access is a $39 one-time eval (the help center states $39; the homepage shows a struck-through $139-$359, which equals the activation fee) plus an activation fee on pass of $139/$189/$259/$359, with 30 days to pass. Instant and Ignite are one-time fees with no evaluation. Elite Daily reset fees differ across pages ($84/$104/$194/$270 on the homepage vs $66/$82/$154/$215 in the help article), probably promo-dependent. The 150K Elite Daily DLL is $1,750 in the homepage eval tab vs $1,850 in the help article/funded tab. Sim payout caps per request: Elite Daily $750-$2,250, Elite Access $1,000-$2,500, Instant 2.0 $1,000-$3,000, Ignite $500-$2,000. Path to live: after 3 payouts (5 on Elite Daily) a risk manager reviews you; then Pre-Live/Live at 80/20 with daily, uncapped payouts. HQ is the Wyoming address in the site footer (Top One Futures, LLC, 1621 Central Ave, Suite 8433, Cheyenne WY 82001), which looks like a registered-agent address. No founding year is published (Trustpilot profile claimed Mar 2025). News: allowed except on Elite Daily/Elite Access funded accounts (no trades 2 min before/after high-impact news). All positions must be closed by 4:10 PM EST, so no overnight or weekend holds. Max allocation is left null because the two homepage figures ($3M vs $1.5M) conflict.",
+      "segment": "futures",
+      "also_offers": [],
+      "category_basis": "Sells simulated CME-group futures evaluations and instant sim-funded accounts on Tradovate/NinjaTrader, BlackArrow and WealthCharts. Its CFD offering is a separate sister brand (Top One Trader, toponetrader.com).",
+      "category_source": "https://help.toponefutures.com/en/articles/11021492-trading-instruments-available-at-top-one-futures",
+      "hq_country": {
+        "code": "US",
+        "source": "https://www.toponefutures.com/launchpad",
+        "quote": "Cheyenne, WY, United States"
+      },
+      "max_allocation_text": "Homepage hero: 'Trade up to $3M in simulated funds'; earnings calculator: 'up to $1.5M'. Per-type funded account caps: Elite Daily 5, Elite Access 10 (20 in promos), Instant 3, Ignite 6 (10 in promos)",
+      "max_allocation_source": "https://www.toponefutures.com/",
+      "field_sources": {
+        "category": "https://help.toponefutures.com/en/articles/11021492-trading-instruments-available-at-top-one-futures",
+        "assets": "https://help.toponefutures.com/en/articles/11021492-trading-instruments-available-at-top-one-futures",
+        "challenge_types": "https://help.toponefutures.com/en/articles/13449146-top-one-futures-account-comparison-elite-vs-instant-vs-ignite-accounts",
+        "account_sizes": "https://www.toponefutures.com/",
+        "programs": "https://www.toponefutures.com/",
+        "programs[Elite Daily]": "https://www.toponefutures.com/",
+        "programs[Elite Access]": "https://help.toponefutures.com/en/articles/14595016-elite-access-accounts-overview",
+        "programs[Instant Sim Funded]": "https://www.toponefutures.com/",
+        "programs[Ignite]": "https://help.toponefutures.com/en/articles/12671168-ignite-accounts-overview",
+        "programs[X-Daily Spark]": "https://www.toponefutures.com/launchpad",
+        "fee_from": "https://help.toponefutures.com/en/articles/14595016-elite-access-accounts-overview",
+        "profit_split": "https://help.toponefutures.com/en/articles/10907430-understanding-the-profit-split-on-sim-funded-accounts",
+        "profit_split_scale": "https://help.toponefutures.com/en/articles/11003130-path-to-trading-live",
+        "max_daily_loss": "https://help.toponefutures.com/en/articles/15056075-elite-daily-v2-overview",
+        "max_drawdown": "https://help.toponefutures.com/en/articles/15056075-elite-daily-v2-overview",
+        "drawdown_type": "https://help.toponefutures.com/en/articles/15056075-elite-daily-v2-overview",
+        "profit_target": "https://help.toponefutures.com/en/articles/15056075-elite-daily-v2-overview",
+        "platforms": "https://help.toponefutures.com/en/articles/17149341-can-i-switch-my-trading-platform-tradovate-ninjatrader-or-blackarrow",
+        "payout_frequency": "https://help.toponefutures.com/en/articles/15056446-elite-daily-v2-daily-payout-rules",
+        "first_payout_days": "https://help.toponefutures.com/en/articles/15056075-elite-daily-v2-overview",
+        "payout_speed": "https://www.toponefutures.com/",
+        "max_allocation_text": "https://www.toponefutures.com/",
+        "consistency_rule": "https://help.toponefutures.com/en/articles/13449146-top-one-futures-account-comparison-elite-vs-instant-vs-ignite-accounts",
+        "news_trading": "https://help.toponefutures.com/en/articles/10907951-can-i-trade-news",
+        "weekend_holding": "https://help.toponefutures.com/en/articles/10907901-can-i-hold-trades-overnight",
+        "countries_restricted": "https://help.toponefutures.com/en/articles/11021644-countries-with-limitations-and-restrictions",
+        "hq": "https://www.toponefutures.com/launchpad",
+        "hq_country": "https://www.toponefutures.com/launchpad",
+        "discount_code": "https://www.toponefutures.com/",
+        "trustpilot": "https://www.trustpilot.com/review/toponefutures.com"
       }
     },
     {

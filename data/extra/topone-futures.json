@@ -1,0 +1,39 @@
+{
+  "reset_fee": "Elite Access eval $35 (unlimited); Elite Daily eval $84/$104/$194/$270 (homepage); funded resets: Elite Daily $299-$1,250, Elite Access $299-$1,349; Instant and Ignite can't be reset",
+  "retry_discount_pct": null,
+  "refund_policy": "Strict no-refund policy on all account purchases, even untraded ones",
+  "fee_refundable": false,
+  "time_limit": "30 days on Elite Access and X-Daily Spark evaluations; Elite Daily has no limit while the monthly subscription is active",
+  "has_time_limit": true,
+  "activation_fee": 139,
+  "payout_methods": [
+    "Rise: bank transfer",
+    "Rise: cryptocurrency"
+  ],
+  "min_payout": 250,
+  "kyc_before_payout": true,
+  "scaling_plan": "Contract scaling plans on Elite Daily/Elite Access funded accounts; Live scales up to 5 live accounts",
+  "ea_bots": "banned",
+  "copy_trading": true,
+  "hedging": null,
+  "max_risk_per_trade": null,
+  "inactivity_rule": "At least one trade every 14 calendar days (336 hours) or the account is hard-breached",
+  "notes": "Activation fee only on Elite Access ($139/$189/$259/$359 by size) and X-Daily Spark ($189). Elite Daily, Instant and Ignite have none. Minimum payout is $250 on Ignite and $500 on Elite Daily/Elite Access. Payouts go through Rise only; a verified Rise account is required. Copy trading is allowed only between accounts of the exact same type and size (built-in Tradovate group trading). Mirroring across mismatched accounts or correlated assets is prohibited. EAs and bots aren't allowed. There's a 10-second minimum trade time rule. Evaluation subscriptions renew monthly on the same calendar date.",
+  "sources": [
+    "https://help.toponefutures.com/en/articles/14595016-elite-access-accounts-overview",
+    "https://help.toponefutures.com/en/articles/15056075-elite-daily-v2-overview",
+    "https://help.toponefutures.com/en/articles/12671168-ignite-accounts-overview",
+    "https://help.toponefutures.com/en/articles/13449146-top-one-futures-account-comparison-elite-vs-instant-vs-ignite-accounts",
+    "https://help.toponefutures.com/en/articles/11403918-refund-policy",
+    "https://help.toponefutures.com/en/articles/11024317-what-are-the-payout-platforms",
+    "https://help.toponefutures.com/en/articles/11680891-copy-trading-policy",
+    "https://help.toponefutures.com/en/articles/10907920-can-i-use-ea-s-bots",
+    "https://help.toponefutures.com/en/articles/10907989-inactivity-rule-explained",
+    "https://help.toponefutures.com/en/articles/11021027-how-do-subscriptions-work-on-top-one-futures",
+    "https://www.toponefutures.com/launchpad",
+    "https://www.toponefutures.com/"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": 35,
+  "monthly_fee": true
+}

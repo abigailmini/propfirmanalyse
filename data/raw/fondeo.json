@@ -1,0 +1,201 @@
+{
+  "name": "Fondeo",
+  "slug": "fondeo",
+  "site": "https://fondeo.xyz",
+  "category": "crypto-exchange",
+  "assets": [
+    "crypto"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step"
+  ],
+  "account_sizes": [
+    5000,
+    10000,
+    25000,
+    50000,
+    100000,
+    200000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "One-Step",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 119
+        },
+        {
+          "size": 10000,
+          "fee": 219
+        },
+        {
+          "size": 25000,
+          "fee": 399
+        },
+        {
+          "size": 50000,
+          "fee": 539
+        },
+        {
+          "size": 100000,
+          "fee": 799
+        },
+        {
+          "size": 200000,
+          "fee": 1399
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static (max loss from initial balance); daily loss trailing from day's equity high",
+      "profit_split": "70% up to 90%",
+      "min_trading_days": 10
+    },
+    {
+      "name": "Two-Step",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 89
+        },
+        {
+          "size": 10000,
+          "fee": 159
+        },
+        {
+          "size": 25000,
+          "fee": 299
+        },
+        {
+          "size": 50000,
+          "fee": 399
+        },
+        {
+          "size": 100000,
+          "fee": 599
+        },
+        {
+          "size": 200000,
+          "fee": 999
+        }
+      ],
+      "profit_target": "10% / 5%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10% (Phase 2: 5%; funded: 10%)",
+      "drawdown_type": "static (max loss from initial balance); daily loss trailing from day's equity high",
+      "profit_split": "70% up to 90%",
+      "min_trading_days": 10
+    },
+    {
+      "name": "Subscription",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 49
+        },
+        {
+          "size": 50000,
+          "fee": 150
+        },
+        {
+          "size": 100000,
+          "fee": 300
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "5%",
+      "drawdown_type": "static (max loss from initial balance); daily loss trailing from day's equity high",
+      "profit_split": "50% up to 70%",
+      "min_trading_days": 10
+    }
+  ],
+  "fee_from": 49,
+  "profit_split": "70% up to 90%",
+  "profit_split_scale": "+5% every 4 months funded: 70% (0-4m), 75%, 80%, 85%, 90% from month 16; Subscription accounts 50% rising to 70%",
+  "max_daily_loss": "4%",
+  "max_drawdown": "6%",
+  "drawdown_type": "static max loss; daily loss trailing from intraday equity high",
+  "profit_target": "10%",
+  "leverage": "up to 1:100",
+  "platforms": [
+    "Bybit",
+    "Fondeo Terminal",
+    "TradingView"
+  ],
+  "payout_frequency": "On demand (daily possible); first payout 1 calendar day after first funded trade; must withdraw once profit hits 5% cap",
+  "first_payout_days": 1,
+  "payout_speed": "12-48 hours",
+  "min_trading_days": 10,
+  "consistency_rule": "Evaluation only: no single day >40% of total profit; also min 50% win rate in evaluation. Not applied on funded accounts.",
+  "news_trading": "restricted",
+  "weekend_holding": "allowed",
+  "countries_restricted": null,
+  "founded": null,
+  "hq": "Sheridan, Wyoming, USA",
+  "discount_code": null,
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 4.3,
+    "count": 7
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://fondeo.xyz/en",
+    "https://fondeo.xyz/en/docs/trading-rules",
+    "https://fondeo.xyz/en/docs/funded-accounts",
+    "https://fondeo.xyz/en/terms-and-conditions",
+    "https://fondeo.xyz/en/about",
+    "https://fondeo.xyz/en/affiliates",
+    "https://fondeo.xyz/en/faq",
+    "https://fondeo.xyz/en/blog/fondeo-terminal-trade-directly-no-external-platforms",
+    "https://www.trustpilot.com/review/fondeo.xyz"
+  ],
+  "notes": "Operator: Red G Tech LLC (Wyoming reg. 35-2900121), registered-agent address 30 N Gould St, Sheridan WY. Prices are the list prices embedded in the homepage challenge data (USD; account capital in USDT); subscription is per month. No promo/discount code seen. One-Step and Subscription rules taken from docs (One-Step 4% daily/6% max; Subscription 4%/5%); the raw homepage challenge config still shows older values (10% daily/max for one-step, 6% max for subscription), so docs used. Two-Step: P1 10% target/10 days, P2 5% target/5 days/5% max loss; funded 5% daily/10% max. Extra eval rules: stop-loss mandatory within 5 min, max 3% risk per trade, min order size 5% of balance, min 3 trades per counted day, day P&L must be outside ±1%, 50% min win rate. Payout cap: max 5% of initial balance per payout, excess above 5% forfeited; balance resets after withdrawal. Challenge fee refunded with first split (not for Subscription). Founded year not stated (Trustpilot profile claimed May 2025; terms dated June 2025). Red flags: homepage claims '5.0 from 200+ reviews' and shows testimonial/payout cards with repeated names, but Trustpilot shows 4.3 from only 7 reviews, all May 2025, 0 in last 12 months. Homepage claims $1M+ total rewarded (unverified). Cleo platform 'coming soon'. Bybit is the exchange; Terminal uses live exchange data.",
+  "segment": "crypto",
+  "also_offers": [],
+  "category_basis": "Sells crypto perpetual (USDT pairs) evaluations traded on Bybit demo via API or on Fondeo's own Terminal with live exchange data; MT4/MT5 not supported.",
+  "category_source": "https://fondeo.xyz/en/docs/trading-rules",
+  "hq_country": {
+    "code": "US",
+    "source": "https://fondeo.xyz/en/terms-and-conditions",
+    "quote": "Sheridan, Wyoming, USA"
+  },
+  "max_allocation_usd": 200000,
+  "max_allocation_text": "Total capital across all active accounts cannot exceed $200,000 (scaling +25% every 4 months; individual account cap stated as $1,000,000 USDT)",
+  "max_allocation_source": "https://fondeo.xyz/en/docs/funded-accounts",
+  "field_sources": {
+    "category": "https://fondeo.xyz/en/docs/trading-rules",
+    "assets": "https://fondeo.xyz/en/faq",
+    "challenge_types": "https://fondeo.xyz/en",
+    "account_sizes": "https://fondeo.xyz/en",
+    "programs": "https://fondeo.xyz/en",
+    "fee_from": "https://fondeo.xyz/en",
+    "profit_split": "https://fondeo.xyz/en/docs/funded-accounts",
+    "profit_split_scale": "https://fondeo.xyz/en/docs/funded-accounts",
+    "max_daily_loss": "https://fondeo.xyz/en/docs/trading-rules",
+    "max_drawdown": "https://fondeo.xyz/en/docs/trading-rules",
+    "drawdown_type": "https://fondeo.xyz/en/docs/trading-rules",
+    "profit_target": "https://fondeo.xyz/en/docs/trading-rules",
+    "leverage": "https://fondeo.xyz/en",
+    "platforms": "https://fondeo.xyz/en/blog/fondeo-terminal-trade-directly-no-external-platforms",
+    "payout_frequency": "https://fondeo.xyz/en/docs/funded-accounts",
+    "first_payout_days": "https://fondeo.xyz/en/docs/funded-accounts",
+    "payout_speed": "https://fondeo.xyz/en/docs/funded-accounts",
+    "max_allocation": "https://fondeo.xyz/en/docs/funded-accounts",
+    "min_trading_days": "https://fondeo.xyz/en/docs/trading-rules",
+    "consistency_rule": "https://fondeo.xyz/en/docs/trading-rules",
+    "news_trading": "https://fondeo.xyz/en/docs/trading-rules",
+    "weekend_holding": "https://fondeo.xyz/en/docs/trading-rules",
+    "hq": "https://fondeo.xyz/en/terms-and-conditions",
+    "hq_country": "https://fondeo.xyz/en/terms-and-conditions",
+    "trustpilot": "https://www.trustpilot.com/review/fondeo.xyz"
+  }
+}

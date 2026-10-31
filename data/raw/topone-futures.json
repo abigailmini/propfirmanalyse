@@ -1,0 +1,356 @@
+{
+  "name": "Top One Futures",
+  "slug": "topone-futures",
+  "site": "https://www.toponefutures.com",
+  "category": "futures",
+  "assets": [
+    "futures",
+    "indices",
+    "commodities",
+    "forex",
+    "crypto"
+  ],
+  "challenge_types": [
+    "1-step",
+    "instant"
+  ],
+  "account_sizes": [
+    25000,
+    50000,
+    100000,
+    150000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "Elite Daily (V2), monthly subscription",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 178
+        },
+        {
+          "size": 50000,
+          "fee": 218
+        },
+        {
+          "size": 100000,
+          "fee": 398
+        },
+        {
+          "size": 150000,
+          "fee": 549
+        }
+      ],
+      "profit_target": "6% ($1,500 / $3,000 / $6,000 / $9,000)",
+      "max_daily_loss": "$500 / $1,000 / $1,250 / $1,850",
+      "max_drawdown": "$1,000 / $2,000 / $3,000 / $4,500 (funded: $1,000 / $2,000 / $2,500 / $3,500)",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "90%",
+      "min_trading_days": null
+    },
+    {
+      "name": "Elite Access, one-time fee + activation on pass",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": null,
+          "entry_fee": 39
+        },
+        {
+          "size": 50000,
+          "fee": null,
+          "entry_fee": 39
+        },
+        {
+          "size": 100000,
+          "fee": null,
+          "entry_fee": 39
+        },
+        {
+          "size": 150000,
+          "fee": null,
+          "entry_fee": 39
+        }
+      ],
+      "profit_target": "6% ($1,500 / $3,000 / $6,000 / $9,000) within 30 days",
+      "max_daily_loss": "none on eval; funded soft DLL $500 / $1,000 / $1,250 / $1,750",
+      "max_drawdown": "$1,000 / $2,000 / $3,000 / $4,000",
+      "drawdown_type": "EOD trailing (funded: EOD, or intraday on the Elite Access Intraday option)",
+      "profit_split": "90%",
+      "min_trading_days": 1,
+      "deferred_fee": true,
+      "fee_note": "Entry fee only: an activation / funded-account fee is charged after you pass"
+    },
+    {
+      "name": "Instant Sim Funded 2.0 (no evaluation)",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 419
+        },
+        {
+          "size": 50000,
+          "fee": 679
+        },
+        {
+          "size": 100000,
+          "fee": 821
+        },
+        {
+          "size": 150000,
+          "fee": 939
+        }
+      ],
+      "profit_target": "payout targets 6% / 5% / 4% of balance (1st / 2nd / 3rd+)",
+      "max_daily_loss": "$625 / $1,250 / $2,500 / $3,000 (soft)",
+      "max_drawdown": "$1,000 / $2,000 / $4,000 / $5,250",
+      "drawdown_type": "EOD trailing, locks at start + $100",
+      "profit_split": "90%",
+      "min_trading_days": null
+    },
+    {
+      "name": "Ignite Instant Funding (no evaluation)",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 218
+        },
+        {
+          "size": 50000,
+          "fee": 398
+        },
+        {
+          "size": 100000,
+          "fee": 563
+        },
+        {
+          "size": 150000,
+          "fee": 799
+        }
+      ],
+      "profit_target": "5% per payout cycle",
+      "max_daily_loss": "$500 / $1,000 / $2,000 / $3,000 (soft)",
+      "max_drawdown": "$1,000 / $2,000 / $4,000 / $6,000",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "90%",
+      "min_trading_days": null
+    },
+    {
+      "name": "Launchpad LP-03 X-Daily Spark (limited 1,500 accounts)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 50000,
+          "fee": 39
+        }
+      ],
+      "profit_target": "$3,000 within 30 days",
+      "max_daily_loss": "none",
+      "max_drawdown": "$2,000",
+      "drawdown_type": "EOD trailing (static +$15 add-on)",
+      "profit_split": "80%",
+      "min_trading_days": null
+    }
+  ],
+  "fee_from": 39,
+  "profit_split": "90%",
+  "profit_split_scale": "90/10 on every sim-funded account; 80/20 once moved to Pre-Live/Live (after about 3 payouts, risk-manager review)",
+  "max_daily_loss": "$500-$1,850 depending on size (none on Elite Access evaluation)",
+  "max_drawdown": "$1,000 / $2,000 / $3,000 / $4,500 (Elite Daily)",
+  "drawdown_type": "EOD trailing",
+  "profit_target": "6%",
+  "leverage": null,
+  "platforms": [
+    "Tradovate",
+    "NinjaTrader",
+    "TradingView",
+    "BlackArrow",
+    "WealthCharts"
+  ],
+  "payout_frequency": "Elite Daily: daily from funded Day 1; Elite Access: every 5 profitable days; Instant/Ignite: each time the payout profit target is hit with consistency met",
+  "first_payout_days": 1,
+  "payout_speed": "under 12 hours on average (homepage claim)",
+  "min_trading_days": null,
+  "consistency_rule": "Elite Daily: 40% on the evaluation only. Elite Access: none on the evaluation, 40% funded. Instant Sim Funded: 20%. Ignite: 15%",
+  "news_trading": "restricted",
+  "weekend_holding": "banned",
+  "countries_restricted": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Angola",
+    "Antarctica",
+    "Armenia",
+    "Azerbaijan",
+    "Bahamas",
+    "Barbados",
+    "Belarus",
+    "Bosnia & Herzegovina",
+    "Botswana",
+    "Burkina Faso",
+    "Burma (Myanmar)",
+    "Burundi",
+    "Cambodia",
+    "Central African Republic",
+    "Chad",
+    "Côte d'Ivoire",
+    "Crimea",
+    "Cuba",
+    "Democratic Republic of Congo",
+    "Djibouti",
+    "East Timor",
+    "Ecuador",
+    "Ethiopia",
+    "Ghana",
+    "Guinea-Bissau",
+    "Iceland",
+    "Indonesia",
+    "Iran",
+    "Iraq",
+    "Jamaica",
+    "Jordan",
+    "Kazakhstan",
+    "Kosovo",
+    "Kuwait",
+    "Laos",
+    "Lebanon",
+    "Lesotho",
+    "Liberia",
+    "Libya",
+    "Macedonia",
+    "Malawi",
+    "Mauritius",
+    "Mongolia",
+    "Montenegro",
+    "Morocco",
+    "Nicaragua",
+    "North Korea",
+    "Pakistan",
+    "Palestine",
+    "Panama",
+    "Papua New Guinea",
+    "Philippines",
+    "Russia",
+    "Rwanda",
+    "Sierra Leone",
+    "Somalia",
+    "South Sudan",
+    "Sri Lanka",
+    "Sudan",
+    "Syria",
+    "Tajikistan",
+    "Trinidad and Tobago",
+    "Tunisia",
+    "Turkey",
+    "Uganda",
+    "Ukraine",
+    "Venezuela",
+    "Vietnam",
+    "Yemen",
+    "Zimbabwe"
+  ],
+  "founded": null,
+  "hq": "Cheyenne, WY, United States",
+  "discount_code": {
+    "code": "BOO",
+    "value": "50% off Elite Daily and Ignite, 45% off Instant (Halloween)",
+    "percent": 50,
+    "source": "https://www.toponefutures.com/",
+    "verified": "2026-10-31",
+    "expires": null,
+    "also": [
+      {
+        "code": "BOGO",
+        "value": "Buy one get one on Elite Access",
+        "percent": null
+      }
+    ]
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 4.8,
+    "count": 5282
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://www.toponefutures.com/",
+    "https://www.toponefutures.com/elite-access",
+    "https://www.toponefutures.com/launchpad",
+    "https://www.toponefutures.com/coupon-code-pricing",
+    "https://www.toponefutures.com/affiliate",
+    "https://www.toponefutures.com/terms-and-conditions",
+    "https://help.toponefutures.com/en/articles/10907430-understanding-the-profit-split-on-sim-funded-accounts",
+    "https://help.toponefutures.com/en/articles/10907367-maximum-payout-until-live-explained",
+    "https://help.toponefutures.com/en/articles/11003130-path-to-trading-live",
+    "https://help.toponefutures.com/en/articles/10907901-can-i-hold-trades-overnight",
+    "https://help.toponefutures.com/en/articles/10907920-can-i-use-ea-s-bots",
+    "https://help.toponefutures.com/en/articles/10907951-can-i-trade-news",
+    "https://help.toponefutures.com/en/articles/10907989-inactivity-rule-explained",
+    "https://help.toponefutures.com/en/articles/11021644-countries-with-limitations-and-restrictions",
+    "https://help.toponefutures.com/en/articles/11024317-what-are-the-payout-platforms",
+    "https://help.toponefutures.com/en/articles/11403918-refund-policy",
+    "https://help.toponefutures.com/en/articles/11680891-copy-trading-policy",
+    "https://help.toponefutures.com/en/articles/13449146-top-one-futures-account-comparison-elite-vs-instant-vs-ignite-accounts",
+    "https://help.toponefutures.com/en/articles/15056075-elite-daily-v2-overview",
+    "https://help.toponefutures.com/en/articles/15056446-elite-daily-v2-daily-payout-rules",
+    "https://help.toponefutures.com/en/articles/14595016-elite-access-accounts-overview",
+    "https://help.toponefutures.com/en/articles/14595161-elite-access-payout-requirements",
+    "https://help.toponefutures.com/en/articles/12671168-ignite-accounts-overview",
+    "https://help.toponefutures.com/en/articles/11020805-overview-of-the-instant-sim-funded-program",
+    "https://help.toponefutures.com/en/articles/11021492-trading-instruments-available-at-top-one-futures",
+    "https://help.toponefutures.com/en/articles/11028418-how-to-complete-your-kyc-verification",
+    "https://help.toponefutures.com/en/articles/17149341-can-i-switch-my-trading-platform-tradovate-ninjatrader-or-blackarrow",
+    "https://help.toponefutures.com/en/articles/11021027-how-do-subscriptions-work-on-top-one-futures",
+    "https://help.toponefutures.com/en/articles/17320795-getting-started-your-first-wealthcharts-account-with-top-one-futures",
+    "https://www.trustpilot.com/review/toponefutures.com"
+  ],
+  "notes": "List prices are the struck-through homepage prices. On 2026-10-31 the homepage was running HALLOWEEN codes: BOO (50% off Elite Daily and Ignite, 45% off Instant), BOGO (buy-1-get-1 on Elite Access), MYSTERY (/coupon-code-pricing) and LAUNCHPAD. Elite Daily is a monthly subscription with no activation fee. Elite Access is a $39 one-time eval (the help center states $39; the homepage shows a struck-through $139-$359, which equals the activation fee) plus an activation fee on pass of $139/$189/$259/$359, with 30 days to pass. Instant and Ignite are one-time fees with no evaluation. Elite Daily reset fees differ across pages ($84/$104/$194/$270 on the homepage vs $66/$82/$154/$215 in the help article), probably promo-dependent. The 150K Elite Daily DLL is $1,750 in the homepage eval tab vs $1,850 in the help article/funded tab. Sim payout caps per request: Elite Daily $750-$2,250, Elite Access $1,000-$2,500, Instant 2.0 $1,000-$3,000, Ignite $500-$2,000. Path to live: after 3 payouts (5 on Elite Daily) a risk manager reviews you; then Pre-Live/Live at 80/20 with daily, uncapped payouts. HQ is the Wyoming address in the site footer (Top One Futures, LLC, 1621 Central Ave, Suite 8433, Cheyenne WY 82001), which looks like a registered-agent address. No founding year is published (Trustpilot profile claimed Mar 2025). News: allowed except on Elite Daily/Elite Access funded accounts (no trades 2 min before/after high-impact news). All positions must be closed by 4:10 PM EST, so no overnight or weekend holds. Max allocation is left null because the two homepage figures ($3M vs $1.5M) conflict.",
+  "segment": "futures",
+  "also_offers": [],
+  "category_basis": "Sells simulated CME-group futures evaluations and instant sim-funded accounts on Tradovate/NinjaTrader, BlackArrow and WealthCharts. Its CFD offering is a separate sister brand (Top One Trader, toponetrader.com).",
+  "category_source": "https://help.toponefutures.com/en/articles/11021492-trading-instruments-available-at-top-one-futures",
+  "hq_country": {
+    "code": "US",
+    "source": "https://www.toponefutures.com/launchpad",
+    "quote": "Cheyenne, WY, United States"
+  },
+  "max_allocation_text": "Homepage hero: 'Trade up to $3M in simulated funds'; earnings calculator: 'up to $1.5M'. Per-type funded account caps: Elite Daily 5, Elite Access 10 (20 in promos), Instant 3, Ignite 6 (10 in promos)",
+  "max_allocation_source": "https://www.toponefutures.com/",
+  "field_sources": {
+    "category": "https://help.toponefutures.com/en/articles/11021492-trading-instruments-available-at-top-one-futures",
+    "assets": "https://help.toponefutures.com/en/articles/11021492-trading-instruments-available-at-top-one-futures",
+    "challenge_types": "https://help.toponefutures.com/en/articles/13449146-top-one-futures-account-comparison-elite-vs-instant-vs-ignite-accounts",
+    "account_sizes": "https://www.toponefutures.com/",
+    "programs": "https://www.toponefutures.com/",
+    "programs[Elite Daily]": "https://www.toponefutures.com/",
+    "programs[Elite Access]": "https://help.toponefutures.com/en/articles/14595016-elite-access-accounts-overview",
+    "programs[Instant Sim Funded]": "https://www.toponefutures.com/",
+    "programs[Ignite]": "https://help.toponefutures.com/en/articles/12671168-ignite-accounts-overview",
+    "programs[X-Daily Spark]": "https://www.toponefutures.com/launchpad",
+    "fee_from": "https://help.toponefutures.com/en/articles/14595016-elite-access-accounts-overview",
+    "profit_split": "https://help.toponefutures.com/en/articles/10907430-understanding-the-profit-split-on-sim-funded-accounts",
+    "profit_split_scale": "https://help.toponefutures.com/en/articles/11003130-path-to-trading-live",
+    "max_daily_loss": "https://help.toponefutures.com/en/articles/15056075-elite-daily-v2-overview",
+    "max_drawdown": "https://help.toponefutures.com/en/articles/15056075-elite-daily-v2-overview",
+    "drawdown_type": "https://help.toponefutures.com/en/articles/15056075-elite-daily-v2-overview",
+    "profit_target": "https://help.toponefutures.com/en/articles/15056075-elite-daily-v2-overview",
+    "platforms": "https://help.toponefutures.com/en/articles/17149341-can-i-switch-my-trading-platform-tradovate-ninjatrader-or-blackarrow",
+    "payout_frequency": "https://help.toponefutures.com/en/articles/15056446-elite-daily-v2-daily-payout-rules",
+    "first_payout_days": "https://help.toponefutures.com/en/articles/15056075-elite-daily-v2-overview",
+    "payout_speed": "https://www.toponefutures.com/",
+    "max_allocation_text": "https://www.toponefutures.com/",
+    "consistency_rule": "https://help.toponefutures.com/en/articles/13449146-top-one-futures-account-comparison-elite-vs-instant-vs-ignite-accounts",
+    "news_trading": "https://help.toponefutures.com/en/articles/10907951-can-i-trade-news",
+    "weekend_holding": "https://help.toponefutures.com/en/articles/10907901-can-i-hold-trades-overnight",
+    "countries_restricted": "https://help.toponefutures.com/en/articles/11021644-countries-with-limitations-and-restrictions",
+    "hq": "https://www.toponefutures.com/launchpad",
+    "hq_country": "https://www.toponefutures.com/launchpad",
+    "discount_code": "https://www.toponefutures.com/",
+    "trustpilot": "https://www.trustpilot.com/review/toponefutures.com"
+  }
+}

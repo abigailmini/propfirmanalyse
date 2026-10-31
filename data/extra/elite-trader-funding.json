@@ -1,0 +1,39 @@
+{
+  "reset_fee": "$47 evaluation reset (1 Step, Static, EOD, Diamond Hands); Fast Track can't be reset; DTF resets $200 / $297 / $447 (10K/50K/100K); funded Elite accounts can be reset up to 3 times before renewal",
+  "retry_discount_pct": null,
+  "refund_policy": "All sales final, no refunds, except the '100% Satisfaction Guarantee' (purchase guarantee, conditions apply)",
+  "fee_refundable": false,
+  "time_limit": null,
+  "has_time_limit": false,
+  "activation_fee": 87,
+  "payout_methods": [
+    "Rise: bank transfer (ACH/local currency)",
+    "Rise: crypto wallet (USDC/USDT)",
+    "Rise: exchange account"
+  ],
+  "min_payout": 100,
+  "kyc_before_payout": true,
+  "scaling_plan": "No classic scaling plan. LIVE ELITE (real capital, 80/20, uncapped daily payouts) after 5 payouts, 50 active trading days or $25,000 total payouts (ETF discretion)",
+  "ea_bots": "restricted",
+  "copy_trading": true,
+  "hedging": false,
+  "max_risk_per_trade": null,
+  "inactivity_rule": "Log in at least every 30 days and place at least one trade per account each calendar week or the account is disabled",
+  "notes": "Activation fee is $87/month or a one-time $177-$307 depending on plan/size (from $47 with the Double Down Deal add-on); none on DTF. Sim payout request per cycle is $100 minimum (LIVE ELITE: $250 minimum). Payout caps per cycle are $1,000-$5,000 by plan/size. KYC is via SumSub, plus a Rise account. Cross-account and correlated-instrument hedging is prohibited by policy. Trade copier use is allowed (Trade Copier, EA & Algo disclaimer published; the platform's group trading is supported). Fully automated trading is 'restricted', i.e. the disclaimer applies, not a blanket ban; exact text not captured. Evaluations auto-renew every 30 days with no time limit while subscribed. Up to 20 active Elite Sim-Funded accounts.",
+  "sources": [
+    "https://elitetraderfunding.app/evaluations?category=1",
+    "https://elitetraderfunding.app/evaluations?category=3",
+    "https://elitetraderfunding.app/evaluations?category=16",
+    "https://elitetraderfunding.app/elite",
+    "https://elitetraderfunding.app/payouts",
+    "https://elitetraderfunding.app/help/refund-policy",
+    "https://elitetraderfunding.app/help/payout-withdrawal-options",
+    "https://elitetraderfunding.app/help/kyc-policy-and-registering-as-a-business",
+    "https://elitetraderfunding.app/help/trade-copier-disclaimer",
+    "https://elitetraderfunding.app/help/policy-hedging-against-yourself-using-the-same-or-correlated-instrument-on-one-or-multiple-accounts",
+    "https://elitetraderfunding.app/help/what-are-the-elite-funded-account-fees"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": 47,
+  "monthly_fee": true
+}

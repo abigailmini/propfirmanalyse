@@ -1,0 +1,47 @@
+{
+  "crypto_pairs": null,
+  "crypto_pairs_examples": [
+    "BTC/USDT",
+    "ETH/USDT",
+    "SOL/USDT",
+    "XRP/USDT",
+    "DOGE/USDT",
+    "HYPE/USDT"
+  ],
+  "crypto_leverage": "Up to 5x on all pairs",
+  "crypto_venue": "PropW in-house simulated trading engine built on CoinW infrastructure (web terminal + app, TradingView charts); help centre says orders are not routed to any external exchange",
+  "instrument_type": "perpetuals",
+  "weekend_crypto": true,
+  "payout_methods": [
+    "USDT"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": true,
+  "min_trade_duration": "60 seconds (closing within <60s is prohibited ultra-short-term trading)",
+  "max_position_or_risk_rule": "Evaluation: max margin per position 15,000 USDT BTC/ETH, 5,000 USDT others; total position margin 200,000 USDT (1,000,000 notional at 5x). Funded: margin usage ≥70% treated as high-risk; positions auto-closed after 10 calendar days.",
+  "banned_strategies": [
+    "hedging arbitrage / multi-account group hedging",
+    "account sharing or reselling",
+    "fake identity / multi-accounting via VPN/IP switching",
+    "ultra-short-term trades under 60 seconds",
+    "all-in / ≥70% margin gambling, event speculation",
+    "holding beyond 10 days",
+    "third-party copy trading / mirror trading / pass services",
+    "drastic strategy or tool shift between challenge and funded phases"
+  ],
+  "bots_allowed": null,
+  "copy_trading": false,
+  "crypto_fees": "Maker 0.02% / taker 0.06% (challenge and live phases); simulated funding rates based on participant positioning; on-chain network fees deducted on CoinW withdrawal",
+  "notes": "Funded pair list in help centre has ~60 USDT-margined pairs, including tokenised stocks (TSLA, NVDA, AAPL, SPY, QQQ) and metals (XAU, XAG, XPT); exact crypto-only count not stated so crypto_pairs left null. Funding rate mechanics mean perpetual-style contracts. 24/7 trading and overnight holding allowed.",
+  "sources": [
+    "https://docs.propw.com/propw-trading-rules/which-assets-can-be-traded-on-the-platform",
+    "https://docs.propw.com/propw-trading-rules/propw-evaluation-program-and-training-account-rules",
+    "https://docs.propw.com/propw-trading-rules/propw-abnormal-trading-supervision-standards-and-handling-measures",
+    "https://docs.propw.com/getting-started/propw-faq",
+    "https://docs.propw.com/propw-trading-rules/notice-on-the-trading-mechanisms-of-the-propw-evaluation-program",
+    "https://docs.propw.com/propw-trading-rules/withdrawal-rules-for-proprietary-fund-profits",
+    "https://docs.propw.com/propw-trading-rules/propws-kyc-verification-rules",
+    "https://www.propw.com/en_US"
+  ],
+  "checked": "2026-10-31"
+}

@@ -288,5 +288,62 @@
   "orig": "tmp/expand/logos/funded-trading-plus-icon.webp",
   "glyph_luminance": 0,
   "research_note": "Black wordmark+mark, transparent, 1123x328; white variant at /images/mains/ftp-logo-white-v1.3-wide.webp for dark bg. Icon logos/funded-trading-plus-icon.webp from /app-icon.webp (852x982 black FTP mark, transparent, works on white). No SVG found."
+ },
+ "earn2trade": {
+  "source_url": "https://www.earn2trade.com/apple-touch-icon.png",
+  "kind": "apple-touch-icon",
+  "bg": "transparent",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/earn2trade-icon.png",
+  "glyph_luminance": 148,
+  "research_note": "Dark navy (#0A2A3C) wordmark with orange accent - works on white. Light variant (E2T_Logo.svg, #E0E6EB text) saved as logos/earn2trade-light.svg for dark bg. Square icon logos/earn2trade-icon.png (180x180 apple-touch-icon)."
+ },
+ "elite-trader-funding": {
+  "source_url": "https://elitetraderfunding.app/icons/icon-512.png",
+  "kind": "favicon",
+  "bg": "#100f1c",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/elite-trader-funding-icon.png",
+  "research_note": "Black bull-and-bear + 'ELITE TRADER FUNDING' wordmark, 349x64 SVG; works on white. There's also a neon-green variant at /brand/logo-long-neon.svg for dark backgrounds (not saved). Icon logos/elite-trader-funding-icon.png is 512px (neon green on dark navy), from /icons/icon-512.png."
+ },
+ "topone-futures": {
+  "source_url": "https://cdn.prod.website-files.com/67d9f6c73e1490afc415fc90/6828b63534450f4a543621f8_TOF-Logo-Icon-Green-(3).png",
+  "kind": "favicon",
+  "bg": "transparent",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/topone-futures-icon.png",
+  "glyph_luminance": 140,
+  "research_note": "Header wordmark SVG (168x48): green gradient hexagon mark plus white 'TOP ONE' text and green 'FUTURES'. The white text disappears on white, so use it on a dark tile. Icon logos/topone-futures-icon.png (256px green hexagon mark, transparent) works on light backgrounds; source .../6828b63534450f4a543"
+ },
+ "fondeo": {
+  "source_url": "https://fondeo.xyz/apple-touch-icon.png",
+  "kind": "apple-touch-icon",
+  "bg": "#000000",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/fondeo-icon.png",
+  "research_note": "White F-shaped mark only (no wordmark), invisible on white. Icon logos/fondeo-icon.png (apple-touch-icon 180x180, white mark on black square) works on any bg."
+ },
+ "mubite": {
+  "source_url": "https://mubite.com/ (512px site icon)",
+  "kind": "favicon",
+  "bg": "#00072d",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/mubite-icon.png",
+  "research_note": "Header wordmark is white on transparent, so it disappears on white. Icon logos/mubite-icon.png (512px android-chrome icon, white bull-T mark on dark blue square) works on any background."
+ },
+ "propw": {
+  "source_url": "https://www.propw.com/ (icon SVG from the site header logo)",
+  "kind": "svg",
+  "bg": "transparent",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/propw-icon.svg",
+  "glyph_luminance": 124,
+  "research_note": "Wordmark with #1A1A1A text and #5227FF mark. Icon logos/propw-icon.svg is the purple rounded-square mark embedded on the homepage (data-URI 'propw-down-icon'); favicon.ico is only 32px."
  }
 }
