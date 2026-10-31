@@ -1,0 +1,32 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": "No refunds (evaluation fees, rebills, activation fees, add-ons)",
+  "fee_refundable": false,
+  "time_limit": "None; minimum activity required every rolling 30 days",
+  "has_time_limit": false,
+  "activation_fee": "$5 Pro activation fee (EOD, Trail, Static); none on S2F/S2L",
+  "payout_methods": [
+    "Plane (payout method set up in dashboard)",
+    "DT Wallet credit"
+  ],
+  "min_payout": 500,
+  "kyc_before_payout": null,
+  "scaling_plan": "Up to 15 funded accounts",
+  "ea_bots": null,
+  "copy_trading": "Trade copier supported (Onyx built-in, rTrader Pro copier)",
+  "hedging": null,
+  "max_risk_per_trade": "Contract limits by size (e.g. 25K EOD 6 minis / 60 micros)",
+  "inactivity_rule": "Minimum activity in each rolling 30 days or the account is closed",
+  "notes": "Max payout per request $1,000 / $2,000 / $3,500 / $5,000 by size.",
+  "sources": [
+    "https://daytraders.com/help/articles/17704104-billing",
+    "https://daytraders.com/help/articles/17704121-how-to-request-a-payout",
+    "https://daytraders.com/help/articles/17684739-eod-payouts",
+    "https://daytraders.com/help/articles/17704079-supported-platforms",
+    "https://daytraders.com/"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": null,
+  "monthly_fee": null
+}

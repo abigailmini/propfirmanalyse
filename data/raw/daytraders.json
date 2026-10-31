@@ -1,0 +1,218 @@
+{
+  "name": "DayTraders.com",
+  "slug": "daytraders",
+  "site": "https://daytraders.com",
+  "category": "futures",
+  "assets": [
+    "futures"
+  ],
+  "challenge_types": [
+    "1-step",
+    "instant"
+  ],
+  "account_sizes": [
+    25000,
+    50000,
+    100000,
+    150000,
+    300000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "EOD Evaluation",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 80
+        },
+        {
+          "size": 50000,
+          "fee": 105
+        },
+        {
+          "size": 150000,
+          "fee": 225
+        },
+        {
+          "size": 300000,
+          "fee": 400
+        }
+      ],
+      "profit_target": "$1,500 / $3,000 / $8,500 / $15,000",
+      "max_daily_loss": "$800 / $1,250 / $2,000 / $3,250",
+      "max_drawdown": "$1,000 / $2,000 / $4,000 / $6,500",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "100% (sim-funded Pro)",
+      "min_trading_days": 2
+    },
+    {
+      "name": "Trail Evaluation",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 55
+        },
+        {
+          "size": 50000,
+          "fee": 70
+        },
+        {
+          "size": 150000,
+          "fee": 100
+        },
+        {
+          "size": 300000,
+          "fee": 140
+        }
+      ],
+      "profit_target": "$1,500 / $3,000 / $8,500 / $15,000",
+      "max_daily_loss": "none",
+      "max_drawdown": "$1,500 / $2,500 / $4,500 / $7,000",
+      "drawdown_type": "intraday trailing",
+      "profit_split": "100% (sim-funded Pro)",
+      "min_trading_days": 2
+    },
+    {
+      "name": "Static Evaluation",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 40
+        },
+        {
+          "size": 50000,
+          "fee": 50
+        },
+        {
+          "size": 100000,
+          "fee": 75
+        },
+        {
+          "size": 150000,
+          "fee": 90
+        }
+      ],
+      "profit_target": "$2,500 / $3,750 / $5,750 / $6,750",
+      "max_daily_loss": "none",
+      "max_drawdown": "$750 / $1,000 / $1,500 / $1,750",
+      "drawdown_type": "static",
+      "profit_split": "100% (sim-funded Pro)",
+      "min_trading_days": 2
+    },
+    {
+      "name": "S2F (Straight to Funded)",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 222
+        },
+        {
+          "size": 50000,
+          "fee": 342
+        },
+        {
+          "size": 150000,
+          "fee": 495
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": "none / $1,250 / $3,750",
+      "max_drawdown": "$1,000 / $2,500 / $6,000",
+      "drawdown_type": "EOD",
+      "profit_split": "100% (sim-funded)",
+      "min_trading_days": 10
+    }
+  ],
+  "fee_from": 40,
+  "profit_split": "100% on sim-funded accounts; 80% on live (S2L)",
+  "profit_split_scale": null,
+  "max_daily_loss": "$800-$3,250 (EOD); none on Trail/Static",
+  "max_drawdown": "$750-$7,000",
+  "drawdown_type": "EOD trailing, intraday trailing or static (chosen at checkout)",
+  "profit_target": "$1,500-$15,000",
+  "leverage": null,
+  "platforms": [
+    "Rithmic",
+    "R|Trader Pro",
+    "Onyx",
+    "Quantower",
+    "MotiveWave",
+    "ATAS",
+    "Bookmap",
+    "Finamark",
+    "Jigsaw"
+  ],
+  "payout_frequency": "Per payout cycle of Qualifying Days (evaluations' Pro accounts); S2F every 10 Qualifying Days; S2L live: daily. Requests from $500 in $50 steps",
+  "first_payout_days": null,
+  "payout_speed": "automated approval; per-payout processing times published on /payouts (minutes to hours, 27-30 Oct 2026)",
+  "min_trading_days": 2,
+  "consistency_rule": "EOD/Trail/Static: 50% in evaluation, 30% per Pro payout cycle; S2F 20%; S2L evaluation 25%",
+  "news_trading": "allowed",
+  "weekend_holding": "allowed",
+  "countries_restricted": null,
+  "founded": 2023,
+  "hq": "Las Vegas, NV, United States",
+  "discount_code": null,
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 4.6,
+    "count": 517
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://daytraders.com/",
+    "https://daytraders.com/about",
+    "https://daytraders.com/how-it-works",
+    "https://daytraders.com/payouts",
+    "https://daytraders.com/help/articles/17704104-billing",
+    "https://daytraders.com/help/articles/17704121-how-to-request-a-payout",
+    "https://daytraders.com/help/articles/17684739-eod-payouts",
+    "https://daytraders.com/help/articles/17684741-eod-consistency",
+    "https://daytraders.com/help/articles/17704079-supported-platforms",
+    "https://daytraders.com/help/articles/17704089-trading-hours-holidays-and-overnight-positions",
+    "https://daytraders.com/help/articles/17704094-rule-violations-and-account-status",
+    "https://daytraders.com/affiliates",
+    "https://www.trustpilot.com/review/daytraders.com"
+  ],
+  "notes": "Prices from the homepage pricing data (PS_DATA) read 2026-10-31; each account also has a flat $5 Pro activation fee (EOD/Trail/Static). Billing: Monthly or Lifetime chosen at checkout (help: Billing); the widget price is per account and the lifetime price was not captured. No refunds. S2L (Straight to Live) plans from $179 (Core Live, $7,500 tier) run on real capital with 80/20 split and daily payouts; not listed as a program here because sizes are buying-power tiers. 'No codes, no gimmicks' pricing: no public promo code. Payout caps per request $1,000-$5,000 by size; min balance buffers apply (e.g. 50K: request from $52,600). Overnight/weekend holding and news allowed but not recommended. Restricted countries not published on the pages read. Founded 2023 (about page 'Est. 2023 - Las Vegas, NV').",
+  "segment": "futures",
+  "also_offers": [],
+  "category_basis": "Sells CME futures evaluations, straight-to-funded and straight-to-live accounts, all connected through Rithmic.",
+  "category_source": "https://daytraders.com/help/articles/17704079-supported-platforms",
+  "founded_source": "https://daytraders.com/about",
+  "hq_country": {
+    "code": "US",
+    "source": "https://daytraders.com/about",
+    "quote": "Las Vegas, NV, United States"
+  },
+  "max_allocation_text": "Up to 15 funded accounts; max $75,000 per payout cycle across 15 x $300K accounts",
+  "max_allocation_source": "https://daytraders.com/how-it-works",
+  "field_sources": {
+    "category": "https://daytraders.com/help/articles/17704079-supported-platforms",
+    "programs": "https://daytraders.com/",
+    "fee_from": "https://daytraders.com/",
+    "account_sizes": "https://daytraders.com/",
+    "profit_split": "https://daytraders.com/help/articles/17684739-eod-payouts",
+    "profit_target": "https://daytraders.com/",
+    "max_drawdown": "https://daytraders.com/",
+    "max_daily_loss": "https://daytraders.com/",
+    "drawdown_type": "https://daytraders.com/how-it-works",
+    "platforms": "https://daytraders.com/help/articles/17704079-supported-platforms",
+    "payout_frequency": "https://daytraders.com/help/articles/17704121-how-to-request-a-payout",
+    "payout_speed": "https://daytraders.com/payouts",
+    "max_allocation_text": "https://daytraders.com/how-it-works",
+    "min_trading_days": "https://daytraders.com/",
+    "consistency_rule": "https://daytraders.com/help/articles/17684741-eod-consistency",
+    "news_trading": "https://daytraders.com/help/articles/17704089-trading-hours-holidays-and-overnight-positions",
+    "weekend_holding": "https://daytraders.com/help/articles/17704089-trading-hours-holidays-and-overnight-positions",
+    "founded": "https://daytraders.com/about",
+    "hq": "https://daytraders.com/about",
+    "hq_country": "https://daytraders.com/about",
+    "trustpilot": "https://www.trustpilot.com/review/daytraders.com"
+  }
+}

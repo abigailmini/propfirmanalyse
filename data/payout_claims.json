@@ -296,6 +296,12 @@
    "value_usd": 1660000,
    "source": "https://www.propw.com/en_US",
    "proof": "Homepage counter 'Total Rewards $1.66M+' alongside 27K+ participants and $88M+ provided funds"
+  },
+  "tradeday": {
+   "text": "$10M+ Verified Payouts",
+   "value_usd": 10000000,
+   "source": "https://www.tradeday.com/",
+   "proof": "Homepage stat block + payout certificates; about page: 'paid out over $10 million'"
   }
  }
 }

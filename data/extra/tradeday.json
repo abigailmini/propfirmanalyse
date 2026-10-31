@@ -1,0 +1,31 @@
+{
+  "reset_fee": "Reset = discounted monthly price (e.g. $45 Quick Pay Intraday 25K); free reset on each monthly rebill",
+  "retry_discount_pct": null,
+  "refund_policy": "Subscription fees are non-refundable except where required by law",
+  "fee_refundable": false,
+  "time_limit": "None (monthly subscription until passed or cancelled)",
+  "has_time_limit": false,
+  "activation_fee": "None",
+  "payout_methods": [
+    "Rise (bank wire)",
+    "Rise (crypto, USDC)"
+  ],
+  "min_payout": 250,
+  "kyc_before_payout": true,
+  "scaling_plan": null,
+  "ea_bots": "High-frequency automated scalping systems prohibited",
+  "copy_trading": null,
+  "hedging": null,
+  "max_risk_per_trade": "Position limits 2/5/10/15 contracts by size",
+  "inactivity_rule": null,
+  "notes": "Payouts via Riseworks: US wire free, international wire $15, L1 crypto $2.50 + gas, L2 crypto free. KYC/AML by broker and clearing firm before funded account.",
+  "sources": [
+    "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008898-what-are-the-payment-methods-for-my-trading-profits-",
+    "https://tradeday.freshdesk.com/en/support/solutions/articles/103000262630-how-do-i-request-a-payout-withdrawal-and-how-long-does-it-take-",
+    "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008883-will-tradeday-evaluate-and-fund-scalpers-",
+    "https://www.tradeday.com/"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": null,
+  "monthly_fee": true
+}

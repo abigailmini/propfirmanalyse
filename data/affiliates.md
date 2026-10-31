@@ -30,7 +30,7 @@ Affiliate page column = where to apply. If it says *email*, there is no public p
 | Bulenox | https://bulenox.com/member/aff/signup | todo | # | — | up to 15% | 2026-10-26 |
 | Instant Funding | https://instantfunding.com/partner/ | todo | # | — | 15% first purchase, 0–5% repeat, up to 17.5%; paid bi-weekly from $100 | 2026-10-26 |
 
-## Added 2026-10-31 (22)
+## Added 2026-10-31 (24)
 
 Commission = headline rate published on the firm's own affiliate page, read 2026-10-31. Code = public promo code on the firm's own site that day (not ours).
 
@@ -46,6 +46,8 @@ Commission = headline rate published on the firm's own affiliate page, read 2026
 | Earn2Trade | https://www.earn2trade.com/affiliates | todo | # | 60PLUS50 | 20% on all sales of all products (lifetime) | 2026-10-31 |
 | Elite Trader Funding | https://elitetraderfunding.app/affiliates | todo | # | — | 15% for the first 45 days (1 Step, Diamond Hands, EOD); 7% Static; 3% Intermediate | 2026-10-31 |
 | Top One Futures | https://www.toponefutures.com/affiliate | todo | # | BOO | 10% on Elite and first-time Instant sim purchases (13% / 16% / 20% at Gold / Platinum / Diamond tiers), 5-10% on recurring Instant purchases | 2026-10-31 |
+| TradeDay | https://www.tradeday.com/affiliate-program | todo | # | TDNEW | 15% up to 22.5% by monthly sales ($0-$5K 15%, $5K-$10K 20%, $10K+ 22.5%) | 2026-10-31 |
+| DayTraders.com | https://daytraders.com/affiliates | todo | # | — | 20% lifetime referral commission | 2026-10-31 |
 | FXIFY | https://fxify.com/become-a-partner/ | todo | # | AGHHH35 | 10%, rising to 15% after 100 sign-ups and 20% after 500 sign-ups | 2026-10-31 |
 | Hola Prime | https://holaprime.com/best-prop-firm-affiliate-program/ | todo | # | SPOOKY40 | 30% flat commission (no tiers) | 2026-10-31 |
 | Fintokei | https://www.fintokei.com/affiliate/ | todo | # | NEW20 | Tiered; up to 10% commission at tier 3, paid on repeat purchases too | 2026-10-31 |

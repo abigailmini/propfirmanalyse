@@ -37,6 +37,8 @@ PROMOS = {
  "funded-trading-plus": ("SIZE30", "30% off $5K-$10K accounts", 30, None,
                          [("SIZE25", "25% off $25K-$50K accounts", 25), ("SIZE20", "20% off $100K-$200K accounts", 20)]),
  "funderpro": ("OCT30", "30% off all challenges (October promo)", 30, None, []),
+ "tradeday": ("TDNEW", "Up to 55% off (Quick Pay 55%, Fast Pass 50% shown at checkout prices)", 55, None, []),
+ "ftuk": ("FTUK30", "30% off your first purchase (new customers)", 30, None, [("WEALTHCHARTS", "50% off all Futures challenges", 50)]),
  "topone-futures": ("BOO", "50% off Elite Daily and Ignite, 45% off Instant (Halloween)", 50, None, [("BOGO", "Buy one get one on Elite Access", None)]),
 }
 

@@ -81,7 +81,9 @@ PAIRS += [("lucid-trading", "tradeify"), ("fxify", "ftmo"), ("take-profit-trader
           ("funded-trading-plus", "ftmo"), ("funded-trading-plus", "the5ers"), ("earn2trade", "topstep"), ("earn2trade", "apex-trader-funding"),
           ("earn2trade", "take-profit-trader"), ("elite-trader-funding", "apex-trader-funding"), ("elite-trader-funding", "topstep"),
           ("topone-futures", "apex-trader-funding"), ("topone-futures", "topstep"), ("fondeo", "hyrotrader"), ("fondeo", "fundedxyz"),
-          ("mubite", "hyrotrader"), ("mubite", "breakout-prop"), ("propw", "hyrotrader"), ("propw", "crypto-fund-trader")]
+          ("mubite", "hyrotrader"), ("mubite", "breakout-prop"), ("propw", "hyrotrader"), ("propw", "crypto-fund-trader"),
+          ("tradeday", "topstep"), ("tradeday", "apex-trader-funding"), ("tradeday", "earn2trade"),
+          ("daytraders", "topstep"), ("daytraders", "apex-trader-funding"), ("daytraders", "tradeify")]
 def pair_group(a): return CAT_LABEL.get(BY[a].get("category"), "Other") + " prop firms"
 def pairs_of(slug): return [(a, b) for a, b in PAIRS if slug in (a, b) and a in BY and b in BY]
 

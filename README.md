@@ -4,6 +4,7 @@ Static, data-first prop firm comparison site. Every page is generated from `data
 
 ## Build
 ```
+python3 scripts/add_firms.py <slug>...   # (new firms) staged research in ../tmp/expand -> data/raw, extra, crypto, payout_claims
 python3 scripts/merge.py      # data/raw/<slug>.json -> data/firms.json (canonical crypto-first order)
 python3 scripts/build.py      # data/firms.json -> site/
 ```

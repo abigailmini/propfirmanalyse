@@ -345,5 +345,28 @@
   "orig": "tmp/expand/logos/propw-icon.svg",
   "glyph_luminance": 124,
   "research_note": "Wordmark with #1A1A1A text and #5227FF mark. Icon logos/propw-icon.svg is the purple rounded-square mark embedded on the homepage (data-URI 'propw-down-icon'); favicon.ico is only 32px."
+ },
+ "tradeday": {
+  "source_url": "https://cdn.prod.website-files.com/696509b94e1d014f63369766/6a1bd7799b7db52174c320ce_Asset%2072.png",
+  "kind": "favicon",
+  "bg": "#000000",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/tradeday-icon.png",
+  "research_note": "site icon (512x512)"
+ },
+ "daytraders": {
+  "source_url": "https://daytraders.com/assets/images/logo/logo.svg",
+  "kind": "header-logo",
+  "bg": "transparent",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/daytraders.svg",
+  "glyph_luminance": 171,
+  "needs_plate": true,
+  "plate": "#18233a",
+  "plate_hint": "red + white mark: white facets vanish on white",
+  "note": "mark cropped from the official header logo SVG",
+  "research_note": "mark cropped from header logo"
  }
 }

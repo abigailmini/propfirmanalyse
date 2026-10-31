@@ -367,5 +367,23 @@
   "old": null,
   "new": "Added to PropAnalyse",
   "kind": "Listing"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "daytraders",
+  "firm": "DayTraders.com",
+  "field": "Listing",
+  "old": null,
+  "new": "Added to PropAnalyse",
+  "kind": "Listing"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "tradeday",
+  "firm": "TradeDay",
+  "field": "Listing",
+  "old": null,
+  "new": "Added to PropAnalyse",
+  "kind": "Listing"
  }
 ]

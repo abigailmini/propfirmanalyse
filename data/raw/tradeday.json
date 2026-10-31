@@ -1,0 +1,292 @@
+{
+  "name": "TradeDay",
+  "slug": "tradeday",
+  "site": "https://www.tradeday.com",
+  "category": "futures",
+  "assets": [
+    "futures"
+  ],
+  "challenge_types": [
+    "1-step"
+  ],
+  "account_sizes": [
+    25000,
+    50000,
+    100000,
+    150000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "Quick Pay - Intraday",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 100
+        },
+        {
+          "size": 50000,
+          "fee": 131
+        },
+        {
+          "size": 100000,
+          "fee": 240
+        },
+        {
+          "size": 150000,
+          "fee": 360
+        }
+      ],
+      "profit_target": "$1,500 / $3,000 / $6,000 / $9,000",
+      "max_daily_loss": "none",
+      "max_drawdown": "$1,000 / $2,000 / $3,000 / $4,500",
+      "drawdown_type": "intraday trailing",
+      "profit_split": "50% below $4K account profit, 80% above; 90% Funded Live",
+      "min_trading_days": 5
+    },
+    {
+      "name": "Quick Pay - End of Day",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 120
+        },
+        {
+          "size": 50000,
+          "fee": 175
+        },
+        {
+          "size": 100000,
+          "fee": 285
+        },
+        {
+          "size": 150000,
+          "fee": 400
+        }
+      ],
+      "profit_target": "$1,500 / $3,000 / $6,000 / $9,000",
+      "max_daily_loss": "none",
+      "max_drawdown": "$1,000 / $2,000 / $3,000 / $4,500",
+      "drawdown_type": "EOD trailing in evaluation; intraday trailing on Funded Sim",
+      "profit_split": "50% below $4K account profit, 80% above; 90% Funded Live",
+      "min_trading_days": 5
+    },
+    {
+      "name": "Fast Pass",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 130
+        },
+        {
+          "size": 50000,
+          "fee": 189
+        },
+        {
+          "size": 100000,
+          "fee": 350
+        },
+        {
+          "size": 150000,
+          "fee": 530
+        }
+      ],
+      "profit_target": "$1,500 / $3,000 / $6,000 / $9,000",
+      "max_daily_loss": "none",
+      "max_drawdown": "$1,000 / $2,000 / $3,000 / $4,500",
+      "drawdown_type": "EOD trailing (evaluation and funded)",
+      "profit_split": null,
+      "min_trading_days": 3
+    }
+  ],
+  "fee_from": 100,
+  "profit_split": "50% up to 90%",
+  "profit_split_scale": "Quick Pay Funded Sim: 50/50 while account profit is below $4,000, 80/20 above; 90/10 in Funded Live",
+  "max_daily_loss": "none",
+  "max_drawdown": "$1,000-$4,500",
+  "drawdown_type": "intraday or EOD trailing (Quick Pay funded: intraday)",
+  "profit_target": "6% ($1,500-$9,000)",
+  "leverage": null,
+  "platforms": [
+    "Tradovate",
+    "NinjaTrader",
+    "TradingView",
+    "Jigsaw",
+    "R|Trader Pro",
+    "Quantower",
+    "ATAS",
+    "MotiveWave",
+    "Bookmap",
+    "Sierra Chart",
+    "EdgeProX",
+    "Finamark",
+    "Volfix",
+    "WealthCharts",
+    "MultiCharts",
+    "Overcharts"
+  ],
+  "payout_frequency": "Quick Pay: day-one payouts from any positive balance, no buffer (min 1 day, min request $250); Fast Pass: structured payout schedule",
+  "first_payout_days": 1,
+  "payout_speed": "requests before 5:30 pm CT processed within 24 hours (business days)",
+  "min_trading_days": 5,
+  "consistency_rule": "Evaluation: no day >30% of total profit (Quick Pay), >45% (Fast Pass); Quick Pay Funded Sim: none",
+  "news_trading": "restricted",
+  "weekend_holding": "banned",
+  "countries_restricted": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Angola",
+    "Balkans",
+    "Barbados",
+    "Belarus",
+    "British Virgin Islands",
+    "Bosnia and Herzegovina",
+    "Botswana",
+    "Bulgaria",
+    "Burkina Faso",
+    "Burundi",
+    "Cameroon",
+    "Cayman Islands",
+    "Central African Republic",
+    "Ivory Coast",
+    "Crimea",
+    "Croatia",
+    "Cuba",
+    "North Korea",
+    "Democratic Republic of the Congo",
+    "Ecuador",
+    "Ethiopia",
+    "Ghana",
+    "Gibraltar",
+    "Guam",
+    "Guyana",
+    "Haiti",
+    "Iceland",
+    "Indonesia",
+    "Iran",
+    "Iraq",
+    "Jamaica",
+    "Jordan",
+    "Kosovo",
+    "Laos",
+    "Lebanon",
+    "Liberia",
+    "Libya",
+    "North Macedonia",
+    "Mali",
+    "Malta",
+    "Mauritius",
+    "Monaco",
+    "Mongolia",
+    "Montenegro",
+    "Morocco",
+    "Mozambique",
+    "Myanmar",
+    "Namibia",
+    "Nepal",
+    "Nicaragua",
+    "Nigeria",
+    "Pakistan",
+    "Panama",
+    "Papua New Guinea",
+    "Palestine",
+    "Philippines",
+    "Puerto Rico",
+    "Romania",
+    "Russia",
+    "Senegal",
+    "Serbia",
+    "Slovenia",
+    "Somalia",
+    "South Africa",
+    "South Sudan",
+    "Sri Lanka",
+    "Sudan",
+    "Syria",
+    "Tanzania",
+    "Trinidad and Tobago",
+    "Tunisia",
+    "Turkey",
+    "Uganda",
+    "Ukraine",
+    "US Virgin Islands",
+    "Venezuela",
+    "Vietnam",
+    "Yemen",
+    "Zimbabwe"
+  ],
+  "founded": 2020,
+  "hq": "Chicago, IL, United States",
+  "discount_code": {
+    "code": "TDNEW",
+    "value": "Up to 55% off (Quick Pay 55%, Fast Pass 50% shown at checkout prices)",
+    "percent": 55,
+    "source": "https://www.tradeday.com/",
+    "verified": "2026-10-31",
+    "expires": null
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 4.6,
+    "count": 1453
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://www.tradeday.com/",
+    "https://www.tradeday.com/about",
+    "https://www.tradeday.com/how-it-works",
+    "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008813-which-trading-platforms-does-tradeday-use-",
+    "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008847-what-are-the-objectives-and-rules-of-the-quick-pay-and-fast-pass-evaluation-",
+    "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008889-what-are-the-rules-for-funded-funded-sim-and-funded-live-traders-",
+    "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008898-what-are-the-payment-methods-for-my-trading-profits-",
+    "https://tradeday.freshdesk.com/en/support/solutions/articles/103000123294-prohibited-countries",
+    "https://tradeday.freshdesk.com/en/support/solutions/articles/103000262630-how-do-i-request-a-payout-withdrawal-and-how-long-does-it-take-",
+    "https://tradeday.freshdesk.com/en/support/solutions/articles/103000335937-quick-pay-funded-sim-payout-policy",
+    "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008883-will-tradeday-evaluate-and-fund-scalpers-",
+    "https://www.tradeday.com/affiliate-program",
+    "https://www.trustpilot.com/review/tradeday.com"
+  ],
+  "notes": "Fees are MONTHLY subscriptions (list prices; homepage showed 55% off Quick Pay / 50% off Fast Pass with code TDNEW, e.g. Quick Pay Intraday 25K $100 -> $45). Resets cost the discounted monthly price; free reset on rebill; no activation fee. Quick Pay evaluation drawdown can be Intraday or EOD, but all Quick Pay Funded Sim accounts use intraday drawdown; Fast Pass is EOD throughout. Profit targets and position limits identical across programs (2/5/10/15 contracts). Funded Sim payouts: min $250, Quick Pay split 50/50 below $4K current account profit, 80/20 above; Funded Live 90/10. Fast Pass payout split not captured. News: profits from tier-1 data releases are excluded and day trading only within permitted times (news recorded 'restricted', weekend 'banned' = day trading only). Germany and Canada (outside Ontario): Funded Sim only. Scalping >200 trades/day or seconds-long tick scalps prohibited. Founded 2020 by James Thorpe and Steve Miley (about page).",
+  "segment": "futures",
+  "also_offers": [],
+  "category_basis": "Sells monthly CME futures evaluations (Quick Pay, Fast Pass) on CQG (Tradovate, NinjaTrader, TradingView) and Rithmic platforms.",
+  "category_source": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008813-which-trading-platforms-does-tradeday-use-",
+  "founded_source": "https://www.tradeday.com/about",
+  "hq_country": {
+    "code": "US",
+    "source": "https://www.tradeday.com/",
+    "quote": "Chicago, IL, United States"
+  },
+  "max_allocation_text": "Trade up to 10 accounts (homepage)",
+  "max_allocation_source": "https://www.tradeday.com/",
+  "field_sources": {
+    "category": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008813-which-trading-platforms-does-tradeday-use-",
+    "programs": "https://www.tradeday.com/",
+    "fee_from": "https://www.tradeday.com/",
+    "account_sizes": "https://www.tradeday.com/",
+    "profit_split": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000335937-quick-pay-funded-sim-payout-policy",
+    "profit_split_scale": "https://www.tradeday.com/",
+    "max_drawdown": "https://www.tradeday.com/",
+    "drawdown_type": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008889-what-are-the-rules-for-funded-funded-sim-and-funded-live-traders-",
+    "profit_target": "https://www.tradeday.com/",
+    "platforms": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008813-which-trading-platforms-does-tradeday-use-",
+    "payout_frequency": "https://www.tradeday.com/",
+    "first_payout_days": "https://www.tradeday.com/",
+    "payout_speed": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000262630-how-do-i-request-a-payout-withdrawal-and-how-long-does-it-take-",
+    "max_allocation_text": "https://www.tradeday.com/",
+    "min_trading_days": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008847-what-are-the-objectives-and-rules-of-the-quick-pay-and-fast-pass-evaluation-",
+    "consistency_rule": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008847-what-are-the-objectives-and-rules-of-the-quick-pay-and-fast-pass-evaluation-",
+    "news_trading": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008889-what-are-the-rules-for-funded-funded-sim-and-funded-live-traders-",
+    "weekend_holding": "https://www.tradeday.com/how-it-works",
+    "countries_restricted": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000123294-prohibited-countries",
+    "founded": "https://www.tradeday.com/about",
+    "hq": "https://www.tradeday.com/",
+    "hq_country": "https://www.tradeday.com/",
+    "discount_code": "https://www.tradeday.com/",
+    "trustpilot": "https://www.trustpilot.com/review/tradeday.com"
+  }
+}
