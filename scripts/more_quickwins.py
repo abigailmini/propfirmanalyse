@@ -276,3 +276,35 @@ def qw_finalize():
             img, alt = QW_OG_MAP.get(path) or globals().get("QW_OG_EXTRA", {}).get(path) or ("/assets/og.png", QW_OG_DEFAULT_ALT)
             s = s.replace(tag, qw_og_tags(img, alt), 1); open(p, "w").write(s)
 
+
+
+# 7. Shareable calculator results: src/share.js keeps inputs in the URL; share / copy-link buttons; per-tool OG cards
+QW_SHARE_HTML = ('<div class="qwshare"><h3>Share this result</h3><p class="small" id="qw-sum"></p>'
+                 '<p class="qwbtns"><button type="button" class="btn sm" id="qw-share">Share result</button><button type="button" class="btn line sm" id="qw-copy">Copy link</button></p>'
+                 '<p class="small" id="qw-msg" aria-live="polite">The link keeps every input, so it reopens this exact result.</p></div>')
+QW_SHARE_CSS = "<style>.qwshare{margin-top:20px;padding-top:16px;border-top:1px solid var(--rule)}.qwshare h3{font-size:15px;margin:0 0 6px}.qwbtns{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 6px}</style>"
+QW_TOOL_OG = {
+    "true-cost": ("Free calculator", "What a prop firm challenge really costs you", [("Retries", "and resets counted"), ("Refunds", "when the firm pays them"), ("Break-even", "gross profit needed"), (str(len(FIRMS)) + " firms", "rules preloaded")]),
+    "drawdown": ("Free calculator", "How much room before your prop account is breached", [("Static", "fixed floor"), ("Trailing", "follows your high"), ("EOD", "end-of-day trailing"), ("$ floors", "daily and overall")]),
+    "profit-target": ("Free calculator", "Profit target in dollars, days and payout", [("Phase 1", "target in $"), ("Phase 2", "target in $"), ("Days", "at your daily return"), ("Payout", "after the split")]),
+}
+QW_OG_EXTRA = {}
+def qw_tool_og():
+    if not QW_OG: return
+    for k, (kick, title, cols) in QW_TOOL_OG.items():
+        rel = f"/og/tools/{k}.png"
+        QW_OG["text_card"](kick, title, cols, OUT + rel, right="propanalyse.com/tools/" + k + "/")
+        QW_OG_EXTRA[f"/tools/{k}/"] = (rel, title + " (PropAnalyse calculator)")
+_qw_prev_page3 = page
+def page(path, title, desc, body, jsonld=None, og_type="website", extra_head="", lang="en"):
+    m = re.fullmatch(r"/tools/(true-cost|drawdown|profit-target)/", path)
+    if m and "qwshare" not in body:
+        body = body.replace('</div></div>\n<section class="block"><h2>How it works</h2>', QW_SHARE_HTML + '</div></div>\n<section class="block"><h2>How it works</h2>', 1)
+        body = body + f'<script src="{url("/assets/share.js")}?v={ASSET_V}" defer></script>'
+        extra_head = (extra_head or "") + QW_SHARE_CSS
+    return _qw_prev_page3(path, title, desc, body, jsonld, og_type, extra_head, lang)
+_qw_prev_og_build = qw_og_build
+def qw_og_build():
+    _qw_prev_og_build(); qw_tool_og()
+    shutil.copy(os.path.join(ROOT, "src", "share.js"), os.path.join(OUT, "assets", "share.js"))
+
