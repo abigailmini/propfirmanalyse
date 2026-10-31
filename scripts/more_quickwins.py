@@ -174,7 +174,7 @@ def qw_finalize():
 
 # 3. Mobile: stack wide data tables into cards at <768px (labels from the header row)
 ASSET_V = "14"
-QW_STACK_RX = re.compile(r'<table class="mini (?:offers|crypto|sttable)[^"]*"[^>]*>.*?</table>', re.S)
+QW_STACK_RX = re.compile(r'<table class="mini (?:offers|crypto|sttable|qwsizes)[^"]*"[^>]*>.*?</table>', re.S)
 def qw_stack_table(t):
     if "qwstack" in t: return t
     head = t.split("</thead>")[0]
@@ -204,7 +204,7 @@ def qw_finalize():
         for fn in files:
             if not fn.endswith(".html"): continue
             p = os.path.join(root, fn); s = open(p).read()
-            if 'class="mini offers' in s or 'class="mini crypto' in s or 'class="mini sttable' in s:
+            if any(x in s for x in ('class="mini offers', 'class="mini crypto', 'class="mini sttable', 'class="mini qwsizes')):
                 n = QW_STACK_RX.sub(lambda m: qw_stack_table(m.group(0)), s)
                 if n != s: open(p, "w").write(n)
 
@@ -455,4 +455,69 @@ def qw_pages():
     _qw_prev_pages(); qw_safe_pages()
 FOOT_EXTRA.insert(0, ("/safe/", "Is my prop firm safe?"))
 if "ZH_FOOT" in globals(): ZH_FOOT.insert(0, ("/zh/safe/", "公司安全查询"))
+
+
+
+# 9. Thin hubs (<250 words): real, data-driven guidance on /sizes/, /tools/, /platforms/, /best/
+def qw_fee_at(f, size):
+    v = [num(sf.get("fee")) for p in as_list(f.get("programs")) for sf in as_list(p.get("sizes_fees")) if num(sf.get("size")) == size and num(sf.get("fee")) and (f.get("fee_currency") or "USD") == "USD"]
+    return min(v) if v else None
+def qw_median(xs):
+    xs = sorted(x for x in xs if x is not None)
+    if not xs: return None
+    m = len(xs) // 2
+    return xs[m] if len(xs) % 2 else (xs[m - 1] + xs[m]) / 2
+def qw_sizes_extra():
+    act = [f for f in RANKED if not st_is_caution(f)]
+    rows = []
+    for sz in (5000, 10000, 25000, 50000, 100000, 200000):
+        fees = [(qw_fee_at(f, sz), f) for f in act]; fees = [(v, f) for v, f in fees if v]
+        if not fees: continue
+        lo = min(fees, key=lambda x: x[0]); med = qw_median([v for v, _ in fees])
+        rows.append(f'<tr><td class="n">{money(sz)}</td><td class="num n">{len(fees)}</td><td class="num n">{money(med)}</td><td class="num n">{money(med / sz * 1000)}</td><td><a href="{url("/firms/" + lo[1]["slug"] + "/")}">{e(lo[1]["name"])}</a> <span class="n">{money(lo[0])}</span></td><td class="num n">{money(sz * .08)}</td><td class="num n">{money(sz * .05)}</td></tr>')
+    tbl = ('<div class="tablewrap"><table class="mini qwsizes"><thead><tr><th scope="col">Account</th><th scope="col" class="num">Firms (USD)</th><th scope="col" class="num">Median fee</th><th scope="col" class="num">Median per $1K</th><th scope="col">Cheapest</th><th scope="col" class="num">8% target</th><th scope="col" class="num">5% daily loss</th></tr></thead><tbody>' + "".join(rows) + "</tbody></table></div>")
+    return (f'<section class="block prose" id="choose"><h2>How to choose an account size</h2>'
+            f'<p>Most firms sell the same evaluation in several sizes, and the fee rises with the size. What changes for you is not the rules (the percentages are usually identical) but the dollar amounts: the profit target, the daily loss limit and the payout you can earn. The table uses the cheapest USD-priced program each active firm publishes at that size; firms pricing in EUR (FTMO) are left out so medians are comparable.</p>{tbl}'
+            f'<p><b>Smaller accounts cost less per attempt, not per dollar of buying power.</b> The median fee per $1,000 of account usually falls as size goes up, so a $100K account is often better value than two $50K accounts, but only if you can trade it calmly. A 5% daily limit on $100K is $5,000; one oversized position can take it.</p>'
+            f'<p><b>Size your risk, not your ego.</b> A common rule of thumb is to risk well under 1% of the account per trade, so a losing streak cannot reach the daily limit. If that feels too small to reach the target in a reasonable time, the account size is too big for your strategy rather than the target too high.</p>'
+            f'<p><b>Count the retries.</b> Most traders need more than one attempt. Use the <a href="{url("/tools/true-cost/")}">true-cost calculator</a> to see what two or three attempts at each size really cost, including refunds and activation fees, and compare per-$1K cost across firms on each size page below.</p>'
+            f'<p><b>Check the scaling plan.</b> Some firms grow a funded account after consistent payouts, so starting smaller and scaling can beat buying the largest account up front. Payout splits often rise with account size or after milestones; see each firm\'s program table.</p></section>')
+def qw_tools_extra():
+    f = BY.get("ftmo"); ex = ""
+    if f:
+        p = next((p for p in as_list(f.get("programs")) if "2-Step" in (p.get("name") or "")), None)
+        sf = next((x for x in as_list((p or {}).get("sizes_fees")) if num(x.get("size")) == 100000), None)
+        if sf: ex = (f'<p><b>Worked example.</b> The {e(p["name"])} at $100K lists €{num(sf["fee"]):,.0f}. If you pass on the second attempt with no retry discount, you spend €{2 * num(sf["fee"]):,.0f}; FTMO refunds the fee with the first reward, so the net cost is €{num(sf["fee"]):,.0f}. '
+                     f'At a 90% split you break even after roughly €{num(sf["fee"]) / 0.9:,.0f} of gross profit. <a href="{url("/tools/true-cost/")}?firm=ftmo">Open this in the calculator</a> and change any input; the link updates so you can share the exact result.</p>')
+    return (f'<section class="block prose"><h2>What each calculator answers</h2>'
+            f'<p><b>True cost to first payout.</b> The sticker price of a challenge is only the first attempt. The calculator adds retries (at the firm\'s retry discount, if it publishes one), activation fees charged after passing, and subtracts refunds paid with the first payout. It then shows the gross profit you need before you are ahead, and what you keep from a first payout of a given size.</p>{ex}'
+            f'<p><b>Drawdown in dollars.</b> Daily loss and maximum drawdown are published as percentages, but breaches happen in dollars. Enter your balance, day-start equity and highest balance, and it shows both floors, which one binds first, and how much room is left. It handles static, trailing and end-of-day trailing drawdown, including trailing floors that lock at the starting balance.</p>'
+            f'<p><b>Profit target and timeline.</b> Turns the phase targets into dollars, estimates trading days at your average daily return (never fewer than the firm\'s minimum days) and shows what a payout at target is worth after the split. If the day count looks unrealistic, the target, not your discipline, is the problem.</p>'
+            f'<p><b>Firm finder.</b> Seven questions (market, budget, evaluation style, account size, what matters most, must-have rules, country) filtered against every firm in the dataset.</p>'
+            f'<h2>How they get their numbers</h2><p>Each calculator can load a firm\'s published fees and rules from our <a href="{url("/data/firms.json")}">open dataset</a>, the same data behind the firm pages, verified on the date shown on each firm page. Every prefilled value can be overwritten. Calculations run in your browser and nothing you type is sent anywhere. They do not model slippage, spreads, commissions or rule details such as consistency rules or news restrictions; read the firm\'s rules page before you buy.</p></section>')
+def qw_platforms_extra():
+    from collections import Counter
+    act = [f for f in RANKED if not st_is_caution(f)]
+    cnt = Counter(p for f in act for p in set(f["_platforms"]))
+    top = cnt.most_common(12)
+    lis = "".join(f'<li><b>{e(p)}</b>: {n} of {len(act)} active firms</li>' for p, n in top)
+    return (f'<section class="block prose"><h2>Which platforms prop firms use</h2><p>Counted across the {len(act)} active firms we track, from each firm\'s own platform list:</p><ul class="bul">{lis}</ul>'
+            f'<h2>Choosing a platform</h2><p><b>CFD and forex firms</b> mostly run MetaTrader 5, cTrader, Match-Trader or DXtrade. MT5 has the widest indicator and expert-advisor ecosystem; cTrader and Match-Trader are cleaner for manual trading and show depth of market. Many firms dropped MetaTrader after MetaQuotes tightened licensing for prop firms, so check that a MetaTrader offer is current.</p>'
+            f'<p><b>Futures firms</b> route through a data and clearing stack (Rithmic, Tradovate, CQG) and let you trade on front ends such as NinjaTrader, Tradovate, Quantower or TradingView. Check which data feed the firm uses, because it decides which front ends work and whether there are monthly data fees.</p>'
+            f'<p><b>Crypto exchange firms</b> give you an exchange account or an exchange-priced terminal (for example Bybit) with perpetual futures. Fills, funding rates and liquidation mechanics follow the exchange rather than a CFD broker\'s pricing, which matters for scalpers and for anyone holding positions over funding times.</p>'
+            f'<p><b>Two checks before you buy.</b> First, whether the platform is available in your country: some firms block MT5 for US residents while allowing other platforms. Second, whether the platform supports your tools: expert advisors, copy trading and TradingView automation are allowed by some firms and banned by others. Each platform page below lists the firms and links to their rules.</p></section>')
+def qw_best_extra():
+    lis = "".join(f'<li><a href="{url("/best/" + s + "/")}">{e(BEST_H1.get(s, t))}</a>: {e(d)} <span class="n small">({sum(1 for f in RANKED if not st_is_caution(f) and fn(f))} firms)</span></li>' for s, t, d, fn in BEST)
+    return (f'<section class="block prose"><h2>How the best-of lists are built</h2><p>Every list is a filter over the same dataset, then sorted by PA Score. A firm qualifies only on what it publishes on its own site; if a rule is not published, it does not count in the firm\'s favour. Firms with a <a href="{url("/caution/")}">caution</a> are left out of every list, and affiliate deals play no part in membership or order.</p>'
+            f'<ul class="bul">{lis}</ul>'
+            f'<h2>Reading a list well</h2><p>The top firm in a list is the best match on our published data, not a guarantee for your style. Two things are worth checking on the firm page before you buy: the rule that matters most to you (for example drawdown type for scalpers, or a consistency rule for swing traders), and the date the firm was last verified. Lists rebuild from the data every day, so a rule change moves a firm in or out without anyone deciding it.</p>'
+            f'<p>Not sure which list fits? The <a href="{url("/quiz/")}">firm finder</a> asks seven questions and filters the full dataset, and the <a href="{url("/safe/")}">safety checker</a> shows any firm\'s status and evidence in one place.</p></section>')
+QW_THIN = {"/sizes/": qw_sizes_extra, "/tools/": qw_tools_extra, "/platforms/": qw_platforms_extra, "/best/": qw_best_extra}
+_qw_prev_page4 = page
+def page(path, title, desc, body, jsonld=None, og_type="website", extra_head="", lang="en"):
+    if path in QW_THIN and "qwthin" not in body:
+        blk = QW_THIN[path]().replace('<section class="block prose"', '<section class="block prose qwthin"', 1)
+        i = body.rfind("</div>")
+        body = body[:i] + blk + body[i:] if i >= 0 else body + blk
+    return _qw_prev_page4(path, title, desc, body, jsonld, og_type, extra_head, lang)
 
