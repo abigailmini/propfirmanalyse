@@ -279,10 +279,10 @@ def qw_finalize():
 
 
 # 7. Shareable calculator results: src/share.js keeps inputs in the URL; share / copy-link buttons; per-tool OG cards
-QW_SHARE_HTML = ('<div class="qwshare"><h3>Share this result</h3><p class="small" id="qw-sum"></p>'
+QW_SHARE_HTML = ('<div class="qwshare"><h2>Share this result</h2><p class="small" id="qw-sum"></p>'
                  '<p class="qwbtns"><button type="button" class="btn sm" id="qw-share">Share result</button><button type="button" class="btn line sm" id="qw-copy">Copy link</button></p>'
                  '<p class="small" id="qw-msg" aria-live="polite">The link keeps every input, so it reopens this exact result.</p></div>')
-QW_SHARE_CSS = "<style>.qwshare{margin-top:20px;padding-top:16px;border-top:1px solid var(--rule)}.qwshare h3{font-size:15px;margin:0 0 6px}.qwbtns{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 6px}</style>"
+QW_SHARE_CSS = "<style>.qwshare{margin-top:20px;padding-top:16px;border-top:1px solid var(--rule)}.qwshare h2,.qwshare h3{font-size:15px;margin:0 0 6px}.qwbtns{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 6px}</style>"
 QW_TOOL_OG = {
     "true-cost": ("Free calculator", "What a prop firm challenge really costs you", [("Retries", "and resets counted"), ("Refunds", "when the firm pays them"), ("Break-even", "gross profit needed"), (str(len(FIRMS)) + " firms", "rules preloaded")]),
     "drawdown": ("Free calculator", "How much room before your prop account is breached", [("Static", "fixed floor"), ("Trailing", "follows your high"), ("EOD", "end-of-day trailing"), ("$ floors", "daily and overall")]),
@@ -383,7 +383,7 @@ QW_SAFE_CSS = """<style>.sfform{display:flex;gap:10px;flex-wrap:wrap;margin:18px
 .sf-active .sfst{color:#107a46}.sf-caution .sfst{color:#b02020}.sf-closed .sfst{color:var(--mute)}.sfic{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;border:2px solid currentColor;font-size:13px}
 .sfsc{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin:4px 0}.sfsc b{font-size:34px}.sfstars{color:var(--accent);letter-spacing:2px}.sf-caution .sfstars{color:#b02020}.sfoff{color:var(--rule-2)}
 .sfmeta{color:var(--mute)}.sfcols{display:grid;gap:24px;margin-top:28px}@media(min-width:900px){.sfcols{grid-template-columns:repeat(3,minmax(0,1fr))}}.sfcols ul{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule-2)}.sfcols li a{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--rule);text-decoration:none}
-.sfmiss{color:#b02020}</style>"""
+.sfmiss{color:#b02020}@media (prefers-color-scheme:dark){.sf-active{border-left-color:#4fc98a}.sf-caution{border-left-color:#ff7b72}.sf-active .sfst{color:#4fc98a}.sf-caution .sfst,.sfmiss,.sf-caution .sfstars{color:#ff8f87}}</style>"""
 def qw_safe_js(lang):
     L = QW_SAFE_L[lang]; base = url("/zh/safe/" if lang == "zh" else "/safe/")
     return ("<script>(function(){var F=document.getElementById('sfform');if(F){var I=F.querySelector('input'),D=JSON.parse(document.getElementById('sfdata').textContent),M=document.getElementById('sfmiss');"

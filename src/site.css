@@ -915,6 +915,8 @@ ul.also li span{flex-basis:100%;font-size:14px;color:var(--mute)}
   .pgrid{grid-template-areas:none;grid-template-columns:minmax(0,1fr)}
   .pgrid>.side{display:contents}
   .pgrid>.pmain{grid-area:auto;order:2}
-  .pgrid>.side>*{order:3;min-width:0;margin-top:0}
+  .pgrid>.side>*{order:3;min-width:0;margin-top:0;position:relative;z-index:1}
   .pgrid>.side>.scorebox{order:1}
+  .pgrid>.side>.clink{padding:12px 0;position:relative;z-index:1}
+  .pgrid>.side>.clink .more{display:inline-flex;align-items:center;min-height:44px}
 }
