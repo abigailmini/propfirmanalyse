@@ -170,3 +170,40 @@ def qw_finalize():
                     lab = "Full disclosure" if h == "Disclosure" else "完整披露（英文）"
                     s = s[:j] + f' <a class="qwfd" href="{url("/disclosure/")}">{lab}</a>' + s[j:]
             if s != o: open(p, "w").write(s)
+
+
+# 3. Mobile: stack wide data tables into cards at <768px (labels from the header row)
+ASSET_V = "14"
+QW_STACK_RX = re.compile(r'<table class="mini (?:offers|crypto|sttable)[^"]*"[^>]*>.*?</table>', re.S)
+def qw_stack_table(t):
+    if "qwstack" in t: return t
+    head = t.split("</thead>")[0]
+    labs = [re.sub(r"<[^>]+>", "", h).strip() if 'class="sr"' not in h else "" for h in re.findall(r"<th[^>]*>(.*?)</th>", head, re.S)]
+    t = t.replace('<table class="mini ', '<table class="qwstack mini ', 1)
+    def row(m):
+        i = [0]
+        def cell(c):
+            k = i[0]; i[0] += 1
+            attrs, inner = c.group(1), c.group(2)
+            lab = labs[k] if k < len(labs) else ""
+            plain = re.sub(r"<[^>]+>", "", inner)
+            extra = ""
+            if k > 0 and lab and "data-l=" not in attrs and "data-label=" not in attrs: extra += f' data-l="{e(lab)}"'
+            elif "data-label=" in attrs: attrs = attrs.replace("data-label=", "data-l=")
+            if k > 0 and len(plain.strip()) > 38 and "qwfull" not in attrs:
+                attrs = (attrs.replace('class="', 'class="qwfull ', 1) if 'class="' in attrs else attrs + ' class="qwfull"')
+            return f"<td{attrs}{extra}>{inner}</td>"
+        return re.sub(r"<td([^>]*)>(.*?)</td>", cell, m.group(0), flags=re.S)
+    body = t.split("</thead>", 1)
+    return body[0] + "</thead>" + re.sub(r"<tr[^>]*>.*?</tr>", row, body[1], flags=re.S) if len(body) == 2 else t
+
+_qw_prev_finalize = qw_finalize
+def qw_finalize():
+    _qw_prev_finalize()
+    for root, _, files in os.walk(OUT):
+        for fn in files:
+            if not fn.endswith(".html"): continue
+            p = os.path.join(root, fn); s = open(p).read()
+            if 'class="mini offers' in s or 'class="mini crypto' in s or 'class="mini sttable' in s:
+                n = QW_STACK_RX.sub(lambda m: qw_stack_table(m.group(0)), s)
+                if n != s: open(p, "w").write(n)

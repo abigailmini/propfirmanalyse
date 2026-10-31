@@ -896,3 +896,25 @@ ul.also li span{flex-basis:100%;font-size:14px;color:var(--mute)}
 .progs .fcell{gap:10px}.progs .flogo{border-radius:7px}
 .progs td small{display:block}
 @media (max-width:767px){.tablewrap:has(> .progs){overflow-x:auto}.progs{min-width:880px}}
+
+/* ---- 2026-10-31 audit quick wins: mobile ---- */
+.quiz>*,.quiz fieldset{min-width:0}.quiz select{max-width:100%}
+@media (max-width:767px){
+  .tablewrap:has(> table.qwstack){overflow:visible}
+  table.qwstack{display:block;width:100%;font-size:14px}
+  table.qwstack thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+  table.qwstack tbody{display:block;border-top:1px solid var(--rule-2)}
+  table.qwstack tr{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px 16px;padding:14px 0;border-bottom:1px solid var(--rule)}
+  table.qwstack td,table.qwstack td.num{display:block;padding:0;border:0;text-align:left;min-width:0;overflow-wrap:anywhere;white-space:normal}
+  table.qwstack td.qwfull,table.qwstack td.wide,table.qwstack td.dv{grid-column:1/-1;min-width:0}
+  table.qwstack td.c-firm{grid-area:auto;grid-column:1/2;grid-row:1;min-width:0;position:static}
+  table.qwstack td.c-act{grid-area:auto;grid-column:2/3;grid-row:1;text-align:right;align-self:start;min-width:0}
+  table.qwstack td[data-l]::before{content:attr(data-l);display:block;font:500 11px/1.4 var(--f-ui);letter-spacing:.04em;text-transform:uppercase;color:var(--mute);margin-bottom:2px}
+}
+@media (max-width:1023px){
+  .pgrid{grid-template-areas:none;grid-template-columns:minmax(0,1fr)}
+  .pgrid>.side{display:contents}
+  .pgrid>.pmain{grid-area:auto;order:2}
+  .pgrid>.side>*{order:3;min-width:0;margin-top:0}
+  .pgrid>.side>.scorebox{order:1}
+}
