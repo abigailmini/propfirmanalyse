@@ -208,7 +208,8 @@
         "value": "80% off one-time payment (shown in member configurator)",
         "percent": 80
       }
-    ]
+    ],
+    "seasonal": "halloween"
   },
   "affiliate_url": "#",
   "trustpilot": {

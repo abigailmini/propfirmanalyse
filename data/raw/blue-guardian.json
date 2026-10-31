@@ -170,7 +170,9 @@
   "percent": 35,
   "source": "https://blueguardian.com/",
   "verified": "2026-10-31",
-  "expires": null
+  "expires": null,
+  "seasonal": "halloween",
+  "review_by": "2026-11-01"
  },
  "affiliate_url": "#",
  "trustpilot": null,

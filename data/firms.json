@@ -1754,7 +1754,9 @@
         "percent": 20,
         "source": "https://fundingpips.com/",
         "verified": "2026-10-31",
-        "expires": null
+        "expires": null,
+        "seasonal": "halloween",
+        "review_by": "2026-11-01"
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -1968,7 +1970,8 @@
             "value": "$10K evaluation for $40",
             "percent": null
           }
-        ]
+        ],
+        "seasonal": "halloween"
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -2563,7 +2566,9 @@
           {
             "code": "HALLOWEEN50",
             "value": "50% off all accounts",
-            "percent": 50
+            "percent": 50,
+            "seasonal": "halloween",
+            "review_by": "2026-11-01"
           }
         ]
       },
@@ -2777,7 +2782,9 @@
         "percent": 35,
         "source": "https://blueguardian.com/",
         "verified": "2026-10-31",
-        "expires": null
+        "expires": null,
+        "seasonal": "halloween",
+        "review_by": "2026-11-01"
       },
       "affiliate_url": "#",
       "trustpilot": null,
@@ -4163,7 +4170,8 @@
         "percent": 20,
         "source": "https://www.propr.xyz/",
         "verified": "2026-10-31",
-        "expires": "2026-11-01"
+        "expires": "2026-11-01",
+        "seasonal": "halloween"
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -5464,7 +5472,8 @@
         "percent": 30,
         "source": "https://tradeify.co/",
         "verified": "2026-10-31",
-        "expires": "2026-10-31"
+        "expires": "2026-10-31",
+        "seasonal": "halloween"
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -5953,7 +5962,9 @@
         "percent": 60,
         "source": "https://www.earn2trade.com/",
         "verified": "2026-10-31",
-        "expires": null
+        "expires": null,
+        "seasonal": "halloween",
+        "review_by": "2026-11-01"
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -6583,7 +6594,9 @@
             "value": "Buy one get one on Elite Access",
             "percent": null
           }
-        ]
+        ],
+        "seasonal": "halloween",
+        "review_by": "2026-11-01"
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -7581,7 +7594,8 @@
             "value": "40% off Instant Funding",
             "percent": 40
           }
-        ]
+        ],
+        "seasonal": "halloween"
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -7921,9 +7935,13 @@
           {
             "code": "SPOOKY20",
             "value": "20% off",
-            "percent": 20
+            "percent": 20,
+            "seasonal": "halloween",
+            "review_by": "2026-11-01"
           }
-        ]
+        ],
+        "seasonal": "halloween",
+        "review_by": "2026-11-01"
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -8792,7 +8810,9 @@
         "percent": 30,
         "source": "https://brightfunded.com/",
         "verified": "2026-10-31",
-        "expires": null
+        "expires": null,
+        "seasonal": "halloween",
+        "review_by": "2026-11-01"
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -9541,7 +9561,9 @@
             "value": "50% off first purchase",
             "percent": 50
           }
-        ]
+        ],
+        "seasonal": "halloween",
+        "review_by": "2026-11-01"
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -10293,9 +10315,13 @@
           {
             "code": "BOO6K",
             "value": "Forex Fast $6K for $9.99",
-            "percent": null
+            "percent": null,
+            "seasonal": "halloween",
+            "review_by": "2026-11-01"
           }
-        ]
+        ],
+        "seasonal": "halloween",
+        "review_by": "2026-11-01"
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -11016,7 +11042,9 @@
           {
             "code": "BOO50",
             "value": "50% off (Halloween, ends ~1 Nov)",
-            "percent": 50
+            "percent": 50,
+            "seasonal": "halloween",
+            "review_by": "2026-11-01"
           },
           {
             "code": "FINCRYPTO",
@@ -12223,7 +12251,9 @@
         "percent": 60,
         "source": "https://qtfunded.quanttekel.com/",
         "verified": "2026-10-31",
-        "expires": null
+        "expires": null,
+        "seasonal": "halloween",
+        "review_by": "2026-11-01"
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -12819,7 +12849,9 @@
         "percent": 35,
         "source": "https://www.aquafunded.com/",
         "verified": "2026-10-31",
-        "expires": null
+        "expires": null,
+        "seasonal": "halloween",
+        "review_by": "2026-11-01"
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -13205,9 +13237,13 @@
           {
             "code": "HALLOWEEN",
             "value": "50% off + free matching account (BOGO), Oct 26-31, 2026",
-            "percent": 50
+            "percent": 50,
+            "expires": "2026-10-31",
+            "seasonal": "halloween"
           }
-        ]
+        ],
+        "seasonal": "halloween",
+        "review_by": "2026-11-01"
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -13513,7 +13549,8 @@
             "value": "80% off one-time payment (shown in member configurator)",
             "percent": 80
           }
-        ]
+        ],
+        "seasonal": "halloween"
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -14053,7 +14090,9 @@
         "percent": 30,
         "source": "https://funderpro.com/",
         "verified": "2026-10-31",
-        "expires": null
+        "expires": null,
+        "seasonal": "halloween",
+        "review_by": "2026-11-01"
       },
       "affiliate_url": "#",
       "trustpilot": {

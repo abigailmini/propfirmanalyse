@@ -11,6 +11,8 @@ ABS = SITE_URL + BASE
 T = json.load(open(os.path.join(ROOT, "i18n", "en.json")))
 DATA = json.load(open(os.path.join(ROOT, "data", "firms.json")))
 FIRMS = DATA["firms"]
+exec(compile(open(os.path.join(ROOT, "scripts", "check_codes.py")).read().replace('if __name__ == "__main__":', "if False:"), "check_codes.py", "exec"))
+CODES_HIDDEN = hide_codes(FIRMS, datetime.date.fromisoformat(os.environ["CODES_DATE"]) if os.environ.get("CODES_DATE") else None)   # expired / stale promo codes never render
 TODAY = DATA.get("generated", datetime.date.today().isoformat())
 YEAR_NOW = 2026
 def e(s):

@@ -269,9 +269,13 @@
       {
         "code": "HALLOWEEN",
         "value": "50% off + free matching account (BOGO), Oct 26-31, 2026",
-        "percent": 50
+        "percent": 50,
+        "expires": "2026-10-31",
+        "seasonal": "halloween"
       }
-    ]
+    ],
+    "seasonal": "halloween",
+    "review_by": "2026-11-01"
   },
   "affiliate_url": "#",
   "trustpilot": {

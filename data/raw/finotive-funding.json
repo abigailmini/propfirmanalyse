@@ -307,7 +307,9 @@
       {
         "code": "BOO50",
         "value": "50% off (Halloween, ends ~1 Nov)",
-        "percent": 50
+        "percent": 50,
+        "seasonal": "halloween",
+        "review_by": "2026-11-01"
       },
       {
         "code": "FINCRYPTO",

@@ -422,9 +422,13 @@
       {
         "code": "BOO6K",
         "value": "Forex Fast $6K for $9.99",
-        "percent": null
+        "percent": null,
+        "seasonal": "halloween",
+        "review_by": "2026-11-01"
       }
-    ]
+    ],
+    "seasonal": "halloween",
+    "review_by": "2026-11-01"
   },
   "affiliate_url": "#",
   "trustpilot": {

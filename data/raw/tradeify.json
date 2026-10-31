@@ -138,7 +138,8 @@
     "percent": 30,
     "source": "https://tradeify.co/",
     "verified": "2026-10-31",
-    "expires": "2026-10-31"
+    "expires": "2026-10-31",
+    "seasonal": "halloween"
   },
   "affiliate_url": "#",
   "trustpilot": {

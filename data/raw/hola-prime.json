@@ -276,9 +276,13 @@
       {
         "code": "SPOOKY20",
         "value": "20% off",
-        "percent": 20
+        "percent": 20,
+        "seasonal": "halloween",
+        "review_by": "2026-11-01"
       }
-    ]
+    ],
+    "seasonal": "halloween",
+    "review_by": "2026-11-01"
   },
   "affiliate_url": "#",
   "trustpilot": {

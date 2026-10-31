@@ -413,7 +413,9 @@
         "value": "50% off first purchase",
         "percent": 50
       }
-    ]
+    ],
+    "seasonal": "halloween",
+    "review_by": "2026-11-01"
   },
   "affiliate_url": "#",
   "trustpilot": {

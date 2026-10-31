@@ -269,7 +269,9 @@
         "value": "Buy one get one on Elite Access",
         "percent": null
       }
-    ]
+    ],
+    "seasonal": "halloween",
+    "review_by": "2026-11-01"
   },
   "affiliate_url": "#",
   "trustpilot": {

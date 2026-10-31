@@ -3,6 +3,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: '10 0 * * *'   # daily 00:10 UTC rebuild: expired / stale promo codes drop off (scripts/check_codes.py)
 permissions:
   contents: read
   pages: write

@@ -231,7 +231,8 @@
     "percent": 20,
     "source": "https://www.propr.xyz/",
     "verified": "2026-10-31",
-    "expires": "2026-11-01"
+    "expires": "2026-11-01",
+    "seasonal": "halloween"
   },
   "affiliate_url": "#",
   "trustpilot": {
