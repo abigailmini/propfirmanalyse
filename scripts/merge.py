@@ -9,7 +9,7 @@ ORDER = ["fundedxyz","hyrotrader","breakout-prop","crypto-fund-trader","bitfunde
 ORDER += ["propr", "fondeo", "mubite", "propw",
  "lucid-trading", "tradeify", "take-profit-trader", "earn2trade", "elite-trader-funding", "topone-futures", "tradeday", "daytraders",
  "fxify", "hola-prime", "fintokei", "the-trading-pit", "brightfunded", "city-traders-imperium", "atlas-funded", "ment-funding",
- "for-traders", "thinkcapital", "finotive-funding", "funded-trading-plus"]
+ "for-traders", "thinkcapital", "finotive-funding", "funded-trading-plus", "ftuk"]
 GENERATED = "2026-10-31"   # data date (build TODAY); bumped with the 2026-10-31 re-verification + expansion
 raw = os.path.join(ROOT, "data", "raw")
 firms, missing = [], []

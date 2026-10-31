@@ -368,5 +368,14 @@
   "plate_hint": "red + white mark: white facets vanish on white",
   "note": "mark cropped from the official header logo SVG",
   "research_note": "mark cropped from header logo"
+ },
+ "ftuk": {
+  "source_url": "https://cdn.prod.website-files.com/6a3d4ec2aed3a0313ea2c9d7/6abba2cb9ead91a71b8cf64a_ftuk-fav-new.png",
+  "kind": "favicon",
+  "bg": "#09021a",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/ftuk-icon.png",
+  "research_note": "site icon"
  }
 }

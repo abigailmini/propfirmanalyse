@@ -30,7 +30,7 @@ Affiliate page column = where to apply. If it says *email*, there is no public p
 | Bulenox | https://bulenox.com/member/aff/signup | todo | # | — | up to 15% | 2026-10-26 |
 | Instant Funding | https://instantfunding.com/partner/ | todo | # | — | 15% first purchase, 0–5% repeat, up to 17.5%; paid bi-weekly from $100 | 2026-10-26 |
 
-## Added 2026-10-31 (24)
+## Added 2026-10-31 (25)
 
 Commission = headline rate published on the firm's own affiliate page, read 2026-10-31. Code = public promo code on the firm's own site that day (not ours).
 
@@ -60,6 +60,7 @@ Commission = headline rate published on the firm's own affiliate page, read 2026
 | ThinkCapital | https://www.thinkcapital.com/partners/ | todo | # | — | 5% to 15% tiered (Starter 5%, Pro 8%, Elite 10%, Master 15%) | 2026-10-31 |
 | Finotive Funding | https://finotivefunding.com/affiliate-program | todo | # | FIRST25 | 15%–25% on first purchase by tier (Gold 15%, Platinum 20%, Diamond 25%) + up to 5% recurring; new applications closed (invitation only) | 2026-10-31 |
 | Funded Trading Plus | https://www.fundedtradingplus.com/affiliates | todo | # | SIZE30 | — | 2026-10-31 |
+| FTUK | https://ftuk.com/affiliate | todo | # | FTUK30 | 10% (1-25 referrals), 15% (26-50), 20% (50+) | 2026-10-31 |
 
 ## Candidates (next firms to add, crypto/multi-asset first)
 

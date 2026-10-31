@@ -11321,6 +11321,262 @@
         "programs[2-Step Classic]": "https://help.fundedtradingplus.com/2-step-classic-program-information/",
         "programs[Instant Funding]": "https://www.fundedtradingplus.com/prop-trading-challenges/instant-funding"
       }
+    },
+    {
+      "name": "FTUK",
+      "slug": "ftuk",
+      "site": "https://ftuk.com",
+      "category": "cfd",
+      "assets": [
+        "forex",
+        "indices",
+        "commodities",
+        "crypto",
+        "futures"
+      ],
+      "challenge_types": [
+        "1-step",
+        "instant"
+      ],
+      "account_sizes": [
+        5000,
+        10000,
+        25000,
+        50000,
+        100000,
+        200000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "Flex Challenge (pay after you pass)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": null,
+              "activation_fee": 56,
+              "entry_fee": 9
+            },
+            {
+              "size": 10000,
+              "fee": null,
+              "activation_fee": 98,
+              "entry_fee": 9
+            },
+            {
+              "size": 25000,
+              "fee": null,
+              "activation_fee": 204,
+              "entry_fee": 9
+            },
+            {
+              "size": 50000,
+              "fee": null,
+              "activation_fee": 374,
+              "entry_fee": 9
+            },
+            {
+              "size": 100000,
+              "fee": null,
+              "activation_fee": 672,
+              "entry_fee": 9
+            },
+            {
+              "size": 200000,
+              "fee": null,
+              "activation_fee": 1200,
+              "entry_fee": 9
+            }
+          ],
+          "profit_target": "4%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "6%",
+          "drawdown_type": "trailing",
+          "profit_split": "60% up to 90% (scaling levels)",
+          "min_trading_days": 0,
+          "fee_note": "$9 to start; one-time activation fee only after you pass ($56 / $98 / $204 / $374 / $672 / $1,200 for 5K-200K)",
+          "deferred_fee": true
+        },
+        {
+          "name": "Instant Funding (forex)",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 109
+            },
+            {
+              "size": 10000,
+              "fee": 179
+            },
+            {
+              "size": 25000,
+              "fee": 349
+            },
+            {
+              "size": 50000,
+              "fee": 649
+            },
+            {
+              "size": 100000,
+              "fee": 1199
+            },
+            {
+              "size": 200000,
+              "fee": 2220
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": "5%",
+          "max_drawdown": "6% (relative)",
+          "drawdown_type": "trailing",
+          "profit_split": "65% up to 90% (scaling levels)",
+          "min_trading_days": 0
+        },
+        {
+          "name": "Instant Sim Funding (futures)",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 409
+            },
+            {
+              "size": 50000,
+              "fee": 595
+            },
+            {
+              "size": 100000,
+              "fee": 770
+            },
+            {
+              "size": 150000,
+              "fee": 979
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": "$2,000 on 100K, $3,000 on 150K",
+          "max_drawdown": "$3,500 on 100K, $5,250 on 150K",
+          "drawdown_type": "EOD",
+          "profit_split": "90%",
+          "min_trading_days": null
+        }
+      ],
+      "fee_from": 109,
+      "profit_split": "60% up to 90%",
+      "profit_split_scale": "Flex 60%->90% and Instant 65%->90% across 6 scaling levels",
+      "max_daily_loss": "5%",
+      "max_drawdown": "6% trailing",
+      "drawdown_type": "trailing",
+      "profit_target": "4% (Flex)",
+      "leverage": "Forex 50:1 Flex evaluation, 30:1 funded and Instant",
+      "platforms": [
+        "MT5",
+        "TradeLocker",
+        "Match-Trader",
+        "WealthCharts"
+      ],
+      "payout_frequency": "On demand (instant payouts) once payout requirements are met; Instant: consistency score under 20-40% by level",
+      "first_payout_days": null,
+      "payout_speed": "approval within 24-48 working hours, funds in 1-3 working days",
+      "min_trading_days": 0,
+      "consistency_rule": "Flex funded 20%; Instant 20%-40% by scaling level; none on Flex evaluation",
+      "news_trading": "allowed",
+      "weekend_holding": "allowed",
+      "countries_restricted": [
+        "Democratic Republic of the Congo",
+        "Iran",
+        "Libya",
+        "North Korea",
+        "Russia",
+        "Somalia",
+        "South Sudan",
+        "Sudan",
+        "Vietnam",
+        "Yemen"
+      ],
+      "founded": 2021,
+      "hq": "Casper, Wyoming, United States",
+      "discount_code": {
+        "code": "FTUK30",
+        "value": "30% off your first purchase (new customers)",
+        "percent": 30,
+        "source": "https://ftuk.com/",
+        "verified": "2026-10-31",
+        "expires": null,
+        "also": [
+          {
+            "code": "WEALTHCHARTS",
+            "value": "50% off all Futures challenges",
+            "percent": 50
+          }
+        ]
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 3.8,
+        "count": 791
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://ftuk.com/",
+        "https://ftuk.com/flex-challenge",
+        "https://ftuk.com/instant",
+        "https://ftuk.com/futures",
+        "https://ftuk.com/about",
+        "https://faq.ftuk.com/en/articles/12290710-who-are-ftuk",
+        "https://faq.ftuk.com/en/articles/12290623-do-you-onboard-traders-from-my-country",
+        "https://faq.ftuk.com/en/articles/12339857-how-long-do-payouts-take",
+        "https://faq.ftuk.com/en/articles/12339850-what-service-provider-do-you-use-for-payouts",
+        "https://faq.ftuk.com/en/articles/12339854-what-is-the-profit-share",
+        "https://faq.ftuk.com/en/articles/14322511-flex-challenge-explained",
+        "https://faq.ftuk.com/en/articles/12657496-what-is-the-activation-fee",
+        "https://faq.ftuk.com/en/articles/12310214-instant-funding-program-forex",
+        "https://faq.ftuk.com/en/articles/12339849-can-i-get-a-refund",
+        "https://faq.ftuk.com/en/articles/12333393-what-is-the-leverage-for-forex-pairs",
+        "https://ftuk.com/affiliate",
+        "https://www.trustpilot.com/review/ftuk.com"
+      ],
+      "notes": "Forex Flex Challenge: $9 entry + one-time activation fee after passing (5K $56 ... 200K $1,200, from the site's pricing script); rendered rules table: 4% target (1% during Halloween), 5% daily, 6% trailing, no min/max days, EAs allowed, no stop-loss rule. The site's per-size product config also lists 4% daily / 4% trailing / 'up to 80%' for every size, which conflicts with the rendered table; we show the rendered table and flag it here. Instant Funding (forex) list prices 5K $109 ... 200K $2,220 (site applies a discount on screen); level target 10% to scale, 2% max floating loss (Account Protector), partial closes intraday only. Futures: Flex Futures (monthly, start price $59, activation $149-$399) and Instant Sim Funding (one-time $409-$979) on WealthCharts; Flex Futures list prices unclear ($99/$199/$299/$299 monthly vs $59 start) so not listed as a program. MT5 not available to US residents. Payouts above $500 via RiseWorks in USD, below $500 in USDT (TRC20) or USDC (ERC20). Homepage/about say '$12M+ total rewarded'; the Flex page says '$18M Total Payouts'. The site's '4.8/5 from 5K verified reviews' is not Trustpilot (Trustpilot: 3.8 from 791). FTUK acquired TradingFunds in H2 2026 (about page).",
+      "segment": "multi",
+      "also_offers": [
+        "futures"
+      ],
+      "category_basis": "Main products are forex/CFD Flex Challenge and Instant Funding accounts on MT5, TradeLocker and Match-Trader; a separate futures line runs on WealthCharts.",
+      "category_source": "https://ftuk.com/",
+      "founded_source": "https://faq.ftuk.com/en/articles/12290710-who-are-ftuk",
+      "hq_country": {
+        "code": "US",
+        "source": "https://faq.ftuk.com/en/articles/12290710-who-are-ftuk",
+        "quote": "Casper, Wyoming, United States"
+      },
+      "field_sources": {
+        "category": "https://ftuk.com/",
+        "programs": "https://ftuk.com/flex-challenge",
+        "account_sizes": "https://ftuk.com/flex-challenge",
+        "fee_from": "https://ftuk.com/instant",
+        "profit_split": "https://faq.ftuk.com/en/articles/12339854-what-is-the-profit-share",
+        "profit_split_scale": "https://faq.ftuk.com/en/articles/12339854-what-is-the-profit-share",
+        "max_daily_loss": "https://ftuk.com/flex-challenge",
+        "max_drawdown": "https://ftuk.com/flex-challenge",
+        "drawdown_type": "https://ftuk.com/flex-challenge",
+        "profit_target": "https://ftuk.com/flex-challenge",
+        "leverage": "https://faq.ftuk.com/en/articles/12333393-what-is-the-leverage-for-forex-pairs",
+        "platforms": "https://faq.ftuk.com/en/articles/14322511-flex-challenge-explained",
+        "payout_frequency": "https://faq.ftuk.com/en/articles/12310214-instant-funding-program-forex",
+        "payout_speed": "https://faq.ftuk.com/en/articles/12339857-how-long-do-payouts-take",
+        "min_trading_days": "https://ftuk.com/flex-challenge",
+        "consistency_rule": "https://faq.ftuk.com/en/articles/12310214-instant-funding-program-forex",
+        "news_trading": "https://ftuk.com/flex-challenge",
+        "weekend_holding": "https://ftuk.com/flex-challenge",
+        "countries_restricted": "https://faq.ftuk.com/en/articles/12290623-do-you-onboard-traders-from-my-country",
+        "founded": "https://faq.ftuk.com/en/articles/12290710-who-are-ftuk",
+        "hq": "https://faq.ftuk.com/en/articles/12290710-who-are-ftuk",
+        "hq_country": "https://faq.ftuk.com/en/articles/12290710-who-are-ftuk",
+        "discount_code": "https://ftuk.com/",
+        "trustpilot": "https://www.trustpilot.com/review/ftuk.com"
+      }
     }
   ]
 }

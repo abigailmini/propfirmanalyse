@@ -302,6 +302,12 @@
    "value_usd": 10000000,
    "source": "https://www.tradeday.com/",
    "proof": "Homepage stat block + payout certificates; about page: 'paid out over $10 million'"
+  },
+  "ftuk": {
+   "text": "$12M+ Total Rewarded",
+   "value_usd": 12000000,
+   "source": "https://ftuk.com/",
+   "proof": "Homepage + about stat block; the Flex page shows '$18M Total Payouts' (inconsistent, lower figure used)"
   }
  }
 }

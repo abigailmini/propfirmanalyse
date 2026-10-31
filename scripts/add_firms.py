@@ -46,7 +46,7 @@ PROMOS = {
 # The entry ticket moves to sizes_fees[].entry_fee and fee becomes null, so cost_per_k(), fee_at() and the price tables
 # (which all skip null fees) are not set by a $4-$9 ticket; the program keeps its sizes and a fee_note.
 DEFERRED = {"atlas-funded": ["Access"], "for-traders": ["Pay After Pass"], "funded-trading-plus": ["Activation Accounts"],
-            "mubite": ["Nitro"], "topone-futures": ["Elite Access"]}
+            "mubite": ["Nitro"], "topone-futures": ["Elite Access"], "ftuk": ["Flex Challenge"]}
 DEFERRED_NOTE = "Entry fee only: an activation / funded-account fee is charged after you pass"
 
 # Trustpilot where staging had none. score None + count = profile exists but Trustpilot shows no rating (suspended).

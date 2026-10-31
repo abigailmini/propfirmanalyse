@@ -1,0 +1,33 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": "Non-refundable once purchased",
+  "fee_refundable": false,
+  "time_limit": "None",
+  "has_time_limit": false,
+  "activation_fee": "Flex Challenge: one-time $56-$1,200 after passing; Flex Futures $149-$399",
+  "payout_methods": [
+    "RiseWorks (USD, payouts above $500)",
+    "USDT TRC20 / USDC ERC20 (below $500)"
+  ],
+  "min_payout": null,
+  "kyc_before_payout": true,
+  "scaling_plan": "6 scaling levels (split rises to 90%)",
+  "ea_bots": "Allowed on Flex",
+  "copy_trading": null,
+  "hedging": null,
+  "max_risk_per_trade": "Instant: max floating loss 2% (Account Protector)",
+  "inactivity_rule": null,
+  "notes": "Payout approval 24-48 working hours; funds 1-3 working days.",
+  "sources": [
+    "https://faq.ftuk.com/en/articles/12339850-what-service-provider-do-you-use-for-payouts",
+    "https://faq.ftuk.com/en/articles/12339857-how-long-do-payouts-take",
+    "https://faq.ftuk.com/en/articles/12339849-can-i-get-a-refund",
+    "https://faq.ftuk.com/en/articles/12657496-what-is-the-activation-fee",
+    "https://faq.ftuk.com/en/articles/12310214-instant-funding-program-forex",
+    "https://ftuk.com/flex-challenge"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": null,
+  "monthly_fee": false
+}
