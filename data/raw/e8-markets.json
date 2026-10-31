@@ -161,8 +161,15 @@
       },
       {
         "code": "E8",
-        "value": "25% off E8 Signature (Futures)",
-        "percent": 25
+        "value": "30% off E8 One, first order (homepage configurator)",
+        "percent": 30,
+        "source": "https://e8markets.com/"
+      },
+      {
+        "code": "E8",
+        "value": "25% off E8 Signature (Futures), per the discount-code page",
+        "percent": 25,
+        "source": "https://e8markets.com/e8-markets-discount-code"
       }
     ]
   },

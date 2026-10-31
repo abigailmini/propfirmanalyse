@@ -772,7 +772,16 @@
       ],
       "founded": null,
       "hq": "Zug, Switzerland",
-      "discount_code": null,
+      "discount_code": {
+        "code": "BOO20",
+        "value": "20% off (Halloween mini-game code on the homepage)",
+        "percent": 20,
+        "source": "https://cryptofundtrader.com/",
+        "verified": "2026-10-31",
+        "expires": null,
+        "seasonal": "halloween",
+        "review_by": "2026-11-01"
+      },
       "affiliate_url": "#",
       "trustpilot": {
         "score": null,
@@ -1044,6 +1053,34 @@
           "min_trading_days": 5
         },
         {
+          "name": "Stellar Lite",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 32.99
+            },
+            {
+              "size": 10000,
+              "fee": 59.99
+            },
+            {
+              "size": 25000,
+              "fee": 139.99
+            },
+            {
+              "size": 50000,
+              "fee": 229.99
+            }
+          ],
+          "profit_target": "8% / 4%",
+          "max_daily_loss": "4%",
+          "max_drawdown": "8%",
+          "drawdown_type": "static",
+          "profit_split": "up to 95%",
+          "min_trading_days": 2
+        },
+        {
           "name": "Stellar 1-Step",
           "type": "1-step",
           "sizes_fees": [
@@ -1108,7 +1145,7 @@
           "min_trading_days": null
         }
       ],
-      "fee_from": 59.99,
+      "fee_from": 32.99,
       "profit_split": "up to 95%",
       "profit_split_scale": null,
       "max_daily_loss": "5%",
@@ -1144,11 +1181,12 @@
       "hq": "Ajman, UAE",
       "discount_code": {
         "code": "FNTRICK",
-        "value": "Up to 41% off (41% on Stellar 6K/Lite 5K/Instant 2K; 20% on other ≤$50K CFD accounts)",
+        "value": "Up to 41% off (41% on Stellar 6K/Lite 5K/Instant 2K; 20% on other ≤$50K CFD accounts) (Halloween; homepage countdown ends 31 Oct)",
         "percent": 41,
         "source": "https://fundednext.com/",
         "verified": "2026-10-31",
-        "expires": null
+        "expires": "2026-10-31",
+        "seasonal": "halloween"
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -1164,9 +1202,10 @@
         "https://help.fundednext.com/en/",
         "https://www.trustpilot.com/review/fundednext.com",
         "https://fundednext.com/terms-of-service",
-        "https://help.fundednext.com/en/articles/8027523-how-many-accounts-can-i-have-with-fundednext"
+        "https://help.fundednext.com/en/articles/8027523-how-many-accounts-can-i-have-with-fundednext",
+        "https://fundednext.com/pricing"
       ],
-      "notes": "CFD Stellar prices via browser; Stellar Lite & FNL:002 programs and Futures not captured. Leverage, weekend rule not found. first_payout_days=21 for 2-Step (1-Step: 5 business days). News trading profit capped at 40% on funded. hq = registered entity GrowthNext F.Z.E. Trustpilot via browser.",
+      "notes": "CFD Stellar prices via browser; Stellar Lite list prices read from fundednext.com/pricing 31 Oct 2026 ($5K $32.99 to $50K $229.99; 100K/200K not captured); FNL:002 and Futures not captured. Leverage, weekend rule not found. first_payout_days=21 for 2-Step (1-Step: 5 business days). News trading profit capped at 40% on funded. hq = registered entity GrowthNext F.Z.E. Trustpilot via browser.",
       "segment": "multi",
       "also_offers": [
         "futures"
@@ -1457,8 +1496,9 @@
           "max_daily_loss": "3%",
           "max_drawdown": "6%",
           "drawdown_type": null,
-          "profit_split": "up to 100%",
-          "min_trading_days": 3
+          "profit_split": "75% to $300K, 80% at $350K, 80-100% from $400K",
+          "min_trading_days": 3,
+          "split_source": "https://the5ers.com/hyper-growth/"
         },
         {
           "name": "Bootcamp",
@@ -1479,7 +1519,7 @@
       ],
       "fee_from": 19,
       "profit_split": "up to 100%",
-      "profit_split_scale": "High Stakes: 80% → 85% at $175K → 90% at $250K → 100% at $350K+",
+      "profit_split_scale": "High Stakes: 80% → 85% at $175K → 90% at $250K → 100% at $350K+; Hyper Growth: starts at 75%, 80% at $350K, 80-100% from $400K",
       "max_daily_loss": "5%",
       "max_drawdown": "10%",
       "drawdown_type": null,
@@ -1718,8 +1758,9 @@
       },
       "affiliate_url": "#",
       "trustpilot": {
-        "score": 4.5,
-        "count": 70946
+        "score": 4.4,
+        "count": 71419,
+        "checked": "2026-10-31"
       },
       "last_verified": "2026-10-26",
       "source_urls": [
@@ -2130,8 +2171,15 @@
           },
           {
             "code": "E8",
-            "value": "25% off E8 Signature (Futures)",
-            "percent": 25
+            "value": "30% off E8 One, first order (homepage configurator)",
+            "percent": 30,
+            "source": "https://e8markets.com/"
+          },
+          {
+            "code": "E8",
+            "value": "25% off E8 Signature (Futures), per the discount-code page",
+            "percent": 25,
+            "source": "https://e8markets.com/e8-markets-discount-code"
           }
         ]
       },
@@ -3179,7 +3227,7 @@
         "https://apextraderfunding.com/about/",
         "https://www.trustpilot.com/review/apextraderfunding.com"
       ],
-      "notes": "Site 403s web_fetch; read via browser. Fees = Standard path list prices before coupon (read by clicking the JS size selector; 100K intraday $790 looks out of line, so recheck). Standard path has an activation fee (amount not found). No-activation-fee path also exists (e.g. 25K intraday $690). No minimum days to pass (can pass in 1 day). Profit split = '100% requested rewards, no split in Sim Funded'. Max 6 payouts per PA, $500 min payout. Platform list is inferred from partner/help links. Legacy accounts also sold for a limited time; not captured.",
+      "notes": "Site 403s web_fetch; read via browser. Fees = Standard path list prices before coupon (read by clicking the JS size selector; 100K Intraday $790 re-confirmed 31 Oct 2026). Standard path has an activation fee (amount not found). No-activation-fee path also exists (e.g. 25K intraday $690). No minimum days to pass (can pass in 1 day). Profit split = '100% requested rewards, no split in Sim Funded'. Max 6 payouts per PA, $500 min payout. Platform list is inferred from partner/help links. Legacy accounts also sold for a limited time; not captured. Footer states services are intended for U.S. users only (31 Oct 2026).",
       "segment": "futures",
       "also_offers": [],
       "category_basis": "CME futures evaluations on Rithmic, Tradovate and NinjaTrader.",
@@ -3192,6 +3240,9 @@
       },
       "max_allocation_text": "Trade up to 20 accounts (no USD cap stated)",
       "max_allocation_source": "https://apextraderfunding.com/",
+      "eligibility_note": "Site footer (checked 31 Oct 2026): \"Services are intended for U.S. users only and are not offered where prohibited by local laws or regulations.\" The restricted list below is the firm's separate country list; non-U.S. traders should confirm eligibility with Apex before paying.",
+      "eligibility_source": "https://apextraderfunding.com/",
+      "us_only": true,
       "status": "active"
     },
     {

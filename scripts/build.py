@@ -446,7 +446,9 @@ def firm_summary(f):
 def faq(f):
     qa = []
     if f.get("profit_split"): qa.append((f"What profit split does {f['name']} pay?", f"{f['name']} lists a profit split of {f['profit_split']}" + (f" ({f['profit_split_scale']})" if f.get("profit_split_scale") else "") + f", per its website as of {f.get('last_verified', TODAY)}."))
-    if f["_fee"] is not None: qa.append((f"How much is the cheapest {f['name']} challenge?", f"The lowest published fee is {money(f['_fee'], f.get('fee_currency'))}" + (f" for a {money(min(f['_sizes']))} account" if f['_sizes'] else "") + "."))
+    if f["_fee"] is not None:   # 2026-10-31: pair the fee with the size it actually buys (was min size)
+        hit = sorted((num(sf.get("size")), p.get("name")) for p in as_list(f.get("programs")) for sf in as_list(p.get("sizes_fees")) if num(sf.get("fee")) == f["_fee"] and num(sf.get("size")))
+        qa.append((f"How much is the cheapest {f['name']} challenge?", f"The lowest published fee is {money(f['_fee'], f.get('fee_currency'))}" + (f" for a {money(hit[0][0])} account" + (f" ({hit[0][1]})" if hit[0][1] else "") if hit else "") + (f"; account sizes start at {money(min(f['_sizes']))}" if hit and f['_sizes'] and min(f['_sizes']) < hit[0][0] else "") + "."))
     if f.get("max_daily_loss") or f.get("max_drawdown"): qa.append((f"What are {f['name']}'s drawdown rules?", f"Daily loss limit: {f.get('max_daily_loss') or 'not published'}; maximum drawdown: {f.get('max_drawdown') or 'not published'}" + (f" ({f['drawdown_type']})" if f.get('drawdown_type') else "") + "."))
     if f.get("payout_frequency"): qa.append((f"How often does {f['name']} pay out?", f"Payout cycle: {f['payout_frequency']}." + (f" First payout eligible after {int(num(f['first_payout_days']))} days." if num(f.get('first_payout_days')) else "")))
     if f["_platforms"]: qa.append((f"Which platforms does {f['name']} support?", ", ".join(f["_platforms"]) + "."))
@@ -698,7 +700,7 @@ def seo_files():
     open(os.path.join(OUT, ".nojekyll"), "w").write("")
     if SITE_URL.startswith("https://") and "github.io" not in SITE_URL and not BASE: open(os.path.join(OUT, "CNAME"), "w").write(SITE_URL.split("://", 1)[1] + "\n")
 
-for _m in ("more_core.py", "more_pages_a.py", "more_pages_b.py", "more_guides.py", "more_programmatic.py", "more_zh.py", "more_categories.py", "more_seo.py", "more_badge.py", "more_home.py", "more_complaints.py", "more_status.py", "more_track.py"):
+for _m in ("more_core.py", "more_pages_a.py", "more_pages_b.py", "more_guides.py", "more_programmatic.py", "more_zh.py", "more_categories.py", "more_seo.py", "more_badge.py", "more_home.py", "more_complaints.py", "more_status.py", "more_quickwins.py", "more_track.py"):
     _p = os.path.join(ROOT, "scripts", _m); exec(compile(open(_p).read(), _p, "exec"))
 
 if __name__ == "__main__":

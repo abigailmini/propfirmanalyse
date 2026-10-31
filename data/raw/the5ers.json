@@ -88,8 +88,9 @@
    "max_daily_loss": "3%",
    "max_drawdown": "6%",
    "drawdown_type": null,
-   "profit_split": "up to 100%",
-   "min_trading_days": 3
+   "profit_split": "75% to $300K, 80% at $350K, 80-100% from $400K",
+   "min_trading_days": 3,
+   "split_source": "https://the5ers.com/hyper-growth/"
   },
   {
    "name": "Bootcamp",
@@ -110,7 +111,7 @@
  ],
  "fee_from": 19,
  "profit_split": "up to 100%",
- "profit_split_scale": "High Stakes: 80% → 85% at $175K → 90% at $250K → 100% at $350K+",
+ "profit_split_scale": "High Stakes: 80% → 85% at $175K → 90% at $250K → 100% at $350K+; Hyper Growth: starts at 75%, 80% at $350K, 80-100% from $400K",
  "max_daily_loss": "5%",
  "max_drawdown": "10%",
  "drawdown_type": null,

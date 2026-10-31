@@ -212,7 +212,7 @@
     "https://apextraderfunding.com/about/",
     "https://www.trustpilot.com/review/apextraderfunding.com"
   ],
-  "notes": "Site 403s web_fetch; read via browser. Fees = Standard path list prices before coupon (read by clicking the JS size selector; 100K intraday $790 looks out of line, so recheck). Standard path has an activation fee (amount not found). No-activation-fee path also exists (e.g. 25K intraday $690). No minimum days to pass (can pass in 1 day). Profit split = '100% requested rewards, no split in Sim Funded'. Max 6 payouts per PA, $500 min payout. Platform list is inferred from partner/help links. Legacy accounts also sold for a limited time; not captured.",
+  "notes": "Site 403s web_fetch; read via browser. Fees = Standard path list prices before coupon (read by clicking the JS size selector; 100K Intraday $790 re-confirmed 31 Oct 2026). Standard path has an activation fee (amount not found). No-activation-fee path also exists (e.g. 25K intraday $690). No minimum days to pass (can pass in 1 day). Profit split = '100% requested rewards, no split in Sim Funded'. Max 6 payouts per PA, $500 min payout. Platform list is inferred from partner/help links. Legacy accounts also sold for a limited time; not captured. Footer states services are intended for U.S. users only (31 Oct 2026).",
   "segment": "futures",
   "also_offers": [],
   "category_basis": "CME futures evaluations on Rithmic, Tradovate and NinjaTrader.",
@@ -224,5 +224,8 @@
     "quote": "Apex Trader Funding Inc. 2028 E. Ben White Blvd Ste 240-9873 Austin, TX 78741 (mailing address only)"
   },
   "max_allocation_text": "Trade up to 20 accounts (no USD cap stated)",
-  "max_allocation_source": "https://apextraderfunding.com/"
+  "max_allocation_source": "https://apextraderfunding.com/",
+  "eligibility_note": "Site footer (checked 31 Oct 2026): \"Services are intended for U.S. users only and are not offered where prohibited by local laws or regulations.\" The restricted list below is the firm's separate country list; non-U.S. traders should confirm eligibility with Apex before paying.",
+  "eligibility_source": "https://apextraderfunding.com/",
+  "us_only": true
 }

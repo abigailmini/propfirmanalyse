@@ -155,8 +155,9 @@
  },
  "affiliate_url": "#",
  "trustpilot": {
-  "score": 4.5,
-  "count": 70946
+  "score": 4.4,
+  "count": 71419,
+  "checked": "2026-10-31"
  },
  "last_verified": "2026-10-26",
  "source_urls": [

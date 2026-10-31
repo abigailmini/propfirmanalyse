@@ -146,7 +146,16 @@
   ],
   "founded": null,
   "hq": "Zug, Switzerland",
-  "discount_code": null,
+  "discount_code": {
+    "code": "BOO20",
+    "value": "20% off (Halloween mini-game code on the homepage)",
+    "percent": 20,
+    "source": "https://cryptofundtrader.com/",
+    "verified": "2026-10-31",
+    "expires": null,
+    "seasonal": "halloween",
+    "review_by": "2026-11-01"
+  },
   "affiliate_url": "#",
   "trustpilot": {
     "score": null,

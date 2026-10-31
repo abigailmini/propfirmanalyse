@@ -457,5 +457,149 @@
   "old": null,
   "new": "Added to PropAnalyse",
   "kind": "Listing"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "crypto-fund-trader",
+  "firm": "Crypto Fund Trader",
+  "field": "Discount code",
+  "old": null,
+  "new": "BOO20 (20% off (Halloween mini-game code on the homepage))",
+  "kind": "Offers"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "fundednext",
+  "firm": "FundedNext",
+  "field": "Discount code",
+  "old": "FNTRICK (Up to 41% off (41% on Stellar 6K/Lite 5K/Instant 2K; 20% on other ≤$50K CFD accounts))",
+  "new": "FNTRICK (Up to 41% off (41% on Stellar 6K/Lite 5K/Instant 2K; 20% on other ≤$50K CFD accounts) (Halloween; homepage countdown ends 31 Oct))",
+  "kind": "Offers"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "fundednext",
+  "firm": "FundedNext",
+  "field": "Fee from",
+  "old": "59.99",
+  "new": "32.99",
+  "kind": "Correction"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "fundednext",
+  "firm": "FundedNext",
+  "field": "Stellar Lite: $10K fee",
+  "old": null,
+  "new": "59.99",
+  "kind": "Correction"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "fundednext",
+  "firm": "FundedNext",
+  "field": "Stellar Lite: $25K fee",
+  "old": null,
+  "new": "139.99",
+  "kind": "Correction"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "fundednext",
+  "firm": "FundedNext",
+  "field": "Stellar Lite: $50K fee",
+  "old": null,
+  "new": "229.99",
+  "kind": "Correction"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "fundednext",
+  "firm": "FundedNext",
+  "field": "Stellar Lite: $5K fee",
+  "old": null,
+  "new": "32.99",
+  "kind": "Correction"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "fundednext",
+  "firm": "FundedNext",
+  "field": "Stellar Lite: daily loss",
+  "old": null,
+  "new": "4%",
+  "kind": "Correction"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "fundednext",
+  "firm": "FundedNext",
+  "field": "Stellar Lite: drawdown type",
+  "old": null,
+  "new": "static",
+  "kind": "Correction"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "fundednext",
+  "firm": "FundedNext",
+  "field": "Stellar Lite: max drawdown",
+  "old": null,
+  "new": "8%",
+  "kind": "Correction"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "fundednext",
+  "firm": "FundedNext",
+  "field": "Stellar Lite: min days",
+  "old": null,
+  "new": "2",
+  "kind": "Correction"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "fundednext",
+  "firm": "FundedNext",
+  "field": "Stellar Lite: profit target",
+  "old": null,
+  "new": "8% / 4%",
+  "kind": "Correction"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "fundednext",
+  "firm": "FundedNext",
+  "field": "Stellar Lite: split",
+  "old": null,
+  "new": "up to 95%",
+  "kind": "Correction"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "fundingpips",
+  "firm": "FundingPips",
+  "field": "Trustpilot score",
+  "old": "4.5",
+  "new": "4.4",
+  "kind": "Reputation"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "the5ers",
+  "firm": "The5ers",
+  "field": "Hyper Growth: split",
+  "old": "up to 100%",
+  "new": "75% to $300K, 80% at $350K, 80-100% from $400K",
+  "kind": "Correction"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "the5ers",
+  "firm": "The5ers",
+  "field": "Split scaling",
+  "old": "High Stakes: 80% → 85% at $175K → 90% at $250K → 100% at $350K+",
+  "new": "High Stakes: 80% → 85% at $175K → 90% at $250K → 100% at $350K+; Hyper Growth: starts at 75%, 80% at $350K, 80-100% from $400K",
+  "kind": "Correction"
  }
 ]
