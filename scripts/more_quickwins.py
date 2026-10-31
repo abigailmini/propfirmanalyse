@@ -308,3 +308,151 @@ def qw_og_build():
     _qw_prev_og_build(); qw_tool_og()
     shutil.copy(os.path.join(ROOT, "src", "share.js"), os.path.join(OUT, "assets", "share.js"))
 
+
+
+# 8. "Is my prop firm safe?" checker: /safe/ + /zh/safe/ hubs (indexable) and /safe/<slug>/ + /zh/safe/<slug>/ result cards (noindex, shareable, own OG card)
+QW_SAFE_L = {
+  "en": dict(h1="Is my prop firm safe?", lede="Type a prop firm's name to see its status on PropAnalyse (active, caution or closed), its PA Score and the evidence behind it, with sources. {n} firms checked, including {c} with a caution and {x} that have shut down.",
+             ph="Firm name, e.g. FTMO", go="Check", active="Active", caution="Caution", closed="Closed", score="PA Score", notrated="Not rated (closed)",
+             ev="Evidence", todo="What to do", full="Full review", legit="Evidence check", share="Share this result", copy="Copy link", sharebtn="Share",
+             since="since", verified="Checked", lists=("Closed firms", "Firms with a caution", "Active firms"), notfound="No firm by that name in our list yet. Check the spelling, or ask us to add it.",
+             another="Check another firm", src="source", tp="Trustpilot", norating="no rating shown", founded="founded", cp="verified complaints",
+             a_todo="No warning signs at our last check. Before buying: read the firm's rules page, start with the smallest account, and keep screenshots of the rules and every payout request.",
+             c_todo="Read the evidence below before buying. If you already hold an account, keep dated screenshots of the rules and of every payout request, and file a complaint with us if a payout is refused.",
+             x_todo="This firm no longer operates. Do not buy anything sold under its name without checking the domain and company. If you are owed money, follow the official route in the sources.",
+             note="Status follows a published rule and dated sources, not opinion; it is not a finding of fraud. A caution is re-checked at least every 30 days.", alt="Alternatives"),
+  "zh": dict(h1="我的自营交易公司安全吗？", lede="输入公司名称，查看它在 PropAnalyse 上的状态（正常、警示或已关闭）、PA 评分及证据来源。共核查 {n} 家公司，其中 {c} 家被列为警示，{x} 家已关闭。",
+             ph="公司名称，例如 FTMO", go="查询", active="正常", caution="警示", closed="已关闭", score="PA 评分", notrated="已关闭，不评分",
+             ev="证据", todo="建议", full="完整评测", legit="证据核查", share="分享结果", copy="复制链接", sharebtn="分享",
+             since="自", verified="核查日期", lists=("已关闭的公司", "警示公司", "正常运营的公司"), notfound="列表中暂无此公司。请检查拼写，或请我们收录。",
+             another="查询其他公司", src="来源", tp="Trustpilot", norating="未显示评分", founded="成立于", cp="条已核实投诉",
+             a_todo="上次核查未发现警示信号。购买前：阅读公司规则页面，从最小账户开始，并保存规则和每次出金申请的截图。",
+             c_todo="购买前请先阅读下方证据。如已持有账户，请保存带日期的规则截图和每次出金申请记录；如出金被拒，可向我们投诉。",
+             x_todo="该公司已停止运营。不要购买以其名义销售的任何产品，先核实域名和公司。如有欠款，请按来源中的官方途径处理。",
+             note="状态依据公开规则和带日期的来源，而非主观意见；不代表欺诈认定。警示状态至少每 30 天复核一次。", alt="替代选择"),
+}
+def qw_safe_rows():
+    rows = []
+    for c in globals().get("ST_CLOSED", []):
+        rows.append(dict(slug=c["slug"], name=c["name"], status="closed", score=None, rank="", site=c.get("site") or "", since=c.get("status_since"),
+                         ev=[(c.get("status_reason") or "", None, c.get("status_since"))] + [((s.get("publisher") or "") + ": " + (s.get("title") or ""), s.get("url"), s.get("date")) for s in c.get("status_sources", [])[:4]],
+                         ev_zh=[(c.get("status_reason_zh") or c.get("status_reason") or "", None, c.get("status_since"))], action=c.get("trader_action"), tp=None, founded=c.get("founded"), checked=c.get("checked")))
+    for f in RANKED:
+        caut = st_is_caution(f)
+        tp = f.get("trustpilot") or {}
+        if caut:
+            stc = ST_CAUTION.get(f["slug"], {})
+            ev = [(stc.get("status_reason") or "", None, stc.get("status_since"))] + [(x.get("text") or "", x.get("url"), x.get("date")) for x in stc.get("evidence", [])[:5]]
+        else:
+            lvl, pts, why = evidence(f)
+            ev = [(f"Evidence level {lvl} ({pts}/6)" + (": " + "; ".join(why) if why else ""), url(f"/firms/{f['slug']}/legit/"), None)]
+            for x in caution(f)[:3]: ev.append((x, None, None))
+        rows.append(dict(slug=f["slug"], name=f["name"], status="caution" if caut else "active", score=f["_score"], rank=f"#{f['_rank']} of {len(FIRMS)}",
+                         site=f.get("site") or "", since=f.get("status_since") if caut else None, ev=ev, ev_zh=None, action=None,
+                         tp=(num(tp.get("score")), int(num(tp.get("count") or 0) or 0)), founded=f.get("founded"), checked=f.get("last_verified") or TODAY))
+    return rows
+def qw_stars(s):
+    if s is None: return ""
+    v = round(s / 2 * 2) / 2
+    return '<span class="sfstars" aria-label="' + f"{s / 2:.1f} out of 5" + '">' + "★" * int(v) + ("½" if v % 1 else "") + '<span class="sfoff">' + "★" * (5 - int(v) - (1 if v % 1 else 0)) + "</span></span>"
+def qw_dom(u): return re.sub(r"^https?://(www\.)?", "", u or "").split("/")[0]
+def qw_safe_card(r, lang="en"):
+    L = QW_SAFE_L[lang]; zh = lang == "zh"; fd = (zdate if zh else nice_date)
+    lab = L[r["status"]]
+    since = (f' {L["since"]} {fd(str(r["since"]))}' if r.get("since") and r["status"] != "active" else "")
+    sc = (f'<p class="sfsc"><b class="n">{r["score"]:.1f}</b><small>/10 {L["score"]}</small> {qw_stars(r["score"])} <span class="small">{e(r["rank"])}</span></p>' if r["score"] is not None else f'<p class="sfsc"><span class="nil">{L["notrated"]}</span></p>')
+    evs = r["ev_zh"] if zh and r.get("ev_zh") else r["ev"]
+    lis = "".join(f'<li>{e(t)}' + (f' <a href="{e(u)}"' + (' rel="nofollow noopener" target="_blank"' if u.startswith("http") else "") + f'>{L["src"]}</a>' if u else "") + (f' <time class="small" datetime="{e(str(d))}">({fd(str(d))})</time>' if d else "") + "</li>" for t, u, d in evs if t)
+    meta = []
+    if r.get("tp") and r["tp"][0]: meta.append(f'{L["tp"]} <b class="n">{r["tp"][0]:.1f}</b> ({r["tp"][1]:,})')
+    elif r.get("tp") and r["tp"][1]: meta.append(f'{L["tp"]}: {L["norating"]} ({r["tp"][1]:,})')
+    if num(r.get("founded")): meta.append(f'{L["founded"]} <span class="n">{int(num(r["founded"]))}</span>')
+    if r["status"] != "closed": meta.append(f'{len(cp_of(r["slug"]))} {L["cp"]}')
+    meta.append(f'{L["verified"]} <time datetime="{e(str(r["checked"]))}">{fd(str(r["checked"]))}</time>')
+    todo = r.get("action") if (r["status"] == "closed" and r.get("action") and not zh) else L[{"active": "a_todo", "caution": "c_todo", "closed": "x_todo"}[r["status"]]]
+    links = f'<a href="{url("/firms/" + r["slug"] + "/")}">{L["full"]}</a>' + (f' · <a href="{url("/firms/" + r["slug"] + "/legit/")}">{L["legit"]}</a>' if r["status"] != "closed" else "") + (f' · <a href="{url("/best/")}">{L["alt"]}</a>' if r["status"] != "active" else "")
+    ic_ = {"active": "✓", "caution": "!", "closed": "×"}[r["status"]]
+    return (f'<article class="sfcard sf-{r["status"]}" id="result"><p class="sfst"><span class="sfic" aria-hidden="true">{ic_}</span>{e(lab)}{e(since)}</p>'
+            f'<h2>{e(r["name"])} <small class="small">{e(qw_dom(r["site"]))}</small></h2>{sc}<p class="small sfmeta">{" · ".join(meta)}</p>'
+            f'<h3>{L["ev"]}</h3><ul class="bul sfev">{lis}</ul><h3>{L["todo"]}</h3><p>{e(todo)}</p><p class="sflinks">{links}</p>'
+            f'<div class="qwshare"><h3>{L["share"]}</h3><p class="qwbtns"><button type="button" class="btn sm" data-sfshare>{L["sharebtn"]}</button><button type="button" class="btn line sm" data-sfcopy>{L["copy"]}</button></p><p class="small" data-sfmsg aria-live="polite"></p></div>'
+            f'<p class="small">{e(L["note"])}</p></article>')
+QW_SAFE_CSS = """<style>.sfform{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 8px}.sfform input{flex:1 1 260px;min-width:0;font:inherit;font-size:17px;padding:12px 14px;border:1px solid var(--rule-2);border-radius:var(--r-box,8px);background:var(--bg-elev,#fff);color:var(--ink)}
+.sfcard{border:1px solid var(--rule-2);border-left-width:6px;border-radius:var(--r-box,8px);padding:18px 20px;margin:20px 0;background:var(--bg-elev,#fff);max-width:760px}.sfcard h2{margin:4px 0 6px}.sfcard h3{font-size:15px;margin:16px 0 6px}
+.sf-active{border-left-color:#107a46}.sf-caution{border-left-color:#b02020}.sf-closed{border-left-color:#5a6680}.sfst{font:600 14px/1.2 var(--f-ui);letter-spacing:.06em;text-transform:uppercase;margin:0;display:flex;align-items:center;gap:8px}
+.sf-active .sfst{color:#107a46}.sf-caution .sfst{color:#b02020}.sf-closed .sfst{color:var(--mute)}.sfic{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;border:2px solid currentColor;font-size:13px}
+.sfsc{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin:4px 0}.sfsc b{font-size:34px}.sfstars{color:var(--accent);letter-spacing:2px}.sf-caution .sfstars{color:#b02020}.sfoff{color:var(--rule-2)}
+.sfmeta{color:var(--mute)}.sfcols{display:grid;gap:24px;margin-top:28px}@media(min-width:900px){.sfcols{grid-template-columns:repeat(3,minmax(0,1fr))}}.sfcols ul{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule-2)}.sfcols li a{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--rule);text-decoration:none}
+.sfmiss{color:#b02020}</style>"""
+def qw_safe_js(lang):
+    L = QW_SAFE_L[lang]; base = url("/zh/safe/" if lang == "zh" else "/safe/")
+    return ("<script>(function(){var F=document.getElementById('sfform');if(F){var I=F.querySelector('input'),D=JSON.parse(document.getElementById('sfdata').textContent),M=document.getElementById('sfmiss');"
+            "function norm(s){return (s||'').toLowerCase().replace(/^https?:\\/\\/(www\\.)?/,'').replace(/[^a-z0-9]/g,'')}"
+            "F.addEventListener('submit',function(ev){ev.preventDefault();var q=norm(I.value);if(!q)return;var hit=D.find(function(d){return norm(d[1])===q||d[0].replace(/-/g,'')===q||norm(d[2])===q||norm(d[2]).split('com')[0]===q})||D.find(function(d){return norm(d[1]).indexOf(q)===0})||D.find(function(d){return norm(d[1]).indexOf(q)>=0||norm(d[2]).indexOf(q)>=0});"
+            "if(hit){location.href='" + base + "'+hit[0]+'/#result'}else{M.hidden=false}})}"
+            "var S=document.querySelector('[data-sfshare]'),C=document.querySelector('[data-sfcopy]'),G=document.querySelector('[data-sfmsg]');function cp(t){if(navigator.clipboard)navigator.clipboard.writeText(t).then(function(){G.textContent='" + ("已复制" if lang == "zh" else "Copied.") + "'});else window.prompt('Copy',t)}"
+            "var u=location.origin+location.pathname,t=document.title;if(S)S.addEventListener('click',function(){if(navigator.share){navigator.share({title:t,url:u}).catch(function(){})}else cp(t+' '+u)});if(C)C.addEventListener('click',function(){cp(u)})})();</script>")
+def qw_safe_form(rows, lang):
+    L = QW_SAFE_L[lang]
+    data = json.dumps([[r["slug"], r["name"], qw_dom(r["site"])] for r in rows], ensure_ascii=False).replace("</", "<\\/")
+    opts = "".join(f'<option value="{e(r["name"])}">' for r in rows)
+    return (f'<form class="sfform" id="sfform" role="search"><label class="sr" for="sfq">{L["ph"]}</label><input id="sfq" list="sflist" autocomplete="off" placeholder="{e(L["ph"])}"><datalist id="sflist">{opts}</datalist>'
+            f'<button class="btn" type="submit">{L["go"]}</button></form><p class="small sfmiss" id="sfmiss" hidden>{e(L["notfound"])} <a href="{url("/for-firms/")}">{"→"}</a></p><script type="application/json" id="sfdata">{data}</script>')
+def qw_safe_pages():
+    rows = qw_safe_rows()
+    byst = {k: [r for r in rows if r["status"] == k] for k in ("closed", "caution", "active")}
+    for lang in ("en", "zh"):
+        L = QW_SAFE_L[lang]; zh = lang == "zh"; hub = "/zh/safe/" if zh else "/safe/"
+        cols = "".join(f'<section><h2>{L["lists"][i]} <span class="n small">({len(byst[k])})</span></h2><ul>' + "".join(
+            f'<li><a href="{url(hub + r["slug"] + "/")}#result"><span>{e(r["name"])}</span><span class="small n">{(f"{r[chr(115)+chr(99)+chr(111)+chr(114)+chr(101)]:.1f}" if r["score"] is not None else L["closed"])}</span></a></li>' for r in byst[k]) + "</ul></section>"
+            for i, k in enumerate(("closed", "caution", "active")))
+        lede = L["lede"].format(n=len(rows), c=len(byst["caution"]), x=len(byst["closed"]))
+        c, bl = crumbs([("首页" if zh else "Home", "/zh/" if zh else "/"), (L["h1"], hub)])
+        if zh:
+            how = ("<h2>怎么判断</h2><p>状态来自 PropAnalyse 的公开规则：<b>正常</b> = 未触发任何警示条件；<b>警示</b> = 仍在销售，但有带日期的公开证据（如大量出金投诉、Trustpilot 被暂停）；<b>已关闭</b> = 已停止运营，有来源佐证。"
+                   f"警示公司的评分上限为 4.0。详见 <a href=\"{url('/zh/methodology/')}\">方法论</a>。</p>")
+            qa = [("怎么知道一家自营交易公司是否安全？", "看三件事：是否有大量近期出金投诉、是否有监管或法院记录、规则和费用是否公开透明。本页把这些证据集中列出并附来源。"),
+                  ("警示是什么意思？", "公司仍在销售，但有带日期的公开证据显示风险，例如近期评论大量反映出金未付。警示至少每 30 天复核一次。")]
+        else:
+            how = ("<h2>How the check works</h2><p>Every firm gets one of three statuses under a <a href=\"" + url("/methodology/") + "#status\">published rule</a>: <b>active</b> (no trigger holds), <b>caution</b> (still selling, but dated public evidence such as a cluster of recent payout complaints or a suspended Trustpilot profile) or <b>closed</b> (stopped operating, with sources). "
+                   "A caution caps the PA Score at 4.0 and removes the firm from offers and best-of lists. We never call a firm a scam unless a regulator or court has said so.</p>"
+                   "<p>Safe is relative: no prop firm is risk-free. Evaluations are paid products, most traders do not pass, and a firm's rules can change after you buy. That is why every card shows the date of our last check and links to the sources.</p>")
+            qa = [("How do I know if a prop firm is safe?", "Check three things: a recent cluster of payout complaints, any regulator or court record, and whether the firm publishes its rules, fees and payout terms in full. This page puts that evidence in one place, with sources and dates."),
+                  ("What does caution mean on PropAnalyse?", "The firm still sells challenges, but dated public evidence shows risk, such as many recent reviews reporting unpaid payouts or a suspended Trustpilot profile. The score is capped at 4.0 and the caution is re-checked at least every 30 days."),
+                  ("Which prop firms have shut down?", f"{len(byst['closed'])} firms in our list have stopped operating, including " + ", ".join(r["name"] for r in byst["closed"][:5]) + ". Each has a dated card with sources.")]
+        faqh = "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q, a in qa)
+        body = (f'<div class="wrap">{c}<header class="ph"><h1>{e(L["h1"])}</h1><p class="lede">{e(lede)}</p>{qw_safe_form(rows, lang)}</header>'
+                f'<div class="sfcols">{cols}</div><section class="block prose">{how}</section><section class="block faq"><h2>FAQ</h2>{faqh}</section></div>{qw_safe_js(lang)}')
+        ld = [bl, {"@context": "https://schema.org", "@type": "WebApplication", "name": L["h1"], "url": ABS + hub, "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "isAccessibleForFree": True},
+              {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa]}]
+        if zh: page(hub, "我的自营交易公司安全吗？状态查询（正常/警示/已关闭）", f"输入公司名称，查看 {len(rows)} 家自营交易公司的状态、PA 评分和证据来源：{len(byst['caution'])} 家警示，{len(byst['closed'])} 家已关闭。", body, ld, extra_head=QW_SAFE_CSS + QW_CSS, lang="zh")
+        else: page(hub, "Is My Prop Firm Safe? Status Checker (Active/Caution/Closed)", f"Check any of {len(rows)} prop firms: active, caution or closed, with PA Score, evidence and sources. {len(byst['caution'])} firms carry a caution and {len(byst['closed'])} have shut down.", body, ld, extra_head=QW_SAFE_CSS + QW_CSS)
+        for r in rows:
+            p = hub + r["slug"] + "/"
+            c2, bl2 = crumbs([("首页" if zh else "Home", "/zh/" if zh else "/"), (L["h1"], hub), (r["name"], p)])
+            body = (f'<div class="wrap">{c2}<header class="ph"><h1>{e(("" if not zh else "") + (r["name"] + ("安全吗？" if zh else ": is it safe?")))}</h1></header>{qw_safe_card(r, lang)}'
+                    f'<section class="block"><h2>{e(L["another"])}</h2>{qw_safe_form(rows, lang)}</section></div>{qw_safe_js(lang)}')
+            st = L[r["status"]]
+            t = (f"{r['name']}安全吗？状态：{st}" if zh else f"Is {r['name']} Safe? Status: {st}" + (f", PA Score {r['score']:.1f}" if r["score"] is not None else ""))
+            d = (f"{r['name']} 在 PropAnalyse 的状态：{st}。证据与来源。" if zh else f"{r['name']} on PropAnalyse: {st.lower()}" + (f", PA Score {r['score']:.1f}/10" if r["score"] is not None else "") + ". Evidence and sources, checked " + nice_date(str(r["checked"])) + ".")
+            page(p, t, d, body, [bl2], extra_head=QW_SAFE_CSS + QW_CSS + '<meta name="robots" content="noindex,follow">', lang=lang)
+            if PAGES and PAGES[-1] == p: PAGES.pop()   # share cards stay out of the sitemap
+            QW_OG_EXTRA[p] = (f"/og/safe/{r['slug']}.png", f"{r['name']}: {QW_SAFE_L['en'][r['status']]}")
+        if not zh: ZH_ALT["/safe/"] = "/zh/safe/"
+    if QW_OG:
+        for r in rows:
+            st = QW_SAFE_L["en"][r["status"]]
+            title = {"active": f"{r['name']}: active, no warning signs at our last check", "caution": f"{r['name']}: caution. Read the evidence before you buy", "closed": f"{r['name']}: closed" + (f" since {st_date(r['since'])}" if r.get("since") else "")}[r["status"]]
+            colsx = [(st, "Status"), (f"{r['score']:.1f}/10" if r["score"] is not None else "Not rated", "PA Score"),
+                     ((f"{r['tp'][0]:.1f} / 5" if r.get("tp") and r["tp"][0] else "No rating") if r["status"] != "closed" else (str(int(num(r["founded"]))) if num(r.get("founded")) else "n/a"), "Trustpilot" if r["status"] != "closed" else "Founded"),
+                     (nice_date(str(r["checked"])), "Checked")]
+            QW_OG["text_card"]("Is my prop firm safe?", title, colsx, OUT + f"/og/safe/{r['slug']}.png", right="propanalyse.com/safe/", tone=None if r["status"] == "active" else "red")
+    QW_OG_EXTRA["/safe/"] = QW_OG_EXTRA["/zh/safe/"] = ("/og/safe/_hub.png", "Is my prop firm safe? Status checker")
+    if QW_OG: QW_OG["text_card"]("Free checker", "Is my prop firm safe?", [(str(len(byst["active"])), "active firms"), (str(len(byst["caution"])), "with a caution"), (str(len(byst["closed"])), "closed"), ("Sources", "dated, linked")], OUT + "/og/safe/_hub.png", right="propanalyse.com/safe/")
+
+_qw_prev_pages = qw_pages
+def qw_pages():
+    _qw_prev_pages(); qw_safe_pages()
+FOOT_EXTRA.insert(0, ("/safe/", "Is my prop firm safe?"))
+if "ZH_FOOT" in globals(): ZH_FOOT.insert(0, ("/zh/safe/", "公司安全查询"))
+
