@@ -92,7 +92,7 @@ def quiz():
             q(5, "What matters most?", "pri", [("score", "Overall PA Score"), ("cost", "Lowest cost"), ("payout", "Fast, frequent payouts"), ("split", "Highest split"), ("trust", "Track record and reviews"), ("rules", "Loosest rules")]) +
             q(6, "Must-haves", "must", [("news", "News trading"), ("weekend", "Weekend holding"), ("static", "Static drawdown"), ("mt5", "MT5")], "checkbox") +
             f'<fieldset class="qf"><legend><span class="n">7/7</span> Where do you live?</legend><label class="fl"><span class="sr">Country</span><select id="q-ctry"><option value="">Not restricted / skip</option>{ctry}</select></label></fieldset>')
-    body = f"""<div class="wrap">{c}<header class="ph"><h1>Find your prop firm</h1><p class="lede">Answer seven questions. We filter every firm in our dataset against your answers and rank what's left by the factor you care about. The quiz runs in your browser, sends nothing, and treats FundedXYZ like every other firm.</p></header>
+    body = f"""<div class="wrap">{c}<header class="ph"><h1>Find your prop firm</h1><p class="lede">Answer seven questions. We filter every firm in our dataset against your answers and rank what's left by the factor you care about. The quiz runs in your browser, sends nothing, and treats FundedXyz like every other firm.</p></header>
 <div class="quiz"><form id="quiz" onsubmit="return false">{form}</form><div class="qres" id="qres" aria-live="polite"><p class="small">Results update as you answer.</p></div></div></div>
 <script>window.PFA_FIRMS_URL="{url('/data/firms.json')}";window.PFA_BASE="{BASE}";</script><script src="{url('/assets/quiz.js')}?v={ASSET_V}" defer></script>"""
     page("/quiz/", "Which Prop Firm Is Right for Me? 7-Question Firm Finder | PropAnalyse", "Answer seven questions on market, budget, challenge type and must-have rules to get a ranked shortlist of prop firms from our open dataset.", body,
@@ -158,7 +158,7 @@ def site_faq():
      ("How do prop firms make money?", "Mostly from evaluation fees, because most traders fail. Profitable funded traders cost the firm money unless their trades are hedged or the account is simulated, which it usually is."),
      ("Is a funded account real money?", "Usually not. Most retail prop firms run funded accounts on demo or simulated capital and pay you a share of the simulated profit. A few route some accounts to live markets."),
      ("How does PropAnalyse rank firms?", "One public formula: trust 30%, cost 20%, rules 20%, payout 20%, track record 10%. Missing data scores 4/10. Firms cannot pay to change their score or position."),
-     ("Who owns PropAnalyse?", "The team behind FundedXYZ, a crypto prop firm. FundedXYZ is scored by the same formula as every other firm, with no manual adjustment. This is disclosed on every relevant page."),
+     ("Who owns PropAnalyse?", "The team behind FundedXyz, a crypto prop firm. FundedXyz is scored by the same formula as every other firm, with no manual adjustment. This is disclosed on every relevant page."),
      ("Do you earn commission?", "Some Visit-site links may be affiliate links. Commission never changes data, scores or ordering. Codes we list are the firm's own public codes, dated."),
      ("How often is the data checked?", "Every firm shows a last-verified date. Changes we find are logged field by field with the date on the rule-changes page, which also has an RSS feed."),
      ("What is the difference between static and trailing drawdown?", "Static drawdown fixes the loss floor relative to your starting balance. Trailing drawdown raises the floor as your equity makes new highs. The drawdown calculator shows both in dollars."),
@@ -179,7 +179,7 @@ def methodology():
 <tr><td><b>Dated rule changes</b></td><td>Every change to a firm's fees, limits or payout terms is logged with the date and the old and new values, on <a href="{url('/news/')}">rule changes</a>, with RSS and JSON feeds.</td></tr>
 <tr><td><b>True cost, not sticker price</b></td><td>Retries, activation fees and refunds are part of the price. The <a href="{url('/tools/true-cost/')}">true-cost calculator</a> works out your cost to first payout.</td></tr>
 <tr><td><b>No pay-to-rank</b></td><td>Affiliate links may exist, but no payment changes a firm's data, score, order or which page it appears on.</td></tr></tbody></table>
-<p class="note"><b>Ownership disclosure.</b> PropAnalyse is operated by the team behind FundedXYZ. FundedXYZ is scored by the same rules as every other firm. It gets no manual adjustment and no default sort position, and its data is collected with the same checklist.</p>
+<p class="note"><b>Ownership disclosure.</b> PropAnalyse is operated by the team behind FundedXyz. FundedXyz is scored by the same rules as every other firm. It gets no manual adjustment and no default sort position, and its data is collected with the same checklist.</p>
 <h2>Where the numbers come from</h2><p>Every figure is read from the prop firm's own website (pricing, rules, FAQ or help-centre pages), and the date is recorded per firm. Ratings come from the firm's public Trustpilot page. If a firm doesn't publish a number, we show "Not published". We never estimate.</p>
 <h2 id="account-types">Account types</h2><p>Every firm sits in exactly one account type, chosen from the platforms and products on the firm's own site. If a firm sells two kinds of account, we file it under its main product and list the other as "also sells".</p>
 <table class="mini"><thead><tr><th scope="col">Type</th><th scope="col">What you trade, and where</th></tr></thead><tbody>
@@ -207,7 +207,7 @@ def seo_files():
     open(os.path.join(OUT, "sitemap.xml"), "w").write(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{sm}</urlset>')
     open(os.path.join(OUT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\n\nSitemap: {ABS}/sitemap.xml\n")
     L = ["# PropAnalyse", "", "> The prop firm audit. Data-first comparison of prop trading firms (crypto first; forex, futures and multi-asset too). Every figure comes from the firm's own website with a date. Unknown values stay blank rather than estimated. Published scoring formula, dated field-level rule-change log, true-cost calculator, no pay-to-rank.",
-         "", "Operated by the team behind FundedXYZ. FundedXYZ is scored with the same formula as every other firm.", "", "## Key pages",
+         "", "Operated by the team behind FundedXyz. FundedXyz is scored with the same formula as every other firm.", "", "## Key pages",
          f"- [All firms]({ABS}/firms/): filterable table", f"- [Crypto prop firms]({ABS}/crypto/): venue, perps vs CFD, crypto leverage, weekend, bots, USDT payouts",
          f"- [Rule changes]({ABS}/news/): dated old→new diffs; [RSS]({ABS}/news/feed.xml); [JSON]({ABS}/news/changes.json)",
          f"- [Discount codes]({ABS}/offers/)", f"- [True-cost calculator]({ABS}/tools/true-cost/)", f"- [Drawdown calculator]({ABS}/tools/drawdown/)", f"- [Profit-target calculator]({ABS}/tools/profit-target/)",

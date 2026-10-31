@@ -128,7 +128,7 @@
  {
   "date": "2026-10-26",
   "slug": "fundedxyz",
-  "firm": "FundedXYZ",
+  "firm": "FundedXyz",
   "field": "Discount code",
   "old": "FIRST (10% off first purchase)",
   "new": "FIRST (10% off first purchase (auto-applied in pricing widget))",

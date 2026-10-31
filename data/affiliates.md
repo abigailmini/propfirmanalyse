@@ -9,7 +9,7 @@ Affiliate page column = where to apply. If it says *email*, there is no public p
 
 | Firm | Affiliate program URL | Status | Link | Code | Commission (published) | Date |
 |---|---|---|---|---|---|---|
-| FundedXYZ (own firm, disclosed) | https://www.fundedxyz.com/affiliateprogram | todo | # | FIRST | 8% → 12% → 15% by monthly referrals (0–25 / 26–100 / 100+) | 2026-10-26 |
+| FundedXyz (own firm, disclosed) | https://www.fundedxyz.com/affiliateprogram | todo | # | FIRST | 8% → 12% → 15% by monthly referrals (0–25 / 26–100 / 100+) | 2026-10-26 |
 | HyroTrader | https://www.hyrotrader.com/affiliates/ | todo | # | — | 10–15% standard, up to 40% by BD agreement; recurring | 2026-10-26 |
 | Breakout | https://www.breakoutprop.com/affiliates/ | todo | # | — | 12–18% on first order | 2026-10-26 |
 | Crypto Fund Trader | https://cryptofundtrader.com/affiliates/ (terms: /affiliate-terms/) | todo | # | — | — | 2026-10-26 |

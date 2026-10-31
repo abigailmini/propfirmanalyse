@@ -1,0 +1,22 @@
+/* complaints (2026-10-31) */
+.cpgrid{display:grid;gap:16px;grid-template-columns:repeat(2,minmax(0,1fr));margin:12px 0}
+@media (min-width:700px){.cpgrid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.cpstat{border:1px solid var(--rule);border-radius:10px;padding:12px 14px;background:var(--bg-2)}
+.cpstat b{display:block;font-size:24px;line-height:1.1;font-variant-numeric:tabular-nums}
+.cpstat span{font-size:12px;color:var(--mute)}
+.cpnone{margin:6px 0 12px}
+.cpact{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:8px}
+.cpsteps{counter-reset:s;list-style:none;padding:0;display:grid;gap:12px;margin:12px 0}
+@media (min-width:900px){.cpsteps{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.cpsteps li{counter-increment:s;border:1px solid var(--rule);border-radius:10px;padding:14px;position:relative}
+.cpsteps li::before{content:counter(s);display:inline-flex;width:26px;height:26px;border-radius:50%;align-items:center;justify-content:center;background:var(--accent);color:var(--on-accent,#fff);font-weight:600;font-size:13px;margin-bottom:8px}
+.cpsteps b{display:block;margin-bottom:4px}
+.cpform input,.cpform select,.cpform textarea{width:100%;font:inherit;font-size:15px;padding:9px 11px;border:1px solid var(--ctl,var(--rule));border-radius:8px;background:var(--bg-elev,var(--bg));color:var(--ink)}
+.cpform input,.cpform select{height:42px}
+.cpform .wide{grid-column:1/-1}
+.cpform [aria-invalid=true]{border-color:#c62828;outline:1px solid #c62828}
+.cpform .req{color:#c62828}
+.cpform .chk{display:flex;gap:8px;align-items:flex-start;font-size:14px}.cpform .chk input{width:auto;height:auto;margin-top:3px}
+.cpmsg{color:#c62828;font-size:14px;margin:0}
+.evt{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.02em;padding:1px 6px;border-radius:999px;border:1px solid currentColor;color:var(--accent);vertical-align:1px;white-space:nowrap}
+.cpaside{margin-top:16px;font-size:14px}

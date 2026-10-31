@@ -209,7 +209,7 @@ def for_firms_page():
 <p class="lede">How your firm is listed on PropAnalyse, how to show your score on your own site, and how to fix a number we have wrong. No account, no fees.</p></header>
 <div class="ffgrid">
 <section class="block prose"><h2>How you are listed</h2><p>Every figure on your page is read from your own website: pricing, rules, FAQ and help-centre pages. Each firm page lists the pages it came from and the date we checked them. If you do not publish something, we show \u201cNot published\u201d rather than guess.</p>
-<p>The PA Score is one formula applied to every firm by our build script (<a href="{url('/methodology/')}">methodology</a>). You cannot pay to change it, and affiliate deals have no input into it. PropAnalyse is run by the team behind FundedXYZ, which is scored by the same rules.</p></section>
+<p>The PA Score is one formula applied to every firm by our build script (<a href="{url('/methodology/')}">methodology</a>). You cannot pay to change it, and affiliate deals have no input into it. PropAnalyse is run by the team behind FundedXyz, which is scored by the same rules.</p></section>
 <section class="block prose"><h2>Show your score</h2><p>Copy a badge for your site from your firm page or the <a href="{url('/badge/')}">badge builder</a>. It shows your PA Score, stars (score \u00f7 2) and our verification date, and it updates by itself.</p>
 <p class="bsample"><img src="{url('/badge/' + f0['slug'] + '.svg')}" width="300" height="116" alt="Example badge: {e(balt(f0))}" loading="lazy"></p>
 <p><a class="btn" href="{url('/badge/')}">Get your badge</a></p></section></div>

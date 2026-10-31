@@ -296,7 +296,7 @@ def firm_page(f):
     ])
     crypto_link = (f'<p class="clink"><a class="more" href="{url("/crypto/" + f["slug"] + "/")}">Crypto rules for {e(f["name"])}{ic("arrow")}</a></p>') if "crypto" in f["_assets"] else ""
     s = f["_score"]
-    disc = ('<p class="note"><b>Disclosure.</b> PropAnalyse is run by the team behind FundedXYZ. This review uses the same fields and the same scoring formula as every other firm.</p>' if f["slug"] == "fundedxyz" else "")
+    disc = ('<p class="note"><b>Disclosure.</b> PropAnalyse is run by the team behind FundedXyz. This review uses the same fields and the same scoring formula as every other firm.</p>' if f["slug"] == "fundedxyz" else "")
     body = f"""<div class="wrap">{c}<header class="phead"><h1>{e(f['name'])} review</h1><p class="meta">{''.join('<span>' + m + '</span>' for m in meta)}</p>
 <p class="lede">{e(firm_summary(f))}</p><div class="ctas">{visit(f, cls="btn")}{dch}</div>{disc}</header>
 <div class="pgrid"><aside class="side" aria-label="PA Score"><div class="scorebox"><p class="big n">{s:.1f}<small>/10</small></p>{ticks(s, 0, "lg")}

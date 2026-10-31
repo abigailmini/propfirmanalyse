@@ -6,6 +6,8 @@ _PC = json.load(open(os.path.join(ROOT, "data", "payout_claims.json")))
 CLAIMS = _PC["firms"]; CLAIM_DATE = _PC.get("checked", SPRINT)
 def claim(f): return CLAIMS.get(f["slug"]) or {}
 def claim_usd(f): return num(claim(f).get("value_usd"))
+def cwhere(c): return c.get("where") or "homepage"
+def onchain(c): return c.get("evidence_type") == "on-chain"
 def big_usd(v):
     if v is None: return None
     if v >= 1e9: return f"${v / 1e9:.1f}B".replace(".0B", "B")
@@ -281,7 +283,7 @@ def best_copy(s, fl):
         ans = f"{n} firms we track list forex pairs. Top on PA Score: {fl_names(top)}" + (f"; cheapest entry {ch['name']} at {fmoney(ch, ch['_fee'])}." if ch else ".")
         secs.append(("What separates forex firms", P(f"Most forex firms look alike on fees. The differences are drawdown type, news and weekend rules, and how fast you can get paid. {len(fast)} of these pay daily or on demand.", f'See the <a href="{url("/cfd/")}">CFD hub</a> for the full ranking.')))
         qa += [("What is the best forex prop firm?", ans)]
-    secs.append(("How this list is built", P(f"Filter: {e(next(d for s2, t, d, fn in BEST if s2 == s))} Order: PA Score (trust 30%, cost 20%, rules 20%, payout 20%, track record 10%), unless the table says otherwise. Data was read from each firm's own site; last full verification {nice_date(TODAY)}. FundedXYZ is run by our team and scored the same way.",
+    secs.append(("How this list is built", P(f"Filter: {e(next(d for s2, t, d, fn in BEST if s2 == s))} Order: PA Score (trust 30%, cost 20%, rules 20%, payout 20%, track record 10%), unless the table says otherwise. Data was read from each firm's own site; last full verification {nice_date(TODAY)}. FundedXyz is run by our team and scored the same way.",
                  f'Rule changes appear on the <a href="{url("/news/")}">change log</a> within one build.')))
     qa.append(("How often is this list updated?", f"Every build re-reads our dataset. Firms were last verified on {nice_date(TODAY)}; changes are logged with dates on the rule-change page."))
     return ans, [x for x in facts if x], secs, qa
@@ -381,7 +383,7 @@ def legit_page(f):
            "That is evidence, not a guarantee: nobody outside the firm can audit its payouts, so read the cautions below.")
     rows = [("Operating since", show(int(num(f["founded"]))) if num(f.get("founded")) else NIL), ("HQ / legal entity", show(f.get("hq"))),
             ("Trustpilot", (f'<span class="n">{tps(f):.1f}</span> / 5 from <span class="n">{tpc(f):,}</span> reviews' if tps(f) else (f'No score shown ({tpc(f):,} reviews)' if tpc(f) else NIL))),
-            ("Firm-reported payouts", (f'"{e(c["text"])}" <a href="{e(c["source"])}" rel="nofollow noopener" target="_blank">source</a>, checked {nice_date(CLAIM_DATE)}' if c.get("text") else '<span class="nil">No total on homepage</span>')),
+            ("Firm-reported payouts", (f'"{e(c["text"])}" ({e(cwhere(c))}) <a href="{e(c["source"])}" rel="nofollow noopener" target="_blank">source</a>, checked {nice_date(CLAIM_DATE)}' if c.get("text") else '<span class="nil">No total on homepage</span>')),
             ("Public payout proof", show(c.get("proof"))), ("Payout terms", show(f.get("payout_frequency"))), ("First payout", show(f.get("first_payout_days")) + (" days" if num(f.get("first_payout_days")) is not None else "")),
             ("Payout methods", show(pmethods(f)) if pmethods(f) else NIL), ("KYC before payout", {True: "Required", False: "Not required"}.get(kyc(f), NIL)),
             ("Fee refund", show(f["_x"].get("refund_policy"))), ("Restricted countries", show(restricted) if restricted else '<span class="nil">No list we could verify</span>'),
@@ -395,7 +397,7 @@ def legit_page(f):
              "Pay by a method with chargeback rights where possible, and never send funds to a personal wallet or account."]
     tl = timeline_html(f)
     chg = [x for x in CHANGES if x["slug"] == f["slug"]][:8]
-    disc = ('<p class="note"><b>Disclosure.</b> FundedXYZ is run by the team behind PropAnalyse. This page uses the same fields and the same evidence rules as every other firm.</p>' if f["slug"] == "fundedxyz" else "")
+    disc = ('<p class="note"><b>Disclosure.</b> FundedXyz is run by the team behind PropAnalyse. This page uses the same fields and the same evidence rules as every other firm.</p>' if f["slug"] == "fundedxyz" else "")
     secs = [("Evidence at a glance", tbl),
             ("Reasons for confidence", UL([e(x) for x in P_]) if P_ else P("Nothing in the published data stands out above the field.")),
             ("Cautions", UL([e(x) for x in caution(f) + [x for x in C_ if x not in caution(f)]][:8])),
@@ -410,7 +412,7 @@ def legit_page(f):
            + "".join([f'<li><a href="{url("/best/" + s + "/")}"><span>{e(BEST_H1.get(s, t))}</span></a></li>' for s, t, d, fn in BEST if fn(f)][:4])
            + f'<li><a href="{url("/legit/")}"><span>Evidence check: all {len(FIRMS)} firms</span></a></li>')
     qa = [(f"Is {f['name']} legit?", ans),
-          (f"Does {f['name']} actually pay out?", (f"The firm reports {c['text']} on its homepage (checked {nice_date(CLAIM_DATE)}). That is the firm's own figure; we have not audited it." if c.get("text") else f"{f['name']} did not show a firm-wide payout total on its homepage when we checked on {nice_date(CLAIM_DATE)}.") + (f" Trustpilot shows {tpc(f):,} reviews." if tpc(f) else "")),
+          (f"Does {f['name']} actually pay out?", ((f"The firm reports {c['text']} on its {cwhere(c)} (checked {nice_date(CLAIM_DATE)}). " + ("Each payout links to an on-chain transaction; we opened a sample on the block explorer and they match, but we have not checked every row." if onchain(c) else "That is the firm's own figure; we have not audited it.")) if c.get("text") else f"{f['name']} did not show a firm-wide payout total on its homepage when we checked on {nice_date(CLAIM_DATE)}.") + (f" Trustpilot shows {tpc(f):,} reviews." if tpc(f) else "")),
           (f"How long does {f['name']} take to pay?", f"Published terms: {f.get('payout_frequency') or 'not published'}." + (f" First payout after {int(num(f['first_payout_days']))} days." if num(f.get('first_payout_days')) is not None else "")),
           (f"Is {f['name']} regulated?", "Prop evaluation firms are generally not licensed as brokers, and we do not verify licences. Check any regulation claim on the regulator's own register."),
           (f"Is {f['name']} a scam?", f"We found no reason in the published data to call it one; its evidence level is {lvl.lower()}. Read the cautions, test with the smallest account, and keep records.")]
@@ -431,7 +433,7 @@ def legit_hub():
     c_, bl = crumbs([("Home", "/"), ("Legit checks", path)])
     rows = sorted(RANKED, key=lambda f: (-evidence(f)[1], -f["_score"]))
     t = gtable(rows, [FIRMCOL, ("Evidence", lambda f: f'<a href="{url("/firms/" + f["slug"] + "/legit/")}">{evidence(f)[0]}</a>', ""), ("Points", lambda f: f'<b class="n">{evidence(f)[1]}</b>/6', "n"),
-                      ("Reported payouts", lambda f: e(big_usd(claim_usd(f)) + "+") if claim_usd(f) else NIL, "num n"), ("Trustpilot", lambda f: (f'{tps(f):.1f} ({tpc(f):,})' if tps(f) else NIL), "n"),
+                      ("Reported payouts", lambda f: (e(big_usd(claim_usd(f)) + "+") + (' <span class="evt">on-chain</span>' if onchain(claim(f)) else "")) if claim_usd(f) else NIL, "num n"), ("Trustpilot", lambda f: (f'{tps(f):.1f} ({tpc(f):,})' if tps(f) else NIL), "n"),
                       ("Since", lambda f: show(int(num(f["founded"]))) if num(f.get("founded")) else NIL, "n"), SCORECOL], "Prop firm evidence levels")
     cnt = {k: sum(1 for f in FIRMS if evidence(f)[0] == k) for k in EVID_TXT}
     ans = (f"Of the {len(FIRMS)} prop firms we track, {cnt['Strong']} have a strong public track record, {cnt['Moderate']} moderate and {cnt['Limited']} limited, on six points we can check from outside. "
@@ -456,7 +458,7 @@ def firm_page(f):
     _firm_page_orig(f)
     lvl, pts, why = evidence(f); c = claim(f)
     box = (f'<section class="block" id="legit"><h2>Is {e(f["name"])} legit?</h2><div class="prose"><p>Evidence level: <b>{lvl}</b> ({pts}/6). ' + e(("; ".join(why) + ".")[:1].upper() + ("; ".join(why) + ".")[1:] if why else "Little public evidence beyond its published rules.") +
-           (f' The firm reports "{e(c["text"])}" on its homepage (checked {nice_date(CLAIM_DATE)}).' if c.get("text") else "") +
+           (f' The firm reports "{e(c["text"])}" on its {e(cwhere(c))} (checked {nice_date(CLAIM_DATE)})' + ("; sample transactions verified on-chain." if onchain(c) else ".") if c.get("text") else "") +
            f' <a href="{url("/firms/" + f["slug"] + "/legit/")}">Full evidence check</a>.</p></div></section>')
     lists = "".join(f'<li><a href="{url("/best/" + s + "/")}">{e(BEST_H1.get(s, t))}</a></li>' for s, t, d, fn in BEST if fn(f))
     side = f'<div class="cmpl"><h2>Listed in</h2><ul>{lists}</ul></div>' if lists else ""
@@ -536,7 +538,7 @@ def zh_best(s):
         t = gtable(fl, [ZFIRM, ZPAY, ("首次出金（天）", lambda f: zshow(f.get("first_payout_days")), "num n"), ("条款（英文原文）", lambda f: zshow(f.get("payout_frequency")), "wide"), ZSCORE], "出金周期")
         secs = [("各公司出金条款", t), ("“随时出金”不等于“立即到账”", "<p>随时出金指随时可以申请，处理仍需数小时到几个工作日；首次出金前通常要完成身份验证（KYC）。用 USDT 出金时，先小额测试你自己控制的钱包。</p>")]
         qa = [("哪些自营交易公司每天出金？", ans), ("随时出金是马上到账吗？", "不是。申请随时可以提交，但处理和 KYC 需要时间。")]
-    secs.append(("榜单如何生成", f"<p>筛选条件与英文版相同，排序按 PA 评分（信任 30%、成本 20%、规则 20%、出金 20%、历史 10%），表格另有说明的除外。数据取自各公司官网，最近一次全面核实为 {zdate(TODAY)}。FundedXYZ 由本站团队运营，按同样规则评分。</p>"))
+    secs.append(("榜单如何生成", f"<p>筛选条件与英文版相同，排序按 PA 评分（信任 30%、成本 20%、规则 20%、出金 20%、历史 10%），表格另有说明的除外。数据取自各公司官网，最近一次全面核实为 {zdate(TODAY)}。FundedXyz 由本站团队运营，按同样规则评分。</p>"))
     qa.append(("榜单多久更新一次？", f"每次构建都会重新读取数据集。最近核实日期 {zdate(TODAY)}；规则变化会带日期记录在规则变更页面。"))
     rel = "".join(f'<li><a href="{url("/zh/best/" + s2 + "/")}"><span>{e(z)}自营交易公司</span></a></li>' for s2, z in ZH_BEST if s2 != s) + zh_rel(path)
     facts = [f'<b class="n">{n}</b> 家公司'] + ([f'最低 <b class="n">{fmoney(ch, ch["_fee"])}</b>'] if ch else [])

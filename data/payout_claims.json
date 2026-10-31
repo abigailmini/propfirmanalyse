@@ -1,5 +1,5 @@
 {
- "_about": "Firm-reported payout totals and payout-proof channels as shown on each firm's own homepage. These are the firms' own marketing figures, not audited by PropAnalyse. 'value_usd' is the lower bound of the stated figure. Checked 2026-10-31.",
+ "_about": "Firm-reported payout totals and payout-proof channels as shown on each firm's own homepage. These are the firms' own marketing figures, not audited by PropAnalyse. 'value_usd' is the lower bound of the stated figure. Checked 2026-10-31. 'evidence_type' is 'on-chain' when the firm publishes a payout ledger whose sample transactions we opened on a block explorer; otherwise the figure is self-reported.",
  "checked": "2026-10-31",
  "firms": {
   "topstep": {
@@ -75,10 +75,83 @@
    "proof": "Homepage shows a 'Recent Funded Payouts' feed; payouts are in USDT/USDC."
   },
   "fundedxyz": {
-   "text": "$6.6M+ in USDT performance rewards settled through October 2026",
-   "value_usd": 6600000,
-   "source": "https://www.fundedxyz.com/",
-   "proof": "Homepage describes payouts as on-chain USDT. FundedXYZ is run by the team behind PropAnalyse."
+   "text": "$6.6M+ (6,612,450 USDT) settled across 4,206 payouts",
+   "value_usd": 6612450,
+   "source": "https://www.fundedxyz.com/withdrawals",
+   "where": "public payout ledger",
+   "evidence_type": "on-chain",
+   "proof": "Public on-chain payout ledger: each withdrawal is listed with a USDT (BEP-20) transaction hash linking to BscScan. We opened 5 sample hashes on bscscan.com on 31 Oct 2026: all settled, with amounts and dates matching the ledger. FundedXyz is run by the team behind PropAnalyse.",
+   "ledger": {
+    "url": "https://www.fundedxyz.com/withdrawals",
+    "network": "BNB Smart Chain (BEP-20)",
+    "token": "USDT (BSC-USD)",
+    "total_usdt": 6612450,
+    "count": 4206,
+    "read": "2026-10-31",
+    "newest_row": "2026-06-13",
+    "sender": {
+     "address": "0xef3aeff9a5f61c6dda33069c58c1434006e13b20",
+     "label": "Bybit: Wallet 17 (BscScan label)"
+    },
+    "samples": [
+     {
+      "tx": "0xb7a943c35a29573db18a770bbf8857a759f805135b7d206bb0281f015501dd0e",
+      "url": "https://bscscan.com/tx/0xb7a943c35a29573db18a770bbf8857a759f805135b7d206bb0281f015501dd0e",
+      "utc": "2026-06-13 04:53",
+      "amount_usdt": 1779.0,
+      "to": "0x035d874e2f07e53d3fd370c7d0a90f78b59268fb",
+      "block": 103929781,
+      "status": "success",
+      "checked_on": "bscscan.com"
+     },
+     {
+      "tx": "0x1eb98e4207fb608253aff4710103332ae74af54ff3e82977600f8a83b8dde057",
+      "url": "https://bscscan.com/tx/0x1eb98e4207fb608253aff4710103332ae74af54ff3e82977600f8a83b8dde057",
+      "utc": "2026-06-13 04:53",
+      "amount_usdt": 4569.0,
+      "to": "0x454517884ddb633f75cc4ed296365431ec120890",
+      "block": 103929804,
+      "status": "success",
+      "checked_on": "bscscan.com"
+     },
+     {
+      "tx": "0x1f9ca96159ba584695811571a2bebd89cc5245606d0160084b12d77e889d5790",
+      "url": "https://bscscan.com/tx/0x1f9ca96159ba584695811571a2bebd89cc5245606d0160084b12d77e889d5790",
+      "utc": "2026-06-13 04:55",
+      "amount_usdt": 5000.0,
+      "to": "0xab30feb68a5e05503ba4baa48a51e253a0a6ae49",
+      "block": 103930002,
+      "status": "success",
+      "checked_on": "bscscan.com"
+     },
+     {
+      "tx": "0x9630fb463fc891c68a984d4d16218929a2e7e982bd2081d710bc11dcfce4bdf6",
+      "url": "https://bscscan.com/tx/0x9630fb463fc891c68a984d4d16218929a2e7e982bd2081d710bc11dcfce4bdf6",
+      "utc": "2026-06-13 04:55",
+      "amount_usdt": 2289.0,
+      "to": "0x0a30afdc076f05749cd11ded4206b85b5f24afdc",
+      "block": 103930094,
+      "status": "success",
+      "checked_on": "bscscan.com"
+     },
+     {
+      "tx": "0x15ebb5cc7a5603b3ea23b9c7002b378d4ef88d605902b914ea46f9b0795b3cff",
+      "url": "https://bscscan.com/tx/0x15ebb5cc7a5603b3ea23b9c7002b378d4ef88d605902b914ea46f9b0795b3cff",
+      "utc": "2026-06-13 04:55",
+      "amount_usdt": 4999.0,
+      "to": "0xbc88d37ca6718119b3eb8f43611f3bda551c5c56",
+      "block": 103930095,
+      "status": "success",
+      "checked_on": "bscscan.com"
+     }
+    ],
+    "caveats": [
+     "The total and the payout count are the firm's own ledger figures. We checked a sample of transactions, not every row.",
+     "All sampled transfers come from an address BscScan labels 'Bybit: Wallet 17', an exchange hot wallet. The chain proves each transfer happened as listed; it does not by itself prove who initiated it.",
+     "Only page 1 of the ledger shows full hashes; older rows are partly masked. The newest row at our check was dated 13 Jun 2026.",
+     "Some ledger rows share one transaction hash (one on-chain transfer covering several payout UIDs); in the two cases we checked, the row amounts add up to the on-chain amount."
+    ]
+   }
   },
   "lark-funding": {
    "text": "$1M+ paid in rewards",

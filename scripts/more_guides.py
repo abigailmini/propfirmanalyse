@@ -25,7 +25,7 @@ SCORECOL = ("PA Score", lambda f: f'<b class="n">{f["_score"]:.1f}</b>', "n")
 def g_best_crypto():
     fl = CRYPTO_FIRMS; nat = [f for f in fl if is_native(f)]
     top3 = [f["name"] for f in nat[:3]]
-    ans = f"The best crypto prop firms on our published score are {nlist(top3)} among crypto-native firms. {fl[0]['name']} leads once multi-asset firms with crypto CFDs are included ({fl[0]['_score']:.1f}/10). We rank {len(fl)} firms that fund crypto with one formula, and FundedXYZ, which we own, gets no special treatment."
+    ans = f"The best crypto prop firms on our published score are {nlist(top3)} among crypto-native firms. {fl[0]['name']} leads once multi-asset firms with crypto CFDs are included ({fl[0]['_score']:.1f}/10). We rank {len(fl)} firms that fund crypto with one formula, and FundedXyz, which we own, gets no special treatment."
     t = gtable(fl, [("#", lambda f: f'<span class="n">{fl.index(f) + 1}</span>', "n"), FIRMCOL, SCORECOL, ("Type", lambda f: "Crypto-native" if is_native(f) else "Multi-asset", ""),
                     ("From", lambda f: mh(f["_fee"], f.get("fee_currency")), "num n"), ("Split", lambda f: show(f.get("profit_split")), ""), ("Payouts", lambda f: e(BUCKET_LABEL.get(f["_bucket"], "")) or NIL, ""),
                     ("Crypto rules", lambda f: f'<a href="{url("/crypto/" + f["slug"] + "/")}">Sheet</a>', "")], "Crypto prop firms ranked")

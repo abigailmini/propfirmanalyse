@@ -57,7 +57,7 @@ Large mega-footer link groups: Find & Compare · Reviews & Rankings · Payouts �
 - Navy/amber palette, our own logo/monogram avatars (no firm logos yet), filters as a sticky top bar (not side panel), table-first home.
 - Transparent, published scoring formula (PA Score) instead of opaque popularity rank; data-completeness % per firm; source URLs on every profile.
 - Crypto-first ordering of the dataset; compare pages generated for crypto pairs first.
-- Ownership disclosure (FundedXYZ) on About, Methodology and any compare page involving FundedXYZ.
+- Ownership disclosure (FundedXyz) on About, Methodology and any compare page involving FundedXyz.
 - Codes shown are only those publicly published on each firm's own site (until David's own affiliate codes exist).
 
 ## Not built yet (PFM features worth considering later)

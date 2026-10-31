@@ -183,22 +183,22 @@ PropAnalyse team, partners@propanalyse.com
 
 ---
 
-## FundedXYZ (PA 6.9/10, #10 of 20, Crypto exchange)
+## FundedXyz (PA 6.9/10, #10 of 20, Crypto exchange)
 
 > Own firm (disclosed on the site). No email needed: hand the snippet to whoever runs fundedxyz.com. Same score rules apply.
 
 **To:** partnerships / support contact on https://www.fundedxyz.com
 
-**Subject:** FundedXYZ: PA Score 6.9/10 on PropAnalyse (free badge for your site)
+**Subject:** FundedXyz: PA Score 6.9/10 on PropAnalyse (free badge for your site)
 
-Hi FundedXYZ team, PropAnalyse covers FundedXYZ in our crypto exchange prop firm comparison: PA Score 6.9/10, #10 of 20 firms, every figure sourced from your own pages (last verified 26 Oct 2026).
+Hi FundedXyz team, PropAnalyse covers FundedXyz in our crypto exchange prop firm comparison: PA Score 6.9/10, #10 of 20 firms, every figure sourced from your own pages (last verified 26 Oct 2026).
 Your strongest component is payout (9.2/10), and one thing traders notice: split can reach 90% (see scaling terms).
 If you'd like to show it, the badge below is free and updates automatically when we re-verify; embedding it never affects the score, and if any figure is out of date just reply with a link to your page and we'll re-check.
 
 Review: https://propanalyse.com/firms/fundedxyz/  |  Sizes/themes: https://propanalyse.com/badge/?firm=fundedxyz
 
 ```html
-<a href="https://propanalyse.com/firms/fundedxyz/?ref=badge" title="FundedXYZ on PropAnalyse"><img src="https://propanalyse.com/badge/fundedxyz.svg" width="300" height="116" alt="FundedXYZ on PropAnalyse: PA Score 6.9/10" loading="lazy" style="border:0;max-width:100%;height:auto"></a>
+<a href="https://propanalyse.com/firms/fundedxyz/?ref=badge" title="FundedXyz on PropAnalyse"><img src="https://propanalyse.com/badge/fundedxyz.svg" width="300" height="116" alt="FundedXyz on PropAnalyse: PA Score 6.9/10" loading="lazy" style="border:0;max-width:100%;height:auto"></a>
 ```
 
 PropAnalyse team, partners@propanalyse.com

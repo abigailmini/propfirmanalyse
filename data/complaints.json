@@ -1,0 +1,19 @@
+{
+ "_about": "PropAnalyse complaint register. One entry per complaint a trader sent us (email to complaints@propanalyse.com or a GitHub issue labelled 'complaint'). Trader email and account IDs are never stored here. Fields: id, firm (slug), type, date (ISO date of the incident), received (ISO date we got it), status (received | verified | rejected | resolved | unresolved), evidence_ok (true once we have checked the evidence), firm_response (text the firm sent us, or null), response_date, resolved_date, summary (our neutral one-line summary). Only status 'unresolved' with evidence_ok true and a date within the last 12 months counts in the PA Score. No complaint is ever invented or seeded.",
+ "types": {
+  "payout_denied": "Payout denied",
+  "payout_late": "Payout late",
+  "rule_changed": "Rule changed after purchase",
+  "unfair_breach": "Unfair breach",
+  "refund": "Refund",
+  "support": "Support"
+ },
+ "statuses": [
+  "received",
+  "verified",
+  "rejected",
+  "resolved",
+  "unresolved"
+ ],
+ "complaints": []
+}

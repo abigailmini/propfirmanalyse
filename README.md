@@ -19,7 +19,7 @@ Pushing to `main` runs `.github/workflows/pages.yml`, which builds and deploys t
 - No third-party (e.g. PropFirmMatch) prose, logos, images or CSS. See `docs/recon.md` for the structural recon.
 
 ## Scoring
-PA Score (0–10) = Trust 30% + Cost 20% + Rules 20% + Payout 20% + Track record 10%. Missing inputs score 4/10. Formula in `scripts/build.py` → `score()`. FundedXYZ (same operator) is scored identically.
+PA Score (0–10) = Trust 30% + Cost 20% + Rules 20% + Payout 20% + Track record 10%. Missing inputs score 4/10. Formula in `scripts/build.py` → `score()`. FundedXyz (same operator) is scored identically.
 
 ## i18n
 `i18n/en.json` is live; `i18n/zh.json` is a key-mirrored stub for a future /zh/ build.

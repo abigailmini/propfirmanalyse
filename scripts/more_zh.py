@@ -53,7 +53,7 @@ def zh_shell(path, items, h1, title, desc, ans, facts, secs, qa, noindex=False, 
     fh = "".join(f'<span>{x}</span>' for x in facts)
     body = f"""<div class="wrap">{c}<article class="guide"><header class="ph"><h1>{e(h1)}</h1><p class="meta"><span>更新于 <time datetime="{TODAY}">{zdate(TODAY)}</time></span><span>数据：{len(FIRMS)} 家公司，均取自其官网</span><span><a href="{url(en_p)}" lang="en" hreflang="en">English</a></span></p>
 <p class="answer">{e(ans)}</p><p class="facts">{fh}</p></header><div class="gbody">{sh_}<section class="block faq"><h2>常见问题</h2>{faqh}</section>
-<p class="small">本页数字在构建时由我们的数据集生成。评分使用<a href="{url('/zh/methodology/')}">公开公式</a>；FundedXYZ 由本站团队运营，按完全相同的规则评分，不作任何调整。规则变化记录在<a href="{url('/news/')}">规则变更</a>页面（英文）。点公司名进入英文详情页，可查看费用矩阵、规则原文与来源链接。</p></div>{relh}</article></div>"""
+<p class="small">本页数字在构建时由我们的数据集生成。评分使用<a href="{url('/zh/methodology/')}">公开公式</a>；FundedXyz 由本站团队运营，按完全相同的规则评分，不作任何调整。规则变化记录在<a href="{url('/news/')}">规则变更</a>页面（英文）。点公司名进入英文详情页，可查看费用矩阵、规则原文与来源链接。</p></div>{relh}</article></div>"""
     ld = [bl, {"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh-Hans", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa]}] + (ld_extra or [])
     if noindex: NOINDEX.add(path)
     page(path, title, desc, body, ld, "article", extra_head='<meta name="robots" content="noindex,follow">' if noindex else "", lang="zh")
@@ -78,7 +78,7 @@ def zh_home():
             ("挑选前先看三件事", "<p><b>回撤类型。</b>同样是 10% 最大回撤，跟踪回撤会随账户新高上移，实际可承受的亏损比静态回撤小得多。</p><p><b>真实成本。</b>标价最低不等于最便宜：有的公司按月收费，有的在首次出金后退还挑战费，重考折扣也会改变总成本。</p><p><b>出金节奏。</b>首次出金要等多少天、之后多久能申请一次，决定了资金回笼速度。表中“出金周期”取自公司的主推方案。</p>")]
     qa = [("哪家自营交易公司最好？", f"按我们公开的 PA 评分，目前第一名是 {top['name']}（{top['_score']:.1f}/10），第二、三名是 {fl[1]['name']} 和 {fl[2]['name']}。所有公司使用同一公式，规则变化后排名会自动更新。"),
           ("最便宜的自营交易挑战是哪家？", f"{cheap['name']} 的公开入场费最低，{money(cheap['_fee'], cheap.get('fee_currency'))} 起。账户规模不同，价格排名也不同，可查看 10K、50K、100K 的价格对比页。"),
-          ("FundedXYZ 和本站是什么关系？", "PropAnalyse 由 FundedXYZ 背后的团队运营。FundedXYZ 和其他公司使用完全相同的评分规则与数据清单，没有人工加分，也不默认置顶" + (f"，目前排在第 {fxr} 名。" if fxr else "。")),
+          ("FundedXyz 和本站是什么关系？", "PropAnalyse 由 FundedXyz 背后的团队运营。FundedXyz 和其他公司使用完全相同的评分规则与数据清单，没有人工加分，也不默认置顶" + (f"，目前排在第 {fxr} 名。" if fxr else "。")),
           ("数据多久更新一次？", "每个公司页面都显示最近核实日期。规则、费用或出金条款发生变化时，我们会在规则变更页面记录日期与来源，并提供 RSS 和 JSON 订阅。")]
     ld = [{"@context": "https://schema.org", "@type": "ItemList", "name": "自营交易公司 PA 评分排名", "inLanguage": "zh-Hans", "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": ABS + "/firms/" + f["slug"] + "/", "name": f["name"]} for i, f in enumerate(fl)]}]
     zh_shell("/zh/", [("首页", "/zh/")], f"{YEAR_NOW} 自营交易公司排名：规则、费用与出金对比",
@@ -199,7 +199,7 @@ def zh_size(s):
 def zh_method():
     c, bl = crumbs([("首页", "/zh/"), ("评分方法", "/zh/methodology/")])
     body = f"""<div class="wrap">{c}<article class="prose"><h1>我们如何收集数据、如何评分</h1>
-<p class="note"><b>利益披露。</b>PropAnalyse 由 FundedXYZ 背后的团队运营。FundedXYZ 与其他所有公司使用同一套评分规则：没有人工调整，不默认置顶，数据也按同一份清单收集。</p>
+<p class="note"><b>利益披露。</b>PropAnalyse 由 FundedXyz 背后的团队运营。FundedXyz 与其他所有公司使用同一套评分规则：没有人工调整，不默认置顶，数据也按同一份清单收集。</p>
 <h2>数字从哪里来</h2><p>每个数字都读自该公司自己的网站（价格页、规则页、FAQ 或帮助中心），并按公司记录核实日期。评分来自该公司公开的 Trustpilot 页面。公司没有公布的数字，我们显示“未公布”，从不估算。</p>
 <h2 id="account-types">账户类型</h2><p>每家公司只归入一个账户类型，依据是该公司官网列出的交易平台和产品。如果一家公司销售两类账户，按主推产品归类，另一类记为“也提供”。账户类型不影响 PA 评分。</p>
 <table class="mini"><thead><tr><th scope="col">类型</th><th scope="col">交易什么、在哪里交易</th></tr></thead><tbody>

@@ -12,7 +12,7 @@ def prog_shell(path, items, h1, title, desc, ans, facts, secs, qa, noindex=False
     fh = "".join(f'<span>{x}</span>' for x in facts)
     body = f"""<div class="wrap">{c}<article class="guide"><header class="ph"><h1>{e(h1)}</h1><p class="meta"><span>Updated <time datetime="{TODAY}">{nice_date(TODAY)}</time></span><span>Data: {len(FIRMS)} firms, read from their own sites</span></p>
 <p class="answer">{e(ans)}</p><p class="facts">{fh}</p></header><div class="gbody">{sh_}<section class="block faq"><h2>FAQ</h2>{faqh}</section>
-<p class="small">Figures come from our dataset at build time. Scores use the <a href="{url('/methodology/')}">published formula</a>; FundedXYZ is ours and is scored the same way. Changes are logged on <a href="{url('/news/')}">rule changes</a>.</p></div>{relh}</article></div>"""
+<p class="small">Figures come from our dataset at build time. Scores use the <a href="{url('/methodology/')}">published formula</a>; FundedXyz is ours and is scored the same way. Changes are logged on <a href="{url('/news/')}">rule changes</a>.</p></div>{relh}</article></div>"""
     ld = [bl, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa]}]
     if noindex: NOINDEX.add(path)
     page(path, title, desc, body, ld, "article", extra_head='<meta name="robots" content="noindex,follow">' if noindex else "")

@@ -580,7 +580,7 @@ def compare_page(sa, sb):
         lines.append(f"Overall PA Score: {a['name']} {a['_score']:.1f} vs {b['name']} {b['_score']:.1f}.")
         return "".join(f"<li>{e(x)}</li>" for x in lines)
     disc = ""
-    if "fundedxyz" in (sa, sb): disc = '<p class="note"><b>Disclosure.</b> PropAnalyse is run by the team behind FundedXYZ. This comparison uses the same data fields and scoring formula as every other page.</p>'
+    if "fundedxyz" in (sa, sb): disc = '<p class="note"><b>Disclosure.</b> PropAnalyse is run by the team behind FundedXyz. This comparison uses the same data fields and scoring formula as every other page.</p>'
     wa, wb = wins[sa], wins[sb]
     tally = (f'<p class="tally"><span><b>{e(a["name"])}</b> stronger on <b class="n">{wa}</b></span><span><b>{e(b["name"])}</b> stronger on <b class="n">{wb}</b></span>'
              f'<span class="muted">of <span class="n">{compared}</span> lines where both publish a comparable figure</span></p>')
@@ -641,7 +641,7 @@ def best_pages():
 def methodology():
     c, bl = crumbs([("Home", "/"), ("Methodology", "/methodology/")])
     body = f"""<div class="wrap">{c}<article class="prose"><h1>How we collect data and score firms</h1>
-<p class="note"><b>Ownership disclosure.</b> PropAnalyse is operated by the team behind FundedXYZ; FundedXYZ is scored by the same rules as every other firm. It gets no manual adjustment, no default sort position, and its data is collected with the same checklist.</p>
+<p class="note"><b>Ownership disclosure.</b> PropAnalyse is operated by the team behind FundedXyz; FundedXyz is scored by the same rules as every other firm. It gets no manual adjustment, no default sort position, and its data is collected with the same checklist.</p>
 <h2>Where the numbers come from</h2><p>Every figure is read from the prop firm's own website (pricing, rules, FAQ or help-centre pages) and the date is recorded per firm. Ratings come from the firm's public Trustpilot page. If a firm does not publish a number, we show "Not published". We never estimate.</p>
 <h2>The PA Score (0 to 10)</h2><p>One formula, applied mechanically by our build script:</p>
 <table class="mini"><thead><tr><th scope="col">Component</th><th scope="col" class="num">Weight</th><th scope="col">Inputs</th></tr></thead><tbody>
@@ -660,7 +660,7 @@ def about():
     c, bl = crumbs([("Home", "/"), ("About", "/about/")])
     body = f"""<div class="wrap">{c}<article class="prose"><h1>About PropAnalyse</h1>
 <p>PropAnalyse is a data-first comparison of prop trading firms across crypto, forex and futures. We track the rules that decide whether a trader can realistically pass and get paid: fees, drawdown type, profit split, payout cycle and restrictions.</p>
-<p class="note"><b>Who runs this site.</b> PropAnalyse is operated by the team behind <a href="{url('/firms/fundedxyz/')}">FundedXYZ</a>, a crypto prop firm. FundedXYZ is listed and scored by exactly the same rules as every other firm; see <a href="{url('/methodology/')}">methodology</a>.</p>
+<p class="note"><b>Who runs this site.</b> PropAnalyse is operated by the team behind <a href="{url('/firms/fundedxyz/')}">FundedXyz</a>, a crypto prop firm. FundedXyz is listed and scored by exactly the same rules as every other firm; see <a href="{url('/methodology/')}">methodology</a>.</p>
 <h2>How we make money</h2><p>Some "Visit site" links may become affiliate links. A firm cannot pay to change its data, score or ranking.</p>
 <h2>Contact</h2><p>Corrections and firm data updates: please include a link to the firm's own page that shows the change.</p></article></div>"""
     ld = {"@context": "https://schema.org", "@type": "Organization", "name": "PropAnalyse", "url": ABS + "/"}
@@ -686,7 +686,7 @@ def seo_files():
     open(os.path.join(OUT, "sitemap.xml"), "w").write(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{sm}</urlset>')
     open(os.path.join(OUT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\n\nSitemap: {ABS}/sitemap.xml\n")
     lines = [f"# PropAnalyse", "", "> Data-first comparison of prop trading firms (crypto, forex, futures). Every figure is taken from the firm's own website; unknown values are left blank rather than estimated.",
-             "", f"Operated by the team behind FundedXYZ; FundedXYZ is scored with the same formula as every other firm.", "", "## Key pages",
+             "", f"Operated by the team behind FundedXyz; FundedXyz is scored with the same formula as every other firm.", "", "## Key pages",
              f"- [All firms]({ABS}/firms/): filterable table", f"- [Methodology]({ABS}/methodology/): PA Score formula", f"- [Discount codes]({ABS}/discounts/)", f"- [Open dataset (JSON)]({ABS}/data/firms.json)", "", "## Firms"]
     lines += [f"- [{f['name']}]({ABS}/firms/{f['slug']}/): PA Score {f['_score']}, fee from {money(f['_fee'], f.get('fee_currency'))}, split {f.get('profit_split') or 'n/a'}, verified {f.get('last_verified') or TODAY}" for f in RANKED]
     lines += ["", "## Comparisons"] + [f"- [{BY[a]['name']} vs {BY[b]['name']}]({ABS}/compare/{a}-vs-{b}/)" for a, b in PAIRS if a in BY and b in BY]
@@ -694,7 +694,7 @@ def seo_files():
     open(os.path.join(OUT, ".nojekyll"), "w").write("")
     if SITE_URL.startswith("https://") and "github.io" not in SITE_URL and not BASE: open(os.path.join(OUT, "CNAME"), "w").write(SITE_URL.split("://", 1)[1] + "\n")
 
-for _m in ("more_core.py", "more_pages_a.py", "more_pages_b.py", "more_guides.py", "more_programmatic.py", "more_zh.py", "more_categories.py", "more_seo.py", "more_badge.py", "more_home.py"):
+for _m in ("more_core.py", "more_pages_a.py", "more_pages_b.py", "more_guides.py", "more_programmatic.py", "more_zh.py", "more_categories.py", "more_seo.py", "more_badge.py", "more_home.py", "more_complaints.py"):
     _p = os.path.join(ROOT, "scripts", _m); exec(compile(open(_p).read(), _p, "exec"))
 
 if __name__ == "__main__":
