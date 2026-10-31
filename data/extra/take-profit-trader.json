@@ -1,0 +1,39 @@
+{
+  "reset_fee": "Test reset $79/$99/$139/$169/$199 (25K/50K/75K/100K/150K); PRO reset (up to 3 per account) $449/$649/$799/$999/$1,499",
+  "retry_discount_pct": null,
+  "refund_policy": null,
+  "fee_refundable": null,
+  "time_limit": "none - subscription renews monthly until passed or cancelled",
+  "has_time_limit": false,
+  "activation_fee": 130,
+  "payout_methods": [
+    "Plaid (US bank, real-time/ACH)",
+    "Wise",
+    "PayPal",
+    "Routable (international bank)"
+  ],
+  "min_payout": "no minimum, but wallet withdrawals ≤$250 incur a $50 fee",
+  "kyc_before_payout": true,
+  "scaling_plan": "none (no scaling plan on any account)",
+  "ea_bots": "banned",
+  "copy_trading": true,
+  "hedging": false,
+  "max_risk_per_trade": null,
+  "inactivity_rule": "PRO/PRO+ must trade at least one day per calendar week (Sun-Fri)",
+  "notes": "Monthly test subscription; $130 one-time PRO activation (waived under NOFEE promos). No bots/algos - all trades manual. Trade copiers allowed only across your own accounts with approved tools (Tradesyncer, TradeCopia, Affordable Indicators, Replikanto Compliance Edition, platform-native). Counter positions prohibited across Test/PRO/PRO+. KYC mandatory for all registrants. Must exit before CME limit up/down. Withdrawals over $250 from wallet are fee-free. Refund policy not found in KB articles.",
+  "sources": [
+    "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15140989806493-Resetting-Your-Test-Account",
+    "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15171895352733-Resetting-A-PRO-Account",
+    "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15141145057053-Test-Subscriptions",
+    "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15172296875165-Payout-System",
+    "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15965203144477-How-to-Withdraw-from-the-Wallet",
+    "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15172354954525-Withdrawal-Fees",
+    "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15171769361053-PRO-Account-Rules",
+    "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/34431176505245-Trade-Copier-Policy",
+    "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/22076187576605-KYC-Procedure",
+    "https://takeprofittrader.com/"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": 99,
+  "monthly_fee": true
+}

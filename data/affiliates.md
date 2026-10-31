@@ -5,7 +5,7 @@ Status: `todo` (not contacted) → `applied` → `approved` → `live` (link on 
 Commission = what the firm's own page says on 2026-10-26 (headline rate; tiers in brackets). "—" = not published, ask on the call.
 Affiliate page column = where to apply. If it says *email*, there is no public page: use the firm's support/partnerships email.
 
-## Live on site (20)
+## Live on site (20, listed 2026-10-26)
 
 | Firm | Affiliate program URL | Status | Link | Code | Commission (published) | Date |
 |---|---|---|---|---|---|---|
@@ -30,16 +30,27 @@ Affiliate page column = where to apply. If it says *email*, there is no public p
 | Bulenox | https://bulenox.com/member/aff/signup | todo | # | — | up to 15% | 2026-10-26 |
 | Instant Funding | https://instantfunding.com/partner/ | todo | # | — | 15% first purchase, 0–5% repeat, up to 17.5%; paid bi-weekly from $100 | 2026-10-26 |
 
+## Added 2026-10-31 (8)
+
+Commission = headline rate published on the firm's own affiliate page, read 2026-10-31. Code = public promo code on the firm's own site that day (not ours).
+
+| Firm | Affiliate program URL | Status | Link | Code | Commission (published) | Date |
+|---|---|---|---|---|---|---|
+| Propr | https://www.propr.xyz/affiliate-terms | todo | # | SPOOKY | — | 2026-10-31 |
+| Lucid Trading | https://lucidtrading.com/affiliate/ | todo | # | VAULT | — | 2026-10-31 |
+| Tradeify | https://tradeify.co/become-an-affiliate | todo | # | GEMS | — | 2026-10-31 |
+| Take Profit Trader | https://takeprofittrader.com/affiliate | todo | # | NOFEE40 | 10%-25% of referred clients' lifetime spend (tiered) | 2026-10-31 |
+| FXIFY | https://fxify.com/become-a-partner/ | todo | # | AGHHH35 | 10%, rising to 15% after 100 sign-ups and 20% after 500 sign-ups | 2026-10-31 |
+| Hola Prime | https://holaprime.com/best-prop-firm-affiliate-program/ | todo | # | SPOOKY40 | 30% flat commission (no tiers) | 2026-10-31 |
+| Fintokei | https://www.fintokei.com/affiliate/ | todo | # | NEW20 | Tiered; up to 10% commission at tier 3, paid on repeat purchases too | 2026-10-31 |
+| The Trading Pit | https://www.thetradingpit.com/become-an-affiliate | todo | # | — | 10% on direct referrals (multi-level: 5% L2, 3% L3, 2% L4); 60-day cookie | 2026-10-31 |
+
 ## Candidates (next firms to add, crypto/multi-asset first)
 
 | Firm | Site | Affiliate program URL | Why | Date |
 |---|---|---|---|---|
-| Propr | https://www.propr.xyz | https://www.propr.xyz/affiliate-terms | Perps prop firm on Hyperliquid: crypto lane | 2026-10-26 |
-| The Trading Pit | https://www.thetradingpit.com | https://www.thetradingpit.com/become-an-affiliate | Multi-asset incl. crypto, long-running | 2026-10-26 |
-| Hola Prime | https://holaprime.com | https://holaprime.com/best-prop-firm-affiliate-program/ | Forex/futures/crypto | 2026-10-26 |
-| Fintokei | https://www.fintokei.com | https://www.fintokei.com/affiliate/ | Multi-asset, Asia audience | 2026-10-26 |
-| Funding Traders | https://fundingtraders.com | https://fundingtraders.com/prop-trading-partners | Forex/crypto | 2026-10-26 |
-| AquaFunded | https://www.aquafunded.com | — (none linked on homepage) | Multi-asset | 2026-10-26 |
+| Funding Traders | https://fundingtraders.com | https://fundingtraders.com/prop-trading-partners | Forex/crypto | 2026-10-26 (excluded 2026-10-31: Trustpilot rating suspended + recent payout complaints) |
+| AquaFunded | https://www.aquafunded.com | — (none linked on homepage) | Multi-asset | 2026-10-26 (excluded 2026-10-31: Trustpilot rating suspended + payout-denial pattern) |
 | Funded Trading Plus | https://www.fundedtradingplus.com | — (Cloudflare-blocked, check in browser) | Multi-asset | 2026-10-26 |
 
 ## Pitch (for David's emails, ≤90 words)

@@ -169,5 +169,77 @@
   "old": "CLUB (auto-applied in site 'Start Now' links; e.g. 50K Rapid $209 -> $125)",
   "new": "CLUB (40% off any plan (new users: 50% off first eval))",
   "kind": "Offers"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "fintokei",
+  "firm": "Fintokei",
+  "field": "Listing",
+  "old": null,
+  "new": "Added to PropAnalyse",
+  "kind": "Listing"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "fxify",
+  "firm": "FXIFY",
+  "field": "Listing",
+  "old": null,
+  "new": "Added to PropAnalyse",
+  "kind": "Listing"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "hola-prime",
+  "firm": "Hola Prime",
+  "field": "Listing",
+  "old": null,
+  "new": "Added to PropAnalyse",
+  "kind": "Listing"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "lucid-trading",
+  "firm": "Lucid Trading",
+  "field": "Listing",
+  "old": null,
+  "new": "Added to PropAnalyse",
+  "kind": "Listing"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "propr",
+  "firm": "Propr",
+  "field": "Listing",
+  "old": null,
+  "new": "Added to PropAnalyse",
+  "kind": "Listing"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "take-profit-trader",
+  "firm": "Take Profit Trader",
+  "field": "Listing",
+  "old": null,
+  "new": "Added to PropAnalyse",
+  "kind": "Listing"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "the-trading-pit",
+  "firm": "The Trading Pit",
+  "field": "Listing",
+  "old": null,
+  "new": "Added to PropAnalyse",
+  "kind": "Listing"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "tradeify",
+  "firm": "Tradeify",
+  "field": "Listing",
+  "old": null,
+  "new": "Added to PropAnalyse",
+  "kind": "Listing"
  }
 ]

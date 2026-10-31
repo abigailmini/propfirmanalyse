@@ -1,0 +1,33 @@
+{
+  "crypto_pairs": 80,
+  "crypto_pairs_examples": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "AAVE",
+    "ADA",
+    "1INCH"
+  ],
+  "crypto_leverage": "5:1 on BTC, ETH and SOL; 2:1 on other crypto (crypto accounts)",
+  "crypto_venue": "FXIFY simulated crypto CFD accounts (separate CRYPTO account type) on DXtrade; TradingView coming soon",
+  "instrument_type": "CFD",
+  "weekend_crypto": null,
+  "payout_methods": [
+    "Rise",
+    "USDC/USDT (where Rise unavailable)"
+  ],
+  "crypto_payout": null,
+  "kyc_before_payout": true,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": "Crypto Instant: 3% daily drawdown, 6% max trailing, 25% consistency, 7 min trading days; trading disabled while a payout is pending; 1 Crypto Instant account at a time",
+  "banned_strategies": null,
+  "bots_allowed": null,
+  "copy_trading": null,
+  "crypto_fees": "Choice of RAW (commission) or All-in price feed",
+  "notes": "FOREX accounts cannot trade crypto; crypto must be traded on dedicated CRYPTO accounts. Crypto Standard (1-Step) has a 9% target, 4 min eval days, 7 min funded days, up to 100% split on eligible plans. News: no trading 5 min before/after. Lock upon payout: yes. Weekend crypto trading answer not captured.",
+  "sources": [
+    "https://fxify.com/programs/crypto/",
+    "https://fxify.com/faqs/crypto-accounts/"
+  ],
+  "checked": "2026-10-31"
+}

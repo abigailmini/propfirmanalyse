@@ -59,7 +59,7 @@ if __name__ == "__main__":
             with open(p, "w") as fh: fh.write(json.dumps(d, indent=ind or 2, ensure_ascii=False) + ("\n" if txt.endswith("\n") else ""))
     fp = os.path.join(ROOT, "data", "firms.json"); D = json.load(open(fp))
     for f in D["firms"]:
-        if not patch(f, f["slug"]): print("UNCLASSIFIED", f["slug"])
+        if not patch(f, f["slug"]) and not f.get("category"): print("UNCLASSIFIED", f["slug"])   # 2026-10-31 additions carry category in raw
     with open(fp, "w") as fh: fh.write(json.dumps(D, indent=2, ensure_ascii=False))
     from collections import Counter
     print(Counter(f["category"] for f in D["firms"]))

@@ -1,0 +1,29 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": "Evaluation fees non-refundable once the account is activated, regardless of outcome",
+  "fee_refundable": false,
+  "time_limit": "none",
+  "has_time_limit": false,
+  "activation_fee": 0,
+  "payout_methods": [
+    "USDC on-chain"
+  ],
+  "min_payout": 20,
+  "kyc_before_payout": true,
+  "scaling_plan": "Not published as a fixed plan; launch changelog mentions a scaling program for funded traders; homepage says the $300K cap is on starting allocation, not growth",
+  "ea_bots": "allowed",
+  "copy_trading": true,
+  "hedging": false,
+  "max_risk_per_trade": null,
+  "inactivity_rule": null,
+  "notes": "No resets: breaches are permanent; buy a new evaluation. No monthly, inactivity, data, platform or withdrawal fees; Hyperliquid maker/taker fees passed through at cost plus funding rates. KYC (ID + selfie, no proof of address) required before funded account activation. Copy trading allowed incl. between own Propr accounts; opposite hedging across accounts or against external CEX/DEX accounts prohibited. Bots/API/AI agents explicitly allowed. activation_fee 0 based on 'no hidden fees' statement.",
+  "sources": [
+    "https://www.propr.xyz/rules",
+    "https://www.propr.xyz/",
+    "https://www.propr.xyz/terms"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": null,
+  "monthly_fee": false
+}

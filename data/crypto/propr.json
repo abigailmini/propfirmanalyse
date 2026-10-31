@@ -1,0 +1,46 @@
+{
+  "crypto_pairs": 154,
+  "crypto_pairs_examples": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "HYPE",
+    "SUI",
+    "PUMP"
+  ],
+  "crypto_leverage": "10x BTC/ETH/SOL, 2x other crypto (rulebook table; some site copy says 5x majors)",
+  "crypto_venue": "Hyperliquid (simulated accounts; Propr may A-book signals on-chain to Hyperliquid)",
+  "instrument_type": "perpetuals",
+  "weekend_crypto": true,
+  "payout_methods": [
+    "USDC on-chain"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": true,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": "No risk-per-trade rule; leverage caps plus position caps: $1M flat for BTC/ETH and equities/commodities, $150K for large-cap crypto (OI >= $100M), else 5% of OI rounded to nearest $1K",
+  "banned_strategies": [
+    "exploiting platform bugs/latency/price-feed anomalies",
+    "account sharing or selling",
+    "opposite hedging across Propr accounts",
+    "hedging against external CEX/DEX or other prop accounts",
+    "third-party coordination/collusion",
+    "account cycling with max-risk binary bets",
+    "exploiting payout/drawdown interaction",
+    "latency arbitrage / tick sniping",
+    "wash trading",
+    "multi-account from same household/device/IP",
+    "non-replicable high-risk strategies (e.g. triggering auto-deleveraging)"
+  ],
+  "bots_allowed": "allowed",
+  "copy_trading": true,
+  "crypto_fees": "Standard Hyperliquid maker/taker fees passed through at cost; funding rates apply",
+  "notes": "154 assets on the universe page (homepage says 160+), across crypto, equity, index, commodity and FX perps; crypto count specifically not published, so crypto_pairs = total universe count. Payouts on demand from $20 in USDC on-chain, each published with tx hash on the transparency page.",
+  "sources": [
+    "https://www.propr.xyz/rules",
+    "https://www.propr.xyz/universe",
+    "https://www.propr.xyz/",
+    "https://www.propr.xyz/transparency"
+  ],
+  "checked": "2026-10-31"
+}

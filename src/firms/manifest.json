@@ -125,5 +125,87 @@
   "kind": "favicon",
   "bg": "#7270ff",
   "fetched": "2026-10-31"
+ },
+ "fxify": {
+  "source_url": "https://fxify.com/wp-content/themes/fxify/img/homepage/new/l1.svg",
+  "kind": "svg",
+  "bg": "transparent",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/fxify.svg",
+  "glyph_luminance": 156,
+  "research_note": "Teal gradient square mark (alt 'FXIFY Logo', 39x40); no wordmark file captured. Icon saved as logos/fxify-icon.png (76x76 apple-touch-icon)."
+ },
+ "lucid-trading": {
+  "source_url": "https://lucidtrading.com/wp-content/uploads/2025/02/Untitled-design-2025-07-09T133817.490.png",
+  "kind": "favicon",
+  "bg": "transparent",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/lucid-trading-icon.png",
+  "glyph_luminance": 48,
+  "research_note": "Header lockup (sphere + light-grey 'LUCID TRADING' text), small 174x90 webp; text nearly invisible on white. Square sphere icon (works on white) at logos/lucid-trading-icon.png (250x250, from site favicon https://lucidtrading.com/wp-content/uploads/2025/02/Untitled-design-2025-07-09T133817.490.png)."
+ },
+ "tradeify": {
+  "source_url": "https://cdn.prod.website-files.com/679b064a680c614548672a06/6a84628529744886a578d5b9_icon.png",
+  "kind": "favicon",
+  "bg": "transparent",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/tradeify-icon.png",
+  "glyph_luminance": 164,
+  "research_note": "Wordmark with white text + green (#00FF51) accents; not visible on white. Square app icon (green tile, black 'tdfy', works on white) at logos/tradeify-icon.png 512x512 from site favicon."
+ },
+ "take-profit-trader": {
+  "source_url": "https://takeprofittrader.com/assets/mobile-logo.svg",
+  "kind": "svg",
+  "bg": "transparent",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/take-profit-trader-icon.svg",
+  "glyph_luminance": 219,
+  "needs_plate": true,
+  "plate": "#18233a",
+  "plate_hint": "light glyph: dark plate",
+  "research_note": "Header wordmark: white text with red/green candle mark; not visible on white. Square candle mark at logos/take-profit-trader-icon.svg (https://takeprofittrader.com/assets/mobile-logo.svg, 38x36, contains white elements - best on dark bg)."
+ },
+ "propr": {
+  "source_url": "https://www.propr.xyz/icon.svg",
+  "kind": "svg",
+  "bg": "#09090b",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/propr-icon.svg",
+  "shape": "rounded-tile",
+  "research_note": "Wordmark is white (white\u219250% white gradient) \u2014 invisible on white. For white backgrounds use logos/propr-icon.svg (40x40 #09090b rounded square with white mark). Also saved logos/propr-logo-with-name.png (397x84, white)."
+ },
+ "hola-prime": {
+  "source_url": "https://holaprime.com/ (site favicon, 80x80, read in a real Chrome session: the site sits behind a bot checkpoint)",
+  "kind": "favicon",
+  "bg": "#000000",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/hola-prime-icon.png",
+  "research_note": "316x184 white wordmark with iridescent orb \u2014 invisible on white. Use logos/hola-prime-icon.png (80x80 favicon, black square with white 'hola prime' text) on white backgrounds."
+ },
+ "fintokei": {
+  "source_url": "https://www.fintokei.com/apple-icon.png",
+  "kind": "apple-touch-icon",
+  "bg": "transparent",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/fintokei-icon.png",
+  "glyph_luminance": 48,
+  "research_note": "Header wordmark is all-white fill (invisible on white). No dark variant found on site. Icon logos/fintokei-icon.png = 180x180 apple-icon (purple mark, works on white) from https://www.fintokei.com/apple-icon.png"
+ },
+ "the-trading-pit": {
+  "source_url": "https://www.thetradingpit.com/favicon-96.png",
+  "kind": "favicon",
+  "bg": "#000000",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/the-trading-pit-icon.png",
+  "shape": "rounded-tile",
+  "research_note": "Header wordmark: dark navy #240c4a with purple #ae5dff accents. The white version is logo-light-4.svg. The icon is favicon-96.png (96px, the largest available; a white/green/purple mark on a black rounded square) saved as logos/the-trading-pit-icon.png."
  }
 }

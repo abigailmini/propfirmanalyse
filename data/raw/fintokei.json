@@ -1,0 +1,300 @@
+{
+  "name": "Fintokei",
+  "slug": "fintokei",
+  "site": "https://www.fintokei.com",
+  "category": "cfd",
+  "assets": [
+    "forex",
+    "indices",
+    "commodities"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step"
+  ],
+  "account_sizes": [
+    5000,
+    10000,
+    20000,
+    50000,
+    100000,
+    200000,
+    400000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "StartTrader",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 34
+        }
+      ],
+      "profit_target": "3%",
+      "max_daily_loss": "2% (first hit = soft breach, second = hard breach)",
+      "max_drawdown": "8%",
+      "drawdown_type": "static",
+      "profit_split": "80% (payouts capped at $400 per account, max 2 payouts)",
+      "min_trading_days": 3
+    },
+    {
+      "name": "SwiftTrader",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 44
+        },
+        {
+          "size": 10000,
+          "fee": 89
+        },
+        {
+          "size": 20000,
+          "fee": 144
+        },
+        {
+          "size": 50000,
+          "fee": 299
+        },
+        {
+          "size": 100000,
+          "fee": 499
+        },
+        {
+          "size": 200000,
+          "fee": 1099
+        }
+      ],
+      "profit_target": "6%",
+      "max_daily_loss": "2%",
+      "max_drawdown": "3%",
+      "drawdown_type": null,
+      "profit_split": "90%",
+      "min_trading_days": 3
+    },
+    {
+      "name": "ProTrader",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 49
+        },
+        {
+          "size": 10000,
+          "fee": 99
+        },
+        {
+          "size": 20000,
+          "fee": 159
+        },
+        {
+          "size": 50000,
+          "fee": 329
+        },
+        {
+          "size": 100000,
+          "fee": 549
+        },
+        {
+          "size": 200000,
+          "fee": 1249
+        },
+        {
+          "size": 400000,
+          "fee": 2599
+        }
+      ],
+      "profit_target": "8% / 6%",
+      "max_daily_loss": "5% (equity-based, from EOD equity)",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_split": "80%",
+      "min_trading_days": 3
+    },
+    {
+      "name": "ProTrader Swing",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 69
+        },
+        {
+          "size": 10000,
+          "fee": 119
+        },
+        {
+          "size": 20000,
+          "fee": 199
+        },
+        {
+          "size": 50000,
+          "fee": 419
+        },
+        {
+          "size": 100000,
+          "fee": 679
+        },
+        {
+          "size": 200000,
+          "fee": 1499
+        }
+      ],
+      "profit_target": "8% / 6%",
+      "max_daily_loss": "5% (balance-based, from EOD balance)",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_split": "80%",
+      "min_trading_days": 3
+    }
+  ],
+  "fee_from": 34,
+  "profit_split": "80% up to 90%",
+  "profit_split_scale": "Loyalty Program tiers add a performance reward ratio boost of +5% (Tier 2) up to +20% (Tier 6)",
+  "max_daily_loss": "5%",
+  "max_drawdown": "10%",
+  "drawdown_type": "static",
+  "profit_target": "8% / 6%",
+  "leverage": "Up to 1:100 on ProTrader (1:100 FX/gold/silver, 1:50 indices, 1:20 rest); StartTrader, SwiftTrader and ProTrader Swing 1:25 FX/gold/silver, 1:20 indices, 1:10 rest",
+  "platforms": [
+    "TradingView",
+    "MT5",
+    "cTrader"
+  ],
+  "payout_frequency": "Every 14 days; first payout once 14 days have passed since the first trade (SwiftTrader also requires min 3% profit per payout)",
+  "first_payout_days": 14,
+  "payout_speed": "Instant Payouts: approval in seconds (avg within 20 sec); Walletory wallet payouts up to $10,000 instant, bank wire/crypto sent within 1 business day",
+  "min_trading_days": 3,
+  "consistency_rule": null,
+  "news_trading": "allowed",
+  "weekend_holding": "allowed",
+  "countries_restricted": [
+    "Afghanistan",
+    "Belarus",
+    "Cuba",
+    "India",
+    "Iran",
+    "Iraq",
+    "Myanmar",
+    "North Korea",
+    "Russia",
+    "Somalia",
+    "South Sudan",
+    "Sudan",
+    "Syria",
+    "USA",
+    "Venezuela",
+    "Yemen",
+    "Bangladesh (temporary)",
+    "China (temporary)",
+    "Pakistan (temporary)",
+    "Vietnam (temporary)"
+  ],
+  "founded": 2022,
+  "hq": "Brno, Czech Republic",
+  "discount_code": {
+    "code": "NEW20",
+    "value": "20% off your first challenge",
+    "percent": 20,
+    "source": "https://www.fintokei.com/",
+    "verified": "2026-10-31",
+    "expires": null,
+    "also": [
+      {
+        "code": "COMBOTRADER",
+        "value": "10% off ProTrader $50K + free $5K ProTrader",
+        "percent": 10
+      }
+    ]
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 4.3,
+    "count": 1417
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://www.fintokei.com/",
+    "https://www.fintokei.com/starttrader/",
+    "https://www.fintokei.com/swifttrader/",
+    "https://www.fintokei.com/protrader/",
+    "https://www.fintokei.com/protrader-swing/",
+    "https://www.fintokei.com/payouts/",
+    "https://www.fintokei.com/about-us/",
+    "https://www.fintokei.com/loyalty-program/",
+    "https://support.fintokei.com/en/articles/6538884-how-and-how-often-can-i-withdraw-my-performance-rewards-and-what-is-the-minimum-amount",
+    "https://support.fintokei.com/en/articles/6538820-who-can-join-fintokei",
+    "https://support.fintokei.com/en/articles/11904545-when-will-i-receive-my-payout",
+    "https://support.fintokei.com/en/articles/8408430-what-is-the-performance-reward-ratio-on-swifttrader-accounts",
+    "https://support.fintokei.com/en/articles/6538873-what-is-the-performance-reward-ratio-on-protrader-accounts",
+    "https://support.fintokei.com/en/articles/6538886-how-many-accounts-and-open-positions-can-i-have",
+    "https://support.fintokei.com/en/articles/17677670-what-s-new-on-starttrader-from-october-21-2026-soft-breach-payouts-and-purchase-rules",
+    "https://support.fintokei.com/en/articles/6538826-how-are-the-daily-loss-limit-and-maximum-loss-limit-calculated",
+    "https://support.fintokei.com/en/articles/6538829-is-there-any-time-limit",
+    "https://support.fintokei.com/en/articles/6538843-can-trade-any-time-hold-positions-over-weekends-and-trade-during-news",
+    "https://support.fintokei.com/en/articles/11315976-what-is-the-maximum-risk-on-open-trades",
+    "https://www.trustpilot.com/review/fintokei.com"
+  ],
+  "notes": "Prices are list prices taken from the schema.org Offer data and the rendered price cells on each program page (USD; accounts also available in EUR, JPY, CZK). Public promos on 2026-10-31: NEW20 (20% off first challenge, homepage banner), COMBOTRADER (10% off ProTrader $50K + free $5K ProTrader). StartTrader rules changed for purchases from 2026-10-21 (1 phase, 3% target, 2% daily loss with one soft breach, 8% max loss, 80% flat, $400 lifetime payout cap, only for new clients, max 2 purchases). SwiftTrader rules for accounts bought after 2026-07-15 (90% reward, 60-day limit, min profit per payout 3%); SwiftTrader drawdown type not confirmed (help centre uses a High-Water Mark concept, rules article content is tabbed and not extracted) -> null. Older help article on loss limits still cites 3%/6% for StartTrader/SwiftTrader; program pages (2%/8% and 2%/3%) used instead. Max allowed risk on open trades 3% applies to all programs. Consistency rule: none published as a standing rule for main programs; help centre mentions consistency restrictions may be applied by risk management -> null. Crypto: FAQ says 'we currently don't offer crypto or stock trading', though the Swing leverage line and a help article mention crypto CFDs; treated as no crypto (no crypto file). Also restricted for NEW purchases: Cambodia, Ethiopia, Ghana, Indonesia, Kenya, MALAYSIA, Morocco, Nigeria, Philippines, Saudi Arabia, Senegal, South Africa, Thailand, Turkiye, Ukraine, UAE. Founded = 2022 launch in Japan per About page (Purple Group dates to 2007). Legal entity Fintokei a.s. (ICO 09110127), Brno; platform infrastructure by AXSE Brokerage Ltd (Seychelles). Trustpilot scraped via headless browser (HTTP 403 status but page rendered: 4.3 from 1,417 reviews).",
+  "segment": "forex",
+  "also_offers": [],
+  "category_basis": "Sells simulated CFD evaluation accounts (forex, metals, energies, indices) on TradingView, MetaTrader 5 and cTrader via Purple Trading infrastructure.",
+  "category_source": "https://www.fintokei.com/",
+  "founded_source": "https://www.fintokei.com/about-us/",
+  "hq_country": {
+    "code": "CZ",
+    "source": "https://www.fintokei.com/",
+    "quote": "Brno, Czech Republic"
+  },
+  "max_allocation_usd": 400000,
+  "max_allocation_text": "ProTrader + ProTrader Swing combined 400,000 USD/EUR; SwiftTrader 200,000; StartTrader 100,000 (funded phase); can be exceeded only via Loyalty Program Capital Scaling Boost",
+  "max_allocation_source": "https://support.fintokei.com/en/articles/6538886-how-many-accounts-and-open-positions-can-i-have",
+  "field_sources": {
+    "name": "https://www.fintokei.com/",
+    "site": "https://www.fintokei.com/",
+    "category": "https://www.fintokei.com/",
+    "category_basis": "https://www.fintokei.com/",
+    "segment": "https://www.fintokei.com/",
+    "assets": "https://www.fintokei.com/",
+    "challenge_types": "https://www.fintokei.com/",
+    "account_sizes": "https://www.fintokei.com/",
+    "fee_currency": "https://www.fintokei.com/protrader/",
+    "programs": "https://www.fintokei.com/protrader/",
+    "programs.StartTrader": "https://www.fintokei.com/starttrader/",
+    "programs.StartTrader.rules": "https://support.fintokei.com/en/articles/17677670-what-s-new-on-starttrader-from-october-21-2026-soft-breach-payouts-and-purchase-rules",
+    "programs.SwiftTrader": "https://www.fintokei.com/swifttrader/",
+    "programs.SwiftTrader.profit_split": "https://support.fintokei.com/en/articles/8408430-what-is-the-performance-reward-ratio-on-swifttrader-accounts",
+    "programs.ProTrader": "https://www.fintokei.com/protrader/",
+    "programs.ProTrader.drawdown_type": "https://support.fintokei.com/en/articles/6538826-how-are-the-daily-loss-limit-and-maximum-loss-limit-calculated",
+    "programs.ProTrader Swing": "https://www.fintokei.com/protrader-swing/",
+    "programs.ProTrader Swing.max_daily_loss": "https://support.fintokei.com/en/articles/6538826-how-are-the-daily-loss-limit-and-maximum-loss-limit-calculated",
+    "fee_from": "https://www.fintokei.com/starttrader/",
+    "profit_split": "https://www.fintokei.com/",
+    "profit_split_scale": "https://www.fintokei.com/loyalty-program/",
+    "max_daily_loss": "https://www.fintokei.com/protrader/",
+    "max_drawdown": "https://www.fintokei.com/protrader/",
+    "drawdown_type": "https://support.fintokei.com/en/articles/6538826-how-are-the-daily-loss-limit-and-maximum-loss-limit-calculated",
+    "profit_target": "https://www.fintokei.com/protrader/",
+    "leverage": "https://www.fintokei.com/protrader/",
+    "leverage.other_programs": "https://www.fintokei.com/starttrader/",
+    "platforms": "https://www.fintokei.com/",
+    "payout_frequency": "https://support.fintokei.com/en/articles/6538884-how-and-how-often-can-i-withdraw-my-performance-rewards-and-what-is-the-minimum-amount",
+    "first_payout_days": "https://support.fintokei.com/en/articles/6538884-how-and-how-often-can-i-withdraw-my-performance-rewards-and-what-is-the-minimum-amount",
+    "payout_speed": "https://support.fintokei.com/en/articles/11904545-when-will-i-receive-my-payout",
+    "max_allocation": "https://support.fintokei.com/en/articles/6538886-how-many-accounts-and-open-positions-can-i-have",
+    "max_allocation_text": "https://support.fintokei.com/en/articles/6538886-how-many-accounts-and-open-positions-can-i-have",
+    "min_trading_days": "https://www.fintokei.com/protrader/",
+    "news_trading": "https://support.fintokei.com/en/articles/6538843-can-trade-any-time-hold-positions-over-weekends-and-trade-during-news",
+    "weekend_holding": "https://support.fintokei.com/en/articles/6538843-can-trade-any-time-hold-positions-over-weekends-and-trade-during-news",
+    "countries_restricted": "https://support.fintokei.com/en/articles/6538820-who-can-join-fintokei",
+    "founded": "https://www.fintokei.com/about-us/",
+    "hq": "https://www.fintokei.com/",
+    "hq_country": "https://www.fintokei.com/",
+    "discount_code": "https://www.fintokei.com/",
+    "trustpilot": "https://www.trustpilot.com/review/fintokei.com"
+  }
+}

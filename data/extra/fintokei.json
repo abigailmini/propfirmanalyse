@@ -1,0 +1,39 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": "Refund only within 2 weeks of purchase if you have not accessed MyFintokei or placed a trade, requested by email (not chat/contact form); otherwise no refund",
+  "fee_refundable": false,
+  "time_limit": "ProTrader / ProTrader Swing: unlimited; SwiftTrader: 60 calendar days; StartTrader: 60 calendar days (min 3 trading days everywhere)",
+  "has_time_limit": false,
+  "activation_fee": null,
+  "payout_methods": [
+    "Bank wire transfer",
+    "Walletory e-wallet (instant, up to $10,000)",
+    "Crypto (ETH, USDT, BTC, USDC, LTC and others; selected countries only)"
+  ],
+  "min_payout": "100 USD/EUR (120 for 400K ProTrader); SwiftTrader requires min 3% profit per payout; StartTrader min 2% profit",
+  "kyc_before_payout": true,
+  "scaling_plan": "Loyalty Program Capital Scaling Boost: +5% to +25% virtual capital on funded accounts by XP tier (replaces old scaling plan)",
+  "ea_bots": "allowed (own EAs; third-party EAs/services built to pass evaluations prohibited)",
+  "copy_trading": false,
+  "hedging": null,
+  "max_risk_per_trade": "3% of initial balance per trade idea / group of overlapping open trades",
+  "inactivity_rule": "Account closed if no trade is opened in any 30 calendar day period",
+  "notes": "Fees are one-time. Fintokei covers withdrawal fees for bank/wallet; crypto payouts cost 2.5% + EUR 10-20 depending on coin. Prohibited: copying others' signals or third-party account management, tick scalping, HFT, latency arbitrage, opposite trading/hedging across multiple accounts or traders (hedging within one account not stated -> null). Max 200 open/pending orders. Free trial accounts (up to 3, 14 days) for all except StartTrader. No reset product found.",
+  "sources": [
+    "https://support.fintokei.com/en/articles/6921693-can-i-get-a-refund-for-my-purchase",
+    "https://support.fintokei.com/en/articles/6538829-is-there-any-time-limit",
+    "https://support.fintokei.com/en/articles/6538884-how-and-how-often-can-i-withdraw-my-performance-rewards-and-what-is-the-minimum-amount",
+    "https://support.fintokei.com/en/articles/11904545-when-will-i-receive-my-payout",
+    "https://support.fintokei.com/en/articles/6538886-how-many-accounts-and-open-positions-can-i-have",
+    "https://support.fintokei.com/en/articles/11315976-what-is-the-maximum-risk-on-open-trades",
+    "https://www.fintokei.com/loyalty-program/",
+    "https://www.fintokei.com/starttrader/",
+    "https://www.fintokei.com/swifttrader/",
+    "https://www.fintokei.com/protrader/",
+    "https://support.fintokei.com/en/articles/8409193-what-is-scaling"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": null,
+  "monthly_fee": false
+}

@@ -1,0 +1,35 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": "Programs marked 'Refund 100%' (One Phase, Two Phase Standard, Three Phase, Lightning) refund 100% of the original order value with the first withdrawal; Two Phase Pro and Instant Funding not refundable; no refunds after the first trade is placed.",
+  "fee_refundable": true,
+  "time_limit": "Unlimited (Lightning: max 5 trading days)",
+  "has_time_limit": false,
+  "activation_fee": null,
+  "payout_methods": [
+    "Rise",
+    "Crypto (USDC/USDT) where Rise is unavailable"
+  ],
+  "min_payout": 50,
+  "kyc_before_payout": true,
+  "scaling_plan": null,
+  "ea_bots": "allowed on evaluation programs; not allowed on Instant Funding or Lightning",
+  "copy_trading": true,
+  "hedging": null,
+  "max_risk_per_trade": "Lightning requires a stop loss on every trade",
+  "inactivity_rule": "Crypto accounts: 7-day inactivity period",
+  "notes": "Min withdrawal $50 across all account types. Copy trading allowed between your FXIFY accounts and to other accounts, but not on Instant Funding LITE. KYC/AML required (FAQ 'What happens if I cannot pass my KYC'). Add-ons at checkout: leverage up to 50:1, +performance split to 90%, bi-weekly payouts, Performance Protect, RAW vs All-in pricing. Reset fee not published.",
+  "sources": [
+    "https://fxify.com/programs/one-phase/",
+    "https://fxify.com/programs/two-phase/",
+    "https://fxify.com/programs/lightning-challenge/",
+    "https://fxify.com/faqs/payouts/",
+    "https://fxify.com/faqs/orders-billing/",
+    "https://fxify.com/faqs/rules/",
+    "https://fxify.com/programs/crypto/",
+    "https://fxify.com/"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": null,
+  "monthly_fee": false
+}

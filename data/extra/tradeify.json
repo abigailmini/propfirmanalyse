@@ -1,0 +1,31 @@
+{
+  "reset_fee": "Select $75/$109/$169/$239; Growth $60-70/$95/$169/$229 (25K/50K/100K/150K); up to 10 resets/month; Lightning no resets (replacement only); sim funded accounts can't be reset",
+  "retry_discount_pct": null,
+  "refund_policy": "No refunds - all sales final (exception: promo code not applied)",
+  "fee_refundable": false,
+  "time_limit": "none (but ≥1 trade per week required)",
+  "has_time_limit": false,
+  "activation_fee": 0,
+  "payout_methods": [
+    "Rise (bank transfer, crypto)",
+    "Plane"
+  ],
+  "min_payout": null,
+  "kyc_before_payout": true,
+  "scaling_plan": "Select funded accounts scale contract size as account grows; Growth/Lightning full size from day one",
+  "ea_bots": "restricted",
+  "copy_trading": null,
+  "hedging": false,
+  "max_risk_per_trade": null,
+  "inactivity_rule": "At least 1 trade per week (Mon-Fri) on every evaluation and funded account or it is deleted after email warning",
+  "notes": "One-time purchases, no subscriptions, no activation fees. Algo trading allowed only if trader owns the strategy exclusively and it is not HFT. PayPal not supported. 1099s issued by Rise. Up to 5 funded accounts per household. Copy-trading policy not found in fetched articles. Crypto accepted for purchases (Confirmo).",
+  "sources": [
+    "https://tradeify.co/",
+    "https://help.tradeify.co/en/articles/12268494-common-faqs",
+    "https://help.tradeify.co/en/articles/12268167-essential-trading-rules-overview",
+    "https://help.tradeify.co/en/articles/10468265-which-plan-is-right-for-you"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": 75,
+  "monthly_fee": false
+}

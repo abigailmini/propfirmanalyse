@@ -1,0 +1,33 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": null,
+  "fee_refundable": null,
+  "time_limit": "unlimited",
+  "has_time_limit": false,
+  "activation_fee": null,
+  "payout_methods": [
+    "Bank Wire",
+    "Crypto",
+    "Rise"
+  ],
+  "min_payout": null,
+  "kyc_before_payout": true,
+  "scaling_plan": "Forex scaling: 10% profit over 4 months with 2+ profitable months → +25% balance; 2nd scaling +40% (Alpha Prime membership); 3rd+ +50% each, up to $4M",
+  "ea_bots": "restricted",
+  "copy_trading": true,
+  "hedging": null,
+  "max_risk_per_trade": "2% of initial balance per trade idea on Sim. Funded (stop loss mandatory); futures 2% (Tradovate/NinjaTrader/WealthCharts) or 1% (DX Futures)",
+  "inactivity_rule": "Forex: at least 1 trade every 30 calendar days; futures: close at least 1 trade every 7 days",
+  "notes": "EAs only as paid add-on (+10%) on MT5, not on Direct accounts; futures EAs restricted. Copy trading allowed only between the trader's own Hola Prime Sim. Funded accounts. 2.5% payout processing fee on all methods (min $25 Rise/Bank Wire, $5 crypto). Account review (up to 24 business hours) before each payout, then paid within 1 hour. KYC appears in the pass→KYC→Agreement flow. Reset/refund policy not found on the pages read (help centre at help.holaprime.com not fully read).",
+  "sources": [
+    "https://holaprime.com/forex/forex-trading-rules/",
+    "https://holaprime.com/forex/scaling/",
+    "https://holaprime.com/futures/futures-trading-rules/",
+    "https://holaprime.com/",
+    "https://holaprime.com/forex/prime-challenge/"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": null,
+  "monthly_fee": false
+}

@@ -38,7 +38,8 @@ HQ_GUESS = [(r"\buae\b|united arab emirates|dubai|ajman|ras al khaimah|abu dhabi
 COUNTRY = {"AE": "UAE", "CZ": "Czechia", "CH": "Switzerland", "GB": "UK", "LC": "Saint Lucia", "US": "USA", "IL": "Israel", "CY": "Cyprus", "AU": "Australia",
            "HK": "Hong Kong", "SG": "Singapore", "EE": "Estonia", "SC": "Seychelles", "MT": "Malta", "NL": "Netherlands", "BG": "Bulgaria", "CA": "Canada",
            "DE": "Germany", "PL": "Poland", "SK": "Slovakia", "SI": "Slovenia", "HU": "Hungary", "IE": "Ireland", "GI": "Gibraltar", "KN": "St Kitts & Nevis",
-           "VC": "St Vincent", "KM": "Comoros", "RO": "Romania", "MY": "Malaysia", "VG": "BVI", "KY": "Cayman Islands", "BS": "Bahamas"}
+           "VC": "St Vincent", "KM": "Comoros", "RO": "Romania", "MY": "Malaysia", "VG": "BVI", "KY": "Cayman Islands", "BS": "Bahamas",
+           "LI": "Liechtenstein", "CR": "Costa Rica"}
 def hq_cc(f):
     c = f.get("hq_country")
     if isinstance(c, dict): c = c.get("code")

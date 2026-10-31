@@ -1,0 +1,294 @@
+{
+  "name": "Propr",
+  "slug": "propr",
+  "site": "https://www.propr.xyz",
+  "category": "crypto-exchange",
+  "assets": [
+    "crypto",
+    "stocks",
+    "indices",
+    "commodities",
+    "forex"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step"
+  ],
+  "account_sizes": [
+    5000,
+    10000,
+    25000,
+    50000,
+    100000,
+    200000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "Classic 1-Step",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 60
+        },
+        {
+          "size": 10000,
+          "fee": 110
+        },
+        {
+          "size": 25000,
+          "fee": 275
+        },
+        {
+          "size": 50000,
+          "fee": 495
+        },
+        {
+          "size": 100000,
+          "fee": 999
+        },
+        {
+          "size": 200000,
+          "fee": 1998
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "3% of start-of-day balance",
+      "max_drawdown": "6%",
+      "drawdown_type": "static (equity-based)",
+      "profit_split": "80%",
+      "min_trading_days": 0
+    },
+    {
+      "name": "Turbo 1-Step",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 25
+        },
+        {
+          "size": 10000,
+          "fee": 50
+        },
+        {
+          "size": 25000,
+          "fee": 125
+        },
+        {
+          "size": 50000,
+          "fee": 245
+        },
+        {
+          "size": 100000,
+          "fee": 450
+        },
+        {
+          "size": 200000,
+          "fee": 899
+        }
+      ],
+      "profit_target": "9%",
+      "max_daily_loss": "3% of start-of-day balance",
+      "max_drawdown": "3%",
+      "drawdown_type": "static (equity-based)",
+      "profit_split": "80%",
+      "min_trading_days": 0
+    },
+    {
+      "name": "Pro 1-Step",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 45
+        },
+        {
+          "size": 10000,
+          "fee": 85
+        },
+        {
+          "size": 25000,
+          "fee": 185
+        },
+        {
+          "size": 50000,
+          "fee": 355
+        },
+        {
+          "size": 100000,
+          "fee": 699
+        },
+        {
+          "size": 200000,
+          "fee": 1399
+        }
+      ],
+      "profit_target": "12%",
+      "max_daily_loss": "3% of start-of-day balance",
+      "max_drawdown": "5%",
+      "drawdown_type": "static (equity-based)",
+      "profit_split": "80%",
+      "min_trading_days": 0
+    },
+    {
+      "name": "Classic 2-Step",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 50
+        },
+        {
+          "size": 10000,
+          "fee": 100
+        },
+        {
+          "size": 25000,
+          "fee": 250
+        },
+        {
+          "size": 50000,
+          "fee": 450
+        },
+        {
+          "size": 100000,
+          "fee": 749
+        },
+        {
+          "size": 200000,
+          "fee": 1499
+        }
+      ],
+      "profit_target": "5% (Step 1) / 10% (Step 2)",
+      "max_daily_loss": "5% of start-of-day balance",
+      "max_drawdown": "8%",
+      "drawdown_type": "trailing from equity high-water mark, stops at starting balance",
+      "profit_split": "80%",
+      "min_trading_days": 0
+    }
+  ],
+  "fee_from": 25,
+  "profit_split": "80%",
+  "profit_split_scale": null,
+  "max_daily_loss": "3% of start-of-day balance (1-Step); 5% (2-Step)",
+  "max_drawdown": "6% static (Classic 1-Step); 3% Turbo; 5% Pro; 8% trailing (2-Step)",
+  "drawdown_type": "static on 1-Step; trailing HWM on 2-Step (equity-based)",
+  "profit_target": "10% (Classic 1-Step)",
+  "leverage": "up to 10x BTC/ETH/SOL, 2x other crypto, 4x equities, 10x SP500/XYZ100, 5x other indices, 8x gold/silver/oil, 5x other commodities, 25x FX",
+  "platforms": [
+    "Propr Terminal (Hyperliquid)",
+    "REST API",
+    "Python SDK",
+    "JS SDK"
+  ],
+  "payout_frequency": "on demand, any time once funded, no waiting period; full profit sweep each request",
+  "first_payout_days": 0,
+  "payout_speed": "within 24 hours (stated); transparency dashboard shows median time to pay 9m 18s",
+  "min_trading_days": 0,
+  "consistency_rule": null,
+  "news_trading": "allowed",
+  "weekend_holding": "allowed",
+  "countries_restricted": [
+    "Bangladesh",
+    "Belarus",
+    "Burkina Faso",
+    "Central African Republic",
+    "Congo",
+    "Cuba",
+    "Ethiopia",
+    "Haiti",
+    "Iran",
+    "Iraq",
+    "Kazakhstan",
+    "Kyrgyzstan",
+    "Lebanon",
+    "Libya",
+    "Mali",
+    "Myanmar",
+    "Nigeria",
+    "North Korea",
+    "Pakistan",
+    "Russia",
+    "Somalia",
+    "South Sudan",
+    "Sudan",
+    "Syria",
+    "Tajikistan",
+    "Turkmenistan",
+    "Uzbekistan",
+    "Venezuela",
+    "Yemen",
+    "Zimbabwe",
+    "Ukraine (Crimea, Donetsk, Luhansk)"
+  ],
+  "founded": 2026,
+  "hq": "Road Town, Tortola, British Virgin Islands",
+  "discount_code": {
+    "code": "SPOOKY",
+    "value": "20% off all challenges (Halloween, ends Sunday 00:00 UTC)",
+    "percent": 20,
+    "source": "https://www.propr.xyz/",
+    "verified": "2026-10-31",
+    "expires": "2026-11-01"
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 4.4,
+    "count": 68
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://www.propr.xyz/",
+    "https://www.propr.xyz/rules",
+    "https://www.propr.xyz/transparency",
+    "https://www.propr.xyz/universe",
+    "https://www.propr.xyz/terms",
+    "https://www.propr.xyz/funded-terms",
+    "https://www.propr.xyz/affiliate-terms",
+    "https://www.trustpilot.com/review/propr.xyz"
+  ],
+  "notes": "Rulebook (propr.xyz/rules) is the source for all prices; homepage 25K cards match ($275 Classic / $125 Turbo / $185 Pro). Halloween promo: code SPOOKY = 20% off all challenges, 'ends Sunday 00:00 UTC' (temporary, posted on homepage banner). No consistency rule, no min trading days, no time limit (min_trading_days recorded as 0). Founded 2026 inferred from rulebook v1.0 launch dated February 25, 2026 (no explicit founding year). Legal entity Propr Limited (BVI Reg. No. 2211330); backed by SwissBorg; funded terms reference the XBorg Group. Leverage: rulebook table says 10x BTC/ETH/SOL, but a graphic on the same page and the homepage text say 5x on major crypto — conflicting; table value used. Position cap $1M flat for BTC/ETH and equities/commodities, $150K for large-cap crypto, else 5% of OI (changelog v1.0.2). Hybrid A-book/B-book execution; every trade labelled. Assets ~154-160+ Hyperliquid perps (universe page says 154). Trustpilot 4.4 from 68 reviews (claimed profile Apr 2026).",
+  "segment": "crypto",
+  "also_offers": [],
+  "category_basis": "Simulated perpetual-futures accounts on Hyperliquid markets (crypto, equity, index, commodity and FX perps) traded via Propr's Hyperliquid terminal/API, with A-booked trades routed on-chain to Hyperliquid.",
+  "category_source": "https://www.propr.xyz/rules",
+  "founded_source": "https://www.propr.xyz/rules",
+  "hq_country": {
+    "code": "VG",
+    "source": "https://www.propr.xyz/",
+    "quote": "Road Town, Tortola, British Virgin Islands"
+  },
+  "max_allocation_usd": 300000,
+  "max_allocation_text": "Up to $300,000 aggregate funded balance across accounts (evaluations capped at $200,000 aggregate)",
+  "max_allocation_source": "https://www.propr.xyz/rules",
+  "field_sources": {
+    "category": "https://www.propr.xyz/rules",
+    "assets": "https://www.propr.xyz/",
+    "challenge_types": "https://www.propr.xyz/rules",
+    "account_sizes": "https://www.propr.xyz/rules",
+    "programs": "https://www.propr.xyz/rules",
+    "fee_from": "https://www.propr.xyz/rules",
+    "profit_split": "https://www.propr.xyz/rules",
+    "max_daily_loss": "https://www.propr.xyz/rules",
+    "max_drawdown": "https://www.propr.xyz/rules",
+    "drawdown_type": "https://www.propr.xyz/rules",
+    "profit_target": "https://www.propr.xyz/rules",
+    "leverage": "https://www.propr.xyz/rules",
+    "platforms": "https://www.propr.xyz/",
+    "payout_frequency": "https://www.propr.xyz/rules",
+    "first_payout_days": "https://www.propr.xyz/rules",
+    "payout_speed": "https://www.propr.xyz/rules",
+    "max_allocation": "https://www.propr.xyz/rules",
+    "min_trading_days": "https://www.propr.xyz/rules",
+    "news_trading": "https://www.propr.xyz/rules",
+    "weekend_holding": "https://www.propr.xyz/rules",
+    "countries_restricted": "https://www.propr.xyz/rules",
+    "founded": "https://www.propr.xyz/rules",
+    "hq": "https://www.propr.xyz/",
+    "discount_code": "https://www.propr.xyz/",
+    "consistency_rule": "https://www.propr.xyz/rules",
+    "trustpilot": "https://www.trustpilot.com/review/propr.xyz"
+  }
+}

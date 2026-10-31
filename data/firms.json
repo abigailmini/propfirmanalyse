@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-26",
-  "order_note": "Crypto-first listing order; ranking on site is by PFA Score (same rules for every firm).",
+  "generated": "2026-10-31",
+  "order_note": "Crypto-first listing order; ranking on site is by PA Score (same rules for every firm).",
   "firms": [
     {
       "name": "FundedXYZ",
@@ -3858,6 +3858,2567 @@
       "max_allocation_usd": 1000000,
       "max_allocation_text": "Combined cap $1,000,000 across all account types (starting balance; scaling excluded)",
       "max_allocation_source": "https://instantfunding.com/help/how-many-accounts-can-i-have/"
+    },
+    {
+      "name": "Propr",
+      "slug": "propr",
+      "site": "https://www.propr.xyz",
+      "category": "crypto-exchange",
+      "assets": [
+        "crypto",
+        "stocks",
+        "indices",
+        "commodities",
+        "forex"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step"
+      ],
+      "account_sizes": [
+        5000,
+        10000,
+        25000,
+        50000,
+        100000,
+        200000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "Classic 1-Step",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 60
+            },
+            {
+              "size": 10000,
+              "fee": 110
+            },
+            {
+              "size": 25000,
+              "fee": 275
+            },
+            {
+              "size": 50000,
+              "fee": 495
+            },
+            {
+              "size": 100000,
+              "fee": 999
+            },
+            {
+              "size": 200000,
+              "fee": 1998
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "3% of start-of-day balance",
+          "max_drawdown": "6%",
+          "drawdown_type": "static (equity-based)",
+          "profit_split": "80%",
+          "min_trading_days": 0
+        },
+        {
+          "name": "Turbo 1-Step",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 25
+            },
+            {
+              "size": 10000,
+              "fee": 50
+            },
+            {
+              "size": 25000,
+              "fee": 125
+            },
+            {
+              "size": 50000,
+              "fee": 245
+            },
+            {
+              "size": 100000,
+              "fee": 450
+            },
+            {
+              "size": 200000,
+              "fee": 899
+            }
+          ],
+          "profit_target": "9%",
+          "max_daily_loss": "3% of start-of-day balance",
+          "max_drawdown": "3%",
+          "drawdown_type": "static (equity-based)",
+          "profit_split": "80%",
+          "min_trading_days": 0
+        },
+        {
+          "name": "Pro 1-Step",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 45
+            },
+            {
+              "size": 10000,
+              "fee": 85
+            },
+            {
+              "size": 25000,
+              "fee": 185
+            },
+            {
+              "size": 50000,
+              "fee": 355
+            },
+            {
+              "size": 100000,
+              "fee": 699
+            },
+            {
+              "size": 200000,
+              "fee": 1399
+            }
+          ],
+          "profit_target": "12%",
+          "max_daily_loss": "3% of start-of-day balance",
+          "max_drawdown": "5%",
+          "drawdown_type": "static (equity-based)",
+          "profit_split": "80%",
+          "min_trading_days": 0
+        },
+        {
+          "name": "Classic 2-Step",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 50
+            },
+            {
+              "size": 10000,
+              "fee": 100
+            },
+            {
+              "size": 25000,
+              "fee": 250
+            },
+            {
+              "size": 50000,
+              "fee": 450
+            },
+            {
+              "size": 100000,
+              "fee": 749
+            },
+            {
+              "size": 200000,
+              "fee": 1499
+            }
+          ],
+          "profit_target": "5% (Step 1) / 10% (Step 2)",
+          "max_daily_loss": "5% of start-of-day balance",
+          "max_drawdown": "8%",
+          "drawdown_type": "trailing from equity high-water mark, stops at starting balance",
+          "profit_split": "80%",
+          "min_trading_days": 0
+        }
+      ],
+      "fee_from": 25,
+      "profit_split": "80%",
+      "profit_split_scale": null,
+      "max_daily_loss": "3% of start-of-day balance (1-Step); 5% (2-Step)",
+      "max_drawdown": "6% static (Classic 1-Step); 3% Turbo; 5% Pro; 8% trailing (2-Step)",
+      "drawdown_type": "static on 1-Step; trailing HWM on 2-Step (equity-based)",
+      "profit_target": "10% (Classic 1-Step)",
+      "leverage": "up to 10x BTC/ETH/SOL, 2x other crypto, 4x equities, 10x SP500/XYZ100, 5x other indices, 8x gold/silver/oil, 5x other commodities, 25x FX",
+      "platforms": [
+        "Propr Terminal (Hyperliquid)",
+        "REST API",
+        "Python SDK",
+        "JS SDK"
+      ],
+      "payout_frequency": "on demand, any time once funded, no waiting period; full profit sweep each request",
+      "first_payout_days": 0,
+      "payout_speed": "within 24 hours (stated); transparency dashboard shows median time to pay 9m 18s",
+      "min_trading_days": 0,
+      "consistency_rule": null,
+      "news_trading": "allowed",
+      "weekend_holding": "allowed",
+      "countries_restricted": [
+        "Bangladesh",
+        "Belarus",
+        "Burkina Faso",
+        "Central African Republic",
+        "Congo",
+        "Cuba",
+        "Ethiopia",
+        "Haiti",
+        "Iran",
+        "Iraq",
+        "Kazakhstan",
+        "Kyrgyzstan",
+        "Lebanon",
+        "Libya",
+        "Mali",
+        "Myanmar",
+        "Nigeria",
+        "North Korea",
+        "Pakistan",
+        "Russia",
+        "Somalia",
+        "South Sudan",
+        "Sudan",
+        "Syria",
+        "Tajikistan",
+        "Turkmenistan",
+        "Uzbekistan",
+        "Venezuela",
+        "Yemen",
+        "Zimbabwe",
+        "Ukraine (Crimea, Donetsk, Luhansk)"
+      ],
+      "founded": 2026,
+      "hq": "Road Town, Tortola, British Virgin Islands",
+      "discount_code": {
+        "code": "SPOOKY",
+        "value": "20% off all challenges (Halloween, ends Sunday 00:00 UTC)",
+        "percent": 20,
+        "source": "https://www.propr.xyz/",
+        "verified": "2026-10-31",
+        "expires": "2026-11-01"
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.4,
+        "count": 68
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://www.propr.xyz/",
+        "https://www.propr.xyz/rules",
+        "https://www.propr.xyz/transparency",
+        "https://www.propr.xyz/universe",
+        "https://www.propr.xyz/terms",
+        "https://www.propr.xyz/funded-terms",
+        "https://www.propr.xyz/affiliate-terms",
+        "https://www.trustpilot.com/review/propr.xyz"
+      ],
+      "notes": "Rulebook (propr.xyz/rules) is the source for all prices; homepage 25K cards match ($275 Classic / $125 Turbo / $185 Pro). Halloween promo: code SPOOKY = 20% off all challenges, 'ends Sunday 00:00 UTC' (temporary, posted on homepage banner). No consistency rule, no min trading days, no time limit (min_trading_days recorded as 0). Founded 2026 inferred from rulebook v1.0 launch dated February 25, 2026 (no explicit founding year). Legal entity Propr Limited (BVI Reg. No. 2211330); backed by SwissBorg; funded terms reference the XBorg Group. Leverage: rulebook table says 10x BTC/ETH/SOL, but a graphic on the same page and the homepage text say 5x on major crypto — conflicting; table value used. Position cap $1M flat for BTC/ETH and equities/commodities, $150K for large-cap crypto, else 5% of OI (changelog v1.0.2). Hybrid A-book/B-book execution; every trade labelled. Assets ~154-160+ Hyperliquid perps (universe page says 154). Trustpilot 4.4 from 68 reviews (claimed profile Apr 2026).",
+      "segment": "crypto",
+      "also_offers": [],
+      "category_basis": "Simulated perpetual-futures accounts on Hyperliquid markets (crypto, equity, index, commodity and FX perps) traded via Propr's Hyperliquid terminal/API, with A-booked trades routed on-chain to Hyperliquid.",
+      "category_source": "https://www.propr.xyz/rules",
+      "founded_source": "https://www.propr.xyz/rules",
+      "hq_country": {
+        "code": "VG",
+        "source": "https://www.propr.xyz/",
+        "quote": "Road Town, Tortola, British Virgin Islands"
+      },
+      "max_allocation_usd": 300000,
+      "max_allocation_text": "Up to $300,000 aggregate funded balance across accounts (evaluations capped at $200,000 aggregate)",
+      "max_allocation_source": "https://www.propr.xyz/rules",
+      "field_sources": {
+        "category": "https://www.propr.xyz/rules",
+        "assets": "https://www.propr.xyz/",
+        "challenge_types": "https://www.propr.xyz/rules",
+        "account_sizes": "https://www.propr.xyz/rules",
+        "programs": "https://www.propr.xyz/rules",
+        "fee_from": "https://www.propr.xyz/rules",
+        "profit_split": "https://www.propr.xyz/rules",
+        "max_daily_loss": "https://www.propr.xyz/rules",
+        "max_drawdown": "https://www.propr.xyz/rules",
+        "drawdown_type": "https://www.propr.xyz/rules",
+        "profit_target": "https://www.propr.xyz/rules",
+        "leverage": "https://www.propr.xyz/rules",
+        "platforms": "https://www.propr.xyz/",
+        "payout_frequency": "https://www.propr.xyz/rules",
+        "first_payout_days": "https://www.propr.xyz/rules",
+        "payout_speed": "https://www.propr.xyz/rules",
+        "max_allocation": "https://www.propr.xyz/rules",
+        "min_trading_days": "https://www.propr.xyz/rules",
+        "news_trading": "https://www.propr.xyz/rules",
+        "weekend_holding": "https://www.propr.xyz/rules",
+        "countries_restricted": "https://www.propr.xyz/rules",
+        "founded": "https://www.propr.xyz/rules",
+        "hq": "https://www.propr.xyz/",
+        "discount_code": "https://www.propr.xyz/",
+        "consistency_rule": "https://www.propr.xyz/rules",
+        "trustpilot": "https://www.trustpilot.com/review/propr.xyz"
+      }
+    },
+    {
+      "name": "Lucid Trading",
+      "slug": "lucid-trading",
+      "site": "https://lucidtrading.com",
+      "category": "futures",
+      "assets": [
+        "futures"
+      ],
+      "challenge_types": [
+        "1-step",
+        "instant"
+      ],
+      "account_sizes": [
+        25000,
+        50000,
+        100000,
+        150000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "LucidPro (Evaluation → Funded)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 108
+            },
+            {
+              "size": 50000,
+              "fee": 172
+            },
+            {
+              "size": 100000,
+              "fee": 272
+            },
+            {
+              "size": 150000,
+              "fee": 365
+            }
+          ],
+          "profit_target": "$1,250/$3,000/$6,000/$9,000",
+          "max_daily_loss": "optional DLL $600/$1,200/$1,800/$2,700 (customizable at checkout)",
+          "max_drawdown": "$1,000/$2,000/$3,000/$4,500",
+          "drawdown_type": "EOD trailing (locks at start balance + $100)",
+          "profit_split": "90%",
+          "min_trading_days": 1
+        },
+        {
+          "name": "LucidFlex (Evaluation → Funded)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 65
+            },
+            {
+              "size": 50000,
+              "fee": 115
+            },
+            {
+              "size": 100000,
+              "fee": 215
+            },
+            {
+              "size": 150000,
+              "fee": 323
+            }
+          ],
+          "profit_target": "$1,250/$3,000/$6,000/$9,000",
+          "max_daily_loss": "optional DLL $600/$1,200/$1,800/$2,700 (customizable)",
+          "max_drawdown": "$1,000/$2,000/$3,000/$4,500",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "90%",
+          "min_trading_days": 2
+        },
+        {
+          "name": "LucidDaily (Evaluation → Funded, daily payouts)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 86
+            },
+            {
+              "size": 50000,
+              "fee": 122
+            },
+            {
+              "size": 100000,
+              "fee": 200
+            },
+            {
+              "size": 150000,
+              "fee": 286
+            }
+          ],
+          "profit_target": "$1,250/$3,000/$6,000/$9,000",
+          "max_daily_loss": "optional DLL $600/$1,200/$1,800/$2,700 (customizable)",
+          "max_drawdown": "$1,000/$2,000/$3,000/$4,500",
+          "drawdown_type": "Eval: EOD or intraday (chosen at checkout); Funded: intraday trailing",
+          "profit_split": "90%",
+          "min_trading_days": 2
+        },
+        {
+          "name": "LucidDirect (straight to funded)",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 329
+            },
+            {
+              "size": 50000,
+              "fee": 515
+            },
+            {
+              "size": 100000,
+              "fee": 700
+            },
+            {
+              "size": 150000,
+              "fee": 836
+            }
+          ],
+          "profit_target": "payout profit goal $1,500/$3,000/$6,000/$9,000 (1st), then $1,250/$2,500/$3,500/$4,500",
+          "max_daily_loss": "none/$1,200/$2,100/$3,000 (+ scaling DLL 60% of peak EOD balance)",
+          "max_drawdown": "$1,000/$2,000/$3,500/$5,000",
+          "drawdown_type": "EOD trailing",
+          "profit_split": null,
+          "min_trading_days": 5
+        }
+      ],
+      "fee_from": 65,
+      "profit_split": "90%",
+      "profit_split_scale": null,
+      "max_daily_loss": "optional (customizable soft-breach DLL)",
+      "max_drawdown": "$1,000-$4,500",
+      "drawdown_type": "EOD trailing",
+      "profit_target": "5-6% ($1,250/$3,000/$6,000/$9,000)",
+      "leverage": null,
+      "platforms": [
+        "Tradovate",
+        "NinjaTrader",
+        "TradingView",
+        "Rithmic",
+        "Quantower",
+        "Tradesea",
+        "MotiveWave",
+        "Sierra Chart",
+        "Jigsaw",
+        "Bookmap",
+        "ATAS",
+        "R|Trader Pro",
+        "MultiCharts"
+      ],
+      "payout_frequency": "LucidPro: on-demand after min profit goal + 40% consistency + buffer (3 days to payout); LucidFlex: every cycle of 5 profitable days, no consistency/buffer; LucidDaily: daily payout requests; LucidDirect: after profit goal + 20% consistency (min 5 days)",
+      "first_payout_days": 3,
+      "payout_speed": "~15 min from request to bank (homepage claim); payouts processed within 2 business days per Flex help article; WorkMarket bank/PayPal as early as next business day",
+      "min_trading_days": null,
+      "consistency_rule": "Eval: Flex 40% (50% add-on), Daily 50%, Pro none; Funded: Pro 40% best-day rule for payouts, Direct 20%, Flex/Daily none",
+      "news_trading": "allowed",
+      "weekend_holding": "banned",
+      "countries_restricted": [
+        "Afghanistan",
+        "Albania",
+        "Algeria",
+        "Angola",
+        "Bahamas",
+        "Barbados",
+        "Belarus",
+        "Belize",
+        "Bosnia & Herzegovina",
+        "Bulgaria",
+        "Burkina Faso",
+        "Burma/Myanmar",
+        "Botswana",
+        "Burundi",
+        "Cambodia",
+        "Central African Republic",
+        "Côte d’Ivoire",
+        "Crimea",
+        "Cuba",
+        "Congo Republic (Brazzaville)",
+        "Congo (Kinshasa)",
+        "Donetsk",
+        "Ecuador",
+        "Ethiopia",
+        "Ghana",
+        "Guinea",
+        "Haiti",
+        "Iceland",
+        "Indonesia",
+        "Iran",
+        "Iraq",
+        "Jamaica",
+        "Kazakhstan",
+        "Kenya",
+        "Kherson",
+        "Kosovo",
+        "Kyrgyzstan",
+        "Laos",
+        "Lebanon",
+        "Liberia",
+        "Libya",
+        "Lithuania",
+        "Luhansk",
+        "Mali",
+        "Mauritius",
+        "Mongolia",
+        "Montenegro",
+        "Morocco",
+        "Mozambique",
+        "Namibia",
+        "Nicaragua",
+        "Nigeria",
+        "North Korea",
+        "North Macedonia",
+        "Pakistan",
+        "Panama",
+        "Papua New Guinea",
+        "Philippines",
+        "Russia",
+        "Senegal",
+        "Serbia",
+        "Sevastopol",
+        "Seychelles",
+        "Slovenia",
+        "Somalia",
+        "South Africa",
+        "South Sudan",
+        "Sri Lanka",
+        "Sudan",
+        "Syria",
+        "Tajikistan",
+        "Tanzania",
+        "Turkey",
+        "Trinidad and Tobago",
+        "Tunisia",
+        "Uganda",
+        "Ukraine",
+        "Uzbekistan",
+        "Vietnam",
+        "Venezuela",
+        "Yemen",
+        "Zimbabwe"
+      ],
+      "founded": 2024,
+      "hq": "Dover, DE, United States",
+      "discount_code": {
+        "code": "VAULT",
+        "value": "About 30% off plan prices (e.g. Pro 25K $108 -> $75.60)",
+        "percent": 30,
+        "source": "https://lucidtrading.com/",
+        "verified": "2026-10-31",
+        "expires": null
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.5,
+        "count": 8440
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://lucidtrading.com/",
+        "https://lucidtrading.com/about-us/",
+        "https://lucidtrading.com/affiliate/",
+        "https://www.trustpilot.com/review/lucidtrading.com",
+        "https://support.lucidtrading.com/en/articles/11404614-lucid-trading-supported-platforms",
+        "https://support.lucidtrading.com/en/articles/11404617-maximum-number-of-accounts",
+        "https://support.lucidtrading.com/en/articles/11404620-simulated-account-fees",
+        "https://support.lucidtrading.com/en/articles/11404632-inactivity-policy",
+        "https://support.lucidtrading.com/en/articles/11404636-restricted-countries",
+        "https://support.lucidtrading.com/en/articles/11404728-other-trading-activities",
+        "https://support.lucidtrading.com/en/articles/11404729-allowed-trading-times",
+        "https://support.lucidtrading.com/en/articles/11404734-prohibited-hedging",
+        "https://support.lucidtrading.com/en/articles/11508978-approved-products-and-commissions",
+        "https://support.lucidtrading.com/en/articles/12890029-lucidpro-evaluation-account",
+        "https://support.lucidtrading.com/en/articles/12890069-lucidpro-funded-account",
+        "https://support.lucidtrading.com/en/articles/12890092-lucidpro-payouts",
+        "https://support.lucidtrading.com/en/articles/12890109-lucidpro-consistency-percentage",
+        "https://support.lucidtrading.com/en/articles/12890136-lucidpro-drawdown",
+        "https://support.lucidtrading.com/en/articles/12890148-luciddirect-funded-account",
+        "https://support.lucidtrading.com/en/articles/12890164-luciddirect-payout-objectives",
+        "https://support.lucidtrading.com/en/articles/12890178-luciddirect-consistency-percentage",
+        "https://support.lucidtrading.com/en/articles/12890325-payout-methods",
+        "https://support.lucidtrading.com/en/articles/12945790-lucidflex-evaluation-account",
+        "https://support.lucidtrading.com/en/articles/12945795-lucidflex-funded-account",
+        "https://support.lucidtrading.com/en/articles/12945796-lucidflex-payouts",
+        "https://support.lucidtrading.com/en/articles/12945808-lucidflex-scaling-plan",
+        "https://support.lucidtrading.com/en/articles/15996664-luciddaily-evaluation",
+        "https://support.lucidtrading.com/en/articles/15997244-luciddaily-funded-account",
+        "https://support.lucidtrading.com/en/articles/15997266-luciddaily-payouts",
+        "https://support.lucidtrading.com/en/articles/16010520-luciddaily-live",
+        "https://support.lucidtrading.com/en/articles/11404742-prohibited-microscalping",
+        "https://support.lucidtrading.com/en/articles/11404628-accepted-payments-methods"
+      ],
+      "notes": "Prices are list prices shown on lucidtrading.com plan cards (default config); site shows ~30% off with code VAULT (e.g. Pro 25K $108 -> $75.60). Card prices may change with customization toggles (DLL on/off, 50% consistency add-on, EOD vs intraday eval drawdown on Daily). LucidDaily funded uses intraday drawdown and bans red-folder news (hard breach) - news allowed on Pro/Flex/Direct. LucidDirect profit split not stated in readable text (help article split table didn't render) -> null; Pro/Flex/Daily confirmed 90/10. Live (LucidLive) accounts 90/10 with daily payouts per About page. No overnight/weekend holding: positions auto-closed 4:45 PM ET. Founded inferred from site copyright '@2024-2026'. HQ = registered address 3500 S Dupont Hwy, Dover DE (registered-agent style address). Homepage claims '$700M+ earned by traders' and '500K+ traders'. Legacy plans (LucidBlack, LucidMaxx) not sold as entry products. Pro eval help table lists 25K DLL 'None' while homepage card shows $600 optional - DLL is a customization toggle.",
+      "segment": "futures",
+      "also_offers": [],
+      "category_basis": "Sells one-time-fee CME futures evaluations and straight-to-funded accounts traded via CQG (Tradovate/NinjaTrader/TradingView) or Rithmic platforms.",
+      "category_source": "https://support.lucidtrading.com/en/articles/11404614-lucid-trading-supported-platforms",
+      "founded_source": "https://lucidtrading.com/",
+      "hq_country": {
+        "code": "US",
+        "source": "https://lucidtrading.com/",
+        "quote": "Dover, DE, United States"
+      },
+      "max_allocation_text": "Up to 5 funded accounts per household (max 150K each); no explicit max-allocation figure published",
+      "max_allocation_source": "https://support.lucidtrading.com/en/articles/11404617-maximum-number-of-accounts",
+      "field_sources": {
+        "category": "https://support.lucidtrading.com/en/articles/11404614-lucid-trading-supported-platforms",
+        "platforms": "https://support.lucidtrading.com/en/articles/11404614-lucid-trading-supported-platforms",
+        "programs": "https://lucidtrading.com/",
+        "account_sizes": "https://lucidtrading.com/",
+        "fee_from": "https://lucidtrading.com/",
+        "profit_target": "https://support.lucidtrading.com/en/articles/12890029-lucidpro-evaluation-account",
+        "max_drawdown": "https://support.lucidtrading.com/en/articles/12890136-lucidpro-drawdown",
+        "drawdown_type": "https://support.lucidtrading.com/en/articles/12890136-lucidpro-drawdown",
+        "max_daily_loss": "https://lucidtrading.com/",
+        "profit_split": "https://support.lucidtrading.com/en/articles/12890092-lucidpro-payouts",
+        "payout_frequency": "https://support.lucidtrading.com/en/articles/12945796-lucidflex-payouts",
+        "first_payout_days": "https://lucidtrading.com/",
+        "payout_speed": "https://lucidtrading.com/",
+        "consistency_rule": "https://support.lucidtrading.com/en/articles/12890109-lucidpro-consistency-percentage",
+        "news_trading": "https://support.lucidtrading.com/en/articles/11404728-other-trading-activities",
+        "weekend_holding": "https://support.lucidtrading.com/en/articles/11404729-allowed-trading-times",
+        "countries_restricted": "https://support.lucidtrading.com/en/articles/11404636-restricted-countries",
+        "founded": "https://lucidtrading.com/",
+        "hq": "https://lucidtrading.com/",
+        "discount_code": "https://lucidtrading.com/",
+        "trustpilot": "https://www.trustpilot.com/review/lucidtrading.com",
+        "max_allocation_text": "https://support.lucidtrading.com/en/articles/11404617-maximum-number-of-accounts",
+        "assets": "https://support.lucidtrading.com/en/articles/11508978-approved-products-and-commissions"
+      }
+    },
+    {
+      "name": "Tradeify",
+      "slug": "tradeify",
+      "site": "https://tradeify.co",
+      "category": "futures",
+      "assets": [
+        "futures"
+      ],
+      "challenge_types": [
+        "1-step",
+        "instant"
+      ],
+      "account_sizes": [
+        25000,
+        50000,
+        100000,
+        150000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "Select Evaluation (Flex or Daily funded path)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 109
+            },
+            {
+              "size": 50000,
+              "fee": 165
+            },
+            {
+              "size": 100000,
+              "fee": 265
+            },
+            {
+              "size": 150000,
+              "fee": 369
+            }
+          ],
+          "profit_target": "$1,500/$3,000/$6,000/$9,000",
+          "max_daily_loss": "none in eval; funded Daily path $500/$1,000/$1,250/$1,750, Flex path none",
+          "max_drawdown": "$1,000/$2,000/$3,000/$4,500 (funded Daily path $1,000/$2,000/$2,500/$3,500)",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "90%",
+          "min_trading_days": 3
+        },
+        {
+          "name": "Growth Evaluation",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 99
+            },
+            {
+              "size": 50000,
+              "fee": 145
+            },
+            {
+              "size": 100000,
+              "fee": 255
+            },
+            {
+              "size": 150000,
+              "fee": 369
+            }
+          ],
+          "profit_target": "$1,500/$3,000/$6,000/$9,000",
+          "max_daily_loss": "$600/$1,250/$2,500/$3,750",
+          "max_drawdown": "$1,000/$2,000/$3,500/$5,000",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "90%",
+          "min_trading_days": 1
+        },
+        {
+          "name": "Lightning Funded (instant)",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 345
+            },
+            {
+              "size": 50000,
+              "fee": 492
+            },
+            {
+              "size": 100000,
+              "fee": 660
+            },
+            {
+              "size": 150000,
+              "fee": 796
+            }
+          ],
+          "profit_target": "profit goal per payout (no evaluation)",
+          "max_daily_loss": "none/$1,250/$2,500/$3,000",
+          "max_drawdown": "$1,000/$2,000/$4,000/$5,250",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "90%",
+          "min_trading_days": null
+        }
+      ],
+      "fee_from": 99,
+      "profit_split": "90%",
+      "profit_split_scale": "Sim funded 90/10; Elite Live accounts 80/20 with daily payouts",
+      "max_daily_loss": "none (Select eval) / $600-$3,750 (Growth)",
+      "max_drawdown": "$1,000-$5,250",
+      "drawdown_type": "EOD trailing",
+      "profit_target": "6% ($1,500/$3,000/$6,000/$9,000)",
+      "leverage": null,
+      "platforms": [
+        "Tradovate",
+        "NinjaTrader",
+        "TradingView",
+        "Rithmic",
+        "Tradesea",
+        "Quantower",
+        "Sierra Chart",
+        "R|Trader",
+        "WealthCharts"
+      ],
+      "payout_frequency": "Select Daily: daily payout requests; Select Flex: every 5 winning days; Growth: every 5 profitable days; Lightning: no day minimum (profit goal + 20%→25%→30% consistency)",
+      "first_payout_days": 4,
+      "payout_speed": "usually within 24h once Rise onboarding complete (up to 72h over weekends); homepage advertises '1 hour payouts'",
+      "min_trading_days": null,
+      "consistency_rule": "Select eval 40%; Growth funded 35%; Lightning 20% (1st payout) → 25% → 30%; Select funded none",
+      "news_trading": "allowed",
+      "weekend_holding": "banned",
+      "countries_restricted": null,
+      "founded": null,
+      "hq": "Boca Raton, FL, United States",
+      "discount_code": {
+        "code": "GEMS",
+        "value": "30% off (Halloween, ends 31 Oct 2026 11:59 PM EST)",
+        "percent": 30,
+        "source": "https://tradeify.co/",
+        "verified": "2026-10-31",
+        "expires": "2026-10-31"
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.5,
+        "count": 6467
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://tradeify.co/",
+        "https://help.tradeify.co/en/articles/10468265-which-plan-is-right-for-you",
+        "https://help.tradeify.co/en/articles/12268494-common-faqs",
+        "https://help.tradeify.co/en/articles/12268167-essential-trading-rules-overview",
+        "https://help.tradeify.co/en/articles/10468318-guidelines-for-traders",
+        "https://tradeify.co/become-an-affiliate",
+        "https://www.tradeifyfx.co/",
+        "https://www.tradeifyperps.co/",
+        "https://www.trustpilot.com/review/tradeify.co"
+      ],
+      "notes": "List prices from tradeify.co plan cards; Halloween promo 30% off with code GEMS (ends 31 Oct 2026 11:59PM EST) - e.g. Select 50K $165 -> $116. Help article also mentions a Select 300K ($349, $14,000 target) not shown on homepage cards - excluded pending confirmation. 'Pass in 1 day' (Growth) / 'Pass in 3 days' (Select). Funded payouts need >50% of trades and profit from trades held >10s (microscalping rule). Positions must be closed by 4:45 PM ET; no weekend trading. Also offers Tradeify FX (tradeifyfx.co, MT5 forex, 5K+ accounts, 80% split, 1:100) and Tradeify 247/Perps (crypto, separate brand, beta sign-up) - not covered here. Elite Live program after 3 payouts on one account. Tradeify Brokerage LLC d/b/a Slay Markets is a CFTC-registered IB. Restricted-country list not published (help mentions KYC-before-funding for Brazil, China, Italy, Mexico, Romania, South Korea, Spain, Taiwan, Thailand, UAE). Homepage stats: $350M+ verified payouts, 0% payout denials, 100,000+ traders.",
+      "segment": "futures",
+      "also_offers": [
+        "cfd"
+      ],
+      "category_basis": "Core product is one-time-fee CME futures evaluations and instant-funded accounts on Tradovate, Rithmic or WealthCharts; a separate Tradeify FX brand sells MT5 forex accounts.",
+      "category_source": "https://help.tradeify.co/en/articles/12268494-common-faqs",
+      "hq_country": {
+        "code": "US",
+        "source": "https://tradeify.co/",
+        "quote": "Boca Raton, FL, United States"
+      },
+      "max_allocation_usd": 750000,
+      "max_allocation_text": "'Trade with $750K funding' (homepage); max 5 funded accounts per household",
+      "max_allocation_source": "https://tradeify.co/",
+      "field_sources": {
+        "programs": "https://tradeify.co/",
+        "account_sizes": "https://tradeify.co/",
+        "fee_from": "https://tradeify.co/",
+        "profit_split": "https://help.tradeify.co/en/articles/12268494-common-faqs",
+        "profit_split_scale": "https://help.tradeify.co/en/articles/12268494-common-faqs",
+        "platforms": "https://help.tradeify.co/en/articles/12268494-common-faqs",
+        "payout_frequency": "https://help.tradeify.co/en/articles/12268167-essential-trading-rules-overview",
+        "first_payout_days": "https://tradeify.co/",
+        "payout_speed": "https://help.tradeify.co/en/articles/12268494-common-faqs",
+        "max_allocation": "https://tradeify.co/",
+        "max_allocation_text": "https://tradeify.co/",
+        "consistency_rule": "https://help.tradeify.co/en/articles/10468265-which-plan-is-right-for-you",
+        "news_trading": "https://help.tradeify.co/en/articles/12268494-common-faqs",
+        "weekend_holding": "https://help.tradeify.co/en/articles/12268494-common-faqs",
+        "hq": "https://tradeify.co/",
+        "discount_code": "https://tradeify.co/",
+        "trustpilot": "https://www.trustpilot.com/review/tradeify.co",
+        "category": "https://help.tradeify.co/en/articles/12268494-common-faqs",
+        "also_offers": "https://www.tradeifyfx.co/",
+        "max_daily_loss": "https://help.tradeify.co/en/articles/12268167-essential-trading-rules-overview",
+        "drawdown_type": "https://help.tradeify.co/en/articles/12268167-essential-trading-rules-overview",
+        "profit_target": "https://help.tradeify.co/en/articles/10468265-which-plan-is-right-for-you"
+      }
+    },
+    {
+      "name": "Take Profit Trader",
+      "slug": "take-profit-trader",
+      "site": "https://takeprofittrader.com",
+      "category": "futures",
+      "assets": [
+        "futures"
+      ],
+      "challenge_types": [
+        "1-step"
+      ],
+      "account_sizes": [
+        25000,
+        50000,
+        75000,
+        100000,
+        150000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "Trading Test → PRO (sim) → PRO+ (live)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 150
+            },
+            {
+              "size": 50000,
+              "fee": 170
+            },
+            {
+              "size": 75000,
+              "fee": 245
+            },
+            {
+              "size": 100000,
+              "fee": 330
+            },
+            {
+              "size": 150000,
+              "fee": 360
+            }
+          ],
+          "profit_target": "6% ($1,500/$3,000/$4,500/$6,000/$9,000)",
+          "max_daily_loss": "none (removed)",
+          "max_drawdown": "$1,500/$2,000/$2,500/$3,000/$4,500",
+          "drawdown_type": "EOD trailing in Test; intraday trailing in PRO; EOD in PRO+",
+          "profit_split": "80% (PRO), 90% (PRO+)",
+          "min_trading_days": 3
+        }
+      ],
+      "fee_from": 150,
+      "profit_split": "80% up to 90%",
+      "profit_split_scale": "80/20 in PRO (sim); 90/10 in PRO+ (live, invitation only)",
+      "max_daily_loss": "none",
+      "max_drawdown": "$1,500-$4,500",
+      "drawdown_type": "EOD trailing (Test); intraday trailing (PRO)",
+      "profit_target": "6%",
+      "leverage": null,
+      "platforms": [
+        "TradingView",
+        "NinjaTrader",
+        "Tradovate",
+        "Rithmic",
+        "R|Trader",
+        "Quantower",
+        "Bookmap",
+        "MultiCharts",
+        "MotiveWave",
+        "Trade Navigator",
+        "VolFix",
+        "ATAS",
+        "Investor R/T",
+        "Finamark",
+        "Jigsaw"
+      ],
+      "payout_frequency": "Day-one and daily withdrawals in PRO once balance exceeds the buffer (= max drawdown); no min profitable days, no payout windows, no max withdrawal",
+      "first_payout_days": 0,
+      "payout_speed": "Account-to-wallet 5-10 seconds (automated, Tradovate PRO); wallet to bank via Plaid usually real-time; Wise/PayPal within 12 business hours",
+      "min_trading_days": 3,
+      "consistency_rule": "Test only: best day must be <50% of total net profit; no consistency rule in PRO/PRO+",
+      "news_trading": "restricted",
+      "weekend_holding": "banned",
+      "countries_restricted": [
+        "Afghanistan",
+        "Albania",
+        "Algeria",
+        "Angola",
+        "Barbados",
+        "Belarus",
+        "Belize",
+        "Benin",
+        "Bosnia and Herzegovina",
+        "Botswana",
+        "Bulgaria",
+        "Burkina Faso",
+        "Burundi",
+        "Cameroon",
+        "Cape Verde",
+        "Chad",
+        "Christmas Island",
+        "Cocos (Keeling) Islands",
+        "Comoros",
+        "Congo",
+        "Cook Islands",
+        "Croatia",
+        "Cuba",
+        "Democratic Republic of Congo",
+        "Djibouti",
+        "Dominica",
+        "East Timor (Timor-Leste)",
+        "Equatorial Guinea",
+        "Eritrea",
+        "Ethiopia",
+        "Falkland Islands (Malvinas)",
+        "Fiji",
+        "Gabon",
+        "Gambia",
+        "Ghana",
+        "Guinea",
+        "Guinea-Bissau",
+        "Guyana",
+        "Haiti",
+        "Heard and McDonald Islands",
+        "Iran",
+        "Iraq",
+        "Ivory Coast",
+        "Jamaica",
+        "Jordan",
+        "Kazakhstan",
+        "Kenya",
+        "Kiribati",
+        "Kosovo",
+        "Laos",
+        "Lebanon",
+        "Lesotho",
+        "Liberia",
+        "Libya",
+        "Malawi",
+        "Mali",
+        "Malta",
+        "Mauritania",
+        "Mauritius",
+        "Mayotte",
+        "Micronesia",
+        "Monaco",
+        "Mongolia",
+        "Montenegro",
+        "Montserrat",
+        "Morocco",
+        "Mozambique",
+        "Myanmar",
+        "Namibia",
+        "Nauru",
+        "Nepal",
+        "Nicaragua",
+        "Niger",
+        "Nigeria",
+        "North Korea",
+        "North Macedonia",
+        "Northern Mariana Islands",
+        "Pakistan",
+        "Palestinian Territories",
+        "Panama",
+        "Papua New Guinea",
+        "Peru",
+        "Philippines",
+        "Qatar",
+        "Romania",
+        "Russia",
+        "Rwanda",
+        "Saint Vincent and the Grenadines",
+        "Sao Tome and Principe",
+        "Senegal",
+        "Serbia",
+        "Seychelles",
+        "Sierra Leone",
+        "Slovenia",
+        "Somalia",
+        "South Africa",
+        "South Georgia and the South Sandwich Islands",
+        "South Sudan",
+        "Sri Lanka",
+        "Sudan",
+        "Suriname",
+        "Svalbard and Jan Mayen Islands",
+        "Syria",
+        "Tajikistan",
+        "Tanzania",
+        "Togo",
+        "Trinidad and Tobago",
+        "Tunisia",
+        "Turkey",
+        "Turkmenistan",
+        "Tuvalu",
+        "Uganda",
+        "Ukraine",
+        "Venezuela",
+        "Vietnam",
+        "Western Sahara",
+        "Yemen",
+        "Zambia",
+        "Zimbabwe"
+      ],
+      "founded": null,
+      "hq": "Windermere, FL, United States",
+      "discount_code": {
+        "code": "NOFEE40",
+        "value": "40% off the Test subscription for life + no PRO activation fee",
+        "percent": 40,
+        "source": "https://takeprofittrader.com/",
+        "verified": "2026-10-31",
+        "expires": null
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.4,
+        "count": 11068
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://takeprofittrader.com/",
+        "https://takeprofittrader.com/about-us",
+        "https://takeprofittrader.com/affiliate",
+        "https://www.trustpilot.com/review/takeprofittrader.com",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/37697356049949-Speed-of-Payouts-Update-Q-A",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15172219527581-PRO-Account-Profit-Split-Withdrawal-Rules",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15171929948829-Advantages-of-PRO",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15171769361053-PRO-Account-Rules",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15169070804125-Rule-1-Hit-Your-Profit-Target",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15169066911133-Rule-2-Do-Not-Exceed-Maximum-Position-Size",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15170265979165-Rule-3-Do-Not-Hit-End-Of-Day-EOD-Maximum-Trailing-Drawdown",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15170347090461-Rule-4-Trade-Approved-Products-During-Approved-Hours",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15170316538013-Rule-5-Be-Consistent",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15173017163549-Choosing-Your-Platform",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15141145057053-Test-Subscriptions",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15140989806493-Resetting-Your-Test-Account",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15171895352733-Resetting-A-PRO-Account",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15172296875165-Payout-System",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15965203144477-How-to-Withdraw-from-the-Wallet",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15172354954525-Withdrawal-Fees",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/22447557656477-Restricted-Countries",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/34431176505245-Trade-Copier-Policy",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/22076187576605-KYC-Procedure",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15172006753821-PRO-Account-Rules",
+        "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/29660646764445-NOFEE40-PROMO-FAQS"
+      ],
+      "notes": "Test fees are MONTHLY subscriptions (list $150/$170/$245/$330/$360 for 25K-150K); subscription stops once passed. One-time $130 PRO activation fee. Homepage banner: 'Get 40% Off For Life + Never Pay An Activation Fee' with code NOFEE40 (40% off the test subscription for life + waived activation). first_payout_days=0 means withdrawals allowed from day one of PRO (Test still needs ≥3 trading days). PRO withdrawals only on profit above buffer (e.g. 50K buffer $52,000); 50% of buffer withdrawable when account closed. News: PRO/PRO+ must be flat 1 min before/after FOMC, NFP, CPI. Positions auto-closed 4:55 PM ET; no overnight holding. Max position 3/6/9/12/15 contracts (10x micros). Commissions $4.50/$1.50 RT in Test/PRO. Founder/CEO James Sixsmith; founding year not published. HQ = 9100 Conroy Windermere Rd Suite 200, Windermere FL. 2025 pass rate 36.22% of tests (site disclaimer).",
+      "segment": "futures",
+      "also_offers": [],
+      "category_basis": "Sells monthly-subscription CME/CBOT/NYMEX/COMEX futures trading tests on CQG (Tradovate/NinjaTrader/TradingView) or Rithmic data feeds; no forex/crypto/CFDs.",
+      "category_source": "https://takeprofittrader.com/",
+      "hq_country": {
+        "code": "US",
+        "source": "https://takeprofittrader.com/",
+        "quote": "Windermere, FL, United States"
+      },
+      "max_allocation_text": "Up to 5 funded (PRO/PRO+) accounts per trader; no max allocation figure published",
+      "max_allocation_source": "https://takeprofittrader.com/",
+      "field_sources": {
+        "programs": "https://takeprofittrader.com/",
+        "account_sizes": "https://takeprofittrader.com/",
+        "fee_from": "https://takeprofittrader.com/",
+        "profit_target": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15169070804125-Rule-1-Hit-Your-Profit-Target",
+        "max_drawdown": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15170265979165-Rule-3-Do-Not-Hit-End-Of-Day-EOD-Maximum-Trailing-Drawdown",
+        "drawdown_type": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15171769361053-PRO-Account-Rules",
+        "max_daily_loss": "https://takeprofittrader.com/",
+        "profit_split": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15172219527581-PRO-Account-Profit-Split-Withdrawal-Rules",
+        "profit_split_scale": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15171929948829-Advantages-of-PRO",
+        "platforms": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15173017163549-Choosing-Your-Platform",
+        "payout_frequency": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/29660646764445-NOFEE40-PROMO-FAQS",
+        "first_payout_days": "https://takeprofittrader.com/",
+        "payout_speed": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/37697356049949-Speed-of-Payouts-Update-Q-A",
+        "min_trading_days": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15170316538013-Rule-5-Be-Consistent",
+        "consistency_rule": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15170316538013-Rule-5-Be-Consistent",
+        "news_trading": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15172006753821-PRO-Account-Rules",
+        "weekend_holding": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15170347090461-Rule-4-Trade-Approved-Products-During-Approved-Hours",
+        "countries_restricted": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/22447557656477-Restricted-Countries",
+        "hq": "https://takeprofittrader.com/",
+        "discount_code": "https://takeprofittrader.com/",
+        "trustpilot": "https://www.trustpilot.com/review/takeprofittrader.com",
+        "max_allocation_text": "https://takeprofittrader.com/",
+        "category": "https://takeprofittrader.com/"
+      }
+    },
+    {
+      "name": "FXIFY",
+      "slug": "fxify",
+      "site": "https://fxify.com",
+      "category": "cfd",
+      "assets": [
+        "forex",
+        "indices",
+        "commodities",
+        "crypto",
+        "stocks",
+        "futures"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step",
+        "3-step",
+        "instant"
+      ],
+      "account_sizes": [
+        1000,
+        2500,
+        5000,
+        10000,
+        15000,
+        25000,
+        50000,
+        75000,
+        100000,
+        200000,
+        400000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "One Phase",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 59
+            },
+            {
+              "size": 10000,
+              "fee": 89
+            },
+            {
+              "size": 15000,
+              "fee": 119
+            },
+            {
+              "size": 25000,
+              "fee": 199
+            },
+            {
+              "size": 50000,
+              "fee": 379
+            },
+            {
+              "size": 100000,
+              "fee": 549
+            },
+            {
+              "size": 200000,
+              "fee": 1049
+            },
+            {
+              "size": 400000,
+              "fee": 2950
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "6%",
+          "drawdown_type": "trailing (balance; locks at starting balance after +6% or first payout)",
+          "profit_split": "up to 90%",
+          "min_trading_days": 5
+        },
+        {
+          "name": "Two Phase - Standard",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 59
+            },
+            {
+              "size": 10000,
+              "fee": 89
+            },
+            {
+              "size": 15000,
+              "fee": 119
+            },
+            {
+              "size": 25000,
+              "fee": 199
+            },
+            {
+              "size": 50000,
+              "fee": 379
+            },
+            {
+              "size": 100000,
+              "fee": 549
+            },
+            {
+              "size": 200000,
+              "fee": 1049
+            },
+            {
+              "size": 400000,
+              "fee": 2950
+            }
+          ],
+          "profit_target": "10% / 5%",
+          "max_daily_loss": "4%",
+          "max_drawdown": "10%",
+          "drawdown_type": "trailing (balance; locks at starting balance after +10% or first payout)",
+          "profit_split": "up to 90%",
+          "min_trading_days": 5
+        },
+        {
+          "name": "Two Phase - Classic",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 59
+            },
+            {
+              "size": 10000,
+              "fee": 89
+            },
+            {
+              "size": 15000,
+              "fee": 119
+            },
+            {
+              "size": 25000,
+              "fee": 199
+            },
+            {
+              "size": 50000,
+              "fee": 379
+            },
+            {
+              "size": 100000,
+              "fee": 549
+            }
+          ],
+          "profit_target": "5% (Phase 1 per pricing widget; Phase 2 not captured)",
+          "max_daily_loss": "4%",
+          "max_drawdown": "10%",
+          "drawdown_type": "static",
+          "profit_split": "up to 100%",
+          "min_trading_days": 4
+        },
+        {
+          "name": "Two Phase - Pro",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 10000,
+              "fee": 129
+            },
+            {
+              "size": 25000,
+              "fee": 225
+            },
+            {
+              "size": 50000,
+              "fee": 375
+            },
+            {
+              "size": 100000,
+              "fee": 599
+            },
+            {
+              "size": 200000,
+              "fee": 1099
+            }
+          ],
+          "profit_target": "4% (Phase 1 per pricing widget)",
+          "max_daily_loss": "4%",
+          "max_drawdown": "8%",
+          "drawdown_type": "static",
+          "profit_split": "80%",
+          "min_trading_days": 3
+        },
+        {
+          "name": "Three Phase",
+          "type": "3-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 39
+            },
+            {
+              "size": 10000,
+              "fee": 59
+            },
+            {
+              "size": 15000,
+              "fee": 79
+            },
+            {
+              "size": 25000,
+              "fee": 149
+            },
+            {
+              "size": 50000,
+              "fee": 249
+            },
+            {
+              "size": 100000,
+              "fee": 399
+            },
+            {
+              "size": 200000,
+              "fee": 799
+            },
+            {
+              "size": 400000,
+              "fee": 1599
+            }
+          ],
+          "profit_target": "5% / 5% / 5%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "5%",
+          "drawdown_type": "static",
+          "profit_split": "up to 90%",
+          "min_trading_days": 5
+        },
+        {
+          "name": "Lightning Challenge",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 10000,
+              "fee": 59
+            },
+            {
+              "size": 25000,
+              "fee": 149
+            },
+            {
+              "size": 50000,
+              "fee": 249
+            },
+            {
+              "size": 100000,
+              "fee": 399
+            }
+          ],
+          "profit_target": "5%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "4%",
+          "drawdown_type": "trailing (locks at starting balance after +4% or first payout)",
+          "profit_split": "up to 90%",
+          "min_trading_days": 3
+        },
+        {
+          "name": "Instant Funding - Standard",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 1000,
+              "fee": 69
+            },
+            {
+              "size": 2500,
+              "fee": 119
+            },
+            {
+              "size": 5000,
+              "fee": 229
+            },
+            {
+              "size": 10000,
+              "fee": 449
+            },
+            {
+              "size": 25000,
+              "fee": 899
+            },
+            {
+              "size": 50000,
+              "fee": 1749
+            },
+            {
+              "size": 75000,
+              "fee": 2499
+            },
+            {
+              "size": 100000,
+              "fee": 4249
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": null,
+          "max_drawdown": "8%",
+          "drawdown_type": "trailing (locks at starting balance after +8% or first payout)",
+          "profit_split": "up to 90%",
+          "min_trading_days": null
+        },
+        {
+          "name": "Crypto Instant Funding",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 125
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": "3%",
+          "max_drawdown": "6%",
+          "drawdown_type": "trailing",
+          "profit_split": "80% (bi-weekly)",
+          "min_trading_days": 7
+        }
+      ],
+      "fee_from": 39,
+      "profit_split": "up to 90% (up to 100% on Two Phase Classic)",
+      "profit_split_scale": null,
+      "max_daily_loss": "4%",
+      "max_drawdown": "10%",
+      "drawdown_type": "trailing (Standard) / static (Classic)",
+      "profit_target": "10% / 5%",
+      "leverage": "up to 30:1 standard; up to 50:1 via add-on/on some programs",
+      "platforms": [
+        "MT5",
+        "DXtrade",
+        "TradingView"
+      ],
+      "payout_frequency": "First payout on demand on 1/2/3-Phase evaluation accounts (after closing first funded trade; program pages also state 5 minimum trading days); thereafter monthly, or every 14 days with the Bi-weekly add-on. Instant Funding pays every 14 days.",
+      "first_payout_days": null,
+      "payout_speed": null,
+      "min_trading_days": 5,
+      "consistency_rule": "None on 1/2/3-Phase evaluations; Lightning 30%; Crypto accounts 25%",
+      "news_trading": "allowed",
+      "weekend_holding": "allowed",
+      "countries_restricted": [
+        "United States",
+        "Zimbabwe",
+        "Iran",
+        "Iraq",
+        "North Korea",
+        "Somalia",
+        "Vietnam",
+        "Burundi",
+        "Central African Republic",
+        "Ivory Coast",
+        "Liberia",
+        "Libya",
+        "Sudan",
+        "Cuba",
+        "Syria",
+        "Afghanistan",
+        "Yemen",
+        "Palestine",
+        "Myanmar",
+        "Nicaragua",
+        "Congo Republic",
+        "Crimea",
+        "Democratic Republic of Congo",
+        "Eritrea",
+        "Guinea",
+        "Guinea-Bissau",
+        "Papua New Guinea",
+        "South Sudan",
+        "Vanuatu",
+        "Venezuela",
+        "Algeria",
+        "Russia",
+        "Belarus",
+        "Kenya",
+        "Ghana"
+      ],
+      "founded": null,
+      "hq": "London, United Kingdom",
+      "discount_code": {
+        "code": "AGHHH35",
+        "value": "35% off (Halloween; not valid on Instant Lite)",
+        "percent": 35,
+        "source": "https://fxify.com/",
+        "verified": "2026-10-31",
+        "expires": "2026-11-02",
+        "also": [
+          {
+            "code": "ONESTEP35",
+            "value": "35% off One Phase for new traders",
+            "percent": 35
+          },
+          {
+            "code": "FUNDED40",
+            "value": "40% off Instant Funding",
+            "percent": 40
+          }
+        ]
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.3,
+        "count": 6550
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://fxify.com/",
+        "https://fxify.com/programs/one-phase/",
+        "https://fxify.com/programs/two-phase/",
+        "https://fxify.com/programs/three-phase-challenge/",
+        "https://fxify.com/programs/instant-funding/",
+        "https://fxify.com/programs/lightning-challenge/",
+        "https://fxify.com/programs/crypto/",
+        "https://fxify.com/how-it-works/",
+        "https://fxify.com/faqs/payouts/",
+        "https://fxify.com/faqs/orders-billing/",
+        "https://fxify.com/faqs/rules/",
+        "https://fxify.com/faqs/crypto-accounts/",
+        "https://www.trustpilot.com/review/fxify.com"
+      ],
+      "notes": "Prices are list prices from the fxify.com pricing widget (clicked through every tab/size on 2026-10-31); Halloween promo code AGHHH35 (35% off, excl. Instant Lite, expires 2 Nov), ONESTEP35 (new traders, 35% off 1-Phase) and FUNDED40 (40% off Instant Funding) were live. Widget showed identical list prices for One Phase, Two Phase Classic and Two Phase Standard. Two Phase Classic/Pro targets shown are Phase 1 only (phase-2 tab not captured). Instant Funding widget displays '8%' under Daily Loss Limit next to an 8% trailing max drawdown — left max_daily_loss null as possibly a display duplication; Instant has news trading, weekend holding and EAs set to 'No'. $1K/$2.5K Instant sizes may be the 'Instant Lite' variant (not confirmed). Instant program page says 'up to $50K' but widget sells up to $100K. Crypto Instant: only the $5K price ($125) captured; Crypto Standard 1-Step has 9% target. Futures (FXIFY Futures) is a separate product not researched. Founded year not published on site (UK company no. 14451720). Headline rules use Two Phase Standard. Trustpilot count from trustpilot page (homepage widget showed 6,544).",
+      "segment": "multi",
+      "also_offers": [
+        "futures"
+      ],
+      "category_basis": "Sells simulated CFD evaluation and instant accounts on MT5, DXtrade and TradingView; a separate FXIFY Futures product is also advertised.",
+      "category_source": "https://fxify.com/",
+      "hq_country": {
+        "code": "GB",
+        "source": "https://fxify.com/",
+        "quote": "London, United Kingdom"
+      },
+      "field_sources": {
+        "category": "https://fxify.com/",
+        "assets": "https://fxify.com/",
+        "challenge_types": "https://fxify.com/",
+        "account_sizes": "https://fxify.com/",
+        "programs": "https://fxify.com/",
+        "fee_from": "https://fxify.com/",
+        "profit_split": "https://fxify.com/",
+        "max_daily_loss": "https://fxify.com/programs/two-phase/",
+        "max_drawdown": "https://fxify.com/programs/two-phase/",
+        "drawdown_type": "https://fxify.com/programs/two-phase/",
+        "profit_target": "https://fxify.com/how-it-works/",
+        "leverage": "https://fxify.com/programs/one-phase/",
+        "platforms": "https://fxify.com/",
+        "payout_frequency": "https://fxify.com/programs/one-phase/",
+        "min_trading_days": "https://fxify.com/programs/two-phase/",
+        "consistency_rule": "https://fxify.com/",
+        "news_trading": "https://fxify.com/",
+        "weekend_holding": "https://fxify.com/",
+        "countries_restricted": "https://fxify.com/",
+        "hq": "https://fxify.com/",
+        "hq_country": "https://fxify.com/",
+        "discount_code": "https://fxify.com/",
+        "trustpilot": "https://www.trustpilot.com/review/fxify.com"
+      }
+    },
+    {
+      "name": "Hola Prime",
+      "slug": "hola-prime",
+      "site": "https://holaprime.com",
+      "category": "cfd",
+      "assets": [
+        "forex",
+        "indices",
+        "commodities",
+        "crypto",
+        "futures"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step",
+        "instant"
+      ],
+      "account_sizes": [
+        2000,
+        5000,
+        10000,
+        25000,
+        50000,
+        150000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "1-Step Prime (Forex)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 2000,
+              "fee": 14
+            },
+            {
+              "size": 5000,
+              "fee": 49
+            },
+            {
+              "size": 10000,
+              "fee": 89
+            },
+            {
+              "size": 25000,
+              "fee": 215
+            },
+            {
+              "size": 50000,
+              "fee": 329
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "3% of previous day's closing balance",
+          "max_drawdown": "6%",
+          "drawdown_type": "static",
+          "profit_split": "80% bi-weekly (up to 95% monthly)",
+          "min_trading_days": 2
+        },
+        {
+          "name": "2-Step Prime (Forex)",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 2000,
+              "fee": 9
+            },
+            {
+              "size": 5000,
+              "fee": 39
+            },
+            {
+              "size": 10000,
+              "fee": 69
+            },
+            {
+              "size": 25000,
+              "fee": 179
+            },
+            {
+              "size": 50000,
+              "fee": 319
+            }
+          ],
+          "profit_target": "8% (P1) / 5% (P2)",
+          "max_daily_loss": "5%",
+          "max_drawdown": "10%",
+          "drawdown_type": "static",
+          "profit_split": "80% bi-weekly (up to 95% monthly)",
+          "min_trading_days": 3
+        },
+        {
+          "name": "2-Step Pro (Forex)",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 2000,
+              "fee": 17
+            },
+            {
+              "size": 5000,
+              "fee": 59
+            },
+            {
+              "size": 10000,
+              "fee": 109
+            },
+            {
+              "size": 25000,
+              "fee": 229
+            },
+            {
+              "size": 50000,
+              "fee": 384
+            }
+          ],
+          "profit_target": "8% (P1) / 5% (P2)",
+          "max_daily_loss": "5%",
+          "max_drawdown": "10%",
+          "drawdown_type": "static",
+          "profit_split": "80% bi-weekly (up to 95% monthly)",
+          "min_trading_days": 2
+        },
+        {
+          "name": "2-Step Fly (Forex)",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 10000,
+              "fee": 89
+            },
+            {
+              "size": 25000,
+              "fee": 199
+            },
+            {
+              "size": 50000,
+              "fee": 349
+            }
+          ],
+          "profit_target": "8% (P1) / 8% (P2)",
+          "max_daily_loss": "3%",
+          "max_drawdown": "6%",
+          "drawdown_type": null,
+          "profit_split": "80%",
+          "min_trading_days": 3
+        },
+        {
+          "name": "Direct Account (Forex)",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 2000,
+              "fee": 49
+            },
+            {
+              "size": 5000,
+              "fee": 109
+            },
+            {
+              "size": 10000,
+              "fee": 199
+            },
+            {
+              "size": 25000,
+              "fee": 439
+            },
+            {
+              "size": 50000,
+              "fee": 829
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": "3%",
+          "max_drawdown": "7%",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "90% bi-weekly",
+          "min_trading_days": null
+        },
+        {
+          "name": "1-Step Prime (Futures)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 99
+            },
+            {
+              "size": 50000,
+              "fee": 159
+            },
+            {
+              "size": 150000,
+              "fee": 359
+            }
+          ],
+          "profit_target": "6%",
+          "max_daily_loss": null,
+          "max_drawdown": "4% (3% on $100K/$150K)",
+          "drawdown_type": "EOD trailing, locks at initial balance after +4%",
+          "profit_split": null,
+          "min_trading_days": null
+        },
+        {
+          "name": "Direct Account (Futures)",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 348
+            },
+            {
+              "size": 50000,
+              "fee": 548
+            },
+            {
+              "size": 150000,
+              "fee": 998
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": null,
+          "max_drawdown": null,
+          "drawdown_type": null,
+          "profit_split": null,
+          "min_trading_days": null
+        }
+      ],
+      "fee_from": 9,
+      "profit_split": "80% up to 95%",
+      "profit_split_scale": "80% bi-weekly or on-demand; 95% on monthly payout cycle; 90% on Direct accounts",
+      "max_daily_loss": "3% of previous day's closing balance (1-Step Prime)",
+      "max_drawdown": "6% static (1-Step Prime)",
+      "drawdown_type": "static (forex challenges); EOD trailing (Direct, futures)",
+      "profit_target": "10% (1-Step Prime)",
+      "leverage": "Forex accounts up to 50x (2-Step Pro 100x); rulebook per-instrument: FX 50:1, exotics 5:1, indices 10:1, metals 10:1, commodities 2:1, crypto 1:1",
+      "platforms": [
+        "MT5",
+        "cTrader",
+        "TradeLocker",
+        "Match-Trader",
+        "Tradovate",
+        "NinjaTrader",
+        "WealthCharts",
+        "DX Futures"
+      ],
+      "payout_frequency": "Bi-weekly (every 14 days, 3 profitable days) at 80%, monthly at 95% (7 profitable days) or on-demand at 80% (40% consistency), depending on plan/add-on",
+      "first_payout_days": 14,
+      "payout_speed": "within 1 hour of request (after account review of up to 24 business hours)",
+      "min_trading_days": 2,
+      "consistency_rule": "None on Prime/Pro bi-weekly payouts; 40% on on-demand payouts and 2-Step Fly Phase 2; 20% on Direct; 40% on futures",
+      "news_trading": "allowed",
+      "weekend_holding": "allowed",
+      "countries_restricted": [
+        "Afghanistan",
+        "Belarus",
+        "Burundi",
+        "China",
+        "Cuba",
+        "Congo",
+        "Sudan",
+        "Sri Lanka",
+        "North Korea",
+        "Yemen"
+      ],
+      "founded": null,
+      "hq": "Hong Kong",
+      "discount_code": {
+        "code": "SPOOKY40",
+        "value": "40% off forex accounts for new users (Halloween; not on $2K)",
+        "percent": 40,
+        "source": "https://holaprime.com/",
+        "verified": "2026-10-31",
+        "expires": null,
+        "also": [
+          {
+            "code": "SPOOKY20",
+            "value": "20% off",
+            "percent": 20
+          }
+        ]
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.5,
+        "count": 4120
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://holaprime.com/",
+        "https://holaprime.com/forex/prime-challenge/",
+        "https://holaprime.com/forex/pro-challenge/",
+        "https://holaprime.com/forex/direct-account/",
+        "https://holaprime.com/forex/2-step-fly/",
+        "https://holaprime.com/forex/forex-trading-rules/",
+        "https://holaprime.com/futures/1-step-prime/",
+        "https://holaprime.com/futures/direct-account/",
+        "https://holaprime.com/futures/futures-trading-rules/",
+        "https://holaprime.com/forex/trading-platforms/",
+        "https://holaprime.com/futures/trading-platforms/",
+        "https://holaprime.com/forex/scaling/",
+        "https://holaprime.com/best-prop-firm-affiliate-program/",
+        "https://holaprime.com/payout-transparency-report/",
+        "https://www.trustpilot.com/review/holaprime.com"
+      ],
+      "notes": "Site is behind a Vercel bot checkpoint; read via real (headful) Chrome. Fees are list prices; Halloween sale shows 40% off forex accounts for new users with code SPOOKY40 (SPOOKY20 also shown) — temporary. $2K accounts show no discount. Forex plan pages list only $2K-$50K sizes (rulebook account-limit text references $100K/$200K accounts, but none are on sale on plan pages). 2-Step Prime/Pro rules from homepage comparison table (2-Step Prime: swing & news allowed, 50x; 2-Step Pro: 100x, news/weekend restrictions may apply per FAQ). 1-Step Prime: 2% max risk per trade idea on Sim. Funded with mandatory stop loss. EA trading is a +10% add-on on MT5 only; Swap-free +10% add-on. Futures: 1-Step Prime 6% target, EOD trailing 4% (3% on $100K/$150K), 40% consistency, no overnight/weekend holding, 7-day inactivity; futures $100K size referenced in rules but not on sale page. Futures Direct $25K/$50K/$150K labels inferred from matching the futures 1-Step size list (third price card unlabeled in text). HQ: website owned by Hola Prime Limited, Hong Kong; subsidiaries in Cyprus (HE 454359) and Mauritius (FSC licence GB24203729 for MT5 services). Founded year not published (Trustpilot profile claimed Aug 2024). Pass rate disclosed: 25.07% forex, 32.17% futures (Oct 2025-Sep 2026). 2.5% payout processing fee (min $25 Rise/wire, $5 crypto).",
+      "segment": "multi",
+      "also_offers": [
+        "futures"
+      ],
+      "category_basis": "Main product line is simulated forex/CFD challenges on MT5, cTrader, TradeLocker and Match-Trader; a separate futures line runs on Tradovate/NinjaTrader/WealthCharts/DX Futures.",
+      "category_source": "https://holaprime.com/forex/trading-platforms/",
+      "hq_country": {
+        "code": "HK",
+        "source": "https://holaprime.com/",
+        "quote": "Hong Kong"
+      },
+      "max_allocation_usd": 800000,
+      "max_allocation_text": "Combined Forex & Futures allocation capped at $800K (forex $400K; e.g. four $50K, two $100K or one $200K forex accounts); scaling plan up to $4M; some countries capped at $90K",
+      "max_allocation_source": "https://holaprime.com/forex/forex-trading-rules/",
+      "field_sources": {
+        "category": "https://holaprime.com/forex/trading-platforms/",
+        "also_offers": "https://holaprime.com/futures/1-step-prime/",
+        "assets": "https://holaprime.com/forex/forex-trading-rules/",
+        "challenge_types": "https://holaprime.com/",
+        "account_sizes": "https://holaprime.com/forex/prime-challenge/",
+        "programs": "https://holaprime.com/forex/prime-challenge/",
+        "fee_from": "https://holaprime.com/forex/prime-challenge/",
+        "profit_split": "https://holaprime.com/forex/forex-trading-rules/",
+        "profit_split_scale": "https://holaprime.com/forex/forex-trading-rules/",
+        "max_daily_loss": "https://holaprime.com/forex/forex-trading-rules/",
+        "max_drawdown": "https://holaprime.com/forex/forex-trading-rules/",
+        "drawdown_type": "https://holaprime.com/forex/forex-trading-rules/",
+        "profit_target": "https://holaprime.com/forex/forex-trading-rules/",
+        "leverage": "https://holaprime.com/forex/forex-trading-rules/",
+        "platforms": "https://holaprime.com/forex/trading-platforms/",
+        "payout_frequency": "https://holaprime.com/forex/forex-trading-rules/",
+        "first_payout_days": "https://holaprime.com/forex/forex-trading-rules/",
+        "payout_speed": "https://holaprime.com/forex/forex-trading-rules/",
+        "max_allocation": "https://holaprime.com/forex/forex-trading-rules/",
+        "min_trading_days": "https://holaprime.com/forex/forex-trading-rules/",
+        "consistency_rule": "https://holaprime.com/",
+        "news_trading": "https://holaprime.com/forex/forex-trading-rules/",
+        "weekend_holding": "https://holaprime.com/forex/forex-trading-rules/",
+        "countries_restricted": "https://holaprime.com/",
+        "hq": "https://holaprime.com/",
+        "discount_code": "https://holaprime.com/",
+        "trustpilot": "https://www.trustpilot.com/review/holaprime.com"
+      }
+    },
+    {
+      "name": "Fintokei",
+      "slug": "fintokei",
+      "site": "https://www.fintokei.com",
+      "category": "cfd",
+      "assets": [
+        "forex",
+        "indices",
+        "commodities"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step"
+      ],
+      "account_sizes": [
+        5000,
+        10000,
+        20000,
+        50000,
+        100000,
+        200000,
+        400000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "StartTrader",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 34
+            }
+          ],
+          "profit_target": "3%",
+          "max_daily_loss": "2% (first hit = soft breach, second = hard breach)",
+          "max_drawdown": "8%",
+          "drawdown_type": "static",
+          "profit_split": "80% (payouts capped at $400 per account, max 2 payouts)",
+          "min_trading_days": 3
+        },
+        {
+          "name": "SwiftTrader",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 44
+            },
+            {
+              "size": 10000,
+              "fee": 89
+            },
+            {
+              "size": 20000,
+              "fee": 144
+            },
+            {
+              "size": 50000,
+              "fee": 299
+            },
+            {
+              "size": 100000,
+              "fee": 499
+            },
+            {
+              "size": 200000,
+              "fee": 1099
+            }
+          ],
+          "profit_target": "6%",
+          "max_daily_loss": "2%",
+          "max_drawdown": "3%",
+          "drawdown_type": null,
+          "profit_split": "90%",
+          "min_trading_days": 3
+        },
+        {
+          "name": "ProTrader",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 49
+            },
+            {
+              "size": 10000,
+              "fee": 99
+            },
+            {
+              "size": 20000,
+              "fee": 159
+            },
+            {
+              "size": 50000,
+              "fee": 329
+            },
+            {
+              "size": 100000,
+              "fee": 549
+            },
+            {
+              "size": 200000,
+              "fee": 1249
+            },
+            {
+              "size": 400000,
+              "fee": 2599
+            }
+          ],
+          "profit_target": "8% / 6%",
+          "max_daily_loss": "5% (equity-based, from EOD equity)",
+          "max_drawdown": "10%",
+          "drawdown_type": "static",
+          "profit_split": "80%",
+          "min_trading_days": 3
+        },
+        {
+          "name": "ProTrader Swing",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 69
+            },
+            {
+              "size": 10000,
+              "fee": 119
+            },
+            {
+              "size": 20000,
+              "fee": 199
+            },
+            {
+              "size": 50000,
+              "fee": 419
+            },
+            {
+              "size": 100000,
+              "fee": 679
+            },
+            {
+              "size": 200000,
+              "fee": 1499
+            }
+          ],
+          "profit_target": "8% / 6%",
+          "max_daily_loss": "5% (balance-based, from EOD balance)",
+          "max_drawdown": "10%",
+          "drawdown_type": "static",
+          "profit_split": "80%",
+          "min_trading_days": 3
+        }
+      ],
+      "fee_from": 34,
+      "profit_split": "80% up to 90%",
+      "profit_split_scale": "Loyalty Program tiers add a performance reward ratio boost of +5% (Tier 2) up to +20% (Tier 6)",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_target": "8% / 6%",
+      "leverage": "Up to 1:100 on ProTrader (1:100 FX/gold/silver, 1:50 indices, 1:20 rest); StartTrader, SwiftTrader and ProTrader Swing 1:25 FX/gold/silver, 1:20 indices, 1:10 rest",
+      "platforms": [
+        "TradingView",
+        "MT5",
+        "cTrader"
+      ],
+      "payout_frequency": "Every 14 days; first payout once 14 days have passed since the first trade (SwiftTrader also requires min 3% profit per payout)",
+      "first_payout_days": 14,
+      "payout_speed": "Instant Payouts: approval in seconds (avg within 20 sec); Walletory wallet payouts up to $10,000 instant, bank wire/crypto sent within 1 business day",
+      "min_trading_days": 3,
+      "consistency_rule": null,
+      "news_trading": "allowed",
+      "weekend_holding": "allowed",
+      "countries_restricted": [
+        "Afghanistan",
+        "Belarus",
+        "Cuba",
+        "India",
+        "Iran",
+        "Iraq",
+        "Myanmar",
+        "North Korea",
+        "Russia",
+        "Somalia",
+        "South Sudan",
+        "Sudan",
+        "Syria",
+        "USA",
+        "Venezuela",
+        "Yemen",
+        "Bangladesh (temporary)",
+        "China (temporary)",
+        "Pakistan (temporary)",
+        "Vietnam (temporary)"
+      ],
+      "founded": 2022,
+      "hq": "Brno, Czech Republic",
+      "discount_code": {
+        "code": "NEW20",
+        "value": "20% off your first challenge",
+        "percent": 20,
+        "source": "https://www.fintokei.com/",
+        "verified": "2026-10-31",
+        "expires": null,
+        "also": [
+          {
+            "code": "COMBOTRADER",
+            "value": "10% off ProTrader $50K + free $5K ProTrader",
+            "percent": 10
+          }
+        ]
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.3,
+        "count": 1417
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://www.fintokei.com/",
+        "https://www.fintokei.com/starttrader/",
+        "https://www.fintokei.com/swifttrader/",
+        "https://www.fintokei.com/protrader/",
+        "https://www.fintokei.com/protrader-swing/",
+        "https://www.fintokei.com/payouts/",
+        "https://www.fintokei.com/about-us/",
+        "https://www.fintokei.com/loyalty-program/",
+        "https://support.fintokei.com/en/articles/6538884-how-and-how-often-can-i-withdraw-my-performance-rewards-and-what-is-the-minimum-amount",
+        "https://support.fintokei.com/en/articles/6538820-who-can-join-fintokei",
+        "https://support.fintokei.com/en/articles/11904545-when-will-i-receive-my-payout",
+        "https://support.fintokei.com/en/articles/8408430-what-is-the-performance-reward-ratio-on-swifttrader-accounts",
+        "https://support.fintokei.com/en/articles/6538873-what-is-the-performance-reward-ratio-on-protrader-accounts",
+        "https://support.fintokei.com/en/articles/6538886-how-many-accounts-and-open-positions-can-i-have",
+        "https://support.fintokei.com/en/articles/17677670-what-s-new-on-starttrader-from-october-21-2026-soft-breach-payouts-and-purchase-rules",
+        "https://support.fintokei.com/en/articles/6538826-how-are-the-daily-loss-limit-and-maximum-loss-limit-calculated",
+        "https://support.fintokei.com/en/articles/6538829-is-there-any-time-limit",
+        "https://support.fintokei.com/en/articles/6538843-can-trade-any-time-hold-positions-over-weekends-and-trade-during-news",
+        "https://support.fintokei.com/en/articles/11315976-what-is-the-maximum-risk-on-open-trades",
+        "https://www.trustpilot.com/review/fintokei.com"
+      ],
+      "notes": "Prices are list prices taken from the schema.org Offer data and the rendered price cells on each program page (USD; accounts also available in EUR, JPY, CZK). Public promos on 2026-10-31: NEW20 (20% off first challenge, homepage banner), COMBOTRADER (10% off ProTrader $50K + free $5K ProTrader). StartTrader rules changed for purchases from 2026-10-21 (1 phase, 3% target, 2% daily loss with one soft breach, 8% max loss, 80% flat, $400 lifetime payout cap, only for new clients, max 2 purchases). SwiftTrader rules for accounts bought after 2026-07-15 (90% reward, 60-day limit, min profit per payout 3%); SwiftTrader drawdown type not confirmed (help centre uses a High-Water Mark concept, rules article content is tabbed and not extracted) -> null. Older help article on loss limits still cites 3%/6% for StartTrader/SwiftTrader; program pages (2%/8% and 2%/3%) used instead. Max allowed risk on open trades 3% applies to all programs. Consistency rule: none published as a standing rule for main programs; help centre mentions consistency restrictions may be applied by risk management -> null. Crypto: FAQ says 'we currently don't offer crypto or stock trading', though the Swing leverage line and a help article mention crypto CFDs; treated as no crypto (no crypto file). Also restricted for NEW purchases: Cambodia, Ethiopia, Ghana, Indonesia, Kenya, MALAYSIA, Morocco, Nigeria, Philippines, Saudi Arabia, Senegal, South Africa, Thailand, Turkiye, Ukraine, UAE. Founded = 2022 launch in Japan per About page (Purple Group dates to 2007). Legal entity Fintokei a.s. (ICO 09110127), Brno; platform infrastructure by AXSE Brokerage Ltd (Seychelles). Trustpilot scraped via headless browser (HTTP 403 status but page rendered: 4.3 from 1,417 reviews).",
+      "segment": "forex",
+      "also_offers": [],
+      "category_basis": "Sells simulated CFD evaluation accounts (forex, metals, energies, indices) on TradingView, MetaTrader 5 and cTrader via Purple Trading infrastructure.",
+      "category_source": "https://www.fintokei.com/",
+      "founded_source": "https://www.fintokei.com/about-us/",
+      "hq_country": {
+        "code": "CZ",
+        "source": "https://www.fintokei.com/",
+        "quote": "Brno, Czech Republic"
+      },
+      "max_allocation_usd": 400000,
+      "max_allocation_text": "ProTrader + ProTrader Swing combined 400,000 USD/EUR; SwiftTrader 200,000; StartTrader 100,000 (funded phase); can be exceeded only via Loyalty Program Capital Scaling Boost",
+      "max_allocation_source": "https://support.fintokei.com/en/articles/6538886-how-many-accounts-and-open-positions-can-i-have",
+      "field_sources": {
+        "name": "https://www.fintokei.com/",
+        "site": "https://www.fintokei.com/",
+        "category": "https://www.fintokei.com/",
+        "category_basis": "https://www.fintokei.com/",
+        "segment": "https://www.fintokei.com/",
+        "assets": "https://www.fintokei.com/",
+        "challenge_types": "https://www.fintokei.com/",
+        "account_sizes": "https://www.fintokei.com/",
+        "fee_currency": "https://www.fintokei.com/protrader/",
+        "programs": "https://www.fintokei.com/protrader/",
+        "programs.StartTrader": "https://www.fintokei.com/starttrader/",
+        "programs.StartTrader.rules": "https://support.fintokei.com/en/articles/17677670-what-s-new-on-starttrader-from-october-21-2026-soft-breach-payouts-and-purchase-rules",
+        "programs.SwiftTrader": "https://www.fintokei.com/swifttrader/",
+        "programs.SwiftTrader.profit_split": "https://support.fintokei.com/en/articles/8408430-what-is-the-performance-reward-ratio-on-swifttrader-accounts",
+        "programs.ProTrader": "https://www.fintokei.com/protrader/",
+        "programs.ProTrader.drawdown_type": "https://support.fintokei.com/en/articles/6538826-how-are-the-daily-loss-limit-and-maximum-loss-limit-calculated",
+        "programs.ProTrader Swing": "https://www.fintokei.com/protrader-swing/",
+        "programs.ProTrader Swing.max_daily_loss": "https://support.fintokei.com/en/articles/6538826-how-are-the-daily-loss-limit-and-maximum-loss-limit-calculated",
+        "fee_from": "https://www.fintokei.com/starttrader/",
+        "profit_split": "https://www.fintokei.com/",
+        "profit_split_scale": "https://www.fintokei.com/loyalty-program/",
+        "max_daily_loss": "https://www.fintokei.com/protrader/",
+        "max_drawdown": "https://www.fintokei.com/protrader/",
+        "drawdown_type": "https://support.fintokei.com/en/articles/6538826-how-are-the-daily-loss-limit-and-maximum-loss-limit-calculated",
+        "profit_target": "https://www.fintokei.com/protrader/",
+        "leverage": "https://www.fintokei.com/protrader/",
+        "leverage.other_programs": "https://www.fintokei.com/starttrader/",
+        "platforms": "https://www.fintokei.com/",
+        "payout_frequency": "https://support.fintokei.com/en/articles/6538884-how-and-how-often-can-i-withdraw-my-performance-rewards-and-what-is-the-minimum-amount",
+        "first_payout_days": "https://support.fintokei.com/en/articles/6538884-how-and-how-often-can-i-withdraw-my-performance-rewards-and-what-is-the-minimum-amount",
+        "payout_speed": "https://support.fintokei.com/en/articles/11904545-when-will-i-receive-my-payout",
+        "max_allocation": "https://support.fintokei.com/en/articles/6538886-how-many-accounts-and-open-positions-can-i-have",
+        "max_allocation_text": "https://support.fintokei.com/en/articles/6538886-how-many-accounts-and-open-positions-can-i-have",
+        "min_trading_days": "https://www.fintokei.com/protrader/",
+        "news_trading": "https://support.fintokei.com/en/articles/6538843-can-trade-any-time-hold-positions-over-weekends-and-trade-during-news",
+        "weekend_holding": "https://support.fintokei.com/en/articles/6538843-can-trade-any-time-hold-positions-over-weekends-and-trade-during-news",
+        "countries_restricted": "https://support.fintokei.com/en/articles/6538820-who-can-join-fintokei",
+        "founded": "https://www.fintokei.com/about-us/",
+        "hq": "https://www.fintokei.com/",
+        "hq_country": "https://www.fintokei.com/",
+        "discount_code": "https://www.fintokei.com/",
+        "trustpilot": "https://www.trustpilot.com/review/fintokei.com"
+      }
+    },
+    {
+      "name": "The Trading Pit",
+      "slug": "the-trading-pit",
+      "site": "https://www.thetradingpit.com",
+      "category": "cfd",
+      "assets": [
+        "forex",
+        "indices",
+        "commodities",
+        "crypto",
+        "stocks",
+        "futures"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step",
+        "instant"
+      ],
+      "account_sizes": [
+        2500,
+        5000,
+        10000,
+        20000,
+        25000,
+        50000,
+        100000,
+        150000,
+        200000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "CFD Prime 1-Phase",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 2500,
+              "fee": 29
+            },
+            {
+              "size": 5000,
+              "fee": 49
+            },
+            {
+              "size": 10000,
+              "fee": 99
+            },
+            {
+              "size": 20000,
+              "fee": 199
+            },
+            {
+              "size": 50000,
+              "fee": 349
+            },
+            {
+              "size": 100000,
+              "fee": 569
+            },
+            {
+              "size": 200000,
+              "fee": 1139
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "6%",
+          "drawdown_type": "static ($100K/$200K: trailing on EOD balance, locks at starting balance)",
+          "profit_split": "80%",
+          "min_trading_days": 3
+        },
+        {
+          "name": "CFD Prime 2-Phase",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 2500,
+              "fee": 29
+            },
+            {
+              "size": 5000,
+              "fee": 49
+            },
+            {
+              "size": 10000,
+              "fee": 99
+            },
+            {
+              "size": 20000,
+              "fee": 199
+            },
+            {
+              "size": 50000,
+              "fee": 349
+            },
+            {
+              "size": 100000,
+              "fee": 569
+            }
+          ],
+          "profit_target": "10% / 5%",
+          "max_daily_loss": "5% ($2.5K–$20K); 4% ($50K–$100K)",
+          "max_drawdown": "10% ($2.5K–$20K); 8% ($50K–$100K)",
+          "drawdown_type": "static ($100K: trailing on EOD balance, locks at starting balance)",
+          "profit_split": "80%",
+          "min_trading_days": 3
+        },
+        {
+          "name": "CFD Instant",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 112
+            },
+            {
+              "size": 10000,
+              "fee": 224
+            },
+            {
+              "size": 20000,
+              "fee": 440
+            },
+            {
+              "size": 50000,
+              "fee": 800
+            },
+            {
+              "size": 100000,
+              "fee": 1440
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": "none",
+          "max_drawdown": "6%",
+          "drawdown_type": "trailing (highest balance, locks at starting balance)",
+          "profit_split": "80%",
+          "min_trading_days": null
+        },
+        {
+          "name": "Futures Prime",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 50000,
+              "fee": 99
+            },
+            {
+              "size": 100000,
+              "fee": 189
+            },
+            {
+              "size": 150000,
+              "fee": 289
+            }
+          ],
+          "profit_target": "6% ($3,000 / $6,000 / $9,000)",
+          "max_daily_loss": "Daily Pause $1,000 / $2,000 / $3,000 (challenge only)",
+          "max_drawdown": "$2,000 / $3,000 / $4,500",
+          "drawdown_type": "EOD trailing, locks at starting balance",
+          "profit_split": "80%",
+          "min_trading_days": 3
+        },
+        {
+          "name": "Futures Instant",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 50000,
+              "fee": 499
+            },
+            {
+              "size": 100000,
+              "fee": 699
+            }
+          ],
+          "profit_target": "$3,000 / $6,000 per payout cycle",
+          "max_daily_loss": "Dynamic Daily Pause from $1,200 / $2,200",
+          "max_drawdown": "$2,000 / $3,500",
+          "drawdown_type": "EOD trailing, locks at starting balance",
+          "profit_split": "90%",
+          "min_trading_days": 5
+        },
+        {
+          "name": "Stocks Challenge",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 95
+            },
+            {
+              "size": 50000,
+              "fee": 225
+            }
+          ],
+          "profit_target": "6%",
+          "max_daily_loss": "2% (Daily Pause)",
+          "max_drawdown": "4%",
+          "drawdown_type": "EOD trailing, locks at starting balance",
+          "profit_split": "70%",
+          "min_trading_days": 3
+        }
+      ],
+      "fee_from": 29,
+      "profit_split": "80% up to 90%",
+      "profit_split_scale": null,
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static",
+      "profit_target": "10%",
+      "leverage": "up to 1:50",
+      "platforms": [
+        "MT5",
+        "cTrader",
+        "TradingView",
+        "Tradovate",
+        "NinjaTrader",
+        "Rithmic",
+        "Quantower",
+        "ATAS",
+        "Volsys",
+        "DeepCharts",
+        "Volumetrica"
+      ],
+      "payout_frequency": "CFD Prime: first reward 14 days after receiving the Earning Account, then every 14 days (min $100); Futures Prime every 7 days after 5 profitable days of $150+; Futures Instant every 5 days after 5 trading days; Stocks every 14 days",
+      "first_payout_days": 14,
+      "payout_speed": "Requests processed within 24h on business days; crypto same day, SEPA 1–3 business days, SWIFT 5–7 business days",
+      "min_trading_days": 3,
+      "consistency_rule": "CFD Prime 1-Phase $100K/$200K: best day ≤50% of positive days' profit; CFD Instant: best day ≤30%/25%/20% of profit by size; Futures Prime and Stocks challenge: 40% (raises target); Futures Instant: 20%",
+      "news_trading": "restricted",
+      "weekend_holding": "restricted",
+      "countries_restricted": [
+        "Burundi",
+        "Cuba",
+        "Iran",
+        "North Korea",
+        "South Sudan",
+        "Sudan"
+      ],
+      "founded": null,
+      "hq": "Vaduz, Liechtenstein",
+      "discount_code": null,
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": null,
+        "count": 1085,
+        "note": "Rating unavailable: Trustpilot says it removed fake reviews for this company (breach of its guidelines)",
+        "checked": "2026-10-31",
+        "source": "https://www.trustpilot.com/review/thetradingpit.com"
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://www.thetradingpit.com/",
+        "https://www.thetradingpit.com/cfds-prop-trading",
+        "https://www.thetradingpit.com/futures",
+        "https://www.thetradingpit.com/stocks",
+        "https://www.thetradingpit.com/about-us",
+        "https://support.thetradingpit.com/en/articles/835084-cfd-prime-rules",
+        "https://support.thetradingpit.com/en/articles/835380-cfd-instant-rules",
+        "https://support.thetradingpit.com/en/articles/836071-futures-prime-rules",
+        "https://support.thetradingpit.com/en/articles/857316-futures-instant-rules",
+        "https://support.thetradingpit.com/en/articles/836375-stocks-rules",
+        "https://support.thetradingpit.com/en/articles/835065-eligibility-requirements",
+        "https://support.thetradingpit.com/en/articles/835083-cfd-prime-how-it-works",
+        "https://support.thetradingpit.com/en/articles/835093-cfd-prime-rewards",
+        "https://support.thetradingpit.com/en/articles/835334-cfd-prime-platforms-trading-conditions",
+        "https://support.thetradingpit.com/en/articles/835431-cfd-instant-rewards",
+        "https://support.thetradingpit.com/en/articles/836068-futures-prime-how-it-works",
+        "https://support.thetradingpit.com/en/articles/836079-futures-prime-rewards",
+        "https://support.thetradingpit.com/en/articles/836080-futures-prime-platforms-conditions",
+        "https://support.thetradingpit.com/en/articles/857315-futures-instant-how-it-works",
+        "https://support.thetradingpit.com/en/articles/857320-futures-instant-rewards",
+        "https://support.thetradingpit.com/en/articles/857324-futures-instant-platforms-trading-conditions",
+        "https://support.thetradingpit.com/en/articles/836370-stocks-how-it-works",
+        "https://support.thetradingpit.com/en/articles/836378-stocks-rewards",
+        "https://support.thetradingpit.com/en/articles/836379-stocks-platform-conditions",
+        "https://www.trustpilot.com/review/thetradingpit.com"
+      ],
+      "notes": "Prices are list prices captured by clicking every program/size tab on the product pages (2026-10-31). Homepage ran a Halloween '50% OFF' promo (Oct 30–Nov 1) with the code only revealed in Discord, so discount_code=null. CFD Prime 2-Phase not offered at $200K. Headline rule fields = CFD Prime 1-Phase (the widget default). CFD Instant leverage is lower (FX 1:30, indices/commodities 1:7.5); CFD Prime FX 1:50, indices 1:15, commodities 1:10, crypto/stocks 1:2. News: allowed on CFD up to $50K, banned within ±2 min of high-impact news on $100K/$200K; allowed on futures, stocks and CFD Instant. Weekend holding: allowed on CFD Prime; CFD Instant closes commodities/metals/energies/crypto before the weekend; futures and stocks are intraday-only. Futures Prime requires 3 trading days to pass; CFD requires 3 profitable days (≥0.5% each). CFDs not offered to residents of USA, Canada and Russia (homepage disclaimer); futures unavailable in ~29 further countries incl. Russia, Iraq, Belarus (help centre). The countries_restricted list is the full no-service list. Stocks: the product page shows 6% target / 4% max DD / $95 & $225, but the help article says 7% / 5% / €99/$99; the product page values are used. founded=null: their own site gives no year (Trustpilot's company-written blurb says Feb 2022, which is not used per sourcing rules). Majority-owned by Pinorena Capital (Illimar Mattus). Trustpilot: 'rating unavailable due to a breach of our guidelines' with a note that fake reviews were removed; 1,085 reviews, 68% 5-star / 22% 1-star; the latest review (29 Oct 2026) complains about profits removed on consistency grounds. trustpilot=null. Homepage claims $18M+ in rewards and 10,000+ active monthly accounts.",
+      "segment": "multi",
+      "also_offers": [
+        "futures"
+      ],
+      "category_basis": "Main product line is CFD Prime (1- and 2-phase challenges, $2.5K–$200K) plus CFD Instant on cTrader/MT5; it also sells CME futures (Futures Prime/Instant) and a US stocks challenge.",
+      "category_source": "https://www.thetradingpit.com/cfds-prop-trading",
+      "hq_country": {
+        "code": "LI",
+        "source": "https://www.thetradingpit.com/",
+        "quote": "Vaduz, Liechtenstein"
+      },
+      "max_allocation_usd": 400000,
+      "max_allocation_text": "CFD Earning Phase: max 8 active Earning Accounts with a combined initial balance cap of $400,000",
+      "max_allocation_source": "https://support.thetradingpit.com/en/articles/835084-cfd-prime-rules",
+      "field_sources": {
+        "name": "https://www.thetradingpit.com/",
+        "site": "https://www.thetradingpit.com/",
+        "category": "https://www.thetradingpit.com/cfds-prop-trading",
+        "also_offers": "https://www.thetradingpit.com/futures",
+        "segment": "https://www.thetradingpit.com/cfds-prop-trading",
+        "assets": "https://www.thetradingpit.com/cfds-prop-trading",
+        "challenge_types": "https://www.thetradingpit.com/cfds-prop-trading",
+        "account_sizes": "https://www.thetradingpit.com/cfds-prop-trading",
+        "fee_currency": "https://www.thetradingpit.com/cfds-prop-trading",
+        "programs": "https://www.thetradingpit.com/cfds-prop-trading",
+        "programs.Futures Prime": "https://www.thetradingpit.com/futures",
+        "programs.Futures Instant": "https://www.thetradingpit.com/futures",
+        "programs.Stocks Challenge": "https://www.thetradingpit.com/stocks",
+        "fee_from": "https://www.thetradingpit.com/cfds-prop-trading",
+        "profit_split": "https://support.thetradingpit.com/en/articles/857315-futures-instant-how-it-works",
+        "max_daily_loss": "https://www.thetradingpit.com/cfds-prop-trading",
+        "max_drawdown": "https://www.thetradingpit.com/cfds-prop-trading",
+        "drawdown_type": "https://www.thetradingpit.com/cfds-prop-trading",
+        "profit_target": "https://www.thetradingpit.com/cfds-prop-trading",
+        "leverage": "https://support.thetradingpit.com/en/articles/835334-cfd-prime-platforms-trading-conditions",
+        "platforms": "https://support.thetradingpit.com/en/articles/835334-cfd-prime-platforms-trading-conditions",
+        "platforms.futures": "https://support.thetradingpit.com/en/articles/836080-futures-prime-platforms-conditions",
+        "platforms.DeepCharts": "https://support.thetradingpit.com/en/articles/857315-futures-instant-how-it-works",
+        "platforms.Volumetrica": "https://support.thetradingpit.com/en/articles/836379-stocks-platform-conditions",
+        "payout_frequency": "https://support.thetradingpit.com/en/articles/835093-cfd-prime-rewards",
+        "first_payout_days": "https://support.thetradingpit.com/en/articles/835093-cfd-prime-rewards",
+        "payout_speed": "https://support.thetradingpit.com/en/articles/835093-cfd-prime-rewards",
+        "max_allocation": "https://support.thetradingpit.com/en/articles/835084-cfd-prime-rules",
+        "max_allocation_text": "https://support.thetradingpit.com/en/articles/835084-cfd-prime-rules",
+        "min_trading_days": "https://support.thetradingpit.com/en/articles/835084-cfd-prime-rules",
+        "consistency_rule": "https://support.thetradingpit.com/en/articles/835084-cfd-prime-rules",
+        "news_trading": "https://support.thetradingpit.com/en/articles/835084-cfd-prime-rules",
+        "weekend_holding": "https://support.thetradingpit.com/en/articles/835380-cfd-instant-rules",
+        "countries_restricted": "https://support.thetradingpit.com/en/articles/835065-eligibility-requirements",
+        "hq": "https://www.thetradingpit.com/",
+        "hq_country": "https://www.thetradingpit.com/"
+      }
     }
   ]
 }

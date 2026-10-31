@@ -1,0 +1,199 @@
+{
+  "name": "Tradeify",
+  "slug": "tradeify",
+  "site": "https://tradeify.co",
+  "category": "futures",
+  "assets": [
+    "futures"
+  ],
+  "challenge_types": [
+    "1-step",
+    "instant"
+  ],
+  "account_sizes": [
+    25000,
+    50000,
+    100000,
+    150000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "Select Evaluation (Flex or Daily funded path)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 109
+        },
+        {
+          "size": 50000,
+          "fee": 165
+        },
+        {
+          "size": 100000,
+          "fee": 265
+        },
+        {
+          "size": 150000,
+          "fee": 369
+        }
+      ],
+      "profit_target": "$1,500/$3,000/$6,000/$9,000",
+      "max_daily_loss": "none in eval; funded Daily path $500/$1,000/$1,250/$1,750, Flex path none",
+      "max_drawdown": "$1,000/$2,000/$3,000/$4,500 (funded Daily path $1,000/$2,000/$2,500/$3,500)",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "90%",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Growth Evaluation",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 99
+        },
+        {
+          "size": 50000,
+          "fee": 145
+        },
+        {
+          "size": 100000,
+          "fee": 255
+        },
+        {
+          "size": 150000,
+          "fee": 369
+        }
+      ],
+      "profit_target": "$1,500/$3,000/$6,000/$9,000",
+      "max_daily_loss": "$600/$1,250/$2,500/$3,750",
+      "max_drawdown": "$1,000/$2,000/$3,500/$5,000",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "90%",
+      "min_trading_days": 1
+    },
+    {
+      "name": "Lightning Funded (instant)",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 345
+        },
+        {
+          "size": 50000,
+          "fee": 492
+        },
+        {
+          "size": 100000,
+          "fee": 660
+        },
+        {
+          "size": 150000,
+          "fee": 796
+        }
+      ],
+      "profit_target": "profit goal per payout (no evaluation)",
+      "max_daily_loss": "none/$1,250/$2,500/$3,000",
+      "max_drawdown": "$1,000/$2,000/$4,000/$5,250",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "90%",
+      "min_trading_days": null
+    }
+  ],
+  "fee_from": 99,
+  "profit_split": "90%",
+  "profit_split_scale": "Sim funded 90/10; Elite Live accounts 80/20 with daily payouts",
+  "max_daily_loss": "none (Select eval) / $600-$3,750 (Growth)",
+  "max_drawdown": "$1,000-$5,250",
+  "drawdown_type": "EOD trailing",
+  "profit_target": "6% ($1,500/$3,000/$6,000/$9,000)",
+  "leverage": null,
+  "platforms": [
+    "Tradovate",
+    "NinjaTrader",
+    "TradingView",
+    "Rithmic",
+    "Tradesea",
+    "Quantower",
+    "Sierra Chart",
+    "R|Trader",
+    "WealthCharts"
+  ],
+  "payout_frequency": "Select Daily: daily payout requests; Select Flex: every 5 winning days; Growth: every 5 profitable days; Lightning: no day minimum (profit goal + 20%→25%→30% consistency)",
+  "first_payout_days": 4,
+  "payout_speed": "usually within 24h once Rise onboarding complete (up to 72h over weekends); homepage advertises '1 hour payouts'",
+  "min_trading_days": null,
+  "consistency_rule": "Select eval 40%; Growth funded 35%; Lightning 20% (1st payout) → 25% → 30%; Select funded none",
+  "news_trading": "allowed",
+  "weekend_holding": "banned",
+  "countries_restricted": null,
+  "founded": null,
+  "hq": "Boca Raton, FL, United States",
+  "discount_code": {
+    "code": "GEMS",
+    "value": "30% off (Halloween, ends 31 Oct 2026 11:59 PM EST)",
+    "percent": 30,
+    "source": "https://tradeify.co/",
+    "verified": "2026-10-31",
+    "expires": "2026-10-31"
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 4.5,
+    "count": 6467
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://tradeify.co/",
+    "https://help.tradeify.co/en/articles/10468265-which-plan-is-right-for-you",
+    "https://help.tradeify.co/en/articles/12268494-common-faqs",
+    "https://help.tradeify.co/en/articles/12268167-essential-trading-rules-overview",
+    "https://help.tradeify.co/en/articles/10468318-guidelines-for-traders",
+    "https://tradeify.co/become-an-affiliate",
+    "https://www.tradeifyfx.co/",
+    "https://www.tradeifyperps.co/",
+    "https://www.trustpilot.com/review/tradeify.co"
+  ],
+  "notes": "List prices from tradeify.co plan cards; Halloween promo 30% off with code GEMS (ends 31 Oct 2026 11:59PM EST) - e.g. Select 50K $165 -> $116. Help article also mentions a Select 300K ($349, $14,000 target) not shown on homepage cards - excluded pending confirmation. 'Pass in 1 day' (Growth) / 'Pass in 3 days' (Select). Funded payouts need >50% of trades and profit from trades held >10s (microscalping rule). Positions must be closed by 4:45 PM ET; no weekend trading. Also offers Tradeify FX (tradeifyfx.co, MT5 forex, 5K+ accounts, 80% split, 1:100) and Tradeify 247/Perps (crypto, separate brand, beta sign-up) - not covered here. Elite Live program after 3 payouts on one account. Tradeify Brokerage LLC d/b/a Slay Markets is a CFTC-registered IB. Restricted-country list not published (help mentions KYC-before-funding for Brazil, China, Italy, Mexico, Romania, South Korea, Spain, Taiwan, Thailand, UAE). Homepage stats: $350M+ verified payouts, 0% payout denials, 100,000+ traders.",
+  "segment": "futures",
+  "also_offers": [
+    "cfd"
+  ],
+  "category_basis": "Core product is one-time-fee CME futures evaluations and instant-funded accounts on Tradovate, Rithmic or WealthCharts; a separate Tradeify FX brand sells MT5 forex accounts.",
+  "category_source": "https://help.tradeify.co/en/articles/12268494-common-faqs",
+  "hq_country": {
+    "code": "US",
+    "source": "https://tradeify.co/",
+    "quote": "Boca Raton, FL, United States"
+  },
+  "max_allocation_usd": 750000,
+  "max_allocation_text": "'Trade with $750K funding' (homepage); max 5 funded accounts per household",
+  "max_allocation_source": "https://tradeify.co/",
+  "field_sources": {
+    "programs": "https://tradeify.co/",
+    "account_sizes": "https://tradeify.co/",
+    "fee_from": "https://tradeify.co/",
+    "profit_split": "https://help.tradeify.co/en/articles/12268494-common-faqs",
+    "profit_split_scale": "https://help.tradeify.co/en/articles/12268494-common-faqs",
+    "platforms": "https://help.tradeify.co/en/articles/12268494-common-faqs",
+    "payout_frequency": "https://help.tradeify.co/en/articles/12268167-essential-trading-rules-overview",
+    "first_payout_days": "https://tradeify.co/",
+    "payout_speed": "https://help.tradeify.co/en/articles/12268494-common-faqs",
+    "max_allocation": "https://tradeify.co/",
+    "max_allocation_text": "https://tradeify.co/",
+    "consistency_rule": "https://help.tradeify.co/en/articles/10468265-which-plan-is-right-for-you",
+    "news_trading": "https://help.tradeify.co/en/articles/12268494-common-faqs",
+    "weekend_holding": "https://help.tradeify.co/en/articles/12268494-common-faqs",
+    "hq": "https://tradeify.co/",
+    "discount_code": "https://tradeify.co/",
+    "trustpilot": "https://www.trustpilot.com/review/tradeify.co",
+    "category": "https://help.tradeify.co/en/articles/12268494-common-faqs",
+    "also_offers": "https://www.tradeifyfx.co/",
+    "max_daily_loss": "https://help.tradeify.co/en/articles/12268167-essential-trading-rules-overview",
+    "drawdown_type": "https://help.tradeify.co/en/articles/12268167-essential-trading-rules-overview",
+    "profit_target": "https://help.tradeify.co/en/articles/10468265-which-plan-is-right-for-you"
+  }
+}

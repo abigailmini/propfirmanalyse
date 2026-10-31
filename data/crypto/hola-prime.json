@@ -1,0 +1,27 @@
+{
+  "crypto_pairs": null,
+  "crypto_pairs_examples": [],
+  "crypto_leverage": "1:1 (forex accounts rulebook)",
+  "crypto_venue": "MT5 / cTrader / TradeLocker / Match-Trader CFD (simulated)",
+  "instrument_type": "CFD",
+  "weekend_crypto": null,
+  "payout_methods": [
+    "Bank Wire",
+    "Crypto",
+    "Rise"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": true,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": "2% max risk per trade idea on Sim. Funded (stop loss mandatory)",
+  "banned_strategies": [],
+  "bots_allowed": "restricted",
+  "copy_trading": true,
+  "crypto_fees": null,
+  "notes": "Forex-first multi-asset firm; crypto only as CFDs at 1:1 leverage per the forex rulebook. Instrument list not read in detail; crypto symbol count unknown.",
+  "sources": [
+    "https://holaprime.com/forex/forex-trading-rules/",
+    "https://holaprime.com/forex/trading-platforms/"
+  ],
+  "checked": "2026-10-31"
+}

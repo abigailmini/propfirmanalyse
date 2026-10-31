@@ -1,0 +1,46 @@
+{
+  "crypto_pairs": 11,
+  "crypto_pairs_examples": [
+    "BTCUSD",
+    "ETHUSD",
+    "XRPUSD",
+    "LTCUSD",
+    "ADAUSD"
+  ],
+  "crypto_leverage": "1:2",
+  "crypto_venue": "Simulated CFD accounts on cTrader / MT5 (TTPMarkets server); Futures Prime also lists CME micro crypto futures (MBT, MET)",
+  "instrument_type": "CFD",
+  "weekend_crypto": true,
+  "payout_methods": [
+    "Bank wire (SWIFT)",
+    "SEPA transfer",
+    "Crypto"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": true,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": "CFD Prime: margin ≤40% and risk ≤1.5% of initial balance per trade idea (older accounts and 1-Phase $100K/$200K); CFD Instant: max position loss 1%/0.5% per symbol",
+  "banned_strategies": [
+    "gap trading",
+    "grid",
+    "martingale",
+    "high-frequency trading",
+    "gambling / overleveraging",
+    "hedging across accounts",
+    "copying other people's signals"
+  ],
+  "bots_allowed": "restricted",
+  "copy_trading": true,
+  "crypto_fees": "0.20% commission on crypto CFDs; 3-day swap charged Friday",
+  "notes": "The CFD product page lists 11 crypto CFDs (ADA, BCH, BTC, DOGE, DOT, EOS, ETH, LINK, LTC, XLM, XRP vs USD). The CFD Instant help article also names AVAX, MATIC, SOL, SUI and TRUMP. Crypto trades 7 days a week on select platforms (CFD Prime, since 7 Jul 2025), but CFD Instant closes crypto positions before the weekend, so weekend_crypto=true applies to Prime only. EAs are allowed with limits. Copy trading is allowed only between your own accounts.",
+  "sources": [
+    "https://www.thetradingpit.com/cfds-prop-trading",
+    "https://support.thetradingpit.com/en/articles/835334-cfd-prime-platforms-trading-conditions",
+    "https://support.thetradingpit.com/en/articles/835084-cfd-prime-rules",
+    "https://support.thetradingpit.com/en/articles/835380-cfd-instant-rules",
+    "https://support.thetradingpit.com/en/articles/835093-cfd-prime-rewards",
+    "https://support.thetradingpit.com/en/articles/835065-eligibility-requirements",
+    "https://support.thetradingpit.com/en/articles/836080-futures-prime-platforms-conditions"
+  ],
+  "checked": "2026-10-31"
+}

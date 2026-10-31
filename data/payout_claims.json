@@ -121,6 +121,48 @@
    "value_usd": null,
    "source": "https://instantfunding.com/",
    "proof": null
+  },
+  "fxify": {
+   "text": "$40M+ Paid out",
+   "value_usd": 40000000,
+   "source": "https://fxify.com/",
+   "proof": "Homepage payouts section: '$40M+ Paid out', '$117,000 Single highest payout', '250K+ Payouts Made'"
+  },
+  "lucid-trading": {
+   "text": "$700M+ earned by traders",
+   "value_usd": 700000000,
+   "source": "https://lucidtrading.com/",
+   "proof": "Homepage stat block: '$700M+ earned by traders', '500K+ traders in the trenches', '15ish min from request to bank'"
+  },
+  "tradeify": {
+   "text": "$350M+ Verified Payouts",
+   "value_usd": 350000000,
+   "source": "https://tradeify.co/",
+   "proof": "Homepage stat row: '$350M+ Verified Payouts', '0% Payout Denials', '100,000+ Happy Traders'; also 'Over $350 million in verified payouts'"
+  },
+  "propr": {
+   "text": "TOTAL PAYOUTS $3.53M",
+   "value_usd": 3530000,
+   "source": "https://www.propr.xyz/transparency",
+   "proof": "Transparency dashboard overview tile; homepage also shows '$1,226,207 paid out in last 30 days'"
+  },
+  "hola-prime": {
+   "text": "Payouts so far $10M+",
+   "value_usd": 10000000,
+   "source": "https://holaprime.com/",
+   "proof": "Homepage hero stat ('$10M+ paid to traders. Zero denials.'); payout transparency report page text still says 'more than $7 million'"
+  },
+  "fintokei": {
+   "text": "$ 13 135 105 Cumulative payouts 2025",
+   "value_usd": 13135105,
+   "source": "https://www.fintokei.com/payouts/",
+   "proof": "Payouts and About pages stat block: 'Cumulative payouts 2025' alongside '$ 2 649 Average payout 2025' (internal data from 1 Jan 2025)"
+  },
+  "the-trading-pit": {
+   "text": "$18M+ in Rewards",
+   "value_usd": 18000000,
+   "source": "https://www.thetradingpit.com/",
+   "proof": "Homepage stats strip: '10,000+ Active Monthly Accounts', '$18M+ in Rewards', '450K+ Trades Monthly'"
   }
  }
 }

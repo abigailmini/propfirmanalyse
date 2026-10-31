@@ -67,6 +67,19 @@ PAIRS += [("apex-trader-funding", "bulenox"), ("topstep", "bulenox"), ("myfunded
           ("the5ers", "e8-markets"), ("fundingpips", "maven-trading"), ("goat-funded-trader", "fundingpips"), ("blue-guardian", "fundingpips"),
           ("ftmo", "goat-funded-trader"), ("fundednext", "alpha-capital"), ("ftmo", "blue-guardian"), ("fundednext", "goat-funded-trader"),
           ("bitfunded", "hyrotrader"), ("bitfunded", "breakout-prop"), ("bitfunded", "crypto-fund-trader")]
+# 2026-10-31 expansion: most-searched same-account-type rivals of the new firms (pairs whose firms are not listed are dropped in build.py)
+PAIRS += [("lucid-trading", "tradeify"), ("fxify", "ftmo"), ("take-profit-trader", "topstep"),
+          ("lucid-trading", "apex-trader-funding"), ("lucid-trading", "topstep"), ("tradeify", "apex-trader-funding"), ("tradeify", "topstep"),
+          ("take-profit-trader", "apex-trader-funding"), ("take-profit-trader", "myfundedfutures"), ("fxify", "fundednext"), ("fxify", "the5ers"),
+          ("propr", "hyrotrader"), ("propr", "fundedxyz"), ("propr", "breakout-prop"), ("hola-prime", "fundingpips"), ("hola-prime", "ftmo"),
+          ("fintokei", "ftmo"), ("fintokei", "the5ers"), ("the-trading-pit", "ftmo"), ("the-trading-pit", "fundednext"),
+          ("brightfunded", "ftmo"), ("brightfunded", "fundingpips"), ("city-traders-imperium", "ftmo"), ("city-traders-imperium", "the5ers"),
+          ("atlas-funded", "ftmo"), ("atlas-funded", "fundednext"), ("ment-funding", "ftmo"), ("for-traders", "ftmo"), ("for-traders", "fundednext"),
+          ("thinkcapital", "ftmo"), ("thinkcapital", "fundednext"), ("finotive-funding", "ftmo"), ("finotive-funding", "fundingpips"),
+          ("funded-trading-plus", "ftmo"), ("funded-trading-plus", "the5ers"), ("earn2trade", "topstep"), ("earn2trade", "apex-trader-funding"),
+          ("earn2trade", "take-profit-trader"), ("elite-trader-funding", "apex-trader-funding"), ("elite-trader-funding", "topstep"),
+          ("topone-futures", "apex-trader-funding"), ("topone-futures", "topstep"), ("fondeo", "hyrotrader"), ("fondeo", "fundedxyz"),
+          ("mubite", "hyrotrader"), ("mubite", "breakout-prop"), ("propw", "hyrotrader"), ("propw", "crypto-fund-trader")]
 def pair_group(a): return CAT_LABEL.get(BY[a].get("category"), "Other") + " prop firms"
 def pairs_of(slug): return [(a, b) for a, b in PAIRS if slug in (a, b) and a in BY and b in BY]
 

@@ -1,0 +1,461 @@
+{
+  "name": "FXIFY",
+  "slug": "fxify",
+  "site": "https://fxify.com",
+  "category": "cfd",
+  "assets": [
+    "forex",
+    "indices",
+    "commodities",
+    "crypto",
+    "stocks",
+    "futures"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step",
+    "3-step",
+    "instant"
+  ],
+  "account_sizes": [
+    1000,
+    2500,
+    5000,
+    10000,
+    15000,
+    25000,
+    50000,
+    75000,
+    100000,
+    200000,
+    400000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "One Phase",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 59
+        },
+        {
+          "size": 10000,
+          "fee": 89
+        },
+        {
+          "size": 15000,
+          "fee": 119
+        },
+        {
+          "size": 25000,
+          "fee": 199
+        },
+        {
+          "size": 50000,
+          "fee": 379
+        },
+        {
+          "size": 100000,
+          "fee": 549
+        },
+        {
+          "size": 200000,
+          "fee": 1049
+        },
+        {
+          "size": 400000,
+          "fee": 2950
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "trailing (balance; locks at starting balance after +6% or first payout)",
+      "profit_split": "up to 90%",
+      "min_trading_days": 5
+    },
+    {
+      "name": "Two Phase - Standard",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 59
+        },
+        {
+          "size": 10000,
+          "fee": 89
+        },
+        {
+          "size": 15000,
+          "fee": 119
+        },
+        {
+          "size": 25000,
+          "fee": 199
+        },
+        {
+          "size": 50000,
+          "fee": 379
+        },
+        {
+          "size": 100000,
+          "fee": 549
+        },
+        {
+          "size": 200000,
+          "fee": 1049
+        },
+        {
+          "size": 400000,
+          "fee": 2950
+        }
+      ],
+      "profit_target": "10% / 5%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "10%",
+      "drawdown_type": "trailing (balance; locks at starting balance after +10% or first payout)",
+      "profit_split": "up to 90%",
+      "min_trading_days": 5
+    },
+    {
+      "name": "Two Phase - Classic",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 59
+        },
+        {
+          "size": 10000,
+          "fee": 89
+        },
+        {
+          "size": 15000,
+          "fee": 119
+        },
+        {
+          "size": 25000,
+          "fee": 199
+        },
+        {
+          "size": 50000,
+          "fee": 379
+        },
+        {
+          "size": 100000,
+          "fee": 549
+        }
+      ],
+      "profit_target": "5% (Phase 1 per pricing widget; Phase 2 not captured)",
+      "max_daily_loss": "4%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_split": "up to 100%",
+      "min_trading_days": 4
+    },
+    {
+      "name": "Two Phase - Pro",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 10000,
+          "fee": 129
+        },
+        {
+          "size": 25000,
+          "fee": 225
+        },
+        {
+          "size": 50000,
+          "fee": 375
+        },
+        {
+          "size": 100000,
+          "fee": 599
+        },
+        {
+          "size": 200000,
+          "fee": 1099
+        }
+      ],
+      "profit_target": "4% (Phase 1 per pricing widget)",
+      "max_daily_loss": "4%",
+      "max_drawdown": "8%",
+      "drawdown_type": "static",
+      "profit_split": "80%",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Three Phase",
+      "type": "3-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 39
+        },
+        {
+          "size": 10000,
+          "fee": 59
+        },
+        {
+          "size": 15000,
+          "fee": 79
+        },
+        {
+          "size": 25000,
+          "fee": 149
+        },
+        {
+          "size": 50000,
+          "fee": 249
+        },
+        {
+          "size": 100000,
+          "fee": 399
+        },
+        {
+          "size": 200000,
+          "fee": 799
+        },
+        {
+          "size": 400000,
+          "fee": 1599
+        }
+      ],
+      "profit_target": "5% / 5% / 5%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "5%",
+      "drawdown_type": "static",
+      "profit_split": "up to 90%",
+      "min_trading_days": 5
+    },
+    {
+      "name": "Lightning Challenge",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 10000,
+          "fee": 59
+        },
+        {
+          "size": 25000,
+          "fee": 149
+        },
+        {
+          "size": 50000,
+          "fee": 249
+        },
+        {
+          "size": 100000,
+          "fee": 399
+        }
+      ],
+      "profit_target": "5%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "4%",
+      "drawdown_type": "trailing (locks at starting balance after +4% or first payout)",
+      "profit_split": "up to 90%",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Instant Funding - Standard",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 1000,
+          "fee": 69
+        },
+        {
+          "size": 2500,
+          "fee": 119
+        },
+        {
+          "size": 5000,
+          "fee": 229
+        },
+        {
+          "size": 10000,
+          "fee": 449
+        },
+        {
+          "size": 25000,
+          "fee": 899
+        },
+        {
+          "size": 50000,
+          "fee": 1749
+        },
+        {
+          "size": 75000,
+          "fee": 2499
+        },
+        {
+          "size": 100000,
+          "fee": 4249
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": null,
+      "max_drawdown": "8%",
+      "drawdown_type": "trailing (locks at starting balance after +8% or first payout)",
+      "profit_split": "up to 90%",
+      "min_trading_days": null
+    },
+    {
+      "name": "Crypto Instant Funding",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 125
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "trailing",
+      "profit_split": "80% (bi-weekly)",
+      "min_trading_days": 7
+    }
+  ],
+  "fee_from": 39,
+  "profit_split": "up to 90% (up to 100% on Two Phase Classic)",
+  "profit_split_scale": null,
+  "max_daily_loss": "4%",
+  "max_drawdown": "10%",
+  "drawdown_type": "trailing (Standard) / static (Classic)",
+  "profit_target": "10% / 5%",
+  "leverage": "up to 30:1 standard; up to 50:1 via add-on/on some programs",
+  "platforms": [
+    "MT5",
+    "DXtrade",
+    "TradingView"
+  ],
+  "payout_frequency": "First payout on demand on 1/2/3-Phase evaluation accounts (after closing first funded trade; program pages also state 5 minimum trading days); thereafter monthly, or every 14 days with the Bi-weekly add-on. Instant Funding pays every 14 days.",
+  "first_payout_days": null,
+  "payout_speed": null,
+  "min_trading_days": 5,
+  "consistency_rule": "None on 1/2/3-Phase evaluations; Lightning 30%; Crypto accounts 25%",
+  "news_trading": "allowed",
+  "weekend_holding": "allowed",
+  "countries_restricted": [
+    "United States",
+    "Zimbabwe",
+    "Iran",
+    "Iraq",
+    "North Korea",
+    "Somalia",
+    "Vietnam",
+    "Burundi",
+    "Central African Republic",
+    "Ivory Coast",
+    "Liberia",
+    "Libya",
+    "Sudan",
+    "Cuba",
+    "Syria",
+    "Afghanistan",
+    "Yemen",
+    "Palestine",
+    "Myanmar",
+    "Nicaragua",
+    "Congo Republic",
+    "Crimea",
+    "Democratic Republic of Congo",
+    "Eritrea",
+    "Guinea",
+    "Guinea-Bissau",
+    "Papua New Guinea",
+    "South Sudan",
+    "Vanuatu",
+    "Venezuela",
+    "Algeria",
+    "Russia",
+    "Belarus",
+    "Kenya",
+    "Ghana"
+  ],
+  "founded": null,
+  "hq": "London, United Kingdom",
+  "discount_code": {
+    "code": "AGHHH35",
+    "value": "35% off (Halloween; not valid on Instant Lite)",
+    "percent": 35,
+    "source": "https://fxify.com/",
+    "verified": "2026-10-31",
+    "expires": "2026-11-02",
+    "also": [
+      {
+        "code": "ONESTEP35",
+        "value": "35% off One Phase for new traders",
+        "percent": 35
+      },
+      {
+        "code": "FUNDED40",
+        "value": "40% off Instant Funding",
+        "percent": 40
+      }
+    ]
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 4.3,
+    "count": 6550
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://fxify.com/",
+    "https://fxify.com/programs/one-phase/",
+    "https://fxify.com/programs/two-phase/",
+    "https://fxify.com/programs/three-phase-challenge/",
+    "https://fxify.com/programs/instant-funding/",
+    "https://fxify.com/programs/lightning-challenge/",
+    "https://fxify.com/programs/crypto/",
+    "https://fxify.com/how-it-works/",
+    "https://fxify.com/faqs/payouts/",
+    "https://fxify.com/faqs/orders-billing/",
+    "https://fxify.com/faqs/rules/",
+    "https://fxify.com/faqs/crypto-accounts/",
+    "https://www.trustpilot.com/review/fxify.com"
+  ],
+  "notes": "Prices are list prices from the fxify.com pricing widget (clicked through every tab/size on 2026-10-31); Halloween promo code AGHHH35 (35% off, excl. Instant Lite, expires 2 Nov), ONESTEP35 (new traders, 35% off 1-Phase) and FUNDED40 (40% off Instant Funding) were live. Widget showed identical list prices for One Phase, Two Phase Classic and Two Phase Standard. Two Phase Classic/Pro targets shown are Phase 1 only (phase-2 tab not captured). Instant Funding widget displays '8%' under Daily Loss Limit next to an 8% trailing max drawdown — left max_daily_loss null as possibly a display duplication; Instant has news trading, weekend holding and EAs set to 'No'. $1K/$2.5K Instant sizes may be the 'Instant Lite' variant (not confirmed). Instant program page says 'up to $50K' but widget sells up to $100K. Crypto Instant: only the $5K price ($125) captured; Crypto Standard 1-Step has 9% target. Futures (FXIFY Futures) is a separate product not researched. Founded year not published on site (UK company no. 14451720). Headline rules use Two Phase Standard. Trustpilot count from trustpilot page (homepage widget showed 6,544).",
+  "segment": "multi",
+  "also_offers": [
+    "futures"
+  ],
+  "category_basis": "Sells simulated CFD evaluation and instant accounts on MT5, DXtrade and TradingView; a separate FXIFY Futures product is also advertised.",
+  "category_source": "https://fxify.com/",
+  "hq_country": {
+    "code": "GB",
+    "source": "https://fxify.com/",
+    "quote": "London, United Kingdom"
+  },
+  "field_sources": {
+    "category": "https://fxify.com/",
+    "assets": "https://fxify.com/",
+    "challenge_types": "https://fxify.com/",
+    "account_sizes": "https://fxify.com/",
+    "programs": "https://fxify.com/",
+    "fee_from": "https://fxify.com/",
+    "profit_split": "https://fxify.com/",
+    "max_daily_loss": "https://fxify.com/programs/two-phase/",
+    "max_drawdown": "https://fxify.com/programs/two-phase/",
+    "drawdown_type": "https://fxify.com/programs/two-phase/",
+    "profit_target": "https://fxify.com/how-it-works/",
+    "leverage": "https://fxify.com/programs/one-phase/",
+    "platforms": "https://fxify.com/",
+    "payout_frequency": "https://fxify.com/programs/one-phase/",
+    "min_trading_days": "https://fxify.com/programs/two-phase/",
+    "consistency_rule": "https://fxify.com/",
+    "news_trading": "https://fxify.com/",
+    "weekend_holding": "https://fxify.com/",
+    "countries_restricted": "https://fxify.com/",
+    "hq": "https://fxify.com/",
+    "hq_country": "https://fxify.com/",
+    "discount_code": "https://fxify.com/",
+    "trustpilot": "https://www.trustpilot.com/review/fxify.com"
+  }
+}

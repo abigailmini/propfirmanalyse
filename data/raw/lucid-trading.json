@@ -1,0 +1,336 @@
+{
+  "name": "Lucid Trading",
+  "slug": "lucid-trading",
+  "site": "https://lucidtrading.com",
+  "category": "futures",
+  "assets": [
+    "futures"
+  ],
+  "challenge_types": [
+    "1-step",
+    "instant"
+  ],
+  "account_sizes": [
+    25000,
+    50000,
+    100000,
+    150000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "LucidPro (Evaluation → Funded)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 108
+        },
+        {
+          "size": 50000,
+          "fee": 172
+        },
+        {
+          "size": 100000,
+          "fee": 272
+        },
+        {
+          "size": 150000,
+          "fee": 365
+        }
+      ],
+      "profit_target": "$1,250/$3,000/$6,000/$9,000",
+      "max_daily_loss": "optional DLL $600/$1,200/$1,800/$2,700 (customizable at checkout)",
+      "max_drawdown": "$1,000/$2,000/$3,000/$4,500",
+      "drawdown_type": "EOD trailing (locks at start balance + $100)",
+      "profit_split": "90%",
+      "min_trading_days": 1
+    },
+    {
+      "name": "LucidFlex (Evaluation → Funded)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 65
+        },
+        {
+          "size": 50000,
+          "fee": 115
+        },
+        {
+          "size": 100000,
+          "fee": 215
+        },
+        {
+          "size": 150000,
+          "fee": 323
+        }
+      ],
+      "profit_target": "$1,250/$3,000/$6,000/$9,000",
+      "max_daily_loss": "optional DLL $600/$1,200/$1,800/$2,700 (customizable)",
+      "max_drawdown": "$1,000/$2,000/$3,000/$4,500",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "90%",
+      "min_trading_days": 2
+    },
+    {
+      "name": "LucidDaily (Evaluation → Funded, daily payouts)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 86
+        },
+        {
+          "size": 50000,
+          "fee": 122
+        },
+        {
+          "size": 100000,
+          "fee": 200
+        },
+        {
+          "size": 150000,
+          "fee": 286
+        }
+      ],
+      "profit_target": "$1,250/$3,000/$6,000/$9,000",
+      "max_daily_loss": "optional DLL $600/$1,200/$1,800/$2,700 (customizable)",
+      "max_drawdown": "$1,000/$2,000/$3,000/$4,500",
+      "drawdown_type": "Eval: EOD or intraday (chosen at checkout); Funded: intraday trailing",
+      "profit_split": "90%",
+      "min_trading_days": 2
+    },
+    {
+      "name": "LucidDirect (straight to funded)",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 329
+        },
+        {
+          "size": 50000,
+          "fee": 515
+        },
+        {
+          "size": 100000,
+          "fee": 700
+        },
+        {
+          "size": 150000,
+          "fee": 836
+        }
+      ],
+      "profit_target": "payout profit goal $1,500/$3,000/$6,000/$9,000 (1st), then $1,250/$2,500/$3,500/$4,500",
+      "max_daily_loss": "none/$1,200/$2,100/$3,000 (+ scaling DLL 60% of peak EOD balance)",
+      "max_drawdown": "$1,000/$2,000/$3,500/$5,000",
+      "drawdown_type": "EOD trailing",
+      "profit_split": null,
+      "min_trading_days": 5
+    }
+  ],
+  "fee_from": 65,
+  "profit_split": "90%",
+  "profit_split_scale": null,
+  "max_daily_loss": "optional (customizable soft-breach DLL)",
+  "max_drawdown": "$1,000-$4,500",
+  "drawdown_type": "EOD trailing",
+  "profit_target": "5-6% ($1,250/$3,000/$6,000/$9,000)",
+  "leverage": null,
+  "platforms": [
+    "Tradovate",
+    "NinjaTrader",
+    "TradingView",
+    "Rithmic",
+    "Quantower",
+    "Tradesea",
+    "MotiveWave",
+    "Sierra Chart",
+    "Jigsaw",
+    "Bookmap",
+    "ATAS",
+    "R|Trader Pro",
+    "MultiCharts"
+  ],
+  "payout_frequency": "LucidPro: on-demand after min profit goal + 40% consistency + buffer (3 days to payout); LucidFlex: every cycle of 5 profitable days, no consistency/buffer; LucidDaily: daily payout requests; LucidDirect: after profit goal + 20% consistency (min 5 days)",
+  "first_payout_days": 3,
+  "payout_speed": "~15 min from request to bank (homepage claim); payouts processed within 2 business days per Flex help article; WorkMarket bank/PayPal as early as next business day",
+  "min_trading_days": null,
+  "consistency_rule": "Eval: Flex 40% (50% add-on), Daily 50%, Pro none; Funded: Pro 40% best-day rule for payouts, Direct 20%, Flex/Daily none",
+  "news_trading": "allowed",
+  "weekend_holding": "banned",
+  "countries_restricted": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Angola",
+    "Bahamas",
+    "Barbados",
+    "Belarus",
+    "Belize",
+    "Bosnia & Herzegovina",
+    "Bulgaria",
+    "Burkina Faso",
+    "Burma/Myanmar",
+    "Botswana",
+    "Burundi",
+    "Cambodia",
+    "Central African Republic",
+    "Côte d’Ivoire",
+    "Crimea",
+    "Cuba",
+    "Congo Republic (Brazzaville)",
+    "Congo (Kinshasa)",
+    "Donetsk",
+    "Ecuador",
+    "Ethiopia",
+    "Ghana",
+    "Guinea",
+    "Haiti",
+    "Iceland",
+    "Indonesia",
+    "Iran",
+    "Iraq",
+    "Jamaica",
+    "Kazakhstan",
+    "Kenya",
+    "Kherson",
+    "Kosovo",
+    "Kyrgyzstan",
+    "Laos",
+    "Lebanon",
+    "Liberia",
+    "Libya",
+    "Lithuania",
+    "Luhansk",
+    "Mali",
+    "Mauritius",
+    "Mongolia",
+    "Montenegro",
+    "Morocco",
+    "Mozambique",
+    "Namibia",
+    "Nicaragua",
+    "Nigeria",
+    "North Korea",
+    "North Macedonia",
+    "Pakistan",
+    "Panama",
+    "Papua New Guinea",
+    "Philippines",
+    "Russia",
+    "Senegal",
+    "Serbia",
+    "Sevastopol",
+    "Seychelles",
+    "Slovenia",
+    "Somalia",
+    "South Africa",
+    "South Sudan",
+    "Sri Lanka",
+    "Sudan",
+    "Syria",
+    "Tajikistan",
+    "Tanzania",
+    "Turkey",
+    "Trinidad and Tobago",
+    "Tunisia",
+    "Uganda",
+    "Ukraine",
+    "Uzbekistan",
+    "Vietnam",
+    "Venezuela",
+    "Yemen",
+    "Zimbabwe"
+  ],
+  "founded": 2024,
+  "hq": "Dover, DE, United States",
+  "discount_code": {
+    "code": "VAULT",
+    "value": "About 30% off plan prices (e.g. Pro 25K $108 -> $75.60)",
+    "percent": 30,
+    "source": "https://lucidtrading.com/",
+    "verified": "2026-10-31",
+    "expires": null
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 4.5,
+    "count": 8440
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://lucidtrading.com/",
+    "https://lucidtrading.com/about-us/",
+    "https://lucidtrading.com/affiliate/",
+    "https://www.trustpilot.com/review/lucidtrading.com",
+    "https://support.lucidtrading.com/en/articles/11404614-lucid-trading-supported-platforms",
+    "https://support.lucidtrading.com/en/articles/11404617-maximum-number-of-accounts",
+    "https://support.lucidtrading.com/en/articles/11404620-simulated-account-fees",
+    "https://support.lucidtrading.com/en/articles/11404632-inactivity-policy",
+    "https://support.lucidtrading.com/en/articles/11404636-restricted-countries",
+    "https://support.lucidtrading.com/en/articles/11404728-other-trading-activities",
+    "https://support.lucidtrading.com/en/articles/11404729-allowed-trading-times",
+    "https://support.lucidtrading.com/en/articles/11404734-prohibited-hedging",
+    "https://support.lucidtrading.com/en/articles/11508978-approved-products-and-commissions",
+    "https://support.lucidtrading.com/en/articles/12890029-lucidpro-evaluation-account",
+    "https://support.lucidtrading.com/en/articles/12890069-lucidpro-funded-account",
+    "https://support.lucidtrading.com/en/articles/12890092-lucidpro-payouts",
+    "https://support.lucidtrading.com/en/articles/12890109-lucidpro-consistency-percentage",
+    "https://support.lucidtrading.com/en/articles/12890136-lucidpro-drawdown",
+    "https://support.lucidtrading.com/en/articles/12890148-luciddirect-funded-account",
+    "https://support.lucidtrading.com/en/articles/12890164-luciddirect-payout-objectives",
+    "https://support.lucidtrading.com/en/articles/12890178-luciddirect-consistency-percentage",
+    "https://support.lucidtrading.com/en/articles/12890325-payout-methods",
+    "https://support.lucidtrading.com/en/articles/12945790-lucidflex-evaluation-account",
+    "https://support.lucidtrading.com/en/articles/12945795-lucidflex-funded-account",
+    "https://support.lucidtrading.com/en/articles/12945796-lucidflex-payouts",
+    "https://support.lucidtrading.com/en/articles/12945808-lucidflex-scaling-plan",
+    "https://support.lucidtrading.com/en/articles/15996664-luciddaily-evaluation",
+    "https://support.lucidtrading.com/en/articles/15997244-luciddaily-funded-account",
+    "https://support.lucidtrading.com/en/articles/15997266-luciddaily-payouts",
+    "https://support.lucidtrading.com/en/articles/16010520-luciddaily-live",
+    "https://support.lucidtrading.com/en/articles/11404742-prohibited-microscalping",
+    "https://support.lucidtrading.com/en/articles/11404628-accepted-payments-methods"
+  ],
+  "notes": "Prices are list prices shown on lucidtrading.com plan cards (default config); site shows ~30% off with code VAULT (e.g. Pro 25K $108 -> $75.60). Card prices may change with customization toggles (DLL on/off, 50% consistency add-on, EOD vs intraday eval drawdown on Daily). LucidDaily funded uses intraday drawdown and bans red-folder news (hard breach) - news allowed on Pro/Flex/Direct. LucidDirect profit split not stated in readable text (help article split table didn't render) -> null; Pro/Flex/Daily confirmed 90/10. Live (LucidLive) accounts 90/10 with daily payouts per About page. No overnight/weekend holding: positions auto-closed 4:45 PM ET. Founded inferred from site copyright '@2024-2026'. HQ = registered address 3500 S Dupont Hwy, Dover DE (registered-agent style address). Homepage claims '$700M+ earned by traders' and '500K+ traders'. Legacy plans (LucidBlack, LucidMaxx) not sold as entry products. Pro eval help table lists 25K DLL 'None' while homepage card shows $600 optional - DLL is a customization toggle.",
+  "segment": "futures",
+  "also_offers": [],
+  "category_basis": "Sells one-time-fee CME futures evaluations and straight-to-funded accounts traded via CQG (Tradovate/NinjaTrader/TradingView) or Rithmic platforms.",
+  "category_source": "https://support.lucidtrading.com/en/articles/11404614-lucid-trading-supported-platforms",
+  "founded_source": "https://lucidtrading.com/",
+  "hq_country": {
+    "code": "US",
+    "source": "https://lucidtrading.com/",
+    "quote": "Dover, DE, United States"
+  },
+  "max_allocation_text": "Up to 5 funded accounts per household (max 150K each); no explicit max-allocation figure published",
+  "max_allocation_source": "https://support.lucidtrading.com/en/articles/11404617-maximum-number-of-accounts",
+  "field_sources": {
+    "category": "https://support.lucidtrading.com/en/articles/11404614-lucid-trading-supported-platforms",
+    "platforms": "https://support.lucidtrading.com/en/articles/11404614-lucid-trading-supported-platforms",
+    "programs": "https://lucidtrading.com/",
+    "account_sizes": "https://lucidtrading.com/",
+    "fee_from": "https://lucidtrading.com/",
+    "profit_target": "https://support.lucidtrading.com/en/articles/12890029-lucidpro-evaluation-account",
+    "max_drawdown": "https://support.lucidtrading.com/en/articles/12890136-lucidpro-drawdown",
+    "drawdown_type": "https://support.lucidtrading.com/en/articles/12890136-lucidpro-drawdown",
+    "max_daily_loss": "https://lucidtrading.com/",
+    "profit_split": "https://support.lucidtrading.com/en/articles/12890092-lucidpro-payouts",
+    "payout_frequency": "https://support.lucidtrading.com/en/articles/12945796-lucidflex-payouts",
+    "first_payout_days": "https://lucidtrading.com/",
+    "payout_speed": "https://lucidtrading.com/",
+    "consistency_rule": "https://support.lucidtrading.com/en/articles/12890109-lucidpro-consistency-percentage",
+    "news_trading": "https://support.lucidtrading.com/en/articles/11404728-other-trading-activities",
+    "weekend_holding": "https://support.lucidtrading.com/en/articles/11404729-allowed-trading-times",
+    "countries_restricted": "https://support.lucidtrading.com/en/articles/11404636-restricted-countries",
+    "founded": "https://lucidtrading.com/",
+    "hq": "https://lucidtrading.com/",
+    "discount_code": "https://lucidtrading.com/",
+    "trustpilot": "https://www.trustpilot.com/review/lucidtrading.com",
+    "max_allocation_text": "https://support.lucidtrading.com/en/articles/11404617-maximum-number-of-accounts",
+    "assets": "https://support.lucidtrading.com/en/articles/11508978-approved-products-and-commissions"
+  }
+}

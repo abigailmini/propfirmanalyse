@@ -1,0 +1,41 @@
+{
+  "reset_fee": "Pro $75/$120/$190/$255; Flex $45/$80/$150/$225; Daily $60/$85/$140/$200 (25K/50K/100K/150K); LucidDirect no reset listed",
+  "retry_discount_pct": null,
+  "refund_policy": "No published refund on fees found in help centre (Refund & Liability Policy page exists but blocked to fetch); if an unpaid funded account is closed when moving live, that evaluation cost is refunded",
+  "fee_refundable": false,
+  "time_limit": "none, but accounts with no trading (net P/L <$1) for 30 calendar days are deleted",
+  "has_time_limit": false,
+  "activation_fee": 0,
+  "payout_methods": [
+    "Plaid (US instant bank)",
+    "WorkMarket by ADP (bank transfer or PayPal, US + international)",
+    "Crypto (BTC, ETH, LTC, USDT, USDC - international)"
+  ],
+  "min_payout": "$500 (LucidPro)",
+  "kyc_before_payout": null,
+  "scaling_plan": "LucidFlex funded: contract limits scale with sim profit (updated end of session); LucidDirect/Pro: scaling DLL 60% of peak EOD balance",
+  "ea_bots": "allowed",
+  "copy_trading": true,
+  "hedging": false,
+  "max_risk_per_trade": null,
+  "inactivity_rule": "Account deleted if no trade producing ≥$1 net P/L within 30 calendar days",
+  "notes": "All plans one-time fee, no monthly subscription, no activation fee. Automated strategies and trade copiers permitted (trader responsible). Microscalping and HFT prohibited; hedging across accounts prohibited. Max 5 funded accounts per household, 10 total incl. evals. Commissions per side e.g. ES/NQ $1.75, micros $0.50. Accepted purchase payments: Visa/Mastercard/Amex/Discover/Diners/Maestro.",
+  "sources": [
+    "https://lucidtrading.com/",
+    "https://support.lucidtrading.com/en/articles/11404620-simulated-account-fees",
+    "https://support.lucidtrading.com/en/articles/11404632-inactivity-policy",
+    "https://support.lucidtrading.com/en/articles/12890325-payout-methods",
+    "https://support.lucidtrading.com/en/articles/12945808-lucidflex-scaling-plan",
+    "https://support.lucidtrading.com/en/articles/11404728-other-trading-activities",
+    "https://support.lucidtrading.com/en/articles/11404734-prohibited-hedging",
+    "https://support.lucidtrading.com/en/articles/11404742-prohibited-microscalping",
+    "https://support.lucidtrading.com/en/articles/11404617-maximum-number-of-accounts",
+    "https://support.lucidtrading.com/en/articles/11508978-approved-products-and-commissions",
+    "https://support.lucidtrading.com/en/articles/11404628-accepted-payments-methods",
+    "https://support.lucidtrading.com/en/articles/16010520-luciddaily-live",
+    "https://support.lucidtrading.com/en/articles/12890092-lucidpro-payouts"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": 75,
+  "monthly_fee": false
+}

@@ -1,0 +1,350 @@
+{
+  "name": "Hola Prime",
+  "slug": "hola-prime",
+  "site": "https://holaprime.com",
+  "category": "cfd",
+  "assets": [
+    "forex",
+    "indices",
+    "commodities",
+    "crypto",
+    "futures"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step",
+    "instant"
+  ],
+  "account_sizes": [
+    2000,
+    5000,
+    10000,
+    25000,
+    50000,
+    150000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "1-Step Prime (Forex)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 2000,
+          "fee": 14
+        },
+        {
+          "size": 5000,
+          "fee": 49
+        },
+        {
+          "size": 10000,
+          "fee": 89
+        },
+        {
+          "size": 25000,
+          "fee": 215
+        },
+        {
+          "size": 50000,
+          "fee": 329
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "3% of previous day's closing balance",
+      "max_drawdown": "6%",
+      "drawdown_type": "static",
+      "profit_split": "80% bi-weekly (up to 95% monthly)",
+      "min_trading_days": 2
+    },
+    {
+      "name": "2-Step Prime (Forex)",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 2000,
+          "fee": 9
+        },
+        {
+          "size": 5000,
+          "fee": 39
+        },
+        {
+          "size": 10000,
+          "fee": 69
+        },
+        {
+          "size": 25000,
+          "fee": 179
+        },
+        {
+          "size": 50000,
+          "fee": 319
+        }
+      ],
+      "profit_target": "8% (P1) / 5% (P2)",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_split": "80% bi-weekly (up to 95% monthly)",
+      "min_trading_days": 3
+    },
+    {
+      "name": "2-Step Pro (Forex)",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 2000,
+          "fee": 17
+        },
+        {
+          "size": 5000,
+          "fee": 59
+        },
+        {
+          "size": 10000,
+          "fee": 109
+        },
+        {
+          "size": 25000,
+          "fee": 229
+        },
+        {
+          "size": 50000,
+          "fee": 384
+        }
+      ],
+      "profit_target": "8% (P1) / 5% (P2)",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_split": "80% bi-weekly (up to 95% monthly)",
+      "min_trading_days": 2
+    },
+    {
+      "name": "2-Step Fly (Forex)",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 10000,
+          "fee": 89
+        },
+        {
+          "size": 25000,
+          "fee": 199
+        },
+        {
+          "size": 50000,
+          "fee": 349
+        }
+      ],
+      "profit_target": "8% (P1) / 8% (P2)",
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": null,
+      "profit_split": "80%",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Direct Account (Forex)",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 2000,
+          "fee": 49
+        },
+        {
+          "size": 5000,
+          "fee": 109
+        },
+        {
+          "size": 10000,
+          "fee": 199
+        },
+        {
+          "size": 25000,
+          "fee": 439
+        },
+        {
+          "size": 50000,
+          "fee": 829
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": "3%",
+      "max_drawdown": "7%",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "90% bi-weekly",
+      "min_trading_days": null
+    },
+    {
+      "name": "1-Step Prime (Futures)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 99
+        },
+        {
+          "size": 50000,
+          "fee": 159
+        },
+        {
+          "size": 150000,
+          "fee": 359
+        }
+      ],
+      "profit_target": "6%",
+      "max_daily_loss": null,
+      "max_drawdown": "4% (3% on $100K/$150K)",
+      "drawdown_type": "EOD trailing, locks at initial balance after +4%",
+      "profit_split": null,
+      "min_trading_days": null
+    },
+    {
+      "name": "Direct Account (Futures)",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 348
+        },
+        {
+          "size": 50000,
+          "fee": 548
+        },
+        {
+          "size": 150000,
+          "fee": 998
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": null,
+      "max_drawdown": null,
+      "drawdown_type": null,
+      "profit_split": null,
+      "min_trading_days": null
+    }
+  ],
+  "fee_from": 9,
+  "profit_split": "80% up to 95%",
+  "profit_split_scale": "80% bi-weekly or on-demand; 95% on monthly payout cycle; 90% on Direct accounts",
+  "max_daily_loss": "3% of previous day's closing balance (1-Step Prime)",
+  "max_drawdown": "6% static (1-Step Prime)",
+  "drawdown_type": "static (forex challenges); EOD trailing (Direct, futures)",
+  "profit_target": "10% (1-Step Prime)",
+  "leverage": "Forex accounts up to 50x (2-Step Pro 100x); rulebook per-instrument: FX 50:1, exotics 5:1, indices 10:1, metals 10:1, commodities 2:1, crypto 1:1",
+  "platforms": [
+    "MT5",
+    "cTrader",
+    "TradeLocker",
+    "Match-Trader",
+    "Tradovate",
+    "NinjaTrader",
+    "WealthCharts",
+    "DX Futures"
+  ],
+  "payout_frequency": "Bi-weekly (every 14 days, 3 profitable days) at 80%, monthly at 95% (7 profitable days) or on-demand at 80% (40% consistency), depending on plan/add-on",
+  "first_payout_days": 14,
+  "payout_speed": "within 1 hour of request (after account review of up to 24 business hours)",
+  "min_trading_days": 2,
+  "consistency_rule": "None on Prime/Pro bi-weekly payouts; 40% on on-demand payouts and 2-Step Fly Phase 2; 20% on Direct; 40% on futures",
+  "news_trading": "allowed",
+  "weekend_holding": "allowed",
+  "countries_restricted": [
+    "Afghanistan",
+    "Belarus",
+    "Burundi",
+    "China",
+    "Cuba",
+    "Congo",
+    "Sudan",
+    "Sri Lanka",
+    "North Korea",
+    "Yemen"
+  ],
+  "founded": null,
+  "hq": "Hong Kong",
+  "discount_code": {
+    "code": "SPOOKY40",
+    "value": "40% off forex accounts for new users (Halloween; not on $2K)",
+    "percent": 40,
+    "source": "https://holaprime.com/",
+    "verified": "2026-10-31",
+    "expires": null,
+    "also": [
+      {
+        "code": "SPOOKY20",
+        "value": "20% off",
+        "percent": 20
+      }
+    ]
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 4.5,
+    "count": 4120
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://holaprime.com/",
+    "https://holaprime.com/forex/prime-challenge/",
+    "https://holaprime.com/forex/pro-challenge/",
+    "https://holaprime.com/forex/direct-account/",
+    "https://holaprime.com/forex/2-step-fly/",
+    "https://holaprime.com/forex/forex-trading-rules/",
+    "https://holaprime.com/futures/1-step-prime/",
+    "https://holaprime.com/futures/direct-account/",
+    "https://holaprime.com/futures/futures-trading-rules/",
+    "https://holaprime.com/forex/trading-platforms/",
+    "https://holaprime.com/futures/trading-platforms/",
+    "https://holaprime.com/forex/scaling/",
+    "https://holaprime.com/best-prop-firm-affiliate-program/",
+    "https://holaprime.com/payout-transparency-report/",
+    "https://www.trustpilot.com/review/holaprime.com"
+  ],
+  "notes": "Site is behind a Vercel bot checkpoint; read via real (headful) Chrome. Fees are list prices; Halloween sale shows 40% off forex accounts for new users with code SPOOKY40 (SPOOKY20 also shown) — temporary. $2K accounts show no discount. Forex plan pages list only $2K-$50K sizes (rulebook account-limit text references $100K/$200K accounts, but none are on sale on plan pages). 2-Step Prime/Pro rules from homepage comparison table (2-Step Prime: swing & news allowed, 50x; 2-Step Pro: 100x, news/weekend restrictions may apply per FAQ). 1-Step Prime: 2% max risk per trade idea on Sim. Funded with mandatory stop loss. EA trading is a +10% add-on on MT5 only; Swap-free +10% add-on. Futures: 1-Step Prime 6% target, EOD trailing 4% (3% on $100K/$150K), 40% consistency, no overnight/weekend holding, 7-day inactivity; futures $100K size referenced in rules but not on sale page. Futures Direct $25K/$50K/$150K labels inferred from matching the futures 1-Step size list (third price card unlabeled in text). HQ: website owned by Hola Prime Limited, Hong Kong; subsidiaries in Cyprus (HE 454359) and Mauritius (FSC licence GB24203729 for MT5 services). Founded year not published (Trustpilot profile claimed Aug 2024). Pass rate disclosed: 25.07% forex, 32.17% futures (Oct 2025-Sep 2026). 2.5% payout processing fee (min $25 Rise/wire, $5 crypto).",
+  "segment": "multi",
+  "also_offers": [
+    "futures"
+  ],
+  "category_basis": "Main product line is simulated forex/CFD challenges on MT5, cTrader, TradeLocker and Match-Trader; a separate futures line runs on Tradovate/NinjaTrader/WealthCharts/DX Futures.",
+  "category_source": "https://holaprime.com/forex/trading-platforms/",
+  "hq_country": {
+    "code": "HK",
+    "source": "https://holaprime.com/",
+    "quote": "Hong Kong"
+  },
+  "max_allocation_usd": 800000,
+  "max_allocation_text": "Combined Forex & Futures allocation capped at $800K (forex $400K; e.g. four $50K, two $100K or one $200K forex accounts); scaling plan up to $4M; some countries capped at $90K",
+  "max_allocation_source": "https://holaprime.com/forex/forex-trading-rules/",
+  "field_sources": {
+    "category": "https://holaprime.com/forex/trading-platforms/",
+    "also_offers": "https://holaprime.com/futures/1-step-prime/",
+    "assets": "https://holaprime.com/forex/forex-trading-rules/",
+    "challenge_types": "https://holaprime.com/",
+    "account_sizes": "https://holaprime.com/forex/prime-challenge/",
+    "programs": "https://holaprime.com/forex/prime-challenge/",
+    "fee_from": "https://holaprime.com/forex/prime-challenge/",
+    "profit_split": "https://holaprime.com/forex/forex-trading-rules/",
+    "profit_split_scale": "https://holaprime.com/forex/forex-trading-rules/",
+    "max_daily_loss": "https://holaprime.com/forex/forex-trading-rules/",
+    "max_drawdown": "https://holaprime.com/forex/forex-trading-rules/",
+    "drawdown_type": "https://holaprime.com/forex/forex-trading-rules/",
+    "profit_target": "https://holaprime.com/forex/forex-trading-rules/",
+    "leverage": "https://holaprime.com/forex/forex-trading-rules/",
+    "platforms": "https://holaprime.com/forex/trading-platforms/",
+    "payout_frequency": "https://holaprime.com/forex/forex-trading-rules/",
+    "first_payout_days": "https://holaprime.com/forex/forex-trading-rules/",
+    "payout_speed": "https://holaprime.com/forex/forex-trading-rules/",
+    "max_allocation": "https://holaprime.com/forex/forex-trading-rules/",
+    "min_trading_days": "https://holaprime.com/forex/forex-trading-rules/",
+    "consistency_rule": "https://holaprime.com/",
+    "news_trading": "https://holaprime.com/forex/forex-trading-rules/",
+    "weekend_holding": "https://holaprime.com/forex/forex-trading-rules/",
+    "countries_restricted": "https://holaprime.com/",
+    "hq": "https://holaprime.com/",
+    "discount_code": "https://holaprime.com/",
+    "trustpilot": "https://www.trustpilot.com/review/holaprime.com"
+  }
+}
