@@ -1,0 +1,37 @@
+{
+  "reset_fee": "CFD: reset priced as a multiple of what you paid — 1-Step phase 1 0.85x / funded 1.15x; 2-Step 0.85x / 1.15x / funded 1.55x; Instant 0.85x; Access $5 (funded 1.55x funded fee); offer valid 7 days after breach. Futures: evaluation reset 90% of price paid (one per evaluation); funded reactivation once at 3x plan price; Direct cannot be reset.",
+  "retry_discount_pct": null,
+  "refund_policy": "Used (traded) accounts non-refundable; unused accounts may be refunded within 7 days at Atlas discretion. Evaluation fee returned with 3rd funded payout (1-Step/2-Step/Daily), 4th (Access), 5th (Instant). Add-ons never refunded.",
+  "fee_refundable": true,
+  "time_limit": null,
+  "has_time_limit": false,
+  "activation_fee": 0,
+  "payout_methods": [
+    "Rise",
+    "USDT (ERC20)",
+    "Atlas Balance (in-platform credit +10-25% bonus)"
+  ],
+  "min_payout": "$100 profit ($50 on 1-Step/2-Step Daily); futures min request $500 on $50K; trading-rules page states $3,000 minimum for crypto withdrawals",
+  "kyc_before_payout": true,
+  "scaling_plan": "Pricing cards mention 'Scaling plan as you grow'; no published scaling schedule found. Futures: risk review at 5th payout may refer trader to Atlas Live.",
+  "ea_bots": "allowed",
+  "copy_trading": true,
+  "hedging": "restricted",
+  "max_risk_per_trade": "Atlas Protector on funded CFD accounts: net floating loss of 2% of initial balance closes all positions (split cut to 50%); second trigger breaches. Using >80% of balance on one trade treated as gambling. Futures max position e.g. 4 minis / 40 micros on $50K.",
+  "inactivity_rule": "At least one trade every 30 days or the account may be closed",
+  "notes": "activation_fee 0 for normal programs; Access instead charges a funded fee on pass ($52-$1,739 by size). Copy trading allowed only between your own Atlas accounts; copying others prohibited. Hedging between own Atlas accounts permitted on CFD per trading rules, but risk-free cross-account/cross-firm hedging prohibited; futures FAQ says long+short across own accounts not allowed. Add-ons (+20% each): On-Demand payout, Weekly payout, No minimum trading days, 100% split; bundles +45-50%. KYC via Veriff before first payout.",
+  "sources": [
+    "https://help.atlasfunded.com/resets",
+    "https://www.atlasfunded.com/refund-policy",
+    "https://www.atlasfunded.com/trading-rules",
+    "https://help.atlasfunded.com/payout-methods",
+    "https://help.atlasfunded.com/kyc",
+    "https://help.atlasfunded.com/add-ons",
+    "https://www.atlasfunded.com/futures",
+    "https://www.atlasfunded.com/forex",
+    "https://help.atlasfunded.com/faq"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": null,
+  "monthly_fee": false
+}

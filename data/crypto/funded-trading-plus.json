@@ -1,0 +1,41 @@
+{
+  "crypto_pairs": null,
+  "crypto_pairs_examples": null,
+  "crypto_leverage": "1:2 on all programs",
+  "crypto_venue": "FT+ simulated environment on MT5 / Match-Trader (broker-style CFD feed), not an exchange",
+  "instrument_type": "CFD",
+  "weekend_crypto": true,
+  "payout_methods": [
+    "Crypto",
+    "Rise"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": true,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": "Margin-utilisation review triggers (50-75% by size; crypto margin at 1:2 leverage); 2-Step 3% symbol loss limit",
+  "banned_strategies": [
+    "arbitrage",
+    "grid trading",
+    "tick scalping",
+    "copy trading between different traders",
+    "hedging across accounts",
+    "account management / passing services",
+    "sharing device or network with other traders"
+  ],
+  "bots_allowed": "allowed",
+  "copy_trading": true,
+  "crypto_fees": null,
+  "notes": "Crypto is one of several CFD asset classes (forex-first firm). Crypto pairs list page (/available-markets/crypto) was blocked by Cloudflare, so pair count/examples are null. Weekend trading permitted per Activation Accounts rules and Instant help (Instant must still close positions before Friday 4:30pm EST). Program fees can also be paid in BTC, ETH, USDT (ERC20/TRC20), USDC or Binance Pay.",
+  "sources": [
+    "https://help.fundedtradingplus.com/ft-leverage/",
+    "https://help.fundedtradingplus.com/risk-review-policy/",
+    "https://help.fundedtradingplus.com/which-markets-are-replicated-and-available-in-your-simulated-live-environment/",
+    "https://help.fundedtradingplus.com/payout-methods-offered/",
+    "https://help.fundedtradingplus.com/activation-accounts-challenge-rules/",
+    "https://help.fundedtradingplus.com/instant-program-information/",
+    "https://help.fundedtradingplus.com/does-your-simulated-live-environment-support-the-use-of-eas-algos-or-bots/",
+    "https://help.fundedtradingplus.com/do-we-accept-payment-in-crypto/",
+    "https://help.fundedtradingplus.com/identity-checks-kyc-know-your-customer/"
+  ],
+  "checked": "2026-10-31"
+}

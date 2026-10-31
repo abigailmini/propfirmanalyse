@@ -1,0 +1,34 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": null,
+  "fee_refundable": null,
+  "time_limit": "Unlimited (maximum trading days unlimited)",
+  "has_time_limit": false,
+  "activation_fee": null,
+  "payout_methods": [
+    "Crypto (USDT TRC20/ERC20)",
+    "Rise (riseworks.io, $50 flat monthly fee)",
+    "Transfer to ThinkMarkets live account (eligible countries)"
+  ],
+  "min_payout": 100,
+  "kyc_before_payout": null,
+  "scaling_plan": "Achieve 10% return in 3 months → account size +20%, up to $1,500,000 (Lightning/Dual Step/Nexus); Bolt+Bolt Flex scale to $500K",
+  "ea_bots": "allowed in principle but cannot be deployed (ThinkMarkets app has no automated trading)",
+  "copy_trading": false,
+  "hedging": false,
+  "max_risk_per_trade": null,
+  "inactivity_rule": "Account terminated after 30 days without opening a new trade",
+  "notes": "Close all positions before requesting payout; account locked until paid. Withdrawing down to locked floor = breach. Copy trading and cross-account hedging normally result in ban. Grid trading/latency arbitrage: warning → reset → ban. Add-ons (90% split, 7-day/on-demand payouts, news trading, weekend holding) priced as % of base price. Refund/reset policy not found on pages reviewed.",
+  "sources": [
+    "https://www.thinkcapital.com/tc-faqs/funded-accounts/how-is-the-payout-processed-and-how-long-does-it-take/",
+    "https://www.thinkcapital.com/lightning/",
+    "https://www.thinkcapital.com/instant-funding/",
+    "https://www.thinkcapital.com/tc-faqs/penalties-faq-section/penalties-faq-section/",
+    "https://www.thinkcapital.com/tc-faqs/general-faqs/are-expert-advisors-eas-allowed-at-thinkcapital/",
+    "https://www.thinkcapital.com/bolt-flex-instant-funding/"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": null,
+  "monthly_fee": false
+}

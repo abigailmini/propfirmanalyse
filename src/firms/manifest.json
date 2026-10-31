@@ -207,5 +207,86 @@
   "orig": "tmp/expand/logos/the-trading-pit-icon.png",
   "shape": "rounded-tile",
   "research_note": "Header wordmark: dark navy #240c4a with purple #ae5dff accents. The white version is logo-light-4.svg. The icon is favicon-96.png (96px, the largest available; a white/green/purple mark on a black rounded square) saved as logos/the-trading-pit-icon.png."
+ },
+ "brightfunded": {
+  "source_url": "https://framerusercontent.com/assets/g0aS6FH3KoqLAZDl941DjeeSoU.zip (BrightFunded brand kit linked from brightfunded.com: icon SVG)",
+  "kind": "svg",
+  "bg": "transparent",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/brightfunded-icon.svg",
+  "glyph_luminance": 122,
+  "research_note": "From official brand-assets page zip (Logo.svg, dark #1F1E1E text + blue #457DF6 mark). White-text version saved as logos/brightfunded-alt.svg (for dark bg); icon logos/brightfunded-icon.svg."
+ },
+ "city-traders-imperium": {
+  "source_url": "https://b4647544.assetcdn.net/2.0/4647544/wp-content/uploads/2020/03/City-Traders-Imperium-Logo-3-300x300.png",
+  "kind": "header-logo",
+  "bg": "#212121",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/city-traders-imperium.png",
+  "shape": "rounded-tile",
+  "research_note": "Square 300x300 brand logo from site icon links; current header logo is a Halloween-themed variant (cti-logo-halloween-header.webp) so not used."
+ },
+ "atlas-funded": {
+  "source_url": "https://www.atlasfunded.com/assets/apple-touch-icon.png",
+  "kind": "apple-touch-icon",
+  "bg": "#e1ffa0",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/atlas-funded-icon.png",
+  "shape": "rounded-tile",
+  "research_note": "Dark navy 'AtlasFunded' wordmark, 270x36 PNG transparent. Square icon logos/atlas-funded-icon.png (180x180 apple-touch-icon, lime tile with dark A mark). Lime variant for dark bg at https://help.atlasfunded.com/img/atlas-logo-lime.png."
+ },
+ "ment-funding": {
+  "source_url": "https://mentfunding.com/favicon.svg",
+  "kind": "svg",
+  "bg": "#071324",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/ment-funding-icon.svg",
+  "shape": "rounded-tile",
+  "research_note": "Header logo is an 'M' mark only (no wordmark) using currentColor (renders black by default). Square icon logos/ment-funding-icon.svg from https://mentfunding.com/favicon.svg (teal #22A6AE mark on navy #071324 rounded tile) works on any background."
+ },
+ "for-traders": {
+  "source_url": "https://fortraders.com/apple-icon.png",
+  "kind": "apple-touch-icon",
+  "bg": "transparent",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/for-traders-icon.png",
+  "glyph_luminance": 60,
+  "research_note": "Header wordmark uses off-white #F9F7F2 fills (site is dark). Square icon logos/for-traders-icon.svg (https://fortraders.com/icon.svg, lime #BCFF11 on black) and logos/for-traders-icon.png (180x180 apple-icon) work on white."
+ },
+ "thinkcapital": {
+  "source_url": "https://edge.sitecorecloud.io/tfglobalmar2044-thinkmarketfd7d-thinkmarket63b1-bc8f/media/Project/tc/Media/Recovered/pages/tc-logo.svg",
+  "kind": "header-logo",
+  "bg": "transparent",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/thinkcapital.svg",
+  "glyph_luminance": 167,
+  "note": "mark cropped from the official header logo SVG",
+  "research_note": "Header wordmark: white text with green #1ED760 mark \u2014 needs dark background. Square icon logos/thinkcapital-icon.png from https://www.thinkcapital.com/apple-icon.png is only 64x64."
+ },
+ "finotive-funding": {
+  "source_url": "https://finotivefunding.com/apple-touch-icon.png",
+  "kind": "apple-touch-icon",
+  "bg": "#000000",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/finotive-funding-icon.png",
+  "shape": "rounded-tile",
+  "research_note": "Wordmark text is white with green (#00C992) mark \u2014 invisible on white; use icon logos/finotive-funding-icon.png (180x180 PNG, black rounded square with green mark, works on white) or place wordmark on dark tile."
+ },
+ "funded-trading-plus": {
+  "source_url": "https://www.fundedtradingplus.com/ (header mark webp, ftp-logo family)",
+  "kind": "header-logo",
+  "bg": "transparent",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/funded-trading-plus-icon.webp",
+  "glyph_luminance": 0,
+  "research_note": "Black wordmark+mark, transparent, 1123x328; white variant at /images/mains/ftp-logo-white-v1.3-wide.webp for dark bg. Icon logos/funded-trading-plus-icon.webp from /app-icon.webp (852x982 black FTP mark, transparent, works on white). No SVG found."
  }
 }

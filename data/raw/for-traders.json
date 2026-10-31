@@ -1,0 +1,494 @@
+{
+  "name": "For Traders",
+  "slug": "for-traders",
+  "site": "https://fortraders.com",
+  "category": "cfd",
+  "assets": [
+    "forex",
+    "indices",
+    "commodities",
+    "crypto",
+    "stocks",
+    "futures"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step",
+    "instant"
+  ],
+  "account_sizes": [
+    3000,
+    6000,
+    15000,
+    25000,
+    50000,
+    100000,
+    200000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "Forex Fast (1-Step)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 6000,
+          "fee": 49
+        },
+        {
+          "size": 15000,
+          "fee": 99
+        },
+        {
+          "size": 25000,
+          "fee": 179
+        },
+        {
+          "size": 50000,
+          "fee": 249
+        },
+        {
+          "size": 100000,
+          "fee": 469
+        }
+      ],
+      "profit_target": "9%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "trailing",
+      "profit_split": "80%",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Forex Fast Static (1-Step)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 6000,
+          "fee": 69
+        },
+        {
+          "size": 15000,
+          "fee": 139
+        },
+        {
+          "size": 25000,
+          "fee": 229
+        },
+        {
+          "size": 50000,
+          "fee": 389
+        },
+        {
+          "size": 100000,
+          "fee": 639
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static",
+      "profit_split": "80%",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Forex Classic (2-Step)",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 6000,
+          "fee": 67
+        },
+        {
+          "size": 15000,
+          "fee": 117
+        },
+        {
+          "size": 25000,
+          "fee": 219
+        },
+        {
+          "size": 50000,
+          "fee": 359
+        },
+        {
+          "size": 100000,
+          "fee": 599
+        }
+      ],
+      "profit_target": "8% / 5%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "8%",
+      "drawdown_type": "static",
+      "profit_split": "80%",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Forex Pay After Pass (1-Step)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": null,
+          "activation_fee": 189,
+          "entry_fee": 9
+        },
+        {
+          "size": 50000,
+          "fee": null,
+          "activation_fee": 329,
+          "entry_fee": 9
+        },
+        {
+          "size": 100000,
+          "fee": null,
+          "activation_fee": 499,
+          "entry_fee": 9
+        },
+        {
+          "size": 200000,
+          "fee": null,
+          "activation_fee": 999,
+          "entry_fee": 9
+        }
+      ],
+      "profit_target": "2%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "trailing",
+      "profit_split": "80%",
+      "min_trading_days": 0,
+      "deferred_fee": true,
+      "fee_note": "Entry fee only: an activation / funded-account fee is charged after you pass"
+    },
+    {
+      "name": "Forex Instant",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 6000,
+          "fee": 138
+        },
+        {
+          "size": 15000,
+          "fee": 218
+        },
+        {
+          "size": 25000,
+          "fee": 338
+        },
+        {
+          "size": 50000,
+          "fee": 558
+        },
+        {
+          "size": 100000,
+          "fee": 878
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": "3%",
+      "max_drawdown": "5%",
+      "drawdown_type": "trailing",
+      "profit_split": "70%",
+      "min_trading_days": 7
+    },
+    {
+      "name": "Forex Instant PRO",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 3000,
+          "fee": 109
+        },
+        {
+          "size": 6000,
+          "fee": 219
+        },
+        {
+          "size": 15000,
+          "fee": 439
+        },
+        {
+          "size": 25000,
+          "fee": 839
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": null,
+      "max_drawdown": "6%",
+      "drawdown_type": "trailing",
+      "profit_split": "60%",
+      "min_trading_days": 0
+    },
+    {
+      "name": "Crypto Fast (1-Step)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 6000,
+          "fee": 59
+        },
+        {
+          "size": 15000,
+          "fee": 129
+        },
+        {
+          "size": 25000,
+          "fee": 269
+        },
+        {
+          "size": 50000,
+          "fee": 469
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "trailing",
+      "profit_split": "80%",
+      "min_trading_days": 6
+    },
+    {
+      "name": "Crypto Fast PRO (1-Step)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 137
+        },
+        {
+          "size": 50000,
+          "fee": 199
+        },
+        {
+          "size": 100000,
+          "fee": 289
+        }
+      ],
+      "profit_target": "6%",
+      "max_daily_loss": null,
+      "max_drawdown": "4%",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "90%",
+      "min_trading_days": 4
+    },
+    {
+      "name": "Crypto Instant",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 3000,
+          "fee": 49
+        },
+        {
+          "size": 6000,
+          "fee": 89
+        },
+        {
+          "size": 15000,
+          "fee": 169
+        },
+        {
+          "size": 25000,
+          "fee": 299
+        },
+        {
+          "size": 50000,
+          "fee": 489
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": "3%",
+      "max_drawdown": "5%",
+      "drawdown_type": "trailing",
+      "profit_split": "70%",
+      "min_trading_days": 7
+    },
+    {
+      "name": "Futures Fast (1-Step)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 139
+        },
+        {
+          "size": 50000,
+          "fee": 199
+        },
+        {
+          "size": 100000,
+          "fee": 339
+        }
+      ],
+      "profit_target": "5%",
+      "max_daily_loss": null,
+      "max_drawdown": "2.5%",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "80%",
+      "min_trading_days": null
+    },
+    {
+      "name": "Futures Fast Pro (1-Step)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 50000,
+          "fee": 199
+        }
+      ],
+      "profit_target": "6%",
+      "max_daily_loss": "2%",
+      "max_drawdown": "4%",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "80%",
+      "min_trading_days": null
+    },
+    {
+      "name": "Futures Instant",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 239
+        },
+        {
+          "size": 50000,
+          "fee": 399
+        },
+        {
+          "size": 100000,
+          "fee": 689
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": "3%",
+      "max_drawdown": "5%",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "80%",
+      "min_trading_days": 7
+    }
+  ],
+  "fee_from": 49,
+  "profit_split": "80% up to 90%",
+  "profit_split_scale": null,
+  "max_daily_loss": "3%",
+  "max_drawdown": "6%",
+  "drawdown_type": "trailing",
+  "profit_target": "9%",
+  "leverage": "Forex evaluation up to 1:125 (FX; 1:20 indices, 1:40 commodities); funded 1:30-1:40; crypto 1:2 (1:5 BTC/ETH), up to 1:20 on Crypto Fast PRO",
+  "platforms": [
+    "MT5",
+    "TradeLocker",
+    "cTrader",
+    "For Traders X"
+  ],
+  "payout_frequency": "Bi-weekly on Forex Fast/Classic/Instant and Crypto Fast/Instant; on-demand on Pay After Pass, Crypto Fast PRO and all futures plans",
+  "first_payout_days": null,
+  "payout_speed": "within 48 hours (guaranteed, else 100% split); stated average 14h",
+  "min_trading_days": 3,
+  "consistency_rule": "Forex Fast/Classic: none; Pay After Pass Master: 20% best day; Instant: 15%; Crypto Fast PRO funded: 35%; Futures evaluation: 40%",
+  "news_trading": "restricted",
+  "weekend_holding": "allowed",
+  "countries_restricted": [
+    "Pakistan",
+    "Iran",
+    "Syria",
+    "Myanmar",
+    "Bangladesh",
+    "North Korea",
+    "Russia",
+    "Belarus",
+    "Cuba",
+    "Lebanon",
+    "Libya",
+    "Sudan",
+    "South Sudan",
+    "Crimea",
+    "Donetsk region (Ukraine)",
+    "Luhansk region (Ukraine)"
+  ],
+  "founded": 2023,
+  "hq": "Dubai, United Arab Emirates",
+  "discount_code": {
+    "code": "HALLOWEEN25",
+    "value": "25% off all accounts (Halloween)",
+    "percent": 25,
+    "source": "https://fortraders.com/challenges",
+    "verified": "2026-10-31",
+    "expires": null,
+    "also": [
+      {
+        "code": "BOO6K",
+        "value": "Forex Fast $6K for $9.99",
+        "percent": null
+      }
+    ]
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": null,
+    "count": 1821,
+    "note": "Rating unavailable: Trustpilot says it removed fake reviews for this company (breach of its guidelines)",
+    "checked": "2026-10-31",
+    "source": "https://www.trustpilot.com/review/fortraders.com"
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://fortraders.com/",
+    "https://fortraders.com/faq",
+    "https://fortraders.com/challenges",
+    "https://fortraders.com/instant-funding",
+    "https://fortraders.com/pay-after-pass",
+    "https://fortraders.com/our-rules",
+    "https://fortraders.com/markets/crypto",
+    "https://fortraders.com/markets/futures",
+    "https://fortraders.com/affiliate-program",
+    "https://api.fortraders.com/web-app/challenges/grouped-by-plan-with-steps",
+    "https://www.trustpilot.com/review/fortraders.com"
+  ],
+  "notes": "Per-size list prices taken from For Traders' own pricing API that powers the site configurator (basePrice), which matches the struck-through prices on the site (e.g. Fast $100K $469). Site-wide Halloween promo: HALLOWEEN25 = 25% off all accounts (Fast $100K shown $351); BOO6K makes Forex Fast $6K $9.99; TRADE15/BUNDLE15 also active. Pay After Pass: $9 entry (shown struck $29/$39/$49/$69) + activation fee $189/$329/$499/$999 charged only after passing; fee_from excludes this $9 entry. min_trading_days = minimum profitable days (>=0.5% days). Futures platform is 'For Traders X' (pricing API lists it as DX_TRADE). Futures max reward per cycle $2,500 (Fast) / $1,200 (Fast Pro) / $4,500 (Instant); forex max $15,000 per cycle. Also offers a 'Predictions' open beta (prediction markets) not listed. Trustpilot: profile shows 'This company's rating is unavailable due to a breach of our guidelines' — score null. Legal entities: FT Trading Ltd. (Saint Lucia) and BLN Tech Club DMCC (Dubai); office in Prague. Weekend holding allowed per FAQ; news restricted only on funded forex accounts (5 min window).",
+  "segment": "multi",
+  "also_offers": [
+    "futures"
+  ],
+  "category_basis": "Core products are Forex/CFD and crypto CFD challenges on MT5, TradeLocker and cTrader; exchange-listed CME/COMEX/CBOT/NYMEX futures challenges are also sold on the For Traders X platform.",
+  "category_source": "https://fortraders.com/challenges",
+  "founded_source": "https://fortraders.com/faq",
+  "hq_country": {
+    "code": "AE",
+    "source": "https://fortraders.com/faq",
+    "quote": "Dubai, United Arab Emirates"
+  },
+  "max_allocation_usd": 300000,
+  "max_allocation_text": "Up to $300K virtual capital allocation; single accounts up to $200K",
+  "max_allocation_source": "https://fortraders.com/faq",
+  "field_sources": {
+    "category": "https://fortraders.com/challenges",
+    "assets": "https://fortraders.com/faq",
+    "challenge_types": "https://fortraders.com/challenges",
+    "account_sizes": "https://api.fortraders.com/web-app/challenges/grouped-by-plan-with-steps",
+    "programs": "https://api.fortraders.com/web-app/challenges/grouped-by-plan-with-steps",
+    "fee_from": "https://api.fortraders.com/web-app/challenges/grouped-by-plan-with-steps",
+    "profit_split": "https://fortraders.com/",
+    "max_daily_loss": "https://fortraders.com/challenges",
+    "max_drawdown": "https://fortraders.com/challenges",
+    "drawdown_type": "https://api.fortraders.com/web-app/challenges/grouped-by-plan-with-steps",
+    "profit_target": "https://fortraders.com/challenges",
+    "leverage": "https://fortraders.com/faq",
+    "platforms": "https://fortraders.com/faq",
+    "payout_frequency": "https://api.fortraders.com/web-app/challenges/grouped-by-plan-with-steps",
+    "payout_speed": "https://fortraders.com/",
+    "max_allocation": "https://fortraders.com/faq",
+    "min_trading_days": "https://fortraders.com/challenges",
+    "consistency_rule": "https://api.fortraders.com/web-app/challenges/grouped-by-plan-with-steps",
+    "news_trading": "https://fortraders.com/faq",
+    "weekend_holding": "https://fortraders.com/faq",
+    "countries_restricted": "https://fortraders.com/faq",
+    "founded": "https://fortraders.com/faq",
+    "hq": "https://fortraders.com/faq",
+    "discount_code": "https://fortraders.com/challenges",
+    "trustpilot": "https://www.trustpilot.com/review/fortraders.com"
+  }
+}

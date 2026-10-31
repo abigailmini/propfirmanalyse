@@ -459,13 +459,17 @@ def program_html(p, f):
     cur = f.get("fee_currency")
     ladder = ""
     if sf:
-        rows = "".join(f'<tr><td class="num n">{money(num(x.get("size")))}</td><td class="num n">{mh(num(x.get("fee")), cur)}</td>'
+        def _fee_cell(x):   # pay-later programs (2026-10-31): fee null, entry ticket in entry_fee
+            if num(x.get("fee")) is None and num(x.get("entry_fee")): return f'{money(num(x["entry_fee"]), cur)} <small>entry</small>'
+            return mh(num(x.get("fee")), cur)
+        rows = "".join(f'<tr><td class="num n">{money(num(x.get("size")))}</td><td class="num n">{_fee_cell(x)}</td>'
                        f'<td class="num n">{mh(num(x.get("fee")) / num(x.get("size")) * 1000, cur) if num(x.get("fee")) else NA}</td></tr>' for x in sf)
         ladder = f'<table class="ladder"><thead><tr><th class="num" scope="col">Account</th><th class="num" scope="col">Fee</th><th class="num" scope="col">Per $1K</th></tr></thead><tbody>{rows}</tbody></table>'
     strip = "".join(f'<div><dt>{k}</dt><dd class="n">{show(v)}</dd></div>' for k, v in [
         ("Profit target", p.get("profit_target")), ("Daily loss", p.get("max_daily_loss")), ("Max drawdown", p.get("max_drawdown")),
         ("Profit split", p.get("profit_split")), ("Min days", p.get("min_trading_days"))])
     ddt = f'<p class="ddt"><span>Drawdown</span> {e(p["drawdown_type"])}</p>' if p.get("drawdown_type") else ""
+    if p.get("fee_note"): ddt += f'<p class="ddt"><span>Fee</span> {e(p["fee_note"])}</p>'
     return (f'<article class="prog"><h3>{e(p.get("name") or p.get("type") or "Program")}{(" <span class=" + chr(34) + "tag" + chr(34) + ">" + e(p.get("type")) + "</span>") if p.get("type") else ""}</h3>'
             f'<div class="pbody"><dl class="strip">{strip}</dl>{ddt}{ladder}</div></article>')
 

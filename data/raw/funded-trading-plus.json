@@ -1,0 +1,306 @@
+{
+  "name": "Funded Trading Plus",
+  "slug": "funded-trading-plus",
+  "site": "https://www.fundedtradingplus.com",
+  "category": "cfd",
+  "assets": [
+    "forex",
+    "indices",
+    "commodities",
+    "crypto"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step",
+    "instant"
+  ],
+  "account_sizes": [
+    5000,
+    10000,
+    25000,
+    50000,
+    100000,
+    200000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "1-Step Express",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 10000,
+          "fee": 99
+        },
+        {
+          "size": 25000,
+          "fee": 199
+        },
+        {
+          "size": 50000,
+          "fee": 349
+        },
+        {
+          "size": 100000,
+          "fee": 549
+        },
+        {
+          "size": 200000,
+          "fee": 999
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "4% (balance-based)",
+      "max_drawdown": "6%",
+      "drawdown_type": "trailing (balance high-watermark, locks at initial balance)",
+      "profit_split": "80% (90% via +15% add-on)",
+      "min_trading_days": null
+    },
+    {
+      "name": "2-Step Classic",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 10000,
+          "fee": 89
+        },
+        {
+          "size": 25000,
+          "fee": 169
+        },
+        {
+          "size": 50000,
+          "fee": 319
+        },
+        {
+          "size": 100000,
+          "fee": 549
+        }
+      ],
+      "profit_target": "7% / 7%",
+      "max_daily_loss": "4% (balance-based, EOD)",
+      "max_drawdown": "8% (9% via +20% add-on)",
+      "drawdown_type": "static",
+      "profit_split": "80% (85% via +15% add-on)",
+      "min_trading_days": null
+    },
+    {
+      "name": "Instant Funding",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 249
+        },
+        {
+          "size": 10000,
+          "fee": 429
+        },
+        {
+          "size": 25000,
+          "fee": 1099
+        },
+        {
+          "size": 50000,
+          "fee": 2199
+        },
+        {
+          "size": 100000,
+          "fee": 4499
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": "6%",
+      "max_drawdown": "6%",
+      "drawdown_type": "trailing (balance high-watermark, locks at initial balance)",
+      "profit_split": "80% (90% via +15% add-on)",
+      "min_trading_days": null
+    },
+    {
+      "name": "Activation Accounts (Pass Now Pay Later)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": null,
+          "entry_fee": 4
+        },
+        {
+          "size": 50000,
+          "fee": null,
+          "entry_fee": 4
+        },
+        {
+          "size": 100000,
+          "fee": null,
+          "entry_fee": 4
+        }
+      ],
+      "profit_target": "2%",
+      "max_daily_loss": "4% challenge / 3% funded (balance-based)",
+      "max_drawdown": "6%",
+      "drawdown_type": "static on challenge; trailing on equity on funded (locks at starting balance)",
+      "profit_split": "80%",
+      "min_trading_days": 0,
+      "deferred_fee": true,
+      "fee_note": "Entry fee only: an activation / funded-account fee is charged after you pass"
+    }
+  ],
+  "fee_from": 89,
+  "profit_split": "80% up to 90%",
+  "profit_split_scale": "80% standard on all programs; auto-upgrade to 90% once FT+ Trader account reaches 20% simulated profit (on some accounts); 90% from start via +15% checkout add-on (1-Step/Instant), 85% add-on on 2-Step. Homepage also advertises 'Up to 100% Reward Split'.",
+  "max_daily_loss": "4%",
+  "max_drawdown": "6%",
+  "drawdown_type": "trailing (balance-based, locks at initial balance)",
+  "profit_target": "10%",
+  "leverage": "up to 1:50 (2-Step); 1:30 on 1-Step, Instant, Activation (forex)",
+  "platforms": [
+    "MT5",
+    "Match-Trader"
+  ],
+  "payout_frequency": "1-Step & Instant: first request from day 0/day 1 once in profit, then every 7 days (every 3 days via add-on); 2-Step: 10 calendar days after funding, then every 10 days; Activation Accounts: after 10 trading days, then every 10 trading days",
+  "first_payout_days": 0,
+  "payout_speed": "standard review and processing within 2 business days (most same day); 5-7 business days if flagged for risk review",
+  "min_trading_days": null,
+  "consistency_rule": "1-Step & Instant: none; 2-Step: no day >35% of profit in each challenge step, >50% on funded; Activation Accounts: 25% on funded (checked at payout)",
+  "news_trading": "allowed",
+  "weekend_holding": "allowed",
+  "countries_restricted": [
+    "Afghanistan",
+    "Belarus",
+    "Burundi",
+    "Central African Republic",
+    "Chad",
+    "Congo Republic",
+    "Crimea (Ukraine)",
+    "Donetsk, Luhansk, Kherson, Zaporizhzhya (Ukraine)",
+    "Cuba",
+    "Democratic Republic of Congo",
+    "Eritrea",
+    "Guinea",
+    "Guinea-Bissau",
+    "Haiti",
+    "Iran",
+    "Liberia",
+    "Libya",
+    "Myanmar",
+    "Nicaragua",
+    "North Korea",
+    "Papua New Guinea",
+    "Russia",
+    "Somalia",
+    "South Sudan",
+    "Sudan",
+    "Syria",
+    "Vanuatu",
+    "Venezuela",
+    "Vietnam",
+    "Yemen",
+    "Zimbabwe"
+  ],
+  "founded": 2021,
+  "hq": "London, United Kingdom",
+  "discount_code": {
+    "code": "SIZE30",
+    "value": "30% off $5K-$10K accounts",
+    "percent": 30,
+    "source": "https://www.fundedtradingplus.com/",
+    "verified": "2026-10-31",
+    "expires": null,
+    "also": [
+      {
+        "code": "SIZE25",
+        "value": "25% off $25K-$50K accounts",
+        "percent": 25
+      },
+      {
+        "code": "SIZE20",
+        "value": "20% off $100K-$200K accounts",
+        "percent": 20
+      }
+    ]
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": null,
+    "count": 2668,
+    "note": "Rating unavailable: Trustpilot says it removed fake reviews for this company (breach of its guidelines)",
+    "checked": "2026-10-31",
+    "source": "https://www.trustpilot.com/review/fundedtradingplus.com"
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://www.fundedtradingplus.com/",
+    "https://www.fundedtradingplus.com/prop-trading-challenges/instant-funding",
+    "https://www.fundedtradingplus.com/_next/static/chunks/0708gkpm6397s.js",
+    "https://help.fundedtradingplus.com/1-step-express-program-information/",
+    "https://help.fundedtradingplus.com/2-step-classic-program-information/",
+    "https://help.fundedtradingplus.com/instant-program-information/",
+    "https://help.fundedtradingplus.com/pass-now-pay-later-program-information/",
+    "https://help.fundedtradingplus.com/activation-accounts-pricing-and-fees/",
+    "https://help.fundedtradingplus.com/activation-accounts-challenge-rules/",
+    "https://help.fundedtradingplus.com/activation-accounts-funded-account-rules/",
+    "https://help.fundedtradingplus.com/activation-accounts-payouts-and-withdrawals/",
+    "https://help.fundedtradingplus.com/profit-split/",
+    "https://help.fundedtradingplus.com/payouts-overview/",
+    "https://help.fundedtradingplus.com/ft-leverage/",
+    "https://help.fundedtradingplus.com/consistency-rule/",
+    "https://help.fundedtradingplus.com/which-platforms-do-you-offer/",
+    "https://help.fundedtradingplus.com/prohibited-countries/",
+    "https://help.fundedtradingplus.com/amount-under-managementaumhow-many-accounts-can-i-have/",
+    "https://help.fundedtradingplus.com/which-markets-are-replicated-and-available-in-your-simulated-live-environment/",
+    "https://help.fundedtradingplus.com/who-are-acello-ltd/",
+    "https://www.trustpilot.com/review/fundedtradingplus.com"
+  ],
+  "notes": "Fees are list prices (originalPrice) from the site's pricing config bundle (https://www.fundedtradingplus.com/_next/static/chunks/0708gkpm6397s.js), cross-checked against rendered homepage ($100K 1-Step $549) and instant page ($100K Instant $4,499); prices include VAT per site. Public promo banner (Oct 2026): SIZE30 = 30% off $5k-$10k, SIZE25 = 25% off $25k-$50k, SIZE20 = 20% off $100k-$200k. Activation Accounts (Pass Now Pay Later, launched Sep 2026): $4 upfront, then activation fee on pass of $179 (25K) / $299 (50K) / $489 (100K); fee_from uses the cheapest pay-upfront challenge ($89, 2-Step 10K). Add-ons: Scaling to $5M +15%, 90% split +15%, 3-day reward frequency +15% (1-Step/Instant); 9% max DD +20%, 85% split +15% (2-Step). cTrader appears in checkout config (+25%, 'Premium') but help centre and homepage list only MT5 and Match-Trader (MT5 unavailable in US). Instant: no weekend holding (positions closed Fri 4:30pm EST). 2-Step has 3% symbol loss limit. News trading 'Allowed - subject to policy' (config also has a 5-min before/after red-news rule note). Min trading days not stated for 1-Step/2-Step/Instant (left null). Entity: Acello Ltd (England & Wales, co. 12696083, 30 Old Bailey, London) operates site/payments; IF Pro Ltd (Saint Lucia, 2025-00056) is the program provider. Help centre states FTP was acquired by Instant Funding in May 2026 (card descriptor changed from FTP London Ltd to Acello Ltd on 29 Jun 2026). founded=2021 from homepage 'Since 2021' / '2021 – 2026'. TRUSTPILOT: rating suppressed — page shows 'This company's rating is unavailable due to a breach of our guidelines' / 'We've removed a number of fake reviews for this company' (2,668 reviews; 166 in last 12 months); recent reviews (Sep-Oct 2026) include several payout/record disputes, activation delays and execution complaints with company replies. trustpilot left null. Main site sits behind Cloudflare that blocked most page loads (about-us, terms, refund-policy, affiliates, available-markets pages not readable); data taken from help centre, homepage/instant dumps and JS pricing config.",
+  "segment": "multi",
+  "also_offers": [],
+  "category_basis": "Sells simulated CFD accounts (forex, indices, metals, energies, crypto) on MT5 and Match-Trader; no futures (CME) accounts.",
+  "category_source": "https://help.fundedtradingplus.com/which-platforms-do-you-offer/",
+  "founded_source": "https://www.fundedtradingplus.com/",
+  "hq_country": {
+    "code": "GB",
+    "source": "https://www.fundedtradingplus.com/",
+    "quote": "London, United Kingdom"
+  },
+  "max_allocation_usd": 5000000,
+  "max_allocation_text": "Scaling to $2.5M simulated per account ($5M with Scaling add-on on 1-Step/Instant). Max combined funded allocation from challenge accounts $200K; Instant no hard limit; Activation Accounts up to $250K across max 5 funded accounts.",
+  "max_allocation_source": "https://help.fundedtradingplus.com/1-step-express-program-information/",
+  "field_sources": {
+    "name": "https://www.fundedtradingplus.com/",
+    "site": "https://www.fundedtradingplus.com/",
+    "category": "https://help.fundedtradingplus.com/which-platforms-do-you-offer/",
+    "category_basis": "https://help.fundedtradingplus.com/which-markets-are-replicated-and-available-in-your-simulated-live-environment/",
+    "segment": "https://help.fundedtradingplus.com/ft-leverage/",
+    "assets": "https://help.fundedtradingplus.com/ft-leverage/",
+    "challenge_types": "https://www.fundedtradingplus.com/",
+    "account_sizes": "https://www.fundedtradingplus.com/_next/static/chunks/0708gkpm6397s.js",
+    "fee_currency": "https://www.fundedtradingplus.com/",
+    "programs": "https://www.fundedtradingplus.com/_next/static/chunks/0708gkpm6397s.js",
+    "fee_from": "https://www.fundedtradingplus.com/_next/static/chunks/0708gkpm6397s.js",
+    "profit_split": "https://help.fundedtradingplus.com/profit-split/",
+    "profit_split_scale": "https://help.fundedtradingplus.com/profit-split/",
+    "max_daily_loss": "https://help.fundedtradingplus.com/1-step-express-program-information/",
+    "max_drawdown": "https://help.fundedtradingplus.com/1-step-express-program-information/",
+    "drawdown_type": "https://help.fundedtradingplus.com/1-step-express-program-information/",
+    "profit_target": "https://help.fundedtradingplus.com/1-step-express-program-information/",
+    "leverage": "https://help.fundedtradingplus.com/ft-leverage/",
+    "platforms": "https://help.fundedtradingplus.com/which-platforms-do-you-offer/",
+    "payout_frequency": "https://help.fundedtradingplus.com/1-step-express-program-information/",
+    "first_payout_days": "https://help.fundedtradingplus.com/1-step-express-program-information/",
+    "payout_speed": "https://help.fundedtradingplus.com/payouts-overview/",
+    "max_allocation": "https://help.fundedtradingplus.com/1-step-express-program-information/",
+    "max_allocation_text": "https://help.fundedtradingplus.com/amount-under-managementaumhow-many-accounts-can-i-have/",
+    "consistency_rule": "https://help.fundedtradingplus.com/consistency-rule/",
+    "news_trading": "https://www.fundedtradingplus.com/",
+    "weekend_holding": "https://help.fundedtradingplus.com/1-step-express-program-information/",
+    "countries_restricted": "https://www.fundedtradingplus.com/",
+    "founded": "https://www.fundedtradingplus.com/",
+    "hq": "https://www.fundedtradingplus.com/",
+    "hq_country": "https://www.fundedtradingplus.com/",
+    "discount_code": "https://www.fundedtradingplus.com/",
+    "programs[Activation Accounts]": "https://help.fundedtradingplus.com/activation-accounts-pricing-and-fees/",
+    "programs[2-Step Classic]": "https://help.fundedtradingplus.com/2-step-classic-program-information/",
+    "programs[Instant Funding]": "https://www.fundedtradingplus.com/prop-trading-challenges/instant-funding"
+  }
+}

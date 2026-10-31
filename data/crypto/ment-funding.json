@@ -1,0 +1,22 @@
+{
+  "crypto_pairs": null,
+  "crypto_pairs_examples": [],
+  "crypto_leverage": "1:2 (forex/CFD program); micro crypto futures on futures program",
+  "crypto_venue": "CFD via DXtrade/Match-Trader/cTrader/PropX (liquidity provider feed); CME micro crypto futures on futures program",
+  "instrument_type": "CFD (forex program); CME micro futures (futures program)",
+  "weekend_crypto": null,
+  "payout_methods": [],
+  "crypto_payout": null,
+  "kyc_before_payout": true,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": null,
+  "banned_strategies": null,
+  "bots_allowed": true,
+  "copy_trading": null,
+  "crypto_fees": "Commissions match liquidity provider retail rates",
+  "notes": "Crypto is a minor add-on asset; site states 'up to 2:1 on crypto' and futures program includes 'micros, including micro crypto'. Pair list not published.",
+  "sources": [
+    "https://mentfunding.com/"
+  ],
+  "checked": "2026-10-31"
+}

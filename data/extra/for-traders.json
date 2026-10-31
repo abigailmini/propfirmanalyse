@@ -1,0 +1,32 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": null,
+  "fee_refundable": null,
+  "time_limit": "Unlimited (evaluation and Master)",
+  "has_time_limit": false,
+  "activation_fee": "Pay After Pass only: $189 (25K) / $329 (50K) / $499 (100K) / $999 (200K) after passing",
+  "payout_methods": [
+    "Rise (bank transfer, local payments)",
+    "Crypto (USDC ERC20)"
+  ],
+  "min_payout": 100,
+  "kyc_before_payout": true,
+  "scaling_plan": null,
+  "ea_bots": "allowed",
+  "copy_trading": "between own For Traders accounts only (third-party/signal copying banned)",
+  "hedging": null,
+  "max_risk_per_trade": "Funded forex: open positions must not reach -2% floating loss of starting balance (drawdown protection)",
+  "inactivity_rule": "Close at least 1 trade every 30 days",
+  "notes": "KYC once after passing first evaluation (before first reward on Instant/Pay After Pass). Min payout $100 on every plan ($750 Forex Instant PRO; $250 Futures Fast Pro per pricing API). Payout guarantee 48h or 100% split. Reverse hedging with external accounts is grounds for termination (per Trustpilot complaint context, not on site). Refund policy not checked in T&C. One-time fees, no subscription.",
+  "sources": [
+    "https://fortraders.com/faq",
+    "https://fortraders.com/pay-after-pass",
+    "https://fortraders.com/our-rules",
+    "https://fortraders.com/",
+    "https://api.fortraders.com/web-app/challenges/grouped-by-plan-with-steps"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": null,
+  "monthly_fee": false
+}

@@ -1,0 +1,27 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": "No refunds on any service; all transactions final",
+  "fee_refundable": false,
+  "time_limit": "None on forex & equities; futures evaluation max 90 calendar days (365-day add-on on $400K)",
+  "has_time_limit": false,
+  "activation_fee": null,
+  "payout_methods": [],
+  "min_payout": null,
+  "kyc_before_payout": true,
+  "scaling_plan": "Account doubling: after first withdrawal, 3 months >2% gain in any rolling 6 months, and total profits >=10% of start → account reopens at 2x size; cap $5M; only direct sizes up to $1M scale",
+  "ea_bots": "allowed",
+  "copy_trading": null,
+  "hedging": "allowed within a single account only",
+  "max_risk_per_trade": null,
+  "inactivity_rule": "Open or close at least one trade every 30 days or account is breached",
+  "notes": "Payout methods not published on public site. Equities min payout $100. Funded accounts issued 24-48 business hours after KYC and trader agreement. Weekend holding (forex) is a paid checkout add-on; 90% split is a paid add-on. Multi-accounting prohibited (all accounts closed).",
+  "sources": [
+    "https://mentfunding.com/",
+    "https://mentfunding.com/refund-policy.html",
+    "https://mentfunding.com/terms-of-service.html"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": null,
+  "monthly_fee": false
+}

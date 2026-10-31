@@ -30,7 +30,7 @@ Affiliate page column = where to apply. If it says *email*, there is no public p
 | Bulenox | https://bulenox.com/member/aff/signup | todo | # | — | up to 15% | 2026-10-26 |
 | Instant Funding | https://instantfunding.com/partner/ | todo | # | — | 15% first purchase, 0–5% repeat, up to 17.5%; paid bi-weekly from $100 | 2026-10-26 |
 
-## Added 2026-10-31 (8)
+## Added 2026-10-31 (16)
 
 Commission = headline rate published on the firm's own affiliate page, read 2026-10-31. Code = public promo code on the firm's own site that day (not ours).
 
@@ -44,6 +44,14 @@ Commission = headline rate published on the firm's own affiliate page, read 2026
 | Hola Prime | https://holaprime.com/best-prop-firm-affiliate-program/ | todo | # | SPOOKY40 | 30% flat commission (no tiers) | 2026-10-31 |
 | Fintokei | https://www.fintokei.com/affiliate/ | todo | # | NEW20 | Tiered; up to 10% commission at tier 3, paid on repeat purchases too | 2026-10-31 |
 | The Trading Pit | https://www.thetradingpit.com/become-an-affiliate | todo | # | — | 10% on direct referrals (multi-level: 5% L2, 3% L3, 2% L4); 60-day cookie | 2026-10-31 |
+| BrightFunded | https://brightfunded.com/affiliate | todo | # | HW30 | 10% (Bronze), 12.5% at €1,000/month, 15% at €2,000/month | 2026-10-31 |
+| City Traders Imperium | https://citytradersimperium.com/affiliate-program/ | todo | # | — | 20% commission on every purchase via referral link | 2026-10-31 |
+| Atlas Funded | https://www.atlasfunded.com/affiliates | todo | # | SPOOKY | 12.5% from first sale, up to 22.5% (Elite Partner); 90-day cookie, lifetime repeats | 2026-10-31 |
+| Ment Funding | https://mentfunding.com/affiliates/ | todo | # | — | Tiered 7.5% up to 11% on new sales + 7% lifetime on repeat customers | 2026-10-31 |
+| For Traders | https://fortraders.com/affiliate-program | todo | # | HALLOWEEN25 | 15% first purchase (17.5% at Tier 4) + up to 7.5% repeat orders + 10-15% sub-affiliate | 2026-10-31 |
+| ThinkCapital | https://www.thinkcapital.com/partners/ | todo | # | — | 5% to 15% tiered (Starter 5%, Pro 8%, Elite 10%, Master 15%) | 2026-10-31 |
+| Finotive Funding | https://finotivefunding.com/affiliate-program | todo | # | FIRST25 | 15%–25% on first purchase by tier (Gold 15%, Platinum 20%, Diamond 25%) + up to 5% recurring; new applications closed (invitation only) | 2026-10-31 |
+| Funded Trading Plus | https://www.fundedtradingplus.com/affiliates | todo | # | SIZE30 | — | 2026-10-31 |
 
 ## Candidates (next firms to add, crypto/multi-asset first)
 
@@ -51,7 +59,6 @@ Commission = headline rate published on the firm's own affiliate page, read 2026
 |---|---|---|---|---|
 | Funding Traders | https://fundingtraders.com | https://fundingtraders.com/prop-trading-partners | Forex/crypto | 2026-10-26 (excluded 2026-10-31: Trustpilot rating suspended + recent payout complaints) |
 | AquaFunded | https://www.aquafunded.com | — (none linked on homepage) | Multi-asset | 2026-10-26 (excluded 2026-10-31: Trustpilot rating suspended + payout-denial pattern) |
-| Funded Trading Plus | https://www.fundedtradingplus.com | — (Cloudflare-blocked, check in browser) | Multi-asset | 2026-10-26 |
 
 ## Pitch (for David's emails, ≤90 words)
 

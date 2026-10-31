@@ -1,0 +1,492 @@
+{
+  "name": "Atlas Funded",
+  "slug": "atlas-funded",
+  "site": "https://www.atlasfunded.com",
+  "category": "cfd",
+  "assets": [
+    "forex",
+    "indices",
+    "commodities",
+    "futures"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step",
+    "instant"
+  ],
+  "account_sizes": [
+    5000,
+    10000,
+    25000,
+    50000,
+    100000,
+    150000,
+    200000,
+    300000,
+    400000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "1-Step",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 61
+        },
+        {
+          "size": 10000,
+          "fee": 97
+        },
+        {
+          "size": 25000,
+          "fee": 186
+        },
+        {
+          "size": 50000,
+          "fee": 284
+        },
+        {
+          "size": 100000,
+          "fee": 478
+        },
+        {
+          "size": 200000,
+          "fee": 867
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "7%",
+      "drawdown_type": "static",
+      "profit_split": "90% (100% with add-on)",
+      "min_trading_days": 3
+    },
+    {
+      "name": "2-Step",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 43
+        },
+        {
+          "size": 10000,
+          "fee": 79
+        },
+        {
+          "size": 25000,
+          "fee": 160
+        },
+        {
+          "size": 50000,
+          "fee": 240
+        },
+        {
+          "size": 100000,
+          "fee": 443
+        },
+        {
+          "size": 200000,
+          "fee": 816
+        }
+      ],
+      "profit_target": "8% / 5%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_split": "90% (100% with add-on)",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Instant Funded (Instant Standard)",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 61
+        },
+        {
+          "size": 10000,
+          "fee": 97
+        },
+        {
+          "size": 25000,
+          "fee": 186
+        },
+        {
+          "size": 50000,
+          "fee": 381
+        },
+        {
+          "size": 100000,
+          "fee": 635
+        },
+        {
+          "size": 200000,
+          "fee": 969
+        },
+        {
+          "size": 300000,
+          "fee": 1379
+        },
+        {
+          "size": 400000,
+          "fee": 1826
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": "3%",
+      "max_drawdown": "5%",
+      "drawdown_type": "trailing (end of day)",
+      "profit_split": "90% (100% with add-on)",
+      "min_trading_days": 5
+    },
+    {
+      "name": "Instant Zero",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 80
+        },
+        {
+          "size": 10000,
+          "fee": 134
+        },
+        {
+          "size": 25000,
+          "fee": 250
+        },
+        {
+          "size": 50000,
+          "fee": 514
+        },
+        {
+          "size": 100000,
+          "fee": 851
+        },
+        {
+          "size": 200000,
+          "fee": 1297
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": "none",
+      "max_drawdown": "4%",
+      "drawdown_type": "trailing (end of day)",
+      "profit_split": "90%",
+      "min_trading_days": 5
+    },
+    {
+      "name": "1-Step Access (pay later)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": null,
+          "funded_fee_on_pass": 52,
+          "entry_fee": 5
+        },
+        {
+          "size": 10000,
+          "fee": null,
+          "funded_fee_on_pass": 88,
+          "entry_fee": 5
+        },
+        {
+          "size": 25000,
+          "fee": null,
+          "funded_fee_on_pass": 176,
+          "entry_fee": 5
+        },
+        {
+          "size": 50000,
+          "fee": null,
+          "funded_fee_on_pass": 263,
+          "entry_fee": 5
+        },
+        {
+          "size": 100000,
+          "fee": null,
+          "funded_fee_on_pass": 492,
+          "entry_fee": 5
+        },
+        {
+          "size": 200000,
+          "fee": null,
+          "funded_fee_on_pass": 945,
+          "entry_fee": 5
+        },
+        {
+          "size": 300000,
+          "fee": null,
+          "funded_fee_on_pass": 1447,
+          "entry_fee": 5
+        },
+        {
+          "size": 400000,
+          "fee": null,
+          "funded_fee_on_pass": 1739,
+          "entry_fee": 5
+        }
+      ],
+      "profit_target": "3%",
+      "max_daily_loss": "5% (funded 3%)",
+      "max_drawdown": "10% (funded 6%)",
+      "drawdown_type": "trailing (equity)",
+      "profit_split": "90%",
+      "min_trading_days": 0,
+      "deferred_fee": true,
+      "fee_note": "Entry fee only: an activation / funded-account fee is charged after you pass"
+    },
+    {
+      "name": "1-Step Daily",
+      "type": "1-step",
+      "sizes_fees": [],
+      "profit_target": "8%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static",
+      "profit_split": "90%",
+      "min_trading_days": 3
+    },
+    {
+      "name": "2-Step Daily",
+      "type": "2-step",
+      "sizes_fees": [],
+      "profit_target": "7% / 4%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "8%",
+      "drawdown_type": "static",
+      "profit_split": "90%",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Atlas Futures Standard",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 105
+        },
+        {
+          "size": 50000,
+          "fee": 169
+        },
+        {
+          "size": 100000,
+          "fee": 269
+        },
+        {
+          "size": 150000,
+          "fee": 359
+        }
+      ],
+      "profit_target": "6% ($3,000 on $50K)",
+      "max_daily_loss": "$1,200 on $50K (lockout, removable add-on)",
+      "max_drawdown": "$2,000 on $50K",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "90%",
+      "min_trading_days": 2
+    },
+    {
+      "name": "Atlas Futures Apex",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 89
+        },
+        {
+          "size": 50000,
+          "fee": 155
+        },
+        {
+          "size": 100000,
+          "fee": 239
+        },
+        {
+          "size": 150000,
+          "fee": 339
+        }
+      ],
+      "profit_target": "6% ($3,000 on $50K)",
+      "max_daily_loss": "$1,200 on $50K (lockout, removable add-on)",
+      "max_drawdown": "$2,000 on $50K",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "90%",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Atlas Futures Daily",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 85
+        },
+        {
+          "size": 50000,
+          "fee": 129
+        },
+        {
+          "size": 100000,
+          "fee": 199
+        },
+        {
+          "size": 150000,
+          "fee": 279
+        }
+      ],
+      "profit_target": "6% ($3,000 on $50K)",
+      "max_daily_loss": "$1,200 on $50K (funded $1,000)",
+      "max_drawdown": "$2,000 on $50K",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "90%",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Atlas Futures Direct",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 349
+        },
+        {
+          "size": 50000,
+          "fee": 499
+        },
+        {
+          "size": 100000,
+          "fee": 649
+        },
+        {
+          "size": 150000,
+          "fee": 799
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": "$1,200 on $50K ($25K: none)",
+      "max_drawdown": "$2,000 on $50K",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "90%",
+      "min_trading_days": null
+    }
+  ],
+  "fee_from": 43,
+  "profit_split": "90% up to 100%",
+  "profit_split_scale": "90% standard; 100% via +20% checkout add-on (CFD programs). Futures 90% flat.",
+  "max_daily_loss": "4%",
+  "max_drawdown": "7%",
+  "drawdown_type": "static",
+  "profit_target": "10%",
+  "leverage": "up to 1:100 (CFD; 1:50 on MT5 Access funded)",
+  "platforms": [
+    "MT5",
+    "TradeLocker",
+    "Match-Trader",
+    "Volumetrica"
+  ],
+  "payout_frequency": "CFD: first payout 14 days after funded account is created, then every 14 days (Access: 28 days first; 1-Step/2-Step Daily: on demand Mon-Fri; Weekly and On-Demand add-ons). Futures: on request once profit goal reached (Atlas Daily: once per trading day), capped per payout.",
+  "first_payout_days": 14,
+  "payout_speed": "within 24 hours of request, or Atlas credits $1,000 (24-hour Reward Guarantee); help centre notes the funded agreement allows 1-5 business days",
+  "min_trading_days": 3,
+  "consistency_rule": "None on 1-Step, 2-Step, Daily and Instant Zero; Instant Funded 20%; Access funded 40%. Futures: Standard 50% to pass / 40% funded, Apex & Daily 40% to pass / none funded, Direct 20%.",
+  "news_trading": "restricted",
+  "weekend_holding": "allowed",
+  "countries_restricted": null,
+  "founded": 2024,
+  "hq": "Dubai, United Arab Emirates",
+  "discount_code": {
+    "code": "SPOOKY",
+    "value": "45% off CFD accounts (40% futures, 25% Atlas Daily)",
+    "percent": 45,
+    "source": "https://www.atlasfunded.com/",
+    "verified": "2026-10-31",
+    "expires": null,
+    "also": [
+      {
+        "code": "NEW",
+        "value": "50% off first purchase",
+        "percent": 50
+      }
+    ]
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 3.9,
+    "count": 2075
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://www.atlasfunded.com/",
+    "https://www.atlasfunded.com/forex",
+    "https://www.atlasfunded.com/futures",
+    "https://app.atlasfunded.com/api/checkout/catalog",
+    "https://app.atlasfunded.com/api/checkout/rules?variation_id=93232&product_id=13",
+    "https://www.atlasfunded.com/trading-rules",
+    "https://help.atlasfunded.com/programs",
+    "https://help.atlasfunded.com/futures-programs",
+    "https://help.atlasfunded.com/access",
+    "https://help.atlasfunded.com/markets",
+    "https://help.atlasfunded.com/payout-methods",
+    "https://help.atlasfunded.com/one-step-daily",
+    "https://help.atlasfunded.com/instant-zero",
+    "https://help.atlasfunded.com/faq",
+    "https://www.atlasfunded.com/about",
+    "https://www.atlasfunded.com/futures?model=ftapex#pricing",
+    "https://www.atlasfunded.com/futures?model=ftdaily#pricing",
+    "https://www.atlasfunded.com/futures?model=ftdirect#pricing",
+    "https://www.atlasfunded.com/futures?model=ftstandard#pricing",
+    "https://www.trustpilot.com/review/atlasfunded.com",
+    "https://www.atlasfunded.com/terms"
+  ],
+  "notes": "List prices taken from the public checkout catalog API (regularPrice, identical across MT5/TradeLocker/Match-Trader) and the futures pricing cards; site-wide promo SPOOKY (45% off CFD, capped at 40% on futures, 25% on Atlas Daily) and first-purchase code NEW (50% off) shown on homepage. Access: $5 entry for every size, then a funded fee only if you pass (5K $52 ... 400K $1,739) — recorded as funded_fee_on_pass. 1-Step Daily / 2-Step Daily (replaced Pro programs 26 Oct 2026) exist in the help centre with sizes $5K-$200K but their prices were not exposed in the catalog/pricing widget, so sizes_fees is empty. Catalog also lists a hidden '3 Step' product ($34-$591) not presented on the site; omitted. fee_from=43 (2-Step $5K); Access entry is $5. Headline rules = 1-Step (homepage default). Funded accounts: news ±5 min profit deducted, trades <3 min profit deducted, Atlas Protector (2% net floating loss closes all; split drops to 50%; 2nd trigger breach). Futures: positions flattened 4:45 PM ET, no overnight. Leverage 1:100 from rules API. HQ: operating entity Atlas Vanquish FZCO, Dubai Silicon Oasis; registered entity Atlas Funded LTD, Saint Lucia; offices also in England. Terms say MT5 services not for US citizens/residents; no full restricted-country list published. Homepage marketing mentions 'predictions and crypto' but no crypto product/instrument list found (forex FAQ lists FX, metals, energy, index CFDs only) — no crypto file. Max allocation total not published.",
+  "segment": "multi",
+  "also_offers": [
+    "futures"
+  ],
+  "category_basis": "Main product is simulated forex/CFD accounts on MT5, TradeLocker and Match-Trader (5 programs, $5K-$400K); a separate Atlas Futures line trades CME futures on Volumetrica.",
+  "category_source": "https://help.atlasfunded.com/markets",
+  "founded_source": "https://www.atlasfunded.com/about",
+  "hq_country": {
+    "code": "AE",
+    "source": "https://www.atlasfunded.com/trading-rules",
+    "quote": "Dubai, United Arab Emirates"
+  },
+  "max_allocation_text": "Single CFD accounts up to $400K; futures up to $150K with max 5 funded futures accounts at once. Total allocation cap not published.",
+  "max_allocation_source": "https://help.atlasfunded.com/markets",
+  "field_sources": {
+    "category": "https://help.atlasfunded.com/markets",
+    "assets": "https://www.atlasfunded.com/forex",
+    "challenge_types": "https://help.atlasfunded.com/programs",
+    "account_sizes": "https://app.atlasfunded.com/api/checkout/catalog",
+    "programs": "https://app.atlasfunded.com/api/checkout/catalog",
+    "programs.futures": "https://www.atlasfunded.com/futures",
+    "fee_from": "https://app.atlasfunded.com/api/checkout/catalog",
+    "profit_split": "https://www.atlasfunded.com/trading-rules",
+    "profit_split_scale": "https://help.atlasfunded.com/add-ons",
+    "max_daily_loss": "https://help.atlasfunded.com/programs",
+    "max_drawdown": "https://help.atlasfunded.com/programs",
+    "drawdown_type": "https://help.atlasfunded.com/programs",
+    "profit_target": "https://help.atlasfunded.com/programs",
+    "leverage": "https://help.atlasfunded.com/access",
+    "platforms": "https://help.atlasfunded.com/markets",
+    "payout_frequency": "https://help.atlasfunded.com/faq",
+    "first_payout_days": "https://www.atlasfunded.com/trading-rules",
+    "payout_speed": "https://www.atlasfunded.com/",
+    "max_allocation_text": "https://help.atlasfunded.com/markets",
+    "min_trading_days": "https://help.atlasfunded.com/programs",
+    "consistency_rule": "https://help.atlasfunded.com/faq",
+    "news_trading": "https://www.atlasfunded.com/trading-rules",
+    "weekend_holding": "https://www.atlasfunded.com/trading-rules",
+    "founded": "https://www.atlasfunded.com/about",
+    "hq": "https://www.atlasfunded.com/trading-rules",
+    "hq_country": "https://www.atlasfunded.com/trading-rules",
+    "discount_code": "https://www.atlasfunded.com/",
+    "trustpilot": "https://www.trustpilot.com/review/atlasfunded.com"
+  }
+}

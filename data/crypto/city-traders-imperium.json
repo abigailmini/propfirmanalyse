@@ -1,0 +1,22 @@
+{
+  "crypto_pairs": null,
+  "crypto_pairs_examples": [],
+  "crypto_leverage": null,
+  "crypto_venue": "Simulated MT5 / Match-Trader accounts",
+  "instrument_type": "CFD",
+  "weekend_crypto": null,
+  "payout_methods": [],
+  "crypto_payout": null,
+  "kyc_before_payout": null,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": null,
+  "banned_strategies": null,
+  "bots_allowed": null,
+  "copy_trading": null,
+  "crypto_fees": null,
+  "notes": "Crypto appears as a tab on the symbols/specifications page; no crypto-specific rules captured.",
+  "sources": [
+    "https://citytradersimperium.com/symbols-specifications-trading-hours/"
+  ],
+  "checked": "2026-10-31"
+}

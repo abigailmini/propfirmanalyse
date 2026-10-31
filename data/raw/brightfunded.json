@@ -1,0 +1,236 @@
+{
+  "name": "BrightFunded",
+  "slug": "brightfunded",
+  "site": "https://brightfunded.com",
+  "category": "cfd",
+  "assets": [
+    "forex",
+    "indices",
+    "commodities",
+    "crypto"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step"
+  ],
+  "account_sizes": [
+    5000,
+    10000,
+    25000,
+    50000,
+    100000,
+    200000
+  ],
+  "fee_currency": "EUR",
+  "programs": [
+    {
+      "name": "1-Step",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 49
+        },
+        {
+          "size": 10000,
+          "fee": 97
+        },
+        {
+          "size": 25000,
+          "fee": 197
+        },
+        {
+          "size": 50000,
+          "fee": 297
+        },
+        {
+          "size": 100000,
+          "fee": 497
+        },
+        {
+          "size": 200000,
+          "fee": 997
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "trailing (locks at starting balance once equity reaches +6%)",
+      "profit_split": "80% default, up to 90% with add-on, up to 100% via scaling",
+      "min_trading_days": 5
+    },
+    {
+      "name": "2-Step Bright",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 47
+        },
+        {
+          "size": 10000,
+          "fee": 87
+        },
+        {
+          "size": 25000,
+          "fee": 187
+        },
+        {
+          "size": 50000,
+          "fee": 277
+        },
+        {
+          "size": 100000,
+          "fee": 477
+        },
+        {
+          "size": 200000,
+          "fee": 947
+        }
+      ],
+      "profit_target": "8% / 4%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "8%",
+      "drawdown_type": null,
+      "profit_split": "80% default, up to 90% with add-on, up to 100% via scaling",
+      "min_trading_days": 5
+    },
+    {
+      "name": "2-Step Classic",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 49
+        },
+        {
+          "size": 10000,
+          "fee": 97
+        },
+        {
+          "size": 25000,
+          "fee": 197
+        },
+        {
+          "size": 50000,
+          "fee": 297
+        },
+        {
+          "size": 100000,
+          "fee": 497
+        },
+        {
+          "size": 200000,
+          "fee": 997
+        }
+      ],
+      "profit_target": "10% / 5%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": null,
+      "profit_split": "80% default, up to 90% with add-on, up to 100% via scaling",
+      "min_trading_days": 5
+    }
+  ],
+  "fee_from": 47,
+  "profit_split": "80% up to 100%",
+  "profit_split_scale": "Scaling: 1st scale-up 90%, 2nd 90%, 3rd+ 100%; +30% balance every 4-month review (≥10% total profit, profitable in 2 of 4 months, 2 payouts)",
+  "max_daily_loss": "5%",
+  "max_drawdown": "10%",
+  "drawdown_type": null,
+  "profit_target": "10% / 5%",
+  "leverage": "Forex 1:100, gold/commodities 1:40, indices 1:20, crypto 1:5",
+  "platforms": [
+    "MT5",
+    "cTrader",
+    "DXtrade"
+  ],
+  "payout_frequency": "First reward 30 days after first funded trade, then every 14 days; bi-weekly and weekly add-ons available",
+  "first_payout_days": 30,
+  "payout_speed": "processed within max 1 day ('24-hour guaranteed payouts')",
+  "min_trading_days": 5,
+  "consistency_rule": "None",
+  "news_trading": "restricted",
+  "weekend_holding": "allowed",
+  "countries_restricted": null,
+  "founded": 2023,
+  "hq": "Dubai, United Arab Emirates",
+  "discount_code": {
+    "code": "HW30",
+    "value": "30% off (Halloween)",
+    "percent": 30,
+    "source": "https://brightfunded.com/",
+    "verified": "2026-10-31",
+    "expires": null
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": null,
+    "count": 574,
+    "note": "Rating unavailable: Trustpilot says it removed fake reviews for this company (breach of its guidelines)",
+    "checked": "2026-10-31",
+    "source": "https://www.trustpilot.com/review/brightfunded.com"
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://brightfunded.com/",
+    "https://brightfunded.com/cfds",
+    "https://brightfunded.com/cfds/1-step",
+    "https://brightfunded.com/cfds/2-step-bright",
+    "https://brightfunded.com/cfds/2-step-classic",
+    "https://brightfunded.com/scaling-plan",
+    "https://brightfunded.com/about-us",
+    "https://brightfunded.com/trading-instruments",
+    "https://help.brightfunded.com/en/articles/9241681-how-can-i-get-paid",
+    "https://help.brightfunded.com/en/articles/9268736-how-does-my-reward-split-work-on-my-funded-account",
+    "https://help.brightfunded.com/en/articles/11468668-how-can-i-request-my-payout",
+    "https://help.brightfunded.com/en/articles/9241694-can-i-trade-news",
+    "https://help.brightfunded.com/en/articles/9268323-is-it-allowed-to-hold-positions-over-the-weekend",
+    "https://help.brightfunded.com/en/articles/14284743-brightfunded-1-step",
+    "https://help.brightfunded.com/en/articles/10855521-what-trading-platform-does-brightfunded-offer",
+    "https://help.brightfunded.com/en/articles/9268380-what-is-the-leverage-in-brightfunded-s-simulated-trading-environment",
+    "https://www.trustpilot.com/review/brightfunded.com"
+  ],
+  "notes": "Fees shown in EUR on the site pricing widget (list prices; Halloween code HW30 = 30% off). 1-Step and 2-Step Classic show identical list prices. 2-Step Bright Phase 2 target: /cfds overview says 4%, homepage widget shows 5% — recorded 8%/4%; verify. Drawdown type for 2-Step plans not explicitly stated (help centre says 1-Step is the trailing one, implying static for 2-Step) — left null. Funded accounts get a 15% evaluation profit reward after 10% growth. Free $1K Challenge also offered. Founded: idea Jan 2023, launch Sept 2023 (about page). Entities: Bright Global FZCO (Dubai), BrightFunded Ltd (Saint Lucia, CFD), BrightFunded LLC (Wyoming, futures). MT5 not available to US/UAE residents. News: funded accounts may not trade 5 min before/after major news (profit deducted, soft breach). TRUSTPILOT WARNING: trustpilot.com/review/brightfunded.com shows 'rating unavailable due to a breach of our guidelines' and 'removed a number of fake reviews' (574 reviews) — rating left null; flag.",
+  "segment": "multi",
+  "also_offers": [
+    "futures"
+  ],
+  "category_basis": "Core product is simulated CFD challenges (forex, crypto, commodities, indices) on MT5, cTrader and DXtrade; a newer CME futures product (BrightPlus/BrightCore) is also sold.",
+  "category_source": "https://brightfunded.com/",
+  "founded_source": "https://brightfunded.com/about-us",
+  "hq_country": {
+    "code": "AE",
+    "source": "https://brightfunded.com/about-us",
+    "quote": "Dubai, United Arab Emirates"
+  },
+  "max_allocation_text": "Unlimited scaling cap per scaling plan",
+  "max_allocation_source": "https://brightfunded.com/scaling-plan",
+  "field_sources": {
+    "category": "https://brightfunded.com/",
+    "assets": "https://brightfunded.com/trading-instruments",
+    "challenge_types": "https://brightfunded.com/cfds",
+    "account_sizes": "https://brightfunded.com/cfds",
+    "programs": "https://brightfunded.com/cfds",
+    "fee_from": "https://brightfunded.com/cfds",
+    "profit_split": "https://help.brightfunded.com/en/articles/9268736-how-does-my-reward-split-work-on-my-funded-account",
+    "profit_split_scale": "https://brightfunded.com/scaling-plan",
+    "max_daily_loss": "https://brightfunded.com/cfds/2-step-classic",
+    "max_drawdown": "https://brightfunded.com/cfds/2-step-classic",
+    "profit_target": "https://brightfunded.com/cfds/2-step-classic",
+    "leverage": "https://help.brightfunded.com/en/articles/9268380-what-is-the-leverage-in-brightfunded-s-simulated-trading-environment",
+    "platforms": "https://help.brightfunded.com/en/articles/10855521-what-trading-platform-does-brightfunded-offer",
+    "payout_frequency": "https://help.brightfunded.com/en/articles/9268736-how-does-my-reward-split-work-on-my-funded-account",
+    "first_payout_days": "https://help.brightfunded.com/en/articles/9268736-how-does-my-reward-split-work-on-my-funded-account",
+    "payout_speed": "https://help.brightfunded.com/en/articles/11468668-how-can-i-request-my-payout",
+    "max_allocation_text": "https://brightfunded.com/scaling-plan",
+    "min_trading_days": "https://brightfunded.com/cfds/2-step-classic",
+    "consistency_rule": "https://brightfunded.com/cfds",
+    "news_trading": "https://help.brightfunded.com/en/articles/9241694-can-i-trade-news",
+    "weekend_holding": "https://help.brightfunded.com/en/articles/9268323-is-it-allowed-to-hold-positions-over-the-weekend",
+    "founded": "https://brightfunded.com/about-us",
+    "hq": "https://brightfunded.com/about-us",
+    "hq_country": "https://brightfunded.com/about-us",
+    "discount_code": "https://brightfunded.com/"
+  }
+}

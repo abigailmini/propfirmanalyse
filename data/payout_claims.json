@@ -236,6 +236,42 @@
    "value_usd": 18000000,
    "source": "https://www.thetradingpit.com/",
    "proof": "Homepage stats strip: '10,000+ Active Monthly Accounts', '$18M+ in Rewards', '450K+ Trades Monthly'"
+  },
+  "brightfunded": {
+   "text": "$17M+ Paid in Rewards",
+   "value_usd": 17000000,
+   "source": "https://brightfunded.com/",
+   "proof": "Homepage stats bar: '$17M+ Paid in Rewards', '40,000+ Active Traders', '$47K+ Biggest Single Payout'"
+  },
+  "atlas-funded": {
+   "text": "$2.1M+ Paid out to traders so far",
+   "value_usd": 2100000,
+   "source": "https://www.atlasfunded.com/about",
+   "proof": "About page stats block; also on /forex and /futures 'Paid to traders $2.1M+'"
+  },
+  "for-traders": {
+   "text": "$10M+ Paid to traders",
+   "value_usd": 10000000,
+   "source": "https://fortraders.com/",
+   "proof": "Homepage stats block: '$10M+ Paid to traders · 150K+ Customers · 130+ Countries served · 2023 Established'"
+  },
+  "thinkcapital": {
+   "text": "Total payouts $5M+",
+   "value_usd": 5000000,
+   "source": "https://www.thinkcapital.com/",
+   "proof": "Homepage hero stats: 'Manage up to $600K · Profit split up to 90% · Payouts as fast as 7 Days · Total payouts $5M+'"
+  },
+  "finotive-funding": {
+   "text": "$24M+ Total Payouts",
+   "value_usd": 24000000,
+   "source": "https://finotivefunding.com/",
+   "proof": "Homepage stat block '$24M+ Total Payouts'; /payouts counter showed $24,312,722.4 'total payouts updated daily' on 2026-10-31"
+  },
+  "funded-trading-plus": {
+   "text": "$19.5M+ Total Trader Rewards",
+   "value_usd": 19500000,
+   "source": "https://www.fundedtradingplus.com/",
+   "proof": "Homepage performance section 'TOTAL TRADER REWARDS $19.5M+ 2021 – 2026'; also highest single reward $189,083, 60K+ active traders"
   }
  }
 }

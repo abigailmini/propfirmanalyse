@@ -1,0 +1,40 @@
+{
+  "crypto_pairs": null,
+  "crypto_pairs_examples": null,
+  "crypto_leverage": null,
+  "crypto_venue": "Simulated CFD on MT5 / Match-Trader (Finotive Markets liquidity)",
+  "instrument_type": "CFD",
+  "weekend_crypto": "Crypto may trade 24/7 depending on symbol; weekend-holding restriction on Instant accounts excludes crypto positions",
+  "payout_methods": [
+    "Finotive Pay wallet",
+    "Bank transfer",
+    "Crypto (USDT, USDC, BTC, ETH, SOL)",
+    "Revolut",
+    "PayPal"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": true,
+  "min_trade_duration": "No hard minimum; scalping condition triggered if ≥40% of trades or ≥20% of profit come from trades held ≤120s",
+  "max_position_or_risk_rule": "Notional volume limit (5,000%–1,000% of balance by size), per-position and per-symbol floating drawdown strike limits",
+  "banned_strategies": [
+    "news straddling",
+    "latency arbitrage",
+    "HFT above threshold",
+    "martingale/gambling behaviour",
+    "cross-account hedging",
+    "third-party copy trading"
+  ],
+  "bots_allowed": "own EAs only",
+  "copy_trading": "own accounts only",
+  "crypto_fees": null,
+  "notes": "Crypto is one of several CFD asset classes (trading page: 'Multi-asset access: FX, indices, commodities, crypto'). Specific crypto symbol list and crypto leverage not published on public pages (symbols page did not render a list).",
+  "sources": [
+    "https://finotivefunding.com/trading",
+    "https://help.finotivefunding.com/en/articles/899-can-i-trade-crypto-over-the-weekend",
+    "https://help.finotivefunding.com/en/articles/932-what-is-the-weekend-holding-rule",
+    "https://help.finotivefunding.com/en/articles/936-is-scalping-allowed",
+    "https://finotivefunding.com/payouts",
+    "https://finotivefunding.com/terms-and-conditions"
+  ],
+  "checked": "2026-10-31"
+}

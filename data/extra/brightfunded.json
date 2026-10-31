@@ -1,0 +1,38 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": "Refund only if no trades placed and within 30 days of purchase; optional '100% Challenge Fee Refund' add-on at checkout",
+  "fee_refundable": false,
+  "time_limit": "Unlimited",
+  "has_time_limit": false,
+  "activation_fee": null,
+  "payout_methods": [
+    "USDC (ERC-20)",
+    "Bank transfer (EUR)"
+  ],
+  "min_payout": null,
+  "kyc_before_payout": null,
+  "scaling_plan": "+30% balance after each 4-month review (≥10% total profit, profitable in 2 of 4 months, ≥2 payouts); split rises to 90% then 100% from 3rd scale-up; unlimited cap",
+  "ea_bots": "allowed (no API/automated trading on DXtrade)",
+  "copy_trading": true,
+  "hedging": false,
+  "max_risk_per_trade": null,
+  "inactivity_rule": "Must trade at least once every 30 calendar days (trade open ≥60s) on all phases",
+  "notes": "One-time fee, no recurring fees. No minimum reward amount (even $0.01). All positions must be closed to request payout. Copy trading only between accounts held by the same person. Cross-account hedging prohibited (soft then hard breach). Add-ons: swap-free, weekly payouts, 100% fee refund, no min trading days, 90% split.",
+  "sources": [
+    "https://help.brightfunded.com/en/articles/9241687-what-other-fees-do-i-need-to-pay-is-the-fee-recurrent",
+    "https://help.brightfunded.com/en/articles/9460023-can-i-get-a-refund-for-my-brightfunded-challenge",
+    "https://help.brightfunded.com/en/articles/9268736-how-does-my-reward-split-work-on-my-funded-account",
+    "https://help.brightfunded.com/en/articles/11468668-how-can-i-request-my-payout",
+    "https://help.brightfunded.com/en/articles/9241681-how-can-i-get-paid",
+    "https://brightfunded.com/scaling-plan",
+    "https://help.brightfunded.com/en/articles/9241699-can-i-use-ea",
+    "https://help.brightfunded.com/en/articles/9241709-is-copy-trading-allowed",
+    "https://help.brightfunded.com/en/articles/9680850-how-does-the-hedging-rule-work",
+    "https://help.brightfunded.com/en/articles/11774572-inactivity-rule-policy",
+    "https://brightfunded.com/"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": null,
+  "monthly_fee": false
+}

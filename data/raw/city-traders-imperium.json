@@ -1,0 +1,259 @@
+{
+  "name": "City Traders Imperium",
+  "slug": "city-traders-imperium",
+  "site": "https://citytradersimperium.com",
+  "category": "cfd",
+  "assets": [
+    "forex",
+    "indices",
+    "crypto"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step",
+    "instant"
+  ],
+  "account_sizes": [
+    2500,
+    5000,
+    10000,
+    20000,
+    25000,
+    40000,
+    50000,
+    80000,
+    100000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "1-Step Challenge",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 2500,
+          "fee": 29
+        },
+        {
+          "size": 5000,
+          "fee": 49
+        },
+        {
+          "size": 10000,
+          "fee": 79
+        },
+        {
+          "size": 25000,
+          "fee": 159
+        },
+        {
+          "size": 50000,
+          "fee": 299
+        },
+        {
+          "size": 100000,
+          "fee": 449
+        }
+      ],
+      "profit_target": "8%",
+      "max_daily_loss": null,
+      "max_drawdown": "5%",
+      "drawdown_type": "trailing (balance-based)",
+      "profit_split": "80% up to 100%",
+      "min_trading_days": 3
+    },
+    {
+      "name": "2-Step Challenge",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 2500,
+          "fee": 39
+        },
+        {
+          "size": 5000,
+          "fee": 59
+        },
+        {
+          "size": 10000,
+          "fee": 99
+        },
+        {
+          "size": 25000,
+          "fee": 199
+        },
+        {
+          "size": 50000,
+          "fee": 329
+        },
+        {
+          "size": 100000,
+          "fee": 549
+        }
+      ],
+      "profit_target": "10% / 5%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static (balance-based)",
+      "profit_split": "80% up to 100%",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Instant Funding",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 2500,
+          "fee": 79
+        },
+        {
+          "size": 5000,
+          "fee": 139
+        },
+        {
+          "size": 10000,
+          "fee": 259
+        },
+        {
+          "size": 20000,
+          "fee": 449
+        },
+        {
+          "size": 40000,
+          "fee": 849
+        },
+        {
+          "size": 80000,
+          "fee": 1599
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": null,
+      "max_drawdown": "6%",
+      "drawdown_type": "static (balance-based, from initial balance)",
+      "profit_split": "50% up to 100%",
+      "min_trading_days": null
+    },
+    {
+      "name": "Direct Funding",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 229
+        },
+        {
+          "size": 10000,
+          "fee": 399
+        },
+        {
+          "size": 20000,
+          "fee": 999
+        },
+        {
+          "size": 40000,
+          "fee": 1999
+        },
+        {
+          "size": 80000,
+          "fee": 3999
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": null,
+      "max_drawdown": "6%",
+      "drawdown_type": "static (balance-based)",
+      "profit_split": "70% up to 100%",
+      "min_trading_days": null
+    }
+  ],
+  "fee_from": 29,
+  "profit_split": "80% up to 100%",
+  "profit_split_scale": "VIP ladder: Bronze 90% + weekly payouts; Silver 100% + anytime payouts; Gold adds potential monthly salary",
+  "max_daily_loss": "5%",
+  "max_drawdown": "10%",
+  "drawdown_type": "static (balance-based)",
+  "profit_target": "10% / 5%",
+  "leverage": null,
+  "platforms": [
+    "MT5",
+    "Match-Trader"
+  ],
+  "payout_frequency": "On demand; first payout after 7 days (challenges) or 5 days (Instant/Direct); weekly/anytime payouts unlocked via VIP ladder",
+  "first_payout_days": 7,
+  "payout_speed": "approved within 24 hours; 8-hour average payout time",
+  "min_trading_days": 3,
+  "consistency_rule": "None",
+  "news_trading": "allowed",
+  "weekend_holding": "allowed",
+  "countries_restricted": [
+    "North Korea",
+    "Iran",
+    "Syria",
+    "Cuba",
+    "Russia"
+  ],
+  "founded": 2018,
+  "hq": "San José, Costa Rica",
+  "discount_code": null,
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 4.3,
+    "count": 1636
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://citytradersimperium.com/",
+    "https://citytradersimperium.com/1-step-challenge/",
+    "https://citytradersimperium.com/2-step-challenge/",
+    "https://citytradersimperium.com/instant-funding/",
+    "https://citytradersimperium.com/direct-funding/",
+    "https://citytradersimperium.com/about-us/",
+    "https://citytradersimperium.com/affiliate-program/",
+    "https://citytradersimperium.com/fee-refund-policy/",
+    "https://citytradersimperium.com/symbols-specifications-trading-hours/",
+    "https://www.trustpilot.com/review/citytradersimperium.com"
+  ],
+  "notes": "Prices from the plan cards on each program page (one-time payment). Min trading days = 3 profitable days per phase. Instant Funding gives 50% of the account size as starting balance ('fully funded' doubles per 10% milestone); Direct Funding 'profit target to scale' 10%. Instant/Direct max drawdown 6% static of starting balance; no daily limit. 1-Step allows Martingale and third-party EAs; others personal EAs only, no Martingale. Assets: symbols page shows Crypto and Indices tabs (53 instruments); forex inferred from forex-centric product copy (calculators, pips) — commodities not confirmed. Founded in London in 2018 (about page); operator City Traders Imperium Limited (Comoros, licence L15969/CTI) with operating address in San José, Costa Rica; academy CTI FZCO Dubai — hq recorded as the operating address. Halloween campaign page live (free-challenge giveaway); no public discount code captured. Trustpilot 4.3 from trustpilot page; AI summary notes some complaints about denied withdrawals/verification but no mass scandal.",
+  "segment": "forex",
+  "also_offers": [],
+  "category_basis": "Sells simulated forex/CFD challenges and instant/direct funded accounts on MetaTrader 5 and Match-Trader.",
+  "category_source": "https://citytradersimperium.com/",
+  "founded_source": "https://citytradersimperium.com/about-us/",
+  "hq_country": {
+    "code": "CR",
+    "source": "https://citytradersimperium.com/",
+    "quote": "San José, Costa Rica"
+  },
+  "max_allocation_usd": 400000,
+  "max_allocation_text": "Challenges: $200K scaling per account, $400K max funding; Instant/Direct: $2M per account, $4M max",
+  "max_allocation_source": "https://citytradersimperium.com/2-step-challenge/",
+  "field_sources": {
+    "category": "https://citytradersimperium.com/",
+    "assets": "https://citytradersimperium.com/symbols-specifications-trading-hours/",
+    "challenge_types": "https://citytradersimperium.com/",
+    "account_sizes": "https://citytradersimperium.com/2-step-challenge/",
+    "programs": "https://citytradersimperium.com/2-step-challenge/",
+    "fee_from": "https://citytradersimperium.com/1-step-challenge/",
+    "profit_split": "https://citytradersimperium.com/2-step-challenge/",
+    "profit_split_scale": "https://citytradersimperium.com/2-step-challenge/",
+    "max_daily_loss": "https://citytradersimperium.com/2-step-challenge/",
+    "max_drawdown": "https://citytradersimperium.com/2-step-challenge/",
+    "drawdown_type": "https://citytradersimperium.com/2-step-challenge/",
+    "profit_target": "https://citytradersimperium.com/2-step-challenge/",
+    "platforms": "https://citytradersimperium.com/2-step-challenge/",
+    "payout_frequency": "https://citytradersimperium.com/2-step-challenge/",
+    "first_payout_days": "https://citytradersimperium.com/2-step-challenge/",
+    "payout_speed": "https://citytradersimperium.com/",
+    "max_allocation": "https://citytradersimperium.com/2-step-challenge/",
+    "min_trading_days": "https://citytradersimperium.com/2-step-challenge/",
+    "consistency_rule": "https://citytradersimperium.com/2-step-challenge/",
+    "news_trading": "https://citytradersimperium.com/2-step-challenge/",
+    "weekend_holding": "https://citytradersimperium.com/2-step-challenge/",
+    "countries_restricted": "https://citytradersimperium.com/",
+    "founded": "https://citytradersimperium.com/about-us/",
+    "hq": "https://citytradersimperium.com/",
+    "hq_country": "https://citytradersimperium.com/",
+    "trustpilot": "https://www.trustpilot.com/review/citytradersimperium.com"
+  }
+}

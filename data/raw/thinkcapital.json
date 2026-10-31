@@ -1,0 +1,342 @@
+{
+  "name": "ThinkCapital",
+  "slug": "thinkcapital",
+  "site": "https://www.thinkcapital.com",
+  "category": "cfd",
+  "assets": [
+    "forex",
+    "indices",
+    "commodities",
+    "crypto"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step",
+    "3-step",
+    "instant"
+  ],
+  "account_sizes": [
+    2500,
+    5000,
+    10000,
+    25000,
+    50000,
+    100000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "Lightning (One Step)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 59
+        },
+        {
+          "size": 10000,
+          "fee": 99
+        },
+        {
+          "size": 25000,
+          "fee": 199
+        },
+        {
+          "size": 50000,
+          "fee": 299
+        },
+        {
+          "size": 100000,
+          "fee": 499
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "3% (balance-based)",
+      "max_drawdown": "6%",
+      "drawdown_type": "trailing (balance), locks at initial balance after +6%",
+      "profit_split": "80% (90% with scaling or add-on)",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Dual Step Intraday (Two Step)",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 59
+        },
+        {
+          "size": 10000,
+          "fee": 99
+        },
+        {
+          "size": 25000,
+          "fee": 199
+        },
+        {
+          "size": 50000,
+          "fee": 299
+        },
+        {
+          "size": 100000,
+          "fee": 499
+        }
+      ],
+      "profit_target": "9% / 5%",
+      "max_daily_loss": "4% (equity-based)",
+      "max_drawdown": "7% challenge / 8% funded",
+      "drawdown_type": "static (fixed to initial balance)",
+      "profit_split": "80% (90% with scaling or add-on)",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Dual Step Swing (Two Step)",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 82
+        },
+        {
+          "size": 10000,
+          "fee": 138
+        },
+        {
+          "size": 25000,
+          "fee": 278
+        },
+        {
+          "size": 50000,
+          "fee": 418
+        },
+        {
+          "size": 100000,
+          "fee": 698
+        }
+      ],
+      "profit_target": "9% / 5%",
+      "max_daily_loss": "4% (balance-based)",
+      "max_drawdown": "7% challenge / 8% funded",
+      "drawdown_type": "static (fixed to initial balance)",
+      "profit_split": "80% (90% with scaling or add-on)",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Nexus (Three Step)",
+      "type": "3-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 39
+        },
+        {
+          "size": 10000,
+          "fee": 79
+        },
+        {
+          "size": 25000,
+          "fee": 139
+        },
+        {
+          "size": 50000,
+          "fee": 199
+        },
+        {
+          "size": 100000,
+          "fee": 349
+        }
+      ],
+      "profit_target": "7% / 6% / 5%",
+      "max_daily_loss": "4% (balance-based)",
+      "max_drawdown": "8%",
+      "drawdown_type": "static (fixed to initial balance)",
+      "profit_split": "80% (90% with scaling or add-on)",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Bolt (Instant Funding)",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 2500,
+          "fee": 39
+        },
+        {
+          "size": 5000,
+          "fee": 71
+        },
+        {
+          "size": 10000,
+          "fee": 127
+        },
+        {
+          "size": 25000,
+          "fee": 279
+        },
+        {
+          "size": 50000,
+          "fee": 479
+        },
+        {
+          "size": 100000,
+          "fee": 899
+        }
+      ],
+      "profit_target": "6% first-payout target only",
+      "max_daily_loss": "3% (equity-based)",
+      "max_drawdown": "6%",
+      "drawdown_type": "trailing (equity, real-time), locks at initial balance after +6%",
+      "profit_split": "80% (90% add-on)",
+      "min_trading_days": null
+    },
+    {
+      "name": "Bolt Flex (Instant Funding)",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 2500,
+          "fee": 59
+        },
+        {
+          "size": 5000,
+          "fee": 107
+        },
+        {
+          "size": 10000,
+          "fee": 191
+        },
+        {
+          "size": 25000,
+          "fee": 419
+        },
+        {
+          "size": 50000,
+          "fee": 719
+        }
+      ],
+      "profit_target": "7% first-payout target only",
+      "max_daily_loss": "3% (balance-based)",
+      "max_drawdown": "7%",
+      "drawdown_type": "trailing (balance), locks at initial balance after +7%",
+      "profit_split": "80% (90% add-on)",
+      "min_trading_days": null
+    }
+  ],
+  "fee_from": 39,
+  "profit_split": "80% up to 90%",
+  "profit_split_scale": "90% via scaling or paid add-on",
+  "max_daily_loss": "4%",
+  "max_drawdown": "7% challenge / 8% funded",
+  "drawdown_type": "static",
+  "profit_target": "9% / 5%",
+  "leverage": "Dual Step/Nexus dynamic up to 1:100 forex; Lightning 1:30 forex; Bolt/Bolt Flex dynamic up to 1:50 (Bolt page) — FAQ says up to 1:100 forex",
+  "platforms": [
+    "ThinkTrader",
+    "TradingView"
+  ],
+  "payout_frequency": "Every 14 days (7-day add-on on challenges; On-Demand Payouts add-on on Bolt/Bolt Flex)",
+  "first_payout_days": 14,
+  "payout_speed": "processed within 3 business days; crypto usually arrives 24-48h later",
+  "min_trading_days": 3,
+  "consistency_rule": "None on Lightning, Dual Step, Nexus; Bolt: best day ≤20% of total profit; Bolt Flex: ≤25%",
+  "news_trading": "restricted",
+  "weekend_holding": "restricted",
+  "countries_restricted": [
+    "Vietnam",
+    "Russia",
+    "Ukraine",
+    "Zambia",
+    "Yemen",
+    "Western Sahara",
+    "West Bank",
+    "Vatican City",
+    "Syria",
+    "Sudan",
+    "Somalia",
+    "Samoa",
+    "Republic of the Congo",
+    "North Korea",
+    "Midway Islands",
+    "Mali",
+    "Guinea",
+    "Haiti",
+    "Libya",
+    "Lebanon",
+    "Kosovo",
+    "Iran",
+    "Iraq",
+    "Venezuela",
+    "Cyprus",
+    "Cuba",
+    "Central African Republic",
+    "Burundi",
+    "Myanmar",
+    "British Columbia (Canada)",
+    "Australia",
+    "Albania",
+    "Afghanistan"
+  ],
+  "founded": null,
+  "hq": null,
+  "discount_code": null,
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": null,
+    "count": 605,
+    "note": "Rating unavailable: Trustpilot says it removed fake reviews for this company (breach of its guidelines)",
+    "checked": "2026-10-31",
+    "source": "https://www.trustpilot.com/review/thinkcapital.com"
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://www.thinkcapital.com/",
+    "https://www.thinkcapital.com/lightning/",
+    "https://www.thinkcapital.com/dual-step/",
+    "https://www.thinkcapital.com/nexus/",
+    "https://www.thinkcapital.com/instant-funding/",
+    "https://www.thinkcapital.com/bolt-flex-instant-funding/",
+    "https://www.thinkcapital.com/about-us/",
+    "https://www.thinkcapital.com/partners/",
+    "https://www.thinkcapital.com/tc-faqs/funded-accounts/how-is-the-payout-processed-and-how-long-does-it-take/",
+    "https://www.thinkcapital.com/tc-faqs/general-faqs/leverage-commission-and-swap-charges-structure/",
+    "https://www.thinkcapital.com/tc-faqs/funded-accounts/news-trading-policy-rule-and-restriction/",
+    "https://www.thinkcapital.com/tc-faqs/general-faqs/what-trading-platforms-does-thinkcapital-offer-and-what-instruments-can-i-trade-there/",
+    "https://www.thinkcapital.com/tc-faqs/penalties-faq-section/penalties-faq-section/",
+    "https://www.thinkcapital.com/tc-faqs/general-faqs/are-expert-advisors-eas-allowed-at-thinkcapital/",
+    "https://www.thinkcapital.com/tc-faqs/general-faqs/who-is-thinkcapital/",
+    "https://www.trustpilot.com/review/thinkcapital.com"
+  ],
+  "notes": "Prices from per-size data attributes of the homepage program table (base prices; add-ons extra; no strike/promo shown). Headline = Dual Step (homepage 'Most Popular'). News: no trading 2 min either side of red-folder news on Lightning/Nexus/Dual Step Intraday (add-on on Lightning/Nexus), 5 min on Bolt/Bolt Flex; Dual Step Swing allows news. Weekend holding: not allowed on Dual Step Intraday; allowed on Swing, Lightning, Nexus; Bolt/Bolt Flex only with add-on. Lightning scaling: +20% account size after 10% return in 3 months, up to $1.5M. Backed by ThinkMarkets (FCA/ASIC/CySEC/FSCA) but ThinkCapital itself is unregulated; led by Faizan Anees. Founding year and legal entity/HQ not published on own site (Trustpilot profile lists United Kingdom) — left null. Trustpilot: 'This company's rating is unavailable due to a breach of our guidelines' — score null. Free Trial available. Crypto not available on Bolt/Bolt Flex.",
+  "segment": "forex",
+  "also_offers": [],
+  "category_basis": "Sells simulated forex/CFD challenges and instant-funding accounts traded on the ThinkMarkets app (ThinkTrader) with TradingView integration; backed by broker ThinkMarkets.",
+  "category_source": "https://www.thinkcapital.com/tc-faqs/general-faqs/what-trading-platforms-does-thinkcapital-offer-and-what-instruments-can-i-trade-there/",
+  "max_allocation_usd": 1500000,
+  "max_allocation_text": "Maximum allocation with scaling $1,500,000 (Lightning/Dual Step/Nexus); homepage: 'Manage up to $600K'; Bolt + Bolt Flex share $192,500 allocation, scalable to $500,000",
+  "max_allocation_source": "https://www.thinkcapital.com/lightning/",
+  "field_sources": {
+    "category": "https://www.thinkcapital.com/tc-faqs/general-faqs/what-trading-platforms-does-thinkcapital-offer-and-what-instruments-can-i-trade-there/",
+    "assets": "https://www.thinkcapital.com/tc-faqs/general-faqs/what-trading-platforms-does-thinkcapital-offer-and-what-instruments-can-i-trade-there/",
+    "challenge_types": "https://www.thinkcapital.com/",
+    "account_sizes": "https://www.thinkcapital.com/",
+    "programs": "https://www.thinkcapital.com/",
+    "fee_from": "https://www.thinkcapital.com/",
+    "profit_split": "https://www.thinkcapital.com/dual-step/",
+    "max_daily_loss": "https://www.thinkcapital.com/dual-step/",
+    "max_drawdown": "https://www.thinkcapital.com/dual-step/",
+    "drawdown_type": "https://www.thinkcapital.com/dual-step/",
+    "profit_target": "https://www.thinkcapital.com/dual-step/",
+    "leverage": "https://www.thinkcapital.com/tc-faqs/general-faqs/leverage-commission-and-swap-charges-structure/",
+    "platforms": "https://www.thinkcapital.com/tc-faqs/general-faqs/what-trading-platforms-does-thinkcapital-offer-and-what-instruments-can-i-trade-there/",
+    "payout_frequency": "https://www.thinkcapital.com/dual-step/",
+    "first_payout_days": "https://www.thinkcapital.com/dual-step/",
+    "payout_speed": "https://www.thinkcapital.com/tc-faqs/funded-accounts/how-is-the-payout-processed-and-how-long-does-it-take/",
+    "max_allocation": "https://www.thinkcapital.com/lightning/",
+    "min_trading_days": "https://www.thinkcapital.com/dual-step/",
+    "consistency_rule": "https://www.thinkcapital.com/instant-funding/",
+    "news_trading": "https://www.thinkcapital.com/tc-faqs/funded-accounts/news-trading-policy-rule-and-restriction/",
+    "weekend_holding": "https://www.thinkcapital.com/tc-faqs/penalties-faq-section/penalties-faq-section/",
+    "countries_restricted": "https://www.thinkcapital.com/",
+    "trustpilot": "https://www.trustpilot.com/review/thinkcapital.com"
+  }
+}

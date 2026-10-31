@@ -1,0 +1,41 @@
+{
+  "crypto_pairs": 48,
+  "crypto_pairs_examples": [
+    "BTC/USD",
+    "ETH/USD",
+    "SOL/USD",
+    "XRP/USD",
+    "DOGE (XDG/USD)"
+  ],
+  "crypto_leverage": "1:5",
+  "crypto_venue": "Simulated CFD accounts on MT5, cTrader and DXtrade",
+  "instrument_type": "CFD",
+  "weekend_crypto": true,
+  "payout_methods": [
+    "USDC (ERC-20)",
+    "Bank transfer (EUR)"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": null,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": "Same daily/total loss limits as plan (1-Step 3%/6%, Bright 4%/8%, Classic 5%/10%)",
+  "banned_strategies": [
+    "hedging across accounts",
+    "copy trading between different people",
+    "signal trading"
+  ],
+  "bots_allowed": "allowed",
+  "copy_trading": true,
+  "crypto_fees": null,
+  "notes": "'Over 48' crypto pairs per help centre. Crypto tradable on weekends where the instrument is open. KYC via SumSub (timing not stated).",
+  "sources": [
+    "https://help.brightfunded.com/en/articles/9268229-which-crypto-instruments-can-you-trade-at-brightfunded",
+    "https://help.brightfunded.com/en/articles/9268380-what-is-the-leverage-in-brightfunded-s-simulated-trading-environment",
+    "https://help.brightfunded.com/en/articles/13213315-can-i-trade-on-weekends",
+    "https://help.brightfunded.com/en/articles/9241681-how-can-i-get-paid",
+    "https://help.brightfunded.com/en/articles/9680850-how-does-the-hedging-rule-work",
+    "https://help.brightfunded.com/en/articles/9241709-is-copy-trading-allowed",
+    "https://help.brightfunded.com/en/articles/9973224-how-does-the-kyc-process-work"
+  ],
+  "checked": "2026-10-31"
+}

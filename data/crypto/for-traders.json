@@ -1,0 +1,44 @@
+{
+  "crypto_pairs": "70+",
+  "crypto_pairs_examples": [
+    "BTCUSD",
+    "ETHUSD",
+    "SOLUSD",
+    "XRPUSD",
+    "BNBUSD",
+    "DOGEUSD",
+    "ADAUSD",
+    "LTCUSD",
+    "AVAXUSD",
+    "LINKUSD",
+    "DOTUSD",
+    "TRXUSD",
+    "BCHUSD",
+    "XLMUSD",
+    "ATOMUSD",
+    "UNIUSD"
+  ],
+  "crypto_leverage": "1:20 on all pairs with Crypto Fast PRO; elsewhere 1:5 BTC/ETH, 1:2 others",
+  "crypto_venue": "Simulated CFD on MT5 and TradeLocker (not an exchange)",
+  "instrument_type": "CFD",
+  "weekend_crypto": true,
+  "payout_methods": [
+    "Rise",
+    "Crypto (USDC ERC20)"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": true,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": null,
+  "banned_strategies": "Copying other people's signals, third-party account management, latency/tick arbitrage",
+  "bots_allowed": true,
+  "copy_trading": "own accounts only",
+  "crypto_fees": null,
+  "notes": "Crypto plans: Fast ($59-$469, 6K-50K, 10% target, 6% trailing, 80%), Fast PRO ($137-$289, 25K-100K, 6% target, 4% EOD trailing, 90%, on-demand payouts), Instant ($49-$489, 3K-50K, 70%). No news restrictions on crypto. Forex plans also include top 5 crypto pairs.",
+  "sources": [
+    "https://fortraders.com/markets/crypto",
+    "https://fortraders.com/faq",
+    "https://api.fortraders.com/web-app/challenges/grouped-by-plan-with-steps"
+  ],
+  "checked": "2026-10-31"
+}

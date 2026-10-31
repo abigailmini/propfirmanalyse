@@ -1,0 +1,30 @@
+{
+  "reset_fee": "15% discount on reset after failure",
+  "retry_discount_pct": 15,
+  "refund_policy": "Refund within 7 calendar days of purchase only if the assessment account has no trades and ≤3 academy lessons accessed; no refund after any trade",
+  "fee_refundable": false,
+  "time_limit": "None",
+  "has_time_limit": false,
+  "activation_fee": null,
+  "payout_methods": [],
+  "min_payout": null,
+  "kyc_before_payout": null,
+  "scaling_plan": "Challenges scale to $200K per account ($400K total); Instant/Direct double balance per 10% milestone up to $2M per account ($4M total)",
+  "ea_bots": "1-Step: all EAs incl. third-party; other programs: personal EAs only",
+  "copy_trading": null,
+  "hedging": null,
+  "max_risk_per_trade": null,
+  "inactivity_rule": null,
+  "notes": "Martingale allowed only on 1-Step. Payout methods for traders not listed on captured pages (purchase methods: card, Google/Apple Pay, PayPal, BTC/crypto, Skrill, Neteller, bank transfer). Fees are described as educational service fees.",
+  "sources": [
+    "https://citytradersimperium.com/1-step-challenge/",
+    "https://citytradersimperium.com/2-step-challenge/",
+    "https://citytradersimperium.com/instant-funding/",
+    "https://citytradersimperium.com/direct-funding/",
+    "https://citytradersimperium.com/fee-refund-policy/",
+    "https://citytradersimperium.com/"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": null,
+  "monthly_fee": false
+}

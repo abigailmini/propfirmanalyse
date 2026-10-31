@@ -1,0 +1,249 @@
+{
+  "name": "Ment Funding",
+  "slug": "ment-funding",
+  "site": "https://mentfunding.com",
+  "category": "cfd",
+  "assets": [
+    "forex",
+    "indices",
+    "commodities",
+    "crypto",
+    "stocks",
+    "futures"
+  ],
+  "challenge_types": [
+    "1-step"
+  ],
+  "account_sizes": [
+    5000,
+    10000,
+    25000,
+    50000,
+    100000,
+    200000,
+    400000,
+    1000000,
+    2000000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "Forex 1-Step Evaluation",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 325
+        },
+        {
+          "size": 50000,
+          "fee": 585
+        },
+        {
+          "size": 100000,
+          "fee": 1105
+        },
+        {
+          "size": 200000,
+          "fee": 2145
+        },
+        {
+          "size": 400000,
+          "fee": 4225
+        },
+        {
+          "size": 1000000,
+          "fee": 9750
+        },
+        {
+          "size": 2000000,
+          "fee": 21000
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static (locks at starting balance after first payout)",
+      "profit_split": "75% (90% with checkout add-on)",
+      "min_trading_days": 0
+    },
+    {
+      "name": "Futures 1-Step Evaluation (CME)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 300
+        },
+        {
+          "size": 50000,
+          "fee": 540
+        },
+        {
+          "size": 100000,
+          "fee": 900
+        },
+        {
+          "size": 200000,
+          "fee": 1800
+        },
+        {
+          "size": 400000,
+          "fee": 3900
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static (locks at starting balance after first payout)",
+      "profit_split": "75% (90% with checkout add-on)",
+      "min_trading_days": null
+    },
+    {
+      "name": "Equities 1-Phase Evaluation (S&P 100) — Static",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 220
+        },
+        {
+          "size": 10000,
+          "fee": 420
+        },
+        {
+          "size": 25000,
+          "fee": 850
+        },
+        {
+          "size": 50000,
+          "fee": 1675
+        },
+        {
+          "size": 100000,
+          "fee": 4286
+        }
+      ],
+      "profit_target": "15%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static",
+      "profit_split": "80% (90% with add-on)",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Equities 1-Phase Evaluation (S&P 100) — Trailing",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 220
+        },
+        {
+          "size": 10000,
+          "fee": 420
+        },
+        {
+          "size": 25000,
+          "fee": 850
+        },
+        {
+          "size": 50000,
+          "fee": 1675
+        },
+        {
+          "size": 100000,
+          "fee": 4286
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "6%",
+      "drawdown_type": "trailing (closed balance, locks at starting balance after +6%)",
+      "profit_split": "80% (90% with add-on)",
+      "min_trading_days": 3
+    }
+  ],
+  "fee_from": 220,
+  "profit_split": "75% up to 90% (add-on)",
+  "profit_split_scale": null,
+  "max_daily_loss": "5%",
+  "max_drawdown": "6%",
+  "drawdown_type": "static",
+  "profit_target": "10%",
+  "leverage": "up to 1:20 forex & metals; 1:10 XAUUSD & CFD indices (from 18 Oct 2026); 1:5 oil; 1:2 crypto",
+  "platforms": [
+    "DXtrade",
+    "Match-Trader",
+    "cTrader",
+    "PropX",
+    "Rithmic",
+    "ATAS",
+    "DXFutures"
+  ],
+  "payout_frequency": "Forex: first withdrawal any time (from day 1), then every 30 days. Futures: first once target + consistency met, then every 30 days. Equities: first after 14 days, then every 14 days ($100 min).",
+  "first_payout_days": 0,
+  "payout_speed": null,
+  "min_trading_days": 0,
+  "consistency_rule": "Forex: none on $25K-$1M; 35% consistency requirement on funded accounts > $1M; $2M tier has 2.5% daily profit cap. Futures: 33% best-day rule. Equities: 33% best-day rule + 3 days of >=0.5%.",
+  "news_trading": "restricted",
+  "weekend_holding": "restricted",
+  "countries_restricted": null,
+  "founded": 2021,
+  "hq": "Boca Raton, United States",
+  "discount_code": null,
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 4.5,
+    "count": 233
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://mentfunding.com/",
+    "https://mentfunding.com/terms-of-service.html",
+    "https://mentfunding.com/refund-policy.html",
+    "https://mentfunding.com/affiliates/",
+    "https://www.trustpilot.com/review/www.mentfunding.com"
+  ],
+  "notes": "Prices are the struck-through list prices from the homepage pricing data; current displayed (discounted) prices: Forex 25K $250, 50K $450, 100K $750, 200K $1,500, 400K $3,000, 1M $8,600, 2M $17,200; Futures 25K $250, 50K $450, 100K $750, 200K $1,500, 400K $3,000. Equities shown at a single price (no strike). $5M forex size is via scaling only. Futures: 90-day evaluation window (365-day add-on on $400K), front-month only, Globex session, auto-close 15:55 CST, no weekend holds. Equities: 3% daily profit cap (soft), 1-min minimum hold, cash session only, 2:1 buying power. Forex: no new positions within 3 minutes before/after news; weekend holding only with checkout add-on; positions close 3:45 PM EST Friday. HQ from Terms of Service notice address (Prop Account LLC, Boca Raton FL); also Prop Account Cayman LC (Grand Cayman); charges appear as dashboardanalytix.com. founded = 'Funding traders since 2021'. Trustpilot 4.5 star display (homepage claims 4.7). Payout methods/speed not published on site.",
+  "segment": "multi",
+  "also_offers": [
+    "futures"
+  ],
+  "category_basis": "Main product is a one-step forex/CFD evaluation on DXtrade, Match-Trader, cTrader and PropX ('One-step forex evaluation'); a CME futures one-step (Rithmic/ATAS/DXFutures) and an S&P 100 equities program are also sold.",
+  "category_source": "https://mentfunding.com/",
+  "founded_source": "https://mentfunding.com/",
+  "hq_country": {
+    "code": "US",
+    "source": "https://mentfunding.com/terms-of-service.html",
+    "quote": "Boca Raton, United States"
+  },
+  "max_allocation_usd": 5000000,
+  "max_allocation_text": "Max direct account $2M; scaling (account doubling) up to $5M — only direct sizes up to $1M qualify for scaling",
+  "max_allocation_source": "https://mentfunding.com/",
+  "field_sources": {
+    "category": "https://mentfunding.com/",
+    "assets": "https://mentfunding.com/",
+    "challenge_types": "https://mentfunding.com/",
+    "account_sizes": "https://mentfunding.com/",
+    "programs": "https://mentfunding.com/",
+    "fee_from": "https://mentfunding.com/",
+    "profit_split": "https://mentfunding.com/",
+    "max_daily_loss": "https://mentfunding.com/",
+    "max_drawdown": "https://mentfunding.com/",
+    "drawdown_type": "https://mentfunding.com/",
+    "profit_target": "https://mentfunding.com/",
+    "leverage": "https://mentfunding.com/",
+    "platforms": "https://mentfunding.com/",
+    "payout_frequency": "https://mentfunding.com/",
+    "first_payout_days": "https://mentfunding.com/",
+    "max_allocation": "https://mentfunding.com/",
+    "min_trading_days": "https://mentfunding.com/",
+    "consistency_rule": "https://mentfunding.com/",
+    "news_trading": "https://mentfunding.com/",
+    "weekend_holding": "https://mentfunding.com/",
+    "founded": "https://mentfunding.com/",
+    "hq": "https://mentfunding.com/terms-of-service.html",
+    "trustpilot": "https://www.trustpilot.com/review/www.mentfunding.com"
+  }
+}

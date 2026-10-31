@@ -1,0 +1,402 @@
+{
+  "name": "Finotive Funding",
+  "slug": "finotive-funding",
+  "site": "https://finotivefunding.com",
+  "category": "cfd",
+  "assets": [
+    "forex",
+    "indices",
+    "commodities",
+    "crypto"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step",
+    "instant"
+  ],
+  "account_sizes": [
+    2500,
+    5000,
+    10000,
+    25000,
+    50000,
+    100000,
+    200000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "1-Step Challenge",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 2500,
+          "fee": 40
+        },
+        {
+          "size": 5000,
+          "fee": 70
+        },
+        {
+          "size": 10000,
+          "fee": 110
+        },
+        {
+          "size": 25000,
+          "fee": 250
+        },
+        {
+          "size": 50000,
+          "fee": 450
+        },
+        {
+          "size": 100000,
+          "fee": 650
+        },
+        {
+          "size": 200000,
+          "fee": 1160
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "7.5%",
+      "drawdown_type": "static",
+      "profit_split": "80% up to 95% (scaling)",
+      "min_trading_days": 3
+    },
+    {
+      "name": "2-Step Challenge",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 2500,
+          "fee": 30
+        },
+        {
+          "size": 5000,
+          "fee": 55
+        },
+        {
+          "size": 10000,
+          "fee": 100
+        },
+        {
+          "size": 25000,
+          "fee": 225
+        },
+        {
+          "size": 50000,
+          "fee": 440
+        },
+        {
+          "size": 100000,
+          "fee": 595
+        },
+        {
+          "size": 200000,
+          "fee": 995
+        }
+      ],
+      "profit_target": "7.5% / 5%",
+      "max_daily_loss": "4.5%",
+      "max_drawdown": "9%",
+      "drawdown_type": "static",
+      "profit_split": "80% up to 95% (scaling)",
+      "min_trading_days": 2
+    },
+    {
+      "name": "2-Step Solo (FX only)",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 2500,
+          "fee": 12.5
+        },
+        {
+          "size": 5000,
+          "fee": 22.5
+        },
+        {
+          "size": 10000,
+          "fee": 40
+        },
+        {
+          "size": 25000,
+          "fee": 100
+        },
+        {
+          "size": 50000,
+          "fee": 175
+        },
+        {
+          "size": 100000,
+          "fee": 325
+        },
+        {
+          "size": 200000,
+          "fee": 600
+        }
+      ],
+      "profit_target": "10% / 5%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_split": "80% up to 95% (scaling)",
+      "min_trading_days": null
+    },
+    {
+      "name": "Instant Funding Standard",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 2500,
+          "fee": 150
+        },
+        {
+          "size": 5000,
+          "fee": 275
+        },
+        {
+          "size": 10000,
+          "fee": 500
+        },
+        {
+          "size": 25000,
+          "fee": 1100
+        },
+        {
+          "size": 50000,
+          "fee": 1900
+        },
+        {
+          "size": 100000,
+          "fee": 3275
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": "3.5%",
+      "max_drawdown": "7%",
+      "drawdown_type": "static",
+      "profit_split": "75% up to 90% (scaling)",
+      "min_trading_days": null
+    },
+    {
+      "name": "Instant Funding Lite",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 2500,
+          "fee": 75
+        },
+        {
+          "size": 5000,
+          "fee": 139
+        },
+        {
+          "size": 10000,
+          "fee": 250
+        },
+        {
+          "size": 25000,
+          "fee": 550
+        },
+        {
+          "size": 50000,
+          "fee": 950
+        },
+        {
+          "size": 100000,
+          "fee": 1639
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static",
+      "profit_split": "70% up to 85% (scaling)",
+      "min_trading_days": 5
+    },
+    {
+      "name": "1-Step Pro",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 50000,
+          "fee": 514
+        },
+        {
+          "size": 100000,
+          "fee": 914
+        },
+        {
+          "size": 200000,
+          "fee": 1799
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "4%",
+      "max_drawdown": "8%",
+      "drawdown_type": "static",
+      "profit_split": "80%, 100% after 30 funded days (+1%/month salary)",
+      "min_trading_days": 3
+    },
+    {
+      "name": "2-Step Pro",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 50000,
+          "fee": 469
+        },
+        {
+          "size": 100000,
+          "fee": 744
+        },
+        {
+          "size": 200000,
+          "fee": 1484
+        }
+      ],
+      "profit_target": "7.5% / 5%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_split": "80%, 100% after 30 funded days (+1%/month salary)",
+      "min_trading_days": 2
+    }
+  ],
+  "fee_from": 30,
+  "profit_split": "80% up to 100%",
+  "profit_split_scale": "Challenge 80%→95% via scaling; Instant Standard 75%→90%; Instant Lite 70%→85%; Pro 100% after 30 funded days while Pro status retained",
+  "max_daily_loss": "4%",
+  "max_drawdown": "7.5%",
+  "drawdown_type": "static",
+  "profit_target": "10%",
+  "leverage": "up to 1:100 (2-Step Challenge); 1:50 1-Step Challenge/Pro; 1:33 Instant Standard & 2-Step Solo; 1:25 Instant Lite",
+  "platforms": [
+    "MT5",
+    "Match-Trader"
+  ],
+  "payout_frequency": "First payout on demand once funded and minimum profitable days met (Instant: after first profitable trades); then every 7 days (Instant Lite every 14 days; 2-Step Solo first after 14 days, then weekly)",
+  "first_payout_days": null,
+  "payout_speed": "Approved rewards go to Finotive Pay wallet; Finotive Pay withdrawals processed every Friday",
+  "min_trading_days": 3,
+  "consistency_rule": "No consistency rule on Challenge or Instant; Pro accounts from funded day 31 must keep weekly trade count and instrument volume within ±25% of historical averages. Profit-concentration/single-trade rules apply before payouts.",
+  "news_trading": "allowed",
+  "weekend_holding": "restricted",
+  "countries_restricted": [
+    "Iran",
+    "North Korea",
+    "Crimea",
+    "Sevastopol",
+    "Donetsk People's Republic",
+    "Luhansk People's Republic",
+    "Palestinian Territory"
+  ],
+  "founded": 2021,
+  "hq": "Dubai, United Arab Emirates",
+  "discount_code": {
+    "code": "FIRST25",
+    "value": "25% off your first purchase",
+    "percent": 25,
+    "source": "https://finotivefunding.com/",
+    "verified": "2026-10-31",
+    "expires": null,
+    "also": [
+      {
+        "code": "BOO50",
+        "value": "50% off (Halloween, ends ~1 Nov)",
+        "percent": 50
+      },
+      {
+        "code": "FINCRYPTO",
+        "value": "15% off when paying with crypto",
+        "percent": 15
+      }
+    ]
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": null,
+    "count": 1077,
+    "note": "Rating unavailable: Trustpilot says it removed fake reviews for this company (breach of its guidelines)",
+    "checked": "2026-10-31",
+    "source": "https://www.trustpilot.com/review/finotivefunding.com"
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://finotivefunding.com/",
+    "https://finotivefunding.com/challenge",
+    "https://finotivefunding.com/instant-funding",
+    "https://finotivefunding.com/finotive-pro",
+    "https://finotivefunding.com/rules",
+    "https://finotivefunding.com/trading",
+    "https://finotivefunding.com/payouts",
+    "https://finotivefunding.com/compare",
+    "https://finotivefunding.com/terms-and-conditions",
+    "https://help.finotivefunding.com/en/articles/881-which-platforms-can-i-trade-on",
+    "https://help.finotivefunding.com/en/articles/836-what-countries-or-regions-are-restricted",
+    "https://help.finotivefunding.com/en/articles/897-can-i-trade-news",
+    "https://help.finotivefunding.com/en/articles/898-can-i-hold-trades-over-the-weekend",
+    "https://help.finotivefunding.com/en/articles/980-when-can-i-request-my-first-reward-payment",
+    "https://help.finotivefunding.com/en/articles/981-how-often-can-i-request-reward-payments-after-the-first-one",
+    "https://help.finotivefunding.com/en/articles/987-what-reward-split-applies-to-each-account",
+    "https://help.finotivefunding.com/en/articles/1006-what-are-the-account-allocation-limits",
+    "https://help.finotivefunding.com/en/articles/972-what-are-pro-consistency-rules",
+    "https://www.trustpilot.com/review/finotivefunding.com"
+  ],
+  "notes": "Prices are list prices from the embedded pricing data on finotivefunding.com/challenge, /instant-funding, /finotive-pro (USD; EUR/GBP toggles exist). Oct 2026 promos: BOO50 50% off (Halloween, ends ~1 Nov), OCT50, FIRST25 25% off first purchase, FINCRYPTO 15% off crypto payments, FINOTIVEPAY 25% off + 5% capital when paying from Finotive Pay. Compare page shows 100K 1-Step $650 struck to $487.50 (promo). Help article on Rapid Reset quotes a $555 standard price for 100K 2-Step vs $595 on the pricing widget (inconsistency). 2-Step Solo (FX-only, raw spreads, $2.50 RT commission, EAs prohibited) prices from T&C s8.8.2 — not shown in the main pricing widget, so fee_from uses the $30 2-Step Challenge headline ('Start trading from just $30'). min_trading_days = minimum profitable days (day closing ≥0.5% of initial balance above prior close): 1-Step 3, 2-Step 2 per phase, Instant Lite 5, Instant Standard 0. Notional volume limits (5,000%→1,000% of balance by size) and per-position/floating drawdown strike rules apply; 5 strikes = closure (3 on Instant). Trustpilot: rating hidden — 'This company's rating is unavailable due to a breach of our guidelines' / 'We've removed a number of fake reviews'; 1,077 reviews, 61% 5-star / 30% 1-star (checked 2026-10-31) — treat as a trust flag. Max allocation: help-centre table says USD 2,040,000 scaled; challenge page markets 'up to $5.4M'. Founded 2021 from homepage ('Since our inception in 2021'); entity Finotive Funding Technologies Limited (DIFC Dubai). Futures sold separately via finotivefutures.com (not researched here). Platform note: Finotive Terminal integrated in dashboard with MT5 integration.",
+  "segment": "multi",
+  "also_offers": [
+    "futures"
+  ],
+  "category_basis": "Sells simulated CFD evaluation and instant-funded accounts on MT5 and Match-Trader (FX, indices, commodities, crypto); a separate sister brand Finotive Futures (finotivefutures.com) sells CME futures accounts.",
+  "category_source": "https://help.finotivefunding.com/en/articles/881-which-platforms-can-i-trade-on",
+  "founded_source": "https://finotivefunding.com/",
+  "hq_country": {
+    "code": "AE",
+    "source": "https://finotivefunding.com/",
+    "quote": "Dubai, United Arab Emirates"
+  },
+  "max_allocation_usd": 2040000,
+  "max_allocation_text": "Max purchased capital USD 600,000 (Challenge/Pro) and max scaled allocation USD 2,040,000; Instant: USD 200,000 purchased / USD 680,000 scaled",
+  "max_allocation_source": "https://help.finotivefunding.com/en/articles/1006-what-are-the-account-allocation-limits",
+  "field_sources": {
+    "name": "https://finotivefunding.com/",
+    "site": "https://finotivefunding.com/",
+    "category": "https://help.finotivefunding.com/en/articles/881-which-platforms-can-i-trade-on",
+    "also_offers": "https://finotivefunding.com/",
+    "segment": "https://finotivefunding.com/trading",
+    "assets": "https://finotivefunding.com/trading",
+    "challenge_types": "https://finotivefunding.com/",
+    "account_sizes": "https://finotivefunding.com/challenge",
+    "fee_currency": "https://finotivefunding.com/challenge",
+    "programs": "https://finotivefunding.com/challenge",
+    "programs[2-Step Solo]": "https://finotivefunding.com/terms-and-conditions",
+    "programs[Instant]": "https://finotivefunding.com/instant-funding",
+    "programs[Pro]": "https://finotivefunding.com/finotive-pro",
+    "fee_from": "https://finotivefunding.com/challenge",
+    "profit_split": "https://finotivefunding.com/",
+    "profit_split_scale": "https://help.finotivefunding.com/en/articles/987-what-reward-split-applies-to-each-account",
+    "max_daily_loss": "https://finotivefunding.com/terms-and-conditions",
+    "max_drawdown": "https://finotivefunding.com/terms-and-conditions",
+    "drawdown_type": "https://finotivefunding.com/terms-and-conditions",
+    "profit_target": "https://finotivefunding.com/challenge",
+    "leverage": "https://finotivefunding.com/terms-and-conditions",
+    "platforms": "https://help.finotivefunding.com/en/articles/881-which-platforms-can-i-trade-on",
+    "payout_frequency": "https://help.finotivefunding.com/en/articles/981-how-often-can-i-request-reward-payments-after-the-first-one",
+    "payout_speed": "https://finotivefunding.com/payouts",
+    "max_allocation": "https://help.finotivefunding.com/en/articles/1006-what-are-the-account-allocation-limits",
+    "max_allocation_text": "https://help.finotivefunding.com/en/articles/1006-what-are-the-account-allocation-limits",
+    "min_trading_days": "https://finotivefunding.com/challenge",
+    "consistency_rule": "https://help.finotivefunding.com/en/articles/972-what-are-pro-consistency-rules",
+    "news_trading": "https://help.finotivefunding.com/en/articles/897-can-i-trade-news",
+    "weekend_holding": "https://help.finotivefunding.com/en/articles/898-can-i-hold-trades-over-the-weekend",
+    "countries_restricted": "https://help.finotivefunding.com/en/articles/836-what-countries-or-regions-are-restricted",
+    "founded": "https://finotivefunding.com/",
+    "hq": "https://finotivefunding.com/",
+    "hq_country": "https://finotivefunding.com/",
+    "discount_code": "https://finotivefunding.com/"
+  }
+}

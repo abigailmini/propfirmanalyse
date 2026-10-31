@@ -40,12 +40,19 @@ PROMOS = {
  "topone-futures": ("BOO", "50% off Elite Daily and Ignite, 45% off Instant (Halloween)", 50, None, [("BOGO", "Buy one get one on Elite Access", None)]),
 }
 
+# Pay-later programs: the listed price is only an entry fee; an activation / funded fee follows if you pass.
+# The entry ticket moves to sizes_fees[].entry_fee and fee becomes null, so cost_per_k(), fee_at() and the price tables
+# (which all skip null fees) are not set by a $4-$9 ticket; the program keeps its sizes and a fee_note.
+DEFERRED = {"atlas-funded": ["Access"], "for-traders": ["Pay After Pass"], "funded-trading-plus": ["Activation Accounts"],
+            "mubite": ["Nitro"], "topone-futures": ["Elite Access"]}
+DEFERRED_NOTE = "Entry fee only: an activation / funded-account fee is charged after you pass"
+
 # Trustpilot where staging had none. score None + count = profile exists but Trustpilot shows no rating (suspended).
 SUSP = "Rating unavailable: Trustpilot says it removed fake reviews for this company (breach of its guidelines)"
 TP = {
- "for-traders": {"score": None, "count": 1821, "note": SUSP, "checked": CHECKED},
- "thinkcapital": {"score": None, "count": 605, "note": SUSP, "checked": CHECKED},
- "finotive-funding": {"score": None, "count": 1077, "note": SUSP, "checked": CHECKED},
+ "for-traders": {"score": None, "count": 1821, "note": SUSP, "checked": CHECKED, "source": "https://www.trustpilot.com/review/fortraders.com"},
+ "thinkcapital": {"score": None, "count": 605, "note": SUSP, "checked": CHECKED, "source": "https://www.trustpilot.com/review/thinkcapital.com"},
+ "finotive-funding": {"score": None, "count": 1077, "note": SUSP, "checked": CHECKED, "source": "https://www.trustpilot.com/review/finotivefunding.com"},
 }
 _tpx = os.path.join(STAGE, "tp_overrides.json")
 if os.path.exists(_tpx): TP.update(json.load(open(_tpx)))
@@ -86,6 +93,11 @@ def convert(s):
         if d.get("discount_code"): print(f"  ! {s}: staged code {d['discount_code']} has no PROMOS entry -> dropped")
         o["discount_code"] = None
     if s in TP: o["trustpilot"] = TP[s]
+    for p in o.get("programs") or []:
+        if any(k.lower() in (p.get("name") or "").lower() for k in DEFERRED.get(s, [])):
+            p["deferred_fee"] = True; p.setdefault("fee_note", DEFERRED_NOTE)
+            for sf in p.get("sizes_fees") or []:
+                if sf.get("fee") is not None: sf["entry_fee"] = sf["fee"]; sf["fee"] = None
     tp = o.get("trustpilot")
     if tp:
         u = fs.get("trustpilot") or next((x for x in d.get("source_urls", []) if "trustpilot.com" in x), None) or tp.get("source")

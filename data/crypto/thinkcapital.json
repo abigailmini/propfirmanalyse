@@ -1,0 +1,31 @@
+{
+  "crypto_pairs": null,
+  "crypto_pairs_examples": [
+    "BTCUSD"
+  ],
+  "crypto_leverage": "Lightning 1:1; Dual Step/Nexus dynamic BTCUSD 1:2 (0-0.10 lots) then 1:1",
+  "crypto_venue": "Simulated CFD on ThinkMarkets app (ThinkTrader) / TradingView",
+  "instrument_type": "CFD",
+  "weekend_crypto": null,
+  "payout_methods": [
+    "Crypto (USDT TRC20/ERC20)",
+    "Rise",
+    "ThinkMarkets live account"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": null,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": null,
+  "banned_strategies": "Grid trading, latency arbitrage, copy trading, cross-account hedging",
+  "bots_allowed": false,
+  "copy_trading": false,
+  "crypto_fees": "Commission-free, standard spreads",
+  "notes": "Crypto CFDs available on challenge programs, not on Bolt/Bolt Flex. Pair list not published on pages reviewed.",
+  "sources": [
+    "https://www.thinkcapital.com/tc-faqs/general-faqs/what-trading-platforms-does-thinkcapital-offer-and-what-instruments-can-i-trade-there/",
+    "https://www.thinkcapital.com/tc-faqs/general-faqs/leverage-commission-and-swap-charges-structure/",
+    "https://www.thinkcapital.com/tc-faqs/funded-accounts/how-is-the-payout-processed-and-how-long-does-it-take/",
+    "https://www.thinkcapital.com/tc-faqs/penalties-faq-section/penalties-faq-section/"
+  ],
+  "checked": "2026-10-31"
+}
