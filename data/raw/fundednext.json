@@ -160,7 +160,14 @@
  ],
  "founded": 2022,
  "hq": "Ajman, UAE",
- "discount_code": null,
+ "discount_code": {
+  "code": "FNTRICK",
+  "value": "Up to 41% off (41% on Stellar 6K/Lite 5K/Instant 2K; 20% on other ≤$50K CFD accounts)",
+  "percent": 41,
+  "source": "https://fundednext.com/",
+  "verified": "2026-10-31",
+  "expires": null
+ },
  "affiliate_url": "#",
  "trustpilot": {
   "score": 4.5,
@@ -173,7 +180,9 @@
   "https://fundednext.com/trading-platforms",
   "https://fundednext.com/company",
   "https://help.fundednext.com/en/",
-  "https://www.trustpilot.com/review/fundednext.com"
+  "https://www.trustpilot.com/review/fundednext.com",
+  "https://fundednext.com/terms-of-service",
+  "https://help.fundednext.com/en/articles/8027523-how-many-accounts-can-i-have-with-fundednext"
  ],
  "notes": "CFD Stellar prices via browser; Stellar Lite & FNL:002 programs and Futures not captured. Leverage, weekend rule not found. first_payout_days=21 for 2-Step (1-Step: 5 business days). News trading profit capped at 40% on funded. hq = registered entity GrowthNext F.Z.E. Trustpilot via browser.",
  "segment": "multi",
@@ -181,5 +190,14 @@
   "futures"
  ],
  "category_basis": "CFD challenges on MT4, MT5, cTrader and Match-Trader; a separate futures program runs on NinjaTrader and Tradovate.",
- "category_source": "https://fundednext.com/trading-platforms"
+ "category_source": "https://fundednext.com/trading-platforms",
+ "founded_source": "https://fundednext.com/company",
+ "hq_country": {
+  "code": "AE",
+  "source": "https://fundednext.com/terms-of-service",
+  "quote": "GrowthNext – F.Z.E., a company duly registered under No. 28831, with its registered address at … Ajman Free Zone (AFZ), Ajman, UAE"
+ },
+ "max_allocation_usd": 300000,
+ "max_allocation_text": "Max aggregate funded simulated capital: $300,000 (scale-up beyond via Scale-Up plan, up to $4M)",
+ "max_allocation_source": "https://help.fundednext.com/en/articles/8027523-how-many-accounts-can-i-have-with-fundednext"
 }

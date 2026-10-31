@@ -165,15 +165,20 @@
  "founded": null,
  "hq": "Saint Lucia (registered)",
  "discount_code": {
-  "code": "SPOOKY",
-  "value": "25% off"
+  "code": "HALLOWEEN",
+  "value": "35% off all accounts (CFDs & Futures)",
+  "percent": 35,
+  "source": "https://blueguardian.com/",
+  "verified": "2026-10-31",
+  "expires": null
  },
  "affiliate_url": "#",
  "trustpilot": null,
  "last_verified": "2026-10-26",
  "source_urls": [
   "https://blueguardian.com/",
-  "https://www.trustpilot.com/review/blueguardian.com"
+  "https://www.trustpilot.com/review/blueguardian.com",
+  "https://help.blueguardian.com/en/articles/15618204-general-information-rules"
  ],
  "notes": "Fees = list price before SPOOKY (site shows ~25% lower with code). Rule % derived from $ values at 100K. News trading allowed in challenge, not on funded. Futures: Standard/Reserve/Express/Direct (e.g. Standard 25K-150K $154-$424 list, EOD trailing, 90/10, 40% funded consistency). Nano 1/2-step plans not captured. Min trading days not shown. Trustpilot: rating unavailable (guidelines-breach warning) -> null.",
  "segment": "multi",
@@ -181,5 +186,13 @@
   "futures"
  ],
  "category_basis": "CFD challenges on MT5, Match-Trader and TradeLocker; separate futures plans on NinjaTrader, Tradovate and TradingView.",
- "category_source": "https://blueguardian.com/"
+ "category_source": "https://blueguardian.com/",
+ "hq_country": {
+  "code": "LC",
+  "source": "https://blueguardian.com/",
+  "quote": "Blue Guardian Limited - The Sotheby Building, Rodney Village, Rodney Bay, Gros-Islet, Saint Lucia"
+ },
+ "max_allocation_usd": 400000,
+ "max_allocation_text": "Max active funded allocation $400,000 across all funded types; scaling plan to $4,000,000",
+ "max_allocation_source": "https://help.blueguardian.com/en/articles/15618204-general-information-rules"
 }

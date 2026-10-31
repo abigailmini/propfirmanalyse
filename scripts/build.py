@@ -382,7 +382,7 @@ def pair_link(a, b):
             f'<i aria-hidden="true">vs</i><span class="sr"> versus </span><span>{e(BY[b]["name"])}</span></a></li>')
 
 # ---------------- pages ----------------
-ASSET_V = "11"
+ASSET_V = "12"
 WEB_FONTS = ("instrument-sans.woff2",)   # bricolage/geist stay in src/fonts for scripts/og.html only
 def write_assets():
     os.makedirs(os.path.join(OUT, "assets", "fonts"), exist_ok=True)
@@ -694,7 +694,7 @@ def seo_files():
     open(os.path.join(OUT, ".nojekyll"), "w").write("")
     if SITE_URL.startswith("https://") and "github.io" not in SITE_URL and not BASE: open(os.path.join(OUT, "CNAME"), "w").write(SITE_URL.split("://", 1)[1] + "\n")
 
-for _m in ("more_core.py", "more_pages_a.py", "more_pages_b.py", "more_guides.py", "more_programmatic.py", "more_zh.py", "more_categories.py", "more_seo.py", "more_badge.py"):
+for _m in ("more_core.py", "more_pages_a.py", "more_pages_b.py", "more_guides.py", "more_programmatic.py", "more_zh.py", "more_categories.py", "more_seo.py", "more_badge.py", "more_home.py"):
     _p = os.path.join(ROOT, "scripts", _m); exec(compile(open(_p).read(), _p, "exec"))
 
 if __name__ == "__main__":

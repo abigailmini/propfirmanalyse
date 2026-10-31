@@ -182,7 +182,11 @@
   "hq": null,
   "discount_code": {
     "code": "CLUB",
-    "value": "auto-applied in site 'Start Now' links; e.g. 50K Rapid $209 -> $125"
+    "value": "40% off any plan (new users: 50% off first eval)",
+    "percent": 40,
+    "source": "https://myfundedfutures.com/",
+    "verified": "2026-10-31",
+    "expires": null
   },
   "affiliate_url": "#",
   "trustpilot": {
@@ -204,11 +208,20 @@
     "https://help.myfundedfutures.com/en/articles/8229993-restricted-countries-policy",
     "https://help.myfundedfutures.com/en/articles/8230009-news-trading-policy",
     "https://www.trustpilot.com/review/myfundedfutures.com",
-    "https://help.myfundedfutures.com/en/collections/5786939-trading-platforms"
+    "https://help.myfundedfutures.com/en/collections/5786939-trading-platforms",
+    "https://myfundedfutures.com/terms",
+    "https://help.myfundedfutures.com/en/articles/16498635-moving-from-evaluation-to-sim-funded-account"
   ],
   "notes": "Fees are promotional one-time prices for 50K only (list prices: Builder $153, Rapid $209, Pro $265, Rapid EOD $135/$225); other sizes not captured. No activation fees. Rapid eval table labels MLL 'EOD' while funded stage is intraday trailing. Pro funded stage: T1 news not allowed, payouts after 14 days plus buffer, max $100K payout. Rapid EOD and Studio plans exist but were not captured. Platform list not found (help collection empty via fetch).",
   "segment": "futures",
   "also_offers": [],
   "category_basis": "Simulated CME Group futures (CME, CBOT, NYMEX, COMEX) on Tradovate, NinjaTrader, TradingView, Quantower and Volumetrica.",
-  "category_source": "https://myfundedfutures.com/"
+  "category_source": "https://myfundedfutures.com/",
+  "hq_country": {
+    "code": "US",
+    "source": "https://myfundedfutures.com/terms",
+    "quote": "Company / We / Us: MyFunded Futures, LLC … governed by … the laws of the State of Texas"
+  },
+  "max_allocation_text": "Up to 5 sim-funded accounts ($25K/$50K only) or 3 if any $100K/$150K held (no USD cap stated)",
+  "max_allocation_source": "https://help.myfundedfutures.com/en/articles/16498635-moving-from-evaluation-to-sim-funded-account"
 }

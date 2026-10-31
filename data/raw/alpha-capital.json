@@ -157,11 +157,32 @@
   "news_trading": "restricted",
   "weekend_holding": "restricted",
   "countries_restricted": null,
-  "founded": null,
+  "founded": 2021,
   "hq": "Harpenden, England, UK",
   "discount_code": {
-    "code": "ALPHA20",
-    "value": "20% off all accounts (to 31 Oct 2026)"
+    "code": "HALLOWEEN45",
+    "value": "45% off (not valid on Alpha Pro 8%/10% Bi-weekly)",
+    "percent": 45,
+    "source": "https://alphacapitalgroup.uk/alpha-capital-discount-codes",
+    "verified": "2026-10-31",
+    "expires": "2026-10-31",
+    "also": [
+      {
+        "code": "ALPHA20",
+        "value": "20% off all accounts",
+        "percent": 20
+      },
+      {
+        "code": "FUNDED40",
+        "value": "40% off Alpha Direct only",
+        "percent": 40
+      },
+      {
+        "code": "10KFOR40",
+        "value": "$10K evaluation for $40",
+        "percent": null
+      }
+    ]
   },
   "affiliate_url": "#",
   "trustpilot": {
@@ -180,11 +201,23 @@
     "https://alphacapitalgroup.uk/posts/alpha-capital-rules-explained-drawdown-profit-targets-daily-loss-and-evaluation-rules-2026",
     "https://alphacapitalgroup.uk/posts/how-much-does-a-prop-firm-evaluation-cost-2026",
     "https://alphacapitalgroup.uk/resources/alpha-capital-country-availability-2026",
-    "https://www.trustpilot.com/review/alphacapitalgroup.uk"
+    "https://www.trustpilot.com/review/alphacapitalgroup.uk",
+    "https://alphacapitalgroup.uk/about",
+    "https://alphacapitalgroup.uk/terms-and-conditions",
+    "https://help.alphacapitalgroup.uk/en/articles/8804535-how-many-accounts-can-i-have-what-is-the-maximum-allocation-per-strategy"
   ],
   "notes": "Alpha One/Pro fees from firm's own pricing post (checkout as of 21 Sep 2026); Alpha Direct fees from live product page. Product page lists Alpha One 6/10/12% variants but rules guide says only 10% sold; Alpha Pro also 8%/10% variants and Alpha Swing (2-step, 10%/5%, 10% static) exist, fees not captured. Trustpilot shows rating unavailable (guidelines breach notice), 22,010 reviews. Other active codes: MYALPHA 30% (ends 26 Oct), FUNDED40 40% Direct, 10KFOR40. US: no MT5/new cTrader. Founded year not found.",
   "segment": "forex-cfd",
   "also_offers": [],
   "category_basis": "CFD challenges on MT5, cTrader, DXtrade and TradeLocker.",
-  "category_source": "https://alphacapitalgroup.uk/product"
+  "category_source": "https://alphacapitalgroup.uk/product",
+  "founded_source": "https://alphacapitalgroup.uk/about",
+  "hq_country": {
+    "code": "GB",
+    "source": "https://alphacapitalgroup.uk/terms-and-conditions",
+    "quote": "Alpha Capital Group Limited, incorporated in England and Wales under company number 13719951"
+  },
+  "max_allocation_usd": 400000,
+  "max_allocation_text": "Max $400,000 per household on Qualified Analyst accounts ($300K per strategy); scaling to $2M cumulative",
+  "max_allocation_source": "https://help.alphacapitalgroup.uk/en/articles/8804535-how-many-accounts-can-i-have-what-is-the-maximum-allocation-per-strategy"
 }

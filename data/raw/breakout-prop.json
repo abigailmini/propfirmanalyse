@@ -185,11 +185,20 @@
     "https://intercom.help/breakoutprop/en/articles/11643732-what-types-of-breakout-evaluations-can-i-purchase",
     "https://intercom.help/breakoutprop/en/articles/11644138-what-is-the-available-leverage",
     "https://intercom.help/breakoutprop/en/articles/11643973-is-payward-oceanic-ltd-pol-the-same-company-as-breakout-trading-group",
-    "https://www.trustpilot.com/review/breakoutprop.com"
+    "https://www.trustpilot.com/review/breakoutprop.com",
+    "https://intercom.help/breakoutprop/en/articles/11647204-what-is-the-maximum-allocation-available"
   ],
   "notes": "Fees per size read from pricing page size tabs (80/20 base price). 90/10 upgrade prices: Classic 54/102/258/480/960, Pro 39.60/78/180/336/654/1308, Turbo 24/48/114/216/396/792. Classic not available at $200K. Payouts in USDC (ERC-20), $50 minimum after split; first payout possible same day as funded. Evaluations run by Breakout Trading Group, LLC; funded accounts via separate agreement with Payward Oceanic Ltd (Kraken group, per site nav/disclosures). HQ = Trustpilot contact country only; founded year not found. Help centre also lists Spark Evaluation (not on pricing page, not captured). $200K max total funded capital across accounts. HQ left null: only source was Trustpilot contact country, not the firm's site (operator: Breakout Trading Group LLC).",
   "segment": "crypto",
   "also_offers": [],
   "category_basis": "Crypto-first firm: Breakout Terminal (and DXtrade) priced from exchanges and market makers; part of the Kraken (Payward) group.",
-  "category_source": "https://intercom.help/breakoutprop/en/collections/13572047-breakout-evaluation"
+  "category_source": "https://intercom.help/breakoutprop/en/collections/13572047-breakout-evaluation",
+  "hq_country": {
+    "code": "US",
+    "source": "https://www.breakoutprop.com/",
+    "quote": "© 2026 BREAKOUT TRADING GROUP, LLC. (Terms governed by the laws of the State of Florida)"
+  },
+  "max_allocation_usd": 200000,
+  "max_allocation_text": "Max total allocation across all funded accounts: $200,000",
+  "max_allocation_source": "https://intercom.help/breakoutprop/en/articles/11647204-what-is-the-maximum-allocation-available"
 }

@@ -142,8 +142,29 @@
   "founded": 2021,
   "hq": "Dallas, TX, USA",
   "discount_code": {
-    "code": "E8",
-    "value": "30% off first order"
+    "code": "E8ARC",
+    "value": "30% off E8 One / E8 Pro (Classic Markets)",
+    "percent": 30,
+    "source": "https://e8markets.com/e8-markets-discount-code",
+    "verified": "2026-10-31",
+    "expires": null,
+    "also": [
+      {
+        "code": "E8ARC",
+        "value": "50% off E8 Pro/E8 One Perpetuals",
+        "percent": 50
+      },
+      {
+        "code": "REB8",
+        "value": "35% off E8 Zero MAX/Starter (Futures)",
+        "percent": 35
+      },
+      {
+        "code": "E8",
+        "value": "25% off E8 Signature (Futures)",
+        "percent": 25
+      }
+    ]
   },
   "affiliate_url": "#",
   "trustpilot": {
@@ -163,7 +184,9 @@
     "https://help.e8markets.com/en/articles/5514982-how-much-leverage-do-you-offer",
     "https://help.e8markets.com/en/articles/9185497-can-i-trade-news",
     "https://help.e8markets.com/en/articles/5514966-can-i-hold-positions-overnight-and-trade-over-the-weekend",
-    "https://www.trustpilot.com/review/e8markets.com"
+    "https://www.trustpilot.com/review/e8markets.com",
+    "https://e8markets.com/e8-markets-discount-code",
+    "https://help.e8markets.com/en/articles/5515039-how-many-accounts-can-i-apply-for-at-once"
   ],
   "notes": "Site is JS/403 to plain fetch; read via browser. E8 One fees/rules = homepage configurator default ($100K: 9% target, 6% dynamic DD, 4% daily); help article lists preset 6%/4% dynamic/3% daily — product is customizable at checkout. E8 Pro fees not captured (has 2% daily profit cap, 1% min payout, daily payouts). Also E8 Signature and E8 Zero (futures). Min days: 'pass in 1 day'. Restricted list = Classic/Perps; Futures list longer. Trustpilot shows rating unavailable (guidelines breach notice), 3,303 reviews.",
   "segment": "multi",
@@ -171,5 +194,14 @@
     "futures"
   ],
   "category_basis": "Main products (E8 One, E8 Pro, E8 Signature) are CFD accounts on MT5, cTrader, Match-Trader and TradeLocker; E8 Zero is a futures product.",
-  "category_source": "https://help.e8markets.com/en/articles/13106558-all-product-overviews-e8-one-vs-e8-zero-vs-e8-pro-vs-e8-signature"
+  "category_source": "https://help.e8markets.com/en/articles/13106558-all-product-overviews-e8-one-vs-e8-zero-vs-e8-pro-vs-e8-signature",
+  "founded_source": "https://help.e8markets.com/en/articles/14124293-about-e8-markets",
+  "hq_country": {
+    "code": "US",
+    "source": "https://e8markets.com/",
+    "quote": "E8 Funding LLC is a technology and education company incorporated under the laws of the United States, located at 4101 McEwen Rd #205, Dallas, TX 75244."
+  },
+  "max_allocation_usd": 3900000,
+  "max_allocation_text": "Up to $3,900,000 simulated capital across Performance accounts ($500K per market for E8 One/Pro), per household",
+  "max_allocation_source": "https://help.e8markets.com/en/articles/5515039-how-many-accounts-can-i-apply-for-at-once"
 }

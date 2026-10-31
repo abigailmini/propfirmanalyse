@@ -184,11 +184,15 @@
     "Zambia",
     "Zimbabwe"
   ],
-  "founded": null,
+  "founded": 2021,
   "hq": "Austin, TX (mailing address)",
   "discount_code": {
     "code": "SAVENOW",
-    "value": "90% off all evals (time-limited banner)"
+    "value": "90% off all evals (Intraday, EOD, Legacy, any size)",
+    "percent": 90,
+    "source": "https://apextraderfunding.com/",
+    "verified": "2026-10-31",
+    "expires": "2026-11-01"
   },
   "affiliate_url": "#",
   "trustpilot": {
@@ -212,5 +216,13 @@
   "segment": "futures",
   "also_offers": [],
   "category_basis": "CME futures evaluations on Rithmic, Tradovate and NinjaTrader.",
-  "category_source": "https://apextraderfunding.com/"
+  "category_source": "https://apextraderfunding.com/",
+  "founded_source": "https://apextraderfunding.com/about/",
+  "hq_country": {
+    "code": "US",
+    "source": "https://apextraderfunding.com/",
+    "quote": "Apex Trader Funding Inc. 2028 E. Ben White Blvd Ste 240-9873 Austin, TX 78741 (mailing address only)"
+  },
+  "max_allocation_text": "Trade up to 20 accounts (no USD cap stated)",
+  "max_allocation_source": "https://apextraderfunding.com/"
 }

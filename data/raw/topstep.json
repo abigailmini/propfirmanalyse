@@ -110,5 +110,13 @@
   "segment": "futures",
   "also_offers": [],
   "category_basis": "CME futures accounts on TopstepX.",
-  "category_source": "https://www.topstep.com/"
+  "category_source": "https://www.topstep.com/",
+  "founded_source": "https://www.topstep.com/about-us",
+  "hq_country": {
+    "code": "US",
+    "source": "https://www.topstep.com/about-us",
+    "quote": "Topstep LLC and its affiliates … 2010 Office on Chicago Board of Trade trading floor"
+  },
+  "max_allocation_text": "Up to 5 active Express Funded Accounts at a time (no USD cap stated)",
+  "max_allocation_source": "https://help.topstep.com/en/articles/8284215-express-funded-account-parameters"
 }

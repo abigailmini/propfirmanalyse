@@ -3,7 +3,7 @@ const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelecto
 const PORDER={daily:1,weekly:2,biweekly:3,monthly:4,other:5};
 /* sort keys: [value fn (null = unpublished, always last), default direction] */
 const SK={score:[d=>+d.score,-1],name:[d=>d.name,1],tp:[d=>d.tp===''?null:+d.tp,-1],fee:[d=>d.fee===''?null:+d.fee,1],maxsize:[d=>d.maxsize===''?null:+d.maxsize,-1],
-  split:[d=>d.split===''?null:+d.split,-1],payout:[d=>PORDER[d.payout]||null,1],founded:[d=>d.founded===''?null:+d.founded,1]};
+  split:[d=>d.split===''?null:+d.split,-1],payout:[d=>PORDER[d.payout]||null,1],founded:[d=>d.founded===''?null:+d.founded,1],alloc:[d=>d.alloc===''?null:+d.alloc,-1]};
 const RM=matchMedia('(prefers-reduced-motion: reduce)');
 /* FLIP: rows glide to their new position after a sort or filter (transform only, 240ms) */
 function flip(tb,mutate){
@@ -176,5 +176,32 @@ if(pk){
     $('#live').innerHTML='<table class="cmp"><caption class="sr">'+esc(A.name)+' compared with '+esc(B.name)+'</caption><thead><tr><td></td>'+head(A)+head(B)+'</tr></thead><tbody>'+R.map(r=>{const x=r[1](A),y=r[1](B);let wa=0,wb=0;if(r[2]&&x!=null&&y!=null&&x!==y){if(+x>+y)wa=1;else wb=1}return '<tr><th scope="row">'+r[0]+'</th>'+cell(x,wa)+cell(y,wb)+'</tr>'}).join('')+'</tbody></table>';
   }
   pk.addEventListener('submit',e=>{e.preventDefault();go()});
+}
+
+/* home v2: offers carousel (scroll-snap; arrows + dots; reduced motion = instant) */
+const car=$('#ocar');
+if(car){
+  const pan=car.closest('.opanel'),bs=$$('.cb',pan),dots=$$('.dots i',pan);
+  const beh=()=>RM.matches?'auto':'smooth';
+  const upd=()=>{const w=car.clientWidth,max=car.scrollWidth-w,n=Math.max(1,Math.round(car.scrollWidth/w)),i=Math.min(n-1,Math.round(car.scrollLeft/w));
+    bs[0].disabled=car.scrollLeft<4;bs[1].disabled=car.scrollLeft>=max-4;dots.forEach((d,j)=>{d.hidden=j>=n;d.classList.toggle('on',j===i)})};
+  const go=d=>car.scrollBy({left:d*car.clientWidth,behavior:beh()});
+  bs.forEach(b=>b.addEventListener('click',()=>go(+b.dataset.d)));
+  car.addEventListener('keydown',e=>{if(e.target!==car)return;if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();go(e.key==='ArrowRight'?1:-1)}});
+  car.addEventListener('scroll',()=>{cancelAnimationFrame(car._r);car._r=requestAnimationFrame(upd)},{passive:true});
+  addEventListener('resize',upd,{passive:true});upd();
+}
+/* top rated panel: account-type switch */
+$$('.tpanel').forEach(p=>{const bs=$$('.trt',p);bs.forEach(b=>b.addEventListener('click',()=>{
+  bs.forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));$$('.trl,.trm',p).forEach(el=>{el.hidden=el.dataset.t!==b.dataset.t})}))});
+/* header search: exact firm name opens its page; on a page with the firm table it filters in place; else /firms/?q= */
+const hs=$('.hsearch');
+if(hs){
+  let map={};try{map=JSON.parse(hs.dataset.firms)}catch(err){}
+  const inp=hs.elements.q;
+  hs.addEventListener('submit',e=>{const v=inp.value.trim(),k=v.toLowerCase();if(!k){e.preventDefault();return}
+    if(map[k]){e.preventDefault();location.href=map[k];return}
+    const q=$('#q');if(q&&$('#firms')){e.preventDefault();q.value=v;q.dispatchEvent(new Event('input'));$('#firms').scrollIntoView({behavior:RM.matches?'auto':'smooth',block:'start'})}});
+  inp.addEventListener('change',()=>{const k=inp.value.trim().toLowerCase();if(map[k])location.href=map[k]});
 }
 })();

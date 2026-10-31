@@ -152,7 +152,18 @@
   "hq": null,
   "discount_code": {
     "code": "ROCKET",
-    "value": "10% off"
+    "value": "10% off",
+    "percent": 10,
+    "source": "https://maventrading.com/",
+    "verified": "2026-10-31",
+    "expires": null,
+    "also": [
+      {
+        "code": "OMO",
+        "value": "40% off Omo challenges",
+        "percent": 40
+      }
+    ]
   },
   "affiliate_url": "#",
   "trustpilot": {
@@ -170,5 +181,11 @@
   "segment": "forex-cfd",
   "also_offers": [],
   "category_basis": "CFD challenges on MT5 and Match-Trader (Maven simulated server).",
-  "category_source": "https://maventrading.com/faqs"
+  "category_source": "https://maventrading.com/faqs",
+  "founded_source": "https://maventrading.com/faqs",
+  "hq_country": {
+    "code": "AE",
+    "source": "https://maventrading.com/",
+    "quote": "Maven Edu - FZCO is a registered limited corporation in United Arab Emirates, DSO-IFZA, IFZA Properties, Dubai Silicon Oasis"
+  }
 }

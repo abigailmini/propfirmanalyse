@@ -101,7 +101,11 @@
   "hq": "Wilmington, DE",
   "discount_code": {
     "code": "BULENOX",
-    "value": "always-on coupon (amount not stated)"
+    "value": "Applies best available discount to Qualification, Fast Track & Momentum accounts",
+    "percent": null,
+    "source": "https://bulenox.com/",
+    "verified": "2026-10-31",
+    "expires": null
   },
   "affiliate_url": "#",
   "trustpilot": {
@@ -121,5 +125,12 @@
   "segment": "futures",
   "also_offers": [],
   "category_basis": "CME Group futures data via Rithmic; R | Trader Pro, NinjaTrader and other Rithmic platforms.",
-  "category_source": "https://bulenox.com/faq"
+  "category_source": "https://bulenox.com/faq",
+  "hq_country": {
+    "code": "US",
+    "source": "https://bulenox.com/",
+    "quote": "Bulenox LLC 1201 N Orange St, Ste 7149 Wilmington, DE 19801"
+  },
+  "max_allocation_text": "Up to 5 accounts in total (Master, Fast Track, Momentum Master); no USD cap stated",
+  "max_allocation_source": "https://bulenox.com/faq"
 }

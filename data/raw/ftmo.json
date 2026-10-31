@@ -159,7 +159,9 @@
     "https://ftmo.com/en/faq/",
     "https://www.trustpilot.com/review/ftmo.com",
     "https://ftmo.com/en/symbols/",
-    "https://ftmo.com/en/faq/how-do-i-withdraw-my-profits/"
+    "https://ftmo.com/en/faq/how-do-i-withdraw-my-profits/",
+    "https://ftmo.com/en/about/",
+    "https://ftmo.com/en/faq/how-many-accounts-can-i-have/"
   ],
   "notes": "Fees are EUR (USD toggle not applied in browser). $100K showed two prices: 2-Step €439/€540, 1-Step €399/€499 (higher recorded; lower may be promo). News/weekend restrictions apply only to Standard funded accounts (Swing type unrestricted; evaluation unrestricted). CFD asset classes not verified (only Futures product seen). Payout frequency not found. hq inferred from CZ legal entity FTMO s.r.o. Assets: Forex/Crypto/Indices/Commodities(Metals) category filters confirmed on ftmo.com/en/symbols (2026-10-26); stocks not confirmed. Fees in EUR.",
   "segment": "multi",
@@ -167,5 +169,14 @@
     "futures"
   ],
   "category_basis": "Simulated CFD accounts on MT4, MT5, cTrader and TradingView; FTMO also lists a futures product.",
-  "category_source": "https://ftmo.com/en/"
+  "category_source": "https://ftmo.com/en/",
+  "founded_source": "https://ftmo.com/en/about/",
+  "hq_country": {
+    "code": "CZ",
+    "source": "https://ftmo.com/en/",
+    "quote": "Copyright © 2026 FTMO s.r.o. … ADDRESS FTMO Quadrio offices Purkynova 2121/3 110 00 Prague Czech Republic"
+  },
+  "max_allocation_usd": 400000,
+  "max_allocation_text": "$400,000 total across all accounts per trader/strategy (before scaling; scaling plan to $2M per account)",
+  "max_allocation_source": "https://ftmo.com/en/faq/how-many-accounts-can-i-have/"
 }

@@ -143,11 +143,15 @@
   "UAE",
   "FATF / EU-UN sanctioned"
  ],
- "founded": null,
+ "founded": 2022,
  "hq": "Dubai, UAE",
  "discount_code": {
-  "code": "FP",
-  "value": "20% off (new customers)"
+  "code": "HALLOWEEN",
+  "value": "20% off new clients / 15% off existing clients",
+  "percent": 20,
+  "source": "https://fundingpips.com/",
+  "verified": "2026-10-31",
+  "expires": null
  },
  "affiliate_url": "#",
  "trustpilot": {
@@ -164,5 +168,14 @@
  "segment": "forex-cfd",
  "also_offers": [],
  "category_basis": "CFD challenges on MT5, cTrader and Match-Trader.",
- "category_source": "https://fundingpips.com/"
+ "category_source": "https://fundingpips.com/",
+ "founded_source": "https://fundingpips.com/",
+ "hq_country": {
+  "code": "KM",
+  "source": "https://fundingpips.com/",
+  "quote": "FundingPips Corp is a limited liability company incorporated under the laws of the Comoros Union with company number: HY01223081"
+ },
+ "max_allocation_usd": 400000,
+ "max_allocation_text": "Max Allocation $400K",
+ "max_allocation_source": "https://fundingpips.com/"
 }

@@ -200,7 +200,11 @@
   "hq": null,
   "discount_code": {
     "code": "FIRST",
-    "value": "10% off first purchase"
+    "value": "10% off first purchase (auto-applied in pricing widget)",
+    "percent": 10,
+    "source": "https://www.fundedxyz.com/",
+    "verified": "2026-10-31",
+    "expires": null
   },
   "affiliate_url": "#",
   "trustpilot": {

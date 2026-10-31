@@ -169,7 +169,7 @@
  "news_trading": true,
  "weekend_holding": "restricted",
  "countries_restricted": null,
- "founded": null,
+ "founded": 2022,
  "hq": null,
  "discount_code": null,
  "affiliate_url": "#",
@@ -185,11 +185,24 @@
   "https://helpdesk.larkfunding.com/en/articles/11738989-what-trading-platform-does-lark-funding-offer",
   "https://helpdesk.larkfunding.com/en/articles/15157346-can-i-hold-trades-overnight",
   "https://helpdesk.larkfunding.com/en/articles/8377870-what-are-the-rules-for-the-simulated-funded-account",
-  "https://www.trustpilot.com/review/larkfunding.com"
+  "https://www.trustpilot.com/review/larkfunding.com",
+  "https://helpdesk.larkfunding.com/en/articles/11739114-what-is-lark-funding",
+  "https://larkfunding.com/terms-of-use",
+  "https://helpdesk.larkfunding.com/en/articles/13899816-maximum-capital-allocation"
  ],
  "notes": "Fees scraped from homepage plan cards (browser). 1-Step Max: 1% per-symbol loss limit (soft breach), 3 free restarts. Instant first payout on demand, then monthly; leverage 30:1 on 1-Step/Max, 50:1 Instant/3-Step. Weekend holding via add-on. October promo (fee refund with first payout, ends Oct 31) has no code. Operator Lark Dashboards Inc.; HQ/founded/restricted countries not found. Trustpilot lists contact country Canada.",
  "segment": "multi",
  "also_offers": [],
  "category_basis": "CFD challenges on DXtrade, cTrader and Match-Trader.",
- "category_source": "https://helpdesk.larkfunding.com/en/articles/11738989-what-trading-platform-does-lark-funding-offer"
+ "category_source": "https://helpdesk.larkfunding.com/en/articles/11738989-what-trading-platform-does-lark-funding-offer",
+ "promo_note": "No code; homepage 'OCTOBER OFFER' = evaluation fee refunded with first payout, enroll by Oct 31.",
+ "founded_source": "https://helpdesk.larkfunding.com/en/articles/11739114-what-is-lark-funding",
+ "hq_country": {
+  "code": "CA",
+  "source": "https://larkfunding.com/terms-of-use",
+  "quote": "operated by Lark Dashboards Inc., a Canadian corporation registered in the Province of Quebec, under license from Lark Funding Inc."
+ },
+ "max_allocation_usd": 200000,
+ "max_allocation_text": "Max $200,000 funded (evaluation) + $100,000 instant",
+ "max_allocation_source": "https://helpdesk.larkfunding.com/en/articles/13899816-maximum-capital-allocation"
 }

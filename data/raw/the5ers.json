@@ -157,7 +157,7 @@
   "Venezuela",
   "Yemen"
  ],
- "founded": null,
+ "founded": 2016,
  "hq": null,
  "discount_code": null,
  "affiliate_url": "#",
@@ -171,7 +171,8 @@
   "https://the5ers.com/high-stakes/",
   "https://the5ers.com/hyper-growth/",
   "https://the5ers.com/bootcamp/",
-  "https://www.trustpilot.com/review/the5ers.com"
+  "https://www.trustpilot.com/review/the5ers.com",
+  "https://the5ers.com/about-the5ers/"
  ],
  "notes": "min_trading_days = min profitable days (≥0.5%). Bootcamp: $22 entry + $50 at funding; 3-step for $100K/$250K fees not captured; Pro stage 3% daily pause/4% max loss. Homepage also lists a separate '1 Step' ($249, 10%/3%/6%, 75% share, 1:100). Banner promo '$100K for $149' (no code). HS news: no trades 2 min around high-impact news. Site says '10 years active' (founded not stated). Futures program not captured. Drawdown type not stated.",
  "segment": "multi",
@@ -179,5 +180,14 @@
   "futures"
  ],
  "category_basis": "CFD programs (High Stakes, Hyper Growth, Bootcamp) on MT5; a futures program is listed separately.",
- "category_source": "https://the5ers.com/"
+ "category_source": "https://the5ers.com/",
+ "founded_source": "https://the5ers.com/",
+ "hq_country": {
+  "code": "GB",
+  "source": "https://the5ers.com/about-the5ers/",
+  "quote": "FIVE PERCENT ONLINE LTD, a company registered in UK with company number 12553363 … London"
+ },
+ "max_allocation_usd": 4000000,
+ "max_allocation_text": "Get qualified and manage up to $4,000,000 (scaling cap)",
+ "max_allocation_source": "https://the5ers.com/"
 }

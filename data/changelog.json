@@ -70,5 +70,104 @@
   "old": null,
   "new": "Tradovate, NinjaTrader, TradingView, Quantower, Volumetrica",
   "kind": "Rules"
+ },
+ {
+  "date": "2026-10-26",
+  "slug": "alpha-capital",
+  "firm": "Alpha Capital",
+  "field": "Discount code",
+  "old": "ALPHA20 (20% off all accounts (to 31 Oct 2026))",
+  "new": "HALLOWEEN45 (45% off (not valid on Alpha Pro 8%/10% Bi-weekly))",
+  "kind": "Offers"
+ },
+ {
+  "date": "2026-10-26",
+  "slug": "apex-trader-funding",
+  "firm": "Apex Trader Funding",
+  "field": "Discount code",
+  "old": "SAVENOW (90% off all evals (time-limited banner))",
+  "new": "SAVENOW (90% off all evals (Intraday, EOD, Legacy, any size))",
+  "kind": "Offers"
+ },
+ {
+  "date": "2026-10-26",
+  "slug": "blue-guardian",
+  "firm": "Blue Guardian",
+  "field": "Discount code",
+  "old": "SPOOKY (25% off)",
+  "new": "HALLOWEEN (35% off all accounts (CFDs & Futures))",
+  "kind": "Offers"
+ },
+ {
+  "date": "2026-10-26",
+  "slug": "bulenox",
+  "firm": "Bulenox",
+  "field": "Discount code",
+  "old": "BULENOX (always-on coupon (amount not stated))",
+  "new": "BULENOX (Applies best available discount to Qualification, Fast Track & Momentum accounts)",
+  "kind": "Offers"
+ },
+ {
+  "date": "2026-10-26",
+  "slug": "e8-markets",
+  "firm": "E8 Markets",
+  "field": "Discount code",
+  "old": "E8 (30% off first order)",
+  "new": "E8ARC (30% off E8 One / E8 Pro (Classic Markets))",
+  "kind": "Offers"
+ },
+ {
+  "date": "2026-10-26",
+  "slug": "fundednext",
+  "firm": "FundedNext",
+  "field": "Discount code",
+  "old": null,
+  "new": "FNTRICK (Up to 41% off (41% on Stellar 6K/Lite 5K/Instant 2K; 20% on other ≤$50K CFD accounts))",
+  "kind": "Offers"
+ },
+ {
+  "date": "2026-10-26",
+  "slug": "fundedxyz",
+  "firm": "FundedXYZ",
+  "field": "Discount code",
+  "old": "FIRST (10% off first purchase)",
+  "new": "FIRST (10% off first purchase (auto-applied in pricing widget))",
+  "kind": "Offers"
+ },
+ {
+  "date": "2026-10-26",
+  "slug": "fundingpips",
+  "firm": "FundingPips",
+  "field": "Discount code",
+  "old": "FP (20% off (new customers))",
+  "new": "HALLOWEEN (20% off new clients / 15% off existing clients)",
+  "kind": "Offers"
+ },
+ {
+  "date": "2026-10-26",
+  "slug": "goat-funded-trader",
+  "firm": "Goat Funded Trader",
+  "field": "Discount code",
+  "old": "FIRSTGFT (50% off first account)",
+  "new": "FIRSTGFT (50% off for new customers)",
+  "kind": "Offers"
+ },
+ {
+  "date": "2026-10-26",
+  "slug": "instant-funding",
+  "firm": "Instant Funding",
+  "field": "Discount code",
+  "old": "LITE40 (40% off IF Micro Lite accounts up to $25K)",
+  "new": "IF30 (30% off Pro & Lite (not Evolve), no minimum spend)",
+  "kind": "Offers"
+ },
+ {
+  "date": "2026-10-26",
+  "slug": "myfundedfutures",
+  "firm": "MyFundedFutures",
+  "field": "Discount code",
+  "old": "CLUB (auto-applied in site 'Start Now' links; e.g. 50K Rapid $209 -> $125)",
+  "new": "CLUB (40% off any plan (new users: 50% off first eval))",
+  "kind": "Offers"
  }
 ]

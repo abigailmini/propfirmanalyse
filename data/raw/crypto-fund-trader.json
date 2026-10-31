@@ -164,5 +164,13 @@
     "cfd"
   ],
   "category_basis": "Crypto-first firm and Bybit partner: trade from your own Bybit account via API; MT5 and Match-Trader CFD accounts are also sold.",
-  "category_source": "https://cryptofundtrader.com/faq/"
+  "category_source": "https://cryptofundtrader.com/faq/",
+  "hq_country": {
+    "code": "CH",
+    "source": "https://cryptofundtrader.com/",
+    "quote": "Bahnhofstrasse 21, 6300, Zug, Switzerland SWISS RLCRATES AG (CHE-162.567.204)"
+  },
+  "max_allocation_usd": 300000,
+  "max_allocation_text": "Max simulated funded allocation per user: $300,000 (Ascend accounts excluded)",
+  "max_allocation_source": "https://cryptofundtrader.com/faq/"
 }

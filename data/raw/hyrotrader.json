@@ -177,5 +177,11 @@
   "segment": "crypto",
   "also_offers": [],
   "category_basis": "Trades run on Bybit or BloFin demo accounts connected by API, or on Hyro's terminal priced from live Bybit data.",
-  "category_source": "https://www.hyrotrader.com/faq/"
+  "category_source": "https://www.hyrotrader.com/faq/",
+  "founded_source": "https://www.hyrotrader.com/about-us/",
+  "hq_country": {
+    "code": "AE",
+    "source": "https://www.hyrotrader.com/terms-and-conditions/",
+    "quote": "HYRO TECHNOLOGIES FZ-LLC … a Free Zone Limited Liability Company incorporated in the Ras Al Khaimah Economic Zone (RAKEZ), United Arab Emirates"
+  }
 }

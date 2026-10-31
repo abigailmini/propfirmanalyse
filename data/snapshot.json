@@ -70,7 +70,7 @@
    "Z Mode Hard (fixed reward): $25K fee": "190",
    "Z Mode Hard (fixed reward): $50K fee": "340",
    "Z Mode Hard (fixed reward): $100K fee": "600",
-   "Discount code": "FIRST (10% off first purchase)",
+   "Discount code": "FIRST (10% off first purchase (auto-applied in pricing widget))",
    "Trustpilot score": "4.5",
    "x:Reset / retry": "no paid reset stated; 'retry options' offered (price not shown); X Mode re-entry = buy new account at original fee",
    "x:Fee refund": "refund only within 48h of purchase if challenge not started; no fee refund with payout stated",
@@ -381,6 +381,7 @@
    "Stellar Instant: $5K fee": "149.99",
    "Stellar Instant: $10K fee": "299.99",
    "Stellar Instant: $20K fee": "599.99",
+   "Discount code": "FNTRICK (Up to 41% off (41% on Stellar 6K/Lite 5K/Instant 2K; 20% on other ≤$50K CFD accounts))",
    "Trustpilot score": "4.5"
   },
   "ftmo": {
@@ -535,7 +536,7 @@
    "Zero: $25K fee": "188",
    "Zero: $50K fee": "244",
    "Zero: $100K fee": "444",
-   "Discount code": "FP (20% off (new customers))",
+   "Discount code": "HALLOWEEN (20% off new clients / 15% off existing clients)",
    "Trustpilot score": "4.5",
    "x:Fee refund": "site legal text: program fees non-refundable once paid (except where law requires)",
    "c:Crypto leverage": "1:2 standard accounts; 1:1 swap-free/swing accounts",
@@ -597,7 +598,7 @@
    "Alpha Direct: $50K fee": "257",
    "Alpha Direct: $100K fee": "457",
    "Alpha Direct: $200K fee": "897",
-   "Discount code": "ALPHA20 (20% off all accounts (to 31 Oct 2026))"
+   "Discount code": "HALLOWEEN45 (45% off (not valid on Alpha Pro 8%/10% Bi-weekly))"
   },
   "e8-markets": {
    "Challenge types": "1-step",
@@ -638,7 +639,7 @@
    "E8 Pro: max drawdown": "8%",
    "E8 Pro: drawdown type": "static",
    "E8 Pro: split": "80% (up to 100% option)",
-   "Discount code": "E8 (30% off first order)",
+   "Discount code": "E8ARC (30% off E8 One / E8 Pro (Classic Markets))",
    "x:Reset / retry": "10% discount on retry (same size/settings), within 7 days of failing",
    "x:Minimum payout": "$100 (taken from your share, e.g. $125 gross at 80%); E8 Pro min 1%"
   },
@@ -748,7 +749,7 @@
    "2 Step Standard: max drawdown": "10%",
    "2 Step Standard: drawdown type": "static",
    "2 Step Standard: min days": "3",
-   "Discount code": "FIRSTGFT (50% off first account)",
+   "Discount code": "FIRSTGFT (50% off for new customers)",
    "x:Reset / retry": "Phase 1 reset = original price minus 7%; later phases cost more (2-Step phase 2 +65%, funded +125% 1-Step / +200% 2-Step); must buy within 14 days of breach",
    "x:Fee refund": "fee refunded with the 4th payout on that account",
    "x:Minimum payout": "$100",
@@ -808,7 +809,7 @@
    "2 Step Standard (CFD): $50K fee": "232",
    "2 Step Standard (CFD): $100K fee": "463",
    "2 Step Standard (CFD): $200K fee": "930",
-   "Discount code": "SPOOKY (25% off)",
+   "Discount code": "HALLOWEEN (35% off all accounts (CFDs & Futures))",
    "x:Fee refund": "evaluation fee refunded after 4th payout (accounts bought from 21 Jan 2026; not Instant Starter)",
    "x:Minimum payout": "$100 via crypto; $500 via Rise"
   },
@@ -914,7 +915,7 @@
    "EOD Trail Evaluation (Standard): $50K fee": "590",
    "EOD Trail Evaluation (Standard): $100K fee": "1190",
    "EOD Trail Evaluation (Standard): $150K fee": "2190",
-   "Discount code": "SAVENOW (90% off all evals (time-limited banner))",
+   "Discount code": "SAVENOW (90% off all evals (Intraday, EOD, Legacy, any size))",
    "Trustpilot score": "4.2",
    "x:Time limit": "30 days (EOD evaluation access period)",
    "x:Minimum payout": "$500 per request (any account size)"
@@ -994,7 +995,7 @@
    "Builder: split": "80%",
    "Builder: min days": "1",
    "Builder: $50K fee": "92",
-   "Discount code": "CLUB (auto-applied in site 'Start Now' links; e.g. 50K Rapid $209 -> $125)",
+   "Discount code": "CLUB (40% off any plan (new users: 50% off first eval))",
    "Trustpilot score": "4.9",
    "x:Fee refund": "full refund only if no trades placed and requested within 14 days of purchase; breached accounts and crypto purchases not refunded",
    "x:Activation fee": "0",
@@ -1034,7 +1035,7 @@
    "Qualification - EOD Drawdown: $50K fee": "175",
    "Qualification - EOD Drawdown: $100K fee": "215",
    "Qualification - EOD Drawdown: $150K fee": "325",
-   "Discount code": "BULENOX (always-on coupon (amount not stated))",
+   "Discount code": "BULENOX (Applies best available discount to Qualification, Fast Track & Momentum accounts)",
    "Trustpilot score": "4.7",
    "x:Reset / retry": "$78 per reset on a Qualification account (same account, balance restored)",
    "x:Fee refund": "not refunded once the service has been used",
@@ -1088,7 +1089,7 @@
    "One-Phase PRO: $25K fee": "205",
    "One-Phase PRO: $50K fee": "424",
    "One-Phase PRO: $100K fee": "746",
-   "Discount code": "LITE40 (40% off IF Micro Lite accounts up to $25K)",
+   "Discount code": "IF30 (30% off Pro & Lite (not Evolve), no minimum spend)",
    "x:Reset / retry": "no reset; 'Retry' button opens a new purchase of the same product with an automatic (unstated) discount",
    "x:Time limit": "unlimited on all products except IF1 (24 hours)",
    "c:Crypto leverage": "Crypto program: BTC/ETH 1:5, other crypto 1:2; standard programs: crypto 1:2",

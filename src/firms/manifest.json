@@ -1,0 +1,129 @@
+{
+ "fundedxyz": {
+  "source_url": "https://www.fundedxyz.com/home/apple-touch-icon.png",
+  "kind": "apple-touch-icon",
+  "bg": "#ffffff",
+  "fetched": "2026-10-31"
+ },
+ "hyrotrader": {
+  "source_url": "https://www.hyrotrader.com/apple-icon.png",
+  "kind": "apple-touch-icon",
+  "bg": "#ffffff",
+  "fetched": "2026-10-31"
+ },
+ "breakout-prop": {
+  "source_url": "https://www.breakoutprop.com/ (inline header SVG)",
+  "kind": "header-logo",
+  "bg": "transparent",
+  "fetched": "2026-10-31",
+  "needs_plate": true,
+  "plate_hint": "two-tone mark (blue + white bowl): white half vanishes on white bg \u2014 use dark plate (#18233a) on light backgrounds",
+  "plate": "#18233a"
+ },
+ "crypto-fund-trader": {
+  "source_url": "https://cryptofundtrader.com/wp-content/uploads/2025/08/cropped-fav-icon-512x512-3-192x192.png",
+  "kind": "favicon",
+  "bg": "#000000",
+  "fetched": "2026-10-31"
+ },
+ "bitfunded": {
+  "source_url": "https://www.bitfunded.com/wp-content/uploads/2026/04/Bitfunded_512x512.png",
+  "kind": "favicon",
+  "bg": "#04112e",
+  "fetched": "2026-10-31"
+ },
+ "fundednext": {
+  "source_url": "https://dirslur24ie1a.cloudfront.net/fundednext/short_logo.png",
+  "kind": "apple-touch-icon",
+  "bg": "#ffffff",
+  "fetched": "2026-10-31"
+ },
+ "ftmo": {
+  "source_url": "https://ftmo.com/app/themes/ftmo-com/public/images/favicon/favicon-512.png",
+  "kind": "favicon",
+  "bg": "#262729",
+  "fetched": "2026-10-31"
+ },
+ "the5ers": {
+  "source_url": "https://the5ers.com/favicon.png?v=2",
+  "kind": "favicon",
+  "bg": "transparent",
+  "fetched": "2026-10-31",
+  "needs_plate": true,
+  "plate_hint": "dark glyph: use white/light plate on dark bg"
+ },
+ "fundingpips": {
+  "source_url": "https://fundingpips.com/icon.svg",
+  "kind": "svg",
+  "bg": "#00225a",
+  "fetched": "2026-10-31"
+ },
+ "alpha-capital": {
+  "source_url": "https://alphacapitalgroup.uk/images/webclip.png",
+  "kind": "apple-touch-icon",
+  "bg": "#030826",
+  "fetched": "2026-10-31"
+ },
+ "e8-markets": {
+  "source_url": "https://e8markets.com/app.svg",
+  "kind": "svg",
+  "bg": "#000000",
+  "fetched": "2026-10-31"
+ },
+ "maven-trading": {
+  "source_url": "https://maventrading.com/favicon.png",
+  "kind": "apple-touch-icon",
+  "bg": "#fffdfa",
+  "fetched": "2026-10-31"
+ },
+ "goat-funded-trader": {
+  "source_url": "https://cdn.prod.website-files.com/692d3a3e37a293dd19f3b43e/69aabf903c2bdd94b7e148ad_brand_webclip.png",
+  "kind": "apple-touch-icon",
+  "bg": "#000000",
+  "fetched": "2026-10-31"
+ },
+ "blue-guardian": {
+  "source_url": "https://blueguardian.com/favicon.svg",
+  "kind": "svg",
+  "bg": "#051823",
+  "fetched": "2026-10-31"
+ },
+ "lark-funding": {
+  "source_url": "https://larkfunding.com/apple-touch-icon.png",
+  "kind": "apple-touch-icon",
+  "bg": "transparent",
+  "fetched": "2026-10-31"
+ },
+ "apex-trader-funding": {
+  "source_url": "https://apextraderfunding.com/cdn-cgi/image/width=512,height=512,fit=cover,gravity=auto,format=auto//app/uploads/cropped-APEX_FAV-180x180.png",
+  "kind": "apple-touch-icon",
+  "bg": "#050928",
+  "fetched": "2026-10-31"
+ },
+ "topstep": {
+  "source_url": "https://cdn.prod.website-files.com/69e902b0a74d3d99a517f56d/6aaae816c7513025465a49be_Topstep-Favicon.png",
+  "kind": "favicon",
+  "bg": "#000000",
+  "fetched": "2026-10-31"
+ },
+ "myfundedfutures": {
+  "source_url": "https://myfundedfutures.com/images/mffu/apple-touch-icon.png",
+  "kind": "apple-touch-icon",
+  "bg": "transparent",
+  "fetched": "2026-10-31"
+ },
+ "bulenox": {
+  "source_url": "https://bulenox.com/assets/logo-iXtDrF5P.svg",
+  "kind": "header-logo",
+  "bg": "transparent",
+  "fetched": "2026-10-31",
+  "needs_plate": true,
+  "plate_hint": "dark glyph: use white/light plate on dark bg"
+ },
+ "instant-funding": {
+  "source_url": "https://instantfunding.com/wp-content/uploads/2025/04/cropped-if-favicon-1-192x192.png",
+  "kind": "favicon",
+  "bg": "#7270ff",
+  "fetched": "2026-10-31"
+ }
+}

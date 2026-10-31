@@ -153,22 +153,44 @@
  "news_trading": null,
  "weekend_holding": "restricted",
  "countries_restricted": null,
- "founded": null,
+ "founded": 2021,
  "hq": null,
  "discount_code": {
-  "code": "LITE40",
-  "value": "40% off IF Micro Lite accounts up to $25K"
+  "code": "IF30",
+  "value": "30% off Pro & Lite (not Evolve), no minimum spend",
+  "percent": 30,
+  "source": "https://instantfunding.com/",
+  "verified": "2026-10-31",
+  "expires": null,
+  "also": [
+   {
+    "code": "LITE40",
+    "value": "40% off IF Micro Lite up to $25K",
+    "percent": 40
+   }
+  ]
  },
  "affiliate_url": "#",
  "trustpilot": null,
  "last_verified": "2026-10-26",
  "source_urls": [
   "https://instantfunding.com/",
-  "https://www.trustpilot.com/review/instantfunding.com"
+  "https://www.trustpilot.com/review/instantfunding.com",
+  "https://instantfunding.com/disclaimers-legal-information/",
+  "https://instantfunding.com/help/how-many-accounts-can-i-have/"
  ],
  "notes": "Prices scraped from homepage configurator (browser). Homepage lists rule blocks for several hidden variants (IF1 24h, 1-phase 10%/3%/8% and 7%/4%/7%, 2-phase 8%/5%) that couldn't be mapped to One-Phase PRO / IF Micro PRO reliably, so those rules are null. Leverage temporarily 1:5 on metals/oil/indices funded. Operator: IF Pro Ltd; HQ, founded, restricted countries not found. Detail pages timed out. Trustpilot: rating unavailable (guidelines-breach warning) -> null.",
  "segment": "forex-cfd",
  "also_offers": [],
  "category_basis": "CFD accounts on MT5, cTrader and Match-Trader.",
- "category_source": "https://instantfunding.com/"
+ "category_source": "https://instantfunding.com/",
+ "founded_source": "https://instantfunding.com/",
+ "hq_country": {
+  "code": "GB",
+  "source": "https://instantfunding.com/disclaimers-legal-information/",
+  "quote": "Acello Ltd (Payment Agent of IF Pro Ltd, with a trading name of Instant Funding …), a company incorporated in England and Wales with company number 12696083 … 30 Old Bailey, London"
+ },
+ "max_allocation_usd": 1000000,
+ "max_allocation_text": "Combined cap $1,000,000 across all account types (starting balance; scaling excluded)",
+ "max_allocation_source": "https://instantfunding.com/help/how-many-accounts-can-i-have/"
 }

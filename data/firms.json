@@ -204,7 +204,11 @@
       "hq": null,
       "discount_code": {
         "code": "FIRST",
-        "value": "10% off first purchase"
+        "value": "10% off first purchase (auto-applied in pricing widget)",
+        "percent": 10,
+        "source": "https://www.fundedxyz.com/",
+        "verified": "2026-10-31",
+        "expires": null
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -405,7 +409,13 @@
       "segment": "crypto",
       "also_offers": [],
       "category_basis": "Trades run on Bybit or BloFin demo accounts connected by API, or on Hyro's terminal priced from live Bybit data.",
-      "category_source": "https://www.hyrotrader.com/faq/"
+      "category_source": "https://www.hyrotrader.com/faq/",
+      "founded_source": "https://www.hyrotrader.com/about-us/",
+      "hq_country": {
+        "code": "AE",
+        "source": "https://www.hyrotrader.com/terms-and-conditions/",
+        "quote": "HYRO TECHNOLOGIES FZ-LLC … a Free Zone Limited Liability Company incorporated in the Ras Al Khaimah Economic Zone (RAKEZ), United Arab Emirates"
+      }
     },
     {
       "name": "Breakout Prop",
@@ -594,13 +604,22 @@
         "https://intercom.help/breakoutprop/en/articles/11643732-what-types-of-breakout-evaluations-can-i-purchase",
         "https://intercom.help/breakoutprop/en/articles/11644138-what-is-the-available-leverage",
         "https://intercom.help/breakoutprop/en/articles/11643973-is-payward-oceanic-ltd-pol-the-same-company-as-breakout-trading-group",
-        "https://www.trustpilot.com/review/breakoutprop.com"
+        "https://www.trustpilot.com/review/breakoutprop.com",
+        "https://intercom.help/breakoutprop/en/articles/11647204-what-is-the-maximum-allocation-available"
       ],
       "notes": "Fees per size read from pricing page size tabs (80/20 base price). 90/10 upgrade prices: Classic 54/102/258/480/960, Pro 39.60/78/180/336/654/1308, Turbo 24/48/114/216/396/792. Classic not available at $200K. Payouts in USDC (ERC-20), $50 minimum after split; first payout possible same day as funded. Evaluations run by Breakout Trading Group, LLC; funded accounts via separate agreement with Payward Oceanic Ltd (Kraken group, per site nav/disclosures). HQ = Trustpilot contact country only; founded year not found. Help centre also lists Spark Evaluation (not on pricing page, not captured). $200K max total funded capital across accounts. HQ left null: only source was Trustpilot contact country, not the firm's site (operator: Breakout Trading Group LLC).",
       "segment": "crypto",
       "also_offers": [],
       "category_basis": "Crypto-first firm: Breakout Terminal (and DXtrade) priced from exchanges and market makers; part of the Kraken (Payward) group.",
-      "category_source": "https://intercom.help/breakoutprop/en/collections/13572047-breakout-evaluation"
+      "category_source": "https://intercom.help/breakoutprop/en/collections/13572047-breakout-evaluation",
+      "hq_country": {
+        "code": "US",
+        "source": "https://www.breakoutprop.com/",
+        "quote": "© 2026 BREAKOUT TRADING GROUP, LLC. (Terms governed by the laws of the State of Florida)"
+      },
+      "max_allocation_usd": 200000,
+      "max_allocation_text": "Max total allocation across all funded accounts: $200,000",
+      "max_allocation_source": "https://intercom.help/breakoutprop/en/articles/11647204-what-is-the-maximum-allocation-available"
     },
     {
       "name": "Crypto Fund Trader",
@@ -768,7 +787,15 @@
         "cfd"
       ],
       "category_basis": "Crypto-first firm and Bybit partner: trade from your own Bybit account via API; MT5 and Match-Trader CFD accounts are also sold.",
-      "category_source": "https://cryptofundtrader.com/faq/"
+      "category_source": "https://cryptofundtrader.com/faq/",
+      "hq_country": {
+        "code": "CH",
+        "source": "https://cryptofundtrader.com/",
+        "quote": "Bahnhofstrasse 21, 6300, Zug, Switzerland SWISS RLCRATES AG (CHE-162.567.204)"
+      },
+      "max_allocation_usd": 300000,
+      "max_allocation_text": "Max simulated funded allocation per user: $300,000 (Ascend accounts excluded)",
+      "max_allocation_source": "https://cryptofundtrader.com/faq/"
     },
     {
       "name": "Bitfunded",
@@ -933,13 +960,20 @@
       "source_urls": [
         "https://www.bitfunded.com/",
         "https://www.bitfunded.com/frequently-asked-questions/",
-        "https://www.bitfunded.com/about-us/"
+        "https://www.bitfunded.com/about-us/",
+        "https://www.bitfunded.com/terms-of-use/"
       ],
       "notes": "Crypto-native prop firm (100+ crypto pairs, ~20 TradFi pairs), in-house platform, USDT payouts. Replaces Nova Funding (offline). 2-Step fee refunded with 3rd payout. No hedging, no bots/EAs/API, max 5 open positions, holding limits 10/7/5 days (major crypto/minor crypto/TradFi), margin concentration cap 65% (55% Instant). Daily loss counts floating P&L; day resets 00:00 UTC+8. 1-Step Express fees not shown on homepage. Trustpilot page blocked to our fetcher; not recorded.",
       "segment": "crypto",
       "also_offers": [],
       "category_basis": "Crypto-first firm on its own platform, fed by live data from partner exchanges; 100+ crypto pairs plus a few TradFi pairs.",
-      "category_source": "https://www.bitfunded.com/frequently-asked-questions/"
+      "category_source": "https://www.bitfunded.com/frequently-asked-questions/",
+      "founded_source": "https://www.bitfunded.com/about-us/",
+      "hq_country": {
+        "code": "AE",
+        "source": "https://www.bitfunded.com/terms-of-use/",
+        "quote": "BitFUNDED (… the company Tronovix LTD), a legally recognised limited Liability proprietary trading firm in the United Arab Emirates (UAE)"
+      }
     },
     {
       "name": "FundedNext",
@@ -1103,7 +1137,14 @@
       ],
       "founded": 2022,
       "hq": "Ajman, UAE",
-      "discount_code": null,
+      "discount_code": {
+        "code": "FNTRICK",
+        "value": "Up to 41% off (41% on Stellar 6K/Lite 5K/Instant 2K; 20% on other ≤$50K CFD accounts)",
+        "percent": 41,
+        "source": "https://fundednext.com/",
+        "verified": "2026-10-31",
+        "expires": null
+      },
       "affiliate_url": "#",
       "trustpilot": {
         "score": 4.5,
@@ -1116,7 +1157,9 @@
         "https://fundednext.com/trading-platforms",
         "https://fundednext.com/company",
         "https://help.fundednext.com/en/",
-        "https://www.trustpilot.com/review/fundednext.com"
+        "https://www.trustpilot.com/review/fundednext.com",
+        "https://fundednext.com/terms-of-service",
+        "https://help.fundednext.com/en/articles/8027523-how-many-accounts-can-i-have-with-fundednext"
       ],
       "notes": "CFD Stellar prices via browser; Stellar Lite & FNL:002 programs and Futures not captured. Leverage, weekend rule not found. first_payout_days=21 for 2-Step (1-Step: 5 business days). News trading profit capped at 40% on funded. hq = registered entity GrowthNext F.Z.E. Trustpilot via browser.",
       "segment": "multi",
@@ -1124,7 +1167,16 @@
         "futures"
       ],
       "category_basis": "CFD challenges on MT4, MT5, cTrader and Match-Trader; a separate futures program runs on NinjaTrader and Tradovate.",
-      "category_source": "https://fundednext.com/trading-platforms"
+      "category_source": "https://fundednext.com/trading-platforms",
+      "founded_source": "https://fundednext.com/company",
+      "hq_country": {
+        "code": "AE",
+        "source": "https://fundednext.com/terms-of-service",
+        "quote": "GrowthNext – F.Z.E., a company duly registered under No. 28831, with its registered address at … Ajman Free Zone (AFZ), Ajman, UAE"
+      },
+      "max_allocation_usd": 300000,
+      "max_allocation_text": "Max aggregate funded simulated capital: $300,000 (scale-up beyond via Scale-Up plan, up to $4M)",
+      "max_allocation_source": "https://help.fundednext.com/en/articles/8027523-how-many-accounts-can-i-have-with-fundednext"
     },
     {
       "name": "FTMO",
@@ -1287,7 +1339,9 @@
         "https://ftmo.com/en/faq/",
         "https://www.trustpilot.com/review/ftmo.com",
         "https://ftmo.com/en/symbols/",
-        "https://ftmo.com/en/faq/how-do-i-withdraw-my-profits/"
+        "https://ftmo.com/en/faq/how-do-i-withdraw-my-profits/",
+        "https://ftmo.com/en/about/",
+        "https://ftmo.com/en/faq/how-many-accounts-can-i-have/"
       ],
       "notes": "Fees are EUR (USD toggle not applied in browser). $100K showed two prices: 2-Step €439/€540, 1-Step €399/€499 (higher recorded; lower may be promo). News/weekend restrictions apply only to Standard funded accounts (Swing type unrestricted; evaluation unrestricted). CFD asset classes not verified (only Futures product seen). Payout frequency not found. hq inferred from CZ legal entity FTMO s.r.o. Assets: Forex/Crypto/Indices/Commodities(Metals) category filters confirmed on ftmo.com/en/symbols (2026-10-26); stocks not confirmed. Fees in EUR.",
       "segment": "multi",
@@ -1295,7 +1349,16 @@
         "futures"
       ],
       "category_basis": "Simulated CFD accounts on MT4, MT5, cTrader and TradingView; FTMO also lists a futures product.",
-      "category_source": "https://ftmo.com/en/"
+      "category_source": "https://ftmo.com/en/",
+      "founded_source": "https://ftmo.com/en/about/",
+      "hq_country": {
+        "code": "CZ",
+        "source": "https://ftmo.com/en/",
+        "quote": "Copyright © 2026 FTMO s.r.o. … ADDRESS FTMO Quadrio offices Purkynova 2121/3 110 00 Prague Czech Republic"
+      },
+      "max_allocation_usd": 400000,
+      "max_allocation_text": "$400,000 total across all accounts per trader/strategy (before scaling; scaling plan to $2M per account)",
+      "max_allocation_source": "https://ftmo.com/en/faq/how-many-accounts-can-i-have/"
     },
     {
       "name": "The5ers",
@@ -1456,7 +1519,7 @@
         "Venezuela",
         "Yemen"
       ],
-      "founded": null,
+      "founded": 2016,
       "hq": null,
       "discount_code": null,
       "affiliate_url": "#",
@@ -1470,7 +1533,8 @@
         "https://the5ers.com/high-stakes/",
         "https://the5ers.com/hyper-growth/",
         "https://the5ers.com/bootcamp/",
-        "https://www.trustpilot.com/review/the5ers.com"
+        "https://www.trustpilot.com/review/the5ers.com",
+        "https://the5ers.com/about-the5ers/"
       ],
       "notes": "min_trading_days = min profitable days (≥0.5%). Bootcamp: $22 entry + $50 at funding; 3-step for $100K/$250K fees not captured; Pro stage 3% daily pause/4% max loss. Homepage also lists a separate '1 Step' ($249, 10%/3%/6%, 75% share, 1:100). Banner promo '$100K for $149' (no code). HS news: no trades 2 min around high-impact news. Site says '10 years active' (founded not stated). Futures program not captured. Drawdown type not stated.",
       "segment": "multi",
@@ -1478,7 +1542,16 @@
         "futures"
       ],
       "category_basis": "CFD programs (High Stakes, Hyper Growth, Bootcamp) on MT5; a futures program is listed separately.",
-      "category_source": "https://the5ers.com/"
+      "category_source": "https://the5ers.com/",
+      "founded_source": "https://the5ers.com/",
+      "hq_country": {
+        "code": "GB",
+        "source": "https://the5ers.com/about-the5ers/",
+        "quote": "FIVE PERCENT ONLINE LTD, a company registered in UK with company number 12553363 … London"
+      },
+      "max_allocation_usd": 4000000,
+      "max_allocation_text": "Get qualified and manage up to $4,000,000 (scaling cap)",
+      "max_allocation_source": "https://the5ers.com/"
     },
     {
       "name": "FundingPips",
@@ -1625,11 +1698,15 @@
         "UAE",
         "FATF / EU-UN sanctioned"
       ],
-      "founded": null,
+      "founded": 2022,
       "hq": "Dubai, UAE",
       "discount_code": {
-        "code": "FP",
-        "value": "20% off (new customers)"
+        "code": "HALLOWEEN",
+        "value": "20% off new clients / 15% off existing clients",
+        "percent": 20,
+        "source": "https://fundingpips.com/",
+        "verified": "2026-10-31",
+        "expires": null
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -1646,7 +1723,16 @@
       "segment": "forex-cfd",
       "also_offers": [],
       "category_basis": "CFD challenges on MT5, cTrader and Match-Trader.",
-      "category_source": "https://fundingpips.com/"
+      "category_source": "https://fundingpips.com/",
+      "founded_source": "https://fundingpips.com/",
+      "hq_country": {
+        "code": "KM",
+        "source": "https://fundingpips.com/",
+        "quote": "FundingPips Corp is a limited liability company incorporated under the laws of the Comoros Union with company number: HY01223081"
+      },
+      "max_allocation_usd": 400000,
+      "max_allocation_text": "Max Allocation $400K",
+      "max_allocation_source": "https://fundingpips.com/"
     },
     {
       "name": "Alpha Capital",
@@ -1807,11 +1893,32 @@
       "news_trading": "restricted",
       "weekend_holding": "restricted",
       "countries_restricted": null,
-      "founded": null,
+      "founded": 2021,
       "hq": "Harpenden, England, UK",
       "discount_code": {
-        "code": "ALPHA20",
-        "value": "20% off all accounts (to 31 Oct 2026)"
+        "code": "HALLOWEEN45",
+        "value": "45% off (not valid on Alpha Pro 8%/10% Bi-weekly)",
+        "percent": 45,
+        "source": "https://alphacapitalgroup.uk/alpha-capital-discount-codes",
+        "verified": "2026-10-31",
+        "expires": "2026-10-31",
+        "also": [
+          {
+            "code": "ALPHA20",
+            "value": "20% off all accounts",
+            "percent": 20
+          },
+          {
+            "code": "FUNDED40",
+            "value": "40% off Alpha Direct only",
+            "percent": 40
+          },
+          {
+            "code": "10KFOR40",
+            "value": "$10K evaluation for $40",
+            "percent": null
+          }
+        ]
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -1830,13 +1937,25 @@
         "https://alphacapitalgroup.uk/posts/alpha-capital-rules-explained-drawdown-profit-targets-daily-loss-and-evaluation-rules-2026",
         "https://alphacapitalgroup.uk/posts/how-much-does-a-prop-firm-evaluation-cost-2026",
         "https://alphacapitalgroup.uk/resources/alpha-capital-country-availability-2026",
-        "https://www.trustpilot.com/review/alphacapitalgroup.uk"
+        "https://www.trustpilot.com/review/alphacapitalgroup.uk",
+        "https://alphacapitalgroup.uk/about",
+        "https://alphacapitalgroup.uk/terms-and-conditions",
+        "https://help.alphacapitalgroup.uk/en/articles/8804535-how-many-accounts-can-i-have-what-is-the-maximum-allocation-per-strategy"
       ],
       "notes": "Alpha One/Pro fees from firm's own pricing post (checkout as of 21 Sep 2026); Alpha Direct fees from live product page. Product page lists Alpha One 6/10/12% variants but rules guide says only 10% sold; Alpha Pro also 8%/10% variants and Alpha Swing (2-step, 10%/5%, 10% static) exist, fees not captured. Trustpilot shows rating unavailable (guidelines breach notice), 22,010 reviews. Other active codes: MYALPHA 30% (ends 26 Oct), FUNDED40 40% Direct, 10KFOR40. US: no MT5/new cTrader. Founded year not found.",
       "segment": "forex-cfd",
       "also_offers": [],
       "category_basis": "CFD challenges on MT5, cTrader, DXtrade and TradeLocker.",
-      "category_source": "https://alphacapitalgroup.uk/product"
+      "category_source": "https://alphacapitalgroup.uk/product",
+      "founded_source": "https://alphacapitalgroup.uk/about",
+      "hq_country": {
+        "code": "GB",
+        "source": "https://alphacapitalgroup.uk/terms-and-conditions",
+        "quote": "Alpha Capital Group Limited, incorporated in England and Wales under company number 13719951"
+      },
+      "max_allocation_usd": 400000,
+      "max_allocation_text": "Max $400,000 per household on Qualified Analyst accounts ($300K per strategy); scaling to $2M cumulative",
+      "max_allocation_source": "https://help.alphacapitalgroup.uk/en/articles/8804535-how-many-accounts-can-i-have-what-is-the-maximum-allocation-per-strategy"
     },
     {
       "name": "E8 Markets",
@@ -1982,8 +2101,29 @@
       "founded": 2021,
       "hq": "Dallas, TX, USA",
       "discount_code": {
-        "code": "E8",
-        "value": "30% off first order"
+        "code": "E8ARC",
+        "value": "30% off E8 One / E8 Pro (Classic Markets)",
+        "percent": 30,
+        "source": "https://e8markets.com/e8-markets-discount-code",
+        "verified": "2026-10-31",
+        "expires": null,
+        "also": [
+          {
+            "code": "E8ARC",
+            "value": "50% off E8 Pro/E8 One Perpetuals",
+            "percent": 50
+          },
+          {
+            "code": "REB8",
+            "value": "35% off E8 Zero MAX/Starter (Futures)",
+            "percent": 35
+          },
+          {
+            "code": "E8",
+            "value": "25% off E8 Signature (Futures)",
+            "percent": 25
+          }
+        ]
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -2003,7 +2143,9 @@
         "https://help.e8markets.com/en/articles/5514982-how-much-leverage-do-you-offer",
         "https://help.e8markets.com/en/articles/9185497-can-i-trade-news",
         "https://help.e8markets.com/en/articles/5514966-can-i-hold-positions-overnight-and-trade-over-the-weekend",
-        "https://www.trustpilot.com/review/e8markets.com"
+        "https://www.trustpilot.com/review/e8markets.com",
+        "https://e8markets.com/e8-markets-discount-code",
+        "https://help.e8markets.com/en/articles/5515039-how-many-accounts-can-i-apply-for-at-once"
       ],
       "notes": "Site is JS/403 to plain fetch; read via browser. E8 One fees/rules = homepage configurator default ($100K: 9% target, 6% dynamic DD, 4% daily); help article lists preset 6%/4% dynamic/3% daily — product is customizable at checkout. E8 Pro fees not captured (has 2% daily profit cap, 1% min payout, daily payouts). Also E8 Signature and E8 Zero (futures). Min days: 'pass in 1 day'. Restricted list = Classic/Perps; Futures list longer. Trustpilot shows rating unavailable (guidelines breach notice), 3,303 reviews.",
       "segment": "multi",
@@ -2011,7 +2153,16 @@
         "futures"
       ],
       "category_basis": "Main products (E8 One, E8 Pro, E8 Signature) are CFD accounts on MT5, cTrader, Match-Trader and TradeLocker; E8 Zero is a futures product.",
-      "category_source": "https://help.e8markets.com/en/articles/13106558-all-product-overviews-e8-one-vs-e8-zero-vs-e8-pro-vs-e8-signature"
+      "category_source": "https://help.e8markets.com/en/articles/13106558-all-product-overviews-e8-one-vs-e8-zero-vs-e8-pro-vs-e8-signature",
+      "founded_source": "https://help.e8markets.com/en/articles/14124293-about-e8-markets",
+      "hq_country": {
+        "code": "US",
+        "source": "https://e8markets.com/",
+        "quote": "E8 Funding LLC is a technology and education company incorporated under the laws of the United States, located at 4101 McEwen Rd #205, Dallas, TX 75244."
+      },
+      "max_allocation_usd": 3900000,
+      "max_allocation_text": "Up to $3,900,000 simulated capital across Performance accounts ($500K per market for E8 One/Pro), per household",
+      "max_allocation_source": "https://help.e8markets.com/en/articles/5515039-how-many-accounts-can-i-apply-for-at-once"
     },
     {
       "name": "Maven Trading",
@@ -2167,7 +2318,18 @@
       "hq": null,
       "discount_code": {
         "code": "ROCKET",
-        "value": "10% off"
+        "value": "10% off",
+        "percent": 10,
+        "source": "https://maventrading.com/",
+        "verified": "2026-10-31",
+        "expires": null,
+        "also": [
+          {
+            "code": "OMO",
+            "value": "40% off Omo challenges",
+            "percent": 40
+          }
+        ]
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -2185,7 +2347,13 @@
       "segment": "forex-cfd",
       "also_offers": [],
       "category_basis": "CFD challenges on MT5 and Match-Trader (Maven simulated server).",
-      "category_source": "https://maventrading.com/faqs"
+      "category_source": "https://maventrading.com/faqs",
+      "founded_source": "https://maventrading.com/faqs",
+      "hq_country": {
+        "code": "AE",
+        "source": "https://maventrading.com/",
+        "quote": "Maven Edu - FZCO is a registered limited corporation in United Arab Emirates, DSO-IFZA, IFZA Properties, Dubai Silicon Oasis"
+      }
     },
     {
       "name": "Goat Funded Trader",
@@ -2326,7 +2494,18 @@
       "hq": null,
       "discount_code": {
         "code": "FIRSTGFT",
-        "value": "50% off first account"
+        "value": "50% off for new customers",
+        "percent": 50,
+        "source": "https://www.goatfundedtrader.com/",
+        "verified": "2026-10-31",
+        "expires": null,
+        "also": [
+          {
+            "code": "HALLOWEEN50",
+            "value": "50% off all accounts",
+            "percent": 50
+          }
+        ]
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -2345,7 +2524,8 @@
         "https://help.goatfundedtrader.com/2-step-goat.html",
         "https://help.goatfundedtrader.com/trading-rules.html",
         "https://help.goatfundedtrader.com/platforms.html",
-        "https://www.trustpilot.com/review/goatfundedtrader.com"
+        "https://www.trustpilot.com/review/goatfundedtrader.com",
+        "https://www.goatfundedtrader.com/"
       ],
       "notes": "Fees = list (non-promo) prices from homepage pricing widget; 2 Step Standard fees and 150K/other sizes not captured. 1-Step daily loss 3% for accounts bought from 1 Aug 2026 (4% before). Min days = profitable days (0.5%+); funded payout needs 3-4 profitable days; funded daily profit cap $3,000 + Goat Guard. Also 2 Step PRO (8%/4%, 8% static), 3 Step (6%x3, 8% static), several instant models. MT5/cTrader unavailable to US. Trustpilot profile (listed as 'Wishes Tower') shows rating unavailable (guidelines breach notice), 4,332 reviews. Homepage widget also shows Goat Blitz promo (100K for $99). Restricted countries not found.",
       "segment": "forex-cfd",
@@ -2353,7 +2533,16 @@
         "futures"
       ],
       "category_basis": "CFD challenges on MT5, cTrader, Match-Trader and TradeLocker; Volumetrica accounts cover futures.",
-      "category_source": "https://goatfundedtrader.com/"
+      "category_source": "https://goatfundedtrader.com/",
+      "founded_source": "https://www.goatfundedtrader.com/about",
+      "hq_country": {
+        "code": "HK",
+        "source": "https://www.goatfundedtrader.com/about",
+        "quote": "Goat Funded Trader, a trade name of Wishes Tower International Limited, a company registered in Hong Kong (Company Number 76428795)"
+      },
+      "max_allocation_usd": 400000,
+      "max_allocation_text": "$400K in funding (scale to $2M)",
+      "max_allocation_source": "https://www.goatfundedtrader.com/"
     },
     {
       "name": "Blue Guardian",
@@ -2522,15 +2711,20 @@
       "founded": null,
       "hq": "Saint Lucia (registered)",
       "discount_code": {
-        "code": "SPOOKY",
-        "value": "25% off"
+        "code": "HALLOWEEN",
+        "value": "35% off all accounts (CFDs & Futures)",
+        "percent": 35,
+        "source": "https://blueguardian.com/",
+        "verified": "2026-10-31",
+        "expires": null
       },
       "affiliate_url": "#",
       "trustpilot": null,
       "last_verified": "2026-10-26",
       "source_urls": [
         "https://blueguardian.com/",
-        "https://www.trustpilot.com/review/blueguardian.com"
+        "https://www.trustpilot.com/review/blueguardian.com",
+        "https://help.blueguardian.com/en/articles/15618204-general-information-rules"
       ],
       "notes": "Fees = list price before SPOOKY (site shows ~25% lower with code). Rule % derived from $ values at 100K. News trading allowed in challenge, not on funded. Futures: Standard/Reserve/Express/Direct (e.g. Standard 25K-150K $154-$424 list, EOD trailing, 90/10, 40% funded consistency). Nano 1/2-step plans not captured. Min trading days not shown. Trustpilot: rating unavailable (guidelines-breach warning) -> null.",
       "segment": "multi",
@@ -2538,7 +2732,15 @@
         "futures"
       ],
       "category_basis": "CFD challenges on MT5, Match-Trader and TradeLocker; separate futures plans on NinjaTrader, Tradovate and TradingView.",
-      "category_source": "https://blueguardian.com/"
+      "category_source": "https://blueguardian.com/",
+      "hq_country": {
+        "code": "LC",
+        "source": "https://blueguardian.com/",
+        "quote": "Blue Guardian Limited - The Sotheby Building, Rodney Village, Rodney Bay, Gros-Islet, Saint Lucia"
+      },
+      "max_allocation_usd": 400000,
+      "max_allocation_text": "Max active funded allocation $400,000 across all funded types; scaling plan to $4,000,000",
+      "max_allocation_source": "https://help.blueguardian.com/en/articles/15618204-general-information-rules"
     },
     {
       "name": "Lark Funding",
@@ -2711,7 +2913,7 @@
       "news_trading": true,
       "weekend_holding": "restricted",
       "countries_restricted": null,
-      "founded": null,
+      "founded": 2022,
       "hq": null,
       "discount_code": null,
       "affiliate_url": "#",
@@ -2727,13 +2929,26 @@
         "https://helpdesk.larkfunding.com/en/articles/11738989-what-trading-platform-does-lark-funding-offer",
         "https://helpdesk.larkfunding.com/en/articles/15157346-can-i-hold-trades-overnight",
         "https://helpdesk.larkfunding.com/en/articles/8377870-what-are-the-rules-for-the-simulated-funded-account",
-        "https://www.trustpilot.com/review/larkfunding.com"
+        "https://www.trustpilot.com/review/larkfunding.com",
+        "https://helpdesk.larkfunding.com/en/articles/11739114-what-is-lark-funding",
+        "https://larkfunding.com/terms-of-use",
+        "https://helpdesk.larkfunding.com/en/articles/13899816-maximum-capital-allocation"
       ],
       "notes": "Fees scraped from homepage plan cards (browser). 1-Step Max: 1% per-symbol loss limit (soft breach), 3 free restarts. Instant first payout on demand, then monthly; leverage 30:1 on 1-Step/Max, 50:1 Instant/3-Step. Weekend holding via add-on. October promo (fee refund with first payout, ends Oct 31) has no code. Operator Lark Dashboards Inc.; HQ/founded/restricted countries not found. Trustpilot lists contact country Canada.",
       "segment": "multi",
       "also_offers": [],
       "category_basis": "CFD challenges on DXtrade, cTrader and Match-Trader.",
-      "category_source": "https://helpdesk.larkfunding.com/en/articles/11738989-what-trading-platform-does-lark-funding-offer"
+      "category_source": "https://helpdesk.larkfunding.com/en/articles/11738989-what-trading-platform-does-lark-funding-offer",
+      "promo_note": "No code; homepage 'OCTOBER OFFER' = evaluation fee refunded with first payout, enroll by Oct 31.",
+      "founded_source": "https://helpdesk.larkfunding.com/en/articles/11739114-what-is-lark-funding",
+      "hq_country": {
+        "code": "CA",
+        "source": "https://larkfunding.com/terms-of-use",
+        "quote": "operated by Lark Dashboards Inc., a Canadian corporation registered in the Province of Quebec, under license from Lark Funding Inc."
+      },
+      "max_allocation_usd": 200000,
+      "max_allocation_text": "Max $200,000 funded (evaluation) + $100,000 instant",
+      "max_allocation_source": "https://helpdesk.larkfunding.com/en/articles/13899816-maximum-capital-allocation"
     },
     {
       "name": "Apex Trader Funding",
@@ -2921,11 +3136,15 @@
         "Zambia",
         "Zimbabwe"
       ],
-      "founded": null,
+      "founded": 2021,
       "hq": "Austin, TX (mailing address)",
       "discount_code": {
         "code": "SAVENOW",
-        "value": "90% off all evals (time-limited banner)"
+        "value": "90% off all evals (Intraday, EOD, Legacy, any size)",
+        "percent": 90,
+        "source": "https://apextraderfunding.com/",
+        "verified": "2026-10-31",
+        "expires": "2026-11-01"
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -2949,7 +3168,15 @@
       "segment": "futures",
       "also_offers": [],
       "category_basis": "CME futures evaluations on Rithmic, Tradovate and NinjaTrader.",
-      "category_source": "https://apextraderfunding.com/"
+      "category_source": "https://apextraderfunding.com/",
+      "founded_source": "https://apextraderfunding.com/about/",
+      "hq_country": {
+        "code": "US",
+        "source": "https://apextraderfunding.com/",
+        "quote": "Apex Trader Funding Inc. 2028 E. Ben White Blvd Ste 240-9873 Austin, TX 78741 (mailing address only)"
+      },
+      "max_allocation_text": "Trade up to 20 accounts (no USD cap stated)",
+      "max_allocation_source": "https://apextraderfunding.com/"
     },
     {
       "name": "Topstep",
@@ -3063,7 +3290,15 @@
       "segment": "futures",
       "also_offers": [],
       "category_basis": "CME futures accounts on TopstepX.",
-      "category_source": "https://www.topstep.com/"
+      "category_source": "https://www.topstep.com/",
+      "founded_source": "https://www.topstep.com/about-us",
+      "hq_country": {
+        "code": "US",
+        "source": "https://www.topstep.com/about-us",
+        "quote": "Topstep LLC and its affiliates … 2010 Office on Chicago Board of Trade trading floor"
+      },
+      "max_allocation_text": "Up to 5 active Express Funded Accounts at a time (no USD cap stated)",
+      "max_allocation_source": "https://help.topstep.com/en/articles/8284215-express-funded-account-parameters"
     },
     {
       "name": "MyFundedFutures",
@@ -3249,7 +3484,11 @@
       "hq": null,
       "discount_code": {
         "code": "CLUB",
-        "value": "auto-applied in site 'Start Now' links; e.g. 50K Rapid $209 -> $125"
+        "value": "40% off any plan (new users: 50% off first eval)",
+        "percent": 40,
+        "source": "https://myfundedfutures.com/",
+        "verified": "2026-10-31",
+        "expires": null
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -3271,13 +3510,22 @@
         "https://help.myfundedfutures.com/en/articles/8229993-restricted-countries-policy",
         "https://help.myfundedfutures.com/en/articles/8230009-news-trading-policy",
         "https://www.trustpilot.com/review/myfundedfutures.com",
-        "https://help.myfundedfutures.com/en/collections/5786939-trading-platforms"
+        "https://help.myfundedfutures.com/en/collections/5786939-trading-platforms",
+        "https://myfundedfutures.com/terms",
+        "https://help.myfundedfutures.com/en/articles/16498635-moving-from-evaluation-to-sim-funded-account"
       ],
       "notes": "Fees are promotional one-time prices for 50K only (list prices: Builder $153, Rapid $209, Pro $265, Rapid EOD $135/$225); other sizes not captured. No activation fees. Rapid eval table labels MLL 'EOD' while funded stage is intraday trailing. Pro funded stage: T1 news not allowed, payouts after 14 days plus buffer, max $100K payout. Rapid EOD and Studio plans exist but were not captured. Platform list not found (help collection empty via fetch).",
       "segment": "futures",
       "also_offers": [],
       "category_basis": "Simulated CME Group futures (CME, CBOT, NYMEX, COMEX) on Tradovate, NinjaTrader, TradingView, Quantower and Volumetrica.",
-      "category_source": "https://myfundedfutures.com/"
+      "category_source": "https://myfundedfutures.com/",
+      "hq_country": {
+        "code": "US",
+        "source": "https://myfundedfutures.com/terms",
+        "quote": "Company / We / Us: MyFunded Futures, LLC … governed by … the laws of the State of Texas"
+      },
+      "max_allocation_text": "Up to 5 sim-funded accounts ($25K/$50K only) or 3 if any $100K/$150K held (no USD cap stated)",
+      "max_allocation_source": "https://help.myfundedfutures.com/en/articles/16498635-moving-from-evaluation-to-sim-funded-account"
     },
     {
       "name": "Bulenox",
@@ -3382,7 +3630,11 @@
       "hq": "Wilmington, DE",
       "discount_code": {
         "code": "BULENOX",
-        "value": "always-on coupon (amount not stated)"
+        "value": "Applies best available discount to Qualification, Fast Track & Momentum accounts",
+        "percent": null,
+        "source": "https://bulenox.com/",
+        "verified": "2026-10-31",
+        "expires": null
       },
       "affiliate_url": "#",
       "trustpilot": {
@@ -3402,7 +3654,14 @@
       "segment": "futures",
       "also_offers": [],
       "category_basis": "CME Group futures data via Rithmic; R | Trader Pro, NinjaTrader and other Rithmic platforms.",
-      "category_source": "https://bulenox.com/faq"
+      "category_source": "https://bulenox.com/faq",
+      "hq_country": {
+        "code": "US",
+        "source": "https://bulenox.com/",
+        "quote": "Bulenox LLC 1201 N Orange St, Ste 7149 Wilmington, DE 19801"
+      },
+      "max_allocation_text": "Up to 5 accounts in total (Master, Fast Track, Momentum Master); no USD cap stated",
+      "max_allocation_source": "https://bulenox.com/faq"
     },
     {
       "name": "Instant Funding",
@@ -3559,24 +3818,46 @@
       "news_trading": null,
       "weekend_holding": "restricted",
       "countries_restricted": null,
-      "founded": null,
+      "founded": 2021,
       "hq": null,
       "discount_code": {
-        "code": "LITE40",
-        "value": "40% off IF Micro Lite accounts up to $25K"
+        "code": "IF30",
+        "value": "30% off Pro & Lite (not Evolve), no minimum spend",
+        "percent": 30,
+        "source": "https://instantfunding.com/",
+        "verified": "2026-10-31",
+        "expires": null,
+        "also": [
+          {
+            "code": "LITE40",
+            "value": "40% off IF Micro Lite up to $25K",
+            "percent": 40
+          }
+        ]
       },
       "affiliate_url": "#",
       "trustpilot": null,
       "last_verified": "2026-10-26",
       "source_urls": [
         "https://instantfunding.com/",
-        "https://www.trustpilot.com/review/instantfunding.com"
+        "https://www.trustpilot.com/review/instantfunding.com",
+        "https://instantfunding.com/disclaimers-legal-information/",
+        "https://instantfunding.com/help/how-many-accounts-can-i-have/"
       ],
       "notes": "Prices scraped from homepage configurator (browser). Homepage lists rule blocks for several hidden variants (IF1 24h, 1-phase 10%/3%/8% and 7%/4%/7%, 2-phase 8%/5%) that couldn't be mapped to One-Phase PRO / IF Micro PRO reliably, so those rules are null. Leverage temporarily 1:5 on metals/oil/indices funded. Operator: IF Pro Ltd; HQ, founded, restricted countries not found. Detail pages timed out. Trustpilot: rating unavailable (guidelines-breach warning) -> null.",
       "segment": "forex-cfd",
       "also_offers": [],
       "category_basis": "CFD accounts on MT5, cTrader and Match-Trader.",
-      "category_source": "https://instantfunding.com/"
+      "category_source": "https://instantfunding.com/",
+      "founded_source": "https://instantfunding.com/",
+      "hq_country": {
+        "code": "GB",
+        "source": "https://instantfunding.com/disclaimers-legal-information/",
+        "quote": "Acello Ltd (Payment Agent of IF Pro Ltd, with a trading name of Instant Funding …), a company incorporated in England and Wales with company number 12696083 … 30 Old Bailey, London"
+      },
+      "max_allocation_usd": 1000000,
+      "max_allocation_text": "Combined cap $1,000,000 across all account types (starting balance; scaling excluded)",
+      "max_allocation_source": "https://instantfunding.com/help/how-many-accounts-can-i-have/"
     }
   ]
 }

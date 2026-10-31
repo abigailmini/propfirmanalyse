@@ -137,7 +137,18 @@
   "hq": null,
   "discount_code": {
     "code": "FIRSTGFT",
-    "value": "50% off first account"
+    "value": "50% off for new customers",
+    "percent": 50,
+    "source": "https://www.goatfundedtrader.com/",
+    "verified": "2026-10-31",
+    "expires": null,
+    "also": [
+      {
+        "code": "HALLOWEEN50",
+        "value": "50% off all accounts",
+        "percent": 50
+      }
+    ]
   },
   "affiliate_url": "#",
   "trustpilot": {
@@ -156,7 +167,8 @@
     "https://help.goatfundedtrader.com/2-step-goat.html",
     "https://help.goatfundedtrader.com/trading-rules.html",
     "https://help.goatfundedtrader.com/platforms.html",
-    "https://www.trustpilot.com/review/goatfundedtrader.com"
+    "https://www.trustpilot.com/review/goatfundedtrader.com",
+    "https://www.goatfundedtrader.com/"
   ],
   "notes": "Fees = list (non-promo) prices from homepage pricing widget; 2 Step Standard fees and 150K/other sizes not captured. 1-Step daily loss 3% for accounts bought from 1 Aug 2026 (4% before). Min days = profitable days (0.5%+); funded payout needs 3-4 profitable days; funded daily profit cap $3,000 + Goat Guard. Also 2 Step PRO (8%/4%, 8% static), 3 Step (6%x3, 8% static), several instant models. MT5/cTrader unavailable to US. Trustpilot profile (listed as 'Wishes Tower') shows rating unavailable (guidelines breach notice), 4,332 reviews. Homepage widget also shows Goat Blitz promo (100K for $99). Restricted countries not found.",
   "segment": "forex-cfd",
@@ -164,5 +176,14 @@
     "futures"
   ],
   "category_basis": "CFD challenges on MT5, cTrader, Match-Trader and TradeLocker; Volumetrica accounts cover futures.",
-  "category_source": "https://goatfundedtrader.com/"
+  "category_source": "https://goatfundedtrader.com/",
+  "founded_source": "https://www.goatfundedtrader.com/about",
+  "hq_country": {
+    "code": "HK",
+    "source": "https://www.goatfundedtrader.com/about",
+    "quote": "Goat Funded Trader, a trade name of Wishes Tower International Limited, a company registered in Hong Kong (Company Number 76428795)"
+  },
+  "max_allocation_usd": 400000,
+  "max_allocation_text": "$400K in funding (scale to $2M)",
+  "max_allocation_source": "https://www.goatfundedtrader.com/"
 }
