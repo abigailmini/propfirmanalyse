@@ -1,0 +1,29 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": "Ability Challenge: up to 100% of the challenge fee refunded with the first qualifying payout; Ability One refundable entry fee; FTP not stated",
+  "fee_refundable": true,
+  "time_limit": "Unlimited",
+  "has_time_limit": false,
+  "activation_fee": null,
+  "payout_methods": [],
+  "min_payout": null,
+  "kyc_before_payout": true,
+  "scaling_plan": "Scaling over $2M; FTP doubles capital every 10% gain (homepage: up to $768K with FTP)",
+  "ea_bots": "allowed",
+  "copy_trading": true,
+  "hedging": null,
+  "max_risk_per_trade": null,
+  "inactivity_rule": null,
+  "notes": "Ability One page states 'ID required'. Payout methods not published on pages captured (payouts go to a dashboard wallet). EAs and copy trading listed as allowed on all programs. Prohibited Trading Practices page exists (not parsed in detail). Free trial available.",
+  "sources": [
+    "https://audacity.capital/two-step-prop-firm-ability-challenge/",
+    "https://audacity.capital/one-step-prop-firm-ability-one/",
+    "https://audacity.capital/instant-funding-prop-firm/",
+    "https://audacity.capital/",
+    "https://audacity.capital/prohibited-trading-practices/"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": null,
+  "monthly_fee": false
+}

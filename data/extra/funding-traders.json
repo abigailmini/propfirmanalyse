@@ -1,0 +1,39 @@
+{
+  "reset_fee": "Phase 1: 60% off the original cost; Phase 2: 130% of the challenge cost to stay in Phase 2, or 50% off to restart from Phase 1; Instant: 50% off. One reset per challenge, claim within 48h of breach.",
+  "retry_discount_pct": 60,
+  "refund_policy": "Full refund within 14 days of purchase only if no trade has been opened. Evaluation fee refunded with the second funded payout (Instant Funding: 200% refund bonus with the second payout).",
+  "fee_refundable": true,
+  "time_limit": null,
+  "has_time_limit": null,
+  "activation_fee": null,
+  "payout_methods": [
+    "Rise (bank transfer)",
+    "Crypto USDT (ERC-20) via Coinbase Commerce"
+  ],
+  "min_payout": 50,
+  "kyc_before_payout": true,
+  "scaling_plan": null,
+  "ea_bots": "restricted: risk-management EAs and EAs developed by the trader (incl. AI-assisted, if fully understood) only; off-the-shelf, grid and hedging EAs banned",
+  "copy_trading": true,
+  "hedging": false,
+  "max_risk_per_trade": "2% of initial balance per trade idea (2-Step funded phase; 1-Step Pro challenge and funded); Instant Funding: floating loss across open trades max 1% of initial balance; Instant max 20 lots per trade",
+  "inactivity_rule": "At least one trade every 30 days (first period starts at purchase); otherwise account permanently failed",
+  "notes": "Payout minimums: $50 crypto, $200 Rise; processing 24-48h excluding weekends. KYC required to receive a funded account (homepage FAQ). Copy trading only between your own FundingTraders accounts (copy software between Instant accounts not allowed; copying others' trades banned). Hedging across accounts and hedge EAs are hard breaches. Commission on funded accounts: $3/lot round trip (Instant $6/lot), indices excluded; 'Zero Fees' add-on removes it. Add-ons (checkout only): profit split 90%/100%, 14-day payout, No Minimum Trading Days, Daily Drawdown Shield, Second Phase Reset, Breach Payout Protection (pays up to 2% of size), Double-Up, On-Demand Payout (Instant), Evaluation Profit Share 15%, News Holding (Instant). Also a 'Revive' feature. VWHT must be >= 2 min; repeated trades <= 15s (HFT) banned. No time limit stated on the pages read, so time_limit left null. Strike/tier system can deduct profit at payout (Risk Management article).",
+  "sources": [
+    "https://fundingtraders.com/refund-policy",
+    "https://fundingtraders.com/terms",
+    "https://fundingtraders.com/help/en/articles/11936660-reset-account-feature",
+    "https://fundingtraders.com/help/en/articles/17333842-all-add-ons",
+    "https://fundingtraders.com/help/en/articles/13399206-2-step-pro",
+    "https://fundingtraders.com/help/en/articles/13615032-1-step-pro",
+    "https://fundingtraders.com/help/en/articles/17459915-instant-funding",
+    "https://fundingtraders.com/help/en/articles/17589312-2-step-day-swing",
+    "https://fundingtraders.com/help/en/articles/12838492-general-trading-guidelines",
+    "https://fundingtraders.com/help/en/articles/11927126-risk-management-at-fundingtraders",
+    "https://fundingtraders.com/help/en/articles/13224028-payout-guarantee",
+    "https://fundingtraders.com/"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": null,
+  "monthly_fee": false
+}

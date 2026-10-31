@@ -228,7 +228,8 @@
       "segment": "crypto",
       "also_offers": [],
       "category_basis": "Crypto-only firm on its own crypto trading platform; perpetual pairs, USDT payouts.",
-      "category_source": "https://www.fundedxyz.com/faq"
+      "category_source": "https://www.fundedxyz.com/faq",
+      "status": "active"
     },
     {
       "name": "HyroTrader",
@@ -415,7 +416,8 @@
         "code": "AE",
         "source": "https://www.hyrotrader.com/terms-and-conditions/",
         "quote": "HYRO TECHNOLOGIES FZ-LLC … a Free Zone Limited Liability Company incorporated in the Ras Al Khaimah Economic Zone (RAKEZ), United Arab Emirates"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "Breakout Prop",
@@ -619,7 +621,8 @@
       },
       "max_allocation_usd": 200000,
       "max_allocation_text": "Max total allocation across all funded accounts: $200,000",
-      "max_allocation_source": "https://intercom.help/breakoutprop/en/articles/11647204-what-is-the-maximum-allocation-available"
+      "max_allocation_source": "https://intercom.help/breakoutprop/en/articles/11647204-what-is-the-maximum-allocation-available",
+      "status": "active"
     },
     {
       "name": "Crypto Fund Trader",
@@ -795,7 +798,8 @@
       },
       "max_allocation_usd": 300000,
       "max_allocation_text": "Max simulated funded allocation per user: $300,000 (Ascend accounts excluded)",
-      "max_allocation_source": "https://cryptofundtrader.com/faq/"
+      "max_allocation_source": "https://cryptofundtrader.com/faq/",
+      "status": "active"
     },
     {
       "name": "Bitfunded",
@@ -973,7 +977,8 @@
         "code": "AE",
         "source": "https://www.bitfunded.com/terms-of-use/",
         "quote": "BitFUNDED (… the company Tronovix LTD), a legally recognised limited Liability proprietary trading firm in the United Arab Emirates (UAE)"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "FundedNext",
@@ -1176,7 +1181,8 @@
       },
       "max_allocation_usd": 300000,
       "max_allocation_text": "Max aggregate funded simulated capital: $300,000 (scale-up beyond via Scale-Up plan, up to $4M)",
-      "max_allocation_source": "https://help.fundednext.com/en/articles/8027523-how-many-accounts-can-i-have-with-fundednext"
+      "max_allocation_source": "https://help.fundednext.com/en/articles/8027523-how-many-accounts-can-i-have-with-fundednext",
+      "status": "active"
     },
     {
       "name": "FTMO",
@@ -1358,7 +1364,8 @@
       },
       "max_allocation_usd": 400000,
       "max_allocation_text": "$400,000 total across all accounts per trader/strategy (before scaling; scaling plan to $2M per account)",
-      "max_allocation_source": "https://ftmo.com/en/faq/how-many-accounts-can-i-have/"
+      "max_allocation_source": "https://ftmo.com/en/faq/how-many-accounts-can-i-have/",
+      "status": "active"
     },
     {
       "name": "The5ers",
@@ -1551,7 +1558,8 @@
       },
       "max_allocation_usd": 4000000,
       "max_allocation_text": "Get qualified and manage up to $4,000,000 (scaling cap)",
-      "max_allocation_source": "https://the5ers.com/"
+      "max_allocation_source": "https://the5ers.com/",
+      "status": "active"
     },
     {
       "name": "FundingPips",
@@ -1732,7 +1740,8 @@
       },
       "max_allocation_usd": 400000,
       "max_allocation_text": "Max Allocation $400K",
-      "max_allocation_source": "https://fundingpips.com/"
+      "max_allocation_source": "https://fundingpips.com/",
+      "status": "active"
     },
     {
       "name": "Alpha Capital",
@@ -1955,7 +1964,8 @@
       },
       "max_allocation_usd": 400000,
       "max_allocation_text": "Max $400,000 per household on Qualified Analyst accounts ($300K per strategy); scaling to $2M cumulative",
-      "max_allocation_source": "https://help.alphacapitalgroup.uk/en/articles/8804535-how-many-accounts-can-i-have-what-is-the-maximum-allocation-per-strategy"
+      "max_allocation_source": "https://help.alphacapitalgroup.uk/en/articles/8804535-how-many-accounts-can-i-have-what-is-the-maximum-allocation-per-strategy",
+      "status": "active"
     },
     {
       "name": "E8 Markets",
@@ -2162,7 +2172,8 @@
       },
       "max_allocation_usd": 3900000,
       "max_allocation_text": "Up to $3,900,000 simulated capital across Performance accounts ($500K per market for E8 One/Pro), per household",
-      "max_allocation_source": "https://help.e8markets.com/en/articles/5515039-how-many-accounts-can-i-apply-for-at-once"
+      "max_allocation_source": "https://help.e8markets.com/en/articles/5515039-how-many-accounts-can-i-apply-for-at-once",
+      "status": "active"
     },
     {
       "name": "Maven Trading",
@@ -2353,7 +2364,8 @@
         "code": "AE",
         "source": "https://maventrading.com/",
         "quote": "Maven Edu - FZCO is a registered limited corporation in United Arab Emirates, DSO-IFZA, IFZA Properties, Dubai Silicon Oasis"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "Goat Funded Trader",
@@ -2542,7 +2554,8 @@
       },
       "max_allocation_usd": 400000,
       "max_allocation_text": "$400K in funding (scale to $2M)",
-      "max_allocation_source": "https://www.goatfundedtrader.com/"
+      "max_allocation_source": "https://www.goatfundedtrader.com/",
+      "status": "active"
     },
     {
       "name": "Blue Guardian",
@@ -2740,7 +2753,8 @@
       },
       "max_allocation_usd": 400000,
       "max_allocation_text": "Max active funded allocation $400,000 across all funded types; scaling plan to $4,000,000",
-      "max_allocation_source": "https://help.blueguardian.com/en/articles/15618204-general-information-rules"
+      "max_allocation_source": "https://help.blueguardian.com/en/articles/15618204-general-information-rules",
+      "status": "active"
     },
     {
       "name": "Lark Funding",
@@ -2948,7 +2962,8 @@
       },
       "max_allocation_usd": 200000,
       "max_allocation_text": "Max $200,000 funded (evaluation) + $100,000 instant",
-      "max_allocation_source": "https://helpdesk.larkfunding.com/en/articles/13899816-maximum-capital-allocation"
+      "max_allocation_source": "https://helpdesk.larkfunding.com/en/articles/13899816-maximum-capital-allocation",
+      "status": "active"
     },
     {
       "name": "Apex Trader Funding",
@@ -3176,7 +3191,8 @@
         "quote": "Apex Trader Funding Inc. 2028 E. Ben White Blvd Ste 240-9873 Austin, TX 78741 (mailing address only)"
       },
       "max_allocation_text": "Trade up to 20 accounts (no USD cap stated)",
-      "max_allocation_source": "https://apextraderfunding.com/"
+      "max_allocation_source": "https://apextraderfunding.com/",
+      "status": "active"
     },
     {
       "name": "Topstep",
@@ -3298,7 +3314,8 @@
         "quote": "Topstep LLC and its affiliates … 2010 Office on Chicago Board of Trade trading floor"
       },
       "max_allocation_text": "Up to 5 active Express Funded Accounts at a time (no USD cap stated)",
-      "max_allocation_source": "https://help.topstep.com/en/articles/8284215-express-funded-account-parameters"
+      "max_allocation_source": "https://help.topstep.com/en/articles/8284215-express-funded-account-parameters",
+      "status": "active"
     },
     {
       "name": "MyFundedFutures",
@@ -3525,7 +3542,8 @@
         "quote": "Company / We / Us: MyFunded Futures, LLC … governed by … the laws of the State of Texas"
       },
       "max_allocation_text": "Up to 5 sim-funded accounts ($25K/$50K only) or 3 if any $100K/$150K held (no USD cap stated)",
-      "max_allocation_source": "https://help.myfundedfutures.com/en/articles/16498635-moving-from-evaluation-to-sim-funded-account"
+      "max_allocation_source": "https://help.myfundedfutures.com/en/articles/16498635-moving-from-evaluation-to-sim-funded-account",
+      "status": "active"
     },
     {
       "name": "Bulenox",
@@ -3661,7 +3679,8 @@
         "quote": "Bulenox LLC 1201 N Orange St, Ste 7149 Wilmington, DE 19801"
       },
       "max_allocation_text": "Up to 5 accounts in total (Master, Fast Track, Momentum Master); no USD cap stated",
-      "max_allocation_source": "https://bulenox.com/faq"
+      "max_allocation_source": "https://bulenox.com/faq",
+      "status": "active"
     },
     {
       "name": "Instant Funding",
@@ -3857,7 +3876,8 @@
       },
       "max_allocation_usd": 1000000,
       "max_allocation_text": "Combined cap $1,000,000 across all account types (starting balance; scaling excluded)",
-      "max_allocation_source": "https://instantfunding.com/help/how-many-accounts-can-i-have/"
+      "max_allocation_source": "https://instantfunding.com/help/how-many-accounts-can-i-have/",
+      "status": "active"
     },
     {
       "name": "Propr",
@@ -4151,7 +4171,8 @@
         "discount_code": "https://www.propr.xyz/",
         "consistency_rule": "https://www.propr.xyz/rules",
         "trustpilot": "https://www.trustpilot.com/review/propr.xyz"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "Fondeo",
@@ -4352,7 +4373,8 @@
         "hq": "https://fondeo.xyz/en/terms-and-conditions",
         "hq_country": "https://fondeo.xyz/en/terms-and-conditions",
         "trustpilot": "https://www.trustpilot.com/review/fondeo.xyz"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "Mubite",
@@ -4693,7 +4715,8 @@
         "weekend_holding": "https://mubite.com/en/challengeRules",
         "hq": "https://mubite.com/en",
         "hq_country": "https://mubite.com/en"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "PropW",
@@ -4910,7 +4933,8 @@
         "founded": "https://www.propw.com/about-us",
         "hq": "https://www.propw.com/proof",
         "hq_country": "https://www.propw.com/proof"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "Lucid Trading",
@@ -5246,7 +5270,8 @@
         "trustpilot": "https://www.trustpilot.com/review/lucidtrading.com",
         "max_allocation_text": "https://support.lucidtrading.com/en/articles/11404617-maximum-number-of-accounts",
         "assets": "https://support.lucidtrading.com/en/articles/11508978-approved-products-and-commissions"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "Tradeify",
@@ -5445,7 +5470,8 @@
         "max_daily_loss": "https://help.tradeify.co/en/articles/12268167-essential-trading-rules-overview",
         "drawdown_type": "https://help.tradeify.co/en/articles/12268167-essential-trading-rules-overview",
         "profit_target": "https://help.tradeify.co/en/articles/10468265-which-plan-is-right-for-you"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "Take Profit Trader",
@@ -5733,7 +5759,8 @@
         "trustpilot": "https://www.trustpilot.com/review/takeprofittrader.com",
         "max_allocation_text": "https://takeprofittrader.com/",
         "category": "https://takeprofittrader.com/"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "Earn2Trade",
@@ -5947,7 +5974,8 @@
         "trustpilot": "https://www.trustpilot.com/review/earn2trade.com",
         "platforms": "https://www.earn2trade.com/",
         "category": "https://www.earn2trade.com/"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "Elite Trader Funding",
@@ -6230,7 +6258,8 @@
         "countries_restricted": "https://elitetraderfunding.app/help/countries-restricted-and-supported",
         "founded": "https://elitetraderfunding.app/about",
         "trustpilot": "https://www.trustpilot.com/review/elitetraderfunding.com"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "Top One Futures",
@@ -6586,7 +6615,8 @@
         "hq_country": "https://www.toponefutures.com/launchpad",
         "discount_code": "https://www.toponefutures.com/",
         "trustpilot": "https://www.trustpilot.com/review/toponefutures.com"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "TradeDay",
@@ -6878,7 +6908,8 @@
         "hq_country": "https://www.tradeday.com/",
         "discount_code": "https://www.tradeday.com/",
         "trustpilot": "https://www.trustpilot.com/review/tradeday.com"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "DayTraders.com",
@@ -7096,7 +7127,8 @@
         "hq": "https://daytraders.com/about",
         "hq_country": "https://daytraders.com/about",
         "trustpilot": "https://www.trustpilot.com/review/daytraders.com"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "FXIFY",
@@ -7557,7 +7589,8 @@
         "hq_country": "https://fxify.com/",
         "discount_code": "https://fxify.com/",
         "trustpilot": "https://www.trustpilot.com/review/fxify.com"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "Hola Prime",
@@ -7907,7 +7940,8 @@
         "hq": "https://holaprime.com/",
         "discount_code": "https://holaprime.com/",
         "trustpilot": "https://www.trustpilot.com/review/holaprime.com"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "Fintokei",
@@ -8207,7 +8241,8 @@
         "hq_country": "https://www.fintokei.com/",
         "discount_code": "https://www.fintokei.com/",
         "trustpilot": "https://www.trustpilot.com/review/fintokei.com"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "The Trading Pit",
@@ -8540,7 +8575,8 @@
         "countries_restricted": "https://support.thetradingpit.com/en/articles/835065-eligibility-requirements",
         "hq": "https://www.thetradingpit.com/",
         "hq_country": "https://www.thetradingpit.com/"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "BrightFunded",
@@ -8776,7 +8812,8 @@
         "hq": "https://brightfunded.com/about-us",
         "hq_country": "https://brightfunded.com/about-us",
         "discount_code": "https://brightfunded.com/"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "City Traders Imperium",
@@ -9035,7 +9072,8 @@
         "hq": "https://citytradersimperium.com/",
         "hq_country": "https://citytradersimperium.com/",
         "trustpilot": "https://www.trustpilot.com/review/citytradersimperium.com"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "Atlas Funded",
@@ -9527,7 +9565,8 @@
         "hq_country": "https://www.atlasfunded.com/trading-rules",
         "discount_code": "https://www.atlasfunded.com/",
         "trustpilot": "https://www.trustpilot.com/review/atlasfunded.com"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "Ment Funding",
@@ -9776,7 +9815,8 @@
         "founded": "https://mentfunding.com/",
         "hq": "https://mentfunding.com/terms-of-service.html",
         "trustpilot": "https://www.trustpilot.com/review/www.mentfunding.com"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "For Traders",
@@ -10270,7 +10310,8 @@
         "hq": "https://fortraders.com/faq",
         "discount_code": "https://fortraders.com/challenges",
         "trustpilot": "https://www.trustpilot.com/review/fortraders.com"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "ThinkCapital",
@@ -10612,7 +10653,8 @@
         "weekend_holding": "https://www.thinkcapital.com/tc-faqs/penalties-faq-section/penalties-faq-section/",
         "countries_restricted": "https://www.thinkcapital.com/",
         "trustpilot": "https://www.trustpilot.com/review/thinkcapital.com"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "Finotive Funding",
@@ -11014,7 +11056,8 @@
         "hq": "https://finotivefunding.com/",
         "hq_country": "https://finotivefunding.com/",
         "discount_code": "https://finotivefunding.com/"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "Funded Trading Plus",
@@ -11320,7 +11363,8 @@
         "programs[Activation Accounts]": "https://help.fundedtradingplus.com/activation-accounts-pricing-and-fees/",
         "programs[2-Step Classic]": "https://help.fundedtradingplus.com/2-step-classic-program-information/",
         "programs[Instant Funding]": "https://www.fundedtradingplus.com/prop-trading-challenges/instant-funding"
-      }
+      },
+      "status": "active"
     },
     {
       "name": "FTUK",
@@ -11576,7 +11620,2477 @@
         "hq_country": "https://faq.ftuk.com/en/articles/12290710-who-are-ftuk",
         "discount_code": "https://ftuk.com/",
         "trustpilot": "https://www.trustpilot.com/review/ftuk.com"
-      }
+      },
+      "status": "active"
+    },
+    {
+      "name": "Alpha Futures",
+      "slug": "alpha-futures",
+      "site": "https://alpha-futures.com",
+      "category": "futures",
+      "assets": [
+        "futures",
+        "indices",
+        "commodities",
+        "crypto"
+      ],
+      "challenge_types": [
+        "1-step",
+        "instant"
+      ],
+      "account_sizes": [
+        25000,
+        50000,
+        100000,
+        150000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "Zero Account (monthly)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 89
+            },
+            {
+              "size": 50000,
+              "fee": 169
+            },
+            {
+              "size": 100000,
+              "fee": 279
+            }
+          ],
+          "profit_target": "6% ($1,500/$3,000/$6,000)",
+          "max_daily_loss": "2% Daily Loss Guard, soft breach ($500/$1,000/$2,000)",
+          "max_drawdown": "$1,000/$2,000/$3,000",
+          "drawdown_type": "EOD trailing (stops at starting balance)",
+          "profit_split": "90%",
+          "min_trading_days": 1
+        },
+        {
+          "name": "Standard Account (monthly)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 50000,
+              "fee": 129
+            },
+            {
+              "size": 100000,
+              "fee": 239
+            },
+            {
+              "size": 150000,
+              "fee": 349
+            }
+          ],
+          "profit_target": "6% ($3,000/$6,000/$9,000)",
+          "max_daily_loss": "None on Evaluation; Daily Loss Guard $1,000/$2,000/$3,000 on Qualified",
+          "max_drawdown": "$2,000/$3,000/$4,500",
+          "drawdown_type": "EOD trailing (stops at starting balance)",
+          "profit_split": "90%",
+          "min_trading_days": 2
+        },
+        {
+          "name": "Advanced Account (monthly)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 50000,
+              "fee": 209
+            },
+            {
+              "size": 100000,
+              "fee": 349
+            },
+            {
+              "size": 150000,
+              "fee": 489
+            }
+          ],
+          "profit_target": "8% ($4,000/$8,000/$12,000)",
+          "max_daily_loss": "None",
+          "max_drawdown": "$1,750/$3,500/$5,250",
+          "drawdown_type": "EOD trailing (stops at starting balance)",
+          "profit_split": "90%",
+          "min_trading_days": 3
+        },
+        {
+          "name": "Direct Account (one-time fee)",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 349
+            },
+            {
+              "size": 50000,
+              "fee": 519
+            },
+            {
+              "size": 100000,
+              "fee": 689
+            },
+            {
+              "size": 150000,
+              "fee": 859
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": "Daily Loss Guard $500/$1,000/$2,000/$3,000 (soft breach)",
+          "max_drawdown": "$1,000/$2,000/$3,000/$4,500",
+          "drawdown_type": "EOD trailing (stops at starting balance)",
+          "profit_split": "90%",
+          "min_trading_days": null
+        }
+      ],
+      "fee_from": 89,
+      "profit_split": "90%",
+      "profit_split_scale": "90% on all Qualified accounts from the first withdrawal; 80% in the Alpha Futures Live Program; 60% in the Alpha Prime program",
+      "max_daily_loss": "None on Advanced; 2% soft Daily Loss Guard on Zero and Direct (Standard: Qualified only)",
+      "max_drawdown": "$1,000-$5,250 depending on account",
+      "drawdown_type": "EOD trailing (stops at starting balance)",
+      "profit_target": "6% (Zero/Standard), 8% (Advanced); none on Direct (withdrawal profit targets instead)",
+      "leverage": null,
+      "platforms": [
+        "AlphaTrader",
+        "TradingView",
+        "WealthCharts",
+        "Deepchart",
+        "Quantower"
+      ],
+      "payout_frequency": "Up to 4 withdrawals per month, no fixed payout dates. Zero/Standard/Advanced Qualified: request up to 50% of profits after every 5 winning days of $200+. Direct: request once the withdrawal profit target ($1.5K-$9K first, $1K-$6K after) and 20% consistency rule are met.",
+      "first_payout_days": 5,
+      "payout_speed": null,
+      "min_trading_days": 1,
+      "consistency_rule": "Evaluation: Advanced 40%, Standard 50%, Zero none. Qualified (best day vs net profit since last withdrawal): Zero/Standard 40%, Direct 20%, Advanced none.",
+      "news_trading": "restricted",
+      "weekend_holding": "banned",
+      "countries_restricted": [
+        "Afghanistan",
+        "Albania",
+        "Belarus",
+        "Bosnia and Herzegovina",
+        "Bulgaria",
+        "Burkina Faso",
+        "Myanmar",
+        "Chad",
+        "China",
+        "Côte d'Ivoire",
+        "Croatia",
+        "Cuba",
+        "Democratic Republic of Congo",
+        "Djibouti",
+        "East Timor",
+        "Guinea-Bissau",
+        "Ethiopia",
+        "Haiti",
+        "Iran",
+        "Iraq",
+        "Jamaica",
+        "Jordan",
+        "Kenya",
+        "Kosovo",
+        "Kyrgyzstan",
+        "Laos",
+        "Lebanon",
+        "Lesotho",
+        "Libya",
+        "Malawi",
+        "Malaysia",
+        "Mali",
+        "Montenegro",
+        "Mozambique",
+        "Namibia",
+        "Nigeria",
+        "North Korea",
+        "North Macedonia",
+        "Northern Cyprus",
+        "Palestinian Territory",
+        "Pakistan",
+        "Philippines",
+        "Romania",
+        "Russia",
+        "Rwanda",
+        "Senegal",
+        "Serbia",
+        "Sierra Leone",
+        "Slovenia",
+        "Somalia",
+        "South Sudan",
+        "Sudan",
+        "Syria",
+        "Tajikistan",
+        "Tanzania",
+        "Turkey",
+        "Ukraine",
+        "Venezuela",
+        "Vietnam",
+        "Yemen",
+        "Zimbabwe"
+      ],
+      "founded": null,
+      "hq": null,
+      "discount_code": null,
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 4.3,
+        "count": 6242,
+        "note": "Recent reviews (late Oct 2026) include a cluster of unpaid or delayed payout complaints; see notes.",
+        "checked": "2026-10-31",
+        "source": "https://www.trustpilot.com/review/alpha-futures.com"
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://help.alpha-futures.com/en/",
+        "https://help.alpha-futures.com/en/articles/11771813-zero-account-overview",
+        "https://help.alpha-futures.com/en/articles/11632512-standard-account-overview",
+        "https://help.alpha-futures.com/en/articles/11634907-advanced-account-overview",
+        "https://help.alpha-futures.com/en/articles/15838742-direct-account-overview",
+        "https://help.alpha-futures.com/en/articles/9492068-monthly-subscription",
+        "https://help.alpha-futures.com/en/articles/9491999-maximum-loss-limit-mll",
+        "https://help.alpha-futures.com/en/articles/9492014-daily-loss-guard",
+        "https://help.alpha-futures.com/en/articles/9492048-consistency-rule",
+        "https://help.alpha-futures.com/en/articles/9492051-payout-policy",
+        "https://help.alpha-futures.com/en/articles/10491202-maximum-withdrawal-request",
+        "https://help.alpha-futures.com/en/articles/9492063-news-trading-policy",
+        "https://help.alpha-futures.com/en/articles/10525305-trading-platforms",
+        "https://help.alpha-futures.com/en/articles/9492096-what-and-when-you-can-trade",
+        "https://help.alpha-futures.com/en/articles/9523389-countries-with-limitations",
+        "https://help.alpha-futures.com/en/articles/9492088-maximum-allocation",
+        "https://help.alpha-futures.com/en/articles/10743344-path-to-live-structure",
+        "https://help.alpha-futures.com/en/articles/11023753-live-account-rules-and-parameters",
+        "https://www.trustpilot.com/review/alpha-futures.com",
+        "https://help.alpha-futures.com/en/articles/10443600-payout-methods"
+      ],
+      "notes": "Prices are LIST prices from the help centre. Zero/Standard/Advanced are MONTHLY evaluation subscriptions (rebill until you pass or cancel; Qualified traders pay no subscription); Direct is a one-time fee with no evaluation. fee is the listed price (monthly for subscriptions) - see extra.monthly_fee. No activation fee on accounts bought after 2026-07-08 (previously $149 on Advanced). Main site alpha-futures.com Cloudflare-blocks this host (403 for browser, curl and web_fetch), so the homepage, checkout, about/legal and /return-policy/ pages could not be checked today; any homepage promo banner or code is therefore unknown (discount_code null). Affiliate links default to 10% off but no public code is posted on the help centre. min_trading_days: Zero is advertised as a one-day pass; Standard (2) and Advanced (3) are the minimum implied by their 50%/40% evaluation consistency rules, not a stated rule. first_payout_days = 5 winning days of $200+. Weekend holding banned = all sim trades must be closed by 4:20pm ET daily (overnight holding allowed only in live accounts). News: no restrictions on Evaluations or Advanced Qualified; Zero/Standard/Direct Qualified cannot execute orders 2 minutes either side of red-folder events. Crypto exposure is only via CME Micro Bitcoin/Ether futures (MBT/MET), counted as full minis. Max withdrawal per request: Advanced $15K; Zero $1K-$2.5K; Standard $3K-$5K; Direct $1K-$3K. Payout processing time not published. Founded/HQ not found on reachable own-site pages (help centre names the operator 'Alpha Futures Limited' and says the Alpha Prime trading floor is in London; Trustpilot profile lists United States) - left null. Leverage n/a (contract limits per account instead). CAUTION: Trustpilot (https://www.trustpilot.com/review/alpha-futures.com, checked 2026-10-31) shows 4.3 from 6,242 reviews (85% 5-star, 10% 1-star, large invited-review base), but the most recent reviews (Oct 22-30, 2026) include a cluster of complaints from holders of the discontinued 'Premium' accounts saying approved payouts have been unpaid for months (one says 8 months) and that a promised end-of-October 2026 payment date was missed; others report approved payouts delayed about 10 days. Other recent reviews report payouts received, some after delays. Alpha Futures' payout policy page states 'follow the rules and you will be paid out'.",
+      "segment": "futures",
+      "also_offers": [],
+      "category_basis": "Sells simulated CME futures evaluations (Zero/Standard/Advanced) and one-time-fee Direct qualified accounts on futures platforms (AlphaTrader, TradingView via Plus500, WealthCharts, Deepchart, Quantower).",
+      "category_source": "https://help.alpha-futures.com/en/articles/9492096-what-and-when-you-can-trade",
+      "max_allocation_text": "Max Qualified accounts per type: Zero 5, Direct 5, Standard 5, Advanced 3 (any user with an active Advanced Qualified account is limited to 3); no combined USD cap published",
+      "max_allocation_source": "https://help.alpha-futures.com/en/articles/9492088-maximum-allocation",
+      "field_sources": {
+        "category": "https://help.alpha-futures.com/en/articles/9492096-what-and-when-you-can-trade",
+        "category_basis": "https://help.alpha-futures.com/en/articles/10525305-trading-platforms",
+        "segment": "https://help.alpha-futures.com/en/articles/9492096-what-and-when-you-can-trade",
+        "assets": "https://help.alpha-futures.com/en/articles/9492096-what-and-when-you-can-trade",
+        "challenge_types": "https://help.alpha-futures.com/en/articles/15838742-direct-account-overview",
+        "account_sizes": "https://help.alpha-futures.com/en/articles/9492068-monthly-subscription",
+        "fee_currency": "https://help.alpha-futures.com/en/articles/10443600-payout-methods",
+        "programs": "https://help.alpha-futures.com/en/articles/9492068-monthly-subscription",
+        "programs.Zero": "https://help.alpha-futures.com/en/articles/11771813-zero-account-overview",
+        "programs.Standard": "https://help.alpha-futures.com/en/articles/11632512-standard-account-overview",
+        "programs.Advanced": "https://help.alpha-futures.com/en/articles/11634907-advanced-account-overview",
+        "programs.Direct": "https://help.alpha-futures.com/en/articles/15838742-direct-account-overview",
+        "fee_from": "https://help.alpha-futures.com/en/articles/11771813-zero-account-overview",
+        "profit_split": "https://help.alpha-futures.com/en/articles/9492051-payout-policy",
+        "profit_split_scale": "https://help.alpha-futures.com/en/articles/10743344-path-to-live-structure",
+        "max_daily_loss": "https://help.alpha-futures.com/en/articles/9492014-daily-loss-guard",
+        "max_drawdown": "https://help.alpha-futures.com/en/articles/9491999-maximum-loss-limit-mll",
+        "drawdown_type": "https://help.alpha-futures.com/en/articles/9491999-maximum-loss-limit-mll",
+        "profit_target": "https://help.alpha-futures.com/en/articles/11632512-standard-account-overview",
+        "platforms": "https://help.alpha-futures.com/en/articles/10525305-trading-platforms",
+        "payout_frequency": "https://help.alpha-futures.com/en/articles/9492051-payout-policy",
+        "first_payout_days": "https://help.alpha-futures.com/en/articles/11632512-standard-account-overview",
+        "max_allocation_text": "https://help.alpha-futures.com/en/articles/9492088-maximum-allocation",
+        "min_trading_days": "https://help.alpha-futures.com/en/articles/11771813-zero-account-overview",
+        "consistency_rule": "https://help.alpha-futures.com/en/articles/9492048-consistency-rule",
+        "news_trading": "https://help.alpha-futures.com/en/articles/9492063-news-trading-policy",
+        "weekend_holding": "https://help.alpha-futures.com/en/articles/9492096-what-and-when-you-can-trade",
+        "countries_restricted": "https://help.alpha-futures.com/en/articles/9523389-countries-with-limitations",
+        "trustpilot": "https://www.trustpilot.com/review/alpha-futures.com"
+      },
+      "status": "caution",
+      "status_since": "2026-10-31",
+      "status_reason": "Trustpilot’s most recent reviews (29–30 Oct 2026) are dominated by traders reporting approved payouts left unpaid, especially on discontinued Premium accounts where reviewers say a promised October deadline was missed.",
+      "status_sources": [
+        {
+          "url": "https://www.trustpilot.com/review/alpha-futures.com?sort=recency",
+          "date": "2026-10-31",
+          "text": "11 of the 20 most recent Trustpilot reviews (posted 29–30 Oct 2026) report unpaid, delayed, rejected-after-approval or withheld payouts (checked 31 Oct 2026)."
+        },
+        {
+          "url": "https://www.trustpilot.com/review/alpha-futures.com?sort=recency",
+          "date": "2026-10-30",
+          "text": "Several reviewers say approved Premium-account payouts have been outstanding for months and that Alpha Futures said they would be cleared by October; one cites 8 months, another says 'hundreds of affected traders'."
+        },
+        {
+          "url": "https://www.trustpilot.com/review/alpha-futures.com?page=2&sort=recency",
+          "date": "2026-10-31",
+          "text": "Page 2 of Most recent (next 20 reviews, posted 29–30 Oct 2026) has at least 7 more payout complaints, e.g. an approved payout 'Still Missing After 3 Weeks'."
+        },
+        {
+          "url": "https://www.trustpilot.com/review/alpha-futures.com?sort=recency",
+          "date": "2026-10-31",
+          "text": "Trustpilot shows a 'You should know' notice: “This company may be associated with high-risk investments.” Score still 4.3 from 6,242 reviews (85% 5-star, 10% 1-star); the firm invites customers to review (checked 31 Oct 2026)."
+        }
+      ]
+    },
+    {
+      "name": "QT Funded",
+      "slug": "qt-funded",
+      "site": "https://qtfunded.quanttekel.com",
+      "category": "cfd",
+      "assets": [
+        "forex",
+        "indices",
+        "commodities",
+        "crypto"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step",
+        "instant"
+      ],
+      "account_sizes": [
+        5000,
+        10000,
+        25000,
+        50000,
+        100000,
+        200000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "QT ONE",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 110
+            },
+            {
+              "size": 10000,
+              "fee": 190
+            },
+            {
+              "size": 25000,
+              "fee": 350
+            },
+            {
+              "size": 50000,
+              "fee": 625
+            },
+            {
+              "size": 100000,
+              "fee": 1000
+            }
+          ],
+          "profit_target": "6%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "6%",
+          "drawdown_type": "trailing",
+          "profit_split": "70%",
+          "min_trading_days": 0
+        },
+        {
+          "name": "QT TWO",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 10000,
+              "fee": 70
+            },
+            {
+              "size": 25000,
+              "fee": 140
+            },
+            {
+              "size": 50000,
+              "fee": 275
+            },
+            {
+              "size": 100000,
+              "fee": 550
+            },
+            {
+              "size": 200000,
+              "fee": 1000
+            }
+          ],
+          "profit_target": "8% / 5%",
+          "max_daily_loss": "4%",
+          "max_drawdown": "8%",
+          "drawdown_type": "static",
+          "profit_split": "80% (90% with add-on)",
+          "min_trading_days": 4
+        },
+        {
+          "name": "QT Instant",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 75
+            },
+            {
+              "size": 10000,
+              "fee": 125
+            },
+            {
+              "size": 25000,
+              "fee": 230
+            },
+            {
+              "size": 50000,
+              "fee": 375
+            },
+            {
+              "size": 100000,
+              "fee": 750
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": "3%",
+          "max_drawdown": "6%",
+          "drawdown_type": "trailing",
+          "profit_split": "100%",
+          "min_trading_days": null
+        },
+        {
+          "name": "QT Power",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 35
+            },
+            {
+              "size": 10000,
+              "fee": 60
+            },
+            {
+              "size": 25000,
+              "fee": 125
+            },
+            {
+              "size": 50000,
+              "fee": 237
+            },
+            {
+              "size": 100000,
+              "fee": 475
+            }
+          ],
+          "profit_target": "6% / 6%",
+          "max_daily_loss": "4%",
+          "max_drawdown": "8%",
+          "drawdown_type": "static",
+          "profit_split": "80%",
+          "min_trading_days": 4
+        },
+        {
+          "name": "QT 1-Step Buy Now Pay Later",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": null,
+              "activation_fee": 65,
+              "entry_fee": 2.5
+            },
+            {
+              "size": 10000,
+              "fee": null,
+              "activation_fee": 100,
+              "entry_fee": 2.5
+            },
+            {
+              "size": 25000,
+              "fee": null,
+              "activation_fee": 180,
+              "entry_fee": 2.5
+            },
+            {
+              "size": 50000,
+              "fee": null,
+              "activation_fee": 325,
+              "entry_fee": 2.5
+            },
+            {
+              "size": 100000,
+              "fee": null,
+              "activation_fee": 650,
+              "entry_fee": 2.5
+            }
+          ],
+          "profit_target": "6%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "6%",
+          "drawdown_type": "trailing",
+          "profit_split": "80%",
+          "min_trading_days": 0,
+          "deferred_fee": true,
+          "fee_note": "Entry fee only: an activation / funded-account fee is charged after you pass (QT Funded: activation fee $65-$650 by size)"
+        }
+      ],
+      "fee_from": 35,
+      "profit_split": "70% up to 100% (plan-dependent)",
+      "profit_split_scale": "QT ONE 70%; QT TWO/Power/BNPL 80% (+10% add-on to 90% on QT TWO); QT Instant 100%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "trailing",
+      "profit_target": "6%",
+      "leverage": "All plans: Forex 1:30, indices & metals 1:15, crypto 1:1",
+      "platforms": [
+        "MT5",
+        "TradeLocker"
+      ],
+      "payout_frequency": "QT ONE: every 4 trading days (min 4 trading days, 3% min profit); QT TWO and QT Power: every 14 days; QT Instant: 14-day cycle per help article (homepage card says 4 days, homepage FAQ says 7 days); BNPL 1-Step: 14 days.",
+      "first_payout_days": 4,
+      "payout_speed": "processed within 24 business hours (aim to approve within 1 business day)",
+      "min_trading_days": 0,
+      "consistency_rule": "QT ONE and QT TWO: none; QT Instant: 30% (no single day > 30% of total profit at withdrawal); QT Power: 35% (challenge and funded); BNPL 1-Step funded: 20% consistency score to request payout",
+      "news_trading": "restricted",
+      "weekend_holding": "allowed",
+      "countries_restricted": [
+        "Iran",
+        "Iraq",
+        "Myanmar",
+        "Belarus",
+        "North Korea",
+        "South Korea",
+        "Pakistan",
+        "Syria",
+        "Egypt",
+        "Cyprus",
+        "Sudan",
+        "Russia",
+        "United States (MT5 and cTrader only)",
+        "Canada (MT5 only)"
+      ],
+      "founded": 2023,
+      "hq": "London, United Kingdom",
+      "discount_code": {
+        "code": "TREAT",
+        "value": "60% off + buy one, get one free on same-size accounts",
+        "percent": 60,
+        "source": "https://qtfunded.quanttekel.com/",
+        "verified": "2026-10-31",
+        "expires": null
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": 3.5,
+        "count": 13369,
+        "note": null,
+        "checked": "2026-10-31",
+        "source": "https://www.trustpilot.com/review/quanttekel.com"
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://qtfunded.quanttekel.com/",
+        "https://qtfunded.quanttekel.com/about/",
+        "https://qtfunded.quanttekel.com/evaluations/",
+        "https://qtfunded.quanttekel.com/futures/",
+        "https://qtfunded.quanttekel.com/affiliates/",
+        "https://support.qtfunded.com/support/articles/9000000000001-qt-one",
+        "https://support.qtfunded.com/support/articles/9000000000002-qt-two",
+        "https://support.qtfunded.com/support/articles/9000000000003-qt-instant-funded-new",
+        "https://support.qtfunded.com/support/articles/5744325221663-qt-power",
+        "https://support.qtfunded.com/support/articles/5632217156767-qt-1-step-bnpl",
+        "https://support.qtfunded.com/support/articles/5412723610527-can-i-hold-trades-over-the-weekend",
+        "https://support.qtfunded.com/support/articles/5613561900191-news-rule",
+        "https://support.qtfunded.com/support/articles/5613619906463-maximum-capital-allocation",
+        "https://support.qtfunded.com/support/articles/5295613659039-restricted-countries",
+        "https://support.qtfunded.com/support/articles/5613700809887-performance-fee-policy",
+        "https://support.qtfunded.com/support/articles/5295580636703-trading-platforms",
+        "https://support.qtfunded.com/support/articles/9000000000011-inactivity-rule",
+        "https://support.qtfunded.com/support/articles/5498652581151-kyc-verification-required-documents-and-account-approval-guide",
+        "https://www.trustpilot.com/review/quanttekel.com"
+      ],
+      "notes": "CAUTION LISTING. Trustpilot (trustpilot.com/review/quanttekel.com, checked 2026-10-31) shows 3.5 from 13,369 reviews (73% 5-star, 20% 1-star); the firm's own homepage still advertises 3.9 from 13,012. The most recent reviews (late Oct 2026) show a cluster of payout denials after funded profits (e.g. a QT Power trader reporting $4,600 profit denied for 'high margin usage', described by the firm as 'malicious trading behavior'), Instant traders reporting payouts denied or accounts reset after a migration to a new dashboard/technology, and complaints about accounts being changed or closed; the firm replies to 44% of negative reviews. Treat payout reliability as unverified. PRICES: list prices from the homepage pricing widget (each size clicked, MT5) and window.qtData; widget shows them struck through next to 60%-off prices (e.g. QT Power $5K $35 -> $14). TradeLocker is +$5 per account (e.g. QT ONE $5K $115). QT TWO card says sizes $10K-$200K (widget also shows a $5K price of $42.50, excluded). BNPL 1-Step: $2.50 upfront list fee ($1 with promo) + activation fee $65-$650 payable within 7 days of passing; fee_from=2.5 reflects that upfront fee only — cheapest full-price plan is QT Power $5K at $35. $2,500 sizes exist in site data but are not offered in the widget. PROMO: top banner 'ALL TREATS, NO TRICKS! Get 60% OFF + BUY ONE, GET ONE FREE on same-size accounts | Use code: TREAT'; a stale homepage block still shows code 60PLUS ('Ends October 14'). RULES: QT ONE daily drawdown is 3% recalculated daily from the higher of prior close balance/equity (help article says trailing; homepage comparison says '3% static'); funded accounts carry a 1% max floating-loss rule (soft then hard breach on QT TWO), stop loss within 60 s on QT TWO/Instant funded, QT TWO and BNPL funded have a 5% profit cap per cycle. News: restricted (5 min either side of red-folder events) on QT TWO; no news rule on QT ONE, Instant, Power and BNPL. Weekend: positions may be held, but no new trades or modifications on weekends. Platforms: widget offers MT5 and TradeLocker; help article also mentions cTrader, but it is not selectable for the current plans. US residents cannot use MT5. Restricted countries combine the help-centre list and the footer notice (Cyprus, Sudan, Russia). Contracting entity is Quant Tekel SVG (St Vincent & the Grenadines); payments are processed by QT Treasury Ltd (Cyprus); the about page says HQ London and that sister broker Quant Tekel (Pty) Ltd holds FSCA licence 53227 (the prop programme itself is not a regulated service). Futures section 'Coming Soon' — not listed. Discontinued plans (QT 2 Step, 2 Step Elite, old Instant) excluded. fee_from excludes the Buy Now Pay Later entry ticket ($2.50 upfront + activation fee after passing); its upfront price is kept as sizes_fees[].entry_fee with fee=null, matching the pay-later convention used for other firms.",
+      "segment": "multi",
+      "also_offers": [],
+      "category_basis": "Sells simulated CFD evaluations and instant accounts (forex, indices, metals, crypto) on MT5 and TradeLocker; the Futures section is marked 'Coming Soon' and not on sale.",
+      "category_source": "https://qtfunded.quanttekel.com/",
+      "founded_source": "https://qtfunded.quanttekel.com/about/",
+      "hq_country": {
+        "code": "GB",
+        "source": "https://qtfunded.quanttekel.com/about/",
+        "quote": "London, United Kingdom"
+      },
+      "max_allocation_usd": 300000,
+      "max_allocation_text": "$300K combined across all funded accounts; Instant funded accounts capped at $100K combined (counts toward the $300K)",
+      "max_allocation_source": "https://support.qtfunded.com/support/articles/5613619906463-maximum-capital-allocation",
+      "field_sources": {
+        "category": "https://qtfunded.quanttekel.com/",
+        "also_offers": "https://qtfunded.quanttekel.com/futures/",
+        "segment": "https://support.qtfunded.com/support/articles/9000000000001-qt-one",
+        "assets": "https://support.qtfunded.com/support/articles/9000000000001-qt-one",
+        "challenge_types": "https://qtfunded.quanttekel.com/",
+        "account_sizes": "https://qtfunded.quanttekel.com/",
+        "fee_currency": "https://qtfunded.quanttekel.com/",
+        "programs": "https://qtfunded.quanttekel.com/",
+        "fee_from": "https://qtfunded.quanttekel.com/",
+        "profit_split": "https://qtfunded.quanttekel.com/",
+        "profit_split_scale": "https://qtfunded.quanttekel.com/about/",
+        "max_daily_loss": "https://support.qtfunded.com/support/articles/9000000000001-qt-one",
+        "max_drawdown": "https://support.qtfunded.com/support/articles/9000000000001-qt-one",
+        "drawdown_type": "https://support.qtfunded.com/support/articles/9000000000001-qt-one",
+        "profit_target": "https://support.qtfunded.com/support/articles/9000000000001-qt-one",
+        "leverage": "https://support.qtfunded.com/support/articles/9000000000001-qt-one",
+        "platforms": "https://qtfunded.quanttekel.com/",
+        "payout_frequency": "https://support.qtfunded.com/support/articles/9000000000001-qt-one",
+        "first_payout_days": "https://support.qtfunded.com/support/articles/9000000000001-qt-one",
+        "payout_speed": "https://support.qtfunded.com/support/articles/5613700809887-performance-fee-policy",
+        "max_allocation": "https://support.qtfunded.com/support/articles/5613619906463-maximum-capital-allocation",
+        "min_trading_days": "https://support.qtfunded.com/support/articles/9000000000001-qt-one",
+        "consistency_rule": "https://qtfunded.quanttekel.com/",
+        "news_trading": "https://support.qtfunded.com/support/articles/5613561900191-news-rule",
+        "weekend_holding": "https://support.qtfunded.com/support/articles/5412723610527-can-i-hold-trades-over-the-weekend",
+        "countries_restricted": "https://support.qtfunded.com/support/articles/5295613659039-restricted-countries",
+        "founded": "https://qtfunded.quanttekel.com/about/",
+        "hq": "https://qtfunded.quanttekel.com/about/",
+        "hq_country": "https://qtfunded.quanttekel.com/about/",
+        "discount_code": "https://qtfunded.quanttekel.com/",
+        "trustpilot": "https://www.trustpilot.com/review/quanttekel.com"
+      },
+      "status": "caution",
+      "status_since": "2026-10-31",
+      "status_reason": "QT Funded’s most recent Trustpilot reviews (23–30 Oct 2026) include repeated reports of denied or long-delayed payouts, alongside accounts closed or lost during a TradeLocker-to-MT5 migration.",
+      "status_sources": [
+        {
+          "url": "https://www.trustpilot.com/review/quanttekel.com?sort=recency",
+          "date": "2026-10-31",
+          "text": "6 of the 20 most recent reviews (posted 23–30 Oct 2026) report payouts denied (e.g. 'high margin usage') or held for months. Others report Master/funded accounts denied after passing (3) and accounts read-only/missing after the MT5 migration (3+)."
+        },
+        {
+          "url": "https://www.trustpilot.com/review/quanttekel.com?sort=recency",
+          "date": "2026-10-31",
+          "text": "Trustpilot shows 3.5 from 13,369 reviews (73% 5-star, 20% 1-star), with no suspension banner (checked 31 Oct 2026)."
+        }
+      ]
+    },
+    {
+      "name": "AquaFunded",
+      "slug": "aquafunded",
+      "site": "https://www.aquafunded.com",
+      "category": "cfd",
+      "assets": [
+        "forex",
+        "indices",
+        "commodities",
+        "crypto",
+        "futures"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step",
+        "instant"
+      ],
+      "account_sizes": [
+        2500,
+        5000,
+        10000,
+        25000,
+        50000,
+        100000,
+        150000,
+        200000,
+        300000,
+        400000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "Instant Funding Standard",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 2500,
+              "fee": 30
+            },
+            {
+              "size": 5000,
+              "fee": 52
+            },
+            {
+              "size": 10000,
+              "fee": 78
+            },
+            {
+              "size": 25000,
+              "fee": 172
+            },
+            {
+              "size": 50000,
+              "fee": 278
+            },
+            {
+              "size": 100000,
+              "fee": 505
+            },
+            {
+              "size": 200000,
+              "fee": 852
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": "3%",
+          "max_drawdown": "5%",
+          "drawdown_type": "trailing",
+          "profit_split": "90% (100% with add-on)",
+          "min_trading_days": 5
+        },
+        {
+          "name": "Instant Funding Pro",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 2500,
+              "fee": 33
+            },
+            {
+              "size": 5000,
+              "fee": 60
+            },
+            {
+              "size": 10000,
+              "fee": 86
+            },
+            {
+              "size": 25000,
+              "fee": 185
+            },
+            {
+              "size": 50000,
+              "fee": 305
+            },
+            {
+              "size": 100000,
+              "fee": 560
+            },
+            {
+              "size": 200000,
+              "fee": 905
+            },
+            {
+              "size": 300000,
+              "fee": 1465
+            },
+            {
+              "size": 400000,
+              "fee": 1865
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": "3%",
+          "max_drawdown": "6%",
+          "drawdown_type": "trailing",
+          "profit_split": "90% (100% with add-on)",
+          "min_trading_days": 5
+        },
+        {
+          "name": "Instant Flex",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 119
+            },
+            {
+              "size": 10000,
+              "fee": 225
+            },
+            {
+              "size": 25000,
+              "fee": 439
+            },
+            {
+              "size": 50000,
+              "fee": 625
+            },
+            {
+              "size": 100000,
+              "fee": 999
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": "2%",
+          "max_drawdown": "4%",
+          "drawdown_type": "trailing",
+          "profit_split": "90% (100% with add-on)",
+          "min_trading_days": 7
+        },
+        {
+          "name": "1 Step Standard",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 57
+            },
+            {
+              "size": 10000,
+              "fee": 96
+            },
+            {
+              "size": 25000,
+              "fee": 194
+            },
+            {
+              "size": 50000,
+              "fee": 281
+            },
+            {
+              "size": 100000,
+              "fee": 453
+            },
+            {
+              "size": 200000,
+              "fee": 875
+            }
+          ],
+          "profit_target": "9%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "6%",
+          "drawdown_type": "trailing",
+          "profit_split": "90% (100% with add-on)",
+          "min_trading_days": 3
+        },
+        {
+          "name": "1 Step Flex",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 64
+            },
+            {
+              "size": 10000,
+              "fee": 107
+            },
+            {
+              "size": 25000,
+              "fee": 205
+            },
+            {
+              "size": 50000,
+              "fee": 300
+            },
+            {
+              "size": 100000,
+              "fee": 481
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "3% (trailing daily)",
+          "max_drawdown": "12%",
+          "drawdown_type": "static",
+          "profit_split": "90% (100% with add-on)",
+          "min_trading_days": null
+        },
+        {
+          "name": "2 Step Standard",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 30
+            },
+            {
+              "size": 10000,
+              "fee": 76
+            },
+            {
+              "size": 25000,
+              "fee": 142
+            },
+            {
+              "size": 50000,
+              "fee": 300
+            },
+            {
+              "size": 100000,
+              "fee": 472
+            },
+            {
+              "size": 200000,
+              "fee": 860
+            }
+          ],
+          "profit_target": "8% / 5%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "8%",
+          "drawdown_type": "static",
+          "profit_split": "90% (100% with add-on)",
+          "min_trading_days": 3
+        },
+        {
+          "name": "2 Step Pro",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 20
+            },
+            {
+              "size": 10000,
+              "fee": 39
+            },
+            {
+              "size": 25000,
+              "fee": 71
+            },
+            {
+              "size": 50000,
+              "fee": 143
+            },
+            {
+              "size": 100000,
+              "fee": 279
+            },
+            {
+              "size": 200000,
+              "fee": 559
+            }
+          ],
+          "profit_target": "10% / 5%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "10%",
+          "drawdown_type": "trailing",
+          "profit_split": "90% (100% with add-on)",
+          "min_trading_days": null
+        },
+        {
+          "name": "2 Step Elite",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 28
+            },
+            {
+              "size": 10000,
+              "fee": 53
+            },
+            {
+              "size": 25000,
+              "fee": 110
+            },
+            {
+              "size": 50000,
+              "fee": 238
+            },
+            {
+              "size": 100000,
+              "fee": 393
+            }
+          ],
+          "profit_target": "8% / 5%",
+          "max_daily_loss": "4%",
+          "max_drawdown": "12%",
+          "drawdown_type": "static",
+          "profit_split": "90% (100% with add-on)",
+          "min_trading_days": 3
+        },
+        {
+          "name": "Futures Flex (no daily loss limit)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 50000,
+              "fee": 168
+            },
+            {
+              "size": 100000,
+              "fee": 285
+            },
+            {
+              "size": 150000,
+              "fee": 459
+            }
+          ],
+          "profit_target": "6%",
+          "max_daily_loss": null,
+          "max_drawdown": "4%",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "90%",
+          "min_trading_days": null
+        },
+        {
+          "name": "Futures Flex (with daily loss limit)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 50000,
+              "fee": 141
+            },
+            {
+              "size": 100000,
+              "fee": 205
+            },
+            {
+              "size": 150000,
+              "fee": 393
+            }
+          ],
+          "profit_target": "6%",
+          "max_daily_loss": null,
+          "max_drawdown": "4%",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "90%",
+          "min_trading_days": null
+        },
+        {
+          "name": "Futures Daily",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 50000,
+              "fee": 121
+            },
+            {
+              "size": 100000,
+              "fee": 186
+            },
+            {
+              "size": 150000,
+              "fee": 287
+            }
+          ],
+          "profit_target": "6%",
+          "max_daily_loss": "2%",
+          "max_drawdown": "4%",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "90%",
+          "min_trading_days": null
+        },
+        {
+          "name": "Futures Standard",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 50000,
+              "fee": 172
+            },
+            {
+              "size": 100000,
+              "fee": 323
+            },
+            {
+              "size": 150000,
+              "fee": 429
+            }
+          ],
+          "profit_target": "6%",
+          "max_daily_loss": "2%",
+          "max_drawdown": "4%",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "90%",
+          "min_trading_days": null
+        },
+        {
+          "name": "Futures Instant",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 309
+            },
+            {
+              "size": 50000,
+              "fee": 487
+            },
+            {
+              "size": 100000,
+              "fee": 646
+            },
+            {
+              "size": 150000,
+              "fee": 782
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": "4%",
+          "max_drawdown": "6%",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "90%",
+          "min_trading_days": null
+        }
+      ],
+      "fee_from": 20,
+      "profit_split": "90% up to 100%",
+      "profit_split_scale": "100% Lifetime Profit Split available as a paid checkout add-on",
+      "max_daily_loss": "5%",
+      "max_drawdown": "8%",
+      "drawdown_type": "static",
+      "profit_target": "8% / 5%",
+      "leverage": "Evaluation: forex 1:100, indices 1:20, commodities 1:20, crypto 1:2; funded/instant: forex 1:50, indices 1:10, commodities 1:10, crypto 1:2",
+      "platforms": [
+        "Match-Trader",
+        "TradeLocker",
+        "MT5",
+        "cTrader",
+        "Tradovate",
+        "NinjaTrader",
+        "TradingView",
+        "Deepcharts"
+      ],
+      "payout_frequency": "CFD: bi-weekly (every 14 days); first payout eligible 14 days after the first trade on the funded account; 7-day (non-instant) or on-demand (instant) cycles available as paid add-ons. Futures: Standard/Instant on demand, Daily model daily, Flex after 5 winning days.",
+      "first_payout_days": 14,
+      "payout_speed": "24 business-hour reward guarantee (extra $1,000 if an approved payout is not processed in 24 business hours; Mon 9am-Fri 5pm Dubai time)",
+      "min_trading_days": 3,
+      "consistency_rule": "Instant Standard 15%, Instant Pro 20% (purchases from 8 Sep 2026), Instant Flex none (5% per-cycle withdrawal cap); 2 Step Pro funded 50%; 1 Step / 2 Step Standard / Elite none. Futures: Standard 40% funded, Daily 40% eval, Flex 50% challenge only, Instant 20%.",
+      "news_trading": "restricted",
+      "weekend_holding": "allowed",
+      "countries_restricted": [
+        "Cuba",
+        "Iran",
+        "Syria",
+        "Vietnam",
+        "Kenya",
+        "Albania",
+        "Algeria",
+        "North Korea",
+        "Senegal",
+        "Myanmar",
+        "Russia",
+        "Belarus",
+        "Sudan",
+        "South Sudan",
+        "Venezuela",
+        "Crimea",
+        "Donetsk",
+        "Luhansk"
+      ],
+      "founded": 2023,
+      "hq": "Dubai, United Arab Emirates",
+      "discount_code": {
+        "code": "HALLOWEEN",
+        "value": "35% off (Halloween Sale, limited time)",
+        "percent": 35,
+        "source": "https://www.aquafunded.com/",
+        "verified": "2026-10-31",
+        "expires": null
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": null,
+        "count": 1198,
+        "note": "Rating unavailable: Trustpilot says it removed fake reviews for this company (breach of its guidelines)",
+        "checked": "2026-10-31",
+        "source": "https://www.trustpilot.com/review/aquafunded.com"
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://www.aquafunded.com/",
+        "https://www.aquafunded.com/about-us",
+        "https://www.aquafunded.com/rewards",
+        "https://www.aquafunded.com/forex-rules",
+        "https://www.aquafunded.com/legal/refund-policy",
+        "https://www.aquafunded.com/refer-earn",
+        "https://crypto.aquafunded.com/",
+        "https://help.aquafunded.com/en/articles/9250906-how-do-rewards-work",
+        "https://help.aquafunded.com/en/articles/9250919-what-is-the-profit-split",
+        "https://help.aquafunded.com/en/articles/9250960-what-platforms-are-available",
+        "https://help.aquafunded.com/en/articles/9251075-what-is-the-maximum-capital-i-am-allowed",
+        "https://help.aquafunded.com/en/articles/9251044-do-you-offer-a-scaling-plan",
+        "https://help.aquafunded.com/en/articles/9251052-are-there-any-countries-we-cannot-trade-from",
+        "https://help.aquafunded.com/en/articles/14785740-is-news-trading-allowed",
+        "https://help.aquafunded.com/en/articles/11831680-can-i-hold-trades-overnight-and-over-the-weekend",
+        "https://help.aquafunded.com/en/articles/11875903-consistency-rule",
+        "https://help.aquafunded.com/en/articles/15255671-are-there-minimum-trading-days",
+        "https://help.aquafunded.com/en/articles/15281183-1-step-standard",
+        "https://help.aquafunded.com/en/articles/10476451-1-step-flex",
+        "https://help.aquafunded.com/en/articles/15281226-2-step-standard",
+        "https://help.aquafunded.com/en/articles/15281229-2-step-pro",
+        "https://help.aquafunded.com/en/articles/17709019-2-step-elite",
+        "https://help.aquafunded.com/en/articles/10476448-instant-funding-standard",
+        "https://help.aquafunded.com/en/articles/15281078-instant-funding-pro",
+        "https://help.aquafunded.com/en/articles/17066639-instant-flex",
+        "https://help.aquafunded.com/en/articles/9395678-do-you-have-a-reward-guarantee",
+        "https://help.aquafunded.com/en/articles/9250947-what-are-your-spreads-and-commissions",
+        "https://help.aquafunded.com/en/articles/10494335-reward-add-ons",
+        "https://help.aquafunded.com/en/articles/13322298-pay-after-pass-model",
+        "https://intercom.help/aquafutures-help-center/en/articles/15892633-aquafutures-platform-overview",
+        "https://intercom.help/aquafutures-help-center/en/collections/19685956-trading-platforms",
+        "https://intercom.help/aquafutures-help-center/en/articles/16941660-payout-policy",
+        "https://www.trustpilot.com/review/aquafunded.com"
+      ],
+      "notes": "List prices from the aquafunded.com homepage pricing widget (every market/model/type/size clicked, 2026-10-31); fees shown are pre-discount list prices. Promo on own site today: code HALLOWEEN = 35% off (\"Halloween Sale 35% OFF + 200% Refund\", \"Limited Time\", no expiry date stated); widget also shows multi-account discounts (2nd account -40%, 3rd -45%). Homepage says fees are \"100% refundable\"; help centre/refund policy: evaluation fee refunded with the 4th payout, not refunded if hard-breached before then. Futures Flex is sold in two variants (no daily loss limit vs a $ daily loss limit; DLL amount not captured); futures accounts use EOD drawdown and position caps (4 contracts/40 micros; Instant 1 contract/10 micros); futures payouts capped per cycle (e.g. Standard 50K $2,000 then $2,500). Futures models list no minimum trading days on the widget, so programs show null. Help centre also documents Pay After Pass ($5 evaluation + activation fee after passing), TryAqua $1/$10 and legacy models (1 Step Pro, 3 Step, AquaMan); these are not in the homepage pricing widget today and are not listed as programs. Headline rule fields describe 2 Step Standard. min_trading_days=3 (1 Step/2 Step Standard/Elite; each day needs >=0.5% profit); Instant models need 5 (Flex 7) qualifying days before a reward. News: allowed but profit from trades opened/closed within 5 min of red-folder/FOMC events is capped at 0.5% of starting balance per payout cycle (accounts from 27 Apr 2026). Other funded-account rules: max floating loss per trade (Instant Standard 1%, Pro 2%; three-strike split cuts), WaveStop on some models, 80% margin-usage cap, trades under 2 minutes may be treated as tick scalping (profit removal). Payouts: $100 minimum, 3% processing fee on all payouts, first two rewards capped at $10,000 each on $100K+ accounts. Restricted list above is full ban; Thailand, Brazil, Bulgaria, Japan, Jordan, Singapore, Malaysia, Indonesia, Philippines are limited to Instant Funding models, max $50K funded. Entities: Aqua Funded FZCO (IFZA, Dubai Silicon Oasis) and AquaFunded LTD (Saint Lucia, co. no. 2004-00597) which provides the simulated trading services. Homepage claims $8,500,000+ total rewards and 330,000+ traders. crypto.aquafunded.com (crypto prop product) shows \"Coming Soon\"; crypto here = crypto CFDs at 1:2 on the CFD accounts. CAUTION (listed with caution): Trustpilot (https://www.trustpilot.com/review/aquafunded.com, checked 2026-10-31) shows \"This company’s rating is unavailable due to a breach of our guidelines\" and \"We’ve removed a number of fake reviews for this company\"; 1,198 reviews, 40% 1-star, 398 in the last 12 months. Recent reviews (Oct 2026) repeatedly report payouts denied or reduced after funded profits (reverse/copy-trading allegations, news-rule profit removal) and payouts reported as still unpaid weeks after request. These are reviewer reports, not verified by us.",
+      "segment": "multi",
+      "also_offers": [
+        "futures"
+      ],
+      "category_basis": "Main product line is simulated CFD (forex/indices/commodities/crypto) Instant, One Step and Two Step accounts on Match-Trader, TradeLocker, MT5 and cTrader; a Futures tab (AquaFutures, Tradovate/NinjaTrader/Deepcharts) is sold through the same checkout.",
+      "category_source": "https://www.aquafunded.com/",
+      "founded_source": "https://www.aquafunded.com/about-us",
+      "hq_country": {
+        "code": "AE",
+        "source": "https://www.aquafunded.com/about-us",
+        "quote": "Dubai, United Arab Emirates"
+      },
+      "max_allocation_usd": 400000,
+      "max_allocation_text": "Up to $400K in funded accounts; scaling plan up to $4,000,000 (+25% of initial size per 12% return over 3 months)",
+      "max_allocation_source": "https://help.aquafunded.com/en/articles/9251075-what-is-the-maximum-capital-i-am-allowed",
+      "field_sources": {
+        "category": "https://www.aquafunded.com/",
+        "also_offers": "https://www.aquafunded.com/",
+        "segment": "https://help.aquafunded.com/en/articles/15281183-1-step-standard",
+        "assets": "https://help.aquafunded.com/en/articles/15281183-1-step-standard",
+        "challenge_types": "https://www.aquafunded.com/",
+        "account_sizes": "https://www.aquafunded.com/",
+        "fee_currency": "https://www.aquafunded.com/",
+        "programs": "https://www.aquafunded.com/",
+        "fee_from": "https://www.aquafunded.com/",
+        "profit_split": "https://help.aquafunded.com/en/articles/9250919-what-is-the-profit-split",
+        "profit_split_scale": "https://help.aquafunded.com/en/articles/10494335-reward-add-ons",
+        "max_daily_loss": "https://help.aquafunded.com/en/articles/15281226-2-step-standard",
+        "max_drawdown": "https://www.aquafunded.com/",
+        "drawdown_type": "https://help.aquafunded.com/en/articles/15281226-2-step-standard",
+        "profit_target": "https://www.aquafunded.com/forex-rules",
+        "leverage": "https://help.aquafunded.com/en/articles/15281183-1-step-standard",
+        "platforms": "https://help.aquafunded.com/en/articles/9250960-what-platforms-are-available",
+        "platforms_futures": "https://intercom.help/aquafutures-help-center/en/articles/15892633-aquafutures-platform-overview",
+        "platforms_tradingview": "https://intercom.help/aquafutures-help-center/en/collections/19685956-trading-platforms",
+        "payout_frequency": "https://help.aquafunded.com/en/articles/9250906-how-do-rewards-work",
+        "payout_frequency_futures": "https://intercom.help/aquafutures-help-center/en/articles/16941660-payout-policy",
+        "first_payout_days": "https://help.aquafunded.com/en/articles/9250906-how-do-rewards-work",
+        "payout_speed": "https://help.aquafunded.com/en/articles/9395678-do-you-have-a-reward-guarantee",
+        "max_allocation": "https://help.aquafunded.com/en/articles/9251075-what-is-the-maximum-capital-i-am-allowed",
+        "max_allocation_text": "https://help.aquafunded.com/en/articles/9251044-do-you-offer-a-scaling-plan",
+        "min_trading_days": "https://help.aquafunded.com/en/articles/15255671-are-there-minimum-trading-days",
+        "consistency_rule": "https://help.aquafunded.com/en/articles/11875903-consistency-rule",
+        "news_trading": "https://help.aquafunded.com/en/articles/14785740-is-news-trading-allowed",
+        "weekend_holding": "https://help.aquafunded.com/en/articles/11831680-can-i-hold-trades-overnight-and-over-the-weekend",
+        "countries_restricted": "https://help.aquafunded.com/en/articles/9251052-are-there-any-countries-we-cannot-trade-from",
+        "founded": "https://www.aquafunded.com/about-us",
+        "hq": "https://www.aquafunded.com/about-us",
+        "hq_country": "https://www.aquafunded.com/about-us",
+        "discount_code": "https://www.aquafunded.com/",
+        "trustpilot": "https://www.trustpilot.com/review/aquafunded.com"
+      },
+      "status": "caution",
+      "status_since": "2026-10-31",
+      "status_reason": "Trustpilot has suspended AquaFunded’s rating for breaching its guidelines and removed fake reviews, and 13 of the 20 most recent reviews report denied payouts or accounts closed at payout request.",
+      "status_sources": [
+        {
+          "url": "https://www.trustpilot.com/review/aquafunded.com?sort=recency",
+          "date": "2026-10-31",
+          "text": "Trustpilot shows: “This company’s rating is unavailable due to a breach of our guidelines.” and “We’ve removed a number of fake reviews for this company.” No date shown (checked 31 Oct 2026)."
+        },
+        {
+          "url": "https://www.trustpilot.com/review/aquafunded.com?sort=recency",
+          "date": "2026-10-31",
+          "text": "13 of the 20 most recent reviews (posted 6–30 Oct 2026) report payouts denied, cut or unpaid, or accounts blacklisted after a payout request (copy-trading / reverse-trading / news-rule / floating-loss reasons cited). 1-star share is 40% of 1,198 reviews."
+        }
+      ]
+    },
+    {
+      "name": "Funding Traders",
+      "slug": "funding-traders",
+      "site": "https://fundingtraders.com",
+      "category": "cfd",
+      "assets": [
+        "forex",
+        "indices",
+        "commodities",
+        "crypto"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step",
+        "instant"
+      ],
+      "account_sizes": [
+        5000,
+        10000,
+        25000,
+        50000,
+        100000,
+        200000,
+        400000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "2-Step Pro10",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 90
+            },
+            {
+              "size": 10000,
+              "fee": 150
+            },
+            {
+              "size": 25000,
+              "fee": 290
+            },
+            {
+              "size": 50000,
+              "fee": 430
+            },
+            {
+              "size": 100000,
+              "fee": 750
+            },
+            {
+              "size": 200000,
+              "fee": 1250
+            }
+          ],
+          "profit_target": "10% / 5%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "10%",
+          "drawdown_type": "static",
+          "profit_split": "80% (90% or 100% with add-on)",
+          "min_trading_days": 4
+        },
+        {
+          "name": "2-Step Pro6",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 49
+            },
+            {
+              "size": 10000,
+              "fee": 79
+            },
+            {
+              "size": 25000,
+              "fee": 159
+            },
+            {
+              "size": 50000,
+              "fee": 259
+            },
+            {
+              "size": 100000,
+              "fee": 459
+            },
+            {
+              "size": 200000,
+              "fee": 799
+            }
+          ],
+          "profit_target": "6% / 6%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "6%",
+          "drawdown_type": "static",
+          "profit_split": "80% (90% or 100% with add-on)",
+          "min_trading_days": 4
+        },
+        {
+          "name": "1-Step Pro",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 59
+            },
+            {
+              "size": 10000,
+              "fee": 109
+            },
+            {
+              "size": 25000,
+              "fee": 229
+            },
+            {
+              "size": 50000,
+              "fee": 329
+            },
+            {
+              "size": 100000,
+              "fee": 589
+            },
+            {
+              "size": 200000,
+              "fee": 999
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "10%",
+          "drawdown_type": "trailing",
+          "profit_split": "90% (100% with add-on)",
+          "min_trading_days": 2
+        },
+        {
+          "name": "Instant Funding",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 10000,
+              "fee": 179
+            },
+            {
+              "size": 25000,
+              "fee": 319
+            },
+            {
+              "size": 50000,
+              "fee": 479
+            },
+            {
+              "size": 100000,
+              "fee": 749
+            },
+            {
+              "size": 200000,
+              "fee": 1349
+            },
+            {
+              "size": 400000,
+              "fee": 2349
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": "3%",
+          "max_drawdown": "6%",
+          "drawdown_type": "trailing",
+          "profit_split": "90% (100% with add-on)",
+          "min_trading_days": null
+        },
+        {
+          "name": "2-Step Day & Swing",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": null
+            },
+            {
+              "size": 10000,
+              "fee": null
+            },
+            {
+              "size": 25000,
+              "fee": null
+            },
+            {
+              "size": 50000,
+              "fee": null
+            },
+            {
+              "size": 100000,
+              "fee": null
+            },
+            {
+              "size": 200000,
+              "fee": null
+            }
+          ],
+          "profit_target": "10% / 5%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "10%",
+          "drawdown_type": "static",
+          "profit_split": "Day: 80% (90%/100% with add-ons); Swing: 70% -> 80% -> 90% by payout",
+          "min_trading_days": null
+        }
+      ],
+      "fee_from": 49,
+      "profit_split": "80% up to 100%",
+      "profit_split_scale": "2-Step Swing: 70% (1st payout) -> 80% (2nd) -> 90% (3rd onward); other accounts raise split only via checkout add-ons (90%/100%)",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_target": "10% / 5%",
+      "leverage": "Up to 1:50: FX majors 1:50; EURGBP/GBPJPY and FX minors/exotics 1:30; indices 1:15-1:40 (US100 1:30, US30 1:40, GER30 1:30, JPN225 1:40, US500 1:25, UK100 1:20); metals 1:20; oil 1:10; other commodities 1:1; BTC 1:10, ETH/SOL/XRP 1:5, other crypto 1:1",
+      "platforms": [
+        "MT5",
+        "TradeLocker"
+      ],
+      "payout_frequency": "2-Step Pro6/Pro10, 2-Step Day/Swing and 1-Step Pro: first payout 21 days after the first funded trade, then every 21 days (14-day add-on). Instant Funding: on-demand once eligible per the Instant help article (accounts bought on/after 8 Oct 2026); homepage table says 7 days and homepage FAQ / add-ons article say every 14 days.",
+      "first_payout_days": 21,
+      "payout_speed": "24-48 hours, weekends excluded (Rise or USDT); Payout Guarantee: processed within 2 business days or $500 cash + $500 account credit",
+      "min_trading_days": 4,
+      "consistency_rule": "1-Step Pro funded: largest day <= 50% of total profit; Instant Funding: <= 15%; 2-Step Pro6/Pro10: none (exceeding delays payout, not a breach)",
+      "news_trading": "restricted",
+      "weekend_holding": "allowed",
+      "countries_restricted": [
+        "Afghanistan",
+        "Kazakhstan",
+        "Mongolia",
+        "Morocco",
+        "Poland",
+        "Taiwan",
+        "Ukraine",
+        "Venezuela",
+        "Vietnam",
+        "Central African Republic",
+        "North Korea",
+        "Congo",
+        "Zaire",
+        "Iran",
+        "Iraq",
+        "Libya",
+        "Mali",
+        "Saipan",
+        "Somalia",
+        "South Sudan",
+        "Yemen",
+        "Ontario (Canada)",
+        "Myanmar",
+        "Russian Federation"
+      ],
+      "founded": 2023,
+      "hq": "Miami Beach, United States",
+      "discount_code": {
+        "code": "HALLOWIN",
+        "value": "70% off (site-wide banner, limited time)",
+        "percent": 70,
+        "source": "https://fundingtraders.com/",
+        "verified": "2026-10-31",
+        "expires": null,
+        "also": [
+          {
+            "code": "TRYFT",
+            "value": "50% off your first funded challenge",
+            "percent": 50
+          },
+          {
+            "code": "HALLOWEEN",
+            "value": "50% off + free matching account (BOGO), Oct 26-31, 2026",
+            "percent": 50
+          }
+        ]
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": null,
+        "count": 3283,
+        "note": "Rating unavailable: Trustpilot says it removed fake reviews for this company (breach of its guidelines)",
+        "checked": "2026-10-31",
+        "source": "https://www.trustpilot.com/review/fundingtraders.com"
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://fundingtraders.com/",
+        "https://app.fundingtraders.com/login",
+        "https://fundingtraders.com/terms",
+        "https://fundingtraders.com/refund-policy",
+        "https://fundingtraders.com/prop-trading-partners",
+        "https://fundingtraders.com/prop-trading-payouts",
+        "https://fundingtraders.com/prop-trading-firm",
+        "https://fundingtraders.com/help/en/articles/13399206-2-step-pro",
+        "https://fundingtraders.com/help/en/articles/13615032-1-step-pro",
+        "https://fundingtraders.com/help/en/articles/17459915-instant-funding",
+        "https://fundingtraders.com/help/en/articles/17589312-2-step-day-swing",
+        "https://fundingtraders.com/help/en/articles/16762255-try-out-account",
+        "https://fundingtraders.com/help/en/articles/11936660-reset-account-feature",
+        "https://fundingtraders.com/help/en/articles/17333842-all-add-ons",
+        "https://fundingtraders.com/help/en/articles/12838492-general-trading-guidelines",
+        "https://fundingtraders.com/help/en/articles/11927126-risk-management-at-fundingtraders",
+        "https://fundingtraders.com/help/en/articles/13224028-payout-guarantee",
+        "https://fundingtraders.com/help/en/articles/13134581-promotions",
+        "https://www.trustpilot.com/review/fundingtraders.com"
+      ],
+      "notes": "List prices from the fundingtraders.com homepage challenge table (all four tabs present in page HTML; re-checked 2026-10-31, unchanged). The homepage shows each price struck through next to a 50%-off price, which matches the posted first-challenge code TRYFT (50% off first challenge); a site-wide banner (homepage + app login) advertises code HALLOWIN = 70% OFF ('limited time', no end date shown), and the help-centre Promotions article lists code HALLOWEEN (50% off + free matching account + all add-ons, valid Oct 26-31, 2026). 2-Step Day & Swing is documented in the help centre as a newly launched 2-Step variant (5K-200K, MT5/TradeLocker) but is not priced on the homepage table, so its fees are null. A free $1,000 'Try Out' 1-Step Pro account (MT5 only, new users via tryout.fundingtraders.com) exists and is excluded from fee_from. Rule conflicts on the firm's own pages: homepage table shows 4 min trading days for 1-Step Pro but the 1-Step Pro help article says 2 (used 2); Instant payout schedule is '7 Days' on the homepage table, 'every 14 days' in the homepage FAQ/add-ons article and 'On-Demand' in the Instant help article; General Trading Guidelines (Mar 2026) say Instant accounts cannot hold over the weekend while the newer Instant article (Oct 2026) says they can; homepage FAQ says the fee is refunded with the first payout while Terms s.10.1 and program articles say with the second payout (Instant: 200% refund bonus). Instant max loss trails until +3% then locks at initial balance; 1-Step Pro max loss trails from highest balance. News: challenge phases unrestricted; funded Pro accounts cap news-influenced profit at 30% (trades opened/held/closed within 5 min of red-folder news; 5h+ holds exempt); Instant: no opening/closing within the 10-minute window (hard breach). weekend_holding 'allowed' for Pro/Swing/Instant (current articles); 2-Step Day auto-closes non-crypto positions at 16:55 NY daily and before the Friday close. HQ: footer lists FT US Inc (901 Pennsylvania Ave, Miami Beach, FL, US) and Funding Traders Group Ltd (Saint Lucia, Company No. 2025-00298); Trustpilot company profile shows Dubai, U.A.E. founded=2023 from the app login page ('2023 Established'). Restricted-country list from the site footer, although the live payout tracker shows payouts to traders listed in Vietnam and Morocco. Homepage claims 53,000+ accounts funded; app login claims over $8M paid. CAUTION (payout complaints): Trustpilot (https://www.trustpilot.com/review/fundingtraders.com, checked 2026-10-31) shows 'This company's rating is unavailable due to a breach of our guidelines' and 'We've removed a number of fake reviews for this company' (3,283 reviews; distribution 68% 5-star / 24% 1-star). Recent reviews (Oct 2026) include complaints of second payouts delayed over a week with slow risk-team replies, Instant accounts terminated when a payout was requested (cited news-trading breaches on BTCUSD), terminations for exceeding the 1% floating-risk limit by small amounts, a disputed daily-drawdown reset on an overnight hold, and a dispute over whether holding through news was allowed; other recent reviews report payouts received within 24 hours. Listed with caution; no regulator action seen on the firm's site.",
+      "segment": "forex",
+      "also_offers": [],
+      "category_basis": "Sells simulated forex/CFD evaluations and instant accounts on MetaTrader 5 and TradeLocker (forex, indices, metals, oil, crypto CFDs); no futures or exchange accounts.",
+      "category_source": "https://fundingtraders.com/",
+      "founded_source": "https://app.fundingtraders.com/login",
+      "hq_country": {
+        "code": "US",
+        "source": "https://fundingtraders.com/",
+        "quote": "Miami Beach, United States"
+      },
+      "max_allocation_usd": 400000,
+      "max_allocation_text": "Up to $400K in funding (largest Instant Funding account $400K); no scaling plan published",
+      "max_allocation_source": "https://fundingtraders.com/",
+      "field_sources": {
+        "category": "https://fundingtraders.com/",
+        "also_offers": "https://fundingtraders.com/",
+        "segment": "https://fundingtraders.com/",
+        "assets": "https://fundingtraders.com/help/en/articles/13399206-2-step-pro",
+        "challenge_types": "https://fundingtraders.com/",
+        "account_sizes": "https://fundingtraders.com/",
+        "fee_currency": "https://fundingtraders.com/",
+        "programs": "https://fundingtraders.com/",
+        "fee_from": "https://fundingtraders.com/",
+        "profit_split": "https://fundingtraders.com/",
+        "profit_split_scale": "https://fundingtraders.com/help/en/articles/17589312-2-step-day-swing",
+        "max_daily_loss": "https://fundingtraders.com/",
+        "max_drawdown": "https://fundingtraders.com/",
+        "drawdown_type": "https://fundingtraders.com/help/en/articles/13399206-2-step-pro",
+        "profit_target": "https://fundingtraders.com/",
+        "leverage": "https://fundingtraders.com/help/en/articles/13399206-2-step-pro",
+        "platforms": "https://fundingtraders.com/",
+        "payout_frequency": "https://fundingtraders.com/help/en/articles/13399206-2-step-pro",
+        "first_payout_days": "https://fundingtraders.com/help/en/articles/13399206-2-step-pro",
+        "payout_speed": "https://fundingtraders.com/help/en/articles/13224028-payout-guarantee",
+        "max_allocation": "https://fundingtraders.com/",
+        "max_allocation_text": "https://fundingtraders.com/",
+        "min_trading_days": "https://fundingtraders.com/help/en/articles/13399206-2-step-pro",
+        "consistency_rule": "https://fundingtraders.com/",
+        "news_trading": "https://fundingtraders.com/",
+        "weekend_holding": "https://fundingtraders.com/help/en/articles/12838492-general-trading-guidelines",
+        "countries_restricted": "https://fundingtraders.com/",
+        "founded": "https://app.fundingtraders.com/login",
+        "hq": "https://fundingtraders.com/",
+        "hq_country": "https://fundingtraders.com/",
+        "discount_code": "https://fundingtraders.com/",
+        "trustpilot": "https://www.trustpilot.com/review/fundingtraders.com"
+      },
+      "status": "caution",
+      "status_since": "2026-10-31",
+      "status_reason": "Trustpilot has suspended Funding Traders’ rating for breaching its guidelines and removed fake reviews, and half of the 20 most recent reviews report denied or delayed payouts or accounts terminated at payout request.",
+      "status_sources": [
+        {
+          "url": "https://www.trustpilot.com/review/fundingtraders.com?sort=recency",
+          "date": "2026-10-31",
+          "text": "Trustpilot shows: “This company’s rating is unavailable due to a breach of our guidelines.” and “We’ve removed a number of fake reviews for this company.” No date shown (checked 31 Oct 2026)."
+        },
+        {
+          "url": "https://www.trustpilot.com/review/fundingtraders.com?sort=recency",
+          "date": "2026-10-31",
+          "text": "10 of the 20 most recent reviews (posted 12–31 Oct 2026, company replies excluded) report payouts denied, delayed or withheld, or accounts terminated after a payout request. One reviewer lists $18,137.74 denied across three accounts. 1-star share is 24% of 3,283 reviews."
+        }
+      ]
+    },
+    {
+      "name": "Phidias Propfirm",
+      "slug": "phidias-propfirm",
+      "site": "https://phidiaspropfirm.com",
+      "category": "futures",
+      "assets": [
+        "futures"
+      ],
+      "challenge_types": [
+        "1-step"
+      ],
+      "account_sizes": [
+        25000,
+        50000,
+        100000,
+        150000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "Express to Live (E2L)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 25000,
+              "fee": 88,
+              "fee_one_time": 277
+            },
+            {
+              "size": 50000,
+              "fee": 278,
+              "fee_one_time": 723
+            },
+            {
+              "size": 100000,
+              "fee": 318,
+              "fee_one_time": 900
+            },
+            {
+              "size": 150000,
+              "fee": 398,
+              "fee_one_time": 1125
+            }
+          ],
+          "profit_target": "$1,500 / $2,500 / $3,500 / $4,500",
+          "max_daily_loss": "none",
+          "max_drawdown": "$500 / $650 / $800 / $1,000",
+          "drawdown_type": "static",
+          "profit_split": "80% (fixed bonus payout on Switch to Live, then 80% on LIVE)",
+          "min_trading_days": 0
+        },
+        {
+          "name": "Fundamental",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 50000,
+              "fee": 164,
+              "fee_one_time": 580
+            },
+            {
+              "size": 100000,
+              "fee": 273,
+              "fee_one_time": 723
+            },
+            {
+              "size": 150000,
+              "fee": 420,
+              "fee_one_time": 863
+            }
+          ],
+          "profit_target": "$4,000 / $6,000 / $9,000",
+          "max_daily_loss": "none",
+          "max_drawdown": "$2,500 / $3,000 / $4,500",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "80%",
+          "min_trading_days": 3
+        },
+        {
+          "name": "Premium",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 50000,
+              "fee": 329,
+              "fee_one_time": 723
+            },
+            {
+              "size": 100000,
+              "fee": 411,
+              "fee_one_time": 900
+            },
+            {
+              "size": 150000,
+              "fee": 570,
+              "fee_one_time": 1123
+            }
+          ],
+          "profit_target": "$4,000 / $6,000 / $9,000",
+          "max_daily_loss": "none",
+          "max_drawdown": "$2,500 / $3,000 / $4,500",
+          "drawdown_type": "EOD trailing",
+          "profit_split": "75% rising to 100% (from 5th payout)",
+          "min_trading_days": 1
+        }
+      ],
+      "fee_from": 88,
+      "profit_split": "75% up to 100%",
+      "profit_split_scale": "Express to Live and Fundamental: fixed 80%. Premium: 75% (payout 1), 80%, 85%, 90%, then 100% from payout 5 onward.",
+      "max_daily_loss": "none (no daily loss limit on any account type)",
+      "max_drawdown": "$500-$1,000 static (Express to Live); $2,500-$4,500 EOD trailing (Fundamental/Premium)",
+      "drawdown_type": "static (Express to Live); EOD trailing (Fundamental/Premium)",
+      "profit_target": "$1,500-$4,500 (Express to Live); $4,000-$9,000 (Fundamental/Premium)",
+      "leverage": null,
+      "platforms": [
+        "Rithmic",
+        "R Trader Pro",
+        "Tradovate",
+        "NinjaTrader",
+        "TradingView",
+        "DeepCharts",
+        "Quantower",
+        "ATAS",
+        "Sierra Chart",
+        "Bookmap",
+        "MotiveWave"
+      ],
+      "payout_frequency": "Express to Live: one fixed bonus payout when the CASH-account target is hit, then conversion to LIVE (no minimum days). Fundamental: every 10 trading days. Premium: every 5 trading days. LIVE accounts: daily, no maximum ($500 minimum). Payouts go to the Phidias Wallet, withdrawn via Rise.",
+      "first_payout_days": 1,
+      "payout_speed": "90% processed under 30 minutes; always within 24h",
+      "min_trading_days": 0,
+      "consistency_rule": "None in evaluation. Fundamental/Premium funded CASH accounts: no single day may exceed 30% of total profit (min. 4-day calculation). Express to Live: none.",
+      "news_trading": "allowed",
+      "weekend_holding": "restricted",
+      "countries_restricted": [
+        "Afghanistan",
+        "Albania",
+        "Algeria",
+        "Angola",
+        "Belarus",
+        "Bosnia and Herzegovina",
+        "Botswana",
+        "Bulgaria",
+        "Burkina Faso",
+        "Burundi",
+        "Central African Republic",
+        "Croatia",
+        "Cuba",
+        "Dem. Rep. Congo",
+        "Ecuador",
+        "Ethiopia",
+        "Guyana",
+        "Haiti",
+        "Indonesia",
+        "Iran",
+        "Iraq",
+        "Jamaica",
+        "Kenya",
+        "Kosovo",
+        "Laos",
+        "Lebanon",
+        "Libya",
+        "Macedonia",
+        "Mali",
+        "Malta",
+        "Mauritius",
+        "Montenegro",
+        "Mozambique",
+        "Myanmar (Burma)",
+        "Namibia",
+        "Nicaragua",
+        "Nigeria",
+        "North Korea (DPRK)",
+        "Pakistan",
+        "Papua New Guinea",
+        "Philippines",
+        "Romania",
+        "Russia",
+        "Senegal",
+        "Serbia",
+        "Slovenia",
+        "Somalia",
+        "South Africa",
+        "South Sudan",
+        "Sri Lanka",
+        "Sudan/Darfur",
+        "Syria",
+        "Tanzania",
+        "Trinidad and Tobago",
+        "Tunisia",
+        "Crimea (Ukraine)",
+        "Venezuela",
+        "Yemen",
+        "Zimbabwe"
+      ],
+      "founded": null,
+      "hq": "Gibraltar",
+      "discount_code": {
+        "code": "TREAT90",
+        "value": "90% off your first month on Premium & Fundamental evaluations (Halloween)",
+        "percent": 90,
+        "source": "https://phidiaspropfirm.com/",
+        "verified": "2026-10-31",
+        "expires": "2026-11-01",
+        "also": [
+          {
+            "code": "EQUINOX",
+            "value": "80% off one-time payment (shown in member configurator)",
+            "percent": 80
+          }
+        ]
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": null,
+        "count": 337,
+        "note": "Rating unavailable: Trustpilot says it removed fake reviews for this company (breach of its guidelines)",
+        "checked": "2026-10-31",
+        "source": "https://www.trustpilot.com/review/phidiaspropfirm.com"
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://phidiaspropfirm.com/",
+        "https://phidiaspropfirm.com/accounts",
+        "https://phidiaspropfirm.com/rules",
+        "https://phidiaspropfirm.com/tou",
+        "https://phidiaspropfirm.com/about-us",
+        "https://phidiaspropfirm.com/affiliate-program",
+        "https://helpcenter.phidiaspropfirm.com/help",
+        "https://helpcenter.phidiaspropfirm.com/faq?locale=en",
+        "https://member.phidiaspropfirm.com/configurator",
+        "https://www.trustpilot.com/review/phidiaspropfirm.com"
+      ],
+      "notes": "Fees are LIST prices from window.phidiasPromo on /accounts (checked 2026-10-31). 'fee' = the evaluation price, which the rules/FAQ/TOU describe as a monthly subscription renewing every 30 days until passed or cancelled (the /accounts widget labels it 'one-time eval fee', the member configurator labels it 'Monthly'); an activation fee of $83-$169 applies on pass. 'fee_one_time' = one-time-payment option (no activation fee, no recurring billing). Rules page says E2L has 'no subscription' yet the configurator still offers an E2L monthly option with activation fee. 10K Drawdown Challenge is a monthly profit competition (prizes paid to Phidias Wallet), not a funded-account path; it sets fee_from ($66). Cheapest funded-path entry: E2L 25K at $88. Promos on own site today: banner code TREAT90 = 90% off the first month on Premium & Fundamental evaluations until Sunday 2026-11-01 (promo config also gives 50% off E2L monthly and 75-80% off one-time payment); rules page: 10K Challenge $30 with code PHIDIAS; member configurator displays code EQUINOX (80% off one-time). Homepage 'starting at $55' is a promo price. first_payout_days=1 from the /accounts comparison ('Days to Payout (Funded)': E2L 1, Fundamental 10, Premium 5). min_trading_days=0 is E2L (rules: 'None'; Fundamental 3, Premium 1). Weekend/overnight holds allowed only on Premium (and the 10K Challenge). Fully automated/HFT trading banned (semi-automated allowed). LIVE transition for Fundamental/Premium is discretionary (5 payouts or $100K cumulative profit). Operated by Phidias Propfirm LTD, registered in Gibraltar; Gibraltar law. Founded year not stated (homepage only says '3 Yrs' / '3 years operating'). CAUTION: Trustpilot has suspended this company's rating (breach of guidelines; fake reviews removed); 337 reviews, 34% 1-star. Recent reviews describe account access blocked/banned right after a first payout request (Oct 27 and Sep 15, 2026), a disputed liquidation (Oct 24, 2026), and paid evaluations deactivated on forced LIVE conversion with refund refused (Oct 18, 2026). These are unverified user reports and contrast with the site's 'zero denied payouts' claim. See https://www.trustpilot.com/review/phidiaspropfirm.com The 10K Drawdown Challenge (list fee 66) is a monthly profit contest, not a path to a funded account, so it is kept under other_products and excluded from programs/fee_from.",
+      "segment": "futures",
+      "also_offers": [],
+      "category_basis": "Sells simulated CME/CBOT/NYMEX/COMEX and Eurex futures evaluations on Rithmic, Tradovate/NinjaTrader and DeepCharts (dxFeed), with LIVE accounts cleared through Dorman Trading.",
+      "category_source": "https://phidiaspropfirm.com/rules",
+      "hq_country": {
+        "code": "GI",
+        "source": "https://phidiaspropfirm.com/tou",
+        "quote": "Gibraltar"
+      },
+      "max_allocation_text": "Up to 15 funded accounts at once: 5 CASH Fundamental + 5 CASH Premium + 5 Express to Live (CASH/LIVE). 150K Fundamental/Premium CASH accounts count double (max 4: 2 Fund / 2 Premium). No single USD cap stated.",
+      "max_allocation_source": "https://phidiaspropfirm.com/rules",
+      "field_sources": {
+        "category": "https://phidiaspropfirm.com/rules",
+        "segment": "https://phidiaspropfirm.com/rules",
+        "assets": "https://phidiaspropfirm.com/rules",
+        "challenge_types": "https://phidiaspropfirm.com/accounts",
+        "account_sizes": "https://phidiaspropfirm.com/accounts",
+        "fee_currency": "https://phidiaspropfirm.com/accounts",
+        "programs": "https://phidiaspropfirm.com/accounts",
+        "fee_from": "https://phidiaspropfirm.com/accounts",
+        "profit_split": "https://phidiaspropfirm.com/rules",
+        "profit_split_scale": "https://phidiaspropfirm.com/rules",
+        "max_daily_loss": "https://phidiaspropfirm.com/rules",
+        "max_drawdown": "https://phidiaspropfirm.com/rules",
+        "drawdown_type": "https://phidiaspropfirm.com/rules",
+        "profit_target": "https://phidiaspropfirm.com/rules",
+        "platforms": "https://helpcenter.phidiaspropfirm.com/help",
+        "payout_frequency": "https://phidiaspropfirm.com/rules",
+        "first_payout_days": "https://phidiaspropfirm.com/accounts",
+        "payout_speed": "https://phidiaspropfirm.com/accounts",
+        "max_allocation_text": "https://phidiaspropfirm.com/rules",
+        "min_trading_days": "https://phidiaspropfirm.com/rules",
+        "consistency_rule": "https://phidiaspropfirm.com/rules",
+        "news_trading": "https://phidiaspropfirm.com/rules",
+        "weekend_holding": "https://phidiaspropfirm.com/rules",
+        "countries_restricted": "https://phidiaspropfirm.com/rules",
+        "hq": "https://phidiaspropfirm.com/tou",
+        "hq_country": "https://phidiaspropfirm.com/tou",
+        "discount_code": "https://phidiaspropfirm.com/",
+        "trustpilot": "https://www.trustpilot.com/review/phidiaspropfirm.com"
+      },
+      "other_products": [
+        {
+          "name": "10K Drawdown Challenge (monthly competition)",
+          "kind": "monthly trading competition (not a funded-account evaluation)",
+          "sizes_fees": [
+            {
+              "size": 10000,
+              "fee": 66
+            }
+          ],
+          "source": "https://phidiaspropfirm.com/accounts"
+        }
+      ],
+      "status": "caution",
+      "status_since": "2026-10-31",
+      "status_reason": "Trustpilot has suspended Phidias Propfirm’s rating for breaching its guidelines and removed fake reviews, and recent reviewers report accounts blocked or banned right after their first payout request.",
+      "status_sources": [
+        {
+          "url": "https://www.trustpilot.com/review/www.phidiaspropfirm.com?sort=recency",
+          "date": "2026-10-31",
+          "text": "Trustpilot shows: “This company’s rating is unavailable due to a breach of our guidelines.” and “We’ve removed a number of fake reviews for this company.” No date shown (checked 31 Oct 2026)."
+        },
+        {
+          "url": "https://www.trustpilot.com/review/www.phidiaspropfirm.com?sort=recency",
+          "date": "2026-10-31",
+          "text": "4 of the 20 most recent reviews (posted 6 Aug–28 Oct 2026) report payouts denied or accounts blocked/banned right after a payout request. Another (18 Oct) reports a forced move to LIVE that closed 9 paid evaluations. 1-star share is 34% of 337 reviews. Reviews are low-volume (20 reviews in about 12 weeks)."
+        }
+      ]
+    },
+    {
+      "name": "Audacity Capital",
+      "slug": "audacity-capital",
+      "site": "https://audacity.capital",
+      "category": "cfd",
+      "assets": [
+        "forex",
+        "commodities",
+        "indices",
+        "crypto"
+      ],
+      "challenge_types": [
+        "2-step",
+        "1-step",
+        "instant"
+      ],
+      "account_sizes": [
+        5000,
+        10000,
+        25000,
+        50000,
+        100000,
+        200000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "Ability Challenge (2 steps)",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 49
+            },
+            {
+              "size": 10000,
+              "fee": 79
+            },
+            {
+              "size": 25000,
+              "fee": 195
+            },
+            {
+              "size": 50000,
+              "fee": 329
+            },
+            {
+              "size": 100000,
+              "fee": 549
+            },
+            {
+              "size": 200000,
+              "fee": 1049
+            }
+          ],
+          "profit_target": "10% / 5%",
+          "max_daily_loss": "7.5% (Challenge/Verification); 5% on live account",
+          "max_drawdown": "15% (Challenge/Verification); 10% on live account",
+          "drawdown_type": "static",
+          "profit_split": "up to 90%",
+          "min_trading_days": 4
+        },
+        {
+          "name": "Ability One (1 step)",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 69
+            },
+            {
+              "size": 10000,
+              "fee": 99
+            },
+            {
+              "size": 25000,
+              "fee": 249
+            },
+            {
+              "size": 50000,
+              "fee": 399
+            },
+            {
+              "size": 100000,
+              "fee": 699
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "6%",
+          "drawdown_type": "static",
+          "profit_split": "up to 90%",
+          "min_trading_days": 3
+        },
+        {
+          "name": "FTP (Instant Funding)",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 119
+            },
+            {
+              "size": 10000,
+              "fee": 279
+            },
+            {
+              "size": 25000,
+              "fee": 449
+            },
+            {
+              "size": 50000,
+              "fee": 1299
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": "5% (trailing)",
+          "max_drawdown": "10%",
+          "drawdown_type": "static max; trailing daily",
+          "profit_split": "up to 80%",
+          "min_trading_days": 5
+        }
+      ],
+      "fee_from": 49,
+      "profit_split": "up to 90%",
+      "profit_split_scale": null,
+      "max_daily_loss": "7.5%",
+      "max_drawdown": "15%",
+      "drawdown_type": "static",
+      "profit_target": "10% / 5%",
+      "leverage": null,
+      "platforms": [
+        "MT5",
+        "DXtrade"
+      ],
+      "payout_frequency": "Bi-weekly (every 14 days) on funded/live accounts",
+      "first_payout_days": 14,
+      "payout_speed": "same day upon approval (paid to dashboard wallet)",
+      "min_trading_days": 4,
+      "consistency_rule": "None (removed)",
+      "news_trading": "allowed",
+      "weekend_holding": "allowed",
+      "countries_restricted": [
+        "Syria",
+        "Iran",
+        "Venezuela",
+        "North Korea"
+      ],
+      "founded": 2012,
+      "hq": "London, United Kingdom",
+      "discount_code": null,
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": null,
+        "count": 1059,
+        "note": "Rating unavailable: Trustpilot says it removed fake reviews for this company (breach of its guidelines) (audacitycapital.co.uk profile; audacity.capital profile 291 reviews, also suspended)",
+        "checked": "2026-10-31",
+        "source": "https://www.trustpilot.com/review/audacitycapital.co.uk"
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://audacity.capital/",
+        "https://audacity.capital/two-step-prop-firm-ability-challenge/",
+        "https://audacity.capital/one-step-prop-firm-ability-one/",
+        "https://audacity.capital/instant-funding-prop-firm/",
+        "https://audacity.capital/funded-trader-program/",
+        "https://audacity.capital/about/",
+        "https://audacity.capital/affiliates-and-partners/",
+        "https://audacity.capital/trading-assets/",
+        "https://www.trustpilot.com/review/audacitycapital.co.uk"
+      ],
+      "notes": "Official site moved to https://audacity.capital (audacitycapital.co.uk now only hosts the trader dashboard trade.audacitycapital.co.uk). List prices from homepage widget (USD toggle); live promos: HALLOWEEN 35% off Ability 2 Steps, '14th' 14% off all programs. Ability One widget only listed sizes to $100K though page says 'purchase up to $200K'. FTP page states 5% trailing daily loss and 10% static max; widget shows 'Profit Target 10%' for FTP (likely scaling target: 'double capital every 10% gain'). Ability Challenge drawdowns are 7.5%/15% during evaluation then 5%/10% on the live account. Legal: AudaCity Global LTD licensed by Union of Comoros (Anjouan) brokerage licence; AudaCity International FZCO (Dubai) payment facilitator; UK office 25 Cabot Square London; Propmetry Ltd (Cyprus) payment partner — HQ recorded as London per 'London-born' about page. Restricted list is 'including but not limited to' (partial). Leverage not published. Payout claim on homepage: 'Over $250M paid out' (since 2012). TRUSTPILOT WARNING: trustpilot.com/review/audacitycapital.co.uk shows 'rating unavailable due to a breach of our guidelines' / 'removed a number of fake reviews' (1,059 reviews, only 38 in last 12 months) — rating left null; flag.",
+      "segment": "forex",
+      "also_offers": [],
+      "category_basis": "Sells forex/metals/indices/crypto evaluation and instant-funded accounts on MT5 and DXtrade.",
+      "category_source": "https://audacity.capital/",
+      "founded_source": "https://audacity.capital/",
+      "hq_country": {
+        "code": "GB",
+        "source": "https://audacity.capital/about/",
+        "quote": "London, United Kingdom"
+      },
+      "max_allocation_text": "Purchase up to $200K; scaling 'over $2M' (homepage: 'Up to 2 Million Trading Funds')",
+      "max_allocation_source": "https://audacity.capital/",
+      "field_sources": {
+        "category": "https://audacity.capital/",
+        "assets": "https://audacity.capital/trading-assets/",
+        "challenge_types": "https://audacity.capital/funded-trader-program/",
+        "account_sizes": "https://audacity.capital/",
+        "programs": "https://audacity.capital/",
+        "fee_from": "https://audacity.capital/",
+        "profit_split": "https://audacity.capital/",
+        "max_daily_loss": "https://audacity.capital/",
+        "max_drawdown": "https://audacity.capital/",
+        "drawdown_type": "https://audacity.capital/funded-trader-program/",
+        "profit_target": "https://audacity.capital/",
+        "platforms": "https://audacity.capital/one-step-prop-firm-ability-one/",
+        "payout_frequency": "https://audacity.capital/",
+        "first_payout_days": "https://audacity.capital/",
+        "payout_speed": "https://audacity.capital/",
+        "max_allocation_text": "https://audacity.capital/",
+        "min_trading_days": "https://audacity.capital/",
+        "consistency_rule": "https://audacity.capital/",
+        "news_trading": "https://audacity.capital/",
+        "weekend_holding": "https://audacity.capital/",
+        "countries_restricted": "https://audacity.capital/",
+        "founded": "https://audacity.capital/",
+        "hq": "https://audacity.capital/about/",
+        "hq_country": "https://audacity.capital/about/",
+        "discount_code": "https://audacity.capital/"
+      },
+      "status": "caution",
+      "status_since": "2026-10-31",
+      "status_reason": "Trustpilot has suspended the ratings on both AudaCity Capital profiles for breaching its guidelines and removed fake reviews, and 9 of the 20 most recent reviews on the active audacity.capital profile report payouts refused, voided or stuck in review.",
+      "status_sources": [
+        {
+          "url": "https://www.trustpilot.com/review/audacity.capital?sort=recency",
+          "date": "2026-10-31",
+          "text": "Trustpilot shows on audacity.capital (291 reviews): “This company’s rating is unavailable due to a breach of our guidelines.” and “We’ve removed a number of fake reviews for this company.” No date shown (checked 31 Oct 2026)."
+        },
+        {
+          "url": "https://www.trustpilot.com/review/www.audacitycapital.co.uk?sort=recency",
+          "date": "2026-10-31",
+          "text": "Trustpilot shows the same banner on www.audacitycapital.co.uk (1,059 reviews): “This company’s rating is unavailable due to a breach of our guidelines.” / “We’ve removed a number of fake reviews for this company.” (checked 31 Oct 2026)."
+        },
+        {
+          "url": "https://www.trustpilot.com/review/audacity.capital?sort=recency",
+          "date": "2026-10-31",
+          "text": "audacity.capital: 9 of the 20 most recent reviews (posted 11–30 Oct 2026) report payouts refused, voided after review, cut, or 'under review' past the stated window. 1-star share is 40%. One reviewer asks whether the firm is 'experiencing financial difficulties'."
+        },
+        {
+          "url": "https://www.trustpilot.com/review/www.audacitycapital.co.uk?sort=recency",
+          "date": "2026-10-31",
+          "text": "audacitycapital.co.uk (older, lower-volume profile): 3 of the 20 most recent reviews (5 Jun–22 Oct 2026) report payouts rejected or not paid. 1-star share is 12%."
+        }
+      ]
+    },
+    {
+      "name": "FunderPro",
+      "slug": "funderpro",
+      "site": "https://funderpro.com",
+      "category": "cfd",
+      "assets": [
+        "forex",
+        "indices",
+        "commodities",
+        "crypto"
+      ],
+      "challenge_types": [
+        "1-step",
+        "2-step",
+        "instant"
+      ],
+      "account_sizes": [
+        5000,
+        10000,
+        25000,
+        50000,
+        100000,
+        150000,
+        200000
+      ],
+      "fee_currency": "USD",
+      "programs": [
+        {
+          "name": "One Phase",
+          "type": "1-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 69
+            },
+            {
+              "size": 10000,
+              "fee": 109
+            },
+            {
+              "size": 25000,
+              "fee": 219
+            },
+            {
+              "size": 50000,
+              "fee": 319
+            },
+            {
+              "size": 100000,
+              "fee": 539
+            },
+            {
+              "size": 150000,
+              "fee": 799
+            },
+            {
+              "size": 200000,
+              "fee": 989
+            }
+          ],
+          "profit_target": "10%",
+          "max_daily_loss": "3%",
+          "max_drawdown": "6%",
+          "drawdown_type": "static",
+          "profit_split": "80% (90% with add-on)",
+          "min_trading_days": null
+        },
+        {
+          "name": "Classic",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 69
+            },
+            {
+              "size": 10000,
+              "fee": 109
+            },
+            {
+              "size": 25000,
+              "fee": 219
+            },
+            {
+              "size": 50000,
+              "fee": 319
+            },
+            {
+              "size": 100000,
+              "fee": 539
+            },
+            {
+              "size": 150000,
+              "fee": 799
+            },
+            {
+              "size": 200000,
+              "fee": 989
+            }
+          ],
+          "profit_target": "10% / 5%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "10%",
+          "drawdown_type": "static",
+          "profit_split": "80% (90% with add-on)",
+          "min_trading_days": 4
+        },
+        {
+          "name": "Pro",
+          "type": "2-step",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 75
+            },
+            {
+              "size": 10000,
+              "fee": 129
+            },
+            {
+              "size": 25000,
+              "fee": 239
+            },
+            {
+              "size": 50000,
+              "fee": 419
+            },
+            {
+              "size": 100000,
+              "fee": 659
+            },
+            {
+              "size": 150000,
+              "fee": 979
+            },
+            {
+              "size": 200000,
+              "fee": 1319
+            }
+          ],
+          "profit_target": "10% / 8%",
+          "max_daily_loss": "5%",
+          "max_drawdown": "10%",
+          "drawdown_type": "static",
+          "profit_split": "60% with daily rewards or 90% with weekly rewards",
+          "min_trading_days": null
+        },
+        {
+          "name": "Instant Program",
+          "type": "instant",
+          "sizes_fees": [
+            {
+              "size": 5000,
+              "fee": 79
+            },
+            {
+              "size": 10000,
+              "fee": 169
+            },
+            {
+              "size": 25000,
+              "fee": 339
+            },
+            {
+              "size": 50000,
+              "fee": 499
+            },
+            {
+              "size": 100000,
+              "fee": 799
+            }
+          ],
+          "profit_target": null,
+          "max_daily_loss": "3%",
+          "max_drawdown": "6%",
+          "drawdown_type": "trailing",
+          "profit_split": "80% (90% with add-on)",
+          "min_trading_days": null
+        }
+      ],
+      "fee_from": 69,
+      "profit_split": "80% up to 90%",
+      "profit_split_scale": null,
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_target": "10% / 5%",
+      "leverage": "Classic/Pro: Forex 1:100, metals/oil/indices 1:30, crypto 1:2; One Phase: Forex 1:50, metals/oil/indices 1:10, crypto 1:2; Instant 1:30",
+      "platforms": [
+        "MT5",
+        "cTrader",
+        "TradeLocker"
+      ],
+      "payout_frequency": "One Phase and Classic: bi-weekly (every 14 days; first reward after 7 days with add-on), $100 minimum. Pro: daily (60% split) or weekly (90% split) whenever ≥1% above initial balance. Instant: bi-weekly.",
+      "first_payout_days": 14,
+      "payout_speed": "typically within 1 working day after approval; average 8 hours",
+      "min_trading_days": 4,
+      "consistency_rule": "Classic: none; One Phase: best day ≤40% of profit; Pro: ≤45% (both phases); Instant: 15%; funded stages none",
+      "news_trading": "restricted",
+      "weekend_holding": "restricted",
+      "countries_restricted": null,
+      "founded": 2023,
+      "hq": "San Gwann, Malta",
+      "discount_code": {
+        "code": "OCT30",
+        "value": "30% off all challenges (October promo)",
+        "percent": 30,
+        "source": "https://funderpro.com/",
+        "verified": "2026-10-31",
+        "expires": null
+      },
+      "affiliate_url": "#",
+      "trustpilot": {
+        "score": null,
+        "count": 1539,
+        "note": "Rating unavailable: Trustpilot says it removed fake reviews for this company (breach of its guidelines)",
+        "checked": "2026-10-31",
+        "source": "https://www.trustpilot.com/review/funderpro.com"
+      },
+      "last_verified": "2026-10-31",
+      "source_urls": [
+        "https://funderpro.com/",
+        "https://funderpro.com/the-challenge/",
+        "https://funderpro.com/trading-rules/",
+        "https://funderpro.com/rewards/",
+        "https://funderpro.com/trading-platforms/",
+        "https://funderpro.com/checkout/?mode=instant",
+        "https://funderpro.com/become-a-funderpro-affiliate/",
+        "https://support.funderpro.com/en/articles/378136-how-can-i-receive-my-rewards",
+        "https://support.funderpro.com/en/articles/419844-how-does-reward-frequency-and-eligibility-work-for-funderpro-challenges",
+        "https://support.funderpro.com/en/articles/377857-what-is-the-maximum-trading-capital-i-can-access-with-funderpro",
+        "https://support.funderpro.com/en/articles/377983-will-my-challenge-fee-be-credited-back",
+        "https://support.funderpro.com/en/articles/409956-can-funded-traders-scale-their-accounts",
+        "https://support.funderpro.com/en/articles/377862-how-can-i-receive-a-refund",
+        "https://support.funderpro.com/en/articles/377852-what-is-the-consistency-rule-and-how-does-it-affect-my-challenge",
+        "https://support.funderpro.com/en/articles/378023-are-news-holding-and-news-trading-allowed",
+        "https://support.funderpro.com/en/articles/377999-can-i-open-close-a-position-or-hold-trades-over-the-weekend",
+        "https://support.funderpro.com/en/articles/378025-what-instruments-can-i-trade",
+        "https://www.trustpilot.com/review/funderpro.com"
+      ],
+      "notes": "Prices from the funderpro.com homepage pricing widget (each tab/size clicked) and the instant checkout page; homepage banner promo OCT30 = 30% off all challenges. The challenge fee is labelled 'will be processed with 1st reward' (credited back after first reward on One Phase/Classic; not on Pro). One Phase and Classic showed identical list prices. Drawdown 'static' from homepage claim 'No Trailing Drawdown' (Instant checkout states 6% trailing). News trading/holding allowed in all challenge phases; on funded accounts only with the Swing add-on; weekend holding requires the Swing add-on. first_payout_days=14 from bi-weekly cycle (7 with add-on). founded=2023 inferred from footer '© 2023 – 2026 FunderPro Ltd'. HQ from Malta registered company FunderPro Ltd (services provided by FunderPro Saint Lucia Ltd). Footer states only 7.35% of challenge buyers pass. TRUSTPILOT WARNING: trustpilot.com/review/funderpro.com shows 'This company's rating is unavailable due to a breach of our guidelines' and 'We've removed a number of fake reviews' (1,539 reviews) — rating left null; flag for editorial review. Restricted-country list is linked but not captured.",
+      "segment": "multi",
+      "also_offers": [
+        "futures"
+      ],
+      "category_basis": "Sells simulated CFD challenges and instant accounts on MT5, cTrader and TradeLocker; a separate FunderPro Futures site (funderprofutures.com) is linked.",
+      "category_source": "https://funderpro.com/",
+      "founded_source": "https://funderpro.com/",
+      "hq_country": {
+        "code": "MT",
+        "source": "https://funderpro.com/",
+        "quote": "San Gwann, Malta"
+      },
+      "max_allocation_usd": 200000,
+      "max_allocation_text": "$200K combined starting capital across funded accounts; scaling plan up to $5M",
+      "max_allocation_source": "https://support.funderpro.com/en/articles/377857-what-is-the-maximum-trading-capital-i-can-access-with-funderpro",
+      "field_sources": {
+        "category": "https://funderpro.com/",
+        "assets": "https://support.funderpro.com/en/articles/378025-what-instruments-can-i-trade",
+        "challenge_types": "https://funderpro.com/",
+        "account_sizes": "https://funderpro.com/",
+        "programs": "https://funderpro.com/",
+        "fee_from": "https://funderpro.com/",
+        "profit_split": "https://funderpro.com/rewards/",
+        "max_daily_loss": "https://funderpro.com/",
+        "max_drawdown": "https://funderpro.com/",
+        "drawdown_type": "https://funderpro.com/",
+        "profit_target": "https://funderpro.com/the-challenge/",
+        "leverage": "https://funderpro.com/the-challenge/",
+        "platforms": "https://funderpro.com/trading-platforms/",
+        "payout_frequency": "https://support.funderpro.com/en/articles/419844-how-does-reward-frequency-and-eligibility-work-for-funderpro-challenges",
+        "first_payout_days": "https://support.funderpro.com/en/articles/419844-how-does-reward-frequency-and-eligibility-work-for-funderpro-challenges",
+        "payout_speed": "https://support.funderpro.com/en/articles/378136-how-can-i-receive-my-rewards",
+        "max_allocation": "https://support.funderpro.com/en/articles/377857-what-is-the-maximum-trading-capital-i-can-access-with-funderpro",
+        "min_trading_days": "https://funderpro.com/",
+        "consistency_rule": "https://support.funderpro.com/en/articles/377852-what-is-the-consistency-rule-and-how-does-it-affect-my-challenge",
+        "news_trading": "https://support.funderpro.com/en/articles/378023-are-news-holding-and-news-trading-allowed",
+        "weekend_holding": "https://support.funderpro.com/en/articles/377999-can-i-open-close-a-position-or-hold-trades-over-the-weekend",
+        "founded": "https://funderpro.com/",
+        "hq": "https://funderpro.com/",
+        "hq_country": "https://funderpro.com/",
+        "discount_code": "https://funderpro.com/"
+      },
+      "status": "caution",
+      "status_since": "2026-10-31",
+      "status_reason": "Trustpilot has suspended FunderPro’s rating for breaching its guidelines and removed fake reviews, and recent reviews include several payouts denied after funded profits under its margin-usage and IP rules.",
+      "status_sources": [
+        {
+          "url": "https://www.trustpilot.com/review/funderpro.com?sort=recency",
+          "date": "2026-10-31",
+          "text": "Trustpilot shows: “This company’s rating is unavailable due to a breach of our guidelines.” and “We’ve removed a number of fake reviews for this company.” No date shown (checked 31 Oct 2026)."
+        },
+        {
+          "url": "https://www.trustpilot.com/review/funderpro.com?sort=recency",
+          "date": "2026-10-31",
+          "text": "7 of the 20 most recent reviews (posted 1 Sep–30 Oct 2026, company replies excluded) report payouts refused or profits removed, citing the 20% margin-usage rule or 'multi IP'. 1-star share is 35% of 1,539 reviews."
+        }
+      ]
     }
   ]
 }

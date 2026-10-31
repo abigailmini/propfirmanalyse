@@ -1,0 +1,49 @@
+/* PropAnalyse firm status (caution / closed), 2026-10-31. Loaded on every page after site.css. */
+:root{--st-red:#b42318;--st-red-bg:#fef3f2;--st-red-line:#f4c7c3;--st-grey:#5a6680;--st-grey-bg:#f1f3f6;--st-grey-line:#d5dae3}
+@media (prefers-color-scheme:dark){:root{--st-red:#ff9b8a;--st-red-bg:rgba(240,68,56,.12);--st-red-line:rgba(255,155,138,.35);--st-grey:#a3adc4;--st-grey-bg:#1b2740;--st-grey-line:#3a4968}}
+.sti{width:1em;height:1em;flex:none;vertical-align:-.14em}
+.stchip{display:inline-flex;align-items:center;gap:4px;margin-left:6px;padding:1px 7px 1px 6px;border:1px solid var(--st-red-line);border-radius:999px;background:var(--st-red-bg);color:var(--st-red);font-size:11.5px;font-weight:600;line-height:1.5;letter-spacing:.01em;white-space:nowrap;vertical-align:middle;text-decoration:none}
+.stchip.closed{border-color:var(--st-grey-line);background:var(--st-grey-bg);color:var(--st-grey)}
+.meta .stchip{margin-left:0}
+.stban{margin:18px 0 6px;padding:18px 20px;border:1px solid var(--st-red-line);border-left:4px solid var(--st-red);border-radius:var(--r-box,10px);background:var(--st-red-bg);color:var(--ink)}
+.stban.closed{border-color:var(--st-grey-line);border-left-color:var(--st-grey);background:var(--st-grey-bg)}
+.stban .stk{display:flex;align-items:center;gap:6px;margin:0 0 6px;color:var(--st-red);font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.stban.closed .stk{color:var(--st-grey)}
+.stban .stk .sti{width:18px;height:18px}
+.stban h2{font-size:20px;margin:0 0 6px}
+.stban .stwhy{margin:0 0 8px;font-size:15.5px;color:var(--ink);max-width:80ch}
+.stev{margin:8px 0 10px;padding-left:20px;max-width:90ch}
+.stev li{margin:4px 0;font-size:14.5px;line-height:1.5}
+.stev .stsrc,.stsrc{color:var(--mute);font-size:13px;white-space:nowrap}
+.stban a,.stfirm a,.stsrcs a{color:var(--accent);text-decoration-color:color-mix(in srgb,var(--accent) 35%,transparent)}
+.stfine{margin:8px 0 0;font-size:13px;color:var(--ink-2);max-width:95ch}
+.stresp{margin:8px 0;font-size:14px;padding:8px 12px;border-radius:6px;background:var(--bg);border:1px solid var(--rule)}
+.stcap{display:flex;gap:6px;align-items:flex-start;margin:6px 0 10px;font-size:13px;color:var(--st-red)}
+.stcap .sti{margin-top:2px}
+.rate.st-capped b{color:var(--st-red)}
+.rate.st-capped .stars{filter:grayscale(.2)}
+.rate.st-closed b{color:var(--st-grey);font-size:13px;font-weight:600}
+.rate.st-closed .stars{opacity:.45}
+.scorebox.stclosed .big{color:var(--st-grey)}
+.flogo.stgrey{background:var(--st-grey-bg);color:var(--st-grey);box-shadow:inset 0 0 0 1px var(--st-grey-line);filter:grayscale(1)}
+.sthead{display:flex;align-items:center;gap:14px}
+.sthead h1{margin:0}
+.visit.vcaution,.btn.vcaution{background:transparent;color:var(--st-red);border:1px solid var(--st-red-line);box-shadow:none}
+@media (hover:hover){.visit.vcaution:hover,.btn.vcaution:hover{background:var(--st-red-bg);color:var(--st-red)}}
+tr.st-caution td{background:color-mix(in srgb,var(--st-red-bg) 55%,transparent)}
+.sttable td.wide{min-width:280px}
+.sttable .stf{display:block;color:var(--mute);font-size:12px}
+.stalts,.stlinks{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.stalts li,.stlinks li{border:1px solid var(--rule);border-radius:var(--r-box,10px);padding:10px 12px;background:var(--bg)}
+.stalts .ofirm{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.stalts .on{display:flex;flex-direction:column;gap:2px}
+.stlinks a{display:flex;flex-direction:column;gap:2px;text-decoration:none;color:var(--ink)}
+.stlinks span{color:var(--mute);font-size:13px}
+.stsrcs li{margin:8px 0}
+.stsrcs small{display:block;color:var(--mute);font-size:12.5px}
+.stsrcs q{display:block;margin-top:2px;font-size:13.5px;color:var(--ink-2);font-style:italic}
+.stq{margin:10px 0;padding:10px 14px;border-left:3px solid var(--rule-2);background:var(--bg-2);border-radius:0 6px 6px 0}
+.stq p{margin:0 0 4px;font-style:italic}
+.stq footer{font-size:13px;color:var(--mute)}
+.stfirm h2{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:19px}
+@media (max-width:639px){.stban{padding:14px 14px;margin-top:12px}.stban h2{font-size:18px}.stev{padding-left:18px}.sttable td.wide{min-width:0}.stev .stsrc{white-space:normal}}

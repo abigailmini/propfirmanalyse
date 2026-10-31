@@ -1,0 +1,212 @@
+{
+  "name": "Audacity Capital",
+  "slug": "audacity-capital",
+  "site": "https://audacity.capital",
+  "category": "cfd",
+  "assets": [
+    "forex",
+    "commodities",
+    "indices",
+    "crypto"
+  ],
+  "challenge_types": [
+    "2-step",
+    "1-step",
+    "instant"
+  ],
+  "account_sizes": [
+    5000,
+    10000,
+    25000,
+    50000,
+    100000,
+    200000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "Ability Challenge (2 steps)",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 49
+        },
+        {
+          "size": 10000,
+          "fee": 79
+        },
+        {
+          "size": 25000,
+          "fee": 195
+        },
+        {
+          "size": 50000,
+          "fee": 329
+        },
+        {
+          "size": 100000,
+          "fee": 549
+        },
+        {
+          "size": 200000,
+          "fee": 1049
+        }
+      ],
+      "profit_target": "10% / 5%",
+      "max_daily_loss": "7.5% (Challenge/Verification); 5% on live account",
+      "max_drawdown": "15% (Challenge/Verification); 10% on live account",
+      "drawdown_type": "static",
+      "profit_split": "up to 90%",
+      "min_trading_days": 4
+    },
+    {
+      "name": "Ability One (1 step)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 69
+        },
+        {
+          "size": 10000,
+          "fee": 99
+        },
+        {
+          "size": 25000,
+          "fee": 249
+        },
+        {
+          "size": 50000,
+          "fee": 399
+        },
+        {
+          "size": 100000,
+          "fee": 699
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static",
+      "profit_split": "up to 90%",
+      "min_trading_days": 3
+    },
+    {
+      "name": "FTP (Instant Funding)",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 119
+        },
+        {
+          "size": 10000,
+          "fee": 279
+        },
+        {
+          "size": 25000,
+          "fee": 449
+        },
+        {
+          "size": 50000,
+          "fee": 1299
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": "5% (trailing)",
+      "max_drawdown": "10%",
+      "drawdown_type": "static max; trailing daily",
+      "profit_split": "up to 80%",
+      "min_trading_days": 5
+    }
+  ],
+  "fee_from": 49,
+  "profit_split": "up to 90%",
+  "profit_split_scale": null,
+  "max_daily_loss": "7.5%",
+  "max_drawdown": "15%",
+  "drawdown_type": "static",
+  "profit_target": "10% / 5%",
+  "leverage": null,
+  "platforms": [
+    "MT5",
+    "DXtrade"
+  ],
+  "payout_frequency": "Bi-weekly (every 14 days) on funded/live accounts",
+  "first_payout_days": 14,
+  "payout_speed": "same day upon approval (paid to dashboard wallet)",
+  "min_trading_days": 4,
+  "consistency_rule": "None (removed)",
+  "news_trading": "allowed",
+  "weekend_holding": "allowed",
+  "countries_restricted": [
+    "Syria",
+    "Iran",
+    "Venezuela",
+    "North Korea"
+  ],
+  "founded": 2012,
+  "hq": "London, United Kingdom",
+  "discount_code": null,
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": null,
+    "count": 1059,
+    "note": "Rating unavailable: Trustpilot says it removed fake reviews for this company (breach of its guidelines) (audacitycapital.co.uk profile; audacity.capital profile 291 reviews, also suspended)",
+    "checked": "2026-10-31",
+    "source": "https://www.trustpilot.com/review/audacitycapital.co.uk"
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://audacity.capital/",
+    "https://audacity.capital/two-step-prop-firm-ability-challenge/",
+    "https://audacity.capital/one-step-prop-firm-ability-one/",
+    "https://audacity.capital/instant-funding-prop-firm/",
+    "https://audacity.capital/funded-trader-program/",
+    "https://audacity.capital/about/",
+    "https://audacity.capital/affiliates-and-partners/",
+    "https://audacity.capital/trading-assets/",
+    "https://www.trustpilot.com/review/audacitycapital.co.uk"
+  ],
+  "notes": "Official site moved to https://audacity.capital (audacitycapital.co.uk now only hosts the trader dashboard trade.audacitycapital.co.uk). List prices from homepage widget (USD toggle); live promos: HALLOWEEN 35% off Ability 2 Steps, '14th' 14% off all programs. Ability One widget only listed sizes to $100K though page says 'purchase up to $200K'. FTP page states 5% trailing daily loss and 10% static max; widget shows 'Profit Target 10%' for FTP (likely scaling target: 'double capital every 10% gain'). Ability Challenge drawdowns are 7.5%/15% during evaluation then 5%/10% on the live account. Legal: AudaCity Global LTD licensed by Union of Comoros (Anjouan) brokerage licence; AudaCity International FZCO (Dubai) payment facilitator; UK office 25 Cabot Square London; Propmetry Ltd (Cyprus) payment partner — HQ recorded as London per 'London-born' about page. Restricted list is 'including but not limited to' (partial). Leverage not published. Payout claim on homepage: 'Over $250M paid out' (since 2012). TRUSTPILOT WARNING: trustpilot.com/review/audacitycapital.co.uk shows 'rating unavailable due to a breach of our guidelines' / 'removed a number of fake reviews' (1,059 reviews, only 38 in last 12 months) — rating left null; flag.",
+  "segment": "forex",
+  "also_offers": [],
+  "category_basis": "Sells forex/metals/indices/crypto evaluation and instant-funded accounts on MT5 and DXtrade.",
+  "category_source": "https://audacity.capital/",
+  "founded_source": "https://audacity.capital/",
+  "hq_country": {
+    "code": "GB",
+    "source": "https://audacity.capital/about/",
+    "quote": "London, United Kingdom"
+  },
+  "max_allocation_text": "Purchase up to $200K; scaling 'over $2M' (homepage: 'Up to 2 Million Trading Funds')",
+  "max_allocation_source": "https://audacity.capital/",
+  "field_sources": {
+    "category": "https://audacity.capital/",
+    "assets": "https://audacity.capital/trading-assets/",
+    "challenge_types": "https://audacity.capital/funded-trader-program/",
+    "account_sizes": "https://audacity.capital/",
+    "programs": "https://audacity.capital/",
+    "fee_from": "https://audacity.capital/",
+    "profit_split": "https://audacity.capital/",
+    "max_daily_loss": "https://audacity.capital/",
+    "max_drawdown": "https://audacity.capital/",
+    "drawdown_type": "https://audacity.capital/funded-trader-program/",
+    "profit_target": "https://audacity.capital/",
+    "platforms": "https://audacity.capital/one-step-prop-firm-ability-one/",
+    "payout_frequency": "https://audacity.capital/",
+    "first_payout_days": "https://audacity.capital/",
+    "payout_speed": "https://audacity.capital/",
+    "max_allocation_text": "https://audacity.capital/",
+    "min_trading_days": "https://audacity.capital/",
+    "consistency_rule": "https://audacity.capital/",
+    "news_trading": "https://audacity.capital/",
+    "weekend_holding": "https://audacity.capital/",
+    "countries_restricted": "https://audacity.capital/",
+    "founded": "https://audacity.capital/",
+    "hq": "https://audacity.capital/about/",
+    "hq_country": "https://audacity.capital/about/",
+    "discount_code": "https://audacity.capital/"
+  }
+}

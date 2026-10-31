@@ -1,0 +1,39 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": "Evaluation fees are treated as subscription fees; an optional paid 'Refund on First Payout' add-on is offered at checkout on QT TWO, Instant and BNPL plans. No general refund policy captured.",
+  "fee_refundable": null,
+  "time_limit": null,
+  "has_time_limit": null,
+  "activation_fee": "BNPL 1-Step only: $65 / $100 / $180 / $325 / $650 for $5K / $10K / $25K / $50K / $100K, payable within 7 calendar days of passing",
+  "payout_methods": [
+    "Crypto (USDC ERC-20)",
+    "Wire"
+  ],
+  "min_payout": 100,
+  "kyc_before_payout": true,
+  "scaling_plan": "About page says splits can reach 90% via a Scaling Plan; no scaling-plan terms published in the help centre",
+  "ea_bots": "EA use is a checkout add-on ('Usage of EA'); HFT, tick scalping, latency/arbitrage and server-flooding algorithms prohibited",
+  "copy_trading": null,
+  "hedging": null,
+  "max_risk_per_trade": "Evaluation: total exposure must stay below 75% of the daily drawdown limit; funded: max 1% floating loss (QT ONE/QT TWO), 1% per instrument (Instant), 2% (BNPL); stop loss within 60 s required on QT TWO and Instant funded",
+  "inactivity_rule": "No closed trade within 7 days (QT ONE) or 14 days (QT TWO, Instant, Power, BNPL) → hard breach; counted from purchase if no trades",
+  "notes": "Minimum payout = 1% of account or $100, whichever is higher (5% on Instant). Payout processing within 24 business hours; risk interviews may be required and missing one forfeits the payout. KYC (Didit) must be completed before funded activation. Reverse/group hedging across accounts prohibited; same-account hedging not addressed. Commission $4 per round lot. Other add-ons: variable spreads, swap-free, +10% split (80→90%), 7-day payout. Reset fee not published.",
+  "sources": [
+    "https://support.qtfunded.com/support/articles/5613700809887-performance-fee-policy",
+    "https://support.qtfunded.com/support/articles/5498652581151-kyc-verification-required-documents-and-account-approval-guide",
+    "https://support.qtfunded.com/support/articles/5632217156767-qt-1-step-bnpl",
+    "https://support.qtfunded.com/support/articles/5613590674847-exposure-rule",
+    "https://support.qtfunded.com/support/articles/5613598693279-prohibited-strategies",
+    "https://support.qtfunded.com/support/articles/9000000000011-inactivity-rule",
+    "https://support.qtfunded.com/support/articles/9000000000001-qt-one",
+    "https://support.qtfunded.com/support/articles/9000000000002-qt-two",
+    "https://support.qtfunded.com/support/articles/9000000000003-qt-instant-funded-new",
+    "https://support.qtfunded.com/support/articles/5613688862751-trading-commissions",
+    "https://qtfunded.quanttekel.com/about/",
+    "https://qtfunded.quanttekel.com/"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": null,
+  "monthly_fee": false
+}

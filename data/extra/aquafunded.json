@@ -1,0 +1,43 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": "No refunds once evaluation credentials are emailed (all sales final). The evaluation fee is refunded with the trader's 4th successful profit-split payout; not refunded if the account is hard-breached before then.",
+  "fee_refundable": true,
+  "time_limit": "Unlimited",
+  "has_time_limit": false,
+  "activation_fee": null,
+  "payout_methods": [
+    "Crypto (payouts under $5,000)",
+    "Rise (payouts of $500+; bank transfer or crypto)"
+  ],
+  "min_payout": 100,
+  "kyc_before_payout": null,
+  "scaling_plan": "12% return within a 3-month period → balance +25% of initial account size, subject to review; up to $4,000,000 max allocation (Aqua Elite progression programme on top)",
+  "ea_bots": "allowed (as part of your own strategy; tick scalping/HFT/arbitrage bots prohibited)",
+  "copy_trading": true,
+  "hedging": true,
+  "max_risk_per_trade": "Funded: max floating loss per trade/position — Instant Standard 1% (three strikes: split 50%, 25%, then breach), Instant Pro 2% (1% on $300K/$400K = permanent breach); WaveStop on some models; max 80% margin usage per trade (profits deducted)",
+  "inactivity_rule": "At least one trade every 30 days from first trade, otherwise the account is breached",
+  "notes": "Failed accounts cannot be retried/resumed; a new account must be bought (CFD). Futures widget lists 'Account resets' and 'No Activation Fee' but no reset price was captured. 3% processing fee on all payouts; first two rewards capped at $10,000 each on $100K+ accounts. Paid add-ons: Lifetime 100% split, Rewards in 7 Days (non-instant), Rewards On Demand (instant), Swap Free. Martingale allowed; stop loss not required. Copy trading allowed between own AquaFunded accounts and from own external accounts. Trades held under 2 minutes may be treated as tick scalping (profit removal on funded). Help centre documents a Pay After Pass model ($5 evaluation + one-time activation fee after passing, e.g. $200 on 50K) not shown in the homepage widget.",
+  "sources": [
+    "https://help.aquafunded.com/en/articles/9251069-is-the-evaluation-fee-refundable",
+    "https://www.aquafunded.com/legal/refund-policy",
+    "https://help.aquafunded.com/en/articles/11875797-is-there-a-time-limit",
+    "https://help.aquafunded.com/en/articles/9250906-how-do-rewards-work",
+    "https://help.aquafunded.com/en/articles/9251044-do-you-offer-a-scaling-plan",
+    "https://help.aquafunded.com/en/articles/11831659-are-eas-trade-copiers-allowed",
+    "https://help.aquafunded.com/en/articles/11877755-is-copy-trading-allowed",
+    "https://help.aquafunded.com/en/articles/11831763-do-you-allow-hedging-martingale-and-trading-without-a-stop-loss",
+    "https://help.aquafunded.com/en/articles/11875895-maximum-loss-per-trade-policy",
+    "https://help.aquafunded.com/en/articles/10503593-wavestop",
+    "https://help.aquafunded.com/en/articles/11831701-other-rules",
+    "https://help.aquafunded.com/en/articles/9251047-is-there-a-breach-for-inactivity",
+    "https://help.aquafunded.com/en/articles/9251079-what-happens-if-i-fail-my-evaluation-or-funded-account",
+    "https://help.aquafunded.com/en/articles/10494335-reward-add-ons",
+    "https://help.aquafunded.com/en/articles/13322298-pay-after-pass-model",
+    "https://www.aquafunded.com/"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": null,
+  "monthly_fee": false
+}

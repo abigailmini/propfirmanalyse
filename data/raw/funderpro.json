@@ -1,0 +1,284 @@
+{
+  "name": "FunderPro",
+  "slug": "funderpro",
+  "site": "https://funderpro.com",
+  "category": "cfd",
+  "assets": [
+    "forex",
+    "indices",
+    "commodities",
+    "crypto"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step",
+    "instant"
+  ],
+  "account_sizes": [
+    5000,
+    10000,
+    25000,
+    50000,
+    100000,
+    150000,
+    200000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "One Phase",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 69
+        },
+        {
+          "size": 10000,
+          "fee": 109
+        },
+        {
+          "size": 25000,
+          "fee": 219
+        },
+        {
+          "size": 50000,
+          "fee": 319
+        },
+        {
+          "size": 100000,
+          "fee": 539
+        },
+        {
+          "size": 150000,
+          "fee": 799
+        },
+        {
+          "size": 200000,
+          "fee": 989
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static",
+      "profit_split": "80% (90% with add-on)",
+      "min_trading_days": null
+    },
+    {
+      "name": "Classic",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 69
+        },
+        {
+          "size": 10000,
+          "fee": 109
+        },
+        {
+          "size": 25000,
+          "fee": 219
+        },
+        {
+          "size": 50000,
+          "fee": 319
+        },
+        {
+          "size": 100000,
+          "fee": 539
+        },
+        {
+          "size": 150000,
+          "fee": 799
+        },
+        {
+          "size": 200000,
+          "fee": 989
+        }
+      ],
+      "profit_target": "10% / 5%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_split": "80% (90% with add-on)",
+      "min_trading_days": 4
+    },
+    {
+      "name": "Pro",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 75
+        },
+        {
+          "size": 10000,
+          "fee": 129
+        },
+        {
+          "size": 25000,
+          "fee": 239
+        },
+        {
+          "size": 50000,
+          "fee": 419
+        },
+        {
+          "size": 100000,
+          "fee": 659
+        },
+        {
+          "size": 150000,
+          "fee": 979
+        },
+        {
+          "size": 200000,
+          "fee": 1319
+        }
+      ],
+      "profit_target": "10% / 8%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_split": "60% with daily rewards or 90% with weekly rewards",
+      "min_trading_days": null
+    },
+    {
+      "name": "Instant Program",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 79
+        },
+        {
+          "size": 10000,
+          "fee": 169
+        },
+        {
+          "size": 25000,
+          "fee": 339
+        },
+        {
+          "size": 50000,
+          "fee": 499
+        },
+        {
+          "size": 100000,
+          "fee": 799
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "trailing",
+      "profit_split": "80% (90% with add-on)",
+      "min_trading_days": null
+    }
+  ],
+  "fee_from": 69,
+  "profit_split": "80% up to 90%",
+  "profit_split_scale": null,
+  "max_daily_loss": "5%",
+  "max_drawdown": "10%",
+  "drawdown_type": "static",
+  "profit_target": "10% / 5%",
+  "leverage": "Classic/Pro: Forex 1:100, metals/oil/indices 1:30, crypto 1:2; One Phase: Forex 1:50, metals/oil/indices 1:10, crypto 1:2; Instant 1:30",
+  "platforms": [
+    "MT5",
+    "cTrader",
+    "TradeLocker"
+  ],
+  "payout_frequency": "One Phase and Classic: bi-weekly (every 14 days; first reward after 7 days with add-on), $100 minimum. Pro: daily (60% split) or weekly (90% split) whenever ≥1% above initial balance. Instant: bi-weekly.",
+  "first_payout_days": 14,
+  "payout_speed": "typically within 1 working day after approval; average 8 hours",
+  "min_trading_days": 4,
+  "consistency_rule": "Classic: none; One Phase: best day ≤40% of profit; Pro: ≤45% (both phases); Instant: 15%; funded stages none",
+  "news_trading": "restricted",
+  "weekend_holding": "restricted",
+  "countries_restricted": null,
+  "founded": 2023,
+  "hq": "San Gwann, Malta",
+  "discount_code": {
+    "code": "OCT30",
+    "value": "30% off all challenges (October promo)",
+    "percent": 30,
+    "source": "https://funderpro.com/",
+    "verified": "2026-10-31",
+    "expires": null
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": null,
+    "count": 1539,
+    "note": "Rating unavailable: Trustpilot says it removed fake reviews for this company (breach of its guidelines)",
+    "checked": "2026-10-31",
+    "source": "https://www.trustpilot.com/review/funderpro.com"
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://funderpro.com/",
+    "https://funderpro.com/the-challenge/",
+    "https://funderpro.com/trading-rules/",
+    "https://funderpro.com/rewards/",
+    "https://funderpro.com/trading-platforms/",
+    "https://funderpro.com/checkout/?mode=instant",
+    "https://funderpro.com/become-a-funderpro-affiliate/",
+    "https://support.funderpro.com/en/articles/378136-how-can-i-receive-my-rewards",
+    "https://support.funderpro.com/en/articles/419844-how-does-reward-frequency-and-eligibility-work-for-funderpro-challenges",
+    "https://support.funderpro.com/en/articles/377857-what-is-the-maximum-trading-capital-i-can-access-with-funderpro",
+    "https://support.funderpro.com/en/articles/377983-will-my-challenge-fee-be-credited-back",
+    "https://support.funderpro.com/en/articles/409956-can-funded-traders-scale-their-accounts",
+    "https://support.funderpro.com/en/articles/377862-how-can-i-receive-a-refund",
+    "https://support.funderpro.com/en/articles/377852-what-is-the-consistency-rule-and-how-does-it-affect-my-challenge",
+    "https://support.funderpro.com/en/articles/378023-are-news-holding-and-news-trading-allowed",
+    "https://support.funderpro.com/en/articles/377999-can-i-open-close-a-position-or-hold-trades-over-the-weekend",
+    "https://support.funderpro.com/en/articles/378025-what-instruments-can-i-trade",
+    "https://www.trustpilot.com/review/funderpro.com"
+  ],
+  "notes": "Prices from the funderpro.com homepage pricing widget (each tab/size clicked) and the instant checkout page; homepage banner promo OCT30 = 30% off all challenges. The challenge fee is labelled 'will be processed with 1st reward' (credited back after first reward on One Phase/Classic; not on Pro). One Phase and Classic showed identical list prices. Drawdown 'static' from homepage claim 'No Trailing Drawdown' (Instant checkout states 6% trailing). News trading/holding allowed in all challenge phases; on funded accounts only with the Swing add-on; weekend holding requires the Swing add-on. first_payout_days=14 from bi-weekly cycle (7 with add-on). founded=2023 inferred from footer '© 2023 – 2026 FunderPro Ltd'. HQ from Malta registered company FunderPro Ltd (services provided by FunderPro Saint Lucia Ltd). Footer states only 7.35% of challenge buyers pass. TRUSTPILOT WARNING: trustpilot.com/review/funderpro.com shows 'This company's rating is unavailable due to a breach of our guidelines' and 'We've removed a number of fake reviews' (1,539 reviews) — rating left null; flag for editorial review. Restricted-country list is linked but not captured.",
+  "segment": "multi",
+  "also_offers": [
+    "futures"
+  ],
+  "category_basis": "Sells simulated CFD challenges and instant accounts on MT5, cTrader and TradeLocker; a separate FunderPro Futures site (funderprofutures.com) is linked.",
+  "category_source": "https://funderpro.com/",
+  "founded_source": "https://funderpro.com/",
+  "hq_country": {
+    "code": "MT",
+    "source": "https://funderpro.com/",
+    "quote": "San Gwann, Malta"
+  },
+  "max_allocation_usd": 200000,
+  "max_allocation_text": "$200K combined starting capital across funded accounts; scaling plan up to $5M",
+  "max_allocation_source": "https://support.funderpro.com/en/articles/377857-what-is-the-maximum-trading-capital-i-can-access-with-funderpro",
+  "field_sources": {
+    "category": "https://funderpro.com/",
+    "assets": "https://support.funderpro.com/en/articles/378025-what-instruments-can-i-trade",
+    "challenge_types": "https://funderpro.com/",
+    "account_sizes": "https://funderpro.com/",
+    "programs": "https://funderpro.com/",
+    "fee_from": "https://funderpro.com/",
+    "profit_split": "https://funderpro.com/rewards/",
+    "max_daily_loss": "https://funderpro.com/",
+    "max_drawdown": "https://funderpro.com/",
+    "drawdown_type": "https://funderpro.com/",
+    "profit_target": "https://funderpro.com/the-challenge/",
+    "leverage": "https://funderpro.com/the-challenge/",
+    "platforms": "https://funderpro.com/trading-platforms/",
+    "payout_frequency": "https://support.funderpro.com/en/articles/419844-how-does-reward-frequency-and-eligibility-work-for-funderpro-challenges",
+    "first_payout_days": "https://support.funderpro.com/en/articles/419844-how-does-reward-frequency-and-eligibility-work-for-funderpro-challenges",
+    "payout_speed": "https://support.funderpro.com/en/articles/378136-how-can-i-receive-my-rewards",
+    "max_allocation": "https://support.funderpro.com/en/articles/377857-what-is-the-maximum-trading-capital-i-can-access-with-funderpro",
+    "min_trading_days": "https://funderpro.com/",
+    "consistency_rule": "https://support.funderpro.com/en/articles/377852-what-is-the-consistency-rule-and-how-does-it-affect-my-challenge",
+    "news_trading": "https://support.funderpro.com/en/articles/378023-are-news-holding-and-news-trading-allowed",
+    "weekend_holding": "https://support.funderpro.com/en/articles/377999-can-i-open-close-a-position-or-hold-trades-over-the-weekend",
+    "founded": "https://funderpro.com/",
+    "hq": "https://funderpro.com/",
+    "hq_country": "https://funderpro.com/",
+    "discount_code": "https://funderpro.com/"
+  }
+}

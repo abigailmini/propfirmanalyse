@@ -1,0 +1,31 @@
+{
+  "reset_fee": "Evaluation reset (Fundamental/Premium) $40 / $64 / $104 for 50K / 100K / 150K per configurator price list, or automatic reset at the 30-day renewal; Premium CASH-account reset $399 / $499 / $599 (once, within 24h of liquidation)",
+  "retry_discount_pct": null,
+  "refund_policy": "All subscriptions are final; no returns, refunds or exchanges; chargebacks lead to permanent ban",
+  "fee_refundable": false,
+  "time_limit": "Unlimited (evaluation continues while the monthly subscription renews)",
+  "has_time_limit": false,
+  "activation_fee": 149,
+  "payout_methods": [
+    "Rise (Riseworks) via Phidias Wallet"
+  ],
+  "min_payout": 500,
+  "kyc_before_payout": null,
+  "scaling_plan": "No balance scaling on CASH accounts; path to LIVE (Dorman Trading), then ELITE LIVE (60 days + $125K, +$25K balance) and MASTER LIVE (120 days + $250K, +$50K balance)",
+  "ea_bots": "restricted (semi-automated only with active monitoring; fully automated/HFT banned)",
+  "copy_trading": true,
+  "hedging": false,
+  "max_risk_per_trade": "Contract caps per size, e.g. E2L 2/5/7/9 E-minis; Fundamental/Premium 10/14/17 E-minis (10x in micros)",
+  "inactivity_rule": null,
+  "notes": "Activation fee on the monthly path: E2L $83/$149/$149/$169; Fundamental/Premium $149/$149/$169; $0 with one-time payment. Hedging=false reflects the ban on opposite positions across multiple accounts; same-account hedging not addressed. Payout cap per cycle $2,000/$2,500/$2,750 (50K/100K/150K Fundamental/Premium). Rithmic market depth add-on $16/month per exchange. Up to 5 CASH Premium + 5 CASH Fundamental + 5 E2L per person/IP/address. KYC requirement not stated in the pages loaded.",
+  "sources": [
+    "https://phidiaspropfirm.com/rules",
+    "https://phidiaspropfirm.com/tou",
+    "https://phidiaspropfirm.com/accounts",
+    "https://helpcenter.phidiaspropfirm.com/help",
+    "https://helpcenter.phidiaspropfirm.com/faq?locale=en"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": 40,
+  "monthly_fee": true
+}

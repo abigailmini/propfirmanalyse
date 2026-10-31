@@ -1,0 +1,1174 @@
+{
+ "checked": "2026-10-31",
+ "rule": {
+  "caution_cap": 4.0,
+  "review_days": 30,
+  "triggers": [
+   {
+    "en": "Trustpilot has suspended the firm's rating (\"rating is unavailable due to a breach of our guidelines\" / fake reviews removed) AND recent reviews report denied, unpaid or delayed payouts.",
+    "zh": "Trustpilot 已暂停该公司的评分（因违反准则、删除虚假评价），且近期评价反映拒绝、未付或延迟出金。"
+   },
+   {
+    "en": "At least 5 of the 20 most recent Trustpilot reviews describe the reviewer's own payout being denied, cut, left unpaid or long delayed, or the account closed at payout request.",
+    "zh": "Trustpilot 最新 20 条评价中至少 5 条描述本人出金被拒、被削减、未付或长期延迟，或在申请出金时账户被关闭。"
+   },
+   {
+    "en": "A regulator or court has taken public action against the firm (warning, cease-trade order, asset freeze or similar).",
+    "zh": "监管机构或法院对该公司采取了公开行动（警告、停止交易令、资产冻结等）。"
+   }
+  ]
+ },
+ "caution": {
+  "alpha-futures": {
+   "name": "Alpha Futures",
+   "status": "caution",
+   "status_since": "2026-10-31",
+   "status_reason": "Trustpilot’s most recent reviews (29–30 Oct 2026) are dominated by traders reporting approved payouts left unpaid, especially on discontinued Premium accounts where reviewers say a promised October deadline was missed.",
+   "evidence": [
+    {
+     "type": "payout_complaints",
+     "text": "11 of the 20 most recent Trustpilot reviews (posted 29–30 Oct 2026) report unpaid, delayed, rejected-after-approval or withheld payouts (checked 31 Oct 2026).",
+     "url": "https://www.trustpilot.com/review/alpha-futures.com?sort=recency",
+     "date": "2026-10-31"
+    },
+    {
+     "type": "payout_complaints",
+     "text": "Several reviewers say approved Premium-account payouts have been outstanding for months and that Alpha Futures said they would be cleared by October; one cites 8 months, another says 'hundreds of affected traders'.",
+     "url": "https://www.trustpilot.com/review/alpha-futures.com?sort=recency",
+     "date": "2026-10-30"
+    },
+    {
+     "type": "payout_complaints",
+     "text": "Page 2 of Most recent (next 20 reviews, posted 29–30 Oct 2026) has at least 7 more payout complaints, e.g. an approved payout 'Still Missing After 3 Weeks'.",
+     "url": "https://www.trustpilot.com/review/alpha-futures.com?page=2&sort=recency",
+     "date": "2026-10-31"
+    },
+    {
+     "type": "other",
+     "text": "Trustpilot shows a 'You should know' notice: “This company may be associated with high-risk investments.” Score still 4.3 from 6,242 reviews (85% 5-star, 10% 1-star); the firm invites customers to review (checked 31 Oct 2026).",
+     "url": "https://www.trustpilot.com/review/alpha-futures.com?sort=recency",
+     "date": "2026-10-31"
+    }
+   ],
+   "tp": {
+    "score": 4.3,
+    "count": 6242,
+    "one_star_pct": 10,
+    "banner": null,
+    "notes": "No suspension banner. 'You should know: This company may be associated with high-risk investments.' 5,214 reviews in the last 12 months; 'Asks customers to review'."
+   },
+   "recent_reviews": {
+    "n_payout": 11,
+    "m": 20,
+    "from": "2026-10-29",
+    "to": "2026-10-30",
+    "method": "Most recent page 1 (20 reviews). Counted only reviewers describing their own unpaid/delayed/denied payout or a ban at payout.",
+    "quotes": [
+     {
+      "text": "After months of waiting for our approved Premium account payouts, Alpha Futures promised that payments would be resolved by October. That deadline has now passed",
+      "date": "2026-10-30"
+     },
+     {
+      "text": "LESS THAN 24 HOURS LATER: PAYOUT REJECTED, PROFITS WITHHELD.",
+      "date": "2026-10-30"
+     },
+     {
+      "text": "I requested my payout and was approved, since then 10 days passed already.",
+      "date": "2026-10-30"
+     }
+    ]
+   },
+   "firm_response": {
+    "text": "Trustpilot reply (shown 'Updated 11 hours ago' on 31 Oct): “Alpha Futures does not reject payouts or restrict accounts without a reason.” Says the account was restricted after its risk team found an IP match with another user, and new detection can flag links to past accounts. No public statement on Premium payouts found in the help centre (help.alpha-futures.com). alpha-futures.com itself returns 403 to this host.",
+    "url": "https://www.trustpilot.com/review/alpha-futures.com?sort=recency",
+    "date": "2026-10-30"
+   },
+   "regulator_checks": {
+    "checked": "2026-10-31",
+    "hits": [],
+    "fca_register": {
+     "url": "https://register.fca.org.uk/s/search?q=<name>&type=Companies",
+     "result": "No results ('Unfortunately, we didn't find any results matching your search term') for: Alpha Futures. Search validated with 'Barclays' (returns results). fca.org.uk warning-list pages returned HTTP 403 to this host."
+    },
+    "amf_france": {
+     "url": "https://object-api.infra.data.gouv.fr/amf/LISTES_NOIRES/export_od_listesnoires_20261030080000_20261030083001.csv",
+     "result": "AMF blacklist export (3,499 entries, via data.gouv.fr, last modified 2026-10-29): no entry matching the firm name/domain."
+    },
+    "iosco_iscan": {
+     "url": "https://www.iosco.org/i-scan/?subsection=public_alerts_portal&Keywords=Alpha%20Futures",
+     "result": "1 result: Belgium FSMA 'Warning against fake savings offers', 2021-03-29. Nothing ties it to alpha-futures.com, so not counted as a hit."
+    },
+    "not_checked": "CFTC RED list (headless 403; curl page is JS-only), ASIC MoneySmart (403), OSC warnings (keyword search is JS-only), CONSOB (no queryable search). No hits recorded from these."
+   },
+   "summary": "11 of 20 newest Trustpilot reviews (29-30 Oct) report unpaid or withheld payouts; Premium-account payouts reported outstanding for months.",
+   "checked": "2026-10-31"
+  },
+  "aquafunded": {
+   "name": "AquaFunded",
+   "status": "caution",
+   "status_since": "2026-10-31",
+   "status_reason": "Trustpilot has suspended AquaFunded’s rating for breaching its guidelines and removed fake reviews, and 13 of the 20 most recent reviews report denied payouts or accounts closed at payout request.",
+   "evidence": [
+    {
+     "type": "trustpilot_suspended",
+     "text": "Trustpilot shows: “This company’s rating is unavailable due to a breach of our guidelines.” and “We’ve removed a number of fake reviews for this company.” No date shown (checked 31 Oct 2026).",
+     "url": "https://www.trustpilot.com/review/aquafunded.com?sort=recency",
+     "date": "2026-10-31"
+    },
+    {
+     "type": "payout_complaints",
+     "text": "13 of the 20 most recent reviews (posted 6–30 Oct 2026) report payouts denied, cut or unpaid, or accounts blacklisted after a payout request (copy-trading / reverse-trading / news-rule / floating-loss reasons cited). 1-star share is 40% of 1,198 reviews.",
+     "url": "https://www.trustpilot.com/review/aquafunded.com?sort=recency",
+     "date": "2026-10-31"
+    }
+   ],
+   "tp": {
+    "score": null,
+    "count": 1198,
+    "one_star_pct": 40,
+    "banner": "This company’s rating is unavailable due to a breach of our guidelines. | Breach of guidelines: We’ve removed a number of fake reviews for this company.",
+    "notes": "47% 5-star; 398 reviews in last 12 months."
+   },
+   "recent_reviews": {
+    "n_payout": 13,
+    "m": 20,
+    "from": "2026-10-06",
+    "to": "2026-10-30",
+    "method": "Most recent page 1 (20 reviews).",
+    "quotes": [
+     {
+      "text": "WARNING: $1,308.99 PAYOUT DENIED, ACCOUNT TERMINATED AND PERMANENTLY BLACKLISTED AFTER MY FIRST PAYOUT REQUEST",
+      "date": "2026-10-12"
+     },
+     {
+      "text": "Up until you are profitable and request a payout. Then they find a reason to deny and ban you",
+      "date": "2026-10-22"
+     },
+     {
+      "text": "I requested my first payout of $600 from my $10,000 Elite funded account… Shortly after submitting my request, my account was blacklisted",
+      "date": "2026-10-30"
+     }
+    ]
+   },
+   "firm_response": null,
+   "regulator_checks": {
+    "checked": "2026-10-31",
+    "hits": [],
+    "fca_register": {
+     "url": "https://register.fca.org.uk/s/search?q=<name>&type=Companies",
+     "result": "No results ('Unfortunately, we didn't find any results matching your search term') for: AquaFunded. Search validated with 'Barclays' (returns results). fca.org.uk warning-list pages returned HTTP 403 to this host."
+    },
+    "amf_france": {
+     "url": "https://object-api.infra.data.gouv.fr/amf/LISTES_NOIRES/export_od_listesnoires_20261030080000_20261030083001.csv",
+     "result": "AMF blacklist export (3,499 entries, via data.gouv.fr, last modified 2026-10-29): no entry matching the firm name/domain."
+    },
+    "iosco_iscan": {
+     "url": "https://www.iosco.org/i-scan/?subsection=public_alerts_portal&Keywords=<name>",
+     "result": "Only the first query ('Alpha Futures') loaded; Cloudflare then returned HTTP 403 for the rest. Not checked for this firm unless stated."
+    },
+    "not_checked": "CFTC RED list (headless 403; curl page is JS-only), ASIC MoneySmart (403), OSC warnings (keyword search is JS-only), CONSOB (no queryable search). No hits recorded from these."
+   },
+   "summary": "Trustpilot rating suspended (fake reviews removed); 13 of 20 newest reviews report denied payouts or accounts closed at payout.",
+   "checked": "2026-10-31"
+  },
+  "funding-traders": {
+   "name": "Funding Traders",
+   "status": "caution",
+   "status_since": "2026-10-31",
+   "status_reason": "Trustpilot has suspended Funding Traders’ rating for breaching its guidelines and removed fake reviews, and half of the 20 most recent reviews report denied or delayed payouts or accounts terminated at payout request.",
+   "evidence": [
+    {
+     "type": "trustpilot_suspended",
+     "text": "Trustpilot shows: “This company’s rating is unavailable due to a breach of our guidelines.” and “We’ve removed a number of fake reviews for this company.” No date shown (checked 31 Oct 2026).",
+     "url": "https://www.trustpilot.com/review/fundingtraders.com?sort=recency",
+     "date": "2026-10-31"
+    },
+    {
+     "type": "payout_complaints",
+     "text": "10 of the 20 most recent reviews (posted 12–31 Oct 2026, company replies excluded) report payouts denied, delayed or withheld, or accounts terminated after a payout request. One reviewer lists $18,137.74 denied across three accounts. 1-star share is 24% of 3,283 reviews.",
+     "url": "https://www.trustpilot.com/review/fundingtraders.com?sort=recency",
+     "date": "2026-10-31"
+    }
+   ],
+   "tp": {
+    "score": null,
+    "count": 3283,
+    "one_star_pct": 24,
+    "banner": "This company’s rating is unavailable due to a breach of our guidelines. | Breach of guidelines: We’ve removed a number of fake reviews for this company.",
+    "notes": "68% 5-star; 510 reviews in last 12 months."
+   },
+   "recent_reviews": {
+    "n_payout": 10,
+    "m": 20,
+    "from": "2026-10-12",
+    "to": "2026-10-31",
+    "method": "Most recent pages 1–2, first 20 consumer reviews (company replies skipped). Generic complaints without a personal payout case not counted.",
+    "quotes": [
+     {
+      "text": "They denied both of my payouts of $1,200 each ($2,400 in total) and banned my account after making me wait for more than 15 days.",
+      "date": "2026-10-19"
+     },
+     {
+      "text": "$18,137.74 in Payouts Denied… I purchased three $100K Instant Funded accounts and requested payouts",
+      "date": "2026-10-19"
+     },
+     {
+      "text": "I requested a payout after trading profitably. Instead of processing it, FundingTraders terminated my account, claiming I had violated their news trading policy.",
+      "date": "2026-10-30"
+     }
+    ]
+   },
+   "firm_response": {
+    "text": "The firm replies on Trustpilot (13 replies on page 1). To one payout complaint it wrote: “Your review contains claims that are purely false and misleading,” saying its Risk Department flagged “Self-Reversing Positions, which is categorized as Cross-Account Hedging.”",
+    "url": "https://www.trustpilot.com/review/fundingtraders.com?sort=recency",
+    "date": "2026-10-18"
+   },
+   "regulator_checks": {
+    "checked": "2026-10-31",
+    "hits": [],
+    "fca_register": {
+     "url": "https://register.fca.org.uk/s/search?q=<name>&type=Companies",
+     "result": "No results ('Unfortunately, we didn't find any results matching your search term') for: Funding Traders. Search validated with 'Barclays' (returns results). fca.org.uk warning-list pages returned HTTP 403 to this host."
+    },
+    "amf_france": {
+     "url": "https://object-api.infra.data.gouv.fr/amf/LISTES_NOIRES/export_od_listesnoires_20261030080000_20261030083001.csv",
+     "result": "AMF blacklist export (3,499 entries, via data.gouv.fr, last modified 2026-10-29): no entry matching the firm name/domain."
+    },
+    "iosco_iscan": {
+     "url": "https://www.iosco.org/i-scan/?subsection=public_alerts_portal&Keywords=<name>",
+     "result": "Only the first query ('Alpha Futures') loaded; Cloudflare then returned HTTP 403 for the rest. Not checked for this firm unless stated."
+    },
+    "not_checked": "CFTC RED list (headless 403; curl page is JS-only), ASIC MoneySmart (403), OSC warnings (keyword search is JS-only), CONSOB (no queryable search). No hits recorded from these."
+   },
+   "summary": "Trustpilot rating suspended (fake reviews removed); 10 of 20 newest reviews report denied or delayed payouts.",
+   "checked": "2026-10-31"
+  },
+  "phidias-propfirm": {
+   "name": "Phidias Propfirm",
+   "status": "caution",
+   "status_since": "2026-10-31",
+   "status_reason": "Trustpilot has suspended Phidias Propfirm’s rating for breaching its guidelines and removed fake reviews, and recent reviewers report accounts blocked or banned right after their first payout request.",
+   "evidence": [
+    {
+     "type": "trustpilot_suspended",
+     "text": "Trustpilot shows: “This company’s rating is unavailable due to a breach of our guidelines.” and “We’ve removed a number of fake reviews for this company.” No date shown (checked 31 Oct 2026).",
+     "url": "https://www.trustpilot.com/review/www.phidiaspropfirm.com?sort=recency",
+     "date": "2026-10-31"
+    },
+    {
+     "type": "payout_complaints",
+     "text": "4 of the 20 most recent reviews (posted 6 Aug–28 Oct 2026) report payouts denied or accounts blocked/banned right after a payout request. Another (18 Oct) reports a forced move to LIVE that closed 9 paid evaluations. 1-star share is 34% of 337 reviews. Reviews are low-volume (20 reviews in about 12 weeks).",
+     "url": "https://www.trustpilot.com/review/www.phidiaspropfirm.com?sort=recency",
+     "date": "2026-10-31"
+    }
+   ],
+   "tp": {
+    "score": null,
+    "count": 337,
+    "one_star_pct": 34,
+    "banner": "This company’s rating is unavailable due to a breach of our guidelines. | Breach of guidelines: We’ve removed a number of fake reviews for this company.",
+    "notes": "58% 5-star; 177 reviews in last 12 months. Trustpilot profile is www.phidiaspropfirm.com (phidiaspropfirm.com redirects)."
+   },
+   "recent_reviews": {
+    "n_payout": 4,
+    "m": 20,
+    "from": "2026-08-06",
+    "to": "2026-10-28",
+    "method": "Most recent pages 1–2, first 20 reviews.",
+    "quotes": [
+     {
+      "text": "recently requested my very first payout. Immediately after submitting the payout request, my account access was blocked.",
+      "date": "2026-10-28"
+     },
+     {
+      "text": "after i won a ETL 150k account they just banned me and denied my 3600$ payout",
+      "date": "2026-09-15"
+     },
+     {
+      "text": "As soon as I requested my payout, everything suddenly changed.",
+      "date": "2026-09-15"
+     }
+    ]
+   },
+   "firm_response": null,
+   "regulator_checks": {
+    "checked": "2026-10-31",
+    "hits": [],
+    "fca_register": {
+     "url": "https://register.fca.org.uk/s/search?q=<name>&type=Companies",
+     "result": "No results ('Unfortunately, we didn't find any results matching your search term') for: Phidias. Search validated with 'Barclays' (returns results). fca.org.uk warning-list pages returned HTTP 403 to this host."
+    },
+    "amf_france": {
+     "url": "https://object-api.infra.data.gouv.fr/amf/LISTES_NOIRES/export_od_listesnoires_20261030080000_20261030083001.csv",
+     "result": "AMF blacklist export (3,499 entries, via data.gouv.fr, last modified 2026-10-29): no entry matching the firm name/domain."
+    },
+    "iosco_iscan": {
+     "url": "https://www.iosco.org/i-scan/?subsection=public_alerts_portal&Keywords=<name>",
+     "result": "Only the first query ('Alpha Futures') loaded; Cloudflare then returned HTTP 403 for the rest. Not checked for this firm unless stated."
+    },
+    "not_checked": "CFTC RED list (headless 403; curl page is JS-only), ASIC MoneySmart (403), OSC warnings (keyword search is JS-only), CONSOB (no queryable search). No hits recorded from these."
+   },
+   "summary": "Trustpilot rating suspended (fake reviews removed); reviewers report accounts banned right after a first payout request.",
+   "checked": "2026-10-31"
+  },
+  "audacity-capital": {
+   "name": "AudaCity Capital",
+   "status": "caution",
+   "status_since": "2026-10-31",
+   "status_reason": "Trustpilot has suspended the ratings on both AudaCity Capital profiles for breaching its guidelines and removed fake reviews, and 9 of the 20 most recent reviews on the active audacity.capital profile report payouts refused, voided or stuck in review.",
+   "evidence": [
+    {
+     "type": "trustpilot_suspended",
+     "text": "Trustpilot shows on audacity.capital (291 reviews): “This company’s rating is unavailable due to a breach of our guidelines.” and “We’ve removed a number of fake reviews for this company.” No date shown (checked 31 Oct 2026).",
+     "url": "https://www.trustpilot.com/review/audacity.capital?sort=recency",
+     "date": "2026-10-31"
+    },
+    {
+     "type": "trustpilot_suspended",
+     "text": "Trustpilot shows the same banner on www.audacitycapital.co.uk (1,059 reviews): “This company’s rating is unavailable due to a breach of our guidelines.” / “We’ve removed a number of fake reviews for this company.” (checked 31 Oct 2026).",
+     "url": "https://www.trustpilot.com/review/www.audacitycapital.co.uk?sort=recency",
+     "date": "2026-10-31"
+    },
+    {
+     "type": "payout_complaints",
+     "text": "audacity.capital: 9 of the 20 most recent reviews (posted 11–30 Oct 2026) report payouts refused, voided after review, cut, or 'under review' past the stated window. 1-star share is 40%. One reviewer asks whether the firm is 'experiencing financial difficulties'.",
+     "url": "https://www.trustpilot.com/review/audacity.capital?sort=recency",
+     "date": "2026-10-31"
+    },
+    {
+     "type": "payout_complaints",
+     "text": "audacitycapital.co.uk (older, lower-volume profile): 3 of the 20 most recent reviews (5 Jun–22 Oct 2026) report payouts rejected or not paid. 1-star share is 12%.",
+     "url": "https://www.trustpilot.com/review/www.audacitycapital.co.uk?sort=recency",
+     "date": "2026-10-31"
+    }
+   ],
+   "tp": {
+    "score": null,
+    "count": 291,
+    "one_star_pct": 40,
+    "banner": "This company’s rating is unavailable due to a breach of our guidelines. | Breach of guidelines: We’ve removed a number of fake reviews for this company.",
+    "notes": "Primary profile audacity.capital (Dubai Silicon Oasis address, 268 reviews in last 12 months, 48% 5-star). Second profile www.audacitycapital.co.uk: 1,059 reviews, 12% 1-star, 73% 5-star, 38 in last 12 months, same suspension banner."
+   },
+   "recent_reviews": {
+    "n_payout": 9,
+    "m": 20,
+    "from": "2026-10-11",
+    "to": "2026-10-30",
+    "method": "audacity.capital Most recent pages 1–2, first 20 reviews. Two reviews with identical text counted once. Phase-2 delays and evaluation breaches not counted.",
+    "quotes": [
+     {
+      "text": "Audacity Capital is refusing to process my payout of $5,713.36 on account #241488 under false accusations regarding my custom trading strategy.",
+      "date": "2026-10-28"
+     },
+     {
+      "text": "they told me that the entire $1900 of profit from 2 weeks was void and that my account was breached.",
+      "date": "2026-10-11"
+     },
+     {
+      "text": "I request payout and it's under review for a while week.",
+      "date": "2026-10-19"
+     }
+    ]
+   },
+   "firm_response": null,
+   "regulator_checks": {
+    "checked": "2026-10-31",
+    "hits": [],
+    "fca_register": {
+     "url": "https://register.fca.org.uk/s/search?q=<name>&type=Companies",
+     "result": "No results ('Unfortunately, we didn't find any results matching your search term') for: Audacity Capital. Search validated with 'Barclays' (returns results). fca.org.uk warning-list pages returned HTTP 403 to this host."
+    },
+    "amf_france": {
+     "url": "https://object-api.infra.data.gouv.fr/amf/LISTES_NOIRES/export_od_listesnoires_20261030080000_20261030083001.csv",
+     "result": "AMF blacklist export (3,499 entries, via data.gouv.fr, last modified 2026-10-29): no entry matching the firm name/domain."
+    },
+    "iosco_iscan": {
+     "url": "https://www.iosco.org/i-scan/?subsection=public_alerts_portal&Keywords=<name>",
+     "result": "Only the first query ('Alpha Futures') loaded; Cloudflare then returned HTTP 403 for the rest. Not checked for this firm unless stated."
+    },
+    "not_checked": "CFTC RED list (headless 403; curl page is JS-only), ASIC MoneySmart (403), OSC warnings (keyword search is JS-only), CONSOB (no queryable search). No hits recorded from these."
+   },
+   "summary": "Trustpilot ratings suspended on both profiles; 9 of 20 newest reviews (audacity.capital) report payouts refused or stuck in review.",
+   "checked": "2026-10-31"
+  },
+  "funderpro": {
+   "name": "FunderPro",
+   "status": "caution",
+   "status_since": "2026-10-31",
+   "status_reason": "Trustpilot has suspended FunderPro’s rating for breaching its guidelines and removed fake reviews, and recent reviews include several payouts denied after funded profits under its margin-usage and IP rules.",
+   "evidence": [
+    {
+     "type": "trustpilot_suspended",
+     "text": "Trustpilot shows: “This company’s rating is unavailable due to a breach of our guidelines.” and “We’ve removed a number of fake reviews for this company.” No date shown (checked 31 Oct 2026).",
+     "url": "https://www.trustpilot.com/review/funderpro.com?sort=recency",
+     "date": "2026-10-31"
+    },
+    {
+     "type": "payout_complaints",
+     "text": "7 of the 20 most recent reviews (posted 1 Sep–30 Oct 2026, company replies excluded) report payouts refused or profits removed, citing the 20% margin-usage rule or 'multi IP'. 1-star share is 35% of 1,539 reviews.",
+     "url": "https://www.trustpilot.com/review/funderpro.com?sort=recency",
+     "date": "2026-10-31"
+    }
+   ],
+   "tp": {
+    "score": null,
+    "count": 1539,
+    "one_star_pct": 35,
+    "banner": "This company’s rating is unavailable due to a breach of our guidelines. | Breach of guidelines: We’ve removed a number of fake reviews for this company.",
+    "notes": "55% 5-star; 571 reviews in last 12 months. Firm replies to most negative reviews."
+   },
+   "recent_reviews": {
+    "n_payout": 7,
+    "m": 20,
+    "from": "2026-09-01",
+    "to": "2026-10-30",
+    "method": "Most recent pages 1–2, first 20 consumer reviews (company replies skipped). Ambiguous margin/IP reviews without a clear payout outcome not counted.",
+    "quotes": [
+     {
+      "text": "generated around $3,600 in profits. After that, FunderPro reviewed my account and rejected my reward, claiming that I had exceeded their 20% margin usage rule.",
+      "date": "2026-09-30"
+     },
+     {
+      "text": "manage to request for first 2%payout. and they deny my payout due to multi ip?",
+      "date": "2026-09-10"
+     },
+     {
+      "text": "FunderPro refused both of my $3,000 payouts.",
+      "date": "2026-09-01"
+     }
+    ]
+   },
+   "firm_response": {
+    "text": "Trustpilot reply: “FunderPro does not deny payouts arbitrarily. All payout requests are subject to a review of the relevant account activity and compliance with our Terms & Conditions, with the same process applied across traders.”",
+    "url": "https://www.trustpilot.com/review/funderpro.com?page=2&sort=recency",
+    "date": "2026-08-21"
+   },
+   "regulator_checks": {
+    "checked": "2026-10-31",
+    "hits": [],
+    "fca_register": {
+     "url": "https://register.fca.org.uk/s/search?q=<name>&type=Companies",
+     "result": "No results ('Unfortunately, we didn't find any results matching your search term') for: FunderPro. Search validated with 'Barclays' (returns results). fca.org.uk warning-list pages returned HTTP 403 to this host."
+    },
+    "amf_france": {
+     "url": "https://object-api.infra.data.gouv.fr/amf/LISTES_NOIRES/export_od_listesnoires_20261030080000_20261030083001.csv",
+     "result": "AMF blacklist export (3,499 entries, via data.gouv.fr, last modified 2026-10-29): no entry matching the firm name/domain."
+    },
+    "iosco_iscan": {
+     "url": "https://www.iosco.org/i-scan/?subsection=public_alerts_portal&Keywords=<name>",
+     "result": "Only the first query ('Alpha Futures') loaded; Cloudflare then returned HTTP 403 for the rest. Not checked for this firm unless stated."
+    },
+    "not_checked": "CFTC RED list (headless 403; curl page is JS-only), ASIC MoneySmart (403), OSC warnings (keyword search is JS-only), CONSOB (no queryable search). No hits recorded from these."
+   },
+   "summary": "Trustpilot rating suspended (fake reviews removed); 7 of 20 newest reviews report payouts denied under margin-usage or IP rules.",
+   "checked": "2026-10-31"
+  },
+  "qt-funded": {
+   "name": "QT Funded (Quant Tekel)",
+   "status": "caution",
+   "status_since": "2026-10-31",
+   "status_reason": "QT Funded’s most recent Trustpilot reviews (23–30 Oct 2026) include repeated reports of denied or long-delayed payouts, alongside accounts closed or lost during a TradeLocker-to-MT5 migration.",
+   "evidence": [
+    {
+     "type": "payout_complaints",
+     "text": "6 of the 20 most recent reviews (posted 23–30 Oct 2026) report payouts denied (e.g. 'high margin usage') or held for months. Others report Master/funded accounts denied after passing (3) and accounts read-only/missing after the MT5 migration (3+).",
+     "url": "https://www.trustpilot.com/review/quanttekel.com?sort=recency",
+     "date": "2026-10-31"
+    },
+    {
+     "type": "other",
+     "text": "Trustpilot shows 3.5 from 13,369 reviews (73% 5-star, 20% 1-star), with no suspension banner (checked 31 Oct 2026).",
+     "url": "https://www.trustpilot.com/review/quanttekel.com?sort=recency",
+     "date": "2026-10-31"
+    }
+   ],
+   "tp": {
+    "score": 3.5,
+    "count": 13369,
+    "one_star_pct": 20,
+    "banner": null,
+    "notes": "Profile 'QT Funded', claimed Sep 2024; 3,758 reviews in last 12 months."
+   },
+   "recent_reviews": {
+    "n_payout": 6,
+    "m": 20,
+    "from": "2026-10-23",
+    "to": "2026-10-30",
+    "method": "Most recent page 1–2, first 20 reviews. Denied funded/Master accounts (no payout yet) not counted.",
+    "quotes": [
+     {
+      "text": "‼️Profit of $4,600 — Paid out $0‼️PAYOUT DENIAL",
+      "date": "2026-10-30"
+     },
+     {
+      "text": "they let me wait for my payout 4 month and they put me in the risk interview",
+      "date": "2026-10-25"
+     },
+     {
+      "text": "Banned from discord for questioning a denied payout.",
+      "date": "2026-10-23"
+     }
+    ]
+   },
+   "firm_response": null,
+   "regulator_checks": {
+    "checked": "2026-10-31",
+    "hits": [],
+    "fca_register": {
+     "url": "https://register.fca.org.uk/s/search?q=<name>&type=Companies",
+     "result": "No results ('Unfortunately, we didn't find any results matching your search term') for: QT Funded, Quant Tekel. Search validated with 'Barclays' (returns results). fca.org.uk warning-list pages returned HTTP 403 to this host."
+    },
+    "amf_france": {
+     "url": "https://object-api.infra.data.gouv.fr/amf/LISTES_NOIRES/export_od_listesnoires_20261030080000_20261030083001.csv",
+     "result": "AMF blacklist export (3,499 entries, via data.gouv.fr, last modified 2026-10-29): no entry matching the firm name/domain."
+    },
+    "iosco_iscan": {
+     "url": "https://www.iosco.org/i-scan/?subsection=public_alerts_portal&Keywords=<name>",
+     "result": "Only the first query ('Alpha Futures') loaded; Cloudflare then returned HTTP 403 for the rest. Not checked for this firm unless stated."
+    },
+    "not_checked": "CFTC RED list (headless 403; curl page is JS-only), ASIC MoneySmart (403), OSC warnings (keyword search is JS-only), CONSOB (no queryable search). No hits recorded from these."
+   },
+   "summary": "6 of 20 newest Trustpilot reviews (23-30 Oct) report denied or long-delayed payouts; accounts lost in a TradeLocker-to-MT5 move.",
+   "checked": "2026-10-31"
+  }
+ },
+ "closed": [
+  {
+   "slug": "myforexfunds",
+   "name": "MyForexFunds",
+   "site": "https://myforexfunds.com",
+   "category": "cfd",
+   "status": "closed",
+   "status_since": "2023-08-29",
+   "status_reason": "Operations stopped on 29 Aug 2023 when a US court froze assets on the CFTC's application and the Ontario Securities Commission issued a temporary cease-trade order. The CFTC case was later dismissed with prejudice as a sanction against the CFTC (order of 13 May 2025); no court made a finding of fraud. The brand has not sold challenges since, and its website announces a relaunch on 23 Nov 2026.",
+   "what_happened": "On 29 Aug 2023 the CFTC filed a complaint in the US District Court for the District of New Jersey (Case 1:23-cv-11808) against Traders Global Group Inc. and Murtuza Kazmi, alleging they fraudulently solicited customers. The same day it got an ex parte statutory restraining order that froze assets and appointed a temporary receiver. Also on 29 Aug 2023, the OSC issued a temporary cease-trade order. Tribunal extensions followed, the last on 18 Jul 2024 (consented to by the respondents), and that order expired after at most 3 months. The tribunal docket lists no later filings. Grant Thornton Limited was appointed receiver and manager by the Ontario Superior Court of Justice on 21 Dec 2023. In Nov 2023 the US court narrowed the freeze and removed the temporary receiver. On 13 May 2025, Judge Edward S. Kiel adopted the Special Master's report, granted the defendants' Rule 11 sanctions motion and dismissed the complaint with prejudice. On 11 Jul 2025 the court awarded the defendants $3,148,484.22 in legal fees and costs from the CFTC and closed the case. In April 2026, FNG reported that MFF had begun returning funds to clients who had pending rewards. The brand has since been sold to Global Solutions Operations FZE (Dubai), which says it is 'not currently offering any products or services under the MyForexFunds brand' and has announced a relaunch on 23 Nov 2026.",
+   "regulator": {
+    "name": "U.S. Commodity Futures Trading Commission (CFTC); Ontario Securities Commission (OSC)",
+    "action": "CFTC civil complaint and statutory restraining order (D.N.J., filed 29 Aug 2023), dismissed with prejudice on 13 May 2025 as a Rule 11 sanction against the CFTC. OSC temporary cease-trade order of 29 Aug 2023, last extended 18 Jul 2024 for up to 3 months; no statement of allegations appears on the Capital Markets Tribunal docket.",
+    "quote": "The Sanction Motion (ECF No. 172) is GRANTED and the complaint is dismissed with prejudice.",
+    "url": "https://www.govinfo.gov/content/pkg/USCOURTS-njd-1_23-cv-11808/pdf/USCOURTS-njd-1_23-cv-11808-3.pdf",
+    "date": "2025-05-13"
+   },
+   "trader_action": "MyForexFunds says traders with accounts active before 29 Aug 2023 should use its claims and restoration process, which Global Solutions Operations FZE now runs on Traders Global's behalf (https://myforexfunds.com/myforexfunds-returns/ and https://myforexfunds.com/myforexfunds-announces-new-ownership/). The firm describes this as a discretionary program, not a court-ordered one.",
+   "founded": null,
+   "hq": "Ontario, Canada (Traders Global Group Inc.); brand now owned by Global Solutions Operations FZE, Dubai",
+   "status_sources": [
+    {
+     "url": "https://www.govinfo.gov/content/pkg/USCOURTS-njd-1_23-cv-11808/pdf/USCOURTS-njd-1_23-cv-11808-3.pdf",
+     "title": "Order, CFTC v. Traders Global Group Inc., No. 23-cv-11808 (ECF 260)",
+     "publisher": "U.S. District Court, D.N.J. (via govinfo.gov)",
+     "date": "2025-05-13",
+     "quote": "The R&R is adopted. (ECF No. 247.) The Sanction Motion (ECF No. 172) is GRANTED and the complaint is dismissed with prejudice."
+    },
+    {
+     "url": "https://www.govinfo.gov/content/pkg/USCOURTS-njd-1_23-cv-11808/pdf/USCOURTS-njd-1_23-cv-11808-4.pdf",
+     "title": "Opinion and Order on fees (ECF 269)",
+     "publisher": "U.S. District Court, D.N.J. (via govinfo.gov)",
+     "date": "2025-07-11",
+     "quote": "Defendants are awarded $3,148,484.22 in legal fees and costs from plaintiff. ... The Clerk of the Court is directed to mark this matter as closed."
+    },
+    {
+     "url": "https://www.cftc.gov/media/9196/enftradersglobalgroupcomplaint082923/download",
+     "title": "CFTC Complaint v. Traders Global Group Inc. et al.",
+     "publisher": "CFTC",
+     "date": "2023-08-29",
+     "quote": "Traders Global, doing business as \"My Forex Funds,\" ... offers retail customers the opportunity to become \"professional traders\" (allegation; case later dismissed with prejudice)"
+    },
+    {
+     "url": "https://www.capitalmarketstribunal.ca/en/proceedings/traders-global-group-inc-re/temporary-order-matter-traders-global-group-inc-and-muhammad-murtuza-kazmi",
+     "title": "Temporary Order: Traders Global Group Inc. and Muhammad Murtuza Kazmi",
+     "publisher": "Ontario Securities Commission / Capital Markets Tribunal",
+     "date": "2023-08-29",
+     "quote": "all trading in securities of TGG shall cease (temporary order; grounds stated as 'may have' — not findings)"
+    },
+    {
+     "url": "https://www.capitalmarketstribunal.ca/en/proceedings/traders-global-group-inc-re/order-traders-global-group-inc-re",
+     "title": "Order: Traders Global Group Inc. (Re)",
+     "publisher": "Capital Markets Tribunal (Ontario)",
+     "date": "2024-07-18",
+     "quote": "until the earlier of 1) 10 days after the issuance of a Statement of Allegations ... or 2) 3 months after the issuance of this Order ... Grant Thornton Limited (the Receiver) ... appointed pursuant to a decision of the Ontario Superior Court of Justice dated December 21, 2023"
+    },
+    {
+     "url": "https://www.quinnemanuel.com/the-firm/publications/historic-rule-11-dismissal-and-fee-victory-against-the-commodity-futures-trading-commission-in-hotly-contested-fraud-case/",
+     "title": "Historic Rule 11 Dismissal and Fee Victory Against the CFTC",
+     "publisher": "Quinn Emanuel (defence counsel)",
+     "date": null,
+     "quote": "The CFTC's conduct, which was undertaken over the course of a year and involved numerous instances of sanctionable behavior, was willful and undertaken in bad faith. (quoting the Court)"
+    },
+    {
+     "url": "https://fxnewsgroup.com/forex-news/retail-forex/prop-firm-myforexfunds-begins-returning-client-funds-following-court-vindication/",
+     "title": "Prop firm MyForexFunds begins returning client funds following court vindication",
+     "publisher": "FX News Group (fxnewsgroup.com)",
+     "date": "2026-04-06",
+     "quote": "A US district court win against the CFTC in 2025 has led to an unfreezing of MyForexFunds client assets"
+    },
+    {
+     "url": "https://myforexfunds.com/myforexfunds-announces-new-ownership/",
+     "title": "MyForexFunds Announces New Ownership",
+     "publisher": "MyForexFunds (firm)",
+     "date": null,
+     "quote": "Global Solutions is not currently offering any products or services under the MyForexFunds brand."
+    },
+    {
+     "url": "https://www.trustpilot.com/review/myforexfunds.com",
+     "title": "MyForexFunds reviews",
+     "publisher": "Trustpilot",
+     "date": null,
+     "quote": "it's not possible to leave a review here anymore because the company's website has closed"
+    }
+   ],
+   "site_now": "The site shows a waitlist page ('MYFOREXFUNDS IS ON ITS WAY ... RELAUNCHING NOVEMBER 23, 2026'). It has no checkout and is operated by Global Solutions Operations FZE, Dubai.",
+   "checked": "2026-10-31",
+   "legal_name": "MyForexFunds (Traders Global Group Inc.)",
+   "status_reason_zh": "2023 年 8 月 29 日，美国法院应 CFTC 申请冻结资产，安大略证监会发出临时停止交易令，业务停止。CFTC 案件于 2025 年 5 月 13 日作为对 CFTC 的制裁被驳回且不得再诉；法院未认定欺诈。品牌宣布将于 2026 年 11 月 23 日重新上线。"
+  },
+  {
+   "slug": "true-forex-funds",
+   "name": "True Forex Funds",
+   "site": "https://trueforexfunds.com",
+   "category": "cfd",
+   "status": "closed",
+   "status_since": "2024-02-06",
+   "status_reason": "FX News Group reported on 6 Feb 2024 that the firm had stopped operating after MetaQuotes terminated its MT4/MT5 licences. The firm's own website now says it 'has ceased all operations and will be closing permanently due to financial insolvency'.",
+   "what_happened": "On 6 Feb 2024, FNG reported that the Hungary-based firm had stopped operating, 'at least temporarily', after MetaQuotes terminated its trading-platform licences. According to FNG, the firm had been on the CFTC's RED (Registration Deficient) List since June 2023. FNG says the firm 'made several attempts at restarting its operations', but on 14 May 2024 it posted an 'Official Closure' notice citing financial insolvency. That notice is still on the website.",
+   "regulator": null,
+   "trader_action": null,
+   "founded": null,
+   "hq": "Hungary (per FX News Group)",
+   "status_sources": [
+    {
+     "url": "https://trueforexfunds.com/",
+     "title": "Official Closure of True Forex Funds",
+     "publisher": "True Forex Funds (firm)",
+     "date": null,
+     "quote": "True Forex Funds has ceased all operations and will be closing permanently due to financial insolvency."
+    },
+    {
+     "url": "https://fxnewsgroup.com/forex-news/retail-forex/prop-firm-true-forex-funds-folds/",
+     "title": "Prop firm True Forex Funds folds",
+     "publisher": "FX News Group (fxnewsgroup.com)",
+     "date": "2024-05-14",
+     "quote": "the company has now informed its clients and the public that it is shutting down, for good."
+    },
+    {
+     "url": "https://fxnewsgroup.com/forex-news/retail-forex/exclusive-prop-trading-firm-true-forex-funds-shut-down-by-metaquotes-move/",
+     "title": "Exclusive: Prop trading firm True Forex Funds shut down by MetaQuotes move",
+     "publisher": "FX News Group (fxnewsgroup.com)",
+     "date": "2024-02-06",
+     "quote": "Hungary based online prop trading firm True Forex Funds has ceased operating, at least temporarily, after MT4 / MT5 operator MetaQuotes terminated its trading platform licenses."
+    }
+   ],
+   "site_now": "The domain shows only the 'Official Closure of True Forex Funds' notice (financial insolvency).",
+   "checked": "2026-10-31",
+   "status_reason_zh": "据 FX News Group 2024 年 2 月报道，MetaQuotes 终止其 MT4/MT5 授权后停止运营；官网称因资不抵债已停止全部业务并将永久关闭。"
+  },
+  {
+   "slug": "surge-trader",
+   "name": "SurgeTrader",
+   "site": "https://surgetrader.com",
+   "category": "cfd",
+   "status": "closed",
+   "status_since": "2024-05-24",
+   "status_reason": "The firm's website notice, quoted by FX News Group, said that as of 24 May 2024 SurgeTrader 'has closed and ceased all operations'. It said it had been unable to resolve the termination of its trading platform with Match-Trade Technologies.",
+   "what_happened": "SurgeTrader launched in 2021. It was operated by Valo Holdings Group, controlled by Naples, Florida entrepreneur Jana Seaman. In May 2024, Match-Trade Technologies revoked the licence for its Match-Trader platform. On 24 May 2024 the firm posted a notice saying it had closed and ceased all operations. The domain is now listed for sale on GoDaddy.",
+   "regulator": null,
+   "trader_action": null,
+   "founded": "2021",
+   "hq": "Naples, Florida, USA",
+   "status_sources": [
+    {
+     "url": "https://fxnewsgroup.com/forex-news/retail-forex/exclusive-prop-firm-surgetrader-closes/",
+     "title": "Exclusive: Prop firm SurgeTrader closes",
+     "publisher": "FX News Group (fxnewsgroup.com)",
+     "date": "2024-05-26",
+     "quote": "as of today, Friday, May 24, 2024, SurgeTrader has closed and ceased all operations. Despite all of our efforts this week to get Match Trade Technologies to further communicate in an effort to resolve our trading platform termination, we have been unsuccessful."
+    },
+    {
+     "url": "https://forsale.godaddy.com/forsale/surgetrader.com",
+     "title": "surgetrader.com is for sale",
+     "publisher": "GoDaddy (domain now)",
+     "date": "2026-10-31",
+     "quote": "The domain name surgetrader.com is for sale!"
+    }
+   ],
+   "site_now": "Redirects to the GoDaddy domain-for-sale page ('The domain name surgetrader.com is for sale!').",
+   "checked": "2026-10-31",
+   "status_reason_zh": "据 FX News Group 引述的官网公告，2024 年 5 月 24 日起 SurgeTrader 已关闭并停止全部业务，原因是与 Match-Trade 的交易平台终止问题未能解决。"
+  },
+  {
+   "slug": "funded-engineer",
+   "name": "Funded Engineer",
+   "site": "https://fundedengineer.com",
+   "category": "cfd",
+   "status": "closed",
+   "status_since": "2024-07-15",
+   "status_reason": "In an 'Announcement of Ceasing Operations' quoted by FX News Group on 15 Jul 2024, Funded Engineer announced 'the permanent closure of Funded Engineer' and said it 'will be filing for bankruptcy'.",
+   "what_happened": "On 7 Feb 2024, the firm's technology provider FPFX Technologies terminated its licence. FPFX alleged the firm had run a scheme of fake accounts and fictitious payouts. These are FPFX's allegations, not a court finding. Around 12 Feb 2024 the broker Purple Trading Seychelles suspended MT4/MT5 services. Funded Engineer then attempted a relaunch through Blueberry Markets. PropFirmMatch suspended the firm, citing compromised funded accounts. On 15 Jul 2024 the firm replaced its website with a notice announcing permanent closure and a bankruptcy filing. The domain is now a parked GoDaddy page.",
+   "regulator": null,
+   "trader_action": null,
+   "founded": null,
+   "hq": "Dubai, UAE (per FX News Group)",
+   "status_sources": [
+    {
+     "url": "https://fxnewsgroup.com/forex-news/retail-forex/exclusive-prop-firm-funded-engineer-closes-files-for-bankruptcy/",
+     "title": "Exclusive: Prop firm Funded Engineer closes, files for bankruptcy",
+     "publisher": "FX News Group (fxnewsgroup.com)",
+     "date": "2024-07-15",
+     "quote": "we announce the permanent closure of Funded Engineer ... necessitating the cessation of all operations effective immediately ... Funded Engineer will be filing for bankruptcy."
+    },
+    {
+     "url": "https://fxnewsgroup.com/forex-news/retail-forex/fpfx-terminates-license-of-prop-trading-firm-funded-engineer-over-alleged-fraud-scheme/",
+     "title": "FPFX terminates license of prop trading firm Funded Engineer over alleged fraud scheme",
+     "publisher": "FX News Group (fxnewsgroup.com)",
+     "date": "2024-02-07",
+     "quote": "FPFX Technologies has announced that it has terminated the license of its client, Dubai based prop trading firm Funded Engineer (allegations by FPFX, not a court finding)"
+    },
+    {
+     "url": "https://fundedengineer.com/lander",
+     "title": "fundedengineer.com parked",
+     "publisher": "GoDaddy (domain now)",
+     "date": "2026-10-31",
+     "quote": "fundedengineer.com is parked free, courtesy of GoDaddy.com."
+    }
+   ],
+   "site_now": "Parked GoDaddy page ('fundedengineer.com is parked free, courtesy of GoDaddy.com').",
+   "checked": "2026-10-31",
+   "status_reason_zh": "据 FX News Group 2024 年 7 月 15 日引述的公告，Funded Engineer 宣布永久关闭并将申请破产。"
+  },
+  {
+   "slug": "funding-talent",
+   "name": "Funding Talent",
+   "site": "https://fundingtalent.com",
+   "category": "cfd",
+   "status": "closed",
+   "status_since": "2021-11",
+   "status_reason": "In Sept 2021, Funding Talent announced it was 'permanently removing Challenge as a Funding Talent program offering'. By Dec 2021 it said it would 'formally depart from the prop firm community'. Trustpilot now says the company's website has closed.",
+   "what_happened": "Forex Prop Reviews published the firm's announcement on 29 Sep 2021. It said Challenge was being permanently removed, that the firm had about 13,000 members in 162 countries, and that all accounts were demo accounts. It offered a new evaluation-free 'Edge' beta from 4 Oct 2021. Trustpilot reviews from Nov 2021 describe ended programs, cancelled accounts and refund disputes. These are customer allegations. On 9 Dec 2021, Forex Prop Reviews quoted the firm's statement that it would 'fully commit to the educational gaming space and formally depart from the prop firm community'.",
+   "regulator": null,
+   "trader_action": null,
+   "founded": "2020 (per the firm's Sept 2021 statement: 'founding 19 months ago')",
+   "hq": null,
+   "status_sources": [
+    {
+     "url": "https://www.trustpilot.com/review/fundingtalent.com",
+     "title": "Funding Talent reviews",
+     "publisher": "Trustpilot",
+     "date": null,
+     "quote": "Unfortunately, it's not possible to leave a review here anymore because the company's website has closed."
+    },
+    {
+     "url": "https://forexpropreviews.com/funding-talent-closing-their-doors/",
+     "title": "Funding Talent closing their doors",
+     "publisher": "Forex Prop Reviews",
+     "date": "2021-09-29",
+     "quote": "Effective immediately, we are permanently removing Challenge as a Funding Talent program offering."
+    },
+    {
+     "url": "https://forexpropreviews.com/funding-talent-bankruptcy/",
+     "title": "Funding Talent has officially closed its doors",
+     "publisher": "Forex Prop Reviews",
+     "date": "2021-12-09",
+     "quote": "we are confident in our decision as we fully commit to the educational gaming space and formally depart from the prop firm community."
+    }
+   ],
+   "site_now": "Only a Cloudflare 'Performing security verification' page loads (HTTP 403). No prop-firm content or checkout could be reached.",
+   "checked": "2026-10-31",
+   "status_reason_zh": "2021 年 9 月宣布永久取消挑战项目，同年 12 月宣布退出自营交易行业。Trustpilot 显示该公司网站已关闭。"
+  },
+  {
+   "slug": "seacrest-funded",
+   "name": "Seacrest Funded",
+   "site": "https://seacrestfunded.com",
+   "category": "cfd",
+   "status": "closed",
+   "status_since": "2026-02-06",
+   "status_reason": "According to Finance Magnates (4 Feb 2026), Seacrest Markets closed its prop-trading operations, with all prop accounts and open positions closed on 6 Feb 2026, to focus on its CFD brokerage. Seacrest Markets' own website now says it 'is no longer operating'.",
+   "what_happened": "In Feb 2025, MyFundedFX, a Dallas, Texas group, rebranded as SeacrestFunded under its South African FSCA-licensed broker Seacrest Markets and stopped onboarding US clients. On 4 Feb 2026, Seacrest announced it would end prop trading. All prop accounts and positions were closed on 6 Feb 2026. Active, unbreached challenge holders could request refunds, and funded traders their final payouts, by 28 Feb 2026. At the time, Finance Magnates said futures prop trading continued under MyFunded Futures. Today myfundedfx.com redirects to seacrestmarkets.io/closed, which says Seacrest Markets is no longer operating, and seacrestfunded.com is a 'domain may be for sale' page.",
+   "regulator": null,
+   "trader_action": "The refund and final-payout window set by Seacrest closed on 28 Feb 2026, per Finance Magnates. The closure page gives support@seacrestmarkets.io for questions.",
+   "founded": null,
+   "hq": "Dallas, Texas, USA (MyFundedFX); broker entity Seacrest Markets (PTY) Ltd, South Africa",
+   "status_sources": [
+    {
+     "url": "https://seacrestmarkets.io/closed",
+     "title": "Seacrest Markets closure notice",
+     "publisher": "Seacrest Markets (PTY) Ltd (firm)",
+     "date": null,
+     "quote": "We would like to inform you that Seacrest Markets is no longer operating."
+    },
+    {
+     "url": "https://www.financemagnates.com/forex/seacrest-ends-prop-trading-after-integrating-myfundedfx-shifts-focus-to-cfds/",
+     "title": "Seacrest Ends Prop Trading After Integrating MyFundedFX, Shifts Focus to CFDs",
+     "publisher": "Finance Magnates",
+     "date": "2026-02-04",
+     "quote": "The company said all prop trading accounts and open positions will be closed on February 6, 2026."
+    },
+    {
+     "url": "https://fxnewsgroup.com/forex-news/retail-forex/prop-firm-myfundedfx-rebrands-as-seacrestfunded-restricts-us-customers/",
+     "title": "Prop firm MyFundedFX rebrands as SeacrestFunded, restricts US customers",
+     "publisher": "FX News Group (fxnewsgroup.com)",
+     "date": "2025-02-11",
+     "quote": "Retail prop trading firm MyFundedFX has announced a rebranding of the operation to SeacrestFunded."
+    },
+    {
+     "url": "https://seacrestfunded.com",
+     "title": "seacrestfunded.com",
+     "publisher": "Domain parking page",
+     "date": "2026-10-31",
+     "quote": "This domain may be for sale."
+    }
+   ],
+   "site_now": "seacrestfunded.com shows a parked page ('This domain may be for sale'). myfundedfx.com redirects to seacrestmarkets.io/closed ('Seacrest Markets is no longer operating').",
+   "checked": "2026-10-31",
+   "legal_name": "Seacrest Funded (formerly MyFundedFX)",
+   "status_reason_zh": "据 Finance Magnates 报道，Seacrest Markets 于 2026 年 2 月 6 日关闭全部自营交易账户，专注 CFD 经纪业务；官网称已不再运营。"
+  },
+  {
+   "slug": "smart-prop-trader",
+   "name": "Smart Prop Trader",
+   "site": "https://smartproptrader.com",
+   "category": "cfd",
+   "status": "closed",
+   "status_since": "2024-11-27",
+   "status_reason": "The firm announced on X that 'As of November 27, 2024, Smart Prop Trader will no longer onboard new traders'. Finance Magnates reported that operations would stop on 29 Dec 2024.",
+   "what_happened": "On 28 Nov 2024 the firm, led by CEO Blake Olson, said it had stopped onboarding new traders. Existing traders could keep trading until 29 Dec 2024. November 2024 buyers at break-even or above qualified for full refunds, and accounts in good standing after 29 Dec were promised individual resolution plans. The firm hinted at a new product. The domain now redirects to smartprofitfx.com, an Eightcap introducing-broker site, not a prop firm.",
+   "regulator": null,
+   "trader_action": null,
+   "founded": null,
+   "hq": null,
+   "status_sources": [
+    {
+     "url": "https://www.financemagnates.com/forex/another-prop-firm-announces-closure-in-year-that-saw-50-companies-shutter/",
+     "title": "Another Prop Firm Announces Closure in Year That Saw 50+ Companies Shutter",
+     "publisher": "Finance Magnates",
+     "date": "2024-11-28",
+     "quote": "Smart Prop Trader will stop operation on December 29, 2024. The onboarding of new traders has already stopped."
+    },
+    {
+     "url": "https://twitter.com/SmartPropTrader/status/1861923571741929579",
+     "title": "Important Announcement from Smart Prop Trader (as embedded by Finance Magnates)",
+     "publisher": "Smart Prop Trader on X (firm)",
+     "date": "2024-11-28",
+     "quote": "As of November 27, 2024, Smart Prop Trader will no longer onboard new traders."
+    },
+    {
+     "url": "https://smartprofitfx.com/",
+     "title": "SmartProfitFX (smartproptrader.com redirect target)",
+     "publisher": "SmartProfitFX",
+     "date": "2026-10-31",
+     "quote": "Open the same Eightcap accounts through SmartProfitFX ... Eightcap is the regulated broker; SmartProfitFX is the door in."
+    }
+   ],
+   "site_now": "smartproptrader.com redirects to smartprofitfx.com, an Eightcap introducing-broker site. There is no prop challenge checkout.",
+   "checked": "2026-10-31",
+   "status_reason_zh": "公司在 X 上宣布自 2024 年 11 月 27 日起不再接纳新交易者；据 Finance Magnates 报道，业务于 2024 年 12 月 29 日停止。"
+  },
+  {
+   "slug": "skilled-funded-traders",
+   "name": "Skilled Funded Traders",
+   "site": "https://skilledfundedtraders.com",
+   "category": "cfd",
+   "status": "closed",
+   "status_since": "2024-03-29",
+   "status_reason": "On 29 Mar 2024 the firm replaced its website with a notice that it 'has temporarily ceased all operations, including new purchases, effective immediately', according to FX News Group. We found no source showing it resumed, and the domain is now listed as an expired domain for sale.",
+   "what_happened": "FNG reported the shutdown on 29 Mar 2024, a day after The Funded Trader paused. It linked both brands to Easton Consulting Technologies of Miami. FNG said it was unclear whether Easton owned them or acted as a white-label provider. The notice promised individual follow-ups 'as we explore alternatives to resume operations'. The latest Trustpilot reviews we saw are from Oct 2024. Today the domain redirects to an expireddomains.com sale listing ($195).",
+   "regulator": null,
+   "trader_action": null,
+   "founded": null,
+   "hq": "Miami, Florida, USA (affiliation per FX News Group; unconfirmed)",
+   "status_sources": [
+    {
+     "url": "https://fxnewsgroup.com/forex-news/retail-forex/skilled-funded-traders-becomes-second-easton-prop-firm-shut/",
+     "title": "Skilled Funded Traders becomes second Easton prop firm shut",
+     "publisher": "FX News Group (fxnewsgroup.com)",
+     "date": "2024-03-29",
+     "quote": "We regret to inform you that Skilled Funded Traders has temporarily ceased all operations, including new purchases, effective immediately."
+    },
+    {
+     "url": "https://expireddomains.com/domain/skilledfundedtraders.com",
+     "title": "SkilledFundedTraders.com for sale",
+     "publisher": "expireddomains.com (domain now)",
+     "date": "2026-10-31",
+     "quote": "SkilledFundedTraders.com PREMIUM DOMAIN · FOR SALE ... BUY-IT-NOW $195 USD"
+    }
+   ],
+   "site_now": "Redirects to an expireddomains.com listing offering SkilledFundedTraders.com for sale at $195.",
+   "checked": "2026-10-31",
+   "status_reason_zh": "据 FX News Group 报道，2024 年 3 月 29 日官网公告“暂时停止全部业务”；我们未找到恢复运营的来源，域名已作为过期域名出售。"
+  },
+  {
+   "slug": "traders-with-edge",
+   "name": "Traders With Edge",
+   "site": "https://traderswithedge.com",
+   "category": "cfd",
+   "status": "closed",
+   "status_since": "2025-12",
+   "status_reason": "We found no closure announcement from the firm. Its domain no longer resolves, Trustpilot says the company's website has closed, and trade sites reported in Dec 2025 that the site had gone offline 'suggesting firm shutdown'.",
+   "what_happened": "Trustpilot reviews from Jul–Sep 2025 include customer allegations of denied payouts and of the platform being offline for weeks. These are allegations, not findings. On 29 Dec 2025, VettedPropFirms reported that the website had gone offline several days earlier with no public statement from the company. On 7 Sep 2026, BestForex.io reported that the domain does not resolve and that Trustpilot marks the website closed. On 31 Oct 2026, traderswithedge.com returned DNS 'name not resolved'.",
+   "regulator": null,
+   "trader_action": "BestForex.io suggests former customers keep invoices, agreements, account statements and support emails for any payment-provider or legal claim. That is general guidance, not a formal claims process.",
+   "founded": null,
+   "hq": null,
+   "status_sources": [
+    {
+     "url": "https://www.trustpilot.com/review/www.traderswithedge.com",
+     "title": "Traders With Edge reviews",
+     "publisher": "Trustpilot",
+     "date": null,
+     "quote": "Unfortunately, it's not possible to leave a review here anymore because the company's website has closed."
+    },
+    {
+     "url": "https://vettedpropfirms.com/traders-with-edge-website-goes-offline-suggesting-firm-shutdown/",
+     "title": "Traders With Edge Website Goes Offline, Suggesting Firm Shutdown",
+     "publisher": "VettedPropFirms",
+     "date": "2025-12-29",
+     "quote": "its official website went offline several days ago ... there has been no public communication from the company"
+    },
+    {
+     "url": "https://www.bestforex.io/news/traders-with-edge-closed-payout-complaints",
+     "title": "Traders With Edge Closed After Payout Complaints",
+     "publisher": "BestForex.io",
+     "date": "2026-09-07",
+     "quote": "Traders With Edge is no longer operating. Its website does not resolve, Trustpilot says the company's website has closed"
+    }
+   ],
+   "site_now": "traderswithedge.com does not resolve (net::ERR_NAME_NOT_RESOLVED).",
+   "checked": "2026-10-31",
+   "status_reason_zh": "公司未发布关闭公告。其域名已无法解析，Trustpilot 显示网站已关闭，行业网站 2025 年 12 月报道网站下线。"
+  },
+  {
+   "slug": "funds-for-traders",
+   "name": "Funds For Traders",
+   "site": "https://fundsfortraders.com",
+   "category": "cfd",
+   "status": "closed",
+   "status_since": "2024-08-15",
+   "status_reason": "On 15 Aug 2024 the firm posted an 'Official Closure of Funds For Traders' notice, quoted by FX News Group, saying it was 'ceasing all operations'. It said this followed Eightcap's decision to stop supporting MT4/MT5 for prop trading.",
+   "what_happened": "The Netherlands-based firm relied on Eightcap as its executing broker. On 15 Aug 2024 it said Eightcap would no longer support MetaTrader 4 and 5 for prop trading, and that without MetaTrader it could not continue. It said everyone with active challenges would be contacted. On 31 Oct 2026 the domain timed out in both a headless browser and a direct fetch.",
+   "regulator": null,
+   "trader_action": null,
+   "founded": null,
+   "hq": "Netherlands (per FX News Group)",
+   "status_sources": [
+    {
+     "url": "https://fxnewsgroup.com/forex-news/retail-forex/exclusive-funds-for-traders-shuts-after-eightcap-cuts-mt4-mt5-for-prop-firms/",
+     "title": "Exclusive: Funds for Traders shuts after Eightcap cuts MT4/MT5 for prop firms",
+     "publisher": "FX News Group (fxnewsgroup.com)",
+     "date": "2024-08-15",
+     "quote": "We regret to inform you that as of today, we will be ceasing all operations at Funds For Traders."
+    },
+    {
+     "url": "https://www.trustpilot.com/review/fundsfortraders.com",
+     "title": "Funds For Traders reviews",
+     "publisher": "Trustpilot",
+     "date": null,
+     "quote": null,
+     "note": "Observation, not a quote: the newest dated reviews visible were from June 2024."
+    }
+   ],
+   "site_now": "fundsfortraders.com timed out (no response) on 2026-10-31.",
+   "checked": "2026-10-31",
+   "status_reason_zh": "据 FX News Group 引述，2024 年 8 月 15 日公司发布正式关闭公告，称在 Eightcap 停止为自营交易支持 MT4/MT5 后停止全部业务。"
+  },
+  {
+   "slug": "propel-capital-group",
+   "name": "Propel Capital",
+   "site": "https://propelcapitalgroup.co.uk",
+   "category": "cfd",
+   "status": "closed",
+   "status_since": "2025-08-19",
+   "status_reason": "On 19 Aug 2025, CEO Mitchell Ali posted on X that he had decided 'to wind down Propel Capital as you know it'. He cited heavy competition and said the firm would 'remove ourselves from the market with immediate effect', according to FX News Group.",
+   "what_happened": "Propel Capital, a London firm, was founded about 14 months before closing. On 19 Aug 2025 it stopped processing payments and halted all trading activity. It said it would wait a few weeks to see whether anyone wanted to continue the brand and then offer refunds to those who qualify. FNG reported that the website was down that day. On 31 Oct 2026 the domain showed only a 'verify you're human' gate, and the site certificate failed validation in a direct fetch.",
+   "regulator": null,
+   "trader_action": "In its statement, Propel said refunds would be offered 'to those who qualify', with updates via Discord, X and email, per FX News Group.",
+   "founded": "2024",
+   "hq": "London, UK",
+   "status_sources": [
+    {
+     "url": "https://fxnewsgroup.com/forex-news/retail-forex/another-prop-trading-firm-shut-propel-capital/",
+     "title": "Another Prop Trading firm shut: Propel Capital",
+     "publisher": "FX News Group (fxnewsgroup.com)",
+     "date": "2025-08-19",
+     "quote": "Today, I have made the extremely difficult decision to wind down Propel Capital as you know it. ... We will no longer be processing any payments, and all trading activity will be halted."
+    }
+   ],
+   "site_now": "Only a 'Verification / Security check — Checking your browser' gate loaded. The direct fetch failed with a certificate error, and no product pages were reachable.",
+   "checked": "2026-10-31",
+   "status_reason_zh": "据 FX News Group 报道，CEO 于 2025 年 8 月 19 日在 X 上宣布结束 Propel Capital 的业务，理由是竞争激烈。"
+  },
+  {
+   "slug": "fundingticks",
+   "name": "FundingTicks",
+   "site": "https://www.fundingticks.com",
+   "category": "futures",
+   "status": "closed",
+   "status_since": "2026-01-18",
+   "status_reason": "FundingTicks' website says 'as a strategic decision, we are winding down FundingTicks' operations'. Finance Magnates reported the wind-down on 19 Jan 2026, after a backlash over retroactive rule changes in Dec 2025.",
+   "what_happened": "In Dec 2025 the futures prop firm introduced new rules, including a one-minute minimum hold and reduced profit splits. Traders reported invalidated profits, and Trustpilot ratings fell. On 18 Jan 2026 it announced a full wind-down. Active Evals and Master accounts are refunded in full. Master accounts get an 80% or 20% reward split depending on whether objectives were met, and live accounts get refunds plus specified percentages. Support remained available until 31 Jan 2026. The wind-down notice is still the homepage.",
+   "regulator": null,
+   "trader_action": "According to FundingTicks and Finance Magnates, refunds and account handling were already under way and traders should check their dashboards. Support was available until 31 Jan 2026.",
+   "founded": null,
+   "hq": null,
+   "status_sources": [
+    {
+     "url": "https://www.fundingticks.com/",
+     "title": "FundingTicks wind-down notice",
+     "publisher": "FundingTicks (firm)",
+     "date": null,
+     "quote": "Therefore, as a strategic decision, we are winding down FundingTicks' operations."
+    },
+    {
+     "url": "https://www.financemagnates.com/forex/following-profit-cuts-and-trading-limits-prop-firm-fundingticks-begins-winding-down/",
+     "title": "Following Profit Cuts and Trading Limits, Prop Firm FundingTicks Begins Winding Down",
+     "publisher": "Finance Magnates",
+     "date": "2026-01-19",
+     "quote": "FundingTicks, a prop trading platform, has announced it will wind down its operations."
+    },
+    {
+     "url": "https://vettedpropfirms.com/fundingticks-shuts-down-leaving-traders-with-unanswered-questions/",
+     "title": "FundingTicks Shuts Down, Leaving Traders With Unanswered Questions",
+     "publisher": "VettedPropFirms",
+     "date": null,
+     "quote": "Futures prop trading firm FundingTicks has officially shut down"
+    }
+   ],
+   "site_now": "Homepage shows the 'Dear Traders ... we are winding down FundingTicks' operations' notice and refund terms.",
+   "checked": "2026-10-31",
+   "status_reason_zh": "FundingTicks 官网称已决定结束运营；Finance Magnates 于 2026 年 1 月 19 日报道，此前其 2025 年 12 月的追溯性规则变更引发不满。"
+  },
+  {
+   "slug": "stocknet-institute",
+   "name": "Stocknet Institute",
+   "site": "https://stocknetinstitute.com",
+   "category": "cfd",
+   "status": "closed",
+   "status_since": "2024-07-04",
+   "status_reason": "In a client email quoted by FX News Group (5 Jul 2024), the firm said it would 'formally begin the process of winding down our operations, with the goal of permanently closing', and that plan purchasing had been disabled.",
+   "what_happened": "Stocknet Institute, a UK prop firm also branded SI World (siworld.io), had operated for about 3 years. In July 2024 it announced a 'permanent move away from the Prop Trading industry'. It stopped taking new clients and said active clients would be emailed about account closure. stocknetinstitute.com is now a parked 123 Reg page.",
+   "regulator": null,
+   "trader_action": null,
+   "founded": "2021 (approx., 'three years of operating' per July 2024 email)",
+   "hq": "UK",
+   "status_sources": [
+    {
+     "url": "https://fxnewsgroup.com/forex-news/retail-forex/prop-firm-stocknet-institute-siworld-shuts-down/",
+     "title": "Prop firm Stocknet Institute (SIworld) shuts down",
+     "publisher": "FX News Group (fxnewsgroup.com)",
+     "date": "2024-07-05",
+     "quote": "we have decided to formally begin the process of winding down our operations, with the goal of permanently closing. ... plan purchasing has been disabled."
+    },
+    {
+     "url": "https://stocknetinstitute.com/lander",
+     "title": "stocknetinstitute.com parked",
+     "publisher": "123 Reg (domain now)",
+     "date": "2026-10-31",
+     "quote": "stocknetinstitute.com is parked free, courtesy of 123 Reg."
+    }
+   ],
+   "site_now": "Parked 123 Reg page.",
+   "checked": "2026-10-31",
+   "legal_name": "Stocknet Institute (SI World)",
+   "status_reason_zh": "据 FX News Group 引述的客户邮件（2024 年 7 月），公司开始结束业务并以永久关闭为目标，已停止销售。"
+  },
+  {
+   "slug": "ascetic-capital",
+   "name": "Ascetic Capital",
+   "site": null,
+   "category": "cfd",
+   "status": "closed",
+   "status_since": "2024-12-03",
+   "status_reason": "On 3 Dec 2024 the firm announced on X that 'we announce the closure of Ascetic Capital'. It said it had 'only made four sales' in its first week and was 'refunding everyone', per Finance Magnates.",
+   "what_happened": "Ascetic Capital teased its launch from July 2024 and launched in late November 2024. After four challenge sales in its first week, it said investors pulled out because contract conditions had been breached. On 3 Dec 2024 it announced refunds and closure 'before even a single trader gets funded'. Finance Magnates reported its website was already offline.",
+   "regulator": null,
+   "trader_action": null,
+   "founded": "2024",
+   "hq": null,
+   "status_sources": [
+    {
+     "url": "https://www.financemagnates.com/forex/prop-firm-shuts-down-after-one-week-we-only-made-four-sales/",
+     "title": "Prop Firm Shuts Down After One Week: \"We Only Made Four Sales\"",
+     "publisher": "Finance Magnates",
+     "date": "2024-12-03",
+     "quote": "It is with heavy hearts that we announce the closure of Ascetic Capital. ... In our first week, we only made four sales"
+    },
+    {
+     "url": "https://twitter.com/AsceticCapitalX/status/1863794121183207486",
+     "title": "We Are Refunding Everyone (as embedded by Finance Magnates)",
+     "publisher": "Ascetic Capital on X (firm)",
+     "date": "2024-12-03",
+     "quote": "We Are Refunding Everyone"
+    }
+   ],
+   "site_now": "Official domain not confirmed. Finance Magnates reported the website was offline in Dec 2024, and the guessed domain ascetic.capital does not resolve.",
+   "checked": "2026-10-31",
+   "status_reason_zh": "据 Finance Magnates 报道，公司于 2024 年 12 月 3 日在 X 上宣布关闭，称首周仅售出四单并向所有人退款。"
+  },
+  {
+   "slug": "vault-funder",
+   "name": "Vault Funder",
+   "site": "https://vaultmarkets.trade/vaultfunder/",
+   "category": "cfd",
+   "status": "closed",
+   "status_since": "2026",
+   "status_reason": "The firm's own page says 'Vault Funder is permanently closed' and 'The service will not reopen'. The page gives no closure date.",
+   "what_happened": "The closure page says challenges, funded accounts, competitions and affiliate programmes have all ended and that no registrations, purchases or payments are accepted. Active challenges, evaluations and funded accounts are being refunded in full, and earned unwithdrawn profit is being paid. Claims go only through an emailed claim form, and the firm warns of scammers asking for fees. It operated under the Vault Markets broker site. MyPropGenius first recorded the notice on 6 Oct 2026, and the exact closure date is unknown.",
+   "regulator": null,
+   "trader_action": "According to Vault Funder, clients with active accounts were emailed a claim form, the only accepted claims channel. Those who did not receive it should email the support address on https://vaultmarkets.trade/vaultfunder/ from their registered email with their account number. There is no fee to claim.",
+   "founded": null,
+   "hq": null,
+   "status_sources": [
+    {
+     "url": "https://vaultmarkets.trade/vaultfunder/",
+     "title": "Vault Funder closure notice",
+     "publisher": "Vault Funder (firm)",
+     "date": null,
+     "quote": "Vault Funder is permanently closed. ... The service will not reopen."
+    },
+    {
+     "url": "https://mypropgenius.com/closed-firms/",
+     "title": "Closed firms transparency report",
+     "publisher": "MyPropGenius",
+     "date": "2026-10-28",
+     "quote": "Vault Funder ... Shut down · by Oct 2026 ... we first saw the notice on 6 Oct 2026."
+    }
+   ],
+   "site_now": "Closure notice with claims instructions.",
+   "checked": "2026-10-31",
+   "status_reason_zh": "公司官网称 Vault Funder 已永久关闭且不会重新开放，未注明关闭日期。"
+  },
+  {
+   "slug": "forfx",
+   "name": "FORFX",
+   "site": "https://www.forfx.com",
+   "category": "cfd",
+   "status": "closed",
+   "status_since": "2026-06",
+   "status_reason": "FORFX's website says 'FORFX Has Permanently Closed ... FORFX has ceased all operations', effective June 2026.",
+   "what_happened": "The closure page is dated 'Effective June 2026'. It says every active challenge fee was refunded, all pending withdrawals and funded-account profits were paid, and support was provided for one month after termination. It also says the firm closed with 'zero outstanding obligations'. We found no independent verification of these claims. The brand was owned by OPO GROUP LLC, registered in St. Vincent and the Grenadines.",
+   "regulator": null,
+   "trader_action": "FORFX's closure page directs unresolved matters to support@forfx.com.",
+   "founded": null,
+   "hq": "St. Vincent and the Grenadines (OPO GROUP LLC, registered)",
+   "status_sources": [
+    {
+     "url": "https://www.forfx.com/",
+     "title": "Service Permanently Closed",
+     "publisher": "FORFX / OPO GROUP LLC (firm)",
+     "date": "2026-06",
+     "quote": "FORFX Has Permanently Closed. After thorough consideration, FORFX has ceased all operations. ... Effective June 2026"
+    },
+    {
+     "url": "https://mypropgenius.com/closed-firms/",
+     "title": "Closed firms transparency report",
+     "publisher": "MyPropGenius",
+     "date": "2026-10-28",
+     "quote": "FORFX's website says it 'has ceased all operations', effective June 2026"
+    }
+   ],
+   "site_now": "Shows the 'Service Permanently Closed' page (English and Farsi).",
+   "checked": "2026-10-31",
+   "status_reason_zh": "FORFX 官网称已永久关闭并停止全部业务，自 2026 年 6 月起生效。"
+  }
+ ],
+ "not_listed_note": "Checked 2026-10-31 and not marked closed for lack of a closure source: The Funded Trader (site paused, no announcement), Fidelcrest (offline, no statement), Lux Trading Firm (appears active), ATFunded (paused), Next Step Funded, Bespoke Funding Program, Fast Track Trading, Glow Node."
+}

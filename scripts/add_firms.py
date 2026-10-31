@@ -39,6 +39,11 @@ PROMOS = {
  "funderpro": ("OCT30", "30% off all challenges (October promo)", 30, None, []),
  "tradeday": ("TDNEW", "Up to 55% off (Quick Pay 55%, Fast Pass 50% shown at checkout prices)", 55, None, []),
  "ftuk": ("FTUK30", "30% off your first purchase (new customers)", 30, None, [("WEALTHCHARTS", "50% off all Futures challenges", 50)]),
+# caution firms (2026-10-31): codes stored but never shown while a caution stands (scripts/more_status.py)
+ "aquafunded": ('HALLOWEEN', '35% off (Halloween Sale, limited time)', 35, None, []),
+ "funding-traders": ('HALLOWIN', '70% off (site-wide banner, limited time)', 70, None, [('TRYFT', '50% off your first funded challenge', 50), ('HALLOWEEN', '50% off + free matching account (BOGO), Oct 26-31, 2026', 50)]),
+ "phidias-propfirm": ('TREAT90', '90% off your first month on Premium & Fundamental evaluations (Halloween)', 90, '2026-11-01', [('EQUINOX', '80% off one-time payment (shown in member configurator)', 80)]),
+ "qt-funded": ('TREAT', '60% off + buy one, get one free on same-size accounts', 60, None, []),
  "topone-futures": ("BOO", "50% off Elite Daily and Ignite, 45% off Instant (Halloween)", 50, None, [("BOGO", "Buy one get one on Elite Access", None)]),
 }
 
@@ -46,7 +51,7 @@ PROMOS = {
 # The entry ticket moves to sizes_fees[].entry_fee and fee becomes null, so cost_per_k(), fee_at() and the price tables
 # (which all skip null fees) are not set by a $4-$9 ticket; the program keeps its sizes and a fee_note.
 DEFERRED = {"atlas-funded": ["Access"], "for-traders": ["Pay After Pass"], "funded-trading-plus": ["Activation Accounts"],
-            "mubite": ["Nitro"], "topone-futures": ["Elite Access"], "ftuk": ["Flex Challenge"]}
+            "mubite": ["Nitro"], "topone-futures": ["Elite Access"], "ftuk": ["Flex Challenge"], "qt-funded": ["Buy Now Pay Later"]}
 DEFERRED_NOTE = "Entry fee only: an activation / funded-account fee is charged after you pass"
 
 # Trustpilot where staging had none. score None + count = profile exists but Trustpilot shows no rating (suspended).
@@ -115,7 +120,8 @@ def main(slugs):
     pcp = os.path.join(ROOT, "data", "payout_claims.json"); PC = json.load(open(pcp))
     for s in slugs:
         meta = json.load(open(os.path.join(STAGE, "meta", s + ".json")))
-        if meta.get("status") != "active" or meta.get("override_excluded"):
+        caution = s in json.load(open(os.path.join(ROOT, "data", "status.json"))).get("caution", {})
+        if (meta.get("status") != "active" or meta.get("override_excluded")) and not caution:
             print(f"skip {s}: {meta.get('status')} ({(meta.get('reason') or meta.get('override_excluded') or '')[:80]})"); continue
         r = convert(s)
         json.dump(r, open(os.path.join(ROOT, "data", "raw", s + ".json"), "w"), indent=2, ensure_ascii=False)

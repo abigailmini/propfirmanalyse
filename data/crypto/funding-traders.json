@@ -1,0 +1,45 @@
+{
+  "crypto_pairs": null,
+  "crypto_pairs_examples": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "XRP"
+  ],
+  "crypto_leverage": "BTC 1:10; ETH/SOL/XRP 1:5; other crypto 1:1",
+  "crypto_venue": "Simulated CFD accounts on MT5 / TradeLocker",
+  "instrument_type": "CFD",
+  "weekend_crypto": true,
+  "payout_methods": [
+    "USDT (ERC-20) via Coinbase Commerce",
+    "Rise"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": true,
+  "min_trade_duration": "Volume-weighted average holding time must be >= 2 minutes; repeated trades <= 15 seconds (HFT) not allowed",
+  "max_position_or_risk_rule": "2% of initial balance per trade idea (Pro accounts); Instant: 1% max floating loss, max 20 lots per trade",
+  "banned_strategies": [
+    "hedging across accounts",
+    "account rolling",
+    "group trading",
+    "unauthorized copy trading",
+    "latency/arbitrage abuse",
+    "grid EAs",
+    "hedging EAs",
+    "off-the-shelf trading EAs",
+    "HFT"
+  ],
+  "bots_allowed": "restricted",
+  "copy_trading": true,
+  "crypto_fees": "$3/lot round-trip commission on funded accounts ($6/lot Instant) unless Zero Fees add-on; evaluation phases commission-free",
+  "notes": "Forex-first CFD firm with crypto CFDs. Crypto trades 24/7: 2-Step Day keeps crypto open overnight/weekends and allows new weekend crypto trades; Instant article (Oct 2026) allows weekend holding incl. crypto (older General Guidelines said Instant must close all incl. crypto before Friday). Number of crypto symbols not published. News filter applies to BTCUSD around US red-folder events (per Trustpilot complaints and news rules on affected instruments).",
+  "sources": [
+    "https://fundingtraders.com/help/en/articles/13399206-2-step-pro",
+    "https://fundingtraders.com/help/en/articles/17589312-2-step-day-swing",
+    "https://fundingtraders.com/help/en/articles/17459915-instant-funding",
+    "https://fundingtraders.com/help/en/articles/12838492-general-trading-guidelines",
+    "https://fundingtraders.com/help/en/articles/17333842-all-add-ons",
+    "https://fundingtraders.com/"
+  ],
+  "checked": "2026-10-31"
+}

@@ -1,0 +1,34 @@
+{
+  "crypto_pairs": null,
+  "crypto_pairs_examples": [
+    "BTCUSD",
+    "ADAUSD",
+    "BCHUSD",
+    "DOGEUSD",
+    "AVAUSD"
+  ],
+  "crypto_leverage": "1:2",
+  "crypto_venue": "Simulated CFD accounts on MT5, cTrader and TradeLocker",
+  "instrument_type": "CFD",
+  "weekend_crypto": false,
+  "payout_methods": [
+    "USDC (ERC20)",
+    "Riseworks"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": null,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": "Funded: 20% margin cap",
+  "banned_strategies": null,
+  "bots_allowed": "allowed (own EA only)",
+  "copy_trading": true,
+  "crypto_fees": null,
+  "notes": "Crypto is a minor CFD asset class. Without the Swing add-on all trades including crypto must be closed by Friday 16:30 EST; weekend crypto holding only with Swing add-on. Full crypto list on instruments FAQ (count not captured).",
+  "sources": [
+    "https://support.funderpro.com/en/articles/378025-what-instruments-can-i-trade",
+    "https://support.funderpro.com/en/articles/377999-can-i-open-close-a-position-or-hold-trades-over-the-weekend",
+    "https://funderpro.com/the-challenge/",
+    "https://support.funderpro.com/en/articles/378136-how-can-i-receive-my-rewards"
+  ],
+  "checked": "2026-10-31"
+}

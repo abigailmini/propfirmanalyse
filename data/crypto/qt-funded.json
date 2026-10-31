@@ -1,0 +1,30 @@
+{
+  "crypto_pairs": null,
+  "crypto_pairs_examples": null,
+  "crypto_leverage": "1:1",
+  "crypto_venue": "Simulated CFD accounts on MT5 and TradeLocker",
+  "instrument_type": "CFD",
+  "weekend_crypto": false,
+  "payout_methods": [
+    "Crypto (USDC ERC-20)",
+    "Wire"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": true,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": "Funded: 1% max floating loss (QT ONE/TWO), 1% per instrument (Instant), 2% (BNPL)",
+  "banned_strategies": "HFT/tick scalping, latency and arbitrage trading, reverse trading across accounts, all-or-nothing trading",
+  "bots_allowed": "paid EA add-on",
+  "copy_trading": null,
+  "crypto_fees": null,
+  "notes": "Crypto is a minor CFD asset class (leverage 1:1 on all plans). No new trades or modifications on weekends for any instrument, including crypto. Crypto symbol list not published in the help centre.",
+  "sources": [
+    "https://support.qtfunded.com/support/articles/9000000000001-qt-one",
+    "https://support.qtfunded.com/support/articles/5412723610527-can-i-hold-trades-over-the-weekend",
+    "https://support.qtfunded.com/support/articles/5613700809887-performance-fee-policy",
+    "https://support.qtfunded.com/support/articles/5613598693279-prohibited-strategies",
+    "https://support.qtfunded.com/support/articles/5498652581151-kyc-verification-required-documents-and-account-approval-guide",
+    "https://qtfunded.quanttekel.com/"
+  ],
+  "checked": "2026-10-31"
+}

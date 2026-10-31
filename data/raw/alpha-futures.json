@@ -1,0 +1,282 @@
+{
+  "name": "Alpha Futures",
+  "slug": "alpha-futures",
+  "site": "https://alpha-futures.com",
+  "category": "futures",
+  "assets": [
+    "futures",
+    "indices",
+    "commodities",
+    "crypto"
+  ],
+  "challenge_types": [
+    "1-step",
+    "instant"
+  ],
+  "account_sizes": [
+    25000,
+    50000,
+    100000,
+    150000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "Zero Account (monthly)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 89
+        },
+        {
+          "size": 50000,
+          "fee": 169
+        },
+        {
+          "size": 100000,
+          "fee": 279
+        }
+      ],
+      "profit_target": "6% ($1,500/$3,000/$6,000)",
+      "max_daily_loss": "2% Daily Loss Guard, soft breach ($500/$1,000/$2,000)",
+      "max_drawdown": "$1,000/$2,000/$3,000",
+      "drawdown_type": "EOD trailing (stops at starting balance)",
+      "profit_split": "90%",
+      "min_trading_days": 1
+    },
+    {
+      "name": "Standard Account (monthly)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 50000,
+          "fee": 129
+        },
+        {
+          "size": 100000,
+          "fee": 239
+        },
+        {
+          "size": 150000,
+          "fee": 349
+        }
+      ],
+      "profit_target": "6% ($3,000/$6,000/$9,000)",
+      "max_daily_loss": "None on Evaluation; Daily Loss Guard $1,000/$2,000/$3,000 on Qualified",
+      "max_drawdown": "$2,000/$3,000/$4,500",
+      "drawdown_type": "EOD trailing (stops at starting balance)",
+      "profit_split": "90%",
+      "min_trading_days": 2
+    },
+    {
+      "name": "Advanced Account (monthly)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 50000,
+          "fee": 209
+        },
+        {
+          "size": 100000,
+          "fee": 349
+        },
+        {
+          "size": 150000,
+          "fee": 489
+        }
+      ],
+      "profit_target": "8% ($4,000/$8,000/$12,000)",
+      "max_daily_loss": "None",
+      "max_drawdown": "$1,750/$3,500/$5,250",
+      "drawdown_type": "EOD trailing (stops at starting balance)",
+      "profit_split": "90%",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Direct Account (one-time fee)",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 349
+        },
+        {
+          "size": 50000,
+          "fee": 519
+        },
+        {
+          "size": 100000,
+          "fee": 689
+        },
+        {
+          "size": 150000,
+          "fee": 859
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": "Daily Loss Guard $500/$1,000/$2,000/$3,000 (soft breach)",
+      "max_drawdown": "$1,000/$2,000/$3,000/$4,500",
+      "drawdown_type": "EOD trailing (stops at starting balance)",
+      "profit_split": "90%",
+      "min_trading_days": null
+    }
+  ],
+  "fee_from": 89,
+  "profit_split": "90%",
+  "profit_split_scale": "90% on all Qualified accounts from the first withdrawal; 80% in the Alpha Futures Live Program; 60% in the Alpha Prime program",
+  "max_daily_loss": "None on Advanced; 2% soft Daily Loss Guard on Zero and Direct (Standard: Qualified only)",
+  "max_drawdown": "$1,000-$5,250 depending on account",
+  "drawdown_type": "EOD trailing (stops at starting balance)",
+  "profit_target": "6% (Zero/Standard), 8% (Advanced); none on Direct (withdrawal profit targets instead)",
+  "leverage": null,
+  "platforms": [
+    "AlphaTrader",
+    "TradingView",
+    "WealthCharts",
+    "Deepchart",
+    "Quantower"
+  ],
+  "payout_frequency": "Up to 4 withdrawals per month, no fixed payout dates. Zero/Standard/Advanced Qualified: request up to 50% of profits after every 5 winning days of $200+. Direct: request once the withdrawal profit target ($1.5K-$9K first, $1K-$6K after) and 20% consistency rule are met.",
+  "first_payout_days": 5,
+  "payout_speed": null,
+  "min_trading_days": 1,
+  "consistency_rule": "Evaluation: Advanced 40%, Standard 50%, Zero none. Qualified (best day vs net profit since last withdrawal): Zero/Standard 40%, Direct 20%, Advanced none.",
+  "news_trading": "restricted",
+  "weekend_holding": "banned",
+  "countries_restricted": [
+    "Afghanistan",
+    "Albania",
+    "Belarus",
+    "Bosnia and Herzegovina",
+    "Bulgaria",
+    "Burkina Faso",
+    "Myanmar",
+    "Chad",
+    "China",
+    "Côte d'Ivoire",
+    "Croatia",
+    "Cuba",
+    "Democratic Republic of Congo",
+    "Djibouti",
+    "East Timor",
+    "Guinea-Bissau",
+    "Ethiopia",
+    "Haiti",
+    "Iran",
+    "Iraq",
+    "Jamaica",
+    "Jordan",
+    "Kenya",
+    "Kosovo",
+    "Kyrgyzstan",
+    "Laos",
+    "Lebanon",
+    "Lesotho",
+    "Libya",
+    "Malawi",
+    "Malaysia",
+    "Mali",
+    "Montenegro",
+    "Mozambique",
+    "Namibia",
+    "Nigeria",
+    "North Korea",
+    "North Macedonia",
+    "Northern Cyprus",
+    "Palestinian Territory",
+    "Pakistan",
+    "Philippines",
+    "Romania",
+    "Russia",
+    "Rwanda",
+    "Senegal",
+    "Serbia",
+    "Sierra Leone",
+    "Slovenia",
+    "Somalia",
+    "South Sudan",
+    "Sudan",
+    "Syria",
+    "Tajikistan",
+    "Tanzania",
+    "Turkey",
+    "Ukraine",
+    "Venezuela",
+    "Vietnam",
+    "Yemen",
+    "Zimbabwe"
+  ],
+  "founded": null,
+  "hq": null,
+  "discount_code": null,
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": 4.3,
+    "count": 6242,
+    "note": "Recent reviews (late Oct 2026) include a cluster of unpaid or delayed payout complaints; see notes.",
+    "checked": "2026-10-31",
+    "source": "https://www.trustpilot.com/review/alpha-futures.com"
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://help.alpha-futures.com/en/",
+    "https://help.alpha-futures.com/en/articles/11771813-zero-account-overview",
+    "https://help.alpha-futures.com/en/articles/11632512-standard-account-overview",
+    "https://help.alpha-futures.com/en/articles/11634907-advanced-account-overview",
+    "https://help.alpha-futures.com/en/articles/15838742-direct-account-overview",
+    "https://help.alpha-futures.com/en/articles/9492068-monthly-subscription",
+    "https://help.alpha-futures.com/en/articles/9491999-maximum-loss-limit-mll",
+    "https://help.alpha-futures.com/en/articles/9492014-daily-loss-guard",
+    "https://help.alpha-futures.com/en/articles/9492048-consistency-rule",
+    "https://help.alpha-futures.com/en/articles/9492051-payout-policy",
+    "https://help.alpha-futures.com/en/articles/10491202-maximum-withdrawal-request",
+    "https://help.alpha-futures.com/en/articles/9492063-news-trading-policy",
+    "https://help.alpha-futures.com/en/articles/10525305-trading-platforms",
+    "https://help.alpha-futures.com/en/articles/9492096-what-and-when-you-can-trade",
+    "https://help.alpha-futures.com/en/articles/9523389-countries-with-limitations",
+    "https://help.alpha-futures.com/en/articles/9492088-maximum-allocation",
+    "https://help.alpha-futures.com/en/articles/10743344-path-to-live-structure",
+    "https://help.alpha-futures.com/en/articles/11023753-live-account-rules-and-parameters",
+    "https://www.trustpilot.com/review/alpha-futures.com",
+    "https://help.alpha-futures.com/en/articles/10443600-payout-methods"
+  ],
+  "notes": "Prices are LIST prices from the help centre. Zero/Standard/Advanced are MONTHLY evaluation subscriptions (rebill until you pass or cancel; Qualified traders pay no subscription); Direct is a one-time fee with no evaluation. fee is the listed price (monthly for subscriptions) - see extra.monthly_fee. No activation fee on accounts bought after 2026-07-08 (previously $149 on Advanced). Main site alpha-futures.com Cloudflare-blocks this host (403 for browser, curl and web_fetch), so the homepage, checkout, about/legal and /return-policy/ pages could not be checked today; any homepage promo banner or code is therefore unknown (discount_code null). Affiliate links default to 10% off but no public code is posted on the help centre. min_trading_days: Zero is advertised as a one-day pass; Standard (2) and Advanced (3) are the minimum implied by their 50%/40% evaluation consistency rules, not a stated rule. first_payout_days = 5 winning days of $200+. Weekend holding banned = all sim trades must be closed by 4:20pm ET daily (overnight holding allowed only in live accounts). News: no restrictions on Evaluations or Advanced Qualified; Zero/Standard/Direct Qualified cannot execute orders 2 minutes either side of red-folder events. Crypto exposure is only via CME Micro Bitcoin/Ether futures (MBT/MET), counted as full minis. Max withdrawal per request: Advanced $15K; Zero $1K-$2.5K; Standard $3K-$5K; Direct $1K-$3K. Payout processing time not published. Founded/HQ not found on reachable own-site pages (help centre names the operator 'Alpha Futures Limited' and says the Alpha Prime trading floor is in London; Trustpilot profile lists United States) - left null. Leverage n/a (contract limits per account instead). CAUTION: Trustpilot (https://www.trustpilot.com/review/alpha-futures.com, checked 2026-10-31) shows 4.3 from 6,242 reviews (85% 5-star, 10% 1-star, large invited-review base), but the most recent reviews (Oct 22-30, 2026) include a cluster of complaints from holders of the discontinued 'Premium' accounts saying approved payouts have been unpaid for months (one says 8 months) and that a promised end-of-October 2026 payment date was missed; others report approved payouts delayed about 10 days. Other recent reviews report payouts received, some after delays. Alpha Futures' payout policy page states 'follow the rules and you will be paid out'.",
+  "segment": "futures",
+  "also_offers": [],
+  "category_basis": "Sells simulated CME futures evaluations (Zero/Standard/Advanced) and one-time-fee Direct qualified accounts on futures platforms (AlphaTrader, TradingView via Plus500, WealthCharts, Deepchart, Quantower).",
+  "category_source": "https://help.alpha-futures.com/en/articles/9492096-what-and-when-you-can-trade",
+  "max_allocation_text": "Max Qualified accounts per type: Zero 5, Direct 5, Standard 5, Advanced 3 (any user with an active Advanced Qualified account is limited to 3); no combined USD cap published",
+  "max_allocation_source": "https://help.alpha-futures.com/en/articles/9492088-maximum-allocation",
+  "field_sources": {
+    "category": "https://help.alpha-futures.com/en/articles/9492096-what-and-when-you-can-trade",
+    "category_basis": "https://help.alpha-futures.com/en/articles/10525305-trading-platforms",
+    "segment": "https://help.alpha-futures.com/en/articles/9492096-what-and-when-you-can-trade",
+    "assets": "https://help.alpha-futures.com/en/articles/9492096-what-and-when-you-can-trade",
+    "challenge_types": "https://help.alpha-futures.com/en/articles/15838742-direct-account-overview",
+    "account_sizes": "https://help.alpha-futures.com/en/articles/9492068-monthly-subscription",
+    "fee_currency": "https://help.alpha-futures.com/en/articles/10443600-payout-methods",
+    "programs": "https://help.alpha-futures.com/en/articles/9492068-monthly-subscription",
+    "programs.Zero": "https://help.alpha-futures.com/en/articles/11771813-zero-account-overview",
+    "programs.Standard": "https://help.alpha-futures.com/en/articles/11632512-standard-account-overview",
+    "programs.Advanced": "https://help.alpha-futures.com/en/articles/11634907-advanced-account-overview",
+    "programs.Direct": "https://help.alpha-futures.com/en/articles/15838742-direct-account-overview",
+    "fee_from": "https://help.alpha-futures.com/en/articles/11771813-zero-account-overview",
+    "profit_split": "https://help.alpha-futures.com/en/articles/9492051-payout-policy",
+    "profit_split_scale": "https://help.alpha-futures.com/en/articles/10743344-path-to-live-structure",
+    "max_daily_loss": "https://help.alpha-futures.com/en/articles/9492014-daily-loss-guard",
+    "max_drawdown": "https://help.alpha-futures.com/en/articles/9491999-maximum-loss-limit-mll",
+    "drawdown_type": "https://help.alpha-futures.com/en/articles/9491999-maximum-loss-limit-mll",
+    "profit_target": "https://help.alpha-futures.com/en/articles/11632512-standard-account-overview",
+    "platforms": "https://help.alpha-futures.com/en/articles/10525305-trading-platforms",
+    "payout_frequency": "https://help.alpha-futures.com/en/articles/9492051-payout-policy",
+    "first_payout_days": "https://help.alpha-futures.com/en/articles/11632512-standard-account-overview",
+    "max_allocation_text": "https://help.alpha-futures.com/en/articles/9492088-maximum-allocation",
+    "min_trading_days": "https://help.alpha-futures.com/en/articles/11771813-zero-account-overview",
+    "consistency_rule": "https://help.alpha-futures.com/en/articles/9492048-consistency-rule",
+    "news_trading": "https://help.alpha-futures.com/en/articles/9492063-news-trading-policy",
+    "weekend_holding": "https://help.alpha-futures.com/en/articles/9492096-what-and-when-you-can-trade",
+    "countries_restricted": "https://help.alpha-futures.com/en/articles/9523389-countries-with-limitations",
+    "trustpilot": "https://www.trustpilot.com/review/alpha-futures.com"
+  }
+}

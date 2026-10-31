@@ -1,0 +1,23 @@
+{
+  "crypto_pairs": null,
+  "crypto_pairs_examples": [],
+  "crypto_leverage": null,
+  "crypto_venue": "Simulated CFD accounts on MT5/DXtrade",
+  "instrument_type": "CFD",
+  "weekend_crypto": null,
+  "payout_methods": [],
+  "crypto_payout": null,
+  "kyc_before_payout": true,
+  "min_trade_duration": null,
+  "max_position_or_risk_rule": null,
+  "banned_strategies": null,
+  "bots_allowed": "allowed",
+  "copy_trading": true,
+  "crypto_fees": null,
+  "notes": "Crypto ('Digital Assets/Cryptocurrencies') is listed on the trading-assets page and in the FTP widget asset list; no crypto-specific rules found.",
+  "sources": [
+    "https://audacity.capital/trading-assets/",
+    "https://audacity.capital/instant-funding-prop-firm/"
+  ],
+  "checked": "2026-10-31"
+}

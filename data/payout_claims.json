@@ -308,6 +308,42 @@
    "value_usd": 12000000,
    "source": "https://ftuk.com/",
    "proof": "Homepage + about stat block; the Flex page shows '$18M Total Payouts' (inconsistent, lower figure used)"
+  },
+  "audacity-capital": {
+   "text": "Over $250M paid out",
+   "value_usd": 250000000,
+   "source": "https://audacity.capital/",
+   "proof": "Homepage hero: 'Founded in 2012. Active in 140+ countries. Over $250M paid out. 500K+ traders strong.'"
+  },
+  "funderpro": {
+   "text": "$22,000,000+ paid to traders",
+   "value_usd": 22000000,
+   "source": "https://funderpro.com/",
+   "proof": "Homepage hero: '$22M+ paid to traders · $15M+ to affiliates'"
+  },
+  "aquafunded": {
+   "text": "Total Rewards $8,500,000+",
+   "value_usd": 8500000,
+   "source": "https://www.aquafunded.com/",
+   "proof": "Homepage stats block: 'Total Rewards $ 8,500,000 +', 'Average Reward $2,450', 'Highest Paid Trader $119,175'"
+  },
+  "funding-traders": {
+   "text": "Over +$8M Paid to Traders",
+   "value_usd": 8000000,
+   "source": "https://app.fundingtraders.com/login",
+   "proof": "App login/signup page panel: 'Over +$8M Paid to Traders - Verified on our Payout Tracker'"
+  },
+  "phidias-propfirm": {
+   "text": "$15M+ paid to traders",
+   "value_usd": 15000000,
+   "source": "https://phidiaspropfirm.com/",
+   "proof": "Homepage stats: '$15M+ PAID TO TRADERS - Every dollar verified'; footer 'Over $15,000,000 paid out' on /accounts"
+  },
+  "qt-funded": {
+   "text": "$17,000,000+ Paid out to traders",
+   "value_usd": 17000000,
+   "source": "https://qtfunded.quanttekel.com/",
+   "proof": "Homepage stats: '$17,000,000+ Paid out to traders · 125,000+ traders'; about page says '$17M+ Paid Out To Traders'"
   }
  }
 }

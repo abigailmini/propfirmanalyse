@@ -1,0 +1,289 @@
+{
+  "name": "Phidias Propfirm",
+  "slug": "phidias-propfirm",
+  "site": "https://phidiaspropfirm.com",
+  "category": "futures",
+  "assets": [
+    "futures"
+  ],
+  "challenge_types": [
+    "1-step"
+  ],
+  "account_sizes": [
+    25000,
+    50000,
+    100000,
+    150000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "Express to Live (E2L)",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 25000,
+          "fee": 88,
+          "fee_one_time": 277
+        },
+        {
+          "size": 50000,
+          "fee": 278,
+          "fee_one_time": 723
+        },
+        {
+          "size": 100000,
+          "fee": 318,
+          "fee_one_time": 900
+        },
+        {
+          "size": 150000,
+          "fee": 398,
+          "fee_one_time": 1125
+        }
+      ],
+      "profit_target": "$1,500 / $2,500 / $3,500 / $4,500",
+      "max_daily_loss": "none",
+      "max_drawdown": "$500 / $650 / $800 / $1,000",
+      "drawdown_type": "static",
+      "profit_split": "80% (fixed bonus payout on Switch to Live, then 80% on LIVE)",
+      "min_trading_days": 0
+    },
+    {
+      "name": "Fundamental",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 50000,
+          "fee": 164,
+          "fee_one_time": 580
+        },
+        {
+          "size": 100000,
+          "fee": 273,
+          "fee_one_time": 723
+        },
+        {
+          "size": 150000,
+          "fee": 420,
+          "fee_one_time": 863
+        }
+      ],
+      "profit_target": "$4,000 / $6,000 / $9,000",
+      "max_daily_loss": "none",
+      "max_drawdown": "$2,500 / $3,000 / $4,500",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "80%",
+      "min_trading_days": 3
+    },
+    {
+      "name": "Premium",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 50000,
+          "fee": 329,
+          "fee_one_time": 723
+        },
+        {
+          "size": 100000,
+          "fee": 411,
+          "fee_one_time": 900
+        },
+        {
+          "size": 150000,
+          "fee": 570,
+          "fee_one_time": 1123
+        }
+      ],
+      "profit_target": "$4,000 / $6,000 / $9,000",
+      "max_daily_loss": "none",
+      "max_drawdown": "$2,500 / $3,000 / $4,500",
+      "drawdown_type": "EOD trailing",
+      "profit_split": "75% rising to 100% (from 5th payout)",
+      "min_trading_days": 1
+    }
+  ],
+  "fee_from": 88,
+  "profit_split": "75% up to 100%",
+  "profit_split_scale": "Express to Live and Fundamental: fixed 80%. Premium: 75% (payout 1), 80%, 85%, 90%, then 100% from payout 5 onward.",
+  "max_daily_loss": "none (no daily loss limit on any account type)",
+  "max_drawdown": "$500-$1,000 static (Express to Live); $2,500-$4,500 EOD trailing (Fundamental/Premium)",
+  "drawdown_type": "static (Express to Live); EOD trailing (Fundamental/Premium)",
+  "profit_target": "$1,500-$4,500 (Express to Live); $4,000-$9,000 (Fundamental/Premium)",
+  "leverage": null,
+  "platforms": [
+    "Rithmic",
+    "R Trader Pro",
+    "Tradovate",
+    "NinjaTrader",
+    "TradingView",
+    "DeepCharts",
+    "Quantower",
+    "ATAS",
+    "Sierra Chart",
+    "Bookmap",
+    "MotiveWave"
+  ],
+  "payout_frequency": "Express to Live: one fixed bonus payout when the CASH-account target is hit, then conversion to LIVE (no minimum days). Fundamental: every 10 trading days. Premium: every 5 trading days. LIVE accounts: daily, no maximum ($500 minimum). Payouts go to the Phidias Wallet, withdrawn via Rise.",
+  "first_payout_days": 1,
+  "payout_speed": "90% processed under 30 minutes; always within 24h",
+  "min_trading_days": 0,
+  "consistency_rule": "None in evaluation. Fundamental/Premium funded CASH accounts: no single day may exceed 30% of total profit (min. 4-day calculation). Express to Live: none.",
+  "news_trading": "allowed",
+  "weekend_holding": "restricted",
+  "countries_restricted": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Angola",
+    "Belarus",
+    "Bosnia and Herzegovina",
+    "Botswana",
+    "Bulgaria",
+    "Burkina Faso",
+    "Burundi",
+    "Central African Republic",
+    "Croatia",
+    "Cuba",
+    "Dem. Rep. Congo",
+    "Ecuador",
+    "Ethiopia",
+    "Guyana",
+    "Haiti",
+    "Indonesia",
+    "Iran",
+    "Iraq",
+    "Jamaica",
+    "Kenya",
+    "Kosovo",
+    "Laos",
+    "Lebanon",
+    "Libya",
+    "Macedonia",
+    "Mali",
+    "Malta",
+    "Mauritius",
+    "Montenegro",
+    "Mozambique",
+    "Myanmar (Burma)",
+    "Namibia",
+    "Nicaragua",
+    "Nigeria",
+    "North Korea (DPRK)",
+    "Pakistan",
+    "Papua New Guinea",
+    "Philippines",
+    "Romania",
+    "Russia",
+    "Senegal",
+    "Serbia",
+    "Slovenia",
+    "Somalia",
+    "South Africa",
+    "South Sudan",
+    "Sri Lanka",
+    "Sudan/Darfur",
+    "Syria",
+    "Tanzania",
+    "Trinidad and Tobago",
+    "Tunisia",
+    "Crimea (Ukraine)",
+    "Venezuela",
+    "Yemen",
+    "Zimbabwe"
+  ],
+  "founded": null,
+  "hq": "Gibraltar",
+  "discount_code": {
+    "code": "TREAT90",
+    "value": "90% off your first month on Premium & Fundamental evaluations (Halloween)",
+    "percent": 90,
+    "source": "https://phidiaspropfirm.com/",
+    "verified": "2026-10-31",
+    "expires": "2026-11-01",
+    "also": [
+      {
+        "code": "EQUINOX",
+        "value": "80% off one-time payment (shown in member configurator)",
+        "percent": 80
+      }
+    ]
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": null,
+    "count": 337,
+    "note": "Rating unavailable: Trustpilot says it removed fake reviews for this company (breach of its guidelines)",
+    "checked": "2026-10-31",
+    "source": "https://www.trustpilot.com/review/phidiaspropfirm.com"
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://phidiaspropfirm.com/",
+    "https://phidiaspropfirm.com/accounts",
+    "https://phidiaspropfirm.com/rules",
+    "https://phidiaspropfirm.com/tou",
+    "https://phidiaspropfirm.com/about-us",
+    "https://phidiaspropfirm.com/affiliate-program",
+    "https://helpcenter.phidiaspropfirm.com/help",
+    "https://helpcenter.phidiaspropfirm.com/faq?locale=en",
+    "https://member.phidiaspropfirm.com/configurator",
+    "https://www.trustpilot.com/review/phidiaspropfirm.com"
+  ],
+  "notes": "Fees are LIST prices from window.phidiasPromo on /accounts (checked 2026-10-31). 'fee' = the evaluation price, which the rules/FAQ/TOU describe as a monthly subscription renewing every 30 days until passed or cancelled (the /accounts widget labels it 'one-time eval fee', the member configurator labels it 'Monthly'); an activation fee of $83-$169 applies on pass. 'fee_one_time' = one-time-payment option (no activation fee, no recurring billing). Rules page says E2L has 'no subscription' yet the configurator still offers an E2L monthly option with activation fee. 10K Drawdown Challenge is a monthly profit competition (prizes paid to Phidias Wallet), not a funded-account path; it sets fee_from ($66). Cheapest funded-path entry: E2L 25K at $88. Promos on own site today: banner code TREAT90 = 90% off the first month on Premium & Fundamental evaluations until Sunday 2026-11-01 (promo config also gives 50% off E2L monthly and 75-80% off one-time payment); rules page: 10K Challenge $30 with code PHIDIAS; member configurator displays code EQUINOX (80% off one-time). Homepage 'starting at $55' is a promo price. first_payout_days=1 from the /accounts comparison ('Days to Payout (Funded)': E2L 1, Fundamental 10, Premium 5). min_trading_days=0 is E2L (rules: 'None'; Fundamental 3, Premium 1). Weekend/overnight holds allowed only on Premium (and the 10K Challenge). Fully automated/HFT trading banned (semi-automated allowed). LIVE transition for Fundamental/Premium is discretionary (5 payouts or $100K cumulative profit). Operated by Phidias Propfirm LTD, registered in Gibraltar; Gibraltar law. Founded year not stated (homepage only says '3 Yrs' / '3 years operating'). CAUTION: Trustpilot has suspended this company's rating (breach of guidelines; fake reviews removed); 337 reviews, 34% 1-star. Recent reviews describe account access blocked/banned right after a first payout request (Oct 27 and Sep 15, 2026), a disputed liquidation (Oct 24, 2026), and paid evaluations deactivated on forced LIVE conversion with refund refused (Oct 18, 2026). These are unverified user reports and contrast with the site's 'zero denied payouts' claim. See https://www.trustpilot.com/review/phidiaspropfirm.com The 10K Drawdown Challenge (list fee 66) is a monthly profit contest, not a path to a funded account, so it is kept under other_products and excluded from programs/fee_from.",
+  "segment": "futures",
+  "also_offers": [],
+  "category_basis": "Sells simulated CME/CBOT/NYMEX/COMEX and Eurex futures evaluations on Rithmic, Tradovate/NinjaTrader and DeepCharts (dxFeed), with LIVE accounts cleared through Dorman Trading.",
+  "category_source": "https://phidiaspropfirm.com/rules",
+  "hq_country": {
+    "code": "GI",
+    "source": "https://phidiaspropfirm.com/tou",
+    "quote": "Gibraltar"
+  },
+  "max_allocation_text": "Up to 15 funded accounts at once: 5 CASH Fundamental + 5 CASH Premium + 5 Express to Live (CASH/LIVE). 150K Fundamental/Premium CASH accounts count double (max 4: 2 Fund / 2 Premium). No single USD cap stated.",
+  "max_allocation_source": "https://phidiaspropfirm.com/rules",
+  "field_sources": {
+    "category": "https://phidiaspropfirm.com/rules",
+    "segment": "https://phidiaspropfirm.com/rules",
+    "assets": "https://phidiaspropfirm.com/rules",
+    "challenge_types": "https://phidiaspropfirm.com/accounts",
+    "account_sizes": "https://phidiaspropfirm.com/accounts",
+    "fee_currency": "https://phidiaspropfirm.com/accounts",
+    "programs": "https://phidiaspropfirm.com/accounts",
+    "fee_from": "https://phidiaspropfirm.com/accounts",
+    "profit_split": "https://phidiaspropfirm.com/rules",
+    "profit_split_scale": "https://phidiaspropfirm.com/rules",
+    "max_daily_loss": "https://phidiaspropfirm.com/rules",
+    "max_drawdown": "https://phidiaspropfirm.com/rules",
+    "drawdown_type": "https://phidiaspropfirm.com/rules",
+    "profit_target": "https://phidiaspropfirm.com/rules",
+    "platforms": "https://helpcenter.phidiaspropfirm.com/help",
+    "payout_frequency": "https://phidiaspropfirm.com/rules",
+    "first_payout_days": "https://phidiaspropfirm.com/accounts",
+    "payout_speed": "https://phidiaspropfirm.com/accounts",
+    "max_allocation_text": "https://phidiaspropfirm.com/rules",
+    "min_trading_days": "https://phidiaspropfirm.com/rules",
+    "consistency_rule": "https://phidiaspropfirm.com/rules",
+    "news_trading": "https://phidiaspropfirm.com/rules",
+    "weekend_holding": "https://phidiaspropfirm.com/rules",
+    "countries_restricted": "https://phidiaspropfirm.com/rules",
+    "hq": "https://phidiaspropfirm.com/tou",
+    "hq_country": "https://phidiaspropfirm.com/tou",
+    "discount_code": "https://phidiaspropfirm.com/",
+    "trustpilot": "https://www.trustpilot.com/review/phidiaspropfirm.com"
+  },
+  "other_products": [
+    {
+      "name": "10K Drawdown Challenge (monthly competition)",
+      "kind": "monthly trading competition (not a funded-account evaluation)",
+      "sizes_fees": [
+        {
+          "size": 10000,
+          "fee": 66
+        }
+      ],
+      "source": "https://phidiaspropfirm.com/accounts"
+    }
+  ]
+}

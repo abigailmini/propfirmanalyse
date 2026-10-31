@@ -1,0 +1,38 @@
+{
+  "reset_fee": null,
+  "retry_discount_pct": null,
+  "refund_policy": "No refunds after a failed challenge. One-Phase/Classic fee is credited back with the first reward (min $100 profit; processed within 7 business days); Pro fees not credited; only the upgrade difference is creditable on upgraded accounts.",
+  "fee_refundable": true,
+  "time_limit": "Unlimited",
+  "has_time_limit": false,
+  "activation_fee": null,
+  "payout_methods": [
+    "USDC (ERC20)",
+    "Riseworks"
+  ],
+  "min_payout": 100,
+  "kyc_before_payout": null,
+  "scaling_plan": "Hit 10% profit in each of 3 consecutive months → account balance +50%, repeatable up to $5M",
+  "ea_bots": "allowed (must own the EA; no exploiting platform inefficiencies/latency)",
+  "copy_trading": true,
+  "hedging": true,
+  "max_risk_per_trade": "Funded accounts: 20% margin cap rule",
+  "inactivity_rule": "No trade placed/closed for 30 consecutive days → account failed (challenge, instant and funded)",
+  "notes": "Reset available from dashboard at a discount shown in a pop-up (price not published). Copy trading only between your own accounts. Hedging allowed within one account. Add-ons: Swing (news/weekend holding), 90% split, Second Chance (one free reset) on Instant. Pro min reward = 1% of initial balance.",
+  "sources": [
+    "https://support.funderpro.com/en/articles/377862-how-can-i-receive-a-refund",
+    "https://support.funderpro.com/en/articles/377983-will-my-challenge-fee-be-credited-back",
+    "https://support.funderpro.com/en/articles/377864-how-to-reset-my-funded-account-challenge",
+    "https://support.funderpro.com/en/articles/378136-how-can-i-receive-my-rewards",
+    "https://support.funderpro.com/en/articles/409956-can-funded-traders-scale-their-accounts",
+    "https://support.funderpro.com/en/articles/378021-can-i-use-eas-or-bots-while-participating-in-the-funded-account-challenge",
+    "https://support.funderpro.com/en/articles/378022-is-copy-trading-allowed",
+    "https://support.funderpro.com/en/articles/378002-is-hedging-allowed-during-challenges",
+    "https://support.funderpro.com/en/articles/377851-how-does-the-inactivity-rule-affect-my-challenge",
+    "https://support.funderpro.com/en/articles/421458-is-there-a-margin-rule-on-funded-accounts",
+    "https://funderpro.com/checkout/?mode=instant"
+  ],
+  "checked": "2026-10-31",
+  "reset_fee_usd": null,
+  "monthly_fee": false
+}

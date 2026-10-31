@@ -377,5 +377,71 @@
   "ok": true,
   "orig": "tmp/expand/logos/ftuk-icon.png",
   "research_note": "site icon"
+ },
+ "alpha-futures": {
+  "source_url": "https://app.alpha-futures.com/logo512.png",
+  "kind": "favicon",
+  "bg": "#022f20",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/alpha-futures-icon.png",
+  "research_note": "Wordmark logos/alpha-futures.png (439x77, dark navy mark + 'Alpha Futures' text) cropped from the official help-centre footer logo https://downloads.intercomcdn.com/i/o/570955/2375c7bb488f2643326ec443/e2e871f825ab836675b96cc24e8eaab4.png to remove the words 'Help Center'. Square icon logos/alpha-fut"
+ },
+ "aquafunded": {
+  "source_url": "https://cdn.prod.website-files.com/68b69f4a2b57f5b22e3f9954/6ada15afc509ede98e515150_aquafunded.svg",
+  "kind": "favicon",
+  "bg": "#ffffff",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/aquafunded-icon.png",
+  "research_note": "White 'AF' mark SVG (42x20). Icon logos/aquafunded-icon.png = 256px webclip, blue AF on white, works on light bg. Header wordmark is only a 169x19 white AVIF, not saved."
+ },
+ "funding-traders": {
+  "source_url": "https://fundingtraders.com/assets/img/logo-black.svg",
+  "kind": "apple-touch-icon",
+  "bg": "#000000",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/funding-traders-icon.png",
+  "research_note": "Black wordmark with green #34dc8e mark. Icon: logos/funding-traders-icon.png (180x180 apple-touch-icon from fundingtraders.com). Header also uses /assets/img/logo.svg (dark-bg version)."
+ },
+ "phidias-propfirm": {
+  "source_url": "https://phidiaspropfirm.com/wp-content/uploads/2026/03/LOGO-PHIDIAS-TRANSPARENT.png",
+  "kind": "favicon",
+  "bg": "#1f2847",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/phidias-propfirm-icon.webp",
+  "research_note": "Served as .png but it's actually WebP, 2439x1588, white wordmark on transparent. Icon logos/phidias-propfirm-icon.webp is 512px with a white 'PP' on navy, so it works on any background (source https://phidiaspropfirm.com/wp-content/uploads/2025/01/cropped-Phidias-propfirm-logo-1.webp). Icon file: lo"
+ },
+ "qt-funded": {
+  "source_url": "https://qtfunded.quanttekel.com/wp-content/themes/qt-funded/assets/logo.svg",
+  "kind": "svg",
+  "bg": "transparent",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/qt-funded-mark.svg",
+  "glyph_luminance": 14,
+  "research_note": "Header wordmark with white fills (needs dark background). logos/qt-funded-mark.svg = dark 'QT' mark for light bg (from /assets/light/qt-mark.svg, 34x20, not square). logos/qt-funded-icon.webp = site favicon (/wp-content/uploads/2024/09/favicon.png, actually WebP 64x64 \u2014 below 128px; no larger icon f"
+ },
+ "audacity-capital": {
+  "source_url": "https://d155jn6047zdky.cloudfront.net/audacity-logo__webp__orig.webp",
+  "kind": "svg",
+  "bg": "transparent",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/audacity-capital-icon.svg",
+  "glyph_luminance": 129,
+  "research_note": "Header logo (146x138 webp) from site CDN; favicon saved as logos/audacity-capital-icon.svg."
+ },
+ "funderpro": {
+  "source_url": "https://funderpro.com/wp-content/uploads/2024/02/logo.svg",
+  "kind": "apple-touch-icon",
+  "bg": "#ff273e",
+  "fetched": "2026-10-31",
+  "ok": true,
+  "orig": "tmp/expand/logos/funderpro-icon.webp",
+  "shape": "rounded-tile",
+  "research_note": "Wordmark with white text + red mark; icon saved as logos/funderpro-icon.webp (180x180 apple-touch-icon)."
  }
 }

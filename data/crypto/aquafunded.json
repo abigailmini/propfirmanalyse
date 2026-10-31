@@ -1,0 +1,34 @@
+{
+  "crypto_pairs": null,
+  "crypto_pairs_examples": null,
+  "crypto_leverage": "1:2 (evaluation and funded)",
+  "crypto_venue": "Simulated CFD accounts on Match-Trader, TradeLocker, MT5 and cTrader",
+  "instrument_type": "CFD",
+  "weekend_crypto": null,
+  "payout_methods": [
+    "Crypto (payouts under $5,000)",
+    "Rise (payouts of $500+; bank transfer or crypto)"
+  ],
+  "crypto_payout": true,
+  "kyc_before_payout": null,
+  "min_trade_duration": "Trades held under 2 minutes may be classified as tick scalping (funded profits may be removed)",
+  "max_position_or_risk_rule": "Max 80% margin usage per trade; funded max floating loss per trade 1-2% depending on model",
+  "banned_strategies": "Tick scalping, high-frequency trading, arbitrage bots (reverse, latency, hedge arbitrage), exploiting demo/data-feed delays",
+  "bots_allowed": "allowed (own strategy)",
+  "copy_trading": true,
+  "crypto_fees": "Crypto commission $0 (ECN spreads)",
+  "notes": "Crypto is a minor CFD asset class on AquaFunded's CFD accounts (leverage 1:2, $0 commission). The dedicated crypto prop product at crypto.aquafunded.com shows 'Coming Soon' (2026-10-31). Crypto instrument list not published in the pages loaded, so pair count/examples are null. Help centre says weekend holding is allowed and 'for crypto accounts, trading is available 24/7' — that line appears to refer to the not-yet-launched crypto accounts, so weekend_crypto for CFD accounts is left null.",
+  "sources": [
+    "https://help.aquafunded.com/en/articles/15281183-1-step-standard",
+    "https://help.aquafunded.com/en/articles/9250947-what-are-your-spreads-and-commissions",
+    "https://help.aquafunded.com/en/articles/9250960-what-platforms-are-available",
+    "https://help.aquafunded.com/en/articles/9250906-how-do-rewards-work",
+    "https://help.aquafunded.com/en/articles/11831701-other-rules",
+    "https://help.aquafunded.com/en/articles/11875895-maximum-loss-per-trade-policy",
+    "https://help.aquafunded.com/en/articles/11831659-are-eas-trade-copiers-allowed",
+    "https://help.aquafunded.com/en/articles/11877755-is-copy-trading-allowed",
+    "https://help.aquafunded.com/en/articles/11831680-can-i-hold-trades-overnight-and-over-the-weekend",
+    "https://crypto.aquafunded.com/"
+  ],
+  "checked": "2026-10-31"
+}

@@ -10,8 +10,11 @@ ORDER += ["propr", "fondeo", "mubite", "propw",
  "lucid-trading", "tradeify", "take-profit-trader", "earn2trade", "elite-trader-funding", "topone-futures", "tradeday", "daytraders",
  "fxify", "hola-prime", "fintokei", "the-trading-pit", "brightfunded", "city-traders-imperium", "atlas-funded", "ment-funding",
  "for-traders", "thinkcapital", "finotive-funding", "funded-trading-plus", "ftuk"]
+# 2026-10-31 status pass: caution firms (still selling, documented warning signs; data/status.json). Closed firms are not merged.
+ORDER += ["alpha-futures", "qt-funded", "aquafunded", "funding-traders", "phidias-propfirm", "audacity-capital", "funderpro"]
 GENERATED = "2026-10-31"   # data date (build TODAY); bumped with the 2026-10-31 re-verification + expansion
 raw = os.path.join(ROOT, "data", "raw")
+STATUS = json.load(open(os.path.join(ROOT, "data", "status.json")))   # status: active | caution | closed (closed firms live only in status.json)
 firms, missing = [], []
 for slug in ORDER:
     p = os.path.join(raw, slug + ".json")
@@ -23,6 +26,11 @@ for slug in ORDER:
         missing.append(slug + " (excluded)"); continue
     d["slug"] = slug
     d.setdefault("affiliate_url", "#")
+    st = STATUS.get("caution", {}).get(slug)
+    d["status"] = "caution" if st else "active"
+    if st:
+        d["status_since"] = st.get("status_since"); d["status_reason"] = st.get("status_reason")
+        d["status_sources"] = [{"url": x["url"], "date": x.get("date"), "text": x.get("text")} for x in st.get("evidence", []) if x.get("url")]
     firms.append(d)
 out = {"generated": GENERATED, "order_note": "Crypto-first listing order; ranking on site is by PA Score (same rules for every firm).", "firms": firms}
 with open(os.path.join(ROOT, "data", "firms.json"), "w") as f: json.dump(out, f, indent=2, ensure_ascii=False)

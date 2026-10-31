@@ -1,0 +1,354 @@
+{
+  "name": "Funding Traders",
+  "slug": "funding-traders",
+  "site": "https://fundingtraders.com",
+  "category": "cfd",
+  "assets": [
+    "forex",
+    "indices",
+    "commodities",
+    "crypto"
+  ],
+  "challenge_types": [
+    "1-step",
+    "2-step",
+    "instant"
+  ],
+  "account_sizes": [
+    5000,
+    10000,
+    25000,
+    50000,
+    100000,
+    200000,
+    400000
+  ],
+  "fee_currency": "USD",
+  "programs": [
+    {
+      "name": "2-Step Pro10",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 90
+        },
+        {
+          "size": 10000,
+          "fee": 150
+        },
+        {
+          "size": 25000,
+          "fee": 290
+        },
+        {
+          "size": 50000,
+          "fee": 430
+        },
+        {
+          "size": 100000,
+          "fee": 750
+        },
+        {
+          "size": 200000,
+          "fee": 1250
+        }
+      ],
+      "profit_target": "10% / 5%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_split": "80% (90% or 100% with add-on)",
+      "min_trading_days": 4
+    },
+    {
+      "name": "2-Step Pro6",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 49
+        },
+        {
+          "size": 10000,
+          "fee": 79
+        },
+        {
+          "size": 25000,
+          "fee": 159
+        },
+        {
+          "size": 50000,
+          "fee": 259
+        },
+        {
+          "size": 100000,
+          "fee": 459
+        },
+        {
+          "size": 200000,
+          "fee": 799
+        }
+      ],
+      "profit_target": "6% / 6%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "static",
+      "profit_split": "80% (90% or 100% with add-on)",
+      "min_trading_days": 4
+    },
+    {
+      "name": "1-Step Pro",
+      "type": "1-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": 59
+        },
+        {
+          "size": 10000,
+          "fee": 109
+        },
+        {
+          "size": 25000,
+          "fee": 229
+        },
+        {
+          "size": 50000,
+          "fee": 329
+        },
+        {
+          "size": 100000,
+          "fee": 589
+        },
+        {
+          "size": 200000,
+          "fee": 999
+        }
+      ],
+      "profit_target": "10%",
+      "max_daily_loss": "3%",
+      "max_drawdown": "10%",
+      "drawdown_type": "trailing",
+      "profit_split": "90% (100% with add-on)",
+      "min_trading_days": 2
+    },
+    {
+      "name": "Instant Funding",
+      "type": "instant",
+      "sizes_fees": [
+        {
+          "size": 10000,
+          "fee": 179
+        },
+        {
+          "size": 25000,
+          "fee": 319
+        },
+        {
+          "size": 50000,
+          "fee": 479
+        },
+        {
+          "size": 100000,
+          "fee": 749
+        },
+        {
+          "size": 200000,
+          "fee": 1349
+        },
+        {
+          "size": 400000,
+          "fee": 2349
+        }
+      ],
+      "profit_target": null,
+      "max_daily_loss": "3%",
+      "max_drawdown": "6%",
+      "drawdown_type": "trailing",
+      "profit_split": "90% (100% with add-on)",
+      "min_trading_days": null
+    },
+    {
+      "name": "2-Step Day & Swing",
+      "type": "2-step",
+      "sizes_fees": [
+        {
+          "size": 5000,
+          "fee": null
+        },
+        {
+          "size": 10000,
+          "fee": null
+        },
+        {
+          "size": 25000,
+          "fee": null
+        },
+        {
+          "size": 50000,
+          "fee": null
+        },
+        {
+          "size": 100000,
+          "fee": null
+        },
+        {
+          "size": 200000,
+          "fee": null
+        }
+      ],
+      "profit_target": "10% / 5%",
+      "max_daily_loss": "5%",
+      "max_drawdown": "10%",
+      "drawdown_type": "static",
+      "profit_split": "Day: 80% (90%/100% with add-ons); Swing: 70% -> 80% -> 90% by payout",
+      "min_trading_days": null
+    }
+  ],
+  "fee_from": 49,
+  "profit_split": "80% up to 100%",
+  "profit_split_scale": "2-Step Swing: 70% (1st payout) -> 80% (2nd) -> 90% (3rd onward); other accounts raise split only via checkout add-ons (90%/100%)",
+  "max_daily_loss": "5%",
+  "max_drawdown": "10%",
+  "drawdown_type": "static",
+  "profit_target": "10% / 5%",
+  "leverage": "Up to 1:50: FX majors 1:50; EURGBP/GBPJPY and FX minors/exotics 1:30; indices 1:15-1:40 (US100 1:30, US30 1:40, GER30 1:30, JPN225 1:40, US500 1:25, UK100 1:20); metals 1:20; oil 1:10; other commodities 1:1; BTC 1:10, ETH/SOL/XRP 1:5, other crypto 1:1",
+  "platforms": [
+    "MT5",
+    "TradeLocker"
+  ],
+  "payout_frequency": "2-Step Pro6/Pro10, 2-Step Day/Swing and 1-Step Pro: first payout 21 days after the first funded trade, then every 21 days (14-day add-on). Instant Funding: on-demand once eligible per the Instant help article (accounts bought on/after 8 Oct 2026); homepage table says 7 days and homepage FAQ / add-ons article say every 14 days.",
+  "first_payout_days": 21,
+  "payout_speed": "24-48 hours, weekends excluded (Rise or USDT); Payout Guarantee: processed within 2 business days or $500 cash + $500 account credit",
+  "min_trading_days": 4,
+  "consistency_rule": "1-Step Pro funded: largest day <= 50% of total profit; Instant Funding: <= 15%; 2-Step Pro6/Pro10: none (exceeding delays payout, not a breach)",
+  "news_trading": "restricted",
+  "weekend_holding": "allowed",
+  "countries_restricted": [
+    "Afghanistan",
+    "Kazakhstan",
+    "Mongolia",
+    "Morocco",
+    "Poland",
+    "Taiwan",
+    "Ukraine",
+    "Venezuela",
+    "Vietnam",
+    "Central African Republic",
+    "North Korea",
+    "Congo",
+    "Zaire",
+    "Iran",
+    "Iraq",
+    "Libya",
+    "Mali",
+    "Saipan",
+    "Somalia",
+    "South Sudan",
+    "Yemen",
+    "Ontario (Canada)",
+    "Myanmar",
+    "Russian Federation"
+  ],
+  "founded": 2023,
+  "hq": "Miami Beach, United States",
+  "discount_code": {
+    "code": "HALLOWIN",
+    "value": "70% off (site-wide banner, limited time)",
+    "percent": 70,
+    "source": "https://fundingtraders.com/",
+    "verified": "2026-10-31",
+    "expires": null,
+    "also": [
+      {
+        "code": "TRYFT",
+        "value": "50% off your first funded challenge",
+        "percent": 50
+      },
+      {
+        "code": "HALLOWEEN",
+        "value": "50% off + free matching account (BOGO), Oct 26-31, 2026",
+        "percent": 50
+      }
+    ]
+  },
+  "affiliate_url": "#",
+  "trustpilot": {
+    "score": null,
+    "count": 3283,
+    "note": "Rating unavailable: Trustpilot says it removed fake reviews for this company (breach of its guidelines)",
+    "checked": "2026-10-31",
+    "source": "https://www.trustpilot.com/review/fundingtraders.com"
+  },
+  "last_verified": "2026-10-31",
+  "source_urls": [
+    "https://fundingtraders.com/",
+    "https://app.fundingtraders.com/login",
+    "https://fundingtraders.com/terms",
+    "https://fundingtraders.com/refund-policy",
+    "https://fundingtraders.com/prop-trading-partners",
+    "https://fundingtraders.com/prop-trading-payouts",
+    "https://fundingtraders.com/prop-trading-firm",
+    "https://fundingtraders.com/help/en/articles/13399206-2-step-pro",
+    "https://fundingtraders.com/help/en/articles/13615032-1-step-pro",
+    "https://fundingtraders.com/help/en/articles/17459915-instant-funding",
+    "https://fundingtraders.com/help/en/articles/17589312-2-step-day-swing",
+    "https://fundingtraders.com/help/en/articles/16762255-try-out-account",
+    "https://fundingtraders.com/help/en/articles/11936660-reset-account-feature",
+    "https://fundingtraders.com/help/en/articles/17333842-all-add-ons",
+    "https://fundingtraders.com/help/en/articles/12838492-general-trading-guidelines",
+    "https://fundingtraders.com/help/en/articles/11927126-risk-management-at-fundingtraders",
+    "https://fundingtraders.com/help/en/articles/13224028-payout-guarantee",
+    "https://fundingtraders.com/help/en/articles/13134581-promotions",
+    "https://www.trustpilot.com/review/fundingtraders.com"
+  ],
+  "notes": "List prices from the fundingtraders.com homepage challenge table (all four tabs present in page HTML; re-checked 2026-10-31, unchanged). The homepage shows each price struck through next to a 50%-off price, which matches the posted first-challenge code TRYFT (50% off first challenge); a site-wide banner (homepage + app login) advertises code HALLOWIN = 70% OFF ('limited time', no end date shown), and the help-centre Promotions article lists code HALLOWEEN (50% off + free matching account + all add-ons, valid Oct 26-31, 2026). 2-Step Day & Swing is documented in the help centre as a newly launched 2-Step variant (5K-200K, MT5/TradeLocker) but is not priced on the homepage table, so its fees are null. A free $1,000 'Try Out' 1-Step Pro account (MT5 only, new users via tryout.fundingtraders.com) exists and is excluded from fee_from. Rule conflicts on the firm's own pages: homepage table shows 4 min trading days for 1-Step Pro but the 1-Step Pro help article says 2 (used 2); Instant payout schedule is '7 Days' on the homepage table, 'every 14 days' in the homepage FAQ/add-ons article and 'On-Demand' in the Instant help article; General Trading Guidelines (Mar 2026) say Instant accounts cannot hold over the weekend while the newer Instant article (Oct 2026) says they can; homepage FAQ says the fee is refunded with the first payout while Terms s.10.1 and program articles say with the second payout (Instant: 200% refund bonus). Instant max loss trails until +3% then locks at initial balance; 1-Step Pro max loss trails from highest balance. News: challenge phases unrestricted; funded Pro accounts cap news-influenced profit at 30% (trades opened/held/closed within 5 min of red-folder news; 5h+ holds exempt); Instant: no opening/closing within the 10-minute window (hard breach). weekend_holding 'allowed' for Pro/Swing/Instant (current articles); 2-Step Day auto-closes non-crypto positions at 16:55 NY daily and before the Friday close. HQ: footer lists FT US Inc (901 Pennsylvania Ave, Miami Beach, FL, US) and Funding Traders Group Ltd (Saint Lucia, Company No. 2025-00298); Trustpilot company profile shows Dubai, U.A.E. founded=2023 from the app login page ('2023 Established'). Restricted-country list from the site footer, although the live payout tracker shows payouts to traders listed in Vietnam and Morocco. Homepage claims 53,000+ accounts funded; app login claims over $8M paid. CAUTION (payout complaints): Trustpilot (https://www.trustpilot.com/review/fundingtraders.com, checked 2026-10-31) shows 'This company's rating is unavailable due to a breach of our guidelines' and 'We've removed a number of fake reviews for this company' (3,283 reviews; distribution 68% 5-star / 24% 1-star). Recent reviews (Oct 2026) include complaints of second payouts delayed over a week with slow risk-team replies, Instant accounts terminated when a payout was requested (cited news-trading breaches on BTCUSD), terminations for exceeding the 1% floating-risk limit by small amounts, a disputed daily-drawdown reset on an overnight hold, and a dispute over whether holding through news was allowed; other recent reviews report payouts received within 24 hours. Listed with caution; no regulator action seen on the firm's site.",
+  "segment": "forex",
+  "also_offers": [],
+  "category_basis": "Sells simulated forex/CFD evaluations and instant accounts on MetaTrader 5 and TradeLocker (forex, indices, metals, oil, crypto CFDs); no futures or exchange accounts.",
+  "category_source": "https://fundingtraders.com/",
+  "founded_source": "https://app.fundingtraders.com/login",
+  "hq_country": {
+    "code": "US",
+    "source": "https://fundingtraders.com/",
+    "quote": "Miami Beach, United States"
+  },
+  "max_allocation_usd": 400000,
+  "max_allocation_text": "Up to $400K in funding (largest Instant Funding account $400K); no scaling plan published",
+  "max_allocation_source": "https://fundingtraders.com/",
+  "field_sources": {
+    "category": "https://fundingtraders.com/",
+    "also_offers": "https://fundingtraders.com/",
+    "segment": "https://fundingtraders.com/",
+    "assets": "https://fundingtraders.com/help/en/articles/13399206-2-step-pro",
+    "challenge_types": "https://fundingtraders.com/",
+    "account_sizes": "https://fundingtraders.com/",
+    "fee_currency": "https://fundingtraders.com/",
+    "programs": "https://fundingtraders.com/",
+    "fee_from": "https://fundingtraders.com/",
+    "profit_split": "https://fundingtraders.com/",
+    "profit_split_scale": "https://fundingtraders.com/help/en/articles/17589312-2-step-day-swing",
+    "max_daily_loss": "https://fundingtraders.com/",
+    "max_drawdown": "https://fundingtraders.com/",
+    "drawdown_type": "https://fundingtraders.com/help/en/articles/13399206-2-step-pro",
+    "profit_target": "https://fundingtraders.com/",
+    "leverage": "https://fundingtraders.com/help/en/articles/13399206-2-step-pro",
+    "platforms": "https://fundingtraders.com/",
+    "payout_frequency": "https://fundingtraders.com/help/en/articles/13399206-2-step-pro",
+    "first_payout_days": "https://fundingtraders.com/help/en/articles/13399206-2-step-pro",
+    "payout_speed": "https://fundingtraders.com/help/en/articles/13224028-payout-guarantee",
+    "max_allocation": "https://fundingtraders.com/",
+    "max_allocation_text": "https://fundingtraders.com/",
+    "min_trading_days": "https://fundingtraders.com/help/en/articles/13399206-2-step-pro",
+    "consistency_rule": "https://fundingtraders.com/",
+    "news_trading": "https://fundingtraders.com/",
+    "weekend_holding": "https://fundingtraders.com/help/en/articles/12838492-general-trading-guidelines",
+    "countries_restricted": "https://fundingtraders.com/",
+    "founded": "https://app.fundingtraders.com/login",
+    "hq": "https://fundingtraders.com/",
+    "hq_country": "https://fundingtraders.com/",
+    "discount_code": "https://fundingtraders.com/",
+    "trustpilot": "https://www.trustpilot.com/review/fundingtraders.com"
+  }
+}
