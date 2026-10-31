@@ -183,7 +183,7 @@
   "profit_split_scale": "70% Junior -> 80% Pro (5 payouts + $5K cumulative) -> 85% Elite (8 + $10K) -> 90% Aura (12 + $20K)",
   "max_daily_loss": "5%",
   "max_drawdown": "6%",
-  "drawdown_type": null,
+  "drawdown_type": "static",
   "profit_target": "7%",
   "leverage": "up to 1:100 (X Mode); up to 1:5 (Y/Z Mode)",
   "platforms": [
@@ -193,7 +193,7 @@
   "first_payout_days": 1,
   "min_trading_days": 0,
   "consistency_rule": "Y/Z evaluation only: max 3% profit per single trade and 3% daily profit cap (resets 00:00 UTC+8); none on X Mode",
-  "news_trading": null,
+  "news_trading": true,
   "weekend_holding": true,
   "countries_restricted": null,
   "founded": null,
@@ -211,7 +211,7 @@
     "score": 4.5,
     "count": 14
   },
-  "last_verified": "2026-10-26",
+  "last_verified": "2026-10-31",
   "source_urls": [
     "https://www.fundedxyz.com/",
     "https://www.fundedxyz.com/pricing",
@@ -224,5 +224,13 @@
   "segment": "crypto",
   "also_offers": [],
   "category_basis": "Crypto-only firm on its own crypto trading platform; perpetual pairs, USDT payouts.",
-  "category_source": "https://www.fundedxyz.com/faq"
+  "category_source": "https://www.fundedxyz.com/faq",
+  "field_sources": {
+    "drawdown_type": "https://www.fundedxyz.com/faq#is-the-drawdown-static-or-trailing",
+    "news_trading": "https://www.fundedxyz.com/faq#is-news-trading-allowed"
+  },
+  "field_verified": {
+    "drawdown_type": "2026-10-31",
+    "news_trading": "2026-10-31"
+  }
 }

@@ -601,5 +601,23 @@
   "old": "High Stakes: 80% → 85% at $175K → 90% at $250K → 100% at $350K+",
   "new": "High Stakes: 80% → 85% at $175K → 90% at $250K → 100% at $350K+; Hyper Growth: starts at 75%, 80% at $350K, 80-100% from $400K",
   "kind": "Correction"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "fundedxyz",
+  "firm": "FundedXyz",
+  "field": "Drawdown type",
+  "old": null,
+  "new": "static",
+  "kind": "Rules"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "fundedxyz",
+  "firm": "FundedXyz",
+  "field": "News trading",
+  "old": null,
+  "new": "Allowed",
+  "kind": "Rules"
  }
 ]
