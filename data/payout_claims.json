@@ -1,0 +1,126 @@
+{
+ "_about": "Firm-reported payout totals and payout-proof channels as shown on each firm's own homepage. These are the firms' own marketing figures, not audited by PropAnalyse. 'value_usd' is the lower bound of the stated figure. Checked 2026-10-31.",
+ "checked": "2026-10-31",
+ "firms": {
+  "topstep": {
+   "text": "$1.5B+ paid out to prop firm traders",
+   "value_usd": 1500000000,
+   "source": "https://www.topstep.com/",
+   "proof": "Homepage also states 7,000+ traders paid weekly (footnoted)."
+  },
+  "ftmo": {
+   "text": "$650M+ paid in rewards",
+   "value_usd": 650000000,
+   "source": "https://ftmo.com/en/",
+   "proof": "Homepage also states 4.5M+ customers and 140+ countries served."
+  },
+  "fundingpips": {
+   "text": "$326M+ rewards distributed",
+   "value_usd": 326000000,
+   "source": "https://fundingpips.com/",
+   "proof": "Homepage also states 3M+ traders in 195+ countries."
+  },
+  "fundednext": {
+   "text": "$306.9M+ total rewarded",
+   "value_usd": 306900000,
+   "source": "https://fundednext.com/",
+   "proof": "Homepage counters showed $306.9M and $316.1M at our check; it also states a 40-hour average processing time."
+  },
+  "myfundedfutures": {
+   "text": "$300M+ paid to traders",
+   "value_usd": 300000000,
+   "source": "https://myfundedfutures.com/",
+   "proof": "Homepage also states 75%+ of payouts are auto-approved."
+  },
+  "alpha-capital": {
+   "text": "$100M+ performance fees",
+   "value_usd": 100000000,
+   "source": "https://alphacapitalgroup.uk/",
+   "proof": "Homepage also states 1.2 million+ traders."
+  },
+  "e8-markets": {
+   "text": "Over $80M paid out to traders",
+   "value_usd": 80000000,
+   "source": "https://e8markets.com/",
+   "proof": null
+  },
+  "breakout-prop": {
+   "text": "$80M+ paid to traders since launch",
+   "value_usd": 80000000,
+   "source": "https://www.breakoutprop.com/",
+   "proof": "Homepage points to a #payouts channel in its Discord and a public leaderboard; payouts are in USDC on Ethereum."
+  },
+  "blue-guardian": {
+   "text": "$35M+ total payouts",
+   "value_usd": 35000000,
+   "source": "https://blueguardian.com/",
+   "proof": null
+  },
+  "goat-funded-trader": {
+   "text": "$30 million+ rewards distributed",
+   "value_usd": 30000000,
+   "source": "https://www.goatfundedtrader.com/",
+   "proof": "Homepage also states a $2,180 average reward and a 2-day payout guarantee (extra $1,000 if missed)."
+  },
+  "crypto-fund-trader": {
+   "text": "$21,814,605 paid to CFT traders",
+   "value_usd": 21814605,
+   "source": "https://cryptofundtrader.com/",
+   "proof": "Homepage counter also showed $544,061 paid in the last month."
+  },
+  "hyrotrader": {
+   "text": "$8M+ paid to funded traders",
+   "value_usd": 8000000,
+   "source": "https://www.hyrotrader.com/",
+   "proof": "Homepage shows a 'Recent Funded Payouts' feed; payouts are in USDT/USDC."
+  },
+  "fundedxyz": {
+   "text": "$6.6M+ in USDT performance rewards settled through October 2026",
+   "value_usd": 6600000,
+   "source": "https://www.fundedxyz.com/",
+   "proof": "Homepage describes payouts as on-chain USDT. FundedXYZ is run by the team behind PropAnalyse."
+  },
+  "lark-funding": {
+   "text": "$1M+ paid in rewards",
+   "value_usd": 1000000,
+   "source": "https://larkfunding.com/",
+   "proof": "Homepage also states 3+ years paying."
+  },
+  "maven-trading": {
+   "text": null,
+   "value_usd": null,
+   "source": "https://maventrading.com/",
+   "proof": "Homepage shows a $62K+ highest single-trader total, not a firm-wide payout total."
+  },
+  "bitfunded": {
+   "text": null,
+   "value_usd": null,
+   "source": "https://www.bitfunded.com/",
+   "proof": "Homepage has a 'Successful Payouts' section and a top-trader leaderboard, but no firm-wide total."
+  },
+  "the5ers": {
+   "text": null,
+   "value_usd": null,
+   "source": "https://the5ers.com/",
+   "proof": null
+  },
+  "apex-trader-funding": {
+   "text": null,
+   "value_usd": null,
+   "source": "https://apextraderfunding.com/",
+   "proof": null
+  },
+  "bulenox": {
+   "text": null,
+   "value_usd": null,
+   "source": "https://bulenox.com/",
+   "proof": null
+  },
+  "instant-funding": {
+   "text": null,
+   "value_usd": null,
+   "source": "https://instantfunding.com/",
+   "proof": null
+  }
+ }
+}

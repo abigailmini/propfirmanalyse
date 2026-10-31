@@ -674,3 +674,5 @@ ul.also li span{flex-basis:100%;font-size:14px;color:var(--mute)}
 @media (min-width:900px){.fprim #f-country{max-width:200px}}
 @media (max-width:479px){.seg small{display:none}.seg span{padding:0 8px}}
 .hubgrid .grel .lists{grid-template-columns:1fr}
+@media (max-width:767px){.tablewrap:has(> table.changes),.tablewrap:has(> table.log){overflow-x:auto}}
+@media (max-width:639px){table.gt td.wide{min-width:0;max-width:none}}
