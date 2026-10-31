@@ -207,3 +207,24 @@ def qw_finalize():
             if 'class="mini offers' in s or 'class="mini crypto' in s or 'class="mini sttable' in s:
                 n = QW_STACK_RX.sub(lambda m: qw_stack_table(m.group(0)), s)
                 if n != s: open(p, "w").write(n)
+
+
+# 4. Titles <= 60 chars (scripts/qw_titles.py): rewrite <title> and og:title after all modules have run
+exec(compile(open(os.path.join(ROOT, "scripts", "qw_titles.py")).read(), "qw_titles.py", "exec"))
+_qw_prev_finalize2 = qw_finalize
+def qw_finalize():
+    _qw_prev_finalize2()
+    for root, _, files in os.walk(OUT):
+        for fn in files:
+            if fn != "index.html": continue
+            p = os.path.join(root, fn); s = open(p).read()
+            m = re.search(r"<title>(.*?)</title>", s)
+            if not m: continue
+            path = "/" + os.path.relpath(root, OUT).replace(os.sep, "/").strip(".").strip("/") + "/"
+            path = "/" if path == "//" else path
+            old = html.unescape(m.group(1)); new = qw_short_title(old, path)
+            if new == old: continue
+            s = s.replace(m.group(0), f"<title>{e(new)}</title>", 1)
+            s = s.replace(f'<meta property="og:title" content="{m.group(1)}">', f'<meta property="og:title" content="{e(new)}">', 1)
+            open(p, "w").write(s)
+
