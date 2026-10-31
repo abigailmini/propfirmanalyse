@@ -228,3 +228,51 @@ def qw_finalize():
             s = s.replace(f'<meta property="og:title" content="{m.group(1)}">', f'<meta property="og:title" content="{e(new)}">', 1)
             open(p, "w").write(s)
 
+
+
+# 5. Per-page OG images: one card per firm (also used by its /legit/ and /crypto/ pages) and per compare page
+try:
+    exec(compile(open(os.path.join(ROOT, "scripts", "og_cards.py")).read(), "og_cards.py", "exec"), (QW_OG := {"__file__": os.path.join(ROOT, "scripts", "og_cards.py"), "__name__": "og_cards"}))
+except Exception as _x:   # Pillow missing: keep the site-wide og.png
+    print("og cards disabled:", _x); QW_OG = None
+QW_OG_MAP = {}   # page path -> (image path, alt)
+def qw_og_firm(f):
+    rel = f"/og/firms/{f['slug']}.png"
+    if rel not in QW_OG_MAP.values():
+        f["_sub"] = "  ·  ".join(x for x in (CAT_LABEL.get(f.get("category"), "") + " prop firm" if f.get("category") else "", short_hq(f.get("hq") or ""), f"since {int(num(f['founded']))}" if num(f.get("founded")) else "") if x)
+        QW_OG["firm_card"](f, OUT + rel, money(f["_fee"], f.get("fee_currency")) if f["_fee"] is not None else "Not published",
+                           "Verified " + nice_date(f.get("last_verified") or TODAY), f"PA Score · ranked #{f['_rank']} of {len(FIRMS)}")
+    return rel
+def qw_og_build():
+    if not QW_OG: return
+    n = 0
+    for f in FIRMS:
+        rel = qw_og_firm(f); n += 1
+        alt = f"{f['name']}: PA Score {f['_score']:.1f}/10, fees from {money(f['_fee'], f.get('fee_currency')) if f['_fee'] is not None else 'not published'}, split {f.get('profit_split') or 'not published'}"
+        for p in (f"/firms/{f['slug']}/", f"/firms/{f['slug']}/legit/", f"/crypto/{f['slug']}/"): QW_OG_MAP[p] = (rel, alt)
+    for a, b in PAIRS:
+        A, B = BY[a], BY[b]; rel = f"/og/compare/{a}-vs-{b}.png"
+        fa = money(A["_fee"], A.get("fee_currency")) if A["_fee"] is not None else "n/a"; fb = money(B["_fee"], B.get("fee_currency")) if B["_fee"] is not None else "n/a"
+        QW_OG["compare_card"](A, B, OUT + rel, fa, fb, nice_date(TODAY)); n += 1
+        QW_OG_MAP[f"/compare/{a}-vs-{b}/"] = (rel, f"{A['name']} vs {B['name']}: PA Score {A['_score']:.1f} vs {B['_score']:.1f}, fees from {fa} vs {fb}")
+    print(f"og cards: {n}")
+
+QW_OG_DEFAULT_ALT = "PropAnalyse: prop firms compared on the numbers"
+def qw_og_tags(img, alt):
+    return (f'<meta property="og:image" content="{ABS}{img}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
+            f'<meta property="og:image:alt" content="{e(alt)}"><meta name="twitter:image" content="{ABS}{img}"><meta name="twitter:image:alt" content="{e(alt)}">')
+_qw_prev_finalize3 = qw_finalize
+def qw_finalize():
+    qw_og_build()
+    _qw_prev_finalize3()
+    tag = f'<meta property="og:image" content="{ABS}/assets/og.png">'
+    for root, _, files in os.walk(OUT):
+        for fn in files:
+            if fn != "index.html": continue
+            p = os.path.join(root, fn); s = open(p).read()
+            if tag not in s: continue
+            path = "/" + os.path.relpath(root, OUT).replace(os.sep, "/").strip(".").strip("/") + "/"
+            path = "/" if path == "//" else path
+            img, alt = QW_OG_MAP.get(path) or globals().get("QW_OG_EXTRA", {}).get(path) or ("/assets/og.png", QW_OG_DEFAULT_ALT)
+            s = s.replace(tag, qw_og_tags(img, alt), 1); open(p, "w").write(s)
+
