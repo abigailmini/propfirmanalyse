@@ -18,6 +18,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install Pillow (per-page OG cards)
+        run: python3 -m pip install --quiet pillow
       - name: Build site from data/firms.json
         env:
           BASE_PATH: ${{ vars.BASE_PATH || '' }}
