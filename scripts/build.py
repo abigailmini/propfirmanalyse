@@ -712,6 +712,6 @@ if __name__ == "__main__":
     for f in FIRMS: firm_page(f)
     compare_index()
     for a, b in PAIRS: compare_page(a, b)
-    offers(); best_pages(); methodology(); about(); updates(); crypto_hub(); news(); tools(); quiz(); guides(); glossary(); site_faq(); programmatic(); not_found(); privacy(); seo_files()
-    track_finalize()
+    offers(); best_pages(); methodology(); about(); updates(); crypto_hub(); news(); tools(); quiz(); guides(); glossary(); site_faq(); programmatic(); not_found(); privacy(); qw_pages(); seo_files()
+    qw_finalize(); track_finalize()
     print(f"built {len(PAGES)} pages -> {OUT}")
