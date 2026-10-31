@@ -33,3 +33,9 @@ Every firm is `active`, `caution` or `closed`, from `data/status.json` (rule: tr
 
 ## Analytics + click tracking (2026-10-31)
 Cookieless analytics, outbound click redirects, form intake and an admin dashboard live in `backend/` (Cloudflare Worker + D1, see `backend/README.md`). Site side: `scripts/more_track.py` always writes `backend/src/firms.gen.json` and `/privacy/`; with `TRACK=1` (repo variable, flipped by `backend/scripts/go-live.sh`) it routes every firm Visit/offer link through `go.propanalyse.com/<slug>?src=&pos=&code=`, adds the 1.3 KB beacon to every page and wires the forms to the Worker (mail/GitHub fallback kept). `OUT_DIR` env builds to another folder (used by tests).
+
+
+## Audit quick wins (2026-10-31)
+`scripts/more_quickwins.py` (exec'd after more_status.py) holds the 2026-10-31 audit fixes: trust pages (/about/, /disclosure/, /terms/, /contact/, /corrections/), mobile table cards (`qwstack`), the /safe/ checker (+ /zh/safe/ and noindexed /safe/<slug>/ share cards), shareable calculators (`src/share.js`), thin-hub content, and post-build passes (`qw_finalize`): footer disclosure link, titles <= 60 chars (`scripts/qw_titles.py`), per-page OG images (`scripts/og_cards.py`, Pillow, fonts in `src/og-fonts/`; without Pillow the site falls back to og.png).
+Promo codes: `discount_code.expires` = last valid day; `review_by` = time-limited code with no published end (hidden after that day unless re-verified); build hides both via `scripts/check_codes.py` (also a CLI: `python3 scripts/check_codes.py [--date D]`, exit 1 when anything is expired/stale/expiring). CI rebuilds daily at 00:10 UTC.
+
